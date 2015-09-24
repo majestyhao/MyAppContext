@@ -1,0 +1,53 @@
+.source SourceFile
+.class public  cn/domob/android/ads/D$c
+.super java/lang/Object
+.field "a" Ljava/lang/String;
+.field "b" Ljava/lang/String;
+.field "c" I
+.field "d" Ljava/util/ArrayList;
+.field "e" Ljava/lang/String;
+.field "f" Ljava/lang/String;
+.field "g" Ljava/lang/String;
+.field "h" Ljava/lang/String;
+.field "i" Ljava/lang/String;
+.field "j" Ljava/lang/String;
+.field final "k" Lcn/domob/android/ads/D;
+
+.method public <init>(Lcn/domob/android/ads/D;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/D$c/k Lcn/domob/android/ads/D;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc "1"
+  astore_2
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/D$c/a Ljava/lang/String;
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/D$c/g Ljava/lang/String;
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/D$c/h Ljava/lang/String;
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/D$c/i Ljava/lang/String;
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/D$c/j Ljava/lang/String;
+  return
+  nop
+.end <method>
+

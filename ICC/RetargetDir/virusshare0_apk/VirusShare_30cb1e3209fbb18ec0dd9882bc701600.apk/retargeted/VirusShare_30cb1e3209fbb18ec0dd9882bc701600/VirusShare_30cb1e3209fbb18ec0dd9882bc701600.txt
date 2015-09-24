@@ -1,0 +1,11 @@
+Lcom/bratolubzet/stlstart/Bragushterra$1; run ()V n 2 2
+Lcom/bratolubzet/stlstart/Bragushterra$2; run ()V n 4 2
+Lcom/bratolubzet/stlstart/Bragushterra; <<
+Lcom/bratolubzet/stlstart/Bratisko; <<
+Lcom/bratolubzet/stlstart/Bugogashenki; <<
+Lcom/bratolubzet/stlstart/Vertikalno$1; run ()V n 6 2
+Lcom/bratolubzet/stlstart/Vertikalno$2; <<
+Lcom/bratolubzet/stlstart/Vertikalno$3; run ()V n 2 2
+Lcom/bratolubzet/stlstart/Vertikalno$4; <<
+Lcom/bratolubzet/stlstart/Vertikalno$5; <<
+Lcom/bratolubzet/stlstart/Vertikalno; <<

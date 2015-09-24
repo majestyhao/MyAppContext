@@ -1,0 +1,78 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/tencent/mobwin/core/a/h
+.super java/lang/Object
+.field public "a" LMobWin/ADInfo;
+.field public "b" Landroid/graphics/Bitmap;
+.field public "c" Landroid/graphics/Bitmap;
+.field public "d" Z
+
+.method public <init>()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/tencent/mobwin/core/a/h/d Z
+  return
+  nop
+.end <method>
+
+.method public static a()Lcom/tencent/mobwin/core/a/h;
+.limit locals 5
+.limit stack 200
+  nop
+  new MobWin/ADInfo
+  astore_0
+  aload_0
+  invokespecial MobWin/ADInfo/<init>()V
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield MobWin/ADInfo/a I
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield MobWin/ADInfo/b I
+  new java/util/ArrayList
+  astore_2
+  aload_2
+  invokespecial java/util/ArrayList/<init>()V
+  aload_0
+  aload_2
+  putfield MobWin/ADInfo/c Ljava/util/ArrayList;
+  aload_0
+  getfield MobWin/ADInfo/c Ljava/util/ArrayList;
+  astore_2
+  ldc "MobWIN\u805a\u8d62\u5e7f\u544a\u5e73\u53f0\u6b22\u8fce\u60a8"
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  aload_0
+  getfield MobWin/ADInfo/c Ljava/util/ArrayList;
+  astore_2
+  ldc "\u817e\u8baf\u4e0e\u60a8\u643a\u624b\u4e00\u8d77\u6253\u9020\u6700\u4f18\u8d28\u7684\u79fb\u52a8\u5e7f\u544a\u5e73\u53f0"
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  new com/tencent/mobwin/core/a/h
+  astore 4
+  aload 4
+  invokespecial com/tencent/mobwin/core/a/h/<init>()V
+  aload 4
+  aload_0
+  putfield com/tencent/mobwin/core/a/h/a LMobWin/ADInfo;
+  aload 4
+  areturn
+  nop
+.end <method>
+

@@ -1,0 +1,289 @@
+.source SourceFile
+.class public final enum  cn/domob/android/ads/j$g
+.super java/lang/Enum
+  .signature_attr "Ljava/lang/Enum<Lcn/domob/android/ads/j$g;>;"
+.field public static final enum "a" Lcn/domob/android/ads/j$g;
+.field public static final enum "b" Lcn/domob/android/ads/j$g;
+.field public static final enum "c" Lcn/domob/android/ads/j$g;
+.field public static final enum "d" Lcn/domob/android/ads/j$g;
+.field public static final enum "e" Lcn/domob/android/ads/j$g;
+.field public static final enum "f" Lcn/domob/android/ads/j$g;
+.field private static final "h" [Lcn/domob/android/ads/j$g;
+.field private final "g" Ljava/lang/String;
+
+.method static <clinit>()V
+.limit locals 5
+.limit stack 200
+  nop
+  new cn/domob/android/ads/j$g
+  astore_0
+  ldc "LEFT_TO_RIGHT"
+  astore_1
+  iconst_0
+  istore_2
+  ldc "l2r"
+  astore_3
+  aload_0
+  aload_1
+  iload_2
+  aload_3
+  invokespecial cn/domob/android/ads/j$g/<init>(Ljava/lang/String;ILjava/lang/String;)V
+  aload_0
+  putstatic cn/domob/android/ads/j$g/a Lcn/domob/android/ads/j$g;
+  new cn/domob/android/ads/j$g
+  astore_0
+  ldc "RIGHT_TO_LEFT"
+  astore_1
+  iconst_1
+  istore_2
+  ldc "r2l"
+  astore_3
+  aload_0
+  aload_1
+  iload_2
+  aload_3
+  invokespecial cn/domob/android/ads/j$g/<init>(Ljava/lang/String;ILjava/lang/String;)V
+  aload_0
+  putstatic cn/domob/android/ads/j$g/b Lcn/domob/android/ads/j$g;
+  new cn/domob/android/ads/j$g
+  astore_0
+  ldc "TOP_TO_BOTTOM"
+  astore_1
+  iconst_2
+  istore_2
+  ldc "t2b"
+  astore_3
+  aload_0
+  aload_1
+  iload_2
+  aload_3
+  invokespecial cn/domob/android/ads/j$g/<init>(Ljava/lang/String;ILjava/lang/String;)V
+  aload_0
+  putstatic cn/domob/android/ads/j$g/c Lcn/domob/android/ads/j$g;
+  new cn/domob/android/ads/j$g
+  astore_0
+  ldc "BOTTOM_TO_TOP"
+  astore_1
+  iconst_3
+  istore_2
+  ldc "b2t"
+  astore_3
+  aload_0
+  aload_1
+  iload_2
+  aload_3
+  invokespecial cn/domob/android/ads/j$g/<init>(Ljava/lang/String;ILjava/lang/String;)V
+  aload_0
+  putstatic cn/domob/android/ads/j$g/d Lcn/domob/android/ads/j$g;
+  new cn/domob/android/ads/j$g
+  astore_0
+  ldc "SHAKE_X"
+  astore_1
+  iconst_4
+  istore_2
+  ldc "shx"
+  astore_3
+  aload_0
+  aload_1
+  iload_2
+  aload_3
+  invokespecial cn/domob/android/ads/j$g/<init>(Ljava/lang/String;ILjava/lang/String;)V
+  aload_0
+  putstatic cn/domob/android/ads/j$g/e Lcn/domob/android/ads/j$g;
+  new cn/domob/android/ads/j$g
+  astore_0
+  ldc "SHAKE_Y"
+  astore_1
+  iconst_5
+  istore_2
+  ldc "shy"
+  astore_3
+  aload_0
+  aload_1
+  iload_2
+  aload_3
+  invokespecial cn/domob/android/ads/j$g/<init>(Ljava/lang/String;ILjava/lang/String;)V
+  aload_0
+  putstatic cn/domob/android/ads/j$g/f Lcn/domob/android/ads/j$g;
+  bipush 6
+  istore_2
+  iload_2
+  anewarray cn/domob/android/ads/j$g
+  astore 4
+  getstatic cn/domob/android/ads/j$g/a Lcn/domob/android/ads/j$g;
+  astore_0
+  iconst_0
+  istore_2
+  aload 4
+  iload_2
+  aload_0
+  aastore
+  getstatic cn/domob/android/ads/j$g/b Lcn/domob/android/ads/j$g;
+  astore_0
+  iconst_1
+  istore_2
+  aload 4
+  iload_2
+  aload_0
+  aastore
+  getstatic cn/domob/android/ads/j$g/c Lcn/domob/android/ads/j$g;
+  astore_0
+  iconst_2
+  istore_2
+  aload 4
+  iload_2
+  aload_0
+  aastore
+  getstatic cn/domob/android/ads/j$g/d Lcn/domob/android/ads/j$g;
+  astore_0
+  iconst_3
+  istore_2
+  aload 4
+  iload_2
+  aload_0
+  aastore
+  getstatic cn/domob/android/ads/j$g/e Lcn/domob/android/ads/j$g;
+  astore_0
+  iconst_4
+  istore_2
+  aload 4
+  iload_2
+  aload_0
+  aastore
+  getstatic cn/domob/android/ads/j$g/f Lcn/domob/android/ads/j$g;
+  astore_0
+  iconst_5
+  istore_2
+  aload 4
+  iload_2
+  aload_0
+  aastore
+  aload 4
+  putstatic cn/domob/android/ads/j$g/h [Lcn/domob/android/ads/j$g;
+  return
+  nop
+.end <method>
+
+.method private <init>(Ljava/lang/String;ILjava/lang/String;)V
+  .signature_attr "(Ljava/lang/String;)V"
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  iload_2
+  invokespecial java/lang/Enum/<init>(Ljava/lang/String;I)V
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/j$g/g Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method protected static a(Ljava/lang/String;)Lcn/domob/android/ads/j$g;
+.limit locals 8
+.limit stack 200
+  nop
+  invokestatic cn/domob/android/ads/j$g/values()[Lcn/domob/android/ads/j$g;
+  astore_1
+  aload_1
+  arraylength
+  istore_2
+  iconst_0
+  istore_3
+Label2:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload_2
+  if_icmpge Label0
+  aload_1
+  iload_3
+  aaload
+  astore 4
+  aload 4
+  invokevirtual cn/domob/android/ads/j$g/a()Ljava/lang/String;
+  astore 5
+  aload 5
+  aload_0
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label1
+  aload 4
+  areturn
+Label1:
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label2
+Label0:
+  aconst_null
+  astore 7
+  aload 7
+  areturn
+  nop
+.end <method>
+
+.method protected a()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/j$g/g Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static valueOf(Ljava/lang/String;)Lcn/domob/android/ads/j$g;
+.limit locals 5
+.limit stack 200
+  nop
+  ldc cn/domob/android/ads/j$g
+  astore_2
+  aload_2
+  aload_0
+  invokestatic java/lang/Enum/valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+  astore_1
+  aload_1
+  astore 4
+  aload 4
+  checkcast cn/domob/android/ads/j$g
+  astore 4
+  aload 4
+  astore_3
+  aload_3
+  areturn
+  nop
+.end <method>
+
+.method public static values()[Lcn/domob/android/ads/j$g;
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic cn/domob/android/ads/j$g/h [Lcn/domob/android/ads/j$g;
+  astore_0
+  aload_0
+  invokevirtual java/lang/Object/clone()Ljava/lang/Object;
+  astore_1
+  aload_1
+  astore_2
+  aload_2
+  checkcast [Lcn/domob/android/ads/j$g;
+  astore_2
+  aload_2
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+

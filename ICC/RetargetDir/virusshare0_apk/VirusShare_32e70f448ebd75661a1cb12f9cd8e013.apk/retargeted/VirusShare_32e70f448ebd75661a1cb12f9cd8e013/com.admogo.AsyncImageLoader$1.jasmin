@@ -1,0 +1,96 @@
+.source AsyncImageLoader.java
+.class  com/admogo/AsyncImageLoader$1
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "this$0" Lcom/admogo/AsyncImageLoader;
+.field private final "val$callback" Lcom/admogo/AsyncImageLoader$ImageCallback;
+.field private final "val$imageUrl" Ljava/lang/String;
+
+.method <init>(Lcom/admogo/AsyncImageLoader;Ljava/lang/String;Lcom/admogo/AsyncImageLoader$ImageCallback;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/AsyncImageLoader$1/this$0 Lcom/admogo/AsyncImageLoader;
+  aload_0
+  aload_2
+  putfield com/admogo/AsyncImageLoader$1/val$imageUrl Ljava/lang/String;
+  aload_0
+  aload_3
+  putfield com/admogo/AsyncImageLoader$1/val$callback Lcom/admogo/AsyncImageLoader$ImageCallback;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 11
+.limit stack 200
+  .catch  java/lang/Exception <from> Label1 <to> Label2 <using> Label0
+  nop
+Label1:
+  aload_0
+  getfield com/admogo/AsyncImageLoader$1/this$0 Lcom/admogo/AsyncImageLoader;
+  astore_1
+  aload_0
+  getfield com/admogo/AsyncImageLoader$1/val$imageUrl Ljava/lang/String;
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual com/admogo/AsyncImageLoader/loadImageFromUrl(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+  astore_3
+  aload_0
+  getfield com/admogo/AsyncImageLoader$1/this$0 Lcom/admogo/AsyncImageLoader;
+  astore_1
+  aload_1
+  getfield com/admogo/AsyncImageLoader/imageCache Ljava/util/Map;
+  astore 4
+  aload_0
+  getfield com/admogo/AsyncImageLoader$1/val$imageUrl Ljava/lang/String;
+  astore_2
+  new java/lang/ref/SoftReference
+  astore 5
+  aload 5
+  aload_3
+  invokespecial java/lang/ref/SoftReference/<init>(Ljava/lang/Object;)V
+  aload 4
+  aload_2
+  aload 5
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  aload_0
+  getfield com/admogo/AsyncImageLoader$1/this$0 Lcom/admogo/AsyncImageLoader;
+  astore_1
+  aload_1
+  invokestatic com/admogo/AsyncImageLoader/access$0(Lcom/admogo/AsyncImageLoader;)Landroid/os/Handler;
+  astore 6
+  new com/admogo/AsyncImageLoader$1$1
+  astore 7
+  aload_0
+  getfield com/admogo/AsyncImageLoader$1/val$callback Lcom/admogo/AsyncImageLoader$ImageCallback;
+  astore 8
+  aload 7
+  aload_0
+  aload 8
+  aload_3
+  invokespecial com/admogo/AsyncImageLoader$1$1/<init>(Lcom/admogo/AsyncImageLoader$1;Lcom/admogo/AsyncImageLoader$ImageCallback;Landroid/graphics/drawable/Drawable;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+Label2:
+  return
+Label0:
+  astore 9
+  new java/lang/RuntimeException
+  astore 10
+  aload 10
+  aload 9
+  invokespecial java/lang/RuntimeException/<init>(Ljava/lang/Throwable;)V
+  aload 10
+  athrow
+  nop
+.end <method>
+

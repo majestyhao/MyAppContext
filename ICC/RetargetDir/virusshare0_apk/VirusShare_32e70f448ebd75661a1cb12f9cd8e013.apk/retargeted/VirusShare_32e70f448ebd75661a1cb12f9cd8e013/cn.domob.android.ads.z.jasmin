@@ -1,0 +1,7108 @@
+.source SourceFile
+.class public  cn/domob/android/ads/z
+.super java/lang/Object
+.field private static final "a" I =  5
+.field private static final "b" I =  40
+.field private static final "c" I =  0
+.field private static final "d" I =  1
+.field private static final "e" I =  2
+.field private static final "f" I =  500
+.field private static final "g" I =  0
+.field private static final "h" I =  1
+.field private static final "i" Ljava/lang/String; =  "wtai://wp/"
+.field private static final "j" Ljava/lang/String; =  "wtai://wp/mc;"
+.field private static final "k" Ljava/lang/String; =  "market://search?q="
+.field private static final "l" Ljava/lang/String; =  "sms:"
+.field private static final "m" Ljava/lang/String; =  "mailto:"
+.field private static final "n" [Ljava/lang/String;
+.field private "A" Landroid/view/animation/Animation;
+.field private "B" Landroid/view/animation/Animation;
+.field private "C" Landroid/os/Handler;
+.field private "D" I
+.field private "E" I
+.field private "F" I
+.field private "G" F
+.field private "H" F
+.field private "I" F
+.field private "J" Ljava/lang/String;
+.field private "K" Landroid/widget/ImageButton;
+.field private "L" Landroid/widget/ImageButton;
+.field private "M" Landroid/view/View;
+.field private "N" Ljava/lang/String;
+.field private "O" Ljava/lang/String;
+.field private "P" Ljava/lang/String;
+.field private "Q" Landroid/widget/ImageView;
+.field private "R" Landroid/view/animation/RotateAnimation;
+.field private "S" I
+.field private "T" Lcn/domob/android/ads/g;
+.field private "U" Ljava/lang/String;
+.field private "V" Z
+.field private "W" Z
+.field private "X" Z
+.field private "Y" Z
+.field private "Z" Ljava/lang/String;
+.field private "aa" Landroid/os/Handler;
+.field private "o" Lcn/domob/android/ads/L;
+.field private "p" Ljava/lang/String;
+.field private "q" Landroid/content/Context;
+.field private "r" Landroid/app/Dialog;
+.field private "s" Ljava/util/HashMap;
+.field private "t" Ljava/lang/String;
+.field private "u" Z
+.field private "v" Lcn/domob/android/ads/l;
+.field private "w" Landroid/widget/RelativeLayout;
+.field private "x" Landroid/widget/RelativeLayout;
+.field private "y" Landroid/view/animation/Animation;
+.field private "z" Landroid/view/animation/Animation;
+
+.method static <clinit>()V
+.limit locals 3
+.limit stack 200
+  nop
+  bipush 12
+  istore_1
+  iload_1
+  anewarray java/lang/String
+  astore_0
+  iconst_0
+  istore_1
+  ldc ".mp4"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_1
+  istore_1
+  ldc ".3gp"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_2
+  istore_1
+  ldc ".asf"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_3
+  istore_1
+  ldc ".avi"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_4
+  istore_1
+  ldc ".m4u"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_5
+  istore_1
+  ldc ".m4v"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 6
+  istore_1
+  ldc ".mov"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 7
+  istore_1
+  ldc ".mp4"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 8
+  istore_1
+  ldc ".mpe"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 9
+  istore_1
+  ldc ".mpeg"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 10
+  istore_1
+  ldc ".mpg"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 11
+  istore_1
+  ldc ".mpg4"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  aload_0
+  putstatic cn/domob/android/ads/z/n [Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public <init>(Lcn/domob/android/ads/g;Lcn/domob/android/ads/C;Lcn/domob/android/ads/L;Lcn/domob/android/ads/l;)V
+.limit locals 26
+.limit stack 200
+  nop
+  aload_0
+  astore 5
+  aload 5
+  invokespecial java/lang/Object/<init>()V
+  aconst_null
+  astore 7
+  aload_0
+  astore 5
+  aload 5
+  aload 7
+  putfield cn/domob/android/ads/z/p Ljava/lang/String;
+  aconst_null
+  astore 7
+  aload_0
+  astore 5
+  aload 5
+  aload 7
+  putfield cn/domob/android/ads/z/q Landroid/content/Context;
+  aconst_null
+  astore 7
+  aload_0
+  astore 5
+  aload 5
+  aload 7
+  putfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  aconst_null
+  astore 7
+  aload_0
+  astore 5
+  aload 5
+  aload 7
+  putfield cn/domob/android/ads/z/t Ljava/lang/String;
+  iconst_0
+  istore 8
+  aload_0
+  astore 5
+  aload 5
+  iload 8
+  putfield cn/domob/android/ads/z/u Z
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 9
+  invokespecial android/os/Handler/<init>()V
+  aload_0
+  astore 5
+  aload 5
+  aload 9
+  putfield cn/domob/android/ads/z/C Landroid/os/Handler;
+  iconst_0
+  istore 8
+  iload 8
+  istore 10
+  aload_0
+  astore 5
+  aload 5
+  iload 10
+  putfield cn/domob/android/ads/z/D I
+  fconst_1
+  fstore 11
+  aload_0
+  astore 5
+  aload 5
+  fload 11
+  putfield cn/domob/android/ads/z/G F
+  fconst_1
+  fstore 11
+  aload_0
+  astore 5
+  aload 5
+  fload 11
+  putfield cn/domob/android/ads/z/H F
+  ldc ""
+  astore 12
+  aload_0
+  astore 5
+  aload 5
+  aload 12
+  putfield cn/domob/android/ads/z/U Ljava/lang/String;
+  iconst_0
+  istore 8
+  aload_0
+  astore 5
+  aload 5
+  iload 8
+  putfield cn/domob/android/ads/z/V Z
+  iconst_0
+  istore 8
+  aload_0
+  astore 5
+  aload 5
+  iload 8
+  putfield cn/domob/android/ads/z/W Z
+  iconst_0
+  istore 8
+  aload_0
+  astore 5
+  aload 5
+  iload 8
+  putfield cn/domob/android/ads/z/X Z
+  iconst_0
+  istore 8
+  aload_0
+  astore 5
+  aload 5
+  iload 8
+  putfield cn/domob/android/ads/z/Y Z
+  aconst_null
+  astore 7
+  aload_0
+  astore 5
+  aload 5
+  aload 7
+  putfield cn/domob/android/ads/z/Z Ljava/lang/String;
+  new cn/domob/android/ads/A
+  astore 13
+  aload_0
+  astore 5
+  aload 13
+  aload 5
+  invokespecial cn/domob/android/ads/A/<init>(Lcn/domob/android/ads/z;)V
+  aload_0
+  astore 5
+  aload 5
+  aload 13
+  putfield cn/domob/android/ads/z/aa Landroid/os/Handler;
+  ldc "Initialize DomobLandingPageBuilder"
+  astore 12
+  aload_0
+  astore 5
+  aload 5
+  aload 12
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_1
+  astore 5
+  aload_0
+  astore 6
+  aload 6
+  aload 5
+  putfield cn/domob/android/ads/z/T Lcn/domob/android/ads/g;
+  aload_2
+  astore 5
+  aload 5
+  invokevirtual cn/domob/android/ads/C/a()Ljava/lang/String;
+  astore 14
+  aload 14
+  invokestatic cn/domob/android/ads/z/a(Ljava/lang/String;)Ljava/lang/String;
+  astore 14
+  aload_0
+  astore 5
+  aload 5
+  aload 14
+  putfield cn/domob/android/ads/z/p Ljava/lang/String;
+  aload_2
+  astore 5
+  aload 5
+  invokevirtual cn/domob/android/ads/C/c()Ljava/util/HashMap;
+  astore 15
+  aload_0
+  astore 5
+  aload 5
+  aload 15
+  putfield cn/domob/android/ads/z/s Ljava/util/HashMap;
+  aload_2
+  astore 5
+  aload 5
+  invokevirtual cn/domob/android/ads/C/b()Ljava/lang/String;
+  astore 14
+  aload_0
+  astore 5
+  aload 5
+  aload 14
+  putfield cn/domob/android/ads/z/J Ljava/lang/String;
+  aload_1
+  astore 5
+  aload 5
+  invokevirtual cn/domob/android/ads/g/i()Landroid/content/Context;
+  astore 16
+  aload_0
+  astore 5
+  aload 5
+  aload 16
+  putfield cn/domob/android/ads/z/q Landroid/content/Context;
+  aload_2
+  astore 5
+  aload 5
+  invokevirtual cn/domob/android/ads/C/c()Ljava/util/HashMap;
+  astore 15
+  ldc "pkgName"
+  astore 12
+  aload 15
+  aload 12
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 17
+  aload 17
+  astore 18
+  aload 18
+  checkcast java/lang/String
+  astore 18
+  aload 18
+  astore 14
+  aload_0
+  astore 5
+  aload 5
+  aload 14
+  putfield cn/domob/android/ads/z/U Ljava/lang/String;
+  aload_2
+  astore 5
+  aload 5
+  invokevirtual cn/domob/android/ads/C/f()Z
+  istore 19
+  aload_0
+  astore 5
+  aload 5
+  iload 19
+  putfield cn/domob/android/ads/z/u Z
+  aload 4
+  astore 5
+  aload_0
+  astore 6
+  aload 6
+  aload 5
+  putfield cn/domob/android/ads/z/v Lcn/domob/android/ads/l;
+  invokestatic cn/domob/android/ads/p/a()Lcn/domob/android/ads/p;
+  astore 20
+  aload_0
+  astore 5
+  aload 5
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 16
+  aload 20
+  aload 16
+  invokevirtual cn/domob/android/ads/p/l(Landroid/content/Context;)I
+  istore 10
+  aload_0
+  astore 5
+  aload 5
+  iload 10
+  putfield cn/domob/android/ads/z/E I
+  invokestatic cn/domob/android/ads/p/a()Lcn/domob/android/ads/p;
+  astore 20
+  aload_0
+  astore 5
+  aload 5
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 16
+  aload 20
+  aload 16
+  invokevirtual cn/domob/android/ads/p/m(Landroid/content/Context;)I
+  istore 10
+  aload_0
+  astore 5
+  aload 5
+  iload 10
+  putfield cn/domob/android/ads/z/F I
+  invokestatic cn/domob/android/ads/p/a()Lcn/domob/android/ads/p;
+  astore 20
+  aload_0
+  astore 5
+  aload 5
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 16
+  aload 20
+  aload 16
+  invokevirtual cn/domob/android/ads/p/k(Landroid/content/Context;)F
+  fstore 21
+  fload 21
+  fstore 5
+  aload_0
+  astore 6
+  aload 6
+  fload 5
+  putfield cn/domob/android/ads/z/G F
+  invokestatic cn/domob/android/ads/p/a()Lcn/domob/android/ads/p;
+  astore 20
+  aload_0
+  astore 5
+  aload 5
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 16
+  aload 20
+  aload 16
+  invokevirtual cn/domob/android/ads/p/j(Landroid/content/Context;)F
+  fstore 21
+  fload 21
+  fstore 5
+  aload_0
+  astore 6
+  aload 6
+  fload 5
+  putfield cn/domob/android/ads/z/H F
+  aload_0
+  astore 5
+  aload 5
+  getfield cn/domob/android/ads/z/H F
+  fstore 5
+  fload 5
+  fstore 21
+  aload_0
+  astore 5
+  aload 5
+  getfield cn/domob/android/ads/z/G F
+  fstore 5
+  fload 5
+  fstore 22
+  fload 21
+  fload 22
+  fdiv
+  fstore 22
+  fload 22
+  fstore 5
+  aload_0
+  astore 6
+  aload 6
+  fload 5
+  putfield cn/domob/android/ads/z/I F
+  aload_2
+  astore 5
+  aload 5
+  invokevirtual cn/domob/android/ads/C/d()Ljava/lang/String;
+  astore 14
+  aload_0
+  astore 5
+  aload 5
+  aload 14
+  putfield cn/domob/android/ads/z/P Ljava/lang/String;
+  aload_2
+  astore 5
+  aload 5
+  invokevirtual cn/domob/android/ads/C/e()Ljava/lang/String;
+  astore 14
+  aload_0
+  astore 5
+  aload 5
+  aload 14
+  putfield cn/domob/android/ads/z/t Ljava/lang/String;
+  aload_3
+  astore 5
+  aload_0
+  astore 6
+  aload 6
+  aload 5
+  putfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+Label3:
+  aload_0
+  astore 5
+  aload 5
+  invokespecial cn/domob/android/ads/z/h()Landroid/view/View;
+  astore 23
+Label4:
+  aload 23
+  astore 5
+  aload_0
+  astore 6
+  aload 6
+  aload 5
+  putfield cn/domob/android/ads/z/M Landroid/view/View;
+Label0:
+  aload_0
+  astore 5
+  aload 5
+  invokespecial cn/domob/android/ads/z/i()V
+Label1:
+  return
+Label2:
+  astore 24
+  aload 24
+  astore 5
+  aload 5
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label0
+Label5:
+  astore 25
+  aload 25
+  astore 5
+  aload 5
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label1
+  nop
+.end <method>
+
+.method static A(Lcn/domob/android/ads/z;)V
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial cn/domob/android/ads/z/v()V
+  return
+  nop
+.end <method>
+
+.method static B(Lcn/domob/android/ads/z;)Ljava/lang/String;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/U Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static C(Lcn/domob/android/ads/z;)Lcn/domob/android/ads/l;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/v Lcn/domob/android/ads/l;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static a(Lcn/domob/android/ads/z;I)I
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/z/D I
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method protected a()Landroid/app/Dialog;
+.limit locals 4
+.limit stack 200
+  nop
+  ldc "Set open type flag to RFS"
+  astore_1
+  aload_0
+  aload_1
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  iconst_2
+  istore_2
+  aload_0
+  iload_2
+  putfield cn/domob/android/ads/z/D I
+  aload_0
+  invokevirtual cn/domob/android/ads/z/b()Landroid/app/Dialog;
+  astore_3
+  aload_3
+  areturn
+  nop
+.end <method>
+
+.method private a(Ljava/lang/String;Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
+.limit locals 20
+.limit stack 200
+  nop
+  aload_2
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+Label5:
+  aload_1
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual android/content/res/AssetManager/open(Ljava/lang/String;)Ljava/io/InputStream;
+  astore 5
+Label6:
+  aload 5
+  invokestatic android/graphics/BitmapFactory/decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
+  astore 6
+  new android/graphics/drawable/BitmapDrawable
+  astore 7
+  aload 7
+  aload 6
+  invokespecial android/graphics/drawable/BitmapDrawable/<init>(Landroid/graphics/Bitmap;)V
+Label9:
+  aload 5
+  invokevirtual java/io/InputStream/close()V
+Label11:
+  aload 7
+  areturn
+Label10:
+  astore 8
+  ldc "DomobSDK"
+  astore 9
+  ldc "asset stream close error"
+  astore 10
+  aload 9
+  aload 10
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aload 7
+  areturn
+Label4:
+  astore 11
+  aconst_null
+  astore 5
+Label2:
+  new java/lang/StringBuilder
+  astore 12
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "load "
+  astore 9
+  aload 12
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  aload_1
+  astore_3
+  aload 12
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  ldc " error"
+  astore 9
+  aload 12
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  aload 12
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 13
+  ldc "DomobSDK"
+  astore 9
+  aload 9
+  aload 13
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label13:
+  aload 5
+  invokevirtual java/io/InputStream/close()V
+Label15:
+  aconst_null
+  astore 14
+  aload 14
+  areturn
+Label14:
+  astore 15
+  ldc "DomobSDK"
+  astore 9
+  ldc "asset stream close error"
+  astore 10
+  aload 9
+  aload 10
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aconst_null
+  astore 14
+  aload 14
+  areturn
+Label3:
+  astore 16
+  aconst_null
+  astore 5
+Label1:
+  aload 5
+  invokevirtual java/io/InputStream/close()V
+Label0:
+  aload 16
+  athrow
+Label16:
+  astore 17
+  ldc "DomobSDK"
+  astore 9
+  ldc "asset stream close error"
+  astore 10
+  aload 9
+  aload 10
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label0
+Label7:
+  astore 16
+  goto Label1
+Label12:
+  astore 18
+  aload 18
+  astore 16
+  goto Label1
+Label8:
+  astore 19
+  goto Label2
+  nop
+.end <method>
+
+.method private a(Ljava/lang/String;Landroid/widget/ImageButton;)Landroid/widget/LinearLayout;
+.limit locals 14
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 4
+  aload_3
+  aload 4
+  invokespecial android/widget/LinearLayout/<init>(Landroid/content/Context;)V
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 4
+  aload_0
+  aload_1
+  aload 4
+  invokespecial cn/domob/android/ads/z/a(Ljava/lang/String;Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
+  astore 5
+  aload_2
+  aload 5
+  invokevirtual android/widget/ImageButton/setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+  aload_0
+  getfield cn/domob/android/ads/z/D I
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 7
+  iload 6
+  iload 7
+  if_icmpne Label0
+  new android/widget/LinearLayout$LayoutParams
+  astore 8
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 9
+  ldc 40.000000
+  fstore 10
+  fload 9
+  fload 10
+  fmul
+  fstore 9
+  fload 9
+  f2i
+  istore 6
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 9
+  ldc 40.000000
+  fstore 10
+  fload 9
+  fload 10
+  fmul
+  fstore 11
+  fload 11
+  f2i
+  istore 12
+  aload 8
+  iload 6
+  iload 12
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+Label1:
+  aload_2
+  aload 8
+  invokevirtual android/widget/ImageButton/setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  new android/widget/LinearLayout$LayoutParams
+  astore 8
+  bipush -2
+  istore 7
+  bipush -2
+  istore 13
+  fconst_1
+  fstore 10
+  aload 8
+  iload 7
+  iload 13
+  fload 10
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(IIF)V
+  aload_3
+  aload 8
+  invokevirtual android/widget/LinearLayout/setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  bipush 17
+  istore 7
+  aload_3
+  iload 7
+  invokevirtual android/widget/LinearLayout/setGravity(I)V
+  aload_3
+  aload_2
+  invokevirtual android/widget/LinearLayout/addView(Landroid/view/View;)V
+  aload_3
+  areturn
+Label0:
+  new android/widget/LinearLayout$LayoutParams
+  astore 8
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 11
+  ldc 30.000000
+  fstore 10
+  fload 11
+  fload 10
+  fmul
+  fstore 11
+  fload 11
+  f2i
+  istore 6
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 11
+  ldc 30.000000
+  fstore 10
+  fload 11
+  fload 10
+  fmul
+  fstore 11
+  fload 11
+  f2i
+  istore 12
+  aload 8
+  iload 6
+  iload 12
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  goto Label1
+  nop
+.end <method>
+
+.method static a(Lcn/domob/android/ads/z;)Lcn/domob/android/ads/L;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static a(Lcn/domob/android/ads/z;Lcn/domob/android/ads/L;)Lcn/domob/android/ads/L;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static a(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 13
+.limit stack 200
+  nop
+  aload_0
+  invokevirtual java/lang/String/trim()Ljava/lang/String;
+  astore_0
+  bipush 58
+  istore_2
+  aload_0
+  iload_2
+  invokevirtual java/lang/String/indexOf(I)I
+  istore_1
+  iconst_1
+  istore_3
+  iconst_0
+  istore 4
+Label5:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  iload_1
+  if_icmpge Label0
+  aload_0
+  iload 4
+  invokevirtual java/lang/String/charAt(I)C
+  istore 5
+  iload 5
+  invokestatic java/lang/Character/isLetter(C)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifne Label1
+Label0:
+  ldc "http://"
+  astore 7
+  aload_0
+  aload 7
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifne Label2
+  ldc "https://"
+  astore 7
+  aload_0
+  aload 7
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label3
+Label2:
+  aload_0
+  areturn
+Label1:
+  iload 5
+  invokestatic java/lang/Character/isLowerCase(C)Z
+  istore 6
+  iload_3
+  iload 6
+  iand
+  istore_3
+  iload_1
+  iconst_m1
+  iadd
+  istore 8
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  iload 8
+  if_icmpne Label4
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifne Label4
+  new java/lang/StringBuilder
+  astore 9
+  aload 9
+  invokespecial java/lang/StringBuilder/<init>()V
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  iload_1
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 10
+  aload 10
+  invokevirtual java/lang/String/toLowerCase()Ljava/lang/String;
+  astore 10
+  aload 9
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload_0
+  iload_1
+  invokevirtual java/lang/String/substring(I)Ljava/lang/String;
+  astore 10
+  aload 9
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_0
+Label4:
+  iload 4
+  iconst_1
+  iadd
+  istore 4
+  goto Label5
+Label3:
+  ldc "http:"
+  astore 7
+  aload_0
+  aload 7
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifne Label6
+  ldc "https:"
+  astore 7
+  aload_0
+  aload 7
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label2
+Label6:
+  ldc "http:/"
+  astore 7
+  aload_0
+  aload 7
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifne Label7
+  ldc "https:/"
+  astore 7
+  aload_0
+  aload 7
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label8
+Label7:
+  ldc "/"
+  astore 7
+  ldc "//"
+  astore 12
+  aload_0
+  aload 7
+  aload 12
+  invokevirtual java/lang/String/replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  astore 11
+  aload 11
+  areturn
+Label8:
+  ldc ":"
+  astore 7
+  ldc "://"
+  astore 12
+  aload_0
+  aload 7
+  aload 12
+  invokevirtual java/lang/String/replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  astore 11
+  aload 11
+  areturn
+  nop
+.end <method>
+
+.method static a(Lcn/domob/android/ads/z;Ljava/lang/String;)V
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial cn/domob/android/ads/z/b(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method static a(Lcn/domob/android/ads/z;Ljava/lang/String;Landroid/content/Context;ZLjava/lang/String;)V
+  .synthetic
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  iload_3
+  aload 4
+  invokespecial cn/domob/android/ads/z/a(Ljava/lang/String;Landroid/content/Context;ZLjava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method private a(Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;)V
+.limit locals 8
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "startDownload url:"
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload_0
+  aload 6
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  getfield cn/domob/android/ads/z/U Ljava/lang/String;
+  astore 6
+  new cn/domob/android/ads/z$6
+  astore 7
+  aload 7
+  aload_0
+  aload_2
+  invokespecial cn/domob/android/ads/z$6/<init>(Lcn/domob/android/ads/z;Landroid/content/Context;)V
+  aload_1
+  aload_3
+  aload 6
+  aload_2
+  aload 7
+  invokestatic cn/domob/android/a/a/a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Lcn/domob/android/a/c;)V
+  return
+  nop
+.end <method>
+
+.method private a(Ljava/lang/String;Landroid/content/Context;ZLjava/lang/String;)V
+.limit locals 15
+.limit stack 200
+  nop
+  aload_2
+  aload_1
+  aload 4
+  invokestatic cn/domob/android/a/a/a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  astore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_2
+  ifeq Label1
+  aload_2
+  astore 7
+  aload 7
+  checkcast android/app/Activity
+  astore 7
+  aload 7
+  astore 6
+  aload 6
+  invokevirtual android/app/Activity/hasWindowFocus()Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label1
+  new android/app/AlertDialog$Builder
+  astore 8
+  aload 8
+  aload_2
+  invokespecial android/app/AlertDialog$Builder/<init>(Landroid/content/Context;)V
+  ldc "\u5b89\u88c5"
+  astore 9
+  aload 8
+  aload 9
+  invokevirtual android/app/AlertDialog$Builder/setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+  astore 8
+  new java/lang/StringBuilder
+  astore 10
+  aload 10
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 10
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 10
+  ldc "\u5df2\u7ecf\u4e0b\u8f7d\u662f\u5426\u73b0\u5728\u5b89\u88c5?"
+  astore 9
+  aload 10
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 10
+  aload 10
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload 8
+  aload 4
+  invokevirtual android/app/AlertDialog$Builder/setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+  astore 8
+  new cn/domob/android/ads/z$5
+  astore 11
+  aload 11
+  aload_0
+  invokespecial cn/domob/android/ads/z$5/<init>(Lcn/domob/android/ads/z;)V
+  ldc "\u5426"
+  astore 9
+  aload 8
+  aload 9
+  aload 11
+  invokevirtual android/app/AlertDialog$Builder/setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+  astore 8
+  new cn/domob/android/ads/z$4
+  astore 12
+  aload 12
+  aload_0
+  aload_2
+  aload 5
+  invokespecial cn/domob/android/ads/z$4/<init>(Lcn/domob/android/ads/z;Landroid/content/Context;Landroid/content/Intent;)V
+  ldc "\u662f"
+  astore 9
+  aload 8
+  aload 9
+  aload 12
+  invokevirtual android/app/AlertDialog$Builder/setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+  astore 8
+  aload 8
+  invokevirtual android/app/AlertDialog$Builder/show()Landroid/app/AlertDialog;
+  pop
+Label1:
+  return
+Label0:
+  ldc "\u5f00\u59cb\u4e0b\u8f7d"
+  astore 9
+  iconst_0
+  istore 14
+  aload_2
+  aload 9
+  iload 14
+  invokestatic android/widget/Toast/makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+  astore 13
+  aload 13
+  invokevirtual android/widget/Toast/show()V
+  aload_0
+  aload_1
+  aload_2
+  aload 4
+  invokespecial cn/domob/android/ads/z/a(Ljava/lang/String;Landroid/content/Context;Ljava/lang/String;)V
+  goto Label1
+  nop
+.end <method>
+
+.method protected a(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 8
+.limit stack 200
+  nop
+  iconst_2
+  istore 4
+  iload 4
+  anewarray java/lang/Object
+  astore_3
+  iconst_0
+  istore 4
+  aload_3
+  iload 4
+  aload_1
+  aastore
+  iconst_1
+  istore 4
+  aload_3
+  iload 4
+  aload_2
+  aastore
+  ldc "call showMore() from js. url: %s; openType: %s"
+  astore 6
+  aload 6
+  aload_3
+  invokestatic java/lang/String/format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  astore 5
+  aload 5
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;)V
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/z/O Ljava/lang/String;
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/z/N Ljava/lang/String;
+  aload_0
+  getfield cn/domob/android/ads/z/aa Landroid/os/Handler;
+  astore 7
+  iconst_1
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method private a(II)Z
+.limit locals 6
+.limit stack 200
+  nop
+  iload_2
+  invokestatic java/lang/Integer/toBinaryString(I)Ljava/lang/String;
+  astore_3
+  aload_3
+  invokevirtual java/lang/String/length()I
+  istore 4
+  iload 4
+  iconst_m1
+  iadd
+  istore 4
+  iload_1
+  iload 4
+  iushr
+  istore_1
+  iload_1
+  iconst_2
+  irem
+  istore_1
+  iload_2
+  iload 4
+  iushr
+  istore 4
+  iload 4
+  iconst_2
+  irem
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload 4
+  if_icmpne Label0
+  iconst_1
+  istore 5
+  iload 5
+  ireturn
+Label0:
+  iconst_0
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method static a(Lcn/domob/android/ads/z;Z)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/z/X Z
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static b(Lcn/domob/android/ads/z;)I
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/D I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method protected b()Landroid/app/Dialog;
+.limit locals 41
+.limit stack 200
+  nop
+  ldc "Start to build FS/RFS landingpage"
+  astore 10
+  aload_0
+  astore_1
+  aload_1
+  aload 10
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 12
+  aload 11
+  aload 12
+  invokespecial android/widget/RelativeLayout/<init>(Landroid/content/Context;)V
+  aload_0
+  astore_1
+  aload_1
+  aload 11
+  putfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore 11
+  new android/widget/RelativeLayout$LayoutParams
+  astore 13
+  iconst_m1
+  istore 14
+  iconst_m1
+  istore 15
+  aload 13
+  iload 14
+  iload 15
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  aload 11
+  aload 13
+  invokevirtual android/widget/RelativeLayout/setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore 11
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/z/l()Landroid/webkit/WebView;
+  astore 16
+  aload 11
+  aload 16
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;)V
+  new android/widget/RelativeLayout$LayoutParams
+  astore 13
+  bipush -2
+  istore 14
+  bipush -2
+  istore 15
+  aload 13
+  iload 14
+  iload 15
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  bipush 13
+  istore 14
+  aload 13
+  iload 14
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore 11
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/Q Landroid/widget/ImageView;
+  astore_1
+  aload_1
+  astore 17
+  aload 17
+  astore_1
+  aload 11
+  aload_1
+  aload 13
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/z/j()Z
+  istore 18
+  iload 18
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 18
+  ifne Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/D I
+  istore_1
+  iload_1
+  istore 19
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 14
+  iload 19
+  istore_1
+  iload_1
+  iload 14
+  if_icmpne Label1
+Label0:
+  new android/app/Dialog
+  astore 20
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 12
+  ldc 16973841
+  istore 14
+  aload 20
+  astore_1
+  aload_1
+  aload 12
+  iload 14
+  invokespecial android/app/Dialog/<init>(Landroid/content/Context;I)V
+  aload 20
+  astore_1
+  aload_0
+  astore_2
+  aload_2
+  aload_1
+  putfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  new android/widget/RelativeLayout$LayoutParams
+  astore 13
+  bipush -2
+  istore 14
+  bipush -2
+  istore 15
+  aload 13
+  iload 14
+  iload 15
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  bipush 11
+  istore 14
+  aload 13
+  iload 14
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore 11
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/z/m()Landroid/widget/LinearLayout;
+  astore 21
+  aload 21
+  astore_1
+  aload 11
+  aload_1
+  aload 13
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+Label2:
+  new android/view/animation/TranslateAnimation
+  astore 22
+  iconst_1
+  istore 14
+  fconst_0
+  fstore 23
+  iconst_1
+  istore 15
+  fconst_0
+  fstore 24
+  iconst_1
+  istore 25
+  fconst_1
+  fstore 26
+  iconst_1
+  istore 27
+  fconst_0
+  fstore 28
+  aload 22
+  astore_1
+  iload 14
+  istore_2
+  fload 23
+  fstore_3
+  iload 15
+  istore 4
+  fload 24
+  fstore 5
+  iload 25
+  istore 6
+  fload 26
+  fstore 7
+  iload 27
+  istore 8
+  fload 28
+  fstore 9
+  aload_1
+  iload_2
+  fload_3
+  iload 4
+  fload 5
+  iload 6
+  fload 7
+  iload 8
+  fload 9
+  invokespecial android/view/animation/TranslateAnimation/<init>(IFIFIFIF)V
+  aload 22
+  astore_1
+  aload_0
+  astore_2
+  aload_2
+  aload_1
+  putfield cn/domob/android/ads/z/y Landroid/view/animation/Animation;
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/y Landroid/view/animation/Animation;
+  astore_1
+  aload_1
+  astore 29
+  ldc2_w 500
+  lstore 30
+  aload 29
+  astore_1
+  lload 30
+  lstore_2
+  aload_1
+  lload_2
+  invokevirtual android/view/animation/Animation/setDuration(J)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore 11
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/y Landroid/view/animation/Animation;
+  astore_1
+  aload_1
+  astore 29
+  aload 29
+  astore_1
+  aload 11
+  aload_1
+  invokevirtual android/widget/RelativeLayout/startAnimation(Landroid/view/animation/Animation;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore_1
+  aload_1
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  invokevirtual android/app/Dialog/getWindow()Landroid/view/Window;
+  astore 32
+  aload 32
+  astore_1
+  aload_1
+  invokevirtual android/view/Window/getAttributes()Landroid/view/WindowManager$LayoutParams;
+  astore 33
+  ldc 0.500000
+  fstore 23
+  fload 23
+  fstore_1
+  aload 33
+  astore_2
+  aload_2
+  fload_1
+  putfield android/view/WindowManager$LayoutParams/dimAmount F
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore_1
+  aload_1
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  invokevirtual android/app/Dialog/getWindow()Landroid/view/Window;
+  astore 32
+  iconst_2
+  istore 14
+  iconst_2
+  istore 15
+  aload 32
+  astore_1
+  aload_1
+  iload 14
+  iload 15
+  invokevirtual android/view/Window/setFlags(II)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore_1
+  aload_1
+  astore 20
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore 11
+  aload 20
+  astore_1
+  aload_1
+  aload 11
+  invokevirtual android/app/Dialog/setContentView(Landroid/view/View;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore_1
+  aload_1
+  astore 20
+  new cn/domob/android/ads/z$1
+  astore 34
+  aload 34
+  astore_1
+  aload_0
+  astore_2
+  aload_1
+  aload_2
+  invokespecial cn/domob/android/ads/z$1/<init>(Lcn/domob/android/ads/z;)V
+  aload 20
+  astore_1
+  aload 34
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/app/Dialog/setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore_1
+  aload_1
+  astore 20
+  aload 20
+  areturn
+Label1:
+  new android/app/Dialog
+  astore 20
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 12
+  ldc 16973840
+  istore 14
+  aload 20
+  astore_1
+  aload_1
+  aload 12
+  iload 14
+  invokespecial android/app/Dialog/<init>(Landroid/content/Context;I)V
+  aload 20
+  astore_1
+  aload_0
+  astore_2
+  aload_2
+  aload_1
+  putfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore_1
+  aload_1
+  astore 35
+  aload 35
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/L/getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+  astore 36
+  aload 36
+  astore 37
+  aload 37
+  checkcast android/widget/RelativeLayout$LayoutParams
+  astore 37
+  aload 37
+  astore 13
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 38
+  ldc 40.000000
+  fstore 23
+  fload 23
+  fload 38
+  fmul
+  fstore 39
+  fload 39
+  fstore_1
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 19
+  aload 13
+  iload_1
+  putfield android/view/ViewGroup$MarginLayoutParams/bottomMargin I
+  new android/widget/RelativeLayout$LayoutParams
+  astore 13
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 38
+  ldc 40.000000
+  fstore 23
+  fload 23
+  fload 38
+  fmul
+  fstore 39
+  fload 39
+  fstore_1
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 19
+  iconst_m1
+  istore 14
+  iload 19
+  istore_1
+  aload 13
+  iload 14
+  iload_1
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  bipush 12
+  istore 14
+  aload 13
+  iload 14
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore 11
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/M Landroid/view/View;
+  astore_1
+  aload_1
+  astore 40
+  aload 40
+  astore_1
+  aload 11
+  aload_1
+  aload 13
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  goto Label2
+  nop
+.end <method>
+
+.method static b(Lcn/domob/android/ads/z;Ljava/lang/String;)Ljava/lang/String;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/z/p Ljava/lang/String;
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private b(Ljava/lang/String;)V
+.limit locals 14
+.limit stack 200
+  nop
+  ldc "reportState"
+  astore_2
+  aload_0
+  aload_2
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  new cn/domob/android/ads/D
+  astore_3
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 4
+  aload_3
+  aload 4
+  invokespecial cn/domob/android/ads/D/<init>(Landroid/content/Context;)V
+  new cn/domob/android/ads/D$c
+  astore 5
+  aload_3
+  invokevirtual java/lang/Object/getClass()Ljava/lang/Class;
+  pop
+  aload 5
+  aload_3
+  invokespecial cn/domob/android/ads/D$c/<init>(Lcn/domob/android/ads/D;)V
+  aload 5
+  aload_1
+  putfield cn/domob/android/ads/D$c/b Ljava/lang/String;
+  iconst_1
+  istore 6
+  aload 5
+  iload 6
+  putfield cn/domob/android/ads/D$c/c I
+  new java/util/ArrayList
+  astore 7
+  aload 7
+  invokespecial java/util/ArrayList/<init>()V
+  aload 5
+  aload 7
+  putfield cn/domob/android/ads/D$c/d Ljava/util/ArrayList;
+  aload 5
+  getfield cn/domob/android/ads/D$c/d Ljava/util/ArrayList;
+  astore 7
+  aload_0
+  getfield cn/domob/android/ads/z/s Ljava/util/HashMap;
+  astore 8
+  ldc "id"
+  astore_2
+  aload 8
+  aload_2
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 9
+  aload 7
+  aload 9
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  aload_0
+  getfield cn/domob/android/ads/z/s Ljava/util/HashMap;
+  astore 8
+  ldc "rp_md5"
+  astore_2
+  aload 8
+  aload_2
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 9
+  aload 9
+  astore 11
+  aload 11
+  checkcast java/lang/String
+  astore 11
+  aload 11
+  astore 10
+  aload 5
+  aload 10
+  putfield cn/domob/android/ads/D$c/e Ljava/lang/String;
+  aload_0
+  getfield cn/domob/android/ads/z/t Ljava/lang/String;
+  astore 10
+  aload 5
+  aload 10
+  putfield cn/domob/android/ads/D$c/j Ljava/lang/String;
+  aload_0
+  getfield cn/domob/android/ads/z/T Lcn/domob/android/ads/g;
+  astore 12
+  aload 12
+  invokevirtual cn/domob/android/ads/g/a()Lcn/domob/android/ads/k;
+  astore 13
+  aload 13
+  invokevirtual cn/domob/android/ads/k/f()Ljava/lang/String;
+  astore 10
+  aload 5
+  aload 10
+  putfield cn/domob/android/ads/D$c/f Ljava/lang/String;
+  aload_0
+  getfield cn/domob/android/ads/z/Z Ljava/lang/String;
+  astore 10
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 10
+  ifeq Label0
+  aload_0
+  getfield cn/domob/android/ads/z/Z Ljava/lang/String;
+  astore 10
+  aload 5
+  aload 10
+  putfield cn/domob/android/ads/D$c/i Ljava/lang/String;
+Label0:
+  aload_3
+  aload 5
+  invokevirtual cn/domob/android/ads/D/a(Lcn/domob/android/ads/D$c;)V
+  return
+  nop
+.end <method>
+
+.method static b(Lcn/domob/android/ads/z;Z)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/z/Y Z
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static c(Lcn/domob/android/ads/z;)I
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/S I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method protected c()Landroid/app/Dialog;
+.limit locals 67
+.limit stack 200
+  nop
+  iconst_1
+  istore 10
+  aload_0
+  astore_1
+  aload_1
+  iload 10
+  putfield cn/domob/android/ads/z/D I
+  new java/lang/StringBuilder
+  astore 11
+  aload 11
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Start to build HS landingpage, flag:"
+  astore 12
+  aload 11
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/D I
+  istore 13
+  aload 11
+  iload 13
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 11
+  aload 11
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  aload_0
+  astore_1
+  aload_1
+  aload 14
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 16
+  aload 15
+  aload 16
+  invokespecial android/widget/RelativeLayout/<init>(Landroid/content/Context;)V
+  aload_0
+  astore_1
+  aload_1
+  aload 15
+  putfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore 15
+  new android/widget/LinearLayout$LayoutParams
+  astore 17
+  bipush -2
+  istore 10
+  bipush -2
+  istore 18
+  aload 17
+  astore_1
+  iload 18
+  istore_2
+  aload_1
+  iload 10
+  iload_2
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  aload 17
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual android/widget/RelativeLayout/setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  new android/widget/RelativeLayout
+  astore 15
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 16
+  aload 15
+  aload 16
+  invokespecial android/widget/RelativeLayout/<init>(Landroid/content/Context;)V
+  aload_0
+  astore_1
+  aload_1
+  aload 15
+  putfield cn/domob/android/ads/z/x Landroid/widget/RelativeLayout;
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/x Landroid/widget/RelativeLayout;
+  astore 15
+  new android/widget/LinearLayout$LayoutParams
+  astore 17
+  bipush -2
+  istore 10
+  bipush -2
+  istore 18
+  aload 17
+  astore_1
+  iload 18
+  istore_2
+  aload_1
+  iload 10
+  iload_2
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  aload 17
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual android/widget/RelativeLayout/setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/J Ljava/lang/String;
+  astore 14
+  ldc "inapp_slider"
+  astore 12
+  aload 14
+  aload 12
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 19
+  iload 19
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 19
+  ifeq Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/x Landroid/widget/RelativeLayout;
+  astore 15
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/I F
+  fstore_1
+  fload_1
+  fstore 20
+  ldc 10.000000
+  fstore 21
+  fload 21
+  fload 20
+  fdiv
+  fstore 20
+  fload 20
+  fstore_1
+  fload_1
+  f2i
+  istore 13
+  iconst_0
+  istore 10
+  iconst_0
+  istore 18
+  iconst_0
+  istore 22
+  iload 18
+  istore_1
+  iload 22
+  istore_2
+  aload 15
+  iload 10
+  iload 13
+  iload_1
+  iload_2
+  invokevirtual android/widget/RelativeLayout/setPadding(IIII)V
+Label11:
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/z/l()Landroid/webkit/WebView;
+  astore 23
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/x Landroid/widget/RelativeLayout;
+  astore 15
+  aload 23
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;)V
+  new android/widget/RelativeLayout$LayoutParams
+  astore 24
+  bipush -2
+  istore 10
+  bipush -2
+  istore 18
+  aload 24
+  astore_1
+  iload 18
+  istore_2
+  aload_1
+  iload 10
+  iload_2
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  bipush 13
+  istore 10
+  aload 24
+  astore_1
+  aload_1
+  iload 10
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/x Landroid/widget/RelativeLayout;
+  astore 15
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/Q Landroid/widget/ImageView;
+  astore_1
+  aload_1
+  astore 25
+  aload 25
+  astore_1
+  aload 24
+  astore_2
+  aload 15
+  aload_1
+  aload_2
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  new android/widget/RelativeLayout$LayoutParams
+  astore 24
+  bipush -2
+  istore 10
+  bipush -2
+  istore 18
+  aload 24
+  astore_1
+  iload 18
+  istore_2
+  aload_1
+  iload 10
+  iload_2
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  bipush 11
+  istore 10
+  aload 24
+  astore_1
+  aload_1
+  iload 10
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  ldc "inapp_dlg"
+  astore 26
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/J Ljava/lang/String;
+  astore 14
+  aload 26
+  astore_1
+  aload_1
+  aload 14
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 19
+  iload 19
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 19
+  ifeq Label1
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/x Landroid/widget/RelativeLayout;
+  astore 15
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/z/m()Landroid/widget/LinearLayout;
+  astore 27
+  aload 27
+  astore_1
+  aload 24
+  astore_2
+  aload 15
+  aload_1
+  aload_2
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+Label1:
+  new android/app/Dialog
+  astore 28
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 16
+  ldc 16973840
+  istore 10
+  aload 28
+  astore_1
+  aload_1
+  aload 16
+  iload 10
+  invokespecial android/app/Dialog/<init>(Landroid/content/Context;I)V
+  aload 28
+  astore_1
+  aload_0
+  astore_2
+  aload_2
+  aload_1
+  putfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore_1
+  aload_1
+  astore 28
+  aload 28
+  astore_1
+  aload_1
+  invokevirtual android/app/Dialog/getWindow()Landroid/view/Window;
+  astore 29
+  aload 29
+  astore_1
+  aload_1
+  invokevirtual android/view/Window/getAttributes()Landroid/view/WindowManager$LayoutParams;
+  astore 30
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 16
+  aload 16
+  astore 32
+  aload 32
+  checkcast android/app/Activity
+  astore 32
+  aload 32
+  astore 31
+  aload 31
+  astore_1
+  aload_1
+  invokevirtual android/app/Activity/getRequestedOrientation()I
+  istore 13
+  aload_0
+  astore_1
+  aload_1
+  iload 13
+  putfield cn/domob/android/ads/z/S I
+  invokestatic cn/domob/android/ads/p/a()Lcn/domob/android/ads/p;
+  astore 33
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 16
+  aload 33
+  astore_1
+  aload_1
+  aload 16
+  invokevirtual cn/domob/android/ads/p/i(Landroid/content/Context;)Ljava/lang/String;
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  ldc "v"
+  astore 12
+  aload 26
+  astore_1
+  aload_1
+  aload 12
+  if_acmpne Label2
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 16
+  aload 16
+  astore 34
+  aload 34
+  checkcast android/app/Activity
+  astore 34
+  aload 34
+  astore 31
+  iconst_1
+  istore 10
+  aload 31
+  astore_1
+  aload_1
+  iload 10
+  invokevirtual android/app/Activity/setRequestedOrientation(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/F I
+  istore 13
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/E I
+  istore_1
+  iload_1
+  istore 35
+  iload 13
+  iload 35
+  idiv
+  istore 35
+  iload 35
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 10
+  iload 35
+  istore_1
+  iload_1
+  iload 10
+  if_icmplt Label3
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/E I
+  istore_1
+  iload_1
+  istore 35
+  iload 35
+  bipush -10
+  iadd
+  istore 35
+  iload 35
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 300
+  istore 10
+  iload 35
+  istore_1
+  iload_1
+  iload 10
+  if_icmplt Label4
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/E I
+  istore_1
+  iload_1
+  istore 35
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 20
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/I F
+  fstore_1
+  fload_1
+  fstore 36
+  fload 20
+  fload 36
+  fdiv
+  fstore 36
+  fload 36
+  fstore_1
+  fload_1
+  f2d
+  dstore_1
+  dload_1
+  dstore 37
+  ldc2_w 0.950000000000000
+  dstore 41
+  dload 37
+  dload 41
+  dmul
+  dstore 39
+  dload 39
+  dstore_1
+  dload_1
+  d2i
+  istore_1
+  iload_1
+  istore 35
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/width I
+  aload 30
+  astore_1
+  aload_1
+  getfield android/view/ViewGroup$LayoutParams/width I
+  istore_1
+  iload_1
+  istore 35
+  iload 35
+  iconst_4
+  imul
+  istore 35
+  iload 35
+  iconst_3
+  idiv
+  istore 35
+  iload 35
+  istore_1
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/height I
+Label12:
+  ldc 0.700000
+  fstore 21
+  fload 21
+  fstore_1
+  aload 30
+  astore_2
+  aload_2
+  fload_1
+  putfield android/view/WindowManager$LayoutParams/dimAmount F
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/J Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 26
+  ldc "inapp_slider"
+  astore 12
+  aload 26
+  astore_1
+  aload_1
+  aload 12
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 19
+  iload 19
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 19
+  ifeq Label5
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/E I
+  istore_1
+  iload_1
+  istore 35
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 36
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/I F
+  fstore_1
+  fload_1
+  fstore 20
+  fload 36
+  fstore_1
+  fload 20
+  fstore_2
+  fload_1
+  fload_2
+  fdiv
+  fstore_1
+  fload_1
+  fstore 36
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 35
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/width I
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 20
+  ldc 315.000000
+  fstore 21
+  fload 21
+  fload 20
+  fmul
+  fstore 36
+  fload 36
+  fstore_1
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 35
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/height I
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/F I
+  istore_1
+  iload_1
+  istore 35
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 36
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/I F
+  fstore_1
+  fload_1
+  fstore 20
+  fload 36
+  fstore_1
+  fload 20
+  fstore_2
+  fload_1
+  fload_2
+  fdiv
+  fstore_1
+  fload_1
+  fstore 36
+  fconst_2
+  fstore 21
+  fload 36
+  fstore_1
+  fload 21
+  fstore_2
+  fload_1
+  fload_2
+  fdiv
+  fstore_1
+  fload_1
+  fstore 36
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/T Lcn/domob/android/ads/g;
+  astore_1
+  aload_1
+  astore 43
+  aload 43
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/g/l()I
+  istore 35
+  iload 35
+  istore_1
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 20
+  fload 36
+  fstore_1
+  fload 20
+  fstore_2
+  fload_1
+  fload_2
+  fsub
+  fstore_1
+  fload_1
+  fstore 36
+  aload 30
+  astore_1
+  aload_1
+  getfield android/view/ViewGroup$LayoutParams/height I
+  istore_1
+  iload_1
+  istore 35
+  iload 35
+  iconst_2
+  idiv
+  istore 35
+  iload 35
+  istore_1
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 20
+  fload 36
+  fstore_1
+  fload 20
+  fstore_2
+  fload_1
+  fload_2
+  fsub
+  fstore_1
+  fload_1
+  fstore 36
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 35
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/WindowManager$LayoutParams/y I
+  fconst_0
+  fstore 21
+  fload 21
+  fstore_1
+  aload 30
+  astore_2
+  aload_2
+  fload_1
+  putfield android/view/WindowManager$LayoutParams/dimAmount F
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual android/view/View/getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+  astore 44
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/E I
+  istore_1
+  iload_1
+  istore 35
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 36
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/I F
+  fstore_1
+  fload_1
+  fstore 20
+  fload 36
+  fstore_1
+  fload 20
+  fstore_2
+  fload_1
+  fload_2
+  fdiv
+  fstore_1
+  fload_1
+  fstore 36
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 35
+  aload 44
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/width I
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/z/k()Landroid/widget/Button;
+  astore 45
+  aload 45
+  astore_1
+  aload_1
+  invokevirtual android/widget/Button/getBackground()Landroid/graphics/drawable/Drawable;
+  astore 46
+  bipush 100
+  istore 10
+  aload 46
+  astore_1
+  aload_1
+  iload 10
+  invokevirtual android/graphics/drawable/Drawable/setAlpha(I)V
+  new android/widget/RelativeLayout$LayoutParams
+  astore 24
+  iconst_m1
+  istore 10
+  iconst_m1
+  istore 18
+  aload 24
+  astore_1
+  iload 18
+  istore_2
+  aload_1
+  iload 10
+  iload_2
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  bipush 12
+  istore 10
+  aload 24
+  astore_1
+  aload_1
+  iload 10
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 20
+  ldc 315.000000
+  fstore 21
+  fload 21
+  fload 20
+  fmul
+  fstore 36
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 20
+  ldc 10.000000
+  fstore 21
+  fload 20
+  fstore_1
+  fload 21
+  fstore_2
+  fload_1
+  fload_2
+  fmul
+  fstore_1
+  fload_1
+  fstore 20
+  fload 36
+  fstore_1
+  fload 20
+  fstore_2
+  fload_1
+  fload_2
+  fsub
+  fstore_1
+  fload_1
+  fstore 36
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 35
+  aload 24
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/height I
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore 15
+  aload 45
+  astore_1
+  aload 24
+  astore_2
+  aload 15
+  aload_1
+  aload_2
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+Label5:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore_1
+  aload_1
+  astore 28
+  aload 28
+  astore_1
+  aload_1
+  invokevirtual android/app/Dialog/getWindow()Landroid/view/Window;
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/view/Window/setAttributes(Landroid/view/WindowManager$LayoutParams;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore_1
+  aload_1
+  astore 28
+  aload 28
+  astore_1
+  aload_1
+  invokevirtual android/app/Dialog/getWindow()Landroid/view/Window;
+  astore 29
+  iconst_2
+  istore 10
+  iconst_2
+  istore 18
+  aload 29
+  astore_1
+  iload 18
+  istore_2
+  aload_1
+  iload 10
+  iload_2
+  invokevirtual android/view/Window/setFlags(II)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore 15
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/z/k()Landroid/widget/Button;
+  astore 45
+  aload 45
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;)V
+  ldc "inapp_slider"
+  astore 26
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/J Ljava/lang/String;
+  astore 14
+  aload 26
+  astore_1
+  aload_1
+  aload 14
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 19
+  iload 19
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 19
+  ifeq Label6
+  new android/widget/TextView
+  astore 47
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 16
+  aload 47
+  astore_1
+  aload_1
+  aload 16
+  invokespecial android/widget/TextView/<init>(Landroid/content/Context;)V
+  getstatic android/widget/TextView$BufferType/SPANNABLE Landroid/widget/TextView$BufferType;
+  astore 48
+  ldc "   domob"
+  astore 12
+  aload 47
+  astore_1
+  aload 48
+  astore_2
+  aload_1
+  aload 12
+  aload_2
+  invokevirtual android/widget/TextView/setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
+  new android/widget/RelativeLayout$LayoutParams
+  astore 24
+  bipush -2
+  istore 10
+  bipush -2
+  istore 18
+  aload 24
+  astore_1
+  iload 18
+  istore_2
+  aload_1
+  iload 10
+  iload_2
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  bipush 9
+  istore 10
+  aload 24
+  astore_1
+  aload_1
+  iload 10
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore 15
+  aload 47
+  astore_1
+  aload 24
+  astore_2
+  aload 15
+  aload_1
+  aload_2
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+Label6:
+  new android/widget/RelativeLayout$LayoutParams
+  astore 24
+  bipush -2
+  istore 10
+  bipush -2
+  istore 18
+  aload 24
+  astore_1
+  iload 18
+  istore_2
+  aload_1
+  iload 10
+  iload_2
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  bipush 14
+  istore 10
+  aload 24
+  astore_1
+  aload_1
+  iload 10
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  ldc "inapp_slider"
+  astore 26
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/J Ljava/lang/String;
+  astore 14
+  aload 26
+  astore_1
+  aload_1
+  aload 14
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 19
+  iload 19
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 19
+  ifeq Label7
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/F I
+  istore_1
+  iload_1
+  istore 35
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 800
+  istore 10
+  iload 35
+  istore_1
+  iload_1
+  iload 10
+  if_icmpge Label8
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/I F
+  fstore_1
+  fload_1
+  fstore 36
+  ldc 10.000000
+  fstore 21
+  fload 21
+  fload 36
+  fdiv
+  fstore 36
+  fload 36
+  fstore_1
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 35
+  aload 24
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$MarginLayoutParams/topMargin I
+Label7:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore 15
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/x Landroid/widget/RelativeLayout;
+  astore_1
+  aload_1
+  astore 49
+  aload 49
+  astore_1
+  aload 24
+  astore_2
+  aload 15
+  aload_1
+  aload_2
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore_1
+  aload_1
+  astore 28
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore_1
+  aload_1
+  astore 49
+  aload 28
+  astore_1
+  aload 49
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/app/Dialog/setContentView(Landroid/view/View;)V
+  new android/view/animation/ScaleAnimation
+  astore 50
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore_1
+  aload_1
+  astore 28
+  aload 28
+  astore_1
+  aload_1
+  invokevirtual android/app/Dialog/getWindow()Landroid/view/Window;
+  astore 29
+  aload 29
+  astore_1
+  aload_1
+  invokevirtual android/view/Window/getAttributes()Landroid/view/WindowManager$LayoutParams;
+  astore 30
+  aload 30
+  astore_1
+  aload_1
+  getfield android/view/ViewGroup$LayoutParams/width I
+  istore_1
+  iload_1
+  istore 35
+  iload 35
+  iconst_2
+  idiv
+  istore 35
+  iload 35
+  istore_1
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 51
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore_1
+  aload_1
+  astore 28
+  aload 28
+  astore_1
+  aload_1
+  invokevirtual android/app/Dialog/getWindow()Landroid/view/Window;
+  astore 29
+  aload 29
+  astore_1
+  aload_1
+  invokevirtual android/view/Window/getAttributes()Landroid/view/WindowManager$LayoutParams;
+  astore 30
+  aload 30
+  astore_1
+  aload_1
+  getfield android/view/ViewGroup$LayoutParams/height I
+  istore_1
+  iload_1
+  istore 35
+  iload 35
+  iconst_2
+  idiv
+  istore 35
+  iload 35
+  istore_1
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 52
+  fconst_0
+  fstore 21
+  fconst_1
+  fstore 53
+  fconst_0
+  fstore 54
+  fconst_1
+  fstore 55
+  aload 50
+  astore_1
+  fload 21
+  fstore_2
+  fload 53
+  fstore_3
+  fload 54
+  fstore 4
+  fload 55
+  fstore 5
+  fload 51
+  fstore 6
+  fload 52
+  fstore 7
+  aload_1
+  fload_2
+  fload_3
+  fload 4
+  fload 5
+  fload 6
+  fload 7
+  invokespecial android/view/animation/ScaleAnimation/<init>(FFFFFF)V
+  aload 50
+  astore_1
+  aload_0
+  astore_2
+  aload_2
+  aload_1
+  putfield cn/domob/android/ads/z/A Landroid/view/animation/Animation;
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/A Landroid/view/animation/Animation;
+  astore_1
+  aload_1
+  astore 56
+  ldc2_w 500
+  lstore 57
+  aload 56
+  astore_1
+  lload 57
+  lstore_2
+  aload_1
+  lload_2
+  invokevirtual android/view/animation/Animation/setDuration(J)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/J Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 26
+  ldc "inapp_slider"
+  astore 12
+  aload 26
+  astore_1
+  aload_1
+  aload 12
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 19
+  iload 19
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 19
+  ifeq Label9
+  new android/view/animation/TranslateAnimation
+  astore 59
+  iconst_1
+  istore 10
+  fconst_0
+  fstore 21
+  iconst_1
+  istore 18
+  fconst_0
+  fstore 53
+  iconst_1
+  istore 22
+  fconst_1
+  fstore 54
+  iconst_1
+  istore 60
+  fconst_0
+  fstore 55
+  aload 59
+  astore_1
+  iload 10
+  istore_2
+  fload 21
+  fstore_3
+  iload 18
+  istore 4
+  fload 53
+  fstore 5
+  iload 22
+  istore 6
+  fload 54
+  fstore 7
+  iload 60
+  istore 8
+  fload 55
+  fstore 9
+  aload_1
+  iload_2
+  fload_3
+  iload 4
+  fload 5
+  iload 6
+  fload 7
+  iload 8
+  fload 9
+  invokespecial android/view/animation/TranslateAnimation/<init>(IFIFIFIF)V
+  aload 59
+  astore_1
+  aload_0
+  astore_2
+  aload_2
+  aload_1
+  putfield cn/domob/android/ads/z/y Landroid/view/animation/Animation;
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/y Landroid/view/animation/Animation;
+  astore_1
+  aload_1
+  astore 56
+  ldc2_w 500
+  lstore 57
+  aload 56
+  astore_1
+  lload 57
+  lstore_2
+  aload_1
+  lload_2
+  invokevirtual android/view/animation/Animation/setDuration(J)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/y Landroid/view/animation/Animation;
+  astore_1
+  aload_1
+  astore 56
+  new android/view/animation/DecelerateInterpolator
+  astore 61
+  ldc 0.700000
+  fstore 21
+  aload 61
+  astore_1
+  fload 21
+  fstore_2
+  aload_1
+  fload_2
+  invokespecial android/view/animation/DecelerateInterpolator/<init>(F)V
+  aload 56
+  astore_1
+  aload 61
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/view/animation/Animation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore_1
+  aload_1
+  astore 49
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/y Landroid/view/animation/Animation;
+  astore_1
+  aload_1
+  astore 56
+  aload 49
+  astore_1
+  aload 56
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/widget/RelativeLayout/startAnimation(Landroid/view/animation/Animation;)V
+Label17:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore_1
+  aload_1
+  astore 28
+  new cn/domob/android/ads/z$7
+  astore 62
+  aload 62
+  astore_1
+  aload_0
+  astore_2
+  aload_1
+  aload_2
+  invokespecial cn/domob/android/ads/z$7/<init>(Lcn/domob/android/ads/z;)V
+  aload 28
+  astore_1
+  aload 62
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/app/Dialog/setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore_1
+  aload_1
+  astore 28
+  aload 28
+  areturn
+Label0:
+  invokestatic cn/domob/android/ads/p/a()Lcn/domob/android/ads/p;
+  astore 33
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 16
+  aload 33
+  astore_1
+  aload_1
+  aload 16
+  invokevirtual cn/domob/android/ads/p/i(Landroid/content/Context;)Ljava/lang/String;
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  ldc "v"
+  astore 12
+  aload 26
+  astore_1
+  aload_1
+  aload 12
+  if_acmpne Label10
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/x Landroid/widget/RelativeLayout;
+  astore_1
+  aload_1
+  astore 49
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/I F
+  fstore_1
+  fload_1
+  fstore 63
+  ldc 10.000000
+  fstore 21
+  fload 21
+  fload 63
+  fdiv
+  fstore 63
+  fload 63
+  fstore_1
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 35
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/I F
+  fstore_1
+  fload_1
+  fstore 63
+  ldc 10.000000
+  fstore 21
+  fload 21
+  fload 63
+  fdiv
+  fstore 63
+  fload 63
+  fstore_1
+  fload_1
+  f2i
+  istore 13
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/I F
+  fstore_1
+  fload_1
+  fstore 63
+  ldc 10.000000
+  fstore 21
+  fload 21
+  fload 63
+  fdiv
+  fstore 63
+  fload 63
+  fstore_1
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 64
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/I F
+  fstore_1
+  fload_1
+  fstore 63
+  ldc 10.000000
+  fstore 21
+  fload 21
+  fload 63
+  fdiv
+  fstore 63
+  fload 63
+  fstore_1
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 65
+  aload 49
+  astore_1
+  iload 35
+  istore_2
+  iload 64
+  istore_3
+  iload 65
+  istore 4
+  aload_1
+  iload_2
+  iload 13
+  iload_3
+  iload 4
+  invokevirtual android/widget/RelativeLayout/setPadding(IIII)V
+  goto Label11
+Label10:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/x Landroid/widget/RelativeLayout;
+  astore_1
+  aload_1
+  astore 49
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/I F
+  fstore_1
+  fload_1
+  fstore 63
+  ldc 10.000000
+  fstore 21
+  fload 21
+  fload 63
+  fdiv
+  fstore 63
+  fload 63
+  fstore_1
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 65
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/I F
+  fstore_1
+  fload_1
+  fstore 63
+  ldc 10.000000
+  fstore 21
+  fload 21
+  fload 63
+  fdiv
+  fstore 63
+  fload 63
+  fstore_1
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 64
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/I F
+  fstore_1
+  fload_1
+  fstore 63
+  ldc 10.000000
+  fstore 21
+  fload 21
+  fload 63
+  fdiv
+  fstore 63
+  fload 63
+  fstore_1
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 35
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/I F
+  fstore_1
+  fload_1
+  fstore 63
+  ldc 10.000000
+  fstore 21
+  fload 21
+  fload 63
+  fdiv
+  fstore 63
+  fload 63
+  fstore_1
+  fload_1
+  f2i
+  istore 13
+  aload 49
+  astore_1
+  iload 65
+  istore_2
+  iload 64
+  istore_3
+  iload 35
+  istore 4
+  aload_1
+  iload_2
+  iload_3
+  iload 4
+  iload 13
+  invokevirtual android/widget/RelativeLayout/setPadding(IIII)V
+  goto Label11
+Label4:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/E I
+  istore_1
+  iload_1
+  istore 65
+  iload 65
+  bipush -10
+  iadd
+  istore 65
+  iload 65
+  bipush 20
+  iadd
+  istore 65
+  iload 65
+  istore_1
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 63
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 52
+  fload 63
+  fstore_1
+  fload 52
+  fstore_2
+  fload_1
+  fload_2
+  fmul
+  fstore_1
+  fload_1
+  fstore 63
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 65
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/width I
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/E I
+  istore_1
+  iload_1
+  istore 65
+  iload 65
+  bipush -10
+  iadd
+  istore 65
+  iload 65
+  bipush 20
+  iadd
+  istore 65
+  iload 65
+  iconst_4
+  imul
+  istore 65
+  iload 65
+  iconst_3
+  idiv
+  istore 65
+  iload 65
+  istore_1
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 63
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 52
+  fload 63
+  fstore_1
+  fload 52
+  fstore_2
+  fload_1
+  fload_2
+  fmul
+  fstore_1
+  fload_1
+  fstore 63
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 65
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/height I
+  goto Label12
+Label3:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/F I
+  istore_1
+  iload_1
+  istore 65
+  iload 65
+  bipush -10
+  iadd
+  istore 65
+  iload 65
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 400
+  istore 10
+  iload 65
+  istore_1
+  iload_1
+  iload 10
+  if_icmplt Label13
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 52
+  ldc 300.000000
+  fstore 21
+  fload 21
+  fload 52
+  fmul
+  fstore 63
+  fload 63
+  fstore_1
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 65
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/width I
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 52
+  ldc 400.000000
+  fstore 21
+  fload 21
+  fload 52
+  fmul
+  fstore 63
+  fload 63
+  fstore_1
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 65
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/height I
+  goto Label12
+Label13:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/F I
+  istore_1
+  iload_1
+  istore 65
+  iload 65
+  bipush -10
+  iadd
+  istore 65
+  iload 65
+  istore_1
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 63
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 52
+  fload 63
+  fstore_1
+  fload 52
+  fstore_2
+  fload_1
+  fload_2
+  fmul
+  fstore_1
+  fload_1
+  fstore 63
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 65
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/height I
+  aload 30
+  astore_1
+  aload_1
+  getfield android/view/ViewGroup$LayoutParams/height I
+  istore_1
+  iload_1
+  istore 65
+  iload 65
+  iconst_3
+  imul
+  istore 65
+  iload 65
+  iconst_4
+  idiv
+  istore 65
+  iload 65
+  istore_1
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 63
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 52
+  fload 63
+  fstore_1
+  fload 52
+  fstore_2
+  fload_1
+  fload_2
+  fmul
+  fstore_1
+  fload_1
+  fstore 63
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 65
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/width I
+  goto Label12
+Label2:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 16
+  aload 16
+  astore 66
+  aload 66
+  checkcast android/app/Activity
+  astore 66
+  aload 66
+  astore 31
+  iconst_0
+  istore 10
+  aload 31
+  astore_1
+  aload_1
+  iload 10
+  invokevirtual android/app/Activity/setRequestedOrientation(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/E I
+  istore_1
+  iload_1
+  istore 65
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/F I
+  istore_1
+  iload_1
+  istore 64
+  iload 65
+  istore_1
+  iload 64
+  istore_2
+  iload_1
+  iload_2
+  idiv
+  istore_1
+  iload_1
+  istore 65
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 10
+  iload 65
+  istore_1
+  iload_1
+  iload 10
+  if_icmplt Label14
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/F I
+  istore_1
+  iload_1
+  istore 65
+  iload 65
+  bipush -10
+  iadd
+  istore 65
+  iload 65
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 400
+  istore 10
+  iload 65
+  istore_1
+  iload_1
+  iload 10
+  if_icmplt Label15
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/F I
+  istore_1
+  iload_1
+  istore 65
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 63
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/I F
+  fstore_1
+  fload_1
+  fstore 52
+  fload 63
+  fstore_1
+  fload 52
+  fstore_2
+  fload_1
+  fload_2
+  fdiv
+  fstore_1
+  fload_1
+  fstore 63
+  fload_1
+  f2d
+  dstore_1
+  dload_1
+  dstore 39
+  ldc2_w 0.950000000000000
+  dstore 41
+  dload 39
+  dstore_1
+  dload 41
+  dstore_3
+  dload_1
+  dload_3
+  dmul
+  dstore_1
+  dload_1
+  dstore 39
+  dload 39
+  dstore_1
+  dload_1
+  d2i
+  istore_1
+  iload_1
+  istore 65
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/height I
+  aload 30
+  astore_1
+  aload_1
+  getfield android/view/ViewGroup$LayoutParams/height I
+  istore_1
+  iload_1
+  istore 65
+  iload 65
+  iconst_4
+  imul
+  istore 65
+  iload 65
+  iconst_3
+  idiv
+  istore 65
+  iload 65
+  istore_1
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/width I
+  goto Label12
+Label15:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/F I
+  istore_1
+  iload_1
+  istore 65
+  iload 65
+  bipush -10
+  iadd
+  istore 65
+  iload 65
+  iconst_4
+  imul
+  istore 65
+  iload 65
+  iconst_3
+  idiv
+  istore 65
+  iload 65
+  istore_1
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 63
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 52
+  fload 63
+  fstore_1
+  fload 52
+  fstore_2
+  fload_1
+  fload_2
+  fmul
+  fstore_1
+  fload_1
+  fstore 63
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 65
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/width I
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/F I
+  istore_1
+  iload_1
+  istore 65
+  iload 65
+  bipush -10
+  iadd
+  istore 65
+  iload 65
+  istore_1
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 63
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 52
+  fload 63
+  fstore_1
+  fload 52
+  fstore_2
+  fload_1
+  fload_2
+  fmul
+  fstore_1
+  fload_1
+  fstore 63
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 65
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/height I
+  goto Label12
+Label14:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/F I
+  istore_1
+  iload_1
+  istore 65
+  iload 65
+  bipush -10
+  iadd
+  istore 65
+  iload 65
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 400
+  istore 10
+  iload 65
+  istore_1
+  iload_1
+  iload 10
+  if_icmplt Label16
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 52
+  ldc 300.000000
+  fstore 21
+  fload 21
+  fload 52
+  fmul
+  fstore 63
+  fload 63
+  fstore_1
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 65
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/width I
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 52
+  ldc 400.000000
+  fstore 21
+  fload 21
+  fload 52
+  fmul
+  fstore 63
+  fload 63
+  fstore_1
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 65
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/height I
+  goto Label12
+Label16:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/F I
+  istore_1
+  iload_1
+  istore 65
+  iload 65
+  bipush -10
+  iadd
+  istore 65
+  iload 65
+  istore_1
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 63
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 52
+  fload 63
+  fstore_1
+  fload 52
+  fstore_2
+  fload_1
+  fload_2
+  fmul
+  fstore_1
+  fload_1
+  fstore 63
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 65
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/height I
+  aload 30
+  astore_1
+  aload_1
+  getfield android/view/ViewGroup$LayoutParams/height I
+  istore_1
+  iload_1
+  istore 65
+  iload 65
+  iconst_3
+  imul
+  istore 65
+  iload 65
+  iconst_4
+  idiv
+  istore 65
+  iload 65
+  istore_1
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 63
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/G F
+  fstore_1
+  fload_1
+  fstore 52
+  fload 63
+  fstore_1
+  fload 52
+  fstore_2
+  fload_1
+  fload_2
+  fmul
+  fstore_1
+  fload_1
+  fstore 63
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 65
+  aload 30
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$LayoutParams/width I
+  goto Label12
+Label8:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/I F
+  fstore_1
+  fload_1
+  fstore 52
+  ldc 20.000000
+  fstore 21
+  fload 21
+  fload 52
+  fdiv
+  fstore 63
+  fload 63
+  fstore_1
+  fload_1
+  f2i
+  istore_1
+  iload_1
+  istore 65
+  aload 24
+  astore_2
+  aload_2
+  iload_1
+  putfield android/view/ViewGroup$MarginLayoutParams/topMargin I
+  goto Label7
+Label9:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore_1
+  aload_1
+  astore 49
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/A Landroid/view/animation/Animation;
+  astore_1
+  aload_1
+  astore 56
+  aload 49
+  astore_1
+  aload 56
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/widget/RelativeLayout/startAnimation(Landroid/view/animation/Animation;)V
+  goto Label17
+  nop
+.end <method>
+
+.method static c(Lcn/domob/android/ads/z;Ljava/lang/String;)Ljava/lang/String;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/z/J Ljava/lang/String;
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private c(Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/z/Z Ljava/lang/String;
+  ldc "lp_url"
+  astore_2
+  aload_0
+  aload_2
+  invokespecial cn/domob/android/ads/z/b(Ljava/lang/String;)V
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/z/Z Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method static c(Lcn/domob/android/ads/z;Z)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/z/V Z
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static d(Lcn/domob/android/ads/z;)Landroid/content/Context;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected d()V
+.limit locals 4
+.limit stack 200
+  nop
+  ldc "call closeLandingPage() from js."
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;)V
+  aload_0
+  getfield cn/domob/android/ads/z/aa Landroid/os/Handler;
+  astore_2
+  iconst_0
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method static d(Lcn/domob/android/ads/z;Ljava/lang/String;)V
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial cn/domob/android/ads/z/c(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method static d(Lcn/domob/android/ads/z;Z)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/z/W Z
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static e(Lcn/domob/android/ads/z;)Landroid/widget/RelativeLayout;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected e()Ljava/lang/String;
+.limit locals 15
+.limit stack 200
+  nop
+  ldc "call getViewSize() from js."
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;)V
+  aload_0
+  getfield cn/domob/android/ads/z/D I
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_0
+  getfield cn/domob/android/ads/z/D I
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore_3
+  iload_2
+  iload_3
+  if_icmpne Label1
+Label0:
+  iconst_2
+  istore_3
+  iload_3
+  anewarray java/lang/Object
+  astore 4
+  aload_0
+  getfield cn/domob/android/ads/z/E I
+  istore_2
+  iload_2
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 5
+  iconst_0
+  istore_3
+  aload 4
+  iload_3
+  aload 5
+  aastore
+  aload_0
+  getfield cn/domob/android/ads/z/F I
+  istore_2
+  iload_2
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 5
+  iconst_1
+  istore_3
+  aload 4
+  iload_3
+  aload 5
+  aastore
+  ldc "%d, %d"
+  astore_1
+  aload_1
+  aload 4
+  invokestatic java/lang/String/format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  astore 6
+  aload 6
+  areturn
+Label1:
+  iconst_1
+  istore_3
+  iload_3
+  anewarray java/lang/Object
+  astore 4
+  aload_0
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore 7
+  aload 7
+  invokevirtual android/app/Dialog/getWindow()Landroid/view/Window;
+  astore 8
+  aload 8
+  invokevirtual android/view/Window/getAttributes()Landroid/view/WindowManager$LayoutParams;
+  astore 9
+  aload 9
+  getfield android/view/ViewGroup$LayoutParams/width I
+  istore_2
+  iload_2
+  bipush -20
+  iadd
+  istore_2
+  iload_2
+  i2f
+  fstore 10
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 11
+  fload 10
+  fload 11
+  fdiv
+  fstore 11
+  fload 11
+  invokestatic java/lang/Float/valueOf(F)Ljava/lang/Float;
+  astore 12
+  iconst_0
+  istore_3
+  aload 4
+  iload_3
+  aload 12
+  aastore
+  ldc "%f"
+  astore_1
+  aload_1
+  aload 4
+  invokestatic java/lang/String/format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  astore 6
+  new java/lang/StringBuilder
+  astore 13
+  aload 13
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "LandingPageSize:"
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload_0
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore 7
+  aload 7
+  invokevirtual android/app/Dialog/getWindow()Landroid/view/Window;
+  astore 8
+  aload 8
+  invokevirtual android/view/Window/getAttributes()Landroid/view/WindowManager$LayoutParams;
+  astore 9
+  aload 9
+  getfield android/view/ViewGroup$LayoutParams/width I
+  istore_2
+  iload_2
+  bipush -20
+  iadd
+  istore_2
+  iload_2
+  i2f
+  fstore 11
+  aload_0
+  getfield cn/domob/android/ads/z/I F
+  fstore 10
+  fload 11
+  fload 10
+  fdiv
+  fstore 11
+  aload 13
+  fload 11
+  invokevirtual java/lang/StringBuilder/append(F)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  aload 14
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;)V
+  aload 6
+  areturn
+  nop
+.end <method>
+
+.method static f(Lcn/domob/android/ads/z;)Lcn/domob/android/ads/g;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/T Lcn/domob/android/ads/g;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected f()V
+.limit locals 4
+.limit stack 200
+  nop
+  ldc "Call reload from js."
+  astore_1
+  aload_0
+  aload_1
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore_2
+  aload_0
+  getfield cn/domob/android/ads/z/p Ljava/lang/String;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method static g(Lcn/domob/android/ads/z;)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/Y Z
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static g()[Ljava/lang/String;
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic cn/domob/android/ads/z/n [Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method private h()Landroid/view/View;
+.limit locals 10
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore_2
+  aload_1
+  aload_2
+  invokespecial android/widget/LinearLayout/<init>(Landroid/content/Context;)V
+  iconst_0
+  istore_3
+  aload_1
+  iload_3
+  invokevirtual android/widget/LinearLayout/setOrientation(I)V
+  bipush 17
+  istore_3
+  aload_1
+  iload_3
+  invokevirtual android/widget/LinearLayout/setGravity(I)V
+  new android/graphics/drawable/BitmapDrawable
+  astore 4
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore_2
+  aload_2
+  invokevirtual android/content/Context/getAssets()Landroid/content/res/AssetManager;
+  astore 5
+  ldc "domob_banner.png"
+  astore 7
+  aload 5
+  aload 7
+  invokevirtual android/content/res/AssetManager/open(Ljava/lang/String;)Ljava/io/InputStream;
+  astore 6
+  aload 6
+  invokestatic android/graphics/BitmapFactory/decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
+  astore 8
+  aload 4
+  aload 8
+  invokespecial android/graphics/drawable/BitmapDrawable/<init>(Landroid/graphics/Bitmap;)V
+  aload_1
+  aload 4
+  invokevirtual android/widget/LinearLayout/setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+  aload_0
+  invokespecial cn/domob/android/ads/z/o()Landroid/widget/LinearLayout;
+  astore 9
+  aload_1
+  aload 9
+  invokevirtual android/widget/LinearLayout/addView(Landroid/view/View;)V
+  aload_0
+  invokespecial cn/domob/android/ads/z/p()Landroid/widget/LinearLayout;
+  astore 9
+  aload_1
+  aload 9
+  invokevirtual android/widget/LinearLayout/addView(Landroid/view/View;)V
+  aload_0
+  invokespecial cn/domob/android/ads/z/u()Landroid/widget/LinearLayout;
+  astore 9
+  aload_1
+  aload 9
+  invokevirtual android/widget/LinearLayout/addView(Landroid/view/View;)V
+  aload_0
+  invokespecial cn/domob/android/ads/z/s()Landroid/widget/LinearLayout;
+  astore 9
+  aload_1
+  aload 9
+  invokevirtual android/widget/LinearLayout/addView(Landroid/view/View;)V
+  aload_0
+  invokespecial cn/domob/android/ads/z/m()Landroid/widget/LinearLayout;
+  astore 9
+  aload_1
+  aload 9
+  invokevirtual android/widget/LinearLayout/addView(Landroid/view/View;)V
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static h(Lcn/domob/android/ads/z;)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/V Z
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static i(Lcn/domob/android/ads/z;)Landroid/widget/RelativeLayout;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/x Landroid/widget/RelativeLayout;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private i()V
+.limit locals 25
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 9
+  aload 8
+  aload 9
+  invokespecial android/widget/ImageView/<init>(Landroid/content/Context;)V
+  aload_0
+  astore_1
+  aload_1
+  aload 8
+  putfield cn/domob/android/ads/z/Q Landroid/widget/ImageView;
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/Q Landroid/widget/ImageView;
+  astore 8
+  new android/graphics/drawable/BitmapDrawable
+  astore 10
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 9
+  aload 9
+  invokevirtual android/content/Context/getAssets()Landroid/content/res/AssetManager;
+  astore 11
+  ldc "domob_loading.png"
+  astore 13
+  aload 11
+  aload 13
+  invokevirtual android/content/res/AssetManager/open(Ljava/lang/String;)Ljava/io/InputStream;
+  astore 12
+  aload 12
+  invokestatic android/graphics/BitmapFactory/decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
+  astore 14
+  aload 10
+  aload 14
+  invokespecial android/graphics/drawable/BitmapDrawable/<init>(Landroid/graphics/Bitmap;)V
+  aload 8
+  aload 10
+  invokevirtual android/widget/ImageView/setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/Q Landroid/widget/ImageView;
+  astore 8
+  bipush 8
+  istore 15
+  aload 8
+  iload 15
+  invokevirtual android/widget/ImageView/setVisibility(I)V
+  new android/view/animation/RotateAnimation
+  astore 16
+  fconst_0
+  fstore 17
+  ldc 360.000000
+  fstore 18
+  iconst_1
+  istore 15
+  ldc 0.500000
+  fstore 19
+  iconst_1
+  istore 20
+  ldc 0.500000
+  fstore 21
+  aload 16
+  astore_1
+  fload 17
+  fstore_2
+  fload 18
+  fstore_3
+  iload 15
+  istore 4
+  fload 19
+  fstore 5
+  iload 20
+  istore 6
+  fload 21
+  fstore 7
+  aload_1
+  fload_2
+  fload_3
+  iload 4
+  fload 5
+  iload 6
+  fload 7
+  invokespecial android/view/animation/RotateAnimation/<init>(FFIFIF)V
+  aload_0
+  astore_1
+  aload_1
+  aload 16
+  putfield cn/domob/android/ads/z/R Landroid/view/animation/RotateAnimation;
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/R Landroid/view/animation/RotateAnimation;
+  astore 16
+  ldc2_w 1000
+  lstore 22
+  lload 22
+  lstore_1
+  aload 16
+  lload_1
+  invokevirtual android/view/animation/RotateAnimation/setDuration(J)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/R Landroid/view/animation/RotateAnimation;
+  astore 16
+  new android/view/animation/LinearInterpolator
+  astore 24
+  aload 24
+  astore_1
+  aload_1
+  invokespecial android/view/animation/LinearInterpolator/<init>()V
+  aload 24
+  astore_1
+  aload 16
+  aload_1
+  invokevirtual android/view/animation/RotateAnimation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/R Landroid/view/animation/RotateAnimation;
+  astore 16
+  iconst_m1
+  istore 15
+  aload 16
+  iload 15
+  invokevirtual android/view/animation/RotateAnimation/setRepeatCount(I)V
+  return
+  nop
+.end <method>
+
+.method static j(Lcn/domob/android/ads/z;)V
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial cn/domob/android/ads/z/n()V
+  return
+  nop
+.end <method>
+
+.method private j()Z
+.limit locals 9
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label0
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore_1
+  aload_1
+  astore 4
+  aload 4
+  checkcast android/app/Activity
+  astore 4
+  aload 4
+  astore_3
+  aload_3
+  invokevirtual android/app/Activity/getWindow()Landroid/view/Window;
+  astore 5
+  aload 5
+  invokevirtual android/view/Window/getAttributes()Landroid/view/WindowManager$LayoutParams;
+  astore 6
+  aload 6
+  getfield android/view/WindowManager$LayoutParams/flags I
+  istore 7
+  sipush 1024
+  istore 8
+  aload_0
+  iload 7
+  iload 8
+  invokespecial cn/domob/android/ads/z/a(II)Z
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  iconst_0
+  istore 8
+  iload 8
+  ireturn
+  nop
+.end <method>
+
+.method static k(Lcn/domob/android/ads/z;)Landroid/os/Handler;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/C Landroid/os/Handler;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private k()Landroid/widget/Button;
+.limit locals 22
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 5
+  aload 4
+  aload 5
+  invokespecial android/widget/Button/<init>(Landroid/content/Context;)V
+  new android/widget/LinearLayout$LayoutParams
+  astore 6
+  iconst_m1
+  istore 7
+  iconst_m1
+  istore 8
+  aload 6
+  iload 7
+  iload 8
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  aload 4
+  aload 6
+  invokevirtual android/widget/Button/setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  new android/graphics/drawable/GradientDrawable
+  astore 9
+  getstatic android/graphics/drawable/GradientDrawable$Orientation/LEFT_RIGHT Landroid/graphics/drawable/GradientDrawable$Orientation;
+  astore 10
+  iconst_2
+  istore 7
+  iload 7
+  newarray int
+  astore 11
+  iconst_0
+  istore 7
+  iconst_m1
+  istore 8
+  aload 11
+  iload 7
+  iload 8
+  iastore
+  iconst_1
+  istore 7
+  ldc -16777216
+  istore 8
+  aload 11
+  iload 7
+  iload 8
+  iastore
+  aload 9
+  aload 10
+  aload 11
+  invokespecial android/graphics/drawable/GradientDrawable/<init>(Landroid/graphics/drawable/GradientDrawable$Orientation;[I)V
+  ldc 0.500000
+  fstore 12
+  ldc 0.500000
+  fstore 13
+  aload 9
+  fload 12
+  fload 13
+  invokevirtual android/graphics/drawable/GradientDrawable/setGradientCenter(FF)V
+  iconst_1
+  istore 7
+  aload 9
+  iload 7
+  invokevirtual android/graphics/drawable/GradientDrawable/setGradientType(I)V
+  bipush 8
+  istore 7
+  iload 7
+  newarray float
+  astore 14
+  iconst_0
+  istore 7
+  ldc 5.000000
+  fstore 12
+  aload 14
+  iload 7
+  fload 12
+  fastore
+  iconst_1
+  istore 7
+  ldc 5.000000
+  fstore 12
+  aload 14
+  iload 7
+  fload 12
+  fastore
+  iconst_2
+  istore 7
+  ldc 5.000000
+  fstore 12
+  aload 14
+  iload 7
+  fload 12
+  fastore
+  iconst_3
+  istore 7
+  ldc 5.000000
+  fstore 12
+  aload 14
+  iload 7
+  fload 12
+  fastore
+  iconst_4
+  istore 7
+  ldc 5.000000
+  fstore 12
+  aload 14
+  iload 7
+  fload 12
+  fastore
+  iconst_5
+  istore 7
+  ldc 5.000000
+  fstore 12
+  aload 14
+  iload 7
+  fload 12
+  fastore
+  bipush 6
+  istore 7
+  ldc 5.000000
+  fstore 12
+  aload 14
+  iload 7
+  fload 12
+  fastore
+  bipush 7
+  istore 7
+  ldc 5.000000
+  fstore 12
+  aload 14
+  iload 7
+  fload 12
+  fastore
+  aload 9
+  aload 14
+  invokevirtual android/graphics/drawable/GradientDrawable/setCornerRadii([F)V
+  ldc2_w 5.000000000000000
+  dstore 17
+  dload 17
+  dstore_1
+  dload_1
+  invokestatic java/lang/Math/sqrt(D)D
+  dstore 15
+  ldc2_w 60.000000000000000
+  dstore 17
+  dload 15
+  dload 17
+  dmul
+  dstore 19
+  dload 19
+  dstore_1
+  dload_1
+  d2f
+  fstore_1
+  fload_1
+  fstore 21
+  aload 9
+  fload_1
+  invokevirtual android/graphics/drawable/GradientDrawable/setGradientRadius(F)V
+  sipush 200
+  istore 7
+  aload 9
+  iload 7
+  invokevirtual android/graphics/drawable/GradientDrawable/setAlpha(I)V
+  aload 4
+  aload 9
+  invokevirtual android/widget/Button/setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+  aload 4
+  areturn
+  nop
+.end <method>
+
+.method private l()Landroid/webkit/WebView;
+.limit locals 28
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/Q Landroid/widget/ImageView;
+  astore 7
+  iconst_0
+  istore 9
+  iload 9
+  istore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/Q Landroid/widget/ImageView;
+  astore 7
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/R Landroid/view/animation/RotateAnimation;
+  astore 10
+  aload 7
+  aload 10
+  invokevirtual android/widget/ImageView/startAnimation(Landroid/view/animation/Animation;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 11
+  iconst_0
+  istore 9
+  iload 9
+  istore 8
+  aload 11
+  iload 8
+  invokevirtual cn/domob/android/ads/L/setVisibility(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 11
+  aload 11
+  invokevirtual cn/domob/android/ads/L/getSettings()Landroid/webkit/WebSettings;
+  astore 12
+  iconst_1
+  istore 9
+  aload 12
+  iload 9
+  invokevirtual android/webkit/WebSettings/setJavaScriptEnabled(Z)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 13
+  new cn/domob/android/ads/DomobLandingPageJSInterface
+  astore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 15
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 11
+  aload_0
+  astore_1
+  aload 14
+  aload 15
+  aload 11
+  aload_1
+  invokespecial cn/domob/android/ads/DomobLandingPageJSInterface/<init>(Landroid/content/Context;Lcn/domob/android/ads/L;Lcn/domob/android/ads/z;)V
+  ldc "domobJs"
+  astore 16
+  aload 13
+  aload 14
+  aload 16
+  invokevirtual cn/domob/android/ads/L/addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 13
+  new cn/domob/android/ads/z$8
+  astore 17
+  aload 17
+  astore_1
+  aload_0
+  astore_2
+  aload_1
+  aload_2
+  invokespecial cn/domob/android/ads/z$8/<init>(Lcn/domob/android/ads/z;)V
+  aload 17
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual cn/domob/android/ads/L/setDownloadListener(Landroid/webkit/DownloadListener;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 13
+  new cn/domob/android/ads/z$9
+  astore 18
+  aload 18
+  astore_1
+  aload_0
+  astore_2
+  aload_1
+  aload_2
+  invokespecial cn/domob/android/ads/z$9/<init>(Lcn/domob/android/ads/z;)V
+  aload 18
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual cn/domob/android/ads/L/setWebViewClient(Landroid/webkit/WebViewClient;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 13
+  new cn/domob/android/ads/z$10
+  astore 19
+  aload 19
+  astore_1
+  aload_0
+  astore_2
+  aload_1
+  aload_2
+  invokespecial cn/domob/android/ads/z$10/<init>(Lcn/domob/android/ads/z;)V
+  aload 19
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual cn/domob/android/ads/L/setWebChromeClient(Landroid/webkit/WebChromeClient;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 13
+  iconst_0
+  istore 9
+  iload 9
+  istore 8
+  aload 13
+  iload 8
+  invokevirtual cn/domob/android/ads/L/setScrollBarStyle(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/J Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 20
+  ldc "inapp_fs"
+  astore 16
+  aload 20
+  astore_1
+  aload_1
+  aload 16
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 21
+  iload 21
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 21
+  ifeq Label0
+  new android/widget/RelativeLayout$LayoutParams
+  astore 22
+  iconst_m1
+  istore 9
+  iconst_m1
+  istore 23
+  aload 22
+  astore_1
+  iload 23
+  istore_2
+  aload_1
+  iload 9
+  iload_2
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  bipush 12
+  istore 9
+  aload 22
+  astore_1
+  aload_1
+  iload 9
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 13
+  aload 22
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual cn/domob/android/ads/L/setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+Label2:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 13
+  aload 13
+  invokevirtual cn/domob/android/ads/L/getSettings()Landroid/webkit/WebSettings;
+  astore 12
+  iconst_0
+  istore 9
+  aload 12
+  iload 9
+  invokevirtual android/webkit/WebSettings/setBlockNetworkImage(Z)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 13
+  aload 13
+  invokevirtual cn/domob/android/ads/L/getUrl()Ljava/lang/String;
+  astore 24
+  aload 24
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 24
+  ifnull Label1
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 13
+  aload 24
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual cn/domob/android/ads/L/loadUrl(Ljava/lang/String;)V
+Label4:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 13
+  aload 13
+  areturn
+Label0:
+  new android/widget/RelativeLayout$LayoutParams
+  astore 22
+  iconst_m1
+  istore 9
+  iconst_m1
+  istore 23
+  aload 22
+  astore_1
+  iload 23
+  istore_2
+  aload_1
+  iload 9
+  iload_2
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  bipush 14
+  istore 9
+  aload 22
+  astore_1
+  aload_1
+  iload 9
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 13
+  aload 22
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual cn/domob/android/ads/L/setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  goto Label2
+Label1:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/P Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 24
+  aload 24
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 24
+  ifnull Label3
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 13
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/p Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 24
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/P Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 20
+  ldc "text/html"
+  astore 16
+  ldc "utf-8"
+  astore 25
+  aconst_null
+  astore 26
+  aload 13
+  astore_1
+  aload 24
+  astore_2
+  aload 20
+  astore_3
+  aload 16
+  astore 4
+  aload 25
+  astore 5
+  aload 26
+  astore 6
+  aload_1
+  aload_2
+  aload_3
+  aload 4
+  aload 5
+  aload 6
+  invokevirtual cn/domob/android/ads/L/loadDataWithBaseURL(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+  goto Label4
+Label3:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 13
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/p Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 27
+  aload 27
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual cn/domob/android/ads/L/loadUrl(Ljava/lang/String;)V
+  goto Label4
+  nop
+.end <method>
+
+.method static l(Lcn/domob/android/ads/z;)Ljava/lang/String;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/O Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private m()Landroid/widget/LinearLayout;
+.limit locals 13
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore_2
+  aload_1
+  aload_2
+  invokespecial android/widget/ImageButton/<init>(Landroid/content/Context;)V
+  aload_0
+  getfield cn/domob/android/ads/z/D I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 4
+  iload_3
+  iload 4
+  if_icmpeq Label0
+  aload_0
+  getfield cn/domob/android/ads/z/D I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 4
+  iload_3
+  iload 4
+  if_icmpne Label1
+Label0:
+  ldc "domob_close.png"
+  astore 5
+  new android/widget/LinearLayout$LayoutParams
+  astore 6
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 7
+  ldc 40.000000
+  fstore 8
+  fload 7
+  fload 8
+  fmul
+  fstore 7
+  fload 7
+  f2i
+  istore_3
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 7
+  ldc 40.000000
+  fstore 8
+  fload 7
+  fload 8
+  fmul
+  fstore 9
+  fload 9
+  f2i
+  istore 10
+  aload 6
+  iload_3
+  iload 10
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+Label2:
+  aload_1
+  aload 6
+  invokevirtual android/widget/ImageButton/setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  new cn/domob/android/ads/z$11
+  astore 11
+  aload 11
+  aload_0
+  invokespecial cn/domob/android/ads/z$11/<init>(Lcn/domob/android/ads/z;)V
+  aload_1
+  aload 11
+  invokevirtual android/widget/ImageButton/setOnClickListener(Landroid/view/View$OnClickListener;)V
+  aload_0
+  aload 5
+  aload_1
+  invokespecial cn/domob/android/ads/z/a(Ljava/lang/String;Landroid/widget/ImageButton;)Landroid/widget/LinearLayout;
+  astore 12
+  aload 12
+  areturn
+Label1:
+  ldc "domob_exit.png"
+  astore 5
+  new android/widget/LinearLayout$LayoutParams
+  astore 6
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 9
+  ldc 30.000000
+  fstore 8
+  fload 9
+  fload 8
+  fmul
+  fstore 9
+  fload 9
+  f2i
+  istore_3
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 9
+  ldc 30.000000
+  fstore 8
+  fload 9
+  fload 8
+  fmul
+  fstore 9
+  fload 9
+  f2i
+  istore 10
+  aload 6
+  iload_3
+  iload 10
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  goto Label2
+  nop
+.end <method>
+
+.method static m(Lcn/domob/android/ads/z;)Ljava/lang/String;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/N Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static n(Lcn/domob/android/ads/z;)Ljava/lang/String;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/p Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private n()V
+.limit locals 39
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/D I
+  istore 10
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 10
+  ifeq Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/D I
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 12
+  iload 11
+  iload 12
+  if_icmpne Label1
+Label0:
+  new android/view/animation/TranslateAnimation
+  astore 13
+  iconst_1
+  istore 12
+  fconst_0
+  fstore 14
+  iconst_1
+  istore 15
+  fconst_0
+  fstore 16
+  iconst_1
+  istore 17
+  fconst_0
+  fstore 18
+  iconst_1
+  istore 19
+  fconst_1
+  fstore 20
+  aload 13
+  astore_1
+  iload 12
+  istore_2
+  fload 14
+  fstore_3
+  iload 15
+  istore 4
+  fload 16
+  fstore 5
+  iload 17
+  istore 6
+  fload 18
+  fstore 7
+  iload 19
+  istore 8
+  fload 20
+  fstore 9
+  aload_1
+  iload_2
+  fload_3
+  iload 4
+  fload 5
+  iload 6
+  fload 7
+  iload 8
+  fload 9
+  invokespecial android/view/animation/TranslateAnimation/<init>(IFIFIFIF)V
+  aload_0
+  astore_1
+  aload_1
+  aload 13
+  putfield cn/domob/android/ads/z/z Landroid/view/animation/Animation;
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/z Landroid/view/animation/Animation;
+  astore_1
+  aload_1
+  astore 21
+  ldc2_w 500
+  lstore 22
+  aload 21
+  astore_1
+  lload 22
+  lstore_2
+  aload_1
+  lload_2
+  invokevirtual android/view/animation/Animation/setDuration(J)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore_1
+  aload_1
+  astore 24
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/z Landroid/view/animation/Animation;
+  astore_1
+  aload_1
+  astore 21
+  aload 24
+  astore_1
+  aload 21
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/widget/RelativeLayout/startAnimation(Landroid/view/animation/Animation;)V
+Label2:
+  new java/lang/StringBuilder
+  astore 25
+  aload 25
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "close -> opentype:"
+  astore 26
+  aload 25
+  astore_1
+  aload 26
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 25
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/J Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 27
+  aload 25
+  astore_1
+  aload 27
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 25
+  aload 25
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;)V
+  new cn/domob/android/ads/z$a
+  astore 28
+  aload 28
+  astore_1
+  aload_0
+  astore_2
+  aload_1
+  aload_2
+  invokespecial cn/domob/android/ads/z$a/<init>(Lcn/domob/android/ads/z;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/C Landroid/os/Handler;
+  astore_1
+  aload_1
+  astore 29
+  ldc2_w 500
+  lstore 22
+  aload 29
+  astore_1
+  aload 28
+  astore_2
+  lload 22
+  lstore_3
+  aload_1
+  aload_2
+  lload_3
+  invokevirtual android/os/Handler/postDelayed(Ljava/lang/Runnable;J)Z
+  pop
+  return
+Label1:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/D I
+  istore_1
+  iload_1
+  istore 30
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 12
+  iload 30
+  istore_1
+  iload_1
+  iload 12
+  if_icmpne Label2
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/J Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 27
+  ldc "inapp_dlg"
+  astore 26
+  aload 27
+  astore_1
+  aload 26
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 31
+  iload 31
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 31
+  ifeq Label3
+  new android/view/animation/ScaleAnimation
+  astore 32
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore_1
+  aload_1
+  astore 33
+  aload 33
+  astore_1
+  aload_1
+  invokevirtual android/app/Dialog/getWindow()Landroid/view/Window;
+  astore 34
+  aload 34
+  astore_1
+  aload_1
+  invokevirtual android/view/Window/getAttributes()Landroid/view/WindowManager$LayoutParams;
+  astore 35
+  aload 35
+  astore_1
+  aload_1
+  getfield android/view/ViewGroup$LayoutParams/width I
+  istore_1
+  iload_1
+  istore 30
+  iload 30
+  iconst_2
+  idiv
+  istore 30
+  iload 30
+  istore_1
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 36
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore_1
+  aload_1
+  astore 33
+  aload 33
+  astore_1
+  aload_1
+  invokevirtual android/app/Dialog/getWindow()Landroid/view/Window;
+  astore 34
+  aload 34
+  astore_1
+  aload_1
+  invokevirtual android/view/Window/getAttributes()Landroid/view/WindowManager$LayoutParams;
+  astore 35
+  aload 35
+  astore_1
+  aload_1
+  getfield android/view/ViewGroup$LayoutParams/height I
+  istore_1
+  iload_1
+  istore 30
+  iload 30
+  iconst_2
+  idiv
+  istore 30
+  iload 30
+  istore_1
+  iload_1
+  i2f
+  fstore_1
+  fload_1
+  fstore 37
+  fconst_1
+  fstore 14
+  fconst_0
+  fstore 16
+  fconst_1
+  fstore 18
+  fconst_0
+  fstore 20
+  aload 32
+  astore_1
+  fload 14
+  fstore_2
+  fload 16
+  fstore_3
+  fload 18
+  fstore 4
+  fload 20
+  fstore 5
+  fload 36
+  fstore 6
+  fload 37
+  fstore 7
+  aload_1
+  fload_2
+  fload_3
+  fload 4
+  fload 5
+  fload 6
+  fload 7
+  invokespecial android/view/animation/ScaleAnimation/<init>(FFFFFF)V
+  aload 32
+  astore_1
+  aload_0
+  astore_2
+  aload_2
+  aload_1
+  putfield cn/domob/android/ads/z/B Landroid/view/animation/Animation;
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/B Landroid/view/animation/Animation;
+  astore_1
+  aload_1
+  astore 21
+  iconst_1
+  istore 12
+  aload 21
+  astore_1
+  aload_1
+  iload 12
+  invokevirtual android/view/animation/Animation/setFillAfter(Z)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/B Landroid/view/animation/Animation;
+  astore_1
+  aload_1
+  astore 21
+  ldc2_w 500
+  lstore 22
+  aload 21
+  astore_1
+  lload 22
+  lstore_2
+  aload_1
+  lload_2
+  invokevirtual android/view/animation/Animation/setDuration(J)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore_1
+  aload_1
+  astore 24
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/B Landroid/view/animation/Animation;
+  astore_1
+  aload_1
+  astore 21
+  aload 24
+  astore_1
+  aload 21
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/widget/RelativeLayout/startAnimation(Landroid/view/animation/Animation;)V
+  goto Label2
+Label3:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/J Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 38
+  ldc "inapp_slider"
+  astore 26
+  aload 38
+  astore_1
+  aload 26
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 31
+  iload 31
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 31
+  ifeq Label2
+  new android/view/animation/TranslateAnimation
+  astore 13
+  iconst_1
+  istore 12
+  fconst_0
+  fstore 14
+  iconst_1
+  istore 15
+  fconst_0
+  fstore 16
+  iconst_1
+  istore 17
+  fconst_0
+  fstore 18
+  iconst_1
+  istore 19
+  fconst_1
+  fstore 20
+  aload 13
+  astore_1
+  iload 12
+  istore_2
+  fload 14
+  fstore_3
+  iload 15
+  istore 4
+  fload 16
+  fstore 5
+  iload 17
+  istore 6
+  fload 18
+  fstore 7
+  iload 19
+  istore 8
+  fload 20
+  fstore 9
+  aload_1
+  iload_2
+  fload_3
+  iload 4
+  fload 5
+  iload 6
+  fload 7
+  iload 8
+  fload 9
+  invokespecial android/view/animation/TranslateAnimation/<init>(IFIFIFIF)V
+  aload_0
+  astore_1
+  aload_1
+  aload 13
+  putfield cn/domob/android/ads/z/z Landroid/view/animation/Animation;
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/z Landroid/view/animation/Animation;
+  astore_1
+  aload_1
+  astore 21
+  ldc2_w 500
+  lstore 22
+  aload 21
+  astore_1
+  lload 22
+  lstore_2
+  aload_1
+  lload_2
+  invokevirtual android/view/animation/Animation/setDuration(J)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/z Landroid/view/animation/Animation;
+  astore_1
+  aload_1
+  astore 21
+  iconst_1
+  istore 12
+  aload 21
+  astore_1
+  aload_1
+  iload 12
+  invokevirtual android/view/animation/Animation/setFillAfter(Z)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/w Landroid/widget/RelativeLayout;
+  astore_1
+  aload_1
+  astore 24
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/z/z Landroid/view/animation/Animation;
+  astore_1
+  aload_1
+  astore 21
+  aload 24
+  astore_1
+  aload 21
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/widget/RelativeLayout/startAnimation(Landroid/view/animation/Animation;)V
+  goto Label2
+  nop
+.end <method>
+
+.method private o()Landroid/widget/LinearLayout;
+.limit locals 14
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore_2
+  aload_1
+  aload_2
+  invokespecial android/widget/ImageButton/<init>(Landroid/content/Context;)V
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/z/K Landroid/widget/ImageButton;
+  new android/widget/LinearLayout$LayoutParams
+  astore_3
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 4
+  ldc 40.000000
+  fstore 5
+  fload 4
+  fload 5
+  fmul
+  fstore 4
+  fload 4
+  f2i
+  istore 6
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 4
+  ldc 40.000000
+  fstore 5
+  fload 4
+  fload 5
+  fmul
+  fstore 7
+  fload 7
+  f2i
+  istore 8
+  aload_3
+  iload 6
+  iload 8
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  aload_0
+  getfield cn/domob/android/ads/z/K Landroid/widget/ImageButton;
+  astore_1
+  aload_1
+  aload_3
+  invokevirtual android/widget/ImageButton/setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  aload_0
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore 9
+  aload 9
+  invokevirtual cn/domob/android/ads/L/canGoBack()Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label0
+  ldc "domob_preview.png"
+  astore 11
+Label1:
+  aload_0
+  getfield cn/domob/android/ads/z/K Landroid/widget/ImageButton;
+  astore_1
+  new cn/domob/android/ads/z$12
+  astore 12
+  aload 12
+  aload_0
+  invokespecial cn/domob/android/ads/z$12/<init>(Lcn/domob/android/ads/z;)V
+  aload_1
+  aload 12
+  invokevirtual android/widget/ImageButton/setOnClickListener(Landroid/view/View$OnClickListener;)V
+  aload_0
+  getfield cn/domob/android/ads/z/K Landroid/widget/ImageButton;
+  astore_1
+  aload_0
+  aload 11
+  aload_1
+  invokespecial cn/domob/android/ads/z/a(Ljava/lang/String;Landroid/widget/ImageButton;)Landroid/widget/LinearLayout;
+  astore 13
+  aload 13
+  areturn
+Label0:
+  ldc "domob_preview_off.png"
+  astore 11
+  goto Label1
+  nop
+.end <method>
+
+.method static o(Lcn/domob/android/ads/z;)Ljava/util/HashMap;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/s Ljava/util/HashMap;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private p()Landroid/widget/LinearLayout;
+.limit locals 12
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore_2
+  aload_1
+  aload_2
+  invokespecial android/widget/ImageButton/<init>(Landroid/content/Context;)V
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/z/L Landroid/widget/ImageButton;
+  new android/widget/LinearLayout$LayoutParams
+  astore_3
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 4
+  ldc 40.000000
+  fstore 5
+  fload 4
+  fload 5
+  fmul
+  fstore 4
+  fload 4
+  f2i
+  istore 6
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 4
+  ldc 40.000000
+  fstore 5
+  fload 4
+  fload 5
+  fmul
+  fstore 7
+  fload 7
+  f2i
+  istore 8
+  aload_3
+  iload 6
+  iload 8
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  aload_0
+  getfield cn/domob/android/ads/z/L Landroid/widget/ImageButton;
+  astore_1
+  aload_1
+  aload_3
+  invokevirtual android/widget/ImageButton/setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  aload_0
+  getfield cn/domob/android/ads/z/L Landroid/widget/ImageButton;
+  astore_1
+  new cn/domob/android/ads/z$13
+  astore 9
+  aload 9
+  aload_0
+  invokespecial cn/domob/android/ads/z$13/<init>(Lcn/domob/android/ads/z;)V
+  aload_1
+  aload 9
+  invokevirtual android/widget/ImageButton/setOnClickListener(Landroid/view/View$OnClickListener;)V
+  aload_0
+  getfield cn/domob/android/ads/z/L Landroid/widget/ImageButton;
+  astore_1
+  ldc "domob_next_off.png"
+  astore 11
+  aload_0
+  aload 11
+  aload_1
+  invokespecial cn/domob/android/ads/z/a(Ljava/lang/String;Landroid/widget/ImageButton;)Landroid/widget/LinearLayout;
+  astore 10
+  aload 10
+  areturn
+  nop
+.end <method>
+
+.method static p(Lcn/domob/android/ads/z;)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/u Z
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method private q()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+Label1:
+  return
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/L/canGoBack()Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label1
+  aload_0
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/L/goBack()V
+  aload_0
+  invokespecial cn/domob/android/ads/z/w()V
+  goto Label1
+  nop
+.end <method>
+
+.method static q(Lcn/domob/android/ads/z;)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/X Z
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static r(Lcn/domob/android/ads/z;)Landroid/widget/ImageView;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/Q Landroid/widget/ImageView;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private r()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+Label1:
+  return
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/L/canGoForward()Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label1
+  aload_0
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/L/goForward()V
+  aload_0
+  invokespecial cn/domob/android/ads/z/w()V
+  goto Label1
+  nop
+.end <method>
+
+.method private s()Landroid/widget/LinearLayout;
+.limit locals 12
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore_2
+  aload_1
+  aload_2
+  invokespecial android/widget/ImageButton/<init>(Landroid/content/Context;)V
+  new android/widget/LinearLayout$LayoutParams
+  astore_3
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 4
+  ldc 40.000000
+  fstore 5
+  fload 4
+  fload 5
+  fmul
+  fstore 4
+  fload 4
+  f2i
+  istore 6
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 4
+  ldc 40.000000
+  fstore 5
+  fload 4
+  fload 5
+  fmul
+  fstore 7
+  fload 7
+  f2i
+  istore 8
+  aload_3
+  iload 6
+  iload 8
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  aload_1
+  aload_3
+  invokevirtual android/widget/ImageButton/setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  new cn/domob/android/ads/z$2
+  astore 9
+  aload 9
+  aload_0
+  invokespecial cn/domob/android/ads/z$2/<init>(Lcn/domob/android/ads/z;)V
+  aload_1
+  aload 9
+  invokevirtual android/widget/ImageButton/setOnClickListener(Landroid/view/View$OnClickListener;)V
+  ldc "domob_out.png"
+  astore 11
+  aload_0
+  aload 11
+  aload_1
+  invokespecial cn/domob/android/ads/z/a(Ljava/lang/String;Landroid/widget/ImageButton;)Landroid/widget/LinearLayout;
+  astore 10
+  aload 10
+  areturn
+  nop
+.end <method>
+
+.method static s(Lcn/domob/android/ads/z;)Ljava/lang/String;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/J Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private t()V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/p Ljava/lang/String;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  new android/content/Intent
+  astore_3
+  ldc "android.intent.action.VIEW"
+  astore 4
+  aload_3
+  aload 4
+  aload_2
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;Landroid/net/Uri;)V
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 5
+  aload 5
+  aload_3
+  invokevirtual android/content/Context/startActivity(Landroid/content/Intent;)V
+  return
+  nop
+.end <method>
+
+.method static t(Lcn/domob/android/ads/z;)V
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial cn/domob/android/ads/z/w()V
+  return
+  nop
+.end <method>
+
+.method static u(Lcn/domob/android/ads/z;)Landroid/view/animation/RotateAnimation;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/R Landroid/view/animation/RotateAnimation;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private u()Landroid/widget/LinearLayout;
+.limit locals 12
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore_2
+  aload_1
+  aload_2
+  invokespecial android/widget/ImageButton/<init>(Landroid/content/Context;)V
+  new android/widget/LinearLayout$LayoutParams
+  astore_3
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 4
+  ldc 40.000000
+  fstore 5
+  fload 4
+  fload 5
+  fmul
+  fstore 4
+  fload 4
+  f2i
+  istore 6
+  aload_0
+  getfield cn/domob/android/ads/z/G F
+  fstore 4
+  ldc 40.000000
+  fstore 5
+  fload 4
+  fload 5
+  fmul
+  fstore 7
+  fload 7
+  f2i
+  istore 8
+  aload_3
+  iload 6
+  iload 8
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  aload_1
+  aload_3
+  invokevirtual android/widget/ImageButton/setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  new cn/domob/android/ads/z$3
+  astore 9
+  aload 9
+  aload_0
+  invokespecial cn/domob/android/ads/z$3/<init>(Lcn/domob/android/ads/z;)V
+  aload_1
+  aload 9
+  invokevirtual android/widget/ImageButton/setOnClickListener(Landroid/view/View$OnClickListener;)V
+  ldc "domob_refresh.png"
+  astore 11
+  aload_0
+  aload 11
+  aload_1
+  invokespecial cn/domob/android/ads/z/a(Ljava/lang/String;Landroid/widget/ImageButton;)Landroid/widget/LinearLayout;
+  astore 10
+  aload 10
+  areturn
+  nop
+.end <method>
+
+.method private v()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+Label1:
+  return
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/L/reload()V
+  goto Label1
+  nop
+.end <method>
+
+.method static v(Lcn/domob/android/ads/z;)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/W Z
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static w(Lcn/domob/android/ads/z;)Landroid/app/Dialog;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/r Landroid/app/Dialog;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private w()V
+.limit locals 14
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label0
+  aload_0
+  getfield cn/domob/android/ads/z/K Landroid/widget/ImageButton;
+  astore_3
+  new android/graphics/drawable/BitmapDrawable
+  astore 4
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 5
+Label5:
+  aload 5
+  invokevirtual android/content/Context/getAssets()Landroid/content/res/AssetManager;
+  astore 6
+  ldc "domob_preview.png"
+  astore 8
+  aload 6
+  aload 8
+  invokevirtual android/content/res/AssetManager/open(Ljava/lang/String;)Ljava/io/InputStream;
+  astore 7
+  aload 7
+  invokestatic android/graphics/BitmapFactory/decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
+  astore 9
+  aload 4
+  aload 9
+  invokespecial android/graphics/drawable/BitmapDrawable/<init>(Landroid/graphics/Bitmap;)V
+  aload_3
+  aload 4
+  invokevirtual android/widget/ImageButton/setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+Label2:
+  aload_0
+  getfield cn/domob/android/ads/z/o Lcn/domob/android/ads/L;
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/L/canGoForward()Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label1
+  aload_0
+  getfield cn/domob/android/ads/z/L Landroid/widget/ImageButton;
+  astore_3
+  new android/graphics/drawable/BitmapDrawable
+  astore 4
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 5
+Label7:
+  aload 5
+  invokevirtual android/content/Context/getAssets()Landroid/content/res/AssetManager;
+  astore 6
+  ldc "domob_next.png"
+  astore 8
+  aload 6
+  aload 8
+  invokevirtual android/content/res/AssetManager/open(Ljava/lang/String;)Ljava/io/InputStream;
+  astore 7
+  aload 7
+  invokestatic android/graphics/BitmapFactory/decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
+  astore 9
+  aload 4
+  aload 9
+  invokespecial android/graphics/drawable/BitmapDrawable/<init>(Landroid/graphics/Bitmap;)V
+  aload_3
+  aload 4
+  invokevirtual android/widget/ImageButton/setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+Label3:
+  return
+Label4:
+  astore 10
+  aload 10
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label2
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/z/K Landroid/widget/ImageButton;
+  astore_3
+  new android/graphics/drawable/BitmapDrawable
+  astore 4
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 5
+Label9:
+  aload 5
+  invokevirtual android/content/Context/getAssets()Landroid/content/res/AssetManager;
+  astore 6
+  ldc "domob_preview_off.png"
+  astore 8
+  aload 6
+  aload 8
+  invokevirtual android/content/res/AssetManager/open(Ljava/lang/String;)Ljava/io/InputStream;
+  astore 7
+  aload 7
+  invokestatic android/graphics/BitmapFactory/decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
+  astore 9
+  aload 4
+  aload 9
+  invokespecial android/graphics/drawable/BitmapDrawable/<init>(Landroid/graphics/Bitmap;)V
+  aload_3
+  aload 4
+  invokevirtual android/widget/ImageButton/setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+Label10:
+  goto Label2
+Label8:
+  astore 11
+  aload 11
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label2
+Label6:
+  astore 12
+  aload 12
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label3
+Label1:
+  aload_0
+  getfield cn/domob/android/ads/z/L Landroid/widget/ImageButton;
+  astore_3
+  new android/graphics/drawable/BitmapDrawable
+  astore 4
+  aload_0
+  getfield cn/domob/android/ads/z/q Landroid/content/Context;
+  astore 5
+Label12:
+  aload 5
+  invokevirtual android/content/Context/getAssets()Landroid/content/res/AssetManager;
+  astore 6
+  ldc "domob_next_off.png"
+  astore 8
+  aload 6
+  aload 8
+  invokevirtual android/content/res/AssetManager/open(Ljava/lang/String;)Ljava/io/InputStream;
+  astore 7
+  aload 7
+  invokestatic android/graphics/BitmapFactory/decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
+  astore 9
+  aload 4
+  aload 9
+  invokespecial android/graphics/drawable/BitmapDrawable/<init>(Landroid/graphics/Bitmap;)V
+  aload_3
+  aload 4
+  invokevirtual android/widget/ImageButton/setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+Label13:
+  goto Label3
+Label11:
+  astore 13
+  aload 13
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label3
+  nop
+.end <method>
+
+.method static x(Lcn/domob/android/ads/z;)V
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial cn/domob/android/ads/z/q()V
+  return
+  nop
+.end <method>
+
+.method static y(Lcn/domob/android/ads/z;)V
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial cn/domob/android/ads/z/r()V
+  return
+  nop
+.end <method>
+
+.method static z(Lcn/domob/android/ads/z;)V
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial cn/domob/android/ads/z/t()V
+  return
+  nop
+.end <method>
+

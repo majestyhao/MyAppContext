@@ -1,0 +1,5007 @@
+.source JceInputStream.java
+.class public final  com/qq/taf/jce/JceInputStream
+.super java/lang/Object
+.field private "bs" Ljava/nio/ByteBuffer;
+.field protected "sServerEncoding" Ljava/lang/String;
+
+.method public <init>()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc "GBK"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/qq/taf/jce/JceInputStream/sServerEncoding Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public <init>(Ljava/nio/ByteBuffer;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc "GBK"
+  astore_2
+  aload_0
+  aload_2
+  putfield com/qq/taf/jce/JceInputStream/sServerEncoding Ljava/lang/String;
+  aload_0
+  aload_1
+  putfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  return
+  nop
+.end <method>
+
+.method public <init>([B)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc "GBK"
+  astore_2
+  aload_0
+  aload_2
+  putfield com/qq/taf/jce/JceInputStream/sServerEncoding Ljava/lang/String;
+  aload_1
+  invokestatic java/nio/ByteBuffer/wrap([B)Ljava/nio/ByteBuffer;
+  astore_3
+  aload_0
+  aload_3
+  putfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  return
+  nop
+.end <method>
+
+.method public <init>([BI)V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc "GBK"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/qq/taf/jce/JceInputStream/sServerEncoding Ljava/lang/String;
+  aload_1
+  invokestatic java/nio/ByteBuffer/wrap([B)Ljava/nio/ByteBuffer;
+  astore 4
+  aload_0
+  aload 4
+  putfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 4
+  aload 4
+  iload_2
+  invokevirtual java/nio/ByteBuffer/position(I)Ljava/nio/Buffer;
+  pop
+  return
+  nop
+.end <method>
+
+.method public directRead(Lcom/qq/taf/jce/JceStruct;IZ)Lcom/qq/taf/jce/JceStruct;
+.limit locals 13
+.limit stack 200
+  nop
+  iconst_0
+  istore 4
+  aload_0
+  iload_2
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+Label4:
+  aload_1
+  invokevirtual com/qq/taf/jce/JceStruct/newInit()Lcom/qq/taf/jce/JceStruct;
+  astore 4
+Label5:
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 6
+  aload 6
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 6
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 6
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 10
+  istore 8
+  iload 7
+  iload 8
+  if_icmpeq Label1
+  new com/qq/taf/jce/JceDecodeException
+  astore 9
+  ldc "type mismatch."
+  astore 10
+  aload 9
+  aload 10
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 9
+  athrow
+Label3:
+  astore 11
+  new com/qq/taf/jce/JceDecodeException
+  astore 9
+  aload 11
+  invokevirtual java/lang/Exception/getMessage()Ljava/lang/String;
+  astore 12
+  aload 9
+  aload 12
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 9
+  athrow
+Label1:
+  aload 4
+  aload_0
+  invokevirtual com/qq/taf/jce/JceStruct/readFrom(Lcom/qq/taf/jce/JceInputStream;)V
+  aload_0
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToStructEnd()V
+Label2:
+  aload 4
+  areturn
+Label0:
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label2
+  new com/qq/taf/jce/JceDecodeException
+  astore 9
+  ldc "require field not exist."
+  astore 10
+  aload 9
+  aload 10
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 9
+  athrow
+  nop
+.end <method>
+
+.method public getBs()Ljava/nio/ByteBuffer;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static main([Ljava/lang/String;)V
+.limit locals 1
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+
+.method private peakHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)I
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore_2
+  aload_2
+  invokevirtual java/nio/ByteBuffer/duplicate()Ljava/nio/ByteBuffer;
+  astore_2
+  aload_1
+  aload_2
+  invokestatic com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;Ljava/nio/ByteBuffer;)I
+  istore_3
+  iload_3
+  ireturn
+  nop
+.end <method>
+
+.method public read(BIZ)B
+.limit locals 9
+.limit stack 200
+  nop
+  aload_0
+  iload_2
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 5
+  aload 5
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 5
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  lookupswitch
+  0 : Label2
+  12 : Label3
+  default : Label1
+Label1:
+  goto Label4
+Label4:
+  new com/qq/taf/jce/JceDecodeException
+  astore 6
+  ldc "type mismatch."
+  astore 7
+  aload 6
+  aload 7
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 6
+  athrow
+Label3:
+  iconst_0
+  istore_1
+Label5:
+  iload_1
+  ireturn
+Label2:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 8
+  aload 8
+  invokevirtual java/nio/ByteBuffer/get()B
+  istore_1
+  iload_1
+  ireturn
+Label0:
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label5
+  new com/qq/taf/jce/JceDecodeException
+  astore 6
+  ldc "require field not exist."
+  astore 7
+  aload 6
+  aload 7
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 6
+  athrow
+  nop
+  nop
+.end <method>
+
+.method public read(DIZ)D
+.limit locals 12
+.limit stack 200
+  nop
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 6
+  aload 6
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 6
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 6
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  lookupswitch
+  4 : Label2
+  5 : Label3
+  12 : Label4
+  default : Label1
+Label1:
+  goto Label5
+Label5:
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  ldc "type mismatch."
+  astore 9
+  aload 8
+  aload 9
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+Label4:
+  ldc2_w 0.000000000000000
+  dstore_1
+Label6:
+  dload_1
+  dreturn
+Label2:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 10
+  aload 10
+  invokevirtual java/nio/ByteBuffer/getFloat()F
+  fstore 11
+  fload 11
+  f2d
+  dstore_1
+  dload_1
+  dreturn
+Label3:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 10
+  aload 10
+  invokevirtual java/nio/ByteBuffer/getDouble()D
+  dstore_1
+  dload_1
+  dreturn
+Label0:
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label6
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  ldc "require field not exist."
+  astore 9
+  aload 8
+  aload 9
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+  nop
+  nop
+  nop
+.end <method>
+
+.method public read(FIZ)F
+.limit locals 10
+.limit stack 200
+  nop
+  aload_0
+  iload_2
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 5
+  aload 5
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 5
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  lookupswitch
+  4 : Label2
+  12 : Label3
+  default : Label1
+Label1:
+  goto Label4
+Label4:
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "type mismatch."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label3:
+  fconst_0
+  fstore_1
+Label5:
+  fload_1
+  freturn
+Label2:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  invokevirtual java/nio/ByteBuffer/getFloat()F
+  fstore_1
+  fload_1
+  freturn
+Label0:
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label5
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "require field not exist."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+  nop
+  nop
+.end <method>
+
+.method public read(IIZ)I
+.limit locals 11
+.limit stack 200
+  nop
+  aload_0
+  iload_2
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 5
+  aload 5
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 5
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  lookupswitch
+  0 : Label2
+  1 : Label3
+  2 : Label4
+  12 : Label5
+  default : Label1
+Label1:
+  goto Label6
+Label6:
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "type mismatch."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label5:
+  iconst_0
+  istore_1
+Label7:
+  iload_1
+  ireturn
+Label2:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  invokevirtual java/nio/ByteBuffer/get()B
+  istore 6
+  iload 6
+  ireturn
+Label3:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  invokevirtual java/nio/ByteBuffer/getShort()S
+  istore 10
+  iload 10
+  ireturn
+Label4:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  invokevirtual java/nio/ByteBuffer/getInt()I
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label7
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "require field not exist."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+  nop
+  nop
+.end <method>
+
+.method public read(JIZ)J
+.limit locals 12
+.limit stack 200
+  nop
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 6
+  aload 6
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 6
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 6
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  lookupswitch
+  0 : Label2
+  1 : Label3
+  2 : Label4
+  3 : Label5
+  12 : Label6
+  default : Label1
+Label1:
+  goto Label7
+Label7:
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  ldc "type mismatch."
+  astore 9
+  aload 8
+  aload 9
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+Label6:
+  ldc2_w 0
+  lstore_1
+Label8:
+  lload_1
+  lreturn
+Label2:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 10
+  aload 10
+  invokevirtual java/nio/ByteBuffer/get()B
+  istore 7
+  iload 7
+  i2l
+  lstore_1
+  lload_1
+  lreturn
+Label3:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 10
+  aload 10
+  invokevirtual java/nio/ByteBuffer/getShort()S
+  istore 11
+  iload 11
+  i2l
+  lstore_1
+  lload_1
+  lreturn
+Label4:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 10
+  aload 10
+  invokevirtual java/nio/ByteBuffer/getInt()I
+  istore_3
+  iload_3
+  i2l
+  lstore_1
+  lload_1
+  lreturn
+Label5:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 10
+  aload 10
+  invokevirtual java/nio/ByteBuffer/getLong()J
+  lstore_1
+  lload_1
+  lreturn
+Label0:
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label8
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  ldc "require field not exist."
+  astore 9
+  aload 8
+  aload 9
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+  nop
+  nop
+  nop
+.end <method>
+
+.method public read(Lcom/qq/taf/jce/JceStruct;IZ)Lcom/qq/taf/jce/JceStruct;
+.limit locals 16
+.limit stack 200
+  nop
+  iconst_0
+  istore 4
+  aload_0
+  iload_2
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+Label4:
+  aload_1
+  invokevirtual java/lang/Object/getClass()Ljava/lang/Class;
+  astore 6
+  aload 6
+  invokevirtual java/lang/Class/newInstance()Ljava/lang/Object;
+  astore 7
+  aload 7
+  astore 8
+  aload 8
+  checkcast com/qq/taf/jce/JceStruct
+  astore 8
+  aload 8
+  astore 4
+Label5:
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 9
+  aload 9
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 9
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 9
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 10
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 10
+  istore 11
+  iload 10
+  iload 11
+  if_icmpeq Label1
+  new com/qq/taf/jce/JceDecodeException
+  astore 12
+  ldc "type mismatch."
+  astore 13
+  aload 12
+  aload 13
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 12
+  athrow
+Label3:
+  astore 14
+  new com/qq/taf/jce/JceDecodeException
+  astore 12
+  aload 14
+  invokevirtual java/lang/Exception/getMessage()Ljava/lang/String;
+  astore 15
+  aload 12
+  aload 15
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 12
+  athrow
+Label1:
+  aload 4
+  aload_0
+  invokevirtual com/qq/taf/jce/JceStruct/readFrom(Lcom/qq/taf/jce/JceInputStream;)V
+  aload_0
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToStructEnd()V
+Label2:
+  aload 4
+  areturn
+Label0:
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label2
+  new com/qq/taf/jce/JceDecodeException
+  astore 12
+  ldc "require field not exist."
+  astore 13
+  aload 12
+  aload 13
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 12
+  athrow
+  nop
+.end <method>
+
+.method public read(Ljava/lang/Object;IZ)Ljava/lang/Object;
+  .signature_attr "<T:Ljava/lang/Object;>(TT;IZ)Ljava/lang/Object;"
+.limit locals 61
+.limit stack 200
+  nop
+  aload_1
+  astore 4
+  aload 4
+  instanceof java/lang/Byte
+  istore 10
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 10
+  ifeq Label0
+  iconst_0
+  istore 12
+  iload 12
+  i2b
+  istore 11
+  aload_0
+  astore 4
+  iload_2
+  istore 5
+  iload_3
+  istore 6
+  aload 4
+  iload 11
+  iload 5
+  iload 6
+  invokevirtual com/qq/taf/jce/JceInputStream/read(BIZ)B
+  istore 11
+  iload 11
+  invokestatic java/lang/Byte/valueOf(B)Ljava/lang/Byte;
+  astore 13
+  aload 13
+  areturn
+Label0:
+  aload_1
+  astore 4
+  aload 4
+  instanceof java/lang/Boolean
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label1
+  iconst_0
+  istore 12
+  aload_0
+  astore 4
+  iload_2
+  istore 5
+  iload_3
+  istore 6
+  aload 4
+  iload 12
+  iload 5
+  iload 6
+  invokevirtual com/qq/taf/jce/JceInputStream/read(ZIZ)Z
+  istore 14
+  iload 14
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore 15
+  aload 15
+  areturn
+Label1:
+  aload_1
+  astore 4
+  aload 4
+  instanceof java/lang/Short
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label2
+  iconst_0
+  istore 12
+  iload 12
+  i2s
+  istore 16
+  aload_0
+  astore 4
+  iload_2
+  istore 5
+  iload_3
+  istore 6
+  aload 4
+  iload 16
+  iload 5
+  iload 6
+  invokevirtual com/qq/taf/jce/JceInputStream/read(SIZ)S
+  istore 16
+  iload 16
+  invokestatic java/lang/Short/valueOf(S)Ljava/lang/Short;
+  astore 17
+  aload 17
+  areturn
+Label2:
+  aload_1
+  astore 4
+  aload 4
+  instanceof java/lang/Integer
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label3
+  iconst_0
+  istore 12
+  iload 12
+  istore 18
+  aload_0
+  astore 4
+  iload_2
+  istore 5
+  iload_3
+  istore 6
+  aload 4
+  iload 18
+  iload 5
+  iload 6
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore_2
+  iload_2
+  istore 4
+  iload 4
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 19
+  aload 19
+  areturn
+Label3:
+  aload_1
+  astore 4
+  aload 4
+  instanceof java/lang/Long
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label4
+  ldc2_w 0
+  lstore 22
+  aload_0
+  astore 4
+  lload 22
+  lstore 5
+  iload_2
+  istore 7
+  iload_3
+  istore 8
+  aload 4
+  lload 5
+  iload 7
+  iload 8
+  invokevirtual com/qq/taf/jce/JceInputStream/read(JIZ)J
+  lstore 20
+  lload 20
+  lstore 4
+  lload 4
+  invokestatic java/lang/Long/valueOf(J)Ljava/lang/Long;
+  astore 24
+  aload 24
+  areturn
+Label4:
+  aload_1
+  astore 4
+  aload 4
+  instanceof java/lang/Float
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label5
+  fconst_0
+  fstore 26
+  aload_0
+  astore 4
+  fload 26
+  fstore 5
+  iload_2
+  istore 6
+  iload_3
+  istore 7
+  aload 4
+  fload 5
+  iload 6
+  iload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/read(FIZ)F
+  fstore 25
+  fload 25
+  fstore 4
+  fload 4
+  invokestatic java/lang/Float/valueOf(F)Ljava/lang/Float;
+  astore 27
+  aload 27
+  areturn
+Label5:
+  aload_1
+  astore 4
+  aload 4
+  instanceof java/lang/Double
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label6
+  ldc2_w 0.000000000000000
+  dstore 30
+  aload_0
+  astore 4
+  dload 30
+  dstore 5
+  iload_2
+  istore 7
+  iload_3
+  istore 8
+  aload 4
+  dload 5
+  iload 7
+  iload 8
+  invokevirtual com/qq/taf/jce/JceInputStream/read(DIZ)D
+  dstore 28
+  dload 28
+  dstore 4
+  dload 4
+  invokestatic java/lang/Double/valueOf(D)Ljava/lang/Double;
+  astore 32
+  aload 32
+  areturn
+Label6:
+  aload_1
+  astore 4
+  aload 4
+  instanceof java/lang/String
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label7
+  aload_0
+  astore 4
+  iload_2
+  istore 5
+  iload_3
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 33
+  aload 33
+  astore 4
+  aload 4
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 33
+  aload 33
+  areturn
+Label7:
+  aload_1
+  astore 4
+  aload 4
+  instanceof java/util/Map
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label8
+  aload_1
+  astore 35
+  aload 35
+  checkcast java/util/Map
+  astore 35
+  aload 35
+  astore 34
+  aload_0
+  astore 4
+  aload 34
+  astore 5
+  iload_2
+  istore 6
+  iload_3
+  istore 7
+  aload 4
+  aload 5
+  iload 6
+  iload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/readMap(Ljava/util/Map;IZ)Ljava/util/HashMap;
+  astore 36
+  aload 36
+  areturn
+Label8:
+  aload_1
+  astore 4
+  aload 4
+  instanceof java/util/List
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label9
+  aload_1
+  astore 38
+  aload 38
+  checkcast java/util/List
+  astore 38
+  aload 38
+  astore 37
+  aload_0
+  astore 4
+  aload 37
+  astore 5
+  iload_2
+  istore 6
+  iload_3
+  istore 7
+  aload 4
+  aload 5
+  iload 6
+  iload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/readArray(Ljava/util/List;IZ)Ljava/util/List;
+  astore 37
+  aload 37
+  areturn
+Label9:
+  aload_1
+  astore 4
+  aload 4
+  instanceof com/qq/taf/jce/JceStruct
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label10
+  aload_1
+  astore 40
+  aload 40
+  checkcast com/qq/taf/jce/JceStruct
+  astore 40
+  aload 40
+  astore 39
+  aload_0
+  astore 4
+  aload 39
+  astore 5
+  iload_2
+  istore 6
+  iload_3
+  istore 7
+  aload 4
+  aload 5
+  iload 6
+  iload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Lcom/qq/taf/jce/JceStruct;IZ)Lcom/qq/taf/jce/JceStruct;
+  astore 39
+  aload 39
+  areturn
+Label10:
+  aload_1
+  astore 4
+  aload 4
+  invokevirtual java/lang/Object/getClass()Ljava/lang/Class;
+  astore 41
+  aload 41
+  astore 4
+  aload 4
+  invokevirtual java/lang/Class/isArray()Z
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label11
+  aload_1
+  astore 4
+  aload 4
+  instanceof [B
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifne Label12
+  aload_1
+  astore 4
+  aload 4
+  instanceof [Ljava/lang/Byte;
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label13
+Label12:
+  aconst_null
+  astore 43
+  aload 43
+  astore 44
+  aload 44
+  checkcast [B
+  astore 44
+  aload 44
+  astore 42
+  aload_0
+  astore 4
+  aload 42
+  astore 5
+  iload_2
+  istore 6
+  iload_3
+  istore 7
+  aload 4
+  aload 5
+  iload 6
+  iload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/read([BIZ)[B
+  astore 42
+  aload 42
+  areturn
+Label13:
+  aload_1
+  astore 4
+  aload 4
+  instanceof [Z
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label14
+  aconst_null
+  astore 43
+  aload 43
+  astore 46
+  aload 46
+  checkcast [Z
+  astore 46
+  aload 46
+  astore 45
+  aload_0
+  astore 4
+  aload 45
+  astore 5
+  iload_2
+  istore 6
+  iload_3
+  istore 7
+  aload 4
+  aload 5
+  iload 6
+  iload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/read([ZIZ)[Z
+  astore 45
+  aload 45
+  areturn
+Label14:
+  aload_1
+  astore 4
+  aload 4
+  instanceof [S
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label15
+  aconst_null
+  astore 43
+  aload 43
+  astore 48
+  aload 48
+  checkcast [S
+  astore 48
+  aload 48
+  astore 47
+  aload_0
+  astore 4
+  aload 47
+  astore 5
+  iload_2
+  istore 6
+  iload_3
+  istore 7
+  aload 4
+  aload 5
+  iload 6
+  iload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/read([SIZ)[S
+  astore 47
+  aload 47
+  areturn
+Label15:
+  aload_1
+  astore 4
+  aload 4
+  instanceof [I
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label16
+  aconst_null
+  astore 43
+  aload 43
+  astore 50
+  aload 50
+  checkcast [I
+  astore 50
+  aload 50
+  astore 49
+  aload_0
+  astore 4
+  aload 49
+  astore 5
+  iload_2
+  istore 6
+  iload_3
+  istore 7
+  aload 4
+  aload 5
+  iload 6
+  iload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/read([IIZ)[I
+  astore 49
+  aload 49
+  areturn
+Label16:
+  aload_1
+  astore 4
+  aload 4
+  instanceof [J
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label17
+  aconst_null
+  astore 43
+  aload 43
+  astore 52
+  aload 52
+  checkcast [J
+  astore 52
+  aload 52
+  astore 51
+  aload_0
+  astore 4
+  aload 51
+  astore 5
+  iload_2
+  istore 6
+  iload_3
+  istore 7
+  aload 4
+  aload 5
+  iload 6
+  iload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/read([JIZ)[J
+  astore 51
+  aload 51
+  areturn
+Label17:
+  aload_1
+  astore 4
+  aload 4
+  instanceof [F
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label18
+  aconst_null
+  astore 43
+  aload 43
+  astore 54
+  aload 54
+  checkcast [F
+  astore 54
+  aload 54
+  astore 53
+  aload_0
+  astore 4
+  aload 53
+  astore 5
+  iload_2
+  istore 6
+  iload_3
+  istore 7
+  aload 4
+  aload 5
+  iload 6
+  iload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/read([FIZ)[F
+  astore 53
+  aload 53
+  areturn
+Label18:
+  aload_1
+  astore 4
+  aload 4
+  instanceof [D
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label19
+  aconst_null
+  astore 43
+  aload 43
+  astore 56
+  aload 56
+  checkcast [D
+  astore 56
+  aload 56
+  astore 55
+  aload_0
+  astore 4
+  aload 55
+  astore 5
+  iload_2
+  istore 6
+  iload_3
+  istore 7
+  aload 4
+  aload 5
+  iload 6
+  iload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/read([DIZ)[D
+  astore 55
+  aload 55
+  areturn
+Label19:
+  aload_1
+  astore 58
+  aload 58
+  checkcast [Ljava/lang/Object;
+  astore 58
+  aload 58
+  astore 57
+  aload 57
+  checkcast [Ljava/lang/Object;
+  astore 57
+  aload_0
+  astore 4
+  aload 57
+  astore 5
+  iload_2
+  istore 6
+  iload_3
+  istore 7
+  aload 4
+  aload 5
+  iload 6
+  iload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/readArray([Ljava/lang/Object;IZ)[Ljava/lang/Object;
+  astore 57
+  aload 57
+  areturn
+Label11:
+  new com/qq/taf/jce/JceDecodeException
+  astore 59
+  ldc "read object error: unsupport type."
+  astore 60
+  aload 59
+  astore 4
+  aload 60
+  astore 5
+  aload 4
+  aload 5
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 59
+  athrow
+  nop
+.end <method>
+
+.method public read(Ljava/lang/String;IZ)Ljava/lang/String;
+.limit locals 16
+.limit stack 200
+  nop
+  aload_0
+  iload_2
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 5
+  aload 5
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 5
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  lookupswitch
+  6 : Label2
+  7 : Label3
+  default : Label1
+Label1:
+  goto Label4
+Label4:
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "type mismatch."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label2:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  invokevirtual java/nio/ByteBuffer/get()B
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  ifge Label5
+  iload_2
+  sipush 256
+  iadd
+  istore_2
+Label5:
+  iload_2
+  newarray byte
+  astore 10
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  aload 10
+  invokevirtual java/nio/ByteBuffer/get([B)Ljava/nio/ByteBuffer;
+  pop
+  new java/lang/String
+  astore_1
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/sServerEncoding Ljava/lang/String;
+  astore 11
+Label10:
+  aload_1
+  aload 10
+  aload 11
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+Label8:
+  aload_1
+  areturn
+Label9:
+  astore 12
+  new java/lang/String
+  astore_1
+  aload_1
+  aload 10
+  invokespecial java/lang/String/<init>([B)V
+  aload_1
+  areturn
+Label3:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  invokevirtual java/nio/ByteBuffer/getInt()I
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  ldc 104857600
+  istore 13
+  iload_2
+  iload 13
+  if_icmpgt Label6
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  ifge Label7
+Label6:
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "String too long: "
+  astore 8
+  aload 14
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  iload_2
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 11
+  aload 7
+  aload 11
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label7:
+  iload_2
+  newarray byte
+  astore 10
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  aload 10
+  invokevirtual java/nio/ByteBuffer/get([B)Ljava/nio/ByteBuffer;
+  pop
+  new java/lang/String
+  astore_1
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/sServerEncoding Ljava/lang/String;
+  astore 11
+Label12:
+  aload_1
+  aload 10
+  aload 11
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+Label13:
+  aload_1
+  areturn
+Label11:
+  astore 15
+  new java/lang/String
+  astore_1
+  aload_1
+  aload 10
+  invokespecial java/lang/String/<init>([B)V
+  aload_1
+  areturn
+Label0:
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label8
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "require field not exist."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+  nop
+  nop
+.end <method>
+
+.method public read(SIZ)S
+.limit locals 10
+.limit stack 200
+  nop
+  aload_0
+  iload_2
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 5
+  aload 5
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 5
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  lookupswitch
+  0 : Label2
+  1 : Label3
+  12 : Label4
+  default : Label1
+Label1:
+  goto Label5
+Label5:
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "type mismatch."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label4:
+  iconst_0
+  istore_1
+Label6:
+  iload_1
+  ireturn
+Label2:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  invokevirtual java/nio/ByteBuffer/get()B
+  istore 6
+  iload 6
+  i2s
+  istore_1
+  iload_1
+  ireturn
+Label3:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  invokevirtual java/nio/ByteBuffer/getShort()S
+  istore_1
+  iload_1
+  ireturn
+Label0:
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label6
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "require field not exist."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+  nop
+  nop
+.end <method>
+
+.method public read(ZIZ)Z
+.limit locals 6
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  iconst_0
+  istore 5
+  iload 5
+  i2b
+  istore 4
+  aload_0
+  iload 4
+  iload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceInputStream/read(BIZ)B
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  iconst_1
+  istore_1
+Label0:
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public read([BIZ)[B
+.limit locals 18
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  iload_2
+  istore 4
+  aload_0
+  iload 4
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 6
+  aload 6
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 6
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 6
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  lookupswitch
+  9 : Label2
+  13 : Label3
+  default : Label1
+Label1:
+  goto Label4
+Label4:
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  ldc "type mismatch."
+  astore 9
+  aload 8
+  aload 9
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+Label3:
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 10
+  aload 10
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 10
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 10
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  ifeq Label5
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  new java/lang/StringBuilder
+  astore 11
+  aload 11
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "type mismatch, tag: "
+  astore 9
+  aload 11
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  iload_2
+  istore 4
+  aload 11
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 11
+  ldc ", type: "
+  astore 9
+  aload 11
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload 6
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 7
+  aload 11
+  iload 7
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 11
+  ldc ", "
+  astore 9
+  aload 11
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload 10
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 7
+  aload 11
+  iload 7
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 11
+  aload 11
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 12
+  aload 8
+  aload 12
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+Label5:
+  iconst_0
+  istore 14
+  iconst_0
+  istore 15
+  iconst_1
+  istore 16
+  aload_0
+  iload 14
+  iload 15
+  iload 16
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 13
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  ifge Label6
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  new java/lang/StringBuilder
+  astore 11
+  aload 11
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "invalid size, tag: "
+  astore 9
+  aload 11
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  iload_2
+  istore 4
+  aload 11
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 11
+  ldc ", type: "
+  astore 9
+  aload 11
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload 6
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 7
+  aload 11
+  iload 7
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 11
+  ldc ", "
+  astore 9
+  aload 11
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload 10
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 7
+  aload 11
+  iload 7
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 11
+  ldc ", size: "
+  astore 9
+  aload 11
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload 11
+  iload 13
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 11
+  aload 11
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 12
+  aload 8
+  aload 12
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+Label6:
+  iload 13
+  newarray byte
+  astore_1
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 17
+  aload 17
+  aload_1
+  invokevirtual java/nio/ByteBuffer/get([B)Ljava/nio/ByteBuffer;
+  pop
+Label8:
+  aload_1
+  areturn
+Label2:
+  iconst_0
+  istore 14
+  iconst_0
+  istore 15
+  iconst_1
+  istore 16
+  aload_0
+  iload 14
+  iload 15
+  iload 16
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 13
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  ifge Label7
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  new java/lang/StringBuilder
+  astore 11
+  aload 11
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "size invalid: "
+  astore 9
+  aload 11
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload 11
+  iload 13
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 11
+  aload 11
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 12
+  aload 8
+  aload 12
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+Label7:
+  iload 13
+  newarray byte
+  astore_1
+  iconst_0
+  istore_2
+Label9:
+  iload_2
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  istore 4
+  iload 4
+  iload 13
+  if_icmpge Label8
+  iconst_0
+  istore 14
+  aload_1
+  iload 14
+  baload
+  istore 7
+  iconst_0
+  istore 14
+  iconst_1
+  istore 15
+  aload_0
+  iload 7
+  iload 14
+  iload 15
+  invokevirtual com/qq/taf/jce/JceInputStream/read(BIZ)B
+  istore 7
+  aload_1
+  iload_2
+  iload 7
+  bastore
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label9
+Label0:
+  iload_3
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label8
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  ldc "require field not exist."
+  astore 9
+  aload 8
+  aload 9
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+  nop
+  nop
+.end <method>
+
+.method public read([DIZ)[D
+.limit locals 18
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  iload_2
+  istore 4
+  aload_0
+  iload 4
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 6
+  aload 6
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 6
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 6
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  lookupswitch
+  9 : Label2
+  default : Label1
+Label1:
+  goto Label3
+Label3:
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  ldc "type mismatch."
+  astore 9
+  aload 8
+  aload 9
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+Label2:
+  iconst_0
+  istore 11
+  iconst_0
+  istore 12
+  iconst_1
+  istore 13
+  aload_0
+  iload 11
+  iload 12
+  iload 13
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 10
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  ifge Label4
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "size invalid: "
+  astore 9
+  aload 14
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  iload 10
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 15
+  aload 8
+  aload 15
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+Label4:
+  iload 10
+  newarray double
+  astore_1
+  iconst_0
+  istore_2
+Label6:
+  iload_2
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  istore 4
+  iload 4
+  iload 10
+  if_icmpge Label5
+  iconst_0
+  istore 11
+  aload_1
+  iload 11
+  daload
+  dstore 16
+  iconst_0
+  istore 11
+  iconst_1
+  istore 12
+  aload_0
+  dload 16
+  iload 11
+  iload 12
+  invokevirtual com/qq/taf/jce/JceInputStream/read(DIZ)D
+  dstore 16
+  aload_1
+  iload_2
+  dload 16
+  dastore
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label6
+Label0:
+  iload_3
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label5
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  ldc "require field not exist."
+  astore 9
+  aload 8
+  aload 9
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+Label5:
+  aload_1
+  areturn
+  nop
+  nop
+.end <method>
+
+.method public read([FIZ)[F
+.limit locals 16
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  aload_0
+  iload_2
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 5
+  aload 5
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 5
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  lookupswitch
+  9 : Label2
+  default : Label1
+Label1:
+  goto Label3
+Label3:
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "type mismatch."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label2:
+  iconst_0
+  istore 10
+  iconst_0
+  istore 11
+  iconst_1
+  istore 12
+  aload_0
+  iload 10
+  iload 11
+  iload 12
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifge Label4
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  new java/lang/StringBuilder
+  astore 13
+  aload 13
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "size invalid: "
+  astore 8
+  aload 13
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  iload 9
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  aload 7
+  aload 14
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label4:
+  iload 9
+  newarray float
+  astore_1
+  iconst_0
+  dstore_2
+Label6:
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 9
+  if_icmpge Label5
+  iconst_0
+  istore 10
+  aload_1
+  iload 10
+  faload
+  fstore 15
+  iconst_0
+  istore 10
+  iconst_1
+  istore 11
+  aload_0
+  fload 15
+  iload 10
+  iload 11
+  invokevirtual com/qq/taf/jce/JceInputStream/read(FIZ)F
+  fstore 15
+  aload_1
+  iload_2
+  fload 15
+  fastore
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label6
+Label0:
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label5
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "require field not exist."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label5:
+  aload_1
+  areturn
+  nop
+  nop
+  nop
+.end <method>
+
+.method public read([IIZ)[I
+.limit locals 16
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  aload_0
+  iload_2
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 5
+  aload 5
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 5
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  lookupswitch
+  9 : Label2
+  default : Label1
+Label1:
+  goto Label3
+Label3:
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "type mismatch."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label2:
+  iconst_0
+  istore 10
+  iconst_0
+  istore 11
+  iconst_1
+  istore 12
+  aload_0
+  iload 10
+  iload 11
+  iload 12
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifge Label4
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  new java/lang/StringBuilder
+  astore 13
+  aload 13
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "size invalid: "
+  astore 8
+  aload 13
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  iload 9
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  aload 7
+  aload 14
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label4:
+  iload 9
+  newarray int
+  astore_1
+  iconst_0
+  dstore_2
+Label6:
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 9
+  if_icmpge Label5
+  iconst_0
+  istore 10
+  aload_1
+  iload 10
+  iaload
+  istore 15
+  iconst_0
+  istore 10
+  iconst_1
+  istore 11
+  aload_0
+  iload 15
+  iload 10
+  iload 11
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 15
+  aload_1
+  iload_2
+  iload 15
+  iastore
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label6
+Label0:
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label5
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "require field not exist."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label5:
+  aload_1
+  areturn
+  nop
+  nop
+  nop
+.end <method>
+
+.method public read([JIZ)[J
+.limit locals 18
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  iload_2
+  istore 4
+  aload_0
+  iload 4
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 6
+  aload 6
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 6
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 6
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  lookupswitch
+  9 : Label2
+  default : Label1
+Label1:
+  goto Label3
+Label3:
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  ldc "type mismatch."
+  astore 9
+  aload 8
+  aload 9
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+Label2:
+  iconst_0
+  istore 11
+  iconst_0
+  istore 12
+  iconst_1
+  istore 13
+  aload_0
+  iload 11
+  iload 12
+  iload 13
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 10
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  ifge Label4
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "size invalid: "
+  astore 9
+  aload 14
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  iload 10
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 15
+  aload 8
+  aload 15
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+Label4:
+  iload 10
+  newarray long
+  astore_1
+  iconst_0
+  istore_2
+Label6:
+  iload_2
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  istore 4
+  iload 4
+  iload 10
+  if_icmpge Label5
+  iconst_0
+  istore 11
+  aload_1
+  iload 11
+  laload
+  lstore 16
+  iconst_0
+  istore 11
+  iconst_1
+  istore 12
+  aload_0
+  lload 16
+  iload 11
+  iload 12
+  invokevirtual com/qq/taf/jce/JceInputStream/read(JIZ)J
+  lstore 16
+  aload_1
+  iload_2
+  lload 16
+  lastore
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label6
+Label0:
+  iload_3
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label5
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  ldc "require field not exist."
+  astore 9
+  aload 8
+  aload 9
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+Label5:
+  aload_1
+  areturn
+  nop
+  nop
+.end <method>
+
+.method public read([Lcom/qq/taf/jce/JceStruct;IZ)[Lcom/qq/taf/jce/JceStruct;
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  iload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceInputStream/readArray([Ljava/lang/Object;IZ)[Ljava/lang/Object;
+  astore 4
+  aload 4
+  astore 5
+  aload 5
+  checkcast [Lcom/qq/taf/jce/JceStruct;
+  astore 5
+  aload 5
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public read([Ljava/lang/String;IZ)[Ljava/lang/String;
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  iload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceInputStream/readArray([Ljava/lang/Object;IZ)[Ljava/lang/Object;
+  astore 4
+  aload 4
+  astore 5
+  aload 5
+  checkcast [Ljava/lang/String;
+  astore 5
+  aload 5
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public read([SIZ)[S
+.limit locals 16
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  aload_0
+  iload_2
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 5
+  aload 5
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 5
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  lookupswitch
+  9 : Label2
+  default : Label1
+Label1:
+  goto Label3
+Label3:
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "type mismatch."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label2:
+  iconst_0
+  istore 10
+  iconst_0
+  istore 11
+  iconst_1
+  istore 12
+  aload_0
+  iload 10
+  iload 11
+  iload 12
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifge Label4
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  new java/lang/StringBuilder
+  astore 13
+  aload 13
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "size invalid: "
+  astore 8
+  aload 13
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  iload 9
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  aload 7
+  aload 14
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label4:
+  iload 9
+  newarray short
+  astore_1
+  iconst_0
+  dstore_2
+Label6:
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 9
+  if_icmpge Label5
+  iconst_0
+  istore 10
+  aload_1
+  iload 10
+  saload
+  istore 15
+  iconst_0
+  istore 10
+  iconst_1
+  istore 11
+  aload_0
+  iload 15
+  iload 10
+  iload 11
+  invokevirtual com/qq/taf/jce/JceInputStream/read(SIZ)S
+  istore 15
+  aload_1
+  iload_2
+  iload 15
+  sastore
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label6
+Label0:
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label5
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "require field not exist."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label5:
+  aload_1
+  areturn
+  nop
+  nop
+  nop
+.end <method>
+
+.method public read([ZIZ)[Z
+.limit locals 15
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  aload_0
+  iload_2
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 5
+  aload 5
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 5
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  lookupswitch
+  9 : Label2
+  default : Label1
+Label1:
+  goto Label3
+Label3:
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "type mismatch."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label2:
+  iconst_0
+  istore 10
+  iconst_0
+  istore 11
+  iconst_1
+  istore 12
+  aload_0
+  iload 10
+  iload 11
+  iload 12
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifge Label4
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  new java/lang/StringBuilder
+  astore 13
+  aload 13
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "size invalid: "
+  astore 8
+  aload 13
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  iload 9
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  aload 7
+  aload 14
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label4:
+  iload 9
+  newarray boolean
+  astore_1
+  iconst_0
+  dstore_2
+Label6:
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 9
+  if_icmpge Label5
+  iconst_0
+  istore 10
+  aload_1
+  iload 10
+  baload
+  istore 4
+  iconst_0
+  istore 10
+  iconst_1
+  istore 11
+  aload_0
+  iload 4
+  iload 10
+  iload 11
+  invokevirtual com/qq/taf/jce/JceInputStream/read(ZIZ)Z
+  istore 4
+  aload_1
+  iload_2
+  iload 4
+  bastore
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label6
+Label0:
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label5
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "require field not exist."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label5:
+  aload_1
+  areturn
+  nop
+  nop
+  nop
+.end <method>
+
+.method public readArray(Ljava/util/List;IZ)Ljava/util/List;
+  .signature_attr "<T:Ljava/lang/Object;>(Ljava/util/List<TT;>;IZ)Ljava/util/List<TT;>;"
+.limit locals 11
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_1
+  invokeinterface java/util/List/isEmpty()Z 1
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label1
+Label0:
+  new java/util/ArrayList
+  astore 5
+  aload 5
+  invokespecial java/util/ArrayList/<init>()V
+Label3:
+  aload 5
+  areturn
+Label1:
+  iconst_0
+  istore 7
+  aload_1
+  iload 7
+  invokeinterface java/util/List/get(I)Ljava/lang/Object; 2
+  astore 6
+  aload_0
+  aload 6
+  iload_2
+  iload_3
+  invokespecial com/qq/taf/jce/JceInputStream/readArrayImpl(Ljava/lang/Object;IZ)[Ljava/lang/Object;
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnonnull Label2
+  aconst_null
+  astore 9
+  aload 9
+  areturn
+Label2:
+  new java/util/ArrayList
+  astore 5
+  aload 5
+  invokespecial java/util/ArrayList/<init>()V
+  iconst_0
+  dstore_2
+Label4:
+  aload 8
+  arraylength
+  istore 10
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 10
+  if_icmpge Label3
+  aload 8
+  iload_2
+  aaload
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label4
+  nop
+.end <method>
+
+.method public readArray([Ljava/lang/Object;IZ)[Ljava/lang/Object;
+  .signature_attr "<T:Ljava/lang/Object;>([TT;IZ)[TT;"
+.limit locals 9
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_1
+  arraylength
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifne Label1
+Label0:
+  new com/qq/taf/jce/JceDecodeException
+  astore 5
+  ldc "unable to get type of key and value."
+  astore 6
+  aload 5
+  aload 6
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 5
+  athrow
+Label1:
+  iconst_0
+  istore 8
+  aload_1
+  iload 8
+  aaload
+  astore 7
+  aload_0
+  aload 7
+  iload_2
+  iload_3
+  invokespecial com/qq/taf/jce/JceInputStream/readArrayImpl(Ljava/lang/Object;IZ)[Ljava/lang/Object;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private readArrayImpl(Ljava/lang/Object;IZ)[Ljava/lang/Object;
+  .signature_attr "<T:Ljava/lang/Object;>(TT;IZ)[TT;"
+.limit locals 21
+.limit stack 200
+  nop
+  aload_0
+  astore 4
+  iload_2
+  istore 5
+  aload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 7
+  aload 7
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  astore 4
+  aload 4
+  aload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 7
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  lookupswitch
+  9 : Label2
+  default : Label1
+Label1:
+  goto Label3
+Label3:
+  new com/qq/taf/jce/JceDecodeException
+  astore 9
+  ldc "type mismatch."
+  astore 10
+  aload 9
+  aload 10
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 9
+  athrow
+Label2:
+  iconst_0
+  istore 12
+  iconst_0
+  istore 13
+  iconst_1
+  istore 14
+  aload_0
+  astore 4
+  aload 4
+  iload 12
+  iload 13
+  iload 14
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 11
+  ifge Label4
+  new com/qq/taf/jce/JceDecodeException
+  astore 9
+  new java/lang/StringBuilder
+  astore 15
+  aload 15
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "size invalid: "
+  astore 10
+  aload 15
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  iload 11
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 16
+  aload 9
+  aload 16
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 9
+  athrow
+Label4:
+  aload_1
+  astore 4
+  aload 4
+  invokevirtual java/lang/Object/getClass()Ljava/lang/Class;
+  astore 17
+  aload 17
+  iload 11
+  invokestatic java/lang/reflect/Array/newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
+  astore 18
+  aload 18
+  astore 20
+  aload 20
+  checkcast [Ljava/lang/Object;
+  astore 20
+  aload 20
+  astore 19
+  aload 19
+  checkcast [Ljava/lang/Object;
+  astore 19
+  iconst_0
+  istore_2
+Label6:
+  iload_2
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  istore 4
+  iload 4
+  iload 11
+  if_icmpge Label5
+  iconst_0
+  istore 12
+  iconst_1
+  istore 13
+  aload_0
+  astore 4
+  aload_1
+  astore 5
+  aload 4
+  aload 5
+  iload 12
+  iload 13
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Ljava/lang/Object;IZ)Ljava/lang/Object;
+  astore 18
+  aload 19
+  iload_2
+  aload 18
+  aastore
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label6
+Label0:
+  iload_3
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label7
+  new com/qq/taf/jce/JceDecodeException
+  astore 9
+  ldc "require field not exist."
+  astore 10
+  aload 9
+  aload 10
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 9
+  athrow
+Label7:
+  aconst_null
+  astore 19
+Label5:
+  aload 19
+  areturn
+  nop
+  nop
+  nop
+.end <method>
+
+.method public readByteString(Ljava/lang/String;IZ)Ljava/lang/String;
+.limit locals 13
+.limit stack 200
+  nop
+  aload_0
+  iload_2
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 5
+  aload 5
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 5
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  lookupswitch
+  6 : Label2
+  7 : Label3
+  default : Label1
+Label1:
+  goto Label4
+Label4:
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "type mismatch."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label2:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  invokevirtual java/nio/ByteBuffer/get()B
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  ifge Label5
+  iload_2
+  sipush 256
+  iadd
+  istore_2
+Label5:
+  iload_2
+  newarray byte
+  astore 10
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  aload 10
+  invokevirtual java/nio/ByteBuffer/get([B)Ljava/nio/ByteBuffer;
+  pop
+  aload 10
+  invokestatic com/qq/taf/jce/HexUtil/bytes2HexStr([B)Ljava/lang/String;
+  astore_1
+Label8:
+  aload_1
+  areturn
+Label3:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  invokevirtual java/nio/ByteBuffer/getInt()I
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  ldc 104857600
+  istore 11
+  iload_2
+  iload 11
+  if_icmpgt Label6
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  ifge Label7
+Label6:
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  new java/lang/StringBuilder
+  astore 12
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "String too long: "
+  astore 8
+  aload 12
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  aload 12
+  iload_2
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 12
+  aload 12
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_1
+  aload 7
+  aload_1
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label7:
+  iload_2
+  newarray byte
+  astore 10
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  aload 10
+  invokevirtual java/nio/ByteBuffer/get([B)Ljava/nio/ByteBuffer;
+  pop
+  aload 10
+  invokestatic com/qq/taf/jce/HexUtil/bytes2HexStr([B)Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+Label0:
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label8
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "require field not exist."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+  nop
+  nop
+.end <method>
+
+.method public static readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;Ljava/nio/ByteBuffer;)I
+.limit locals 7
+.limit stack 200
+  nop
+  aload_1
+  invokevirtual java/nio/ByteBuffer/get()B
+  istore_2
+  bipush 15
+  istore 4
+  iload_2
+  iload 4
+  iand
+  istore_3
+  iload_3
+  i2b
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  sipush 240
+  istore 4
+  iload_2
+  iload 4
+  iand
+  istore 5
+  iconst_4
+  istore 4
+  iload 5
+  iload 4
+  ishr
+  istore 5
+  aload_0
+  iload 5
+  putfield com/qq/taf/jce/JceInputStream$HeadData/tag I
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream$HeadData/tag I
+  istore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  bipush 15
+  istore 4
+  iload 6
+  iload 4
+  if_icmpne Label0
+  aload_1
+  invokevirtual java/nio/ByteBuffer/get()B
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/JceInputStream$HeadData/tag I
+  iconst_2
+  istore 4
+  iload 4
+  ireturn
+Label0:
+  iconst_1
+  istore 4
+  iload 4
+  ireturn
+  nop
+.end <method>
+
+.method public readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore_2
+  aload_1
+  aload_2
+  invokestatic com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;Ljava/nio/ByteBuffer;)I
+  pop
+  return
+  nop
+.end <method>
+
+.method public readList(IZ)Ljava/util/List;
+.limit locals 29
+.limit stack 200
+  nop
+  new java/util/ArrayList
+  astore 5
+  aload 5
+  invokespecial java/util/ArrayList/<init>()V
+  aload_0
+  astore_3
+  iload_1
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 7
+  aload 7
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  astore_3
+  aload_3
+  aload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 7
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  lookupswitch
+  9 : Label2
+  default : Label1
+Label1:
+  goto Label3
+Label3:
+  new com/qq/taf/jce/JceDecodeException
+  astore 9
+  ldc "type mismatch."
+  astore 10
+  aload 9
+  aload 10
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 9
+  athrow
+Label2:
+  iconst_0
+  istore 12
+  iconst_0
+  istore 13
+  iconst_1
+  istore 14
+  aload_0
+  astore_3
+  aload_3
+  iload 12
+  iload 13
+  iload 14
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 11
+  ifge Label4
+  new com/qq/taf/jce/JceDecodeException
+  astore 9
+  new java/lang/StringBuilder
+  astore 15
+  aload 15
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "size invalid: "
+  astore 10
+  aload 15
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  iload 11
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 16
+  aload 9
+  aload 16
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 9
+  athrow
+Label4:
+  iconst_0
+  istore_1
+Label19:
+  iload_1
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  istore_3
+  iload_3
+  iload 11
+  if_icmpge Label5
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 7
+  aload 7
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  astore_3
+  aload_3
+  aload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 7
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 17
+  dload 17
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 17
+  lookupswitch
+  0 : Label7
+  1 : Label8
+  2 : Label9
+  3 : Label10
+  4 : Label11
+  5 : Label12
+  6 : Label13
+  7 : Label14
+  8 : Label15
+  9 : Label15
+  10 : Label16
+  11 : Label17
+  12 : Label18
+  default : Label6
+Label6:
+  goto Label17
+Label17:
+  new com/qq/taf/jce/JceDecodeException
+  astore 9
+  ldc "type mismatch."
+  astore 10
+  aload 9
+  aload 10
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 9
+  athrow
+Label7:
+  iconst_1
+  istore 12
+  aload_0
+  astore_3
+  aload_3
+  iload 12
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+Label15:
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  goto Label19
+Label8:
+  iconst_2
+  istore 12
+  aload_0
+  astore_3
+  aload_3
+  iload 12
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+  goto Label15
+Label9:
+  iconst_4
+  istore 12
+  aload_0
+  astore_3
+  aload_3
+  iload 12
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+  goto Label15
+Label10:
+  bipush 8
+  istore 12
+  aload_0
+  astore_3
+  aload_3
+  iload 12
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+  goto Label15
+Label11:
+  iconst_4
+  istore 12
+  aload_0
+  astore_3
+  aload_3
+  iload 12
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+  goto Label15
+Label12:
+  bipush 8
+  istore 12
+  aload_0
+  astore_3
+  aload_3
+  iload 12
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+  goto Label15
+Label13:
+  aload_0
+  astore_3
+  aload_3
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 18
+  aload 18
+  invokevirtual java/nio/ByteBuffer/get()B
+  istore 19
+  iload 19
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  ifge Label20
+  iload 19
+  istore_3
+  iload_3
+  sipush 256
+  iadd
+  istore_3
+  iload_3
+  istore 19
+Label20:
+  aload_0
+  astore_3
+  iload 19
+  istore 4
+  aload_3
+  iload 4
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+  goto Label15
+Label14:
+  aload_0
+  astore_3
+  aload_3
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 18
+  aload 18
+  invokevirtual java/nio/ByteBuffer/getInt()I
+  istore 19
+  aload_0
+  astore_3
+  iload 19
+  istore 4
+  aload_3
+  iload 4
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+  goto Label15
+Label16:
+  ldc com/qq/taf/jce/JceStruct
+  astore 20
+Label22:
+  aload 20
+  astore_3
+  aload_3
+  invokevirtual java/lang/Class/getName()Ljava/lang/String;
+  astore 16
+  aload 16
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 20
+  iconst_0
+  istore 12
+  iload 12
+  anewarray java/lang/Class
+  astore_3
+  aload_3
+  astore 21
+  aload 20
+  astore_3
+  aload 21
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/Class/getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+  astore 22
+  iconst_0
+  istore 12
+  iload 12
+  anewarray java/lang/Object
+  astore_3
+  aload_3
+  astore 23
+  aload 22
+  astore_3
+  aload 23
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/reflect/Constructor/newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+  astore 24
+  aload 24
+  astore 26
+  aload 26
+  checkcast com/qq/taf/jce/JceStruct
+  astore 26
+  aload 26
+  astore 25
+  aload 25
+  astore_3
+  aload_0
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual com/qq/taf/jce/JceStruct/readFrom(Lcom/qq/taf/jce/JceInputStream;)V
+  aload_0
+  astore_3
+  aload_3
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToStructEnd()V
+  aload 25
+  astore_3
+  aload 5
+  aload_3
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+Label23:
+  goto Label15
+Label21:
+  astore 27
+  aload 27
+  astore_3
+  aload_3
+  invokevirtual java/lang/Exception/printStackTrace()V
+  new com/qq/taf/jce/JceDecodeException
+  astore 9
+  new java/lang/StringBuilder
+  astore 15
+  aload 15
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "type mismatch."
+  astore 10
+  aload 15
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 27
+  astore_3
+  aload 15
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 16
+  aload 9
+  aload 16
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 9
+  athrow
+Label18:
+  new java/lang/Integer
+  astore 28
+  iconst_0
+  istore 12
+  aload 28
+  astore_3
+  aload_3
+  iload 12
+  invokespecial java/lang/Integer/<init>(I)V
+  aload 28
+  astore_3
+  aload 5
+  aload_3
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  goto Label15
+Label0:
+  iload_2
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label5
+  new com/qq/taf/jce/JceDecodeException
+  astore 9
+  ldc "require field not exist."
+  astore 10
+  aload 9
+  aload 10
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 9
+  athrow
+Label5:
+  aload 5
+  areturn
+  nop
+  nop
+  nop
+  nop
+.end <method>
+
+.method public readMap(Ljava/util/Map;IZ)Ljava/util/HashMap;
+  .signature_attr "<K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;TV;>;IZ)Ljava/util/HashMap<TK;TV;>;"
+.limit locals 6
+.limit stack 200
+  nop
+  new java/util/HashMap
+  astore 4
+  aload 4
+  invokespecial java/util/HashMap/<init>()V
+  aload_0
+  aload 4
+  aload_1
+  iload_2
+  iload_3
+  invokespecial com/qq/taf/jce/JceInputStream/readMap(Ljava/util/Map;Ljava/util/Map;IZ)Ljava/util/Map;
+  astore_1
+  aload_1
+  astore 5
+  aload 5
+  checkcast java/util/HashMap
+  astore 5
+  aload 5
+  astore 4
+  aload 4
+  areturn
+  nop
+.end <method>
+
+.method private readMap(Ljava/util/Map;Ljava/util/Map;IZ)Ljava/util/Map;
+  .signature_attr "<K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;TV;>;Ljava/util/Map<TK;TV;>;IZ)Ljava/util/Map<TK;TV;>;"
+.limit locals 30
+.limit stack 200
+  nop
+  aload_2
+  astore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_2
+  astore 5
+  aload 5
+  invokeinterface java/util/Map/isEmpty()Z 1
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label1
+Label0:
+  new java/util/HashMap
+  astore 10
+  aload 10
+  astore_1
+  aload 10
+  invokespecial java/util/HashMap/<init>()V
+Label7:
+  aload_1
+  areturn
+Label1:
+  aload_2
+  astore 5
+  aload 5
+  invokeinterface java/util/Map/entrySet()Ljava/util/Set; 1
+  astore 11
+  aload 11
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore 12
+  aload 12
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 13
+  aload 13
+  astore 15
+  aload 15
+  checkcast java/util/Map$Entry
+  astore 15
+  aload 15
+  astore 14
+  aload 14
+  invokeinterface java/util/Map$Entry/getKey()Ljava/lang/Object; 1
+  astore 16
+  aload 14
+  invokeinterface java/util/Map$Entry/getValue()Ljava/lang/Object; 1
+  astore 17
+  aload_0
+  astore 5
+  iload_3
+  istore 6
+  aload 5
+  iload 6
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label2
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 18
+  aload 18
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  astore 5
+  aload 5
+  aload 18
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 18
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 19
+  dload 19
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  lookupswitch
+  8 : Label4
+  default : Label3
+Label3:
+  goto Label5
+Label5:
+  new com/qq/taf/jce/JceDecodeException
+  astore 20
+  ldc "type mismatch."
+  astore 21
+  aload 21
+  astore 5
+  aload 20
+  aload 5
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 20
+  athrow
+Label4:
+  iconst_0
+  istore 23
+  iconst_0
+  istore 24
+  iconst_1
+  istore 25
+  aload_0
+  astore 5
+  iload 23
+  istore 6
+  iload 24
+  istore 7
+  iload 25
+  istore 8
+  aload 5
+  iload 6
+  iload 7
+  iload 8
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 22
+  iload 22
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 22
+  ifge Label6
+  new com/qq/taf/jce/JceDecodeException
+  astore 20
+  new java/lang/StringBuilder
+  astore 26
+  aload 26
+  astore 5
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "size invalid: "
+  astore 21
+  aload 26
+  astore 5
+  aload 21
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 27
+  aload 27
+  astore 5
+  iload 22
+  istore 6
+  aload 5
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 27
+  aload 27
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 28
+  aload 28
+  astore 5
+  aload 20
+  aload 5
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 20
+  athrow
+Label6:
+  iconst_0
+  istore_3
+Label8:
+  iload_3
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 22
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  istore 5
+  iload 22
+  istore 6
+  iload 5
+  iload 6
+  if_icmpge Label7
+  iconst_0
+  istore 23
+  iconst_1
+  istore 24
+  aload_0
+  astore 5
+  iload 23
+  istore 6
+  iload 24
+  istore 7
+  aload 5
+  aload 16
+  iload 6
+  iload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Ljava/lang/Object;IZ)Ljava/lang/Object;
+  astore 13
+  iconst_1
+  istore 23
+  iconst_1
+  istore 24
+  aload_0
+  astore 5
+  iload 23
+  istore 6
+  iload 24
+  istore 7
+  aload 5
+  aload 17
+  iload 6
+  iload 7
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Ljava/lang/Object;IZ)Ljava/lang/Object;
+  astore 29
+  aload_1
+  astore 5
+  aload 29
+  astore 6
+  aload 5
+  aload 13
+  aload 6
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label8
+Label2:
+  iload 4
+  istore 5
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label7
+  new com/qq/taf/jce/JceDecodeException
+  astore 20
+  ldc "require field not exist."
+  astore 21
+  aload 21
+  astore 5
+  aload 20
+  aload 5
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 20
+  athrow
+  nop
+  nop
+  nop
+.end <method>
+
+.method public readString(IZ)Ljava/lang/String;
+.limit locals 16
+.limit stack 200
+  nop
+  iconst_0
+  istore_3
+  aload_0
+  iload_1
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 5
+  aload 5
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 5
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  lookupswitch
+  6 : Label2
+  7 : Label3
+  default : Label1
+Label1:
+  goto Label4
+Label4:
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "type mismatch."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label2:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  invokevirtual java/nio/ByteBuffer/get()B
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  ifge Label5
+  iload_1
+  sipush 256
+  iadd
+  istore_1
+Label5:
+  iload_1
+  newarray byte
+  astore 10
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  aload 10
+  invokevirtual java/nio/ByteBuffer/get([B)Ljava/nio/ByteBuffer;
+  pop
+  new java/lang/String
+  astore_3
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/sServerEncoding Ljava/lang/String;
+  astore 11
+Label10:
+  aload_3
+  aload 10
+  aload 11
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+Label8:
+  aload_3
+  areturn
+Label9:
+  astore 12
+  new java/lang/String
+  astore_3
+  aload_3
+  aload 10
+  invokespecial java/lang/String/<init>([B)V
+  aload_3
+  areturn
+Label3:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  invokevirtual java/nio/ByteBuffer/getInt()I
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  ldc 104857600
+  istore 13
+  iload_1
+  iload 13
+  if_icmpgt Label6
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  ifge Label7
+Label6:
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "String too long: "
+  astore 8
+  aload 14
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  iload_1
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 11
+  aload 7
+  aload 11
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+Label7:
+  iload_1
+  newarray byte
+  astore 10
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  aload 10
+  invokevirtual java/nio/ByteBuffer/get([B)Ljava/nio/ByteBuffer;
+  pop
+  new java/lang/String
+  astore_3
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/sServerEncoding Ljava/lang/String;
+  astore 11
+Label12:
+  aload_3
+  aload 10
+  aload 11
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+Label13:
+  aload_3
+  areturn
+Label11:
+  astore 15
+  new java/lang/String
+  astore_3
+  aload_3
+  aload 10
+  invokespecial java/lang/String/<init>([B)V
+  aload_3
+  areturn
+Label0:
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label8
+  new com/qq/taf/jce/JceDecodeException
+  astore 7
+  ldc "require field not exist."
+  astore 8
+  aload 7
+  aload 8
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+  nop
+  nop
+  nop
+.end <method>
+
+.method public readStringMap(IZ)Ljava/util/Map;
+  .signature_attr "(IZ)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
+.limit locals 18
+.limit stack 200
+  nop
+  new java/util/HashMap
+  astore 4
+  aload 4
+  invokespecial java/util/HashMap/<init>()V
+  iload_1
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToTag(I)Z
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 6
+  aload 6
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 6
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 6
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  lookupswitch
+  8 : Label2
+  default : Label1
+Label1:
+  goto Label3
+Label3:
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  ldc "type mismatch."
+  astore 9
+  aload 8
+  aload 9
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+Label2:
+  iconst_0
+  istore 11
+  iconst_0
+  istore 12
+  iconst_1
+  istore 13
+  aload_0
+  iload 11
+  iload 12
+  iload 13
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 10
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  ifge Label4
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "size invalid: "
+  astore 9
+  aload 14
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  iload 10
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 15
+  aload 8
+  aload 15
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+Label4:
+  iconst_0
+  istore_1
+Label6:
+  iload_1
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  istore_3
+  iload_3
+  iload 10
+  if_icmpge Label5
+  iconst_0
+  istore 11
+  iconst_1
+  istore 12
+  aload_0
+  iload 11
+  iload 12
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 16
+  iconst_1
+  istore 11
+  iload 11
+  istore 17
+  iconst_1
+  istore 11
+  aload_0
+  iload 17
+  iload 11
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 15
+  aload 4
+  aload 16
+  aload 15
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  goto Label6
+Label0:
+  iload_2
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label5
+  new com/qq/taf/jce/JceDecodeException
+  astore 8
+  ldc "require field not exist."
+  astore 9
+  aload 8
+  aload 9
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+Label5:
+  aload 4
+  areturn
+  nop
+  nop
+.end <method>
+
+.method public setServerEncoding(Ljava/lang/String;)I
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/qq/taf/jce/JceInputStream/sServerEncoding Ljava/lang/String;
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method private skip(I)V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore_2
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore_3
+  aload_3
+  invokevirtual java/nio/ByteBuffer/position()I
+  istore 4
+  iload 4
+  iload_1
+  iadd
+  istore 4
+  aload_2
+  iload 4
+  invokevirtual java/nio/ByteBuffer/position(I)Ljava/nio/Buffer;
+  pop
+  return
+  nop
+.end <method>
+
+.method private skipField()V
+.limit locals 3
+.limit stack 200
+  nop
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore_1
+  aload_1
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload_1
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload_1
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore_2
+  aload_0
+  iload_2
+  invokespecial com/qq/taf/jce/JceInputStream/skipField(B)V
+  return
+  nop
+.end <method>
+
+.method private skipField(B)V
+.limit locals 15
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  lookupswitch
+  0 : Label1
+  1 : Label2
+  2 : Label3
+  3 : Label4
+  4 : Label5
+  5 : Label6
+  6 : Label7
+  7 : Label8
+  8 : Label9
+  9 : Label10
+  10 : Label11
+  11 : Label12
+  12 : Label12
+  13 : Label13
+  default : Label0
+Label0:
+  goto Label14
+Label14:
+  new com/qq/taf/jce/JceDecodeException
+  astore_2
+  ldc "invalid type."
+  astore_3
+  aload_2
+  aload_3
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload_2
+  athrow
+Label1:
+  iconst_1
+  istore 5
+  iload 5
+  istore 4
+  aload_0
+  iload 4
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+Label12:
+  return
+Label2:
+  iconst_2
+  istore 5
+  aload_0
+  iload 5
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+  goto Label12
+Label3:
+  iconst_4
+  istore 5
+  aload_0
+  iload 5
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+  goto Label12
+Label4:
+  bipush 8
+  istore 5
+  aload_0
+  iload 5
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+  goto Label12
+Label5:
+  iconst_4
+  istore 5
+  aload_0
+  iload 5
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+  goto Label12
+Label6:
+  bipush 8
+  istore 5
+  aload_0
+  iload 5
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+  goto Label12
+Label7:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 6
+  aload 6
+  invokevirtual java/nio/ByteBuffer/get()B
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  ifge Label15
+  iload 7
+  sipush 256
+  iadd
+  istore 7
+Label15:
+  aload_0
+  iload 7
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+  goto Label12
+Label8:
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore 6
+  aload 6
+  invokevirtual java/nio/ByteBuffer/getInt()I
+  istore 4
+  aload_0
+  iload 4
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+  goto Label12
+Label9:
+  iconst_0
+  istore 5
+  iconst_0
+  istore 9
+  iconst_1
+  istore 10
+  aload_0
+  iload 5
+  iload 9
+  iload 10
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 8
+  iconst_0
+  dstore 7
+Label16:
+  iload 8
+  iconst_2
+  imul
+  istore 4
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  iload 4
+  if_icmpge Label12
+  aload_0
+  invokespecial com/qq/taf/jce/JceInputStream/skipField()V
+  iload 7
+  iconst_1
+  iadd
+  istore 7
+  goto Label16
+Label10:
+  iconst_0
+  istore 5
+  iconst_0
+  istore 9
+  iconst_1
+  istore 10
+  aload_0
+  iload 5
+  iload 9
+  iload 10
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 4
+  iconst_0
+  dstore 8
+Label17:
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  iload 4
+  if_icmpge Label12
+  aload_0
+  invokespecial com/qq/taf/jce/JceInputStream/skipField()V
+  iload 8
+  iconst_1
+  iadd
+  istore 8
+  goto Label17
+Label13:
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore 11
+  aload 11
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+  aload_0
+  aload 11
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload 11
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 12
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 12
+  ifeq Label18
+  new com/qq/taf/jce/JceDecodeException
+  astore_2
+  new java/lang/StringBuilder
+  astore 13
+  aload 13
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "skipField with invalid type, type value: "
+  astore_3
+  aload 13
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  iload_1
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 13
+  ldc ", "
+  astore_3
+  aload 13
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 11
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 12
+  aload 13
+  iload 12
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  aload_2
+  aload 14
+  invokespecial com/qq/taf/jce/JceDecodeException/<init>(Ljava/lang/String;)V
+  aload_2
+  athrow
+Label18:
+  iconst_0
+  istore 5
+  iconst_0
+  istore 9
+  iconst_1
+  istore 10
+  aload_0
+  iload 5
+  iload 9
+  iload 10
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 4
+  aload_0
+  iload 4
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+  goto Label12
+Label11:
+  aload_0
+  invokevirtual com/qq/taf/jce/JceInputStream/skipToStructEnd()V
+  goto Label12
+  nop
+  nop
+.end <method>
+
+.method public skipToStructEnd()V
+.limit locals 5
+.limit stack 200
+  nop
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore_1
+  aload_1
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+Label0:
+  aload_0
+  aload_1
+  invokevirtual com/qq/taf/jce/JceInputStream/readHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)V
+  aload_1
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore_2
+  aload_0
+  iload_2
+  invokespecial com/qq/taf/jce/JceInputStream/skipField(B)V
+  aload_1
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  bipush 11
+  istore 4
+  iload_3
+  iload 4
+  if_icmpne Label0
+  return
+  nop
+.end <method>
+
+.method public skipToTag(I)Z
+.limit locals 10
+.limit stack 200
+  .catch  java/nio/BufferUnderflowException <from> Label6 <to> Label7 <using> Label4
+  .catch  com/qq/taf/jce/JceDecodeException <from> Label6 <to> Label7 <using> Label5
+  nop
+  iconst_0
+  istore_2
+  new com/qq/taf/jce/JceInputStream$HeadData
+  astore_3
+Label6:
+  aload_3
+  invokespecial com/qq/taf/jce/JceInputStream$HeadData/<init>()V
+Label3:
+  aload_0
+  aload_3
+  invokespecial com/qq/taf/jce/JceInputStream/peakHead(Lcom/qq/taf/jce/JceInputStream$HeadData;)I
+  istore 4
+  aload_3
+  getfield com/qq/taf/jce/JceInputStream$HeadData/tag I
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload 5
+  if_icmple Label0
+  aload_3
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 11
+  istore 7
+  iload 6
+  iload 7
+  if_icmpne Label1
+Label0:
+  aload_3
+  getfield com/qq/taf/jce/JceInputStream$HeadData/tag I
+  istore 5
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload 5
+  if_icmpne Label2
+  iconst_1
+  istore_2
+Label2:
+  iload_2
+  ireturn
+Label1:
+  aload_0
+  iload 4
+  invokespecial com/qq/taf/jce/JceInputStream/skip(I)V
+  aload_3
+  getfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  istore 6
+  aload_0
+  iload 6
+  invokespecial com/qq/taf/jce/JceInputStream/skipField(B)V
+Label7:
+  goto Label3
+Label5:
+  astore 8
+  iconst_0
+  istore 7
+  iload 7
+  ireturn
+Label4:
+  astore 9
+  iconst_0
+  istore 7
+  iload 7
+  ireturn
+  nop
+.end <method>
+
+.method public warp([B)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_0
+  getfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  astore_2
+  aload_2
+  invokevirtual java/nio/ByteBuffer/clear()Ljava/nio/Buffer;
+  pop
+Label0:
+  aload_1
+  invokestatic java/nio/ByteBuffer/wrap([B)Ljava/nio/ByteBuffer;
+  astore_2
+  aload_0
+  aload_2
+  putfield com/qq/taf/jce/JceInputStream/bs Ljava/nio/ByteBuffer;
+  return
+  nop
+.end <method>
+

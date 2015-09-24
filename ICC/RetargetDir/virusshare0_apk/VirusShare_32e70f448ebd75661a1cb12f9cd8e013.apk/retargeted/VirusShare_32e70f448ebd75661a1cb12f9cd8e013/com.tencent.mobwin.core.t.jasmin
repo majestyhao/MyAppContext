@@ -1,0 +1,1530 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class final  com/tencent/mobwin/core/t
+.super java/lang/Object
+.field static "A" LMobWin/ResGetAD;
+.field static "B" LMobWin/ResReportAdPlayInfo;
+.field static "C" LMobWin/ResClickAD;
+.field public static final "D" I =  1
+.field public static final "E" I =  2
+.field public static final "F" I =  3
+.field public static final "G" I =  4
+.field public static final "H" I =  5
+.field public static final "I" I =  6
+.field private static final "K" Ljava/lang/String; =  "LinkData"
+.field private static "M" I =  0
+.field public static final "a" I =  1
+.field public static final "b" I =  2
+.field public static final "c" I =  3
+.field public static final "d" I =  4
+.field public static final "e" I =  5
+.field public static final "f" I =  6
+.field public static final "g" I =  7
+.field public static final "h" I =  8
+.field public static final "i" I =  9
+.field public static final "j" I =  10
+.field public static final "k" I =  11
+.field public static final "l" I =  12
+.field public static final "m" I =  13
+.field public static final "n" I =  14
+.field public static final "o" I =  15
+.field public static final "p" I =  16
+.field public static final "q" I =  17
+.field public static final "r" I =  18
+.field public static final "s" I =  0
+.field public static final "t" I =  1
+.field public static final "u" I =  0
+.field public static final "v" I =  1
+.field public static final "w" I =  2
+.field public static final "x" I =  3
+.field static "y" LMobWin/ResAppLaunch;
+.field static "z" LMobWin/ResActivateApp;
+.field "J" Lcom/tencent/mobwin/core/b/a;
+.field private "L" Lcom/tencent/mobwin/core/a/c;
+
+.method static <clinit>()V
+.limit locals 6
+.limit stack 200
+  nop
+  new MobWin/ResAppLaunch
+  astore_0
+  aload_0
+  invokespecial MobWin/ResAppLaunch/<init>()V
+  aload_0
+  putstatic com/tencent/mobwin/core/t/y LMobWin/ResAppLaunch;
+  new MobWin/ResActivateApp
+  astore_1
+  aload_1
+  invokespecial MobWin/ResActivateApp/<init>()V
+  aload_1
+  putstatic com/tencent/mobwin/core/t/z LMobWin/ResActivateApp;
+  new MobWin/ResGetAD
+  astore_2
+  aload_2
+  invokespecial MobWin/ResGetAD/<init>()V
+  aload_2
+  putstatic com/tencent/mobwin/core/t/A LMobWin/ResGetAD;
+  new MobWin/ResReportAdPlayInfo
+  astore_3
+  aload_3
+  invokespecial MobWin/ResReportAdPlayInfo/<init>()V
+  aload_3
+  putstatic com/tencent/mobwin/core/t/B LMobWin/ResReportAdPlayInfo;
+  new MobWin/ResClickAD
+  astore 4
+  aload 4
+  invokespecial MobWin/ResClickAD/<init>()V
+  aload 4
+  putstatic com/tencent/mobwin/core/t/C LMobWin/ResClickAD;
+  iconst_1
+  istore 5
+  iload 5
+  putstatic com/tencent/mobwin/core/t/M I
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  new com/tencent/mobwin/core/s
+  astore_1
+  aload_1
+  aload_0
+  invokespecial com/tencent/mobwin/core/s/<init>(Lcom/tencent/mobwin/core/t;)V
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/t/J Lcom/tencent/mobwin/core/b/a;
+  return
+  nop
+.end <method>
+
+.method public a(Landroid/content/Context;Ljava/lang/String;LMobWin/BannerInfo;LMobWin/SettingVersions;Landroid/os/Handler;)LMobWin/ResGetAD;
+.limit locals 32
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore 13
+  aload_2
+  astore 6
+  aload 6
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore_2
+  aload_2
+  astore 6
+  aload 13
+  aload 6
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  ldc "get_ad"
+  astore 14
+  aload 13
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 15
+  new com/qq/jce/wup/UniPacket
+  astore 16
+  aload 16
+  invokespecial com/qq/jce/wup/UniPacket/<init>()V
+  aload_0
+  astore 6
+  aload_1
+  astore 7
+  aload 6
+  aload 7
+  aload 16
+  invokespecial com/tencent/mobwin/core/t/a(Landroid/content/Context;Lcom/qq/jce/wup/UniPacket;)V
+  ldc "get_ad"
+  astore 14
+  aload 16
+  aload 14
+  invokevirtual com/qq/jce/wup/UniPacket/setFuncName(Ljava/lang/String;)V
+  new MobWin/ReqGetAD
+  astore 17
+  aload 17
+  invokespecial MobWin/ReqGetAD/<init>()V
+  aload_0
+  astore 6
+  aload 6
+  getfield com/tencent/mobwin/core/t/L Lcom/tencent/mobwin/core/a/c;
+  astore 18
+  aload_1
+  astore 6
+  aload 18
+  aload 6
+  invokevirtual com/tencent/mobwin/core/a/c/a(Landroid/content/Context;)LMobWin/UserInfo;
+  astore 19
+  aload 17
+  aload 19
+  invokevirtual MobWin/ReqGetAD/a(LMobWin/UserInfo;)V
+  aload_0
+  astore 6
+  aload 6
+  getfield com/tencent/mobwin/core/t/L Lcom/tencent/mobwin/core/a/c;
+  astore 18
+  aload_1
+  astore 6
+  aload 18
+  aload 6
+  invokevirtual com/tencent/mobwin/core/a/c/b(Landroid/content/Context;)LMobWin/AppInfo;
+  astore 20
+  aload 17
+  aload 20
+  invokevirtual MobWin/ReqGetAD/a(LMobWin/AppInfo;)V
+  aload 4
+  astore 6
+  aload 17
+  aload 6
+  invokevirtual MobWin/ReqGetAD/a(LMobWin/SettingVersions;)V
+  iconst_2
+  istore 21
+  aload 17
+  iload 21
+  invokevirtual MobWin/ReqGetAD/a(I)V
+  iconst_1
+  istore 21
+  iload 21
+  istore 22
+  iload 22
+  istore 6
+  aload 17
+  iload 6
+  invokevirtual MobWin/ReqGetAD/b(I)V
+  aload_1
+  astore 6
+  aload 6
+  invokestatic com/tencent/mobwin/core/a/e/c(Landroid/content/Context;)Ljava/util/ArrayList;
+  astore 23
+  aload 23
+  astore 6
+  aload 17
+  aload 6
+  invokevirtual MobWin/ReqGetAD/a(Ljava/util/ArrayList;)V
+  aload_1
+  astore 6
+  aload 6
+  invokestatic com/tencent/mobwin/core/a/e/d(Landroid/content/Context;)Ljava/util/ArrayList;
+  astore 23
+  aload 23
+  astore 6
+  aload 17
+  aload 6
+  invokevirtual MobWin/ReqGetAD/b(Ljava/util/ArrayList;)V
+  aload_0
+  astore 6
+  aload 6
+  getfield com/tencent/mobwin/core/t/L Lcom/tencent/mobwin/core/a/c;
+  astore 18
+  aload_1
+  astore 6
+  aload 18
+  aload 6
+  invokevirtual com/tencent/mobwin/core/a/c/c(Landroid/content/Context;)LMobWin/UserLocation;
+  astore 24
+  aload 24
+  astore 6
+  aload 17
+  aload 6
+  invokevirtual MobWin/ReqGetAD/a(LMobWin/UserLocation;)V
+  aload_3
+  astore 6
+  aload 17
+  aload 6
+  putfield MobWin/ReqGetAD/i LMobWin/BannerInfo;
+  ldc "req"
+  astore 14
+  aload 16
+  aload 14
+  aload 17
+  invokevirtual com/qq/jce/wup/UniPacket/put(Ljava/lang/String;Ljava/lang/Object;)V
+  new java/lang/StringBuilder
+  astore 13
+  ldc "\u5f00\u59cb\u7f16\u7801\u65f6\u95f4\uff1a"
+  astore 14
+  aload 13
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 25
+  lload 25
+  lstore 6
+  aload 13
+  lload 6
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_2
+  ldc "IORY"
+  astore 14
+  aload_2
+  astore 6
+  aload 14
+  aload 6
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload 16
+  invokevirtual com/qq/jce/wup/UniPacket/encode()[B
+  astore 27
+  new java/lang/StringBuilder
+  astore 13
+  ldc "\u7f16\u7801\u7ed3\u675f\u65f6\u95f4\uff1a"
+  astore 14
+  aload 13
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 25
+  lload 25
+  lstore 6
+  aload 13
+  lload 6
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_2
+  ldc "IORY"
+  astore 14
+  aload_2
+  astore 6
+  aload 14
+  aload 6
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  new com/tencent/mobwin/core/b/b
+  astore 28
+  aload_0
+  astore 6
+  aload 6
+  getfield com/tencent/mobwin/core/t/J Lcom/tencent/mobwin/core/b/a;
+  astore 6
+  aload 6
+  astore 29
+  iconst_1
+  istore 21
+  iconst_2
+  istore 30
+  aload 28
+  astore 6
+  aload 15
+  astore 7
+  iload 21
+  istore 8
+  iload 30
+  istore 9
+  aload 27
+  astore 10
+  aload 29
+  astore 11
+  aload 5
+  astore 12
+  aload 6
+  aload 7
+  iload 8
+  iload 9
+  aload 10
+  aload 11
+  aload 12
+  invokespecial com/tencent/mobwin/core/b/b/<init>(Ljava/lang/String;ZI[BLcom/tencent/mobwin/core/b/a;Landroid/os/Handler;)V
+  aload 28
+  astore 6
+  aload 6
+  invokestatic com/tencent/mobwin/core/b/b/a(Lcom/tencent/mobwin/core/b/b;)V
+  aconst_null
+  astore 31
+  aload 31
+  areturn
+  nop
+.end <method>
+
+.method static a([BI)Lcom/qq/taf/jce/JceStruct;
+  .synthetic
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  invokestatic com/tencent/mobwin/core/t/b([BI)Lcom/qq/taf/jce/JceStruct;
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public a()V
+.limit locals 6
+.limit stack 200
+  nop
+  getstatic com/tencent/mobwin/core/t/z LMobWin/ResActivateApp;
+  astore_1
+  aload_1
+  invokevirtual MobWin/ResActivateApp/recyle()V
+  getstatic com/tencent/mobwin/core/t/y LMobWin/ResAppLaunch;
+  astore_2
+  aload_2
+  invokevirtual MobWin/ResAppLaunch/recyle()V
+  getstatic com/tencent/mobwin/core/t/A LMobWin/ResGetAD;
+  astore_3
+  aload_3
+  invokevirtual MobWin/ResGetAD/recyle()V
+  getstatic com/tencent/mobwin/core/t/B LMobWin/ResReportAdPlayInfo;
+  astore 4
+  aload 4
+  invokevirtual MobWin/ResReportAdPlayInfo/recyle()V
+  getstatic com/tencent/mobwin/core/t/C LMobWin/ResClickAD;
+  astore 5
+  aload 5
+  invokevirtual MobWin/ResClickAD/recyle()V
+  return
+  nop
+.end <method>
+
+.method private a(Landroid/content/Context;Lcom/qq/jce/wup/UniPacket;)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/t/L Lcom/tencent/mobwin/core/a/c;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifne Label0
+  new com/tencent/mobwin/core/a/c
+  astore_3
+  aload_3
+  aload_1
+  invokespecial com/tencent/mobwin/core/a/c/<init>(Landroid/content/Context;)V
+  aload_0
+  aload_3
+  putfield com/tencent/mobwin/core/t/L Lcom/tencent/mobwin/core/a/c;
+Label0:
+  ldc "UTF-8"
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual com/qq/jce/wup/UniPacket/setEncodeName(Ljava/lang/String;)V
+  getstatic com/tencent/mobwin/core/t/M I
+  istore 5
+  iload 5
+  iconst_1
+  iadd
+  istore 6
+  iload 6
+  putstatic com/tencent/mobwin/core/t/M I
+  aload_2
+  iload 5
+  invokevirtual com/qq/jce/wup/UniPacket/setRequestId(I)V
+  ldc "mobilewin"
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual com/qq/jce/wup/UniPacket/setServantName(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public a(Landroid/content/Context;Ljava/lang/String;IILjava/lang/String;LMobWin/BannerInfo;Ljava/lang/String;Landroid/os/Handler;)V
+.limit locals 32
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iload 16
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 16
+  ifeq Label0
+Label1:
+  return
+Label0:
+  new java/lang/StringBuilder
+  astore 17
+  aload_2
+  astore 9
+  aload 9
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore_2
+  aload_2
+  astore 9
+  aload 17
+  aload 9
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  ldc "click"
+  astore 18
+  aload 17
+  aload 18
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 17
+  aload 17
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 19
+  new com/qq/jce/wup/UniPacket
+  astore 20
+  aload 20
+  invokespecial com/qq/jce/wup/UniPacket/<init>()V
+  aload_0
+  astore 9
+  aload_1
+  astore 10
+  aload 9
+  aload 10
+  aload 20
+  invokespecial com/tencent/mobwin/core/t/a(Landroid/content/Context;Lcom/qq/jce/wup/UniPacket;)V
+  ldc "click"
+  astore 18
+  aload 20
+  aload 18
+  invokevirtual com/qq/jce/wup/UniPacket/setFuncName(Ljava/lang/String;)V
+  new MobWin/ReqClickAD
+  astore 21
+  aload 21
+  invokespecial MobWin/ReqClickAD/<init>()V
+  aload_0
+  astore 9
+  aload 9
+  getfield com/tencent/mobwin/core/t/L Lcom/tencent/mobwin/core/a/c;
+  astore 22
+  aload_1
+  astore 9
+  aload 22
+  aload 9
+  invokevirtual com/tencent/mobwin/core/a/c/a(Landroid/content/Context;)LMobWin/UserInfo;
+  astore 23
+  aload 21
+  aload 23
+  invokevirtual MobWin/ReqClickAD/a(LMobWin/UserInfo;)V
+  aload_0
+  astore 9
+  aload 9
+  getfield com/tencent/mobwin/core/t/L Lcom/tencent/mobwin/core/a/c;
+  astore 22
+  aload_1
+  astore 9
+  aload 22
+  aload 9
+  invokevirtual com/tencent/mobwin/core/a/c/b(Landroid/content/Context;)LMobWin/AppInfo;
+  astore 24
+  aload 21
+  aload 24
+  invokevirtual MobWin/ReqClickAD/a(LMobWin/AppInfo;)V
+  new MobWin/ADClickInfo
+  astore 25
+  aload 25
+  astore 9
+  aload 9
+  invokespecial MobWin/ADClickInfo/<init>()V
+  aload 25
+  astore 9
+  iload_3
+  istore 10
+  aload 9
+  iload 10
+  invokevirtual MobWin/ADClickInfo/setAd_id(I)V
+  aload 25
+  astore 9
+  aload 5
+  astore 10
+  aload 9
+  aload 10
+  invokevirtual MobWin/ADClickInfo/setVri_key(Ljava/lang/String;)V
+  aload 25
+  astore 9
+  iload 4
+  istore 10
+  aload 9
+  iload 10
+  invokevirtual MobWin/ADClickInfo/setActivated(I)V
+  aload 7
+  astore 9
+  aload 21
+  aload 9
+  invokevirtual MobWin/ReqClickAD/a(Ljava/lang/String;)V
+  aload 25
+  astore 9
+  aload 21
+  aload 9
+  invokevirtual MobWin/ReqClickAD/a(LMobWin/ADClickInfo;)V
+  aload 6
+  astore 9
+  aload 21
+  aload 9
+  putfield MobWin/ReqClickAD/e LMobWin/BannerInfo;
+  aload_0
+  astore 9
+  aload 9
+  getfield com/tencent/mobwin/core/t/L Lcom/tencent/mobwin/core/a/c;
+  astore 22
+  aload_1
+  astore 9
+  aload 22
+  aload 9
+  invokevirtual com/tencent/mobwin/core/a/c/c(Landroid/content/Context;)LMobWin/UserLocation;
+  astore 26
+  aload 26
+  astore 9
+  aload 21
+  aload 9
+  invokevirtual MobWin/ReqClickAD/a(LMobWin/UserLocation;)V
+  new java/lang/StringBuilder
+  astore 17
+  ldc "getAdClickData 2:"
+  astore 18
+  aload 17
+  aload 18
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 21
+  invokevirtual MobWin/ReqClickAD/toString()Ljava/lang/String;
+  astore 7
+  aload 7
+  astore 9
+  aload 17
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 17
+  aload 17
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  ldc "LinkData"
+  astore 18
+  aload 7
+  astore 9
+  aload 18
+  aload 9
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  ldc "req"
+  astore 18
+  aload 20
+  aload 18
+  aload 21
+  invokevirtual com/qq/jce/wup/UniPacket/put(Ljava/lang/String;Ljava/lang/Object;)V
+  aload 20
+  invokevirtual com/qq/jce/wup/UniPacket/encode()[B
+  astore 27
+  new com/tencent/mobwin/core/b/b
+  astore 28
+  aload_0
+  astore 9
+  aload 9
+  getfield com/tencent/mobwin/core/t/J Lcom/tencent/mobwin/core/b/a;
+  astore 9
+  aload 9
+  astore 29
+  iconst_1
+  istore 30
+  iconst_4
+  istore 31
+  aload 28
+  astore 9
+  aload 19
+  astore 10
+  iload 30
+  istore 11
+  iload 31
+  istore 12
+  aload 27
+  astore 13
+  aload 29
+  astore 14
+  aload 8
+  astore 15
+  aload 9
+  aload 10
+  iload 11
+  iload 12
+  aload 13
+  aload 14
+  aload 15
+  invokespecial com/tencent/mobwin/core/b/b/<init>(Ljava/lang/String;ZI[BLcom/tencent/mobwin/core/b/a;Landroid/os/Handler;)V
+  aload 28
+  astore 9
+  aload 9
+  invokestatic com/tencent/mobwin/core/b/b/a(Lcom/tencent/mobwin/core/b/b;)V
+  goto Label1
+  nop
+.end <method>
+
+.method public a(Landroid/content/Context;Ljava/lang/String;JJLandroid/os/Handler;)V
+.limit locals 29
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore 15
+  aload_2
+  astore 8
+  aload 8
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore_2
+  aload_2
+  astore 8
+  aload 15
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  ldc "appLaunch"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 17
+  new com/qq/jce/wup/UniPacket
+  astore 18
+  aload 18
+  invokespecial com/qq/jce/wup/UniPacket/<init>()V
+  aload_0
+  astore 8
+  aload_1
+  astore 9
+  aload 8
+  aload 9
+  aload 18
+  invokespecial com/tencent/mobwin/core/t/a(Landroid/content/Context;Lcom/qq/jce/wup/UniPacket;)V
+  ldc "appLaunch"
+  astore 16
+  aload 18
+  aload 16
+  invokevirtual com/qq/jce/wup/UniPacket/setFuncName(Ljava/lang/String;)V
+  new MobWin/ReqAppLaunch
+  astore 19
+  aload 19
+  invokespecial MobWin/ReqAppLaunch/<init>()V
+  aload_0
+  astore 8
+  aload 8
+  getfield com/tencent/mobwin/core/t/L Lcom/tencent/mobwin/core/a/c;
+  astore 20
+  aload_1
+  astore 8
+  aload 20
+  aload 8
+  invokevirtual com/tencent/mobwin/core/a/c/a(Landroid/content/Context;)LMobWin/UserInfo;
+  astore 21
+  aload 19
+  aload 21
+  invokevirtual MobWin/ReqAppLaunch/setUser_info(LMobWin/UserInfo;)V
+  aload_0
+  astore 8
+  aload 8
+  getfield com/tencent/mobwin/core/t/L Lcom/tencent/mobwin/core/a/c;
+  astore 20
+  aload_1
+  astore 8
+  aload 20
+  aload 8
+  invokevirtual com/tencent/mobwin/core/a/c/b(Landroid/content/Context;)LMobWin/AppInfo;
+  astore 22
+  aload 19
+  aload 22
+  invokevirtual MobWin/ReqAppLaunch/setApp_info(LMobWin/AppInfo;)V
+  new MobWin/SettingVersions
+  astore 23
+  lload_3
+  lstore 8
+  lload 5
+  lstore 10
+  aload 23
+  lload 8
+  lload 10
+  invokespecial MobWin/SettingVersions/<init>(JJ)V
+  aload 19
+  aload 23
+  putfield MobWin/ReqAppLaunch/settingVerions LMobWin/SettingVersions;
+  ldc "req"
+  astore 16
+  aload 18
+  aload 16
+  aload 19
+  invokevirtual com/qq/jce/wup/UniPacket/put(Ljava/lang/String;Ljava/lang/Object;)V
+  aload 18
+  invokevirtual com/qq/jce/wup/UniPacket/encode()[B
+  astore 24
+  new com/tencent/mobwin/core/b/b
+  astore 25
+  aload_0
+  astore 8
+  aload 8
+  getfield com/tencent/mobwin/core/t/J Lcom/tencent/mobwin/core/b/a;
+  astore 8
+  aload 8
+  astore 26
+  iconst_1
+  istore 28
+  iload 28
+  istore 27
+  iconst_1
+  istore 28
+  aload 25
+  astore 8
+  aload 17
+  astore 9
+  iload 28
+  istore 10
+  iload 27
+  istore 11
+  aload 24
+  astore 12
+  aload 26
+  astore 13
+  aload 7
+  astore 14
+  aload 8
+  aload 9
+  iload 10
+  iload 11
+  aload 12
+  aload 13
+  aload 14
+  invokespecial com/tencent/mobwin/core/b/b/<init>(Ljava/lang/String;ZI[BLcom/tencent/mobwin/core/b/a;Landroid/os/Handler;)V
+  aload 25
+  astore 8
+  aload 8
+  invokestatic com/tencent/mobwin/core/b/b/a(Lcom/tencent/mobwin/core/b/b;)V
+  return
+  nop
+.end <method>
+
+.method public a(Landroid/content/Context;Ljava/lang/String;Landroid/os/Handler;)V
+.limit locals 24
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore 11
+  aload_2
+  astore 4
+  aload 4
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore_2
+  aload_2
+  astore 4
+  aload 11
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  ldc "activateApp"
+  astore 12
+  aload 11
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload 11
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 13
+  new com/qq/jce/wup/UniPacket
+  astore 14
+  aload 14
+  invokespecial com/qq/jce/wup/UniPacket/<init>()V
+  aload_0
+  astore 4
+  aload_1
+  astore 5
+  aload 4
+  aload 5
+  aload 14
+  invokespecial com/tencent/mobwin/core/t/a(Landroid/content/Context;Lcom/qq/jce/wup/UniPacket;)V
+  ldc "activateApp"
+  astore 12
+  aload 14
+  aload 12
+  invokevirtual com/qq/jce/wup/UniPacket/setFuncName(Ljava/lang/String;)V
+  new MobWin/ReqActivateApp
+  astore 15
+  aload 15
+  invokespecial MobWin/ReqActivateApp/<init>()V
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/t/L Lcom/tencent/mobwin/core/a/c;
+  astore 16
+  aload_1
+  astore 4
+  aload 16
+  aload 4
+  invokevirtual com/tencent/mobwin/core/a/c/a(Landroid/content/Context;)LMobWin/UserInfo;
+  astore 17
+  aload 15
+  aload 17
+  invokevirtual MobWin/ReqActivateApp/setUser_info(LMobWin/UserInfo;)V
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/t/L Lcom/tencent/mobwin/core/a/c;
+  astore 16
+  aload_1
+  astore 4
+  aload 16
+  aload 4
+  invokevirtual com/tencent/mobwin/core/a/c/b(Landroid/content/Context;)LMobWin/AppInfo;
+  astore 18
+  aload 15
+  aload 18
+  invokevirtual MobWin/ReqActivateApp/setApp_info(LMobWin/AppInfo;)V
+  new java/lang/StringBuilder
+  astore 11
+  ldc "getAdActivateData 2:"
+  astore 12
+  aload 11
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 15
+  invokevirtual MobWin/ReqActivateApp/toString()Ljava/lang/String;
+  astore_2
+  aload_2
+  astore 4
+  aload 11
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload 11
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_2
+  ldc "LinkData"
+  astore 12
+  aload_2
+  astore 4
+  aload 12
+  aload 4
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  ldc "req"
+  astore 12
+  aload 14
+  aload 12
+  aload 15
+  invokevirtual com/qq/jce/wup/UniPacket/put(Ljava/lang/String;Ljava/lang/Object;)V
+  aload 14
+  invokevirtual com/qq/jce/wup/UniPacket/encode()[B
+  astore 19
+  new com/tencent/mobwin/core/b/b
+  astore 20
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/t/J Lcom/tencent/mobwin/core/b/a;
+  astore 4
+  aload 4
+  astore 21
+  iconst_1
+  istore 22
+  bipush 6
+  istore 23
+  aload 20
+  astore 4
+  aload 13
+  astore 5
+  iload 22
+  istore 6
+  iload 23
+  istore 7
+  aload 19
+  astore 8
+  aload 21
+  astore 9
+  aload_3
+  astore 10
+  aload 4
+  aload 5
+  iload 6
+  iload 7
+  aload 8
+  aload 9
+  aload 10
+  invokespecial com/tencent/mobwin/core/b/b/<init>(Ljava/lang/String;ZI[BLcom/tencent/mobwin/core/b/a;Landroid/os/Handler;)V
+  aload 20
+  astore 4
+  aload 4
+  invokestatic com/tencent/mobwin/core/b/b/a(Lcom/tencent/mobwin/core/b/b;)V
+  return
+  nop
+.end <method>
+
+.method public a(Landroid/content/Context;Ljava/lang/String;Landroid/os/Handler;I)V
+.limit locals 17
+.limit stack 200
+  nop
+  new com/tencent/mobwin/core/b/b
+  astore 12
+  new com/tencent/mobwin/core/r
+  astore 13
+  iload 4
+  istore 5
+  aload 13
+  aload_0
+  aload_1
+  iload 5
+  aload_3
+  invokespecial com/tencent/mobwin/core/r/<init>(Lcom/tencent/mobwin/core/t;Landroid/content/Context;ILandroid/os/Handler;)V
+  iconst_0
+  istore 14
+  iconst_5
+  istore 15
+  aconst_null
+  astore 16
+  aload 12
+  astore 5
+  aload_2
+  astore 6
+  iload 14
+  istore 7
+  iload 15
+  istore 8
+  aload 16
+  astore 9
+  aload 13
+  astore 10
+  aload_3
+  astore 11
+  aload 5
+  aload 6
+  iload 7
+  iload 8
+  aload 9
+  aload 10
+  aload 11
+  invokespecial com/tencent/mobwin/core/b/b/<init>(Ljava/lang/String;ZI[BLcom/tencent/mobwin/core/b/a;Landroid/os/Handler;)V
+  aload 12
+  invokestatic com/tencent/mobwin/core/b/b/a(Lcom/tencent/mobwin/core/b/b;)V
+  return
+  nop
+.end <method>
+
+.method public a(Landroid/content/Context;Ljava/lang/String;Lcom/tencent/mobwin/core/a/b;ILMobWin/BannerInfo;Landroid/os/Handler;)V
+.limit locals 35
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label0
+Label2:
+  return
+Label0:
+  aload_3
+  astore 7
+  aload 7
+  getfield com/tencent/mobwin/core/a/b/a I
+  istore 15
+  dload 15
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 15
+  ifne Label1
+  dload 4
+  dstore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifeq Label2
+Label1:
+  new java/lang/StringBuilder
+  astore 16
+  aload_2
+  astore 7
+  aload 7
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore_2
+  aload_2
+  astore 7
+  aload 16
+  aload 7
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  ldc "reportAdPlayInfo"
+  astore 17
+  aload 16
+  aload 17
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 16
+  aload 16
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 18
+  new com/qq/jce/wup/UniPacket
+  astore 19
+  aload 19
+  invokespecial com/qq/jce/wup/UniPacket/<init>()V
+  aload_0
+  astore 7
+  aload_1
+  astore 8
+  aload 7
+  aload 8
+  aload 19
+  invokespecial com/tencent/mobwin/core/t/a(Landroid/content/Context;Lcom/qq/jce/wup/UniPacket;)V
+  ldc "reportAdPlayInfo"
+  astore 17
+  aload 19
+  aload 17
+  invokevirtual com/qq/jce/wup/UniPacket/setFuncName(Ljava/lang/String;)V
+  new MobWin/ReqReportAdPlayInfo
+  astore 20
+  aload 20
+  invokespecial MobWin/ReqReportAdPlayInfo/<init>()V
+  aload_0
+  astore 7
+  aload 7
+  getfield com/tencent/mobwin/core/t/L Lcom/tencent/mobwin/core/a/c;
+  astore 21
+  aload_1
+  astore 7
+  aload 21
+  aload 7
+  invokevirtual com/tencent/mobwin/core/a/c/a(Landroid/content/Context;)LMobWin/UserInfo;
+  astore 22
+  aload 20
+  aload 22
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(LMobWin/UserInfo;)V
+  aload_0
+  astore 7
+  aload 7
+  getfield com/tencent/mobwin/core/t/L Lcom/tencent/mobwin/core/a/c;
+  astore 21
+  aload_1
+  astore 7
+  aload 21
+  aload 7
+  invokevirtual com/tencent/mobwin/core/a/c/b(Landroid/content/Context;)LMobWin/AppInfo;
+  astore 23
+  aload 23
+  astore 7
+  aload 20
+  aload 7
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(LMobWin/AppInfo;)V
+  iload 4
+  istore 7
+  aload 20
+  iload 7
+  putfield MobWin/ReqReportAdPlayInfo/d I
+  aload_3
+  astore 7
+  aload 7
+  getfield com/tencent/mobwin/core/a/b/d J
+  lstore 7
+  lload 7
+  lstore 24
+  ldc2_w 1000
+  lstore 26
+  lload 24
+  lstore 7
+  lload 26
+  lstore 9
+  lload 7
+  lload 9
+  ldiv
+  lstore 7
+  lload 7
+  lstore 24
+  lload 24
+  lstore 7
+  lload 7
+  l2i
+  istore 15
+  aload 20
+  iload 15
+  putfield MobWin/ReqReportAdPlayInfo/e I
+  aload_3
+  astore 7
+  aload 7
+  getfield com/tencent/mobwin/core/a/b/e I
+  istore 15
+  aload 20
+  iload 15
+  putfield MobWin/ReqReportAdPlayInfo/g I
+  aload_3
+  astore 7
+  aload 7
+  getfield com/tencent/mobwin/core/a/b/a I
+  istore 15
+  aload 20
+  iload 15
+  putfield MobWin/ReqReportAdPlayInfo/c I
+  aload 5
+  astore 7
+  aload 20
+  aload 7
+  putfield MobWin/ReqReportAdPlayInfo/j LMobWin/BannerInfo;
+  aload_3
+  astore 7
+  aload 7
+  getfield com/tencent/mobwin/core/a/b/f I
+  istore 15
+  aload 20
+  iload 15
+  putfield MobWin/ReqReportAdPlayInfo/h I
+  aload_3
+  astore 7
+  aload 7
+  getfield com/tencent/mobwin/core/a/b/h Ljava/lang/String;
+  astore 7
+  aload 7
+  astore_2
+  aload_2
+  astore 7
+  aload 20
+  aload 7
+  putfield MobWin/ReqReportAdPlayInfo/k Ljava/lang/String;
+  aload_3
+  astore 7
+  aload 7
+  getfield com/tencent/mobwin/core/a/b/i Ljava/lang/String;
+  astore 7
+  aload 7
+  astore_2
+  aload_2
+  astore 7
+  aload 20
+  aload 7
+  putfield MobWin/ReqReportAdPlayInfo/l Ljava/lang/String;
+  new java/text/SimpleDateFormat
+  astore 28
+  ldc "yyyy-MM-dd HH:mm:ss"
+  astore 17
+  aload 28
+  astore 7
+  aload 7
+  aload 17
+  invokespecial java/text/SimpleDateFormat/<init>(Ljava/lang/String;)V
+  new java/util/Date
+  astore 29
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 24
+  aload 29
+  astore 7
+  lload 24
+  lstore 8
+  aload 7
+  lload 8
+  invokespecial java/util/Date/<init>(J)V
+  aload 28
+  astore 7
+  aload 29
+  astore 8
+  aload 7
+  aload 8
+  invokevirtual java/text/SimpleDateFormat/format(Ljava/util/Date;)Ljava/lang/String;
+  astore_2
+  aload_2
+  astore 7
+  aload 20
+  aload 7
+  putfield MobWin/ReqReportAdPlayInfo/i Ljava/lang/String;
+  ldc "req"
+  astore 17
+  aload 19
+  aload 17
+  aload 20
+  invokevirtual com/qq/jce/wup/UniPacket/put(Ljava/lang/String;Ljava/lang/Object;)V
+  aload 19
+  invokevirtual com/qq/jce/wup/UniPacket/encode()[B
+  astore 30
+  new com/tencent/mobwin/core/b/b
+  astore 31
+  aload_0
+  astore 7
+  aload 7
+  getfield com/tencent/mobwin/core/t/J Lcom/tencent/mobwin/core/b/a;
+  astore 7
+  aload 7
+  astore 32
+  iconst_1
+  istore 33
+  iconst_3
+  istore 34
+  aload 31
+  astore 7
+  aload 18
+  astore 8
+  iload 33
+  istore 9
+  iload 34
+  istore 10
+  aload 30
+  astore 11
+  aload 32
+  astore 12
+  aload 6
+  astore 13
+  aload 7
+  aload 8
+  iload 9
+  iload 10
+  aload 11
+  aload 12
+  aload 13
+  invokespecial com/tencent/mobwin/core/b/b/<init>(Ljava/lang/String;ZI[BLcom/tencent/mobwin/core/b/a;Landroid/os/Handler;)V
+  aload 31
+  astore 7
+  aload 7
+  invokestatic com/tencent/mobwin/core/b/b/a(Lcom/tencent/mobwin/core/b/b;)V
+  goto Label2
+  nop
+.end <method>
+
+.method static a(Ljava/io/InputStream;)[B
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokestatic com/tencent/mobwin/core/t/b(Ljava/io/InputStream;)[B
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private static b([BI)Lcom/qq/taf/jce/JceStruct;
+.limit locals 18
+.limit stack 200
+  nop
+  aload_0
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  aconst_null
+  astore_3
+  aload_3
+  areturn
+Label0:
+  new com/qq/jce/wup/UniPacket
+  astore 4
+  aload 4
+  invokespecial com/qq/jce/wup/UniPacket/<init>()V
+  ldc "UTF-8"
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual com/qq/jce/wup/UniPacket/setEncodeName(Ljava/lang/String;)V
+  aload_0
+  astore_2
+  aload 4
+  aload_2
+  invokevirtual com/qq/jce/wup/UniPacket/decode([B)V
+  dload_1
+  dstore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  lookupswitch
+  1 : Label2
+  2 : Label3
+  3 : Label4
+  4 : Label5
+  5 : Label6
+  6 : Label7
+  default : Label1
+Label1:
+  goto Label6
+Label6:
+  aconst_null
+  astore_3
+  aload_3
+  areturn
+Label2:
+  getstatic com/tencent/mobwin/core/t/y LMobWin/ResAppLaunch;
+  astore 6
+  ldc "res"
+  astore 5
+  aload 4
+  aload 5
+  aload 6
+  invokevirtual com/qq/jce/wup/UniPacket/getByClass(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+  astore 7
+  aload 7
+  astore 9
+  aload 9
+  checkcast com/qq/taf/jce/JceStruct
+  astore 9
+  aload 9
+  astore 8
+  aload 8
+  areturn
+Label7:
+  getstatic com/tencent/mobwin/core/t/z LMobWin/ResActivateApp;
+  astore 10
+  ldc "res"
+  astore 5
+  aload 4
+  aload 5
+  aload 10
+  invokevirtual com/qq/jce/wup/UniPacket/getByClass(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+  astore 7
+  aload 7
+  astore 11
+  aload 11
+  checkcast com/qq/taf/jce/JceStruct
+  astore 11
+  aload 11
+  astore 8
+  aload 8
+  areturn
+Label3:
+  getstatic com/tencent/mobwin/core/t/A LMobWin/ResGetAD;
+  astore 12
+  ldc "res"
+  astore 5
+  aload 4
+  aload 5
+  aload 12
+  invokevirtual com/qq/jce/wup/UniPacket/getByClass(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+  astore 7
+  aload 7
+  astore 13
+  aload 13
+  checkcast com/qq/taf/jce/JceStruct
+  astore 13
+  aload 13
+  astore 8
+  aload 8
+  areturn
+Label4:
+  getstatic com/tencent/mobwin/core/t/B LMobWin/ResReportAdPlayInfo;
+  astore 14
+  ldc "res"
+  astore 5
+  aload 4
+  aload 5
+  aload 14
+  invokevirtual com/qq/jce/wup/UniPacket/getByClass(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+  astore 7
+  aload 7
+  astore 15
+  aload 15
+  checkcast com/qq/taf/jce/JceStruct
+  astore 15
+  aload 15
+  astore 8
+  aload 8
+  areturn
+Label5:
+  getstatic com/tencent/mobwin/core/t/C LMobWin/ResClickAD;
+  astore 16
+  ldc "res"
+  astore 5
+  aload 4
+  aload 5
+  aload 16
+  invokevirtual com/qq/jce/wup/UniPacket/getByClass(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+  astore 7
+  aload 7
+  astore 17
+  aload 17
+  checkcast com/qq/taf/jce/JceStruct
+  astore 17
+  aload 17
+  astore 8
+  aload 8
+  areturn
+  nop
+  nop
+.end <method>
+
+.method private static b(Ljava/io/InputStream;)[B
+.limit locals 12
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  aconst_null
+  astore_1
+  aload_1
+  areturn
+Label0:
+  aconst_null
+  astore_1
+  aload_1
+  astore_3
+  aload_3
+  checkcast [B
+  astore_3
+  aload_3
+  astore_2
+  new java/io/ByteArrayOutputStream
+  astore 4
+  aload 4
+  invokespecial java/io/ByteArrayOutputStream/<init>()V
+Label2:
+  aload_0
+  invokevirtual java/io/InputStream/read()I
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 6
+  iload 5
+  iload 6
+  if_icmpne Label1
+  aload 4
+  invokevirtual java/io/ByteArrayOutputStream/toByteArray()[B
+  astore_2
+Label6:
+  aload 4
+  invokevirtual java/io/ByteArrayOutputStream/close()V
+Label8:
+  aload_2
+  areturn
+Label7:
+  astore 7
+  aload 7
+  invokevirtual java/io/IOException/printStackTrace()V
+  aload_2
+  areturn
+Label1:
+  aload 4
+  iload 5
+  invokevirtual java/io/ByteArrayOutputStream/write(I)V
+Label9:
+  goto Label2
+Label5:
+  astore 8
+Label10:
+  aload 8
+  invokevirtual java/lang/Exception/printStackTrace()V
+Label11:
+  aload 4
+  invokevirtual java/io/ByteArrayOutputStream/close()V
+Label13:
+  aconst_null
+  astore_1
+  aload_1
+  areturn
+Label12:
+  astore 9
+  aload 9
+  invokevirtual java/io/IOException/printStackTrace()V
+  aconst_null
+  astore_1
+  aload_1
+  areturn
+Label4:
+  astore 10
+Label15:
+  aload 4
+  invokevirtual java/io/ByteArrayOutputStream/close()V
+Label3:
+  aload 10
+  athrow
+Label14:
+  astore 11
+  aload 11
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label3
+  nop
+.end <method>
+

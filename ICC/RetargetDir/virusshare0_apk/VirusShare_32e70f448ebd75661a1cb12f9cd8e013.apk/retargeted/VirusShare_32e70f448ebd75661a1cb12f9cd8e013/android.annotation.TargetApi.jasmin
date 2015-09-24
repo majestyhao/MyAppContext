@@ -1,0 +1,8 @@
+.source TargetApi.java
+.interface public interface abstract annotation  android/annotation/TargetApi
+.super java/lang/Object
+.implements  java/lang/annotation/Annotation
+
+.method public abstract value()I
+.end <method>
+

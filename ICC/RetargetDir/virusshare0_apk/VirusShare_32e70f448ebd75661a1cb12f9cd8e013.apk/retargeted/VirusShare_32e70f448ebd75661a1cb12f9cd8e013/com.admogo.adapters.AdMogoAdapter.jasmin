@@ -1,0 +1,1199 @@
+.source AdMogoAdapter.java
+.class public abstract  com/admogo/adapters/AdMogoAdapter
+.super java/lang/Object
+.field static "adapter" Lcom/admogo/adapters/AdMogoAdapter;
+.field protected final "adMogoLayoutReference" Ljava/lang/ref/WeakReference;
+.field protected "ration" Lcom/admogo/obj/Ration;
+
+.method public <init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  new java/lang/ref/WeakReference
+  astore_3
+  aload_3
+  aload_1
+  invokespecial java/lang/ref/WeakReference/<init>(Ljava/lang/Object;)V
+  aload_0
+  aload_3
+  putfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  aload_0
+  aload_2
+  putfield com/admogo/adapters/AdMogoAdapter/ration Lcom/admogo/obj/Ration;
+  return
+  nop
+.end <method>
+
+.method public abstract click()V
+.end <method>
+
+.method public abstract finish()V
+.end <method>
+
+.method private static getAdapter(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+.limit locals 16
+.limit stack 200
+  nop
+  aload_1
+  getfield com/admogo/obj/Ration/type I
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  lookupswitch
+  1 : Label1
+  2 : Label2
+  3 : Label2
+  4 : Label2
+  5 : Label2
+  6 : Label3
+  7 : Label4
+  8 : Label2
+  9 : Label5
+  10 : Label2
+  11 : Label2
+  12 : Label6
+  13 : Label2
+  14 : Label2
+  15 : Label2
+  16 : Label2
+  17 : Label2
+  18 : Label7
+  19 : Label2
+  20 : Label8
+  21 : Label9
+  22 : Label10
+  23 : Label11
+  24 : Label12
+  25 : Label13
+  26 : Label14
+  27 : Label15
+  28 : Label16
+  29 : Label17
+  30 : Label18
+  31 : Label19
+  32 : Label20
+  33 : Label21
+  34 : Label22
+  35 : Label23
+  36 : Label24
+  37 : Label25
+  38 : Label2
+  39 : Label2
+  40 : Label26
+  41 : Label2
+  42 : Label2
+  43 : Label2
+  44 : Label27
+  45 : Label28
+  46 : Label29
+  47 : Label30
+  48 : Label31
+  49 : Label2
+  50 : Label32
+  51 : Label33
+  52 : Label34
+  53 : Label35
+  54 : Label36
+  55 : Label2
+  56 : Label37
+  default : Label0
+Label0:
+  goto Label2
+Label2:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label1:
+  ldc "com.google.ads.AdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label38
+  ldc "com.admogo.adapters.GoogleAdMobAdsAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label38:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label7:
+  new com/admogo/adapters/InMobiSourceAdapter
+  astore 6
+  aload 6
+  aload_0
+  aload_1
+  invokespecial com/admogo/adapters/InMobiSourceAdapter/<init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+Label65:
+  aload 6
+  areturn
+Label64:
+  astore 7
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label3:
+  ldc "com.millennialmedia.android.MMAdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label39
+  ldc "com.admogo.adapters.MillennialAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label39:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label8:
+  ldc "com.zestadz.android.ZestADZAdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label40
+  ldc "com.admogo.adapters.ZestAdzAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label40:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label4:
+  ldc "com.greystripe.android.sdk.BannerView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label41
+  ldc "com.admogo.adapters.GreystripeAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label41:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label6:
+  ldc "com.admogo.adapters.MdotMAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label10:
+  ldc "com.wiyun.ad.AdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label42
+  ldc "com.admogo.adapters.WiyunAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label42:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label12:
+  ldc "net.youmi.android.AdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label43
+  ldc "com.admogo.adapters.YoumiAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label43:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label11:
+  ldc "com.wooboo.adlib_android.WoobooAdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label44
+  ldc "com.admogo.adapters.WoobooAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label44:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label9:
+  ldc "com.adchina.android.ads.views.AdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label45
+  ldc "com.admogo.adapters.AdChinaAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label45:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label14:
+  ldc "com.madhouse.android.ads.AdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label46
+  ldc "com.admogo.adapters.SmartMADAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label46:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label13:
+  new com/admogo/adapters/CaseeSourceAdapter
+  astore 8
+  aload 8
+  aload_0
+  aload_1
+  invokespecial com/admogo/adapters/CaseeSourceAdapter/<init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+Label66:
+  aload 8
+  areturn
+Label63:
+  astore 9
+  ldc "AdMogo"
+  astore 5
+  ldc "Caught VerifyError"
+  astore 10
+  aload 5
+  aload 10
+  aload 9
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+  pop
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label16:
+  ldc "com.energysource.szj.embeded.AdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label47
+  ldc "com.admogo.adapters.AdTouchAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label47:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label17:
+  ldc "cn.domob.android.ads.DomobAdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label48
+  ldc "com.admogo.adapters.DomobAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label48:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label18:
+  ldc "com.vpon.adon.android.AdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label49
+  ldc "com.admogo.adapters.VponCNAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label49:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label20:
+  ldc "com.mt.airad.AirAD"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label50
+  ldc "com.admogo.adapters.AirAdAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label50:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label21:
+  ldc "com.adwo.adsdk.AdwoAdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label51
+  ldc "com.admogo.adapters.AdwoAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label51:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label22:
+  ldc "com.l.adlib_android.AdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label52
+  ldc "com.admogo.adapters.LSenseAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label52:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label23:
+  ldc "com.smaato.SOMA.SOMABanner"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label53
+  ldc "com.admogo.adapters.SmaatoAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label53:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label24:
+  ldc "cn.appmedia.ad.BannerAdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label54
+  ldc "com.admogo.adapters.AppMediaAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label54:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label25:
+  ldc "com.winad.android.ads.AdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label55
+  ldc "com.admogo.adapters.WinAdAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label55:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label26:
+  ldc "com.izp.views.IZPView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label56
+  ldc "com.admogo.adapters.IZPAdAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label56:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+Label67:
+  aload_3
+  areturn
+Label27:
+  new com/admogo/adapters/BaiduJsonAdapter
+  astore 11
+Label69:
+  aload 11
+  aload_0
+  aload_1
+  invokespecial com/admogo/adapters/BaiduJsonAdapter/<init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+Label70:
+  aload 11
+  areturn
+Label68:
+  astore 12
+Label29:
+  ldc "com.lmmob.ad.sdk.LmMobAdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label57
+  ldc "com.admogo.adapters.LmMobAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label57:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label30:
+  ldc "com.adzhidian.view.AdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label58
+  ldc "com.admogo.adapters.ZhidianAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label58:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label32:
+  ldc "com.fractalist.android.ads.ADView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label59
+  ldc "com.admogo.adapters.FractalAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label59:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label37:
+  ldc "com.wqmobile.sdk.widget.ADView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label60
+  ldc "com.admogo.adapters.WeiQianAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label60:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label19:
+  ldc "com.mobisage.android.MobiSageAdBanner"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label61
+  ldc "com.admogo.adapters.MobiSageAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label61:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label15:
+  new com/admogo/adapters/PublicCustomAdapter
+  astore 13
+  aload 13
+  aload_0
+  aload_1
+  invokespecial com/admogo/adapters/PublicCustomAdapter/<init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+  aload 13
+  areturn
+Label5:
+  new com/admogo/adapters/PublicCustomAdapter
+  astore 13
+  aload 13
+  aload_0
+  aload_1
+  invokespecial com/admogo/adapters/PublicCustomAdapter/<init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+  aload 13
+  areturn
+Label28:
+  new com/admogo/adapters/PublicCustomAdapter
+  astore 13
+  aload 13
+  aload_0
+  aload_1
+  invokespecial com/admogo/adapters/PublicCustomAdapter/<init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+  aload 13
+  areturn
+Label31:
+  new com/admogo/adapters/PublicCustomAdapter
+  astore 13
+  aload 13
+  aload_0
+  aload_1
+  invokespecial com/admogo/adapters/PublicCustomAdapter/<init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+  aload 13
+  areturn
+Label36:
+  new com/admogo/adapters/PublicCustomAdapter
+  astore 13
+  aload 13
+  aload_0
+  aload_1
+  invokespecial com/admogo/adapters/PublicCustomAdapter/<init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+  aload 13
+  areturn
+Label34:
+  new com/admogo/adapters/WinsAPIAdapter
+  astore 14
+  aload 14
+  aload_0
+  aload_1
+  invokespecial com/admogo/adapters/WinsAPIAdapter/<init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+  aload 14
+  areturn
+Label35:
+  ldc "com.tencent.mobwin.AdView"
+  astore 5
+  aload 5
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label62
+  ldc "com.admogo.adapters.MobWINAdapter"
+  astore 5
+  aload 5
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label62:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_3
+  aload_3
+  areturn
+Label33:
+  new com/admogo/adapters/SuizongAPIAdapter
+  astore 15
+  aload 15
+  aload_0
+  aload_1
+  invokespecial com/admogo/adapters/SuizongAPIAdapter/<init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+Label71:
+  aload 15
+  areturn
+  nop
+  nop
+.end <method>
+
+.method private static getNetworkAdapter(Ljava/lang/String;Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+.limit locals 20
+.limit stack 200
+  .catch  java/lang/InstantiationException <from> Label6 <to> Label7 <using> Label0
+  .catch  java/lang/IllegalAccessException <from> Label6 <to> Label7 <using> Label1
+  .catch  java/lang/reflect/InvocationTargetException <from> Label6 <to> Label7 <using> Label2
+  .catch  java/lang/NoSuchMethodException <from> Label6 <to> Label7 <using> Label3
+  .catch  java/lang/SecurityException <from> Label6 <to> Label7 <using> Label4
+  .catch  java/lang/ClassNotFoundException <from> Label6 <to> Label7 <using> Label5
+  nop
+Label6:
+  aload_0
+  astore_3
+  aload_3
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 4
+  iconst_2
+  istore 6
+  iload 6
+  anewarray java/lang/Class
+  astore 5
+  iconst_0
+  istore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 5
+  iload 6
+  aload 7
+  aastore
+  iconst_1
+  istore 6
+  ldc com/admogo/obj/Ration
+  astore 7
+  aload 5
+  iload 6
+  aload 7
+  aastore
+  aload 4
+  aload 5
+  invokevirtual java/lang/Class/getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+  astore 8
+  iconst_2
+  istore 6
+  iload 6
+  anewarray java/lang/Object
+  astore 9
+  iconst_0
+  istore 6
+  aload 9
+  iload 6
+  aload_1
+  aastore
+  iconst_1
+  istore 6
+  aload 9
+  iload 6
+  aload_2
+  aastore
+  aload 8
+  aload 9
+  invokevirtual java/lang/reflect/Constructor/newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+  astore 10
+Label7:
+  aload 10
+  astore 12
+  aload 12
+  checkcast com/admogo/adapters/AdMogoAdapter
+  astore 12
+  aload 12
+  astore 11
+  aload 11
+  areturn
+Label0:
+  astore 13
+  aconst_null
+  astore 14
+  aload 14
+  areturn
+Label1:
+  astore 15
+  aconst_null
+  astore 14
+  aload 14
+  areturn
+Label2:
+  astore 16
+  aconst_null
+  astore 14
+  aload 14
+  areturn
+Label3:
+  astore 17
+  aconst_null
+  astore 14
+  aload 14
+  areturn
+Label4:
+  astore 18
+  aconst_null
+  astore 14
+  aload 14
+  areturn
+Label5:
+  astore 19
+  aconst_null
+  astore 14
+  aload 14
+  areturn
+  nop
+.end <method>
+
+.method public abstract handle()V
+.end <method>
+
+.method public static handle(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+.limit locals 9
+.limit stack 200
+  nop
+  getstatic com/admogo/adapters/AdMogoAdapter/adapter Lcom/admogo/adapters/AdMogoAdapter;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  getstatic com/admogo/adapters/AdMogoAdapter/adapter Lcom/admogo/adapters/AdMogoAdapter;
+  astore_2
+  aload_2
+  invokevirtual com/admogo/adapters/AdMogoAdapter/finish()V
+Label0:
+  aload_0
+  aload_1
+  invokestatic com/admogo/adapters/AdMogoAdapter/getAdapter(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+  astore_2
+  aload_2
+  putstatic com/admogo/adapters/AdMogoAdapter/adapter Lcom/admogo/adapters/AdMogoAdapter;
+  getstatic com/admogo/adapters/AdMogoAdapter/adapter Lcom/admogo/adapters/AdMogoAdapter;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label1
+  aload_1
+  getfield com/admogo/obj/Ration/type I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 9
+  istore 4
+  iload 4
+  iload_3
+  if_icmpeq Label2
+  aload_1
+  getfield com/admogo/obj/Ration/type I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 27
+  istore 4
+  iload 4
+  iload_3
+  if_icmpeq Label2
+  aload_1
+  getfield com/admogo/obj/Ration/type I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 45
+  istore 4
+  iload 4
+  iload_3
+  if_icmpeq Label2
+  aload_1
+  getfield com/admogo/obj/Ration/type I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 48
+  istore 4
+  iload 4
+  iload_3
+  if_icmpeq Label2
+  aload_1
+  getfield com/admogo/obj/Ration/type I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 54
+  istore 4
+  iload 4
+  iload_3
+  if_icmpne Label3
+Label2:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 5
+  ldc "HTTP/1.1 200 OK"
+  astore 6
+  aload 5
+  aload 6
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label4:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 7
+  ldc "Valid adapter, calling handle()"
+  astore 6
+  aload 7
+  aload 6
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  getstatic com/admogo/adapters/AdMogoAdapter/adapter Lcom/admogo/adapters/AdMogoAdapter;
+  astore_2
+  aload_2
+  invokevirtual com/admogo/adapters/AdMogoAdapter/handle()V
+  return
+Label3:
+  aload_0
+  invokevirtual com/admogo/AdMogoLayout/countRequest()V
+  goto Label4
+Label1:
+  new java/lang/Exception
+  astore 8
+  ldc "Invalid adapter"
+  astore 6
+  aload 8
+  aload 6
+  invokespecial java/lang/Exception/<init>(Ljava/lang/String;)V
+  aload 8
+  athrow
+  nop
+.end <method>
+
+.method public static onClickAdView()V
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/admogo/adapters/AdMogoAdapter/adapter Lcom/admogo/adapters/AdMogoAdapter;
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  getstatic com/admogo/adapters/AdMogoAdapter/adapter Lcom/admogo/adapters/AdMogoAdapter;
+  astore_0
+  aload_0
+  invokevirtual com/admogo/adapters/AdMogoAdapter/click()V
+  return
+Label0:
+  new java/lang/Exception
+  astore_1
+  ldc "On Click failed"
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/lang/Exception/<init>(Ljava/lang/String;)V
+  aload_1
+  athrow
+  nop
+.end <method>
+
+.method private static unknownAdNetwork(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)Lcom/admogo/adapters/AdMogoAdapter;
+.limit locals 8
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_2
+  new java/lang/StringBuilder
+  astore_3
+  ldc "Unsupported ration type: "
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_1
+  getfield com/admogo/obj/Ration/type I
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aconst_null
+  astore 7
+  aload 7
+  areturn
+  nop
+.end <method>
+

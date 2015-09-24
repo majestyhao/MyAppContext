@@ -1,0 +1,307 @@
+.source AdMogoManager.java
+.class  com/admogo/AdMogoManager$2
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "this$0" Lcom/admogo/AdMogoManager;
+
+.method <init>(Lcom/admogo/AdMogoManager;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/AdMogoManager$2/this$0 Lcom/admogo/AdMogoManager;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 27
+.limit stack 200
+  .catch  java/io/IOException <from> Label3 <to> Label1 <using> Label2
+  nop
+  new com/admogo/DataBackup
+  astore_3
+Label3:
+  aload_3
+  invokespecial com/admogo/DataBackup/<init>()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoManager$2/this$0 Lcom/admogo/AdMogoManager;
+  astore 4
+  aload 4
+  invokestatic com/admogo/AdMogoManager/access$0(Lcom/admogo/AdMogoManager;)Ljava/lang/ref/WeakReference;
+  astore 5
+  aload 5
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 6
+  aload 6
+  astore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 8
+  astore 7
+  aload_3
+  aload 7
+  invokevirtual com/admogo/DataBackup/open(Landroid/content/Context;)V
+  aload_3
+  invokevirtual com/admogo/DataBackup/getDataList()Ljava/lang/String;
+  astore 9
+  aload_3
+  invokevirtual com/admogo/DataBackup/clearData()Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label0
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 11
+  ldc "Data Clear"
+  astore 12
+  aload 11
+  aload 12
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label0:
+  aload_3
+  invokevirtual com/admogo/DataBackup/close()V
+  aload 9
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifne Label1
+  getstatic com/admogo/AdMogoManager/isSendData Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifne Label1
+  iconst_1
+  istore 13
+  iload 13
+  putstatic com/admogo/AdMogoManager/isSendData Z
+  new java/lang/StringBuilder
+  astore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoManager$2/this$0 Lcom/admogo/AdMogoManager;
+  astore 4
+  aload 4
+  getfield com/admogo/AdMogoManager/keyAdMogo Ljava/lang/String;
+  astore 11
+  aload 11
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 11
+  aload 14
+  aload 11
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 14
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  ldc "Q8tFVImbNuvsmBwWwdqsPE6jsRQsSPkQ"
+  astore 12
+  aload 14
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 15
+  aload 15
+  invokestatic com/admogo/util/AdMogoUtil/convertToHex(Ljava/lang/String;)Ljava/lang/String;
+  astore 11
+  new org/apache/http/client/methods/HttpPost
+  astore 16
+  getstatic com/admogo/util/AdMogoUtil/urlRecordData Ljava/lang/String;
+  astore 15
+  aload 16
+  aload 15
+  invokespecial org/apache/http/client/methods/HttpPost/<init>(Ljava/lang/String;)V
+  new org/apache/http/params/BasicHttpParams
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokespecial org/apache/http/params/BasicHttpParams/<init>()V
+  sipush 20000
+  istore 13
+  aload 17
+  astore_1
+  aload_1
+  iload 13
+  invokestatic org/apache/http/params/HttpConnectionParams/setConnectionTimeout(Lorg/apache/http/params/HttpParams;I)V
+  sipush 20000
+  istore 13
+  aload 17
+  astore_1
+  aload_1
+  iload 13
+  invokestatic org/apache/http/params/HttpConnectionParams/setSoTimeout(Lorg/apache/http/params/HttpParams;I)V
+  new org/apache/http/impl/client/DefaultHttpClient
+  astore 18
+  aload 18
+  astore_1
+  aload 17
+  astore_2
+  aload_1
+  aload_2
+  invokespecial org/apache/http/impl/client/DefaultHttpClient/<init>(Lorg/apache/http/params/HttpParams;)V
+  new java/util/ArrayList
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokespecial java/util/ArrayList/<init>()V
+  new org/apache/http/message/BasicNameValuePair
+  astore 20
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoManager$2/this$0 Lcom/admogo/AdMogoManager;
+  astore 4
+  aload 4
+  getfield com/admogo/AdMogoManager/keyAdMogo Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 21
+  ldc "appid"
+  astore 12
+  aload 20
+  astore_1
+  aload 21
+  astore_2
+  aload_1
+  aload 12
+  aload_2
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload 19
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore 20
+  ldc "data"
+  astore 12
+  aload 20
+  astore_1
+  aload_1
+  aload 12
+  aload 9
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload 19
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore 20
+  ldc "nid"
+  astore 12
+  aload 20
+  astore_1
+  aload_1
+  aload 12
+  aload 11
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload 19
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/client/entity/UrlEncodedFormEntity
+  astore 22
+  ldc "UTF-8"
+  astore 12
+  aload 22
+  astore_1
+  aload 19
+  astore_2
+  aload_1
+  aload_2
+  aload 12
+  invokespecial org/apache/http/client/entity/UrlEncodedFormEntity/<init>(Ljava/util/List;Ljava/lang/String;)V
+  aload 22
+  astore_1
+  aload 16
+  aload_1
+  invokevirtual org/apache/http/client/methods/HttpPost/setEntity(Lorg/apache/http/HttpEntity;)V
+  aload 18
+  astore_1
+  aload_1
+  aload 16
+  invokeinterface org/apache/http/client/HttpClient/execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse; 2
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/HttpResponse/getStatusLine()Lorg/apache/http/StatusLine; 1
+  astore 24
+  aload 24
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/StatusLine/getStatusCode()I 1
+  istore 25
+  iload 25
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 200
+  istore 13
+  iload 25
+  istore_1
+  iload_1
+  iload 13
+  if_icmpne Label1
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 21
+  ldc "Data Backup Success"
+  astore 12
+  aload 21
+  astore_1
+  aload_1
+  aload 12
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label1:
+  iconst_0
+  istore 13
+  iload 13
+  putstatic com/admogo/AdMogoManager/isSendData Z
+  return
+Label2:
+  astore 26
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 21
+  ldc "Caught IOException in Send Data"
+  astore 12
+  aload 21
+  astore_1
+  aload 26
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  goto Label1
+  nop
+.end <method>
+

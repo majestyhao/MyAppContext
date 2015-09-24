@@ -1,0 +1,2389 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/kuguo/ad/s
+.super java/lang/Object
+.field protected "a" Ljava/lang/String;
+.field protected "b" Ljava/lang/String;
+.field protected "c" Ljava/lang/String;
+.field protected "d" Ljava/lang/String;
+.field protected "e" D
+.field protected "f" D
+.field protected "g" Ljava/lang/String;
+.field protected "h" Ljava/lang/String;
+.field protected "i" I
+.field protected "j" Ljava/lang/String;
+.field protected "k" I
+.field protected "l" Ljava/lang/String;
+.field protected "m" I
+.field protected "n" Ljava/lang/String;
+.field protected "o" Ljava/lang/String;
+.field protected "p" I
+.field protected "q" I
+.field protected "r" Ljava/lang/String;
+
+.method protected <init>(Landroid/content/Context;)V
+.limit locals 24
+.limit stack 200
+  nop
+  aload_0
+  astore_2
+  aload_2
+  invokespecial java/lang/Object/<init>()V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  astore_2
+  aload_2
+  aload 4
+  putfield com/kuguo/ad/s/a Ljava/lang/String;
+  ldc ""
+  astore 5
+  aload_0
+  astore_2
+  aload_2
+  aload 5
+  putfield com/kuguo/ad/s/b Ljava/lang/String;
+  ldc ""
+  astore 5
+  aload_0
+  astore_2
+  aload_2
+  aload 5
+  putfield com/kuguo/ad/s/c Ljava/lang/String;
+  getstatic android/os/Build/PRODUCT Ljava/lang/String;
+  astore 4
+  aload_0
+  astore_2
+  aload_2
+  aload 4
+  putfield com/kuguo/ad/s/d Ljava/lang/String;
+  ldc2_w -500.000000000000000
+  dstore 6
+  aload_0
+  astore_2
+  aload_2
+  dload 6
+  putfield com/kuguo/ad/s/e D
+  ldc2_w -500.000000000000000
+  dstore 6
+  aload_0
+  astore_2
+  aload_2
+  dload 6
+  putfield com/kuguo/ad/s/f D
+  ldc ""
+  astore 5
+  aload_0
+  astore_2
+  aload_2
+  aload 5
+  putfield com/kuguo/ad/s/g Ljava/lang/String;
+  ldc ""
+  astore 5
+  aload_0
+  astore_2
+  aload_2
+  aload 5
+  putfield com/kuguo/ad/s/h Ljava/lang/String;
+  ldc 100044
+  istore 8
+  aload_0
+  astore_2
+  aload_2
+  iload 8
+  putfield com/kuguo/ad/s/i I
+  ldc ""
+  astore 5
+  aload_0
+  astore_2
+  aload_2
+  aload 5
+  putfield com/kuguo/ad/s/j Ljava/lang/String;
+  sipush 160
+  istore 8
+  aload_0
+  astore_2
+  aload_2
+  iload 8
+  putfield com/kuguo/ad/s/k I
+  ldc "unknown"
+  astore 5
+  aload_0
+  astore_2
+  aload_2
+  aload 5
+  putfield com/kuguo/ad/s/l Ljava/lang/String;
+  iconst_1
+  istore 8
+  aload_0
+  astore_2
+  aload_2
+  iload 8
+  putfield com/kuguo/ad/s/m I
+  ldc ""
+  astore 5
+  aload_0
+  astore_2
+  aload_2
+  aload 5
+  putfield com/kuguo/ad/s/n Ljava/lang/String;
+  ldc ""
+  astore 5
+  aload_0
+  astore_2
+  aload_2
+  aload 5
+  putfield com/kuguo/ad/s/o Ljava/lang/String;
+  iconst_0
+  istore 8
+  aload_0
+  astore_2
+  aload_2
+  iload 8
+  putfield com/kuguo/ad/s/p I
+  iconst_0
+  istore 8
+  aload_0
+  astore_2
+  aload_2
+  iload 8
+  putfield com/kuguo/ad/s/q I
+  aconst_null
+  astore 9
+  aload_0
+  astore_2
+  aload_2
+  aload 9
+  putfield com/kuguo/ad/s/r Ljava/lang/String;
+  ldc "phone"
+  astore 5
+  aload_1
+  astore_2
+  aload_2
+  aload 5
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 10
+  aload 10
+  astore 12
+  aload 12
+  checkcast android/telephony/TelephonyManager
+  astore 12
+  aload 12
+  astore 11
+  aload 11
+  invokevirtual android/telephony/TelephonyManager/getDeviceId()Ljava/lang/String;
+  astore 4
+  aload_0
+  astore_2
+  aload_2
+  aload 4
+  putfield com/kuguo/ad/s/h Ljava/lang/String;
+  aload_1
+  astore_2
+  aload_2
+  invokevirtual android/content/Context/getPackageName()Ljava/lang/String;
+  astore 4
+  aload_0
+  astore_2
+  aload_2
+  aload 4
+  putfield com/kuguo/ad/s/g Ljava/lang/String;
+  aload_1
+  astore_2
+  aload_2
+  invokestatic com/kuguo/ad/d/i(Landroid/content/Context;)Z
+  istore 13
+  iload 13
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 13
+  ifeq Label0
+  iconst_1
+  istore 14
+Label2:
+  aload_0
+  astore_2
+  aload_2
+  iload 14
+  putfield com/kuguo/ad/s/p I
+  ldc "unknow"
+  astore 5
+  aload_0
+  astore_2
+  aload_2
+  aload 5
+  putfield com/kuguo/ad/s/c Ljava/lang/String;
+  ldc "window"
+  astore 5
+  aload_1
+  astore_2
+  aload_2
+  aload 5
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 10
+  aload 10
+  astore 16
+  aload 16
+  checkcast android/view/WindowManager
+  astore 16
+  aload 16
+  astore 15
+  new android/util/DisplayMetrics
+  astore 17
+  aload 17
+  invokespecial android/util/DisplayMetrics/<init>()V
+  aload 15
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 18
+  aload 18
+  astore_2
+  aload_2
+  aload 17
+  invokevirtual android/view/Display/getMetrics(Landroid/util/DisplayMetrics;)V
+  aload_1
+  astore_2
+  aload_2
+  invokestatic com/kuguo/ad/d/a(Landroid/content/Context;)Ljava/lang/String;
+  astore 4
+  aload_0
+  astore_2
+  aload_2
+  aload 4
+  putfield com/kuguo/ad/s/b Ljava/lang/String;
+  aload_1
+  astore_2
+  aload_2
+  invokestatic com/kuguo/ad/d/b(Landroid/content/Context;)I
+  istore 19
+  iload 19
+  istore_2
+  aload_0
+  astore_3
+  aload_3
+  iload_2
+  putfield com/kuguo/ad/s/i I
+  aload 17
+  getfield android/util/DisplayMetrics/densityDpi I
+  istore_2
+  iload_2
+  istore 19
+  aload_0
+  astore_3
+  aload_3
+  iload_2
+  putfield com/kuguo/ad/s/k I
+  aload_1
+  astore_2
+  aload_2
+  invokevirtual android/content/Context/getPackageManager()Landroid/content/pm/PackageManager;
+  astore 20
+Label4:
+  aload_1
+  astore_2
+  aload_2
+  invokevirtual android/content/Context/getPackageName()Ljava/lang/String;
+  astore 4
+  sipush 128
+  istore 8
+  aload 20
+  astore_2
+  aload_2
+  aload 4
+  iload 8
+  invokevirtual android/content/pm/PackageManager/getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
+  astore 21
+  aload 21
+  astore_2
+  aload_2
+  getfield android/content/pm/PackageItemInfo/metaData Landroid/os/Bundle;
+  astore_2
+  aload_2
+  astore 22
+  aload 22
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 22
+  ifnull Label1
+  ldc "cooId"
+  astore 5
+  aload 22
+  astore_2
+  aload_2
+  aload 5
+  invokevirtual android/os/Bundle/getString(Ljava/lang/String;)Ljava/lang/String;
+  astore 4
+  aload_0
+  astore_2
+  aload_2
+  aload 4
+  putfield com/kuguo/ad/s/n Ljava/lang/String;
+  ldc "channelId"
+  astore 5
+  aload 22
+  astore_2
+  aload_2
+  aload 5
+  invokevirtual android/os/Bundle/getString(Ljava/lang/String;)Ljava/lang/String;
+  astore 4
+  aload_0
+  astore_2
+  aload_2
+  aload 4
+  putfield com/kuguo/ad/s/o Ljava/lang/String;
+Label1:
+  return
+Label0:
+  iconst_0
+  istore 14
+  goto Label2
+Label3:
+  astore 23
+  aload 23
+  astore_2
+  aload_2
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label1
+  nop
+.end <method>
+
+.method protected a()V
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "imsi: "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/kuguo/ad/s/b Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "sdkVersion: "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/kuguo/ad/s/a Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "hardware: "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/kuguo/ad/s/c Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "projectId: "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/kuguo/ad/s/i I
+  istore 4
+  aload_1
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "packageName: "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/kuguo/ad/s/g Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "requestMode: "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/kuguo/ad/s/m I
+  istore 4
+  aload_1
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "advertState: "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/kuguo/ad/s/j Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "networkInfo: "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/kuguo/ad/s/l Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "requestMode: "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/kuguo/ad/s/m I
+  istore 4
+  aload_1
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "cooId: "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/kuguo/ad/s/n Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "channelId: "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/kuguo/ad/s/o Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "isSystemApp: "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/kuguo/ad/s/p I
+  istore 4
+  aload_1
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "historyMessageCount: "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/kuguo/ad/s/q I
+  istore 4
+  aload_1
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "verifyIds: "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/kuguo/ad/s/r Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  ldc "_______________________________"
+  astore_2
+  aload_2
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method protected b()[B
+.limit locals 14
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/kuguo/ad/s/c()I
+  istore_1
+  iload_1
+  newarray byte
+  astore_2
+  iconst_0
+  istore_3
+  bipush 17
+  istore 4
+  aload_2
+  iload_3
+  iload 4
+  bastore
+  iload_1
+  bipush -3
+  iadd
+  istore_1
+  iload_1
+  i2s
+  istore 5
+  iload 5
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  iconst_0
+  istore_3
+  iconst_1
+  istore 4
+  iconst_2
+  istore 7
+  aload 6
+  iload_3
+  aload_2
+  iload 4
+  iload 7
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iconst_3
+  istore_3
+  iconst_1
+  istore 4
+  aload_2
+  iload_3
+  iload 4
+  bastore
+  aload_0
+  getfield com/kuguo/ad/s/b Ljava/lang/String;
+  astore 8
+  aload 8
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iload_1
+  i2s
+  istore 5
+  iload 5
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  iconst_0
+  istore_3
+  iconst_4
+  istore 4
+  iconst_2
+  istore 7
+  aload 6
+  iload_3
+  aload_2
+  iload 4
+  iload 7
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload_0
+  getfield com/kuguo/ad/s/b Ljava/lang/String;
+  astore 8
+  aload 8
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  bipush 6
+  istore 4
+  aload 6
+  iload_3
+  aload_2
+  iload 4
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload_1
+  bipush 6
+  iadd
+  istore_1
+  aload_0
+  getfield com/kuguo/ad/s/j Ljava/lang/String;
+  astore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 8
+  ifeq Label0
+  ldc ""
+  astore 8
+  aload_0
+  getfield com/kuguo/ad/s/j Ljava/lang/String;
+  astore 9
+  aload 8
+  aload 9
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifne Label0
+  iload_1
+  iconst_1
+  iadd
+  istore 11
+  bipush 10
+  istore_3
+  aload_2
+  iload_1
+  iload_3
+  bastore
+  aload_0
+  getfield com/kuguo/ad/s/j Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iload_1
+  i2s
+  istore 5
+  iload 5
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload 11
+  iconst_2
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/j Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload 11
+  iload_1
+  iadd
+  istore_1
+Label0:
+  iload_1
+  iconst_1
+  iadd
+  istore 11
+  bipush 13
+  istore_3
+  aload_2
+  iload_1
+  iload_3
+  bastore
+  iconst_4
+  istore_3
+  iload_3
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload 11
+  iconst_2
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/m I
+  istore_1
+  iload_1
+  invokestatic com/kuguo/ad/e/a(I)[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload 11
+  iload_1
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/m I
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 10
+  istore_3
+  iload_1
+  iload_3
+  if_icmpne Label1
+  aload_2
+  areturn
+Label1:
+  iload 11
+  iconst_1
+  iadd
+  istore_1
+  iconst_0
+  istore_3
+  aload_2
+  iload 11
+  iload_3
+  bastore
+  aload_0
+  getfield com/kuguo/ad/s/a Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iload 11
+  i2s
+  istore 5
+  iload 5
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  iconst_0
+  istore_3
+  iconst_2
+  istore 4
+  aload 6
+  iload_3
+  aload_2
+  iload_1
+  iload 4
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload_1
+  iconst_2
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/a Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload 11
+  iload_1
+  iadd
+  istore 11
+  iload 11
+  iconst_1
+  iadd
+  istore_1
+  iconst_2
+  istore_3
+  aload_2
+  iload 11
+  iload_3
+  bastore
+  aload_0
+  getfield com/kuguo/ad/s/c Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iload 11
+  i2s
+  istore 5
+  iload 5
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  iconst_0
+  istore_3
+  iconst_2
+  istore 4
+  aload 6
+  iload_3
+  aload_2
+  iload_1
+  iload 4
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload_1
+  iconst_2
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/c Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload 11
+  iload_1
+  iadd
+  istore 11
+  iload 11
+  iconst_1
+  iadd
+  istore_1
+  iconst_3
+  istore_3
+  aload_2
+  iload 11
+  iload_3
+  bastore
+  aload_0
+  getfield com/kuguo/ad/s/d Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iload 11
+  i2s
+  istore 5
+  iload 5
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  iconst_0
+  istore_3
+  iconst_2
+  istore 4
+  aload 6
+  iload_3
+  aload_2
+  iload_1
+  iload 4
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload_1
+  iconst_2
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/d Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload 11
+  iload_1
+  iadd
+  istore 11
+  iload 11
+  iconst_1
+  iadd
+  istore_1
+  iconst_4
+  istore_3
+  aload_2
+  iload 11
+  iload_3
+  bastore
+  aload_0
+  getfield com/kuguo/ad/s/e D
+  dstore 12
+  dload 12
+  invokestatic java/lang/String/valueOf(D)Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iload 11
+  i2s
+  istore 5
+  iload 5
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  iconst_0
+  istore_3
+  iconst_2
+  istore 4
+  aload 6
+  iload_3
+  aload_2
+  iload_1
+  iload 4
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload_1
+  iconst_2
+  iadd
+  istore 11
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload_1
+  iload 11
+  iadd
+  istore 11
+  iload 11
+  iconst_1
+  iadd
+  istore_1
+  iconst_5
+  istore_3
+  aload_2
+  iload 11
+  iload_3
+  bastore
+  aload_0
+  getfield com/kuguo/ad/s/f D
+  dstore 12
+  dload 12
+  invokestatic java/lang/String/valueOf(D)Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iload 11
+  i2s
+  istore 5
+  iload 5
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  iconst_0
+  istore_3
+  iconst_2
+  istore 4
+  aload 6
+  iload_3
+  aload_2
+  iload_1
+  iload 4
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload_1
+  iconst_2
+  iadd
+  istore 11
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload_1
+  iload 11
+  iadd
+  istore 11
+  iload 11
+  iconst_1
+  iadd
+  istore_1
+  bipush 6
+  istore_3
+  aload_2
+  iload 11
+  iload_3
+  bastore
+  aload_0
+  getfield com/kuguo/ad/s/g Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iload 11
+  i2s
+  istore 5
+  iload 5
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload_1
+  iload 11
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload_1
+  iconst_2
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/g Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload 11
+  iload_1
+  iadd
+  istore 11
+  iload 11
+  iconst_1
+  iadd
+  istore_1
+  bipush 7
+  istore_3
+  aload_2
+  iload 11
+  iload_3
+  bastore
+  aload_0
+  getfield com/kuguo/ad/s/h Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iload 11
+  i2s
+  istore 5
+  iload 5
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload_1
+  iload 11
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload_1
+  iconst_2
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/h Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload 11
+  iload_1
+  iadd
+  istore 11
+  iload 11
+  iconst_1
+  iadd
+  istore_1
+  bipush 8
+  istore_3
+  aload_2
+  iload 11
+  iload_3
+  bastore
+  iconst_4
+  istore_3
+  iload_3
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload_1
+  iload 11
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload_1
+  iconst_2
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/i I
+  istore_1
+  iload_1
+  invokestatic com/kuguo/ad/e/a(I)[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload 11
+  iload_1
+  iadd
+  istore 11
+  iload 11
+  iconst_1
+  iadd
+  istore_1
+  bipush 9
+  istore_3
+  aload_2
+  iload 11
+  iload_3
+  bastore
+  ldc "1.1.0"
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iload 11
+  i2s
+  istore 5
+  iload 5
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload_1
+  iload 11
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload_1
+  iconst_2
+  iadd
+  istore 11
+  ldc "1.1.0"
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload 11
+  iload_1
+  iadd
+  istore 11
+  iload 11
+  iconst_1
+  iadd
+  istore_1
+  bipush 11
+  istore_3
+  aload_2
+  iload 11
+  iload_3
+  bastore
+  iconst_4
+  istore_3
+  iload_3
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload_1
+  iload 11
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload_1
+  iconst_2
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/k I
+  istore_1
+  iload_1
+  invokestatic com/kuguo/ad/e/a(I)[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload 11
+  iload_1
+  iadd
+  istore 11
+  iload 11
+  iconst_1
+  iadd
+  istore_1
+  bipush 12
+  istore_3
+  aload_2
+  iload 11
+  iload_3
+  bastore
+  aload_0
+  getfield com/kuguo/ad/s/l Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iload 11
+  i2s
+  istore 5
+  iload 5
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload_1
+  iload 11
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload_1
+  iconst_2
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/l Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload 11
+  iload_1
+  iadd
+  istore 11
+  iload 11
+  iconst_1
+  iadd
+  istore_1
+  bipush 14
+  istore_3
+  aload_2
+  iload 11
+  iload_3
+  bastore
+  aload_0
+  getfield com/kuguo/ad/s/n Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iload 11
+  i2s
+  istore 5
+  iload 5
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload_1
+  iload 11
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload_1
+  iconst_2
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/n Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload 11
+  iload_1
+  iadd
+  istore 11
+  iload 11
+  iconst_1
+  iadd
+  istore_1
+  bipush 15
+  istore_3
+  aload_2
+  iload 11
+  iload_3
+  bastore
+  aload_0
+  getfield com/kuguo/ad/s/o Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iload 11
+  i2s
+  istore 5
+  iload 5
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload_1
+  iload 11
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload_1
+  iconst_2
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/o Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload 11
+  iload_1
+  iadd
+  istore 11
+  iload 11
+  iconst_1
+  iadd
+  istore_1
+  bipush 16
+  istore_3
+  aload_2
+  iload 11
+  iload_3
+  bastore
+  iconst_4
+  istore_3
+  iload_3
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload_1
+  iload 11
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload_1
+  iconst_2
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/p I
+  istore_1
+  iload_1
+  invokestatic com/kuguo/ad/e/a(I)[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload 11
+  iload_1
+  iadd
+  istore 11
+  iload 11
+  iconst_1
+  iadd
+  istore_1
+  bipush 17
+  istore_3
+  aload_2
+  iload 11
+  iload_3
+  bastore
+  iconst_4
+  istore_3
+  iload_3
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload_1
+  iload 11
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload_1
+  iconst_2
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/q I
+  istore_1
+  iload_1
+  invokestatic com/kuguo/ad/e/a(I)[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 6
+  arraylength
+  istore_1
+  iload 11
+  iload_1
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/r Ljava/lang/String;
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label2
+  ldc ""
+  astore 9
+  aload_0
+  getfield com/kuguo/ad/s/r Ljava/lang/String;
+  astore 8
+  aload 9
+  aload 8
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifne Label2
+  iload 11
+  iconst_1
+  iadd
+  istore_1
+  bipush 18
+  istore_3
+  aload_2
+  iload 11
+  iload_3
+  bastore
+  aload_0
+  getfield com/kuguo/ad/s/r Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iload 11
+  i2s
+  istore 5
+  iload 5
+  invokestatic com/kuguo/ad/e/a(S)[B
+  astore 6
+  aload 6
+  arraylength
+  istore 11
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload_1
+  iload 11
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  iload_1
+  iconst_2
+  iadd
+  istore 11
+  aload_0
+  getfield com/kuguo/ad/s/r Ljava/lang/String;
+  astore 9
+  aload 9
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_2
+  iload 11
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+Label2:
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method private c()I
+.limit locals 12
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  aload_0
+  getfield com/kuguo/ad/s/b Ljava/lang/String;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  ldc ""
+  astore_3
+  aload_0
+  aload_3
+  putfield com/kuguo/ad/s/b Ljava/lang/String;
+Label0:
+  aload_0
+  getfield com/kuguo/ad/s/m I
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 10
+  istore 5
+  iload 4
+  iload 5
+  if_icmpne Label1
+  aload_0
+  getfield com/kuguo/ad/s/b Ljava/lang/String;
+  astore_2
+  aload_2
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 4
+  iload 4
+  bipush 6
+  iadd
+  istore 4
+  iload 4
+  iconst_3
+  iadd
+  istore 4
+  iload 4
+  iconst_4
+  iadd
+  istore 4
+  aload_0
+  getfield com/kuguo/ad/s/j Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label2
+  ldc ""
+  astore_2
+  aload_0
+  getfield com/kuguo/ad/s/j Ljava/lang/String;
+  astore 7
+  aload_2
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label2
+  aload_0
+  getfield com/kuguo/ad/s/j Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore_1
+  iload_1
+  iconst_3
+  iadd
+  istore_1
+  iload 4
+  iload_1
+  iadd
+  istore 4
+Label2:
+  iload 4
+  ireturn
+Label1:
+  aload_0
+  getfield com/kuguo/ad/s/d Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnonnull Label3
+  ldc ""
+  astore_3
+  aload_0
+  aload_3
+  putfield com/kuguo/ad/s/d Ljava/lang/String;
+Label3:
+  aload_0
+  getfield com/kuguo/ad/s/c Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnonnull Label4
+  ldc "umknown"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/kuguo/ad/s/c Ljava/lang/String;
+Label4:
+  aload_0
+  getfield com/kuguo/ad/s/h Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnonnull Label5
+  ldc ""
+  astore_3
+  aload_0
+  aload_3
+  putfield com/kuguo/ad/s/h Ljava/lang/String;
+Label5:
+  aload_0
+  getfield com/kuguo/ad/s/n Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnonnull Label6
+  ldc ""
+  astore_3
+  aload_0
+  aload_3
+  putfield com/kuguo/ad/s/n Ljava/lang/String;
+Label6:
+  aload_0
+  getfield com/kuguo/ad/s/o Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnonnull Label7
+  ldc ""
+  astore_3
+  aload_0
+  aload_3
+  putfield com/kuguo/ad/s/o Ljava/lang/String;
+Label7:
+  aload_0
+  getfield com/kuguo/ad/s/l Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label8
+  ldc ""
+  astore 7
+  aload_0
+  getfield com/kuguo/ad/s/l Ljava/lang/String;
+  astore_2
+  aload 7
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label9
+Label8:
+  ldc "unknown"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/kuguo/ad/s/l Ljava/lang/String;
+Label9:
+  aload_0
+  getfield com/kuguo/ad/s/a Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 4
+  iload 4
+  bipush 30
+  iadd
+  istore 4
+  aload_0
+  getfield com/kuguo/ad/s/b Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 9
+  iload 4
+  iload 9
+  iadd
+  istore 9
+  aload_0
+  getfield com/kuguo/ad/s/c Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 4
+  iload 9
+  iload 4
+  iadd
+  istore 9
+  aload_0
+  getfield com/kuguo/ad/s/d Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 4
+  iload 9
+  iload 4
+  iadd
+  istore 9
+  aload_0
+  getfield com/kuguo/ad/s/e D
+  dstore 10
+  dload 10
+  invokestatic java/lang/String/valueOf(D)Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 4
+  iload 9
+  iload 4
+  iadd
+  istore 9
+  aload_0
+  getfield com/kuguo/ad/s/f D
+  dstore 10
+  dload 10
+  invokestatic java/lang/String/valueOf(D)Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 4
+  iload 9
+  iload 4
+  iadd
+  istore 9
+  aload_0
+  getfield com/kuguo/ad/s/g Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 4
+  iload 9
+  iload 4
+  iadd
+  istore 9
+  aload_0
+  getfield com/kuguo/ad/s/h Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 4
+  iload 9
+  iload 4
+  iadd
+  istore 9
+  iload 9
+  bipush 7
+  iadd
+  istore 9
+  ldc "1.1.0"
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 4
+  iload 4
+  iload 9
+  iadd
+  istore 9
+  aload_0
+  getfield com/kuguo/ad/s/j Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label10
+  ldc ""
+  astore 7
+  aload_0
+  getfield com/kuguo/ad/s/j Ljava/lang/String;
+  astore_2
+  aload 7
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label10
+  aload_0
+  getfield com/kuguo/ad/s/j Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/trim()Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 4
+  iload 4
+  iconst_3
+  iadd
+  istore 4
+Label12:
+  iload 4
+  iload 9
+  iadd
+  istore 9
+  iload 9
+  bipush 7
+  iadd
+  istore 9
+  iload 9
+  iconst_3
+  iadd
+  istore 9
+  aload_0
+  getfield com/kuguo/ad/s/l Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 4
+  iload 9
+  iload 4
+  iadd
+  istore 9
+  iload 9
+  bipush 7
+  iadd
+  istore 9
+  iload 9
+  iconst_3
+  iadd
+  istore 9
+  aload_0
+  getfield com/kuguo/ad/s/n Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 4
+  iload 9
+  iload 4
+  iadd
+  istore 9
+  iload 9
+  iconst_3
+  iadd
+  istore 9
+  aload_0
+  getfield com/kuguo/ad/s/o Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 4
+  iload 9
+  iload 4
+  iadd
+  istore 9
+  iload 9
+  bipush 7
+  iadd
+  istore 9
+  iload 9
+  bipush 7
+  iadd
+  istore 9
+  aload_0
+  getfield com/kuguo/ad/s/r Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label11
+  ldc ""
+  astore 7
+  aload_0
+  getfield com/kuguo/ad/s/r Ljava/lang/String;
+  astore_2
+  aload 7
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label11
+  aload_0
+  getfield com/kuguo/ad/s/r Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/trim()Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/getBytes()[B
+  astore 6
+  aload 6
+  arraylength
+  istore 4
+  iload 4
+  iconst_3
+  iadd
+  istore_1
+Label11:
+  iload 9
+  iload_1
+  iadd
+  istore 4
+  iload 4
+  ireturn
+Label10:
+  iconst_0
+  istore 4
+  goto Label12
+  nop
+.end <method>
+

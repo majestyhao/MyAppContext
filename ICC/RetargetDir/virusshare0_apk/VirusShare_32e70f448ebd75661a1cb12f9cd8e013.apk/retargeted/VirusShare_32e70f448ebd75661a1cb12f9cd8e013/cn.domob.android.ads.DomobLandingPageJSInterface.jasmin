@@ -1,0 +1,76 @@
+.source SourceFile
+.class public  cn/domob/android/ads/DomobLandingPageJSInterface
+.super cn/domob/android/ads/DomobJSInterface
+.field private "a" Lcn/domob/android/ads/z;
+
+.method <init>(Landroid/content/Context;Lcn/domob/android/ads/L;Lcn/domob/android/ads/z;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  invokespecial cn/domob/android/ads/DomobJSInterface/<init>(Landroid/content/Context;Lcn/domob/android/ads/L;)V
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/DomobLandingPageJSInterface/a Lcn/domob/android/ads/z;
+  return
+  nop
+.end <method>
+
+.method public closeLandingPage()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/DomobLandingPageJSInterface/a Lcn/domob/android/ads/z;
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/z/d()V
+  return
+  nop
+.end <method>
+
+.method public getLandingPageSize()Ljava/lang/String;
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/DomobLandingPageJSInterface/a Lcn/domob/android/ads/z;
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/z/e()Ljava/lang/String;
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public reload()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/DomobLandingPageJSInterface/a Lcn/domob/android/ads/z;
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/z/f()V
+  return
+  nop
+.end <method>
+
+.method public showMore(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/DomobLandingPageJSInterface/a Lcn/domob/android/ads/z;
+  astore_3
+  aload_3
+  aload_1
+  aload_2
+  invokevirtual cn/domob/android/ads/z/a(Ljava/lang/String;Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+

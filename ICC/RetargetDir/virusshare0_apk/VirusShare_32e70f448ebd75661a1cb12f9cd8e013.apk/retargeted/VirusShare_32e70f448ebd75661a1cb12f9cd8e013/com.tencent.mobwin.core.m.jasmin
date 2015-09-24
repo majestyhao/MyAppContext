@@ -1,0 +1,1409 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/tencent/mobwin/core/m
+.super java/lang/Object
+.field public static final "a" I =  500
+.field public static final "b" I =  1000
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static a()Landroid/view/animation/Animation;
+.limit locals 12
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_2
+  istore_1
+  fconst_1
+  fstore_2
+  iconst_2
+  istore_3
+  fconst_0
+  fstore 4
+  iconst_2
+  istore 5
+  fconst_0
+  fstore 6
+  iconst_2
+  istore 7
+  fconst_0
+  fstore 8
+  aload_0
+  iload_1
+  fload_2
+  iload_3
+  fload 4
+  iload 5
+  fload 6
+  iload 7
+  fload 8
+  invokespecial android/view/animation/TranslateAnimation/<init>(IFIFIFIF)V
+  ldc2_w 500
+  lstore 9
+  aload_0
+  lload 9
+  invokevirtual android/view/animation/Animation/setDuration(J)V
+  new android/view/animation/AccelerateInterpolator
+  astore 11
+  aload 11
+  invokespecial android/view/animation/AccelerateInterpolator/<init>()V
+  aload_0
+  aload 11
+  invokevirtual android/view/animation/Animation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static a(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;)Landroid/view/animation/Animation;
+.limit locals 11
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  fconst_0
+  fstore_3
+  ldc 10.000000
+  fstore 4
+  fconst_0
+  fstore 5
+  fconst_0
+  fstore 6
+  aload_2
+  fload_3
+  fload 4
+  fload 5
+  fload 6
+  invokespecial android/view/animation/TranslateAnimation/<init>(FFFF)V
+  aload_2
+  aload_1
+  invokevirtual android/view/animation/TranslateAnimation/setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
+  ldc2_w 300
+  lstore 7
+  aload_2
+  lload 7
+  invokevirtual android/view/animation/TranslateAnimation/setDuration(J)V
+  new android/view/animation/CycleInterpolator
+  astore 9
+  fconst_2
+  fstore_3
+  aload 9
+  fload_3
+  invokespecial android/view/animation/CycleInterpolator/<init>(F)V
+  aload_2
+  aload 9
+  invokevirtual android/view/animation/TranslateAnimation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  iconst_0
+  istore 10
+  aload_2
+  iload 10
+  invokevirtual android/view/animation/TranslateAnimation/setFillAfter(Z)V
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public static a(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)[Landroid/view/animation/Animation;
+.limit locals 10
+.limit stack 200
+  nop
+  iconst_2
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  getstatic com/tencent/mobwin/core/y/b Lcom/tencent/mobwin/core/y;
+  astore 5
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  aload 5
+  if_acmpne Label0
+  new java/util/Random
+  astore 6
+  aload 6
+  invokespecial java/util/Random/<init>()V
+  iconst_2
+  istore 4
+  aload 6
+  iload 4
+  invokevirtual java/util/Random/nextInt(I)I
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  lookupswitch
+  0 : Label2
+  1 : Label3
+  2 : Label4
+  default : Label1
+Label1:
+  goto Label5
+Label5:
+  aload_0
+  aload_1
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/c(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_0
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aconst_null
+  astore 9
+  aload_0
+  aload 9
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/b(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_1
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aload_3
+  areturn
+Label2:
+  aload_0
+  aload_1
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/c(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_0
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aconst_null
+  astore 9
+  aload_0
+  aload 9
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/b(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_1
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aload_3
+  areturn
+Label3:
+  aload_0
+  aload_1
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/d(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_0
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aconst_null
+  astore 9
+  aload_0
+  aload 9
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/e(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_1
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aload_3
+  areturn
+Label4:
+  aload_0
+  aload_1
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/f(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_0
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aconst_null
+  astore 9
+  aload_0
+  aload 9
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/g(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_1
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aload_3
+  areturn
+Label0:
+  new java/util/Random
+  astore 6
+  aload 6
+  invokespecial java/util/Random/<init>()V
+  iconst_4
+  istore 4
+  aload 6
+  iload 4
+  invokevirtual java/util/Random/nextInt(I)I
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  lookupswitch
+  0 : Label7
+  1 : Label8
+  2 : Label9
+  3 : Label10
+  default : Label6
+Label6:
+  goto Label11
+Label11:
+  aload_0
+  aload_1
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/c(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_0
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aconst_null
+  astore 9
+  aload_0
+  aload 9
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/b(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_1
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aload_3
+  areturn
+Label7:
+  aload_0
+  aload_1
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/c(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_0
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aconst_null
+  astore 9
+  aload_0
+  aload 9
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/b(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_1
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aload_3
+  areturn
+Label8:
+  aload_0
+  aload_1
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/d(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_0
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aconst_null
+  astore 9
+  aload_0
+  aload 9
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/e(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_1
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aload_3
+  areturn
+Label9:
+  aload_0
+  aload_1
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/f(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_0
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aconst_null
+  astore 9
+  aload_0
+  aload 9
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/g(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_1
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aload_3
+  areturn
+Label10:
+  aload_0
+  aload_1
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/i(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_0
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aconst_null
+  astore 9
+  aload_0
+  aload 9
+  aload_2
+  invokestatic com/tencent/mobwin/core/m/h(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+  astore 8
+  iconst_1
+  istore 4
+  aload_3
+  iload 4
+  aload 8
+  aastore
+  aload_3
+  areturn
+  nop
+  nop
+  nop
+  nop
+.end <method>
+
+.method public static b()Landroid/view/animation/Animation;
+.limit locals 12
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_2
+  istore_1
+  fconst_0
+  fstore_2
+  iconst_2
+  istore_3
+  ldc -1.000000
+  fstore 4
+  iconst_2
+  istore 5
+  fconst_0
+  fstore 6
+  iconst_2
+  istore 7
+  fconst_0
+  fstore 8
+  aload_0
+  iload_1
+  fload_2
+  iload_3
+  fload 4
+  iload 5
+  fload 6
+  iload 7
+  fload 8
+  invokespecial android/view/animation/TranslateAnimation/<init>(IFIFIFIF)V
+  ldc2_w 500
+  lstore 9
+  aload_0
+  lload 9
+  invokevirtual android/view/animation/Animation/setDuration(J)V
+  new android/view/animation/AccelerateInterpolator
+  astore 11
+  aload 11
+  invokespecial android/view/animation/AccelerateInterpolator/<init>()V
+  aload_0
+  aload 11
+  invokevirtual android/view/animation/Animation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method private static b(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+.limit locals 11
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  fconst_0
+  fstore 4
+  fconst_1
+  fstore 5
+  aload_3
+  fload 4
+  fload 5
+  invokespecial android/view/animation/AlphaAnimation/<init>(FF)V
+  new android/view/animation/DecelerateInterpolator
+  astore 6
+  aload 6
+  invokespecial android/view/animation/DecelerateInterpolator/<init>()V
+  aload_3
+  aload 6
+  invokevirtual android/view/animation/AlphaAnimation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  iconst_0
+  istore 7
+  aload_3
+  iload 7
+  invokevirtual android/view/animation/AlphaAnimation/setFillEnabled(Z)V
+  iconst_0
+  istore 7
+  aload_3
+  iload 7
+  invokevirtual android/view/animation/AlphaAnimation/setFillAfter(Z)V
+  getstatic com/tencent/mobwin/core/y/a Lcom/tencent/mobwin/core/y;
+  astore 8
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  aload 8
+  if_acmpne Label0
+  ldc2_w 500
+  lstore 9
+  aload_3
+  lload 9
+  invokevirtual android/view/animation/AlphaAnimation/setDuration(J)V
+Label1:
+  aload_3
+  aload_1
+  invokevirtual android/view/animation/AlphaAnimation/setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
+  aload_3
+  areturn
+Label0:
+  ldc2_w 1000
+  lstore 9
+  aload_3
+  lload 9
+  invokevirtual android/view/animation/AlphaAnimation/setDuration(J)V
+  goto Label1
+  nop
+.end <method>
+
+.method public static c()Landroid/view/animation/Animation;
+.limit locals 12
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_2
+  istore_1
+  ldc -1.000000
+  fstore_2
+  iconst_2
+  istore_3
+  fconst_0
+  fstore 4
+  iconst_2
+  istore 5
+  fconst_0
+  fstore 6
+  iconst_2
+  istore 7
+  fconst_0
+  fstore 8
+  aload_0
+  iload_1
+  fload_2
+  iload_3
+  fload 4
+  iload 5
+  fload 6
+  iload 7
+  fload 8
+  invokespecial android/view/animation/TranslateAnimation/<init>(IFIFIFIF)V
+  ldc2_w 500
+  lstore 9
+  aload_0
+  lload 9
+  invokevirtual android/view/animation/Animation/setDuration(J)V
+  new android/view/animation/AccelerateInterpolator
+  astore 11
+  aload 11
+  invokespecial android/view/animation/AccelerateInterpolator/<init>()V
+  aload_0
+  aload 11
+  invokevirtual android/view/animation/Animation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method private static c(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+.limit locals 11
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  fconst_1
+  fstore 4
+  fconst_0
+  fstore 5
+  aload_3
+  fload 4
+  fload 5
+  invokespecial android/view/animation/AlphaAnimation/<init>(FF)V
+  new android/view/animation/AccelerateInterpolator
+  astore 6
+  aload 6
+  invokespecial android/view/animation/AccelerateInterpolator/<init>()V
+  aload_3
+  aload 6
+  invokevirtual android/view/animation/AlphaAnimation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  iconst_0
+  istore 7
+  aload_3
+  iload 7
+  invokevirtual android/view/animation/AlphaAnimation/setFillEnabled(Z)V
+  iconst_0
+  istore 7
+  aload_3
+  iload 7
+  invokevirtual android/view/animation/AlphaAnimation/setFillAfter(Z)V
+  getstatic com/tencent/mobwin/core/y/a Lcom/tencent/mobwin/core/y;
+  astore 8
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  aload 8
+  if_acmpne Label0
+  ldc2_w 500
+  lstore 9
+  aload_3
+  lload 9
+  invokevirtual android/view/animation/AlphaAnimation/setDuration(J)V
+Label1:
+  aload_3
+  aload_1
+  invokevirtual android/view/animation/AlphaAnimation/setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
+  aload_3
+  areturn
+Label0:
+  ldc2_w 1000
+  lstore 9
+  aload_3
+  lload 9
+  invokevirtual android/view/animation/AlphaAnimation/setDuration(J)V
+  goto Label1
+  nop
+.end <method>
+
+.method public static d()Landroid/view/animation/Animation;
+.limit locals 12
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_2
+  istore_1
+  fconst_0
+  fstore_2
+  iconst_2
+  istore_3
+  fconst_1
+  fstore 4
+  iconst_2
+  istore 5
+  fconst_0
+  fstore 6
+  iconst_2
+  istore 7
+  fconst_0
+  fstore 8
+  aload_0
+  iload_1
+  fload_2
+  iload_3
+  fload 4
+  iload 5
+  fload 6
+  iload 7
+  fload 8
+  invokespecial android/view/animation/TranslateAnimation/<init>(IFIFIFIF)V
+  ldc2_w 500
+  lstore 9
+  aload_0
+  lload 9
+  invokevirtual android/view/animation/Animation/setDuration(J)V
+  new android/view/animation/AccelerateInterpolator
+  astore 11
+  aload 11
+  invokespecial android/view/animation/AccelerateInterpolator/<init>()V
+  aload_0
+  aload 11
+  invokevirtual android/view/animation/Animation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method private static d(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+.limit locals 14
+.limit stack 200
+  nop
+  getstatic com/tencent/mobwin/core/y/a Lcom/tencent/mobwin/core/y;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_2
+  iload_3
+  if_icmpne Label0
+  new android/view/animation/TranslateAnimation
+  astore 4
+  aload_0
+  invokevirtual android/view/View/getHeight()I
+  istore 5
+  iload 5
+  ineg
+  istore 5
+  iload 5
+  i2f
+  fstore 6
+  fconst_0
+  fstore 7
+  fconst_0
+  fstore 8
+  fconst_0
+  fstore 9
+  aload 4
+  fload 7
+  fload 8
+  fload 9
+  fload 6
+  invokespecial android/view/animation/TranslateAnimation/<init>(FFFF)V
+  ldc2_w 500
+  lstore 10
+  aload 4
+  lload 10
+  invokevirtual android/view/animation/TranslateAnimation/setDuration(J)V
+Label1:
+  iconst_0
+  istore 12
+  aload 4
+  iload 12
+  invokevirtual android/view/animation/TranslateAnimation/setFillAfter(Z)V
+  iconst_0
+  istore 12
+  aload 4
+  iload 12
+  invokevirtual android/view/animation/TranslateAnimation/setFillEnabled(Z)V
+  aload 4
+  aload_1
+  invokevirtual android/view/animation/TranslateAnimation/setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
+  aload 4
+  areturn
+Label0:
+  new android/view/animation/TranslateAnimation
+  astore 4
+  fconst_0
+  fstore 7
+  fconst_0
+  fstore 8
+  fconst_0
+  fstore 9
+  ldc -50.000000
+  fstore 13
+  aload 4
+  fload 7
+  fload 8
+  fload 9
+  fload 13
+  invokespecial android/view/animation/TranslateAnimation/<init>(FFFF)V
+  ldc2_w 1000
+  lstore 10
+  aload 4
+  lload 10
+  invokevirtual android/view/animation/TranslateAnimation/setDuration(J)V
+  goto Label1
+  nop
+.end <method>
+
+.method private static e(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+.limit locals 14
+.limit stack 200
+  nop
+  getstatic com/tencent/mobwin/core/y/a Lcom/tencent/mobwin/core/y;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_2
+  iload_3
+  if_icmpne Label0
+  new android/view/animation/TranslateAnimation
+  astore 4
+  aload_0
+  invokevirtual android/view/View/getHeight()I
+  istore 5
+  iload 5
+  i2f
+  fstore 6
+  fconst_0
+  fstore 7
+  fconst_0
+  fstore 8
+  fconst_0
+  fstore 9
+  aload 4
+  fload 7
+  fload 8
+  fload 6
+  fload 9
+  invokespecial android/view/animation/TranslateAnimation/<init>(FFFF)V
+  ldc2_w 500
+  lstore 10
+  aload 4
+  lload 10
+  invokevirtual android/view/animation/TranslateAnimation/setDuration(J)V
+Label1:
+  iconst_0
+  istore 12
+  aload 4
+  iload 12
+  invokevirtual android/view/animation/TranslateAnimation/setFillAfter(Z)V
+  iconst_0
+  istore 12
+  aload 4
+  iload 12
+  invokevirtual android/view/animation/TranslateAnimation/setFillEnabled(Z)V
+  aload 4
+  aload_1
+  invokevirtual android/view/animation/TranslateAnimation/setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
+  aload 4
+  areturn
+Label0:
+  new android/view/animation/TranslateAnimation
+  astore 4
+  fconst_0
+  fstore 7
+  fconst_0
+  fstore 8
+  ldc 50.000000
+  fstore 9
+  fconst_0
+  fstore 13
+  aload 4
+  fload 7
+  fload 8
+  fload 9
+  fload 13
+  invokespecial android/view/animation/TranslateAnimation/<init>(FFFF)V
+  ldc2_w 1000
+  lstore 10
+  aload 4
+  lload 10
+  invokevirtual android/view/animation/TranslateAnimation/setDuration(J)V
+  goto Label1
+  nop
+.end <method>
+
+.method private static f(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+.limit locals 24
+.limit stack 200
+  nop
+  aload_0
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload 10
+  invokestatic com/tencent/mobwin/utils/b/d(Landroid/content/Context;)I
+  istore 11
+  iload 11
+  i2f
+  fstore 12
+  fconst_2
+  fstore 14
+  fload 12
+  fload 14
+  fdiv
+  fstore 13
+  aload_0
+  astore_3
+  aload_3
+  invokevirtual android/view/View/getContext()Landroid/content/Context;
+  astore 10
+  aload 10
+  invokestatic com/tencent/mobwin/utils/b/e(Landroid/content/Context;)I
+  istore 11
+  iload 11
+  i2f
+  fstore 12
+  fconst_2
+  fstore 14
+  fload 12
+  fload 14
+  fdiv
+  fstore 15
+  new com/tencent/mobwin/core/view/b
+  astore 16
+  fconst_0
+  fstore 14
+  ldc 90.000000
+  fstore 17
+  fconst_0
+  fstore 18
+  iconst_1
+  istore 19
+  aload 16
+  astore_3
+  fload 14
+  fstore 4
+  fload 17
+  fstore 5
+  fload 13
+  fstore 6
+  fload 15
+  fstore 7
+  fload 18
+  fstore 8
+  iload 19
+  istore 9
+  aload_3
+  fload 4
+  fload 5
+  fload 6
+  fload 7
+  fload 8
+  iload 9
+  invokespecial com/tencent/mobwin/core/view/b/<init>(FFFFFZ)V
+  getstatic com/tencent/mobwin/core/y/a Lcom/tencent/mobwin/core/y;
+  astore 20
+  aload_2
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 20
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  astore_3
+  aload 20
+  astore 4
+  aload_3
+  aload 4
+  if_acmpne Label0
+  ldc2_w 500
+  lstore 21
+  lload 21
+  lstore_3
+  aload 16
+  lload_3
+  invokevirtual com/tencent/mobwin/core/view/b/setDuration(J)V
+Label1:
+  iconst_0
+  istore 19
+  iload 19
+  istore_3
+  aload 16
+  iload_3
+  invokevirtual com/tencent/mobwin/core/view/b/setFillAfter(Z)V
+  new android/view/animation/AccelerateInterpolator
+  astore 23
+  aload 23
+  astore_3
+  aload_3
+  invokespecial android/view/animation/AccelerateInterpolator/<init>()V
+  aload 23
+  astore_3
+  aload 16
+  aload_3
+  invokevirtual com/tencent/mobwin/core/view/b/setInterpolator(Landroid/view/animation/Interpolator;)V
+  aload_1
+  astore_3
+  aload 16
+  aload_3
+  invokevirtual com/tencent/mobwin/core/view/b/setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
+  aload 16
+  areturn
+Label0:
+  ldc2_w 1000
+  lstore 21
+  lload 21
+  lstore_3
+  aload 16
+  lload_3
+  invokevirtual com/tencent/mobwin/core/view/b/setDuration(J)V
+  goto Label1
+  nop
+.end <method>
+
+.method private static g(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+.limit locals 24
+.limit stack 200
+  nop
+  aload_0
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload 10
+  invokestatic com/tencent/mobwin/utils/b/d(Landroid/content/Context;)I
+  istore 11
+  iload 11
+  i2f
+  fstore 12
+  fconst_2
+  fstore 14
+  fload 12
+  fload 14
+  fdiv
+  fstore 13
+  aload_0
+  astore_3
+  aload_3
+  invokevirtual android/view/View/getContext()Landroid/content/Context;
+  astore 10
+  aload 10
+  invokestatic com/tencent/mobwin/utils/b/e(Landroid/content/Context;)I
+  istore 11
+  iload 11
+  i2f
+  fstore 12
+  fconst_2
+  fstore 14
+  fload 12
+  fload 14
+  fdiv
+  fstore 15
+  new com/tencent/mobwin/core/view/b
+  astore 16
+  ldc 90.000000
+  fstore 14
+  fconst_0
+  fstore 17
+  fconst_0
+  fstore 18
+  iconst_0
+  istore 19
+  aload 16
+  astore_3
+  fload 14
+  fstore 4
+  fload 17
+  fstore 5
+  fload 13
+  fstore 6
+  fload 15
+  fstore 7
+  fload 18
+  fstore 8
+  iload 19
+  istore 9
+  aload_3
+  fload 4
+  fload 5
+  fload 6
+  fload 7
+  fload 8
+  iload 9
+  invokespecial com/tencent/mobwin/core/view/b/<init>(FFFFFZ)V
+  getstatic com/tencent/mobwin/core/y/a Lcom/tencent/mobwin/core/y;
+  astore 20
+  aload_2
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 20
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  astore_3
+  aload 20
+  astore 4
+  aload_3
+  aload 4
+  if_acmpne Label0
+  ldc2_w 500
+  lstore 21
+  lload 21
+  lstore_3
+  aload 16
+  lload_3
+  invokevirtual com/tencent/mobwin/core/view/b/setDuration(J)V
+Label1:
+  iconst_0
+  istore 19
+  iload 19
+  istore_3
+  aload 16
+  iload_3
+  invokevirtual com/tencent/mobwin/core/view/b/setFillAfter(Z)V
+  new android/view/animation/AccelerateInterpolator
+  astore 23
+  aload 23
+  astore_3
+  aload_3
+  invokespecial android/view/animation/AccelerateInterpolator/<init>()V
+  aload 23
+  astore_3
+  aload 16
+  aload_3
+  invokevirtual com/tencent/mobwin/core/view/b/setInterpolator(Landroid/view/animation/Interpolator;)V
+  aload_1
+  astore_3
+  aload 16
+  aload_3
+  invokevirtual com/tencent/mobwin/core/view/b/setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
+  aload 16
+  areturn
+Label0:
+  ldc2_w 1000
+  lstore 21
+  lload 21
+  lstore_3
+  aload 16
+  lload_3
+  invokevirtual com/tencent/mobwin/core/view/b/setDuration(J)V
+  goto Label1
+  nop
+.end <method>
+
+.method private static h(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+.limit locals 24
+.limit stack 200
+  nop
+  aload_0
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload 10
+  invokestatic com/tencent/mobwin/utils/b/d(Landroid/content/Context;)I
+  istore 11
+  iload 11
+  i2f
+  fstore 12
+  fconst_2
+  fstore 14
+  fload 12
+  fload 14
+  fdiv
+  fstore 13
+  aload_0
+  astore_3
+  aload_3
+  invokevirtual android/view/View/getContext()Landroid/content/Context;
+  astore 10
+  aload 10
+  invokestatic com/tencent/mobwin/utils/b/e(Landroid/content/Context;)I
+  istore 11
+  iload 11
+  i2f
+  fstore 12
+  fconst_2
+  fstore 14
+  fload 12
+  fload 14
+  fdiv
+  fstore 12
+  new android/view/animation/ScaleAnimation
+  astore 15
+  fconst_0
+  fstore 14
+  fconst_1
+  fstore 16
+  fconst_0
+  fstore 17
+  fconst_1
+  fstore 18
+  aload 15
+  astore_3
+  fload 14
+  fstore 4
+  fload 16
+  fstore 5
+  fload 17
+  fstore 6
+  fload 18
+  fstore 7
+  fload 13
+  fstore 8
+  fload 12
+  fstore 9
+  aload_3
+  fload 4
+  fload 5
+  fload 6
+  fload 7
+  fload 8
+  fload 9
+  invokespecial android/view/animation/ScaleAnimation/<init>(FFFFFF)V
+  getstatic com/tencent/mobwin/core/y/a Lcom/tencent/mobwin/core/y;
+  astore 19
+  aload_2
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 19
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  astore_3
+  aload 19
+  astore 4
+  aload_3
+  aload 4
+  if_acmpne Label0
+  ldc2_w 500
+  lstore 20
+  lload 20
+  lstore_3
+  aload 15
+  lload_3
+  invokevirtual android/view/animation/ScaleAnimation/setDuration(J)V
+Label1:
+  iconst_0
+  istore 22
+  iload 22
+  istore_3
+  aload 15
+  iload_3
+  invokevirtual android/view/animation/ScaleAnimation/setFillAfter(Z)V
+  new android/view/animation/AccelerateInterpolator
+  astore 23
+  aload 23
+  astore_3
+  aload_3
+  invokespecial android/view/animation/AccelerateInterpolator/<init>()V
+  aload 23
+  astore_3
+  aload 15
+  aload_3
+  invokevirtual android/view/animation/ScaleAnimation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  aload_1
+  astore_3
+  aload 15
+  aload_3
+  invokevirtual android/view/animation/ScaleAnimation/setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
+  aload 15
+  areturn
+Label0:
+  ldc2_w 1000
+  lstore 20
+  lload 20
+  lstore_3
+  aload 15
+  lload_3
+  invokevirtual android/view/animation/ScaleAnimation/setDuration(J)V
+  goto Label1
+  nop
+.end <method>
+
+.method private static i(Landroid/view/View;Landroid/view/animation/Animation$AnimationListener;Lcom/tencent/mobwin/core/y;)Landroid/view/animation/Animation;
+.limit locals 24
+.limit stack 200
+  nop
+  aload_0
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload 10
+  invokestatic com/tencent/mobwin/utils/b/d(Landroid/content/Context;)I
+  istore 11
+  iload 11
+  i2f
+  fstore 12
+  fconst_2
+  fstore 14
+  fload 12
+  fload 14
+  fdiv
+  fstore 13
+  aload_0
+  astore_3
+  aload_3
+  invokevirtual android/view/View/getContext()Landroid/content/Context;
+  astore 10
+  aload 10
+  invokestatic com/tencent/mobwin/utils/b/e(Landroid/content/Context;)I
+  istore 11
+  iload 11
+  i2f
+  fstore 12
+  fconst_2
+  fstore 14
+  fload 12
+  fload 14
+  fdiv
+  fstore 12
+  new android/view/animation/ScaleAnimation
+  astore 15
+  fconst_1
+  fstore 14
+  fconst_0
+  fstore 16
+  fconst_1
+  fstore 17
+  fconst_0
+  fstore 18
+  aload 15
+  astore_3
+  fload 14
+  fstore 4
+  fload 16
+  fstore 5
+  fload 17
+  fstore 6
+  fload 18
+  fstore 7
+  fload 13
+  fstore 8
+  fload 12
+  fstore 9
+  aload_3
+  fload 4
+  fload 5
+  fload 6
+  fload 7
+  fload 8
+  fload 9
+  invokespecial android/view/animation/ScaleAnimation/<init>(FFFFFF)V
+  getstatic com/tencent/mobwin/core/y/a Lcom/tencent/mobwin/core/y;
+  astore 19
+  aload_2
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 19
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  astore_3
+  aload 19
+  astore 4
+  aload_3
+  aload 4
+  if_acmpne Label0
+  ldc2_w 500
+  lstore 20
+  lload 20
+  lstore_3
+  aload 15
+  lload_3
+  invokevirtual android/view/animation/ScaleAnimation/setDuration(J)V
+Label1:
+  iconst_0
+  istore 22
+  iload 22
+  istore_3
+  aload 15
+  iload_3
+  invokevirtual android/view/animation/ScaleAnimation/setFillAfter(Z)V
+  new android/view/animation/AccelerateInterpolator
+  astore 23
+  aload 23
+  astore_3
+  aload_3
+  invokespecial android/view/animation/AccelerateInterpolator/<init>()V
+  aload 23
+  astore_3
+  aload 15
+  aload_3
+  invokevirtual android/view/animation/ScaleAnimation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  aload_1
+  astore_3
+  aload 15
+  aload_3
+  invokevirtual android/view/animation/ScaleAnimation/setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
+  aload 15
+  areturn
+Label0:
+  ldc2_w 1000
+  lstore 20
+  lload 20
+  lstore_3
+  aload 15
+  lload_3
+  invokevirtual android/view/animation/ScaleAnimation/setDuration(J)V
+  goto Label1
+  nop
+.end <method>
+

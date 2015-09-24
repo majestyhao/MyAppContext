@@ -1,0 +1,1174 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public final  MobWin/SysSettings
+.super com/qq/taf/jce/JceStruct
+.field static "j" Ljava/util/Map;
+.field static "k" Ljava/util/Map;
+.field static final "l" Z =  0
+.field public "a" Z
+.field public "b" J
+.field public "c" Ljava/util/Map;
+.field public "d" Ljava/lang/String;
+.field public "e" I
+.field public "f" I
+.field public "g" I
+.field public "h" F
+.field public "i" Ljava/util/Map;
+
+.method static <clinit>()V
+.limit locals 2
+.limit stack 200
+  nop
+  ldc MobWin/SysSettings
+  astore_0
+  aload_0
+  invokevirtual java/lang/Class/desiredAssertionStatus()Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  iconst_1
+  istore_1
+Label1:
+  iload_1
+  putstatic MobWin/SysSettings/l Z
+  return
+Label0:
+  iconst_0
+  istore_1
+  goto Label1
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 14
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield MobWin/SysSettings/a Z
+  ldc2_w 0
+  lstore_2
+  aload_0
+  lload_2
+  putfield MobWin/SysSettings/b J
+  aconst_null
+  astore 4
+  aload_0
+  aload 4
+  putfield MobWin/SysSettings/c Ljava/util/Map;
+  ldc ""
+  astore 5
+  aload_0
+  aload 5
+  putfield MobWin/SysSettings/d Ljava/lang/String;
+  iconst_0
+  istore_1
+  iload_1
+  istore 6
+  aload_0
+  iload 6
+  putfield MobWin/SysSettings/e I
+  iconst_0
+  istore_1
+  iload_1
+  istore 6
+  aload_0
+  iload 6
+  putfield MobWin/SysSettings/f I
+  iconst_0
+  istore_1
+  iload_1
+  istore 6
+  aload_0
+  iload 6
+  putfield MobWin/SysSettings/g I
+  fconst_0
+  fstore 7
+  aload_0
+  fload 7
+  putfield MobWin/SysSettings/h F
+  aconst_null
+  astore 4
+  aload_0
+  aload 4
+  putfield MobWin/SysSettings/i Ljava/util/Map;
+  aload_0
+  getfield MobWin/SysSettings/a Z
+  istore 8
+  aload_0
+  iload 8
+  invokevirtual MobWin/SysSettings/a(Z)V
+  aload_0
+  getfield MobWin/SysSettings/b J
+  lstore 9
+  aload_0
+  lload 9
+  invokevirtual MobWin/SysSettings/a(J)V
+  aload_0
+  getfield MobWin/SysSettings/c Ljava/util/Map;
+  astore 11
+  aload_0
+  aload 11
+  invokevirtual MobWin/SysSettings/a(Ljava/util/Map;)V
+  aload_0
+  getfield MobWin/SysSettings/d Ljava/lang/String;
+  astore 12
+  aload_0
+  aload 12
+  invokevirtual MobWin/SysSettings/a(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/SysSettings/e I
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual MobWin/SysSettings/a(I)V
+  aload_0
+  getfield MobWin/SysSettings/f I
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual MobWin/SysSettings/b(I)V
+  aload_0
+  getfield MobWin/SysSettings/g I
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual MobWin/SysSettings/c(I)V
+  aload_0
+  getfield MobWin/SysSettings/h F
+  fstore 13
+  aload_0
+  fload 13
+  invokevirtual MobWin/SysSettings/a(F)V
+  aload_0
+  getfield MobWin/SysSettings/i Ljava/util/Map;
+  astore 11
+  aload_0
+  aload 11
+  invokevirtual MobWin/SysSettings/b(Ljava/util/Map;)V
+  return
+  nop
+.end <method>
+
+.method public <init>(ZJLjava/util/Map;Ljava/lang/String;IIIFLjava/util/Map;)V
+.limit locals 19
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  iconst_0
+  istore 12
+  aload_0
+  iload 12
+  putfield MobWin/SysSettings/a Z
+  ldc2_w 0
+  lstore 13
+  aload_0
+  lload 13
+  putfield MobWin/SysSettings/b J
+  aconst_null
+  astore 15
+  aload_0
+  aload 15
+  putfield MobWin/SysSettings/c Ljava/util/Map;
+  ldc ""
+  astore 16
+  aload_0
+  aload 16
+  putfield MobWin/SysSettings/d Ljava/lang/String;
+  iconst_0
+  istore 12
+  iload 12
+  istore 17
+  aload_0
+  iload 17
+  putfield MobWin/SysSettings/e I
+  iconst_0
+  istore 12
+  iload 12
+  istore 17
+  aload_0
+  iload 17
+  putfield MobWin/SysSettings/f I
+  iconst_0
+  istore 12
+  iload 12
+  istore 17
+  aload_0
+  iload 17
+  putfield MobWin/SysSettings/g I
+  fconst_0
+  fstore 18
+  aload_0
+  fload 18
+  putfield MobWin/SysSettings/h F
+  aconst_null
+  astore 15
+  aload_0
+  aload 15
+  putfield MobWin/SysSettings/i Ljava/util/Map;
+  aload_0
+  iload_1
+  invokevirtual MobWin/SysSettings/a(Z)V
+  aload_0
+  lload_2
+  invokevirtual MobWin/SysSettings/a(J)V
+  aload_0
+  aload 4
+  invokevirtual MobWin/SysSettings/a(Ljava/util/Map;)V
+  aload_0
+  aload 5
+  invokevirtual MobWin/SysSettings/a(Ljava/lang/String;)V
+  aload_0
+  iload 6
+  invokevirtual MobWin/SysSettings/a(I)V
+  aload_0
+  iload 7
+  invokevirtual MobWin/SysSettings/b(I)V
+  iload 8
+  istore 11
+  aload_0
+  iload 11
+  invokevirtual MobWin/SysSettings/c(I)V
+  fload 9
+  fstore 11
+  aload_0
+  fload 11
+  invokevirtual MobWin/SysSettings/a(F)V
+  aload 10
+  astore 11
+  aload_0
+  aload 11
+  invokevirtual MobWin/SysSettings/b(Ljava/util/Map;)V
+  return
+  nop
+.end <method>
+
+.method public a()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  ldc "MobWin.SysSettings"
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public a(F)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  fload_1
+  putfield MobWin/SysSettings/h F
+  return
+  nop
+.end <method>
+
+.method public a(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/SysSettings/e I
+  return
+  nop
+.end <method>
+
+.method public a(J)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  lload_1
+  putfield MobWin/SysSettings/b J
+  return
+  nop
+.end <method>
+
+.method public a(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/SysSettings/d Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public a(Ljava/util/Map;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/SysSettings/c Ljava/util/Map;
+  return
+  nop
+.end <method>
+
+.method public a(Z)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/SysSettings/a Z
+  return
+  nop
+.end <method>
+
+.method public b(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/SysSettings/f I
+  return
+  nop
+.end <method>
+
+.method public b(Ljava/util/Map;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/SysSettings/i Ljava/util/Map;
+  return
+  nop
+.end <method>
+
+.method public b()Z
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/SysSettings/a Z
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public c()J
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/SysSettings/b J
+  lstore_1
+  lload_1
+  lreturn
+  nop
+.end <method>
+
+.method public c(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/SysSettings/g I
+  return
+  nop
+.end <method>
+
+.method public clone()Ljava/lang/Object;
+.limit locals 6
+.limit stack 200
+  .catch  java/lang/CloneNotSupportedException <from> Label2 <to> Label3 <using> Label1
+  nop
+  iconst_0
+  istore_1
+Label2:
+  aload_0
+  invokespecial java/lang/Object/clone()Ljava/lang/Object;
+  astore_2
+Label3:
+  aload_2
+  astore_1
+Label0:
+  aload_1
+  areturn
+Label1:
+  astore_3
+  getstatic MobWin/SysSettings/l Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifne Label0
+  new java/lang/AssertionError
+  astore 5
+  aload 5
+  invokespecial java/lang/AssertionError/<init>()V
+  aload 5
+  athrow
+  nop
+.end <method>
+
+.method public d()Ljava/util/Map;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/SysSettings/c Ljava/util/Map;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public display(Ljava/lang/StringBuilder;I)V
+.limit locals 11
+.limit stack 200
+  nop
+  new com/qq/taf/jce/JceDisplayer
+  astore_3
+  aload_3
+  aload_1
+  iload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_0
+  getfield MobWin/SysSettings/a Z
+  istore 4
+  ldc "isModified"
+  astore 5
+  aload_3
+  iload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ZLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/SysSettings/b J
+  lstore 6
+  ldc "latestVersion"
+  astore 5
+  aload_3
+  lload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(JLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/SysSettings/c Ljava/util/Map;
+  astore 8
+  ldc "effectiveIcons"
+  astore 5
+  aload_3
+  aload 8
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/util/Map;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/SysSettings/d Ljava/lang/String;
+  astore 9
+  ldc "embedBrowserResDirUrl"
+  astore 5
+  aload_3
+  aload 9
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/SysSettings/e I
+  istore_2
+  ldc "MAXADVIEWS"
+  astore 5
+  aload_3
+  iload_2
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/SysSettings/f I
+  istore_2
+  ldc "resClearInterval"
+  astore 5
+  aload_3
+  iload_2
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/SysSettings/g I
+  istore_2
+  ldc "level"
+  astore 5
+  aload_3
+  iload_2
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/SysSettings/h F
+  fstore 10
+  ldc "minDisplayRatio"
+  astore 5
+  aload_3
+  fload 10
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(FLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/SysSettings/i Ljava/util/Map;
+  astore 8
+  ldc "bannerResMap"
+  astore 5
+  aload_3
+  aload 8
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/util/Map;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  return
+  nop
+.end <method>
+
+.method public e()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/SysSettings/d Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public equals(Ljava/lang/Object;)Z
+.limit locals 20
+.limit stack 200
+  nop
+  aload_1
+  astore 4
+  aload 4
+  checkcast MobWin/SysSettings
+  astore 4
+  aload 4
+  astore_3
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/SysSettings/a Z
+  istore 5
+  aload_3
+  getfield MobWin/SysSettings/a Z
+  istore 6
+  iload 5
+  iload 6
+  invokestatic com/qq/taf/jce/JceUtil/equals(ZZ)Z
+  istore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/SysSettings/b J
+  lstore 7
+  aload_3
+  getfield MobWin/SysSettings/b J
+  lstore 9
+  lload 7
+  lload 9
+  invokestatic com/qq/taf/jce/JceUtil/equals(JJ)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/SysSettings/c Ljava/util/Map;
+  astore 11
+  aload_3
+  getfield MobWin/SysSettings/c Ljava/util/Map;
+  astore 12
+  aload 11
+  aload 12
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/SysSettings/d Ljava/lang/String;
+  astore 13
+  aload_3
+  getfield MobWin/SysSettings/d Ljava/lang/String;
+  astore 14
+  aload 13
+  aload 14
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/SysSettings/e I
+  istore 15
+  aload_3
+  getfield MobWin/SysSettings/e I
+  istore 16
+  iload 15
+  iload 16
+  invokestatic com/qq/taf/jce/JceUtil/equals(II)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/SysSettings/f I
+  istore 16
+  aload_3
+  getfield MobWin/SysSettings/f I
+  istore 15
+  iload 16
+  iload 15
+  invokestatic com/qq/taf/jce/JceUtil/equals(II)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/SysSettings/g I
+  istore 16
+  aload_3
+  getfield MobWin/SysSettings/g I
+  istore 15
+  iload 16
+  iload 15
+  invokestatic com/qq/taf/jce/JceUtil/equals(II)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/SysSettings/h F
+  fstore 17
+  aload_3
+  getfield MobWin/SysSettings/h F
+  fstore_2
+  fload_2
+  fstore 18
+  fload 17
+  fload_2
+  invokestatic com/qq/taf/jce/JceUtil/equals(FF)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/SysSettings/i Ljava/util/Map;
+  astore 12
+  aload_3
+  getfield MobWin/SysSettings/i Ljava/util/Map;
+  astore 11
+  aload 12
+  aload 11
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  iconst_1
+  istore 19
+  iload 19
+  ireturn
+Label0:
+  iconst_0
+  istore 19
+  iload 19
+  ireturn
+  nop
+.end <method>
+
+.method public f()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/SysSettings/e I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public g()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/SysSettings/f I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public h()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/SysSettings/g I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public i()F
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/SysSettings/h F
+  fstore_1
+  fload_1
+  freturn
+  nop
+.end <method>
+
+.method public j()Ljava/util/Map;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/SysSettings/i Ljava/util/Map;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public readFrom(Lcom/qq/taf/jce/JceInputStream;)V
+.limit locals 22
+.limit stack 200
+  nop
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/SysSettings/a Z
+  istore 4
+  iconst_1
+  istore 6
+  iload 6
+  istore 5
+  iconst_1
+  istore 6
+  aload_1
+  astore_2
+  aload_2
+  iload 4
+  iload 5
+  iload 6
+  invokevirtual com/qq/taf/jce/JceInputStream/read(ZIZ)Z
+  istore 7
+  aload_0
+  astore_2
+  aload_2
+  iload 7
+  invokevirtual MobWin/SysSettings/a(Z)V
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/SysSettings/b J
+  lstore 8
+  iconst_2
+  istore 6
+  iconst_0
+  istore 10
+  aload_1
+  astore_2
+  aload_2
+  lload 8
+  iload 6
+  iload 10
+  invokevirtual com/qq/taf/jce/JceInputStream/read(JIZ)J
+  lstore 8
+  aload_0
+  astore_2
+  aload_2
+  lload 8
+  invokevirtual MobWin/SysSettings/a(J)V
+  getstatic MobWin/SysSettings/j Ljava/util/Map;
+  astore 11
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 11
+  ifne Label0
+  new java/util/HashMap
+  astore 12
+  aload 12
+  invokespecial java/util/HashMap/<init>()V
+  aload 12
+  putstatic MobWin/SysSettings/j Ljava/util/Map;
+  iconst_0
+  istore 6
+  iload 6
+  istore 5
+  iload 5
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 13
+  getstatic MobWin/SysSettings/j Ljava/util/Map;
+  astore 11
+  ldc ""
+  astore 14
+  aload 11
+  aload 13
+  aload 14
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+Label0:
+  getstatic MobWin/SysSettings/j Ljava/util/Map;
+  astore 11
+  iconst_3
+  istore 6
+  iconst_0
+  istore 10
+  aload_1
+  astore_2
+  aload_2
+  aload 11
+  iload 6
+  iload 10
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Ljava/lang/Object;IZ)Ljava/lang/Object;
+  astore 15
+  aload 15
+  astore 16
+  aload 16
+  checkcast java/util/Map
+  astore 16
+  aload 16
+  astore 11
+  aload_0
+  astore_2
+  aload_2
+  aload 11
+  invokevirtual MobWin/SysSettings/a(Ljava/util/Map;)V
+  iconst_4
+  istore 6
+  iconst_0
+  istore 10
+  aload_1
+  astore_2
+  aload_2
+  iload 6
+  iload 10
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 17
+  aload_0
+  astore_2
+  aload_2
+  aload 17
+  invokevirtual MobWin/SysSettings/a(Ljava/lang/String;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/SysSettings/e I
+  istore_2
+  iload_2
+  istore 18
+  iconst_5
+  istore 6
+  iconst_0
+  istore 10
+  aload_1
+  astore_2
+  iload 18
+  istore_3
+  aload_2
+  iload_3
+  iload 6
+  iload 10
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 5
+  aload_0
+  astore_2
+  aload_2
+  iload 5
+  invokevirtual MobWin/SysSettings/a(I)V
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/SysSettings/f I
+  istore 5
+  bipush 6
+  istore 6
+  iconst_0
+  istore 10
+  aload_1
+  astore_2
+  aload_2
+  iload 5
+  iload 6
+  iload 10
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 5
+  aload_0
+  astore_2
+  aload_2
+  iload 5
+  invokevirtual MobWin/SysSettings/b(I)V
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/SysSettings/g I
+  istore 5
+  bipush 7
+  istore 6
+  iconst_0
+  istore 10
+  aload_1
+  astore_2
+  aload_2
+  iload 5
+  iload 6
+  iload 10
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore 5
+  aload_0
+  astore_2
+  aload_2
+  iload 5
+  invokevirtual MobWin/SysSettings/c(I)V
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/SysSettings/h F
+  fstore_2
+  fload_2
+  fstore 19
+  bipush 8
+  istore 6
+  iconst_0
+  istore 10
+  aload_1
+  astore_2
+  fload 19
+  fstore_3
+  aload_2
+  fload_3
+  iload 6
+  iload 10
+  invokevirtual com/qq/taf/jce/JceInputStream/read(FIZ)F
+  fstore 19
+  aload_0
+  astore_2
+  fload 19
+  fstore_3
+  aload_2
+  fload_3
+  invokevirtual MobWin/SysSettings/a(F)V
+  getstatic MobWin/SysSettings/k Ljava/util/Map;
+  astore 11
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  ifnonnull Label1
+  new java/util/HashMap
+  astore 12
+  aload 12
+  invokespecial java/util/HashMap/<init>()V
+  aload 12
+  putstatic MobWin/SysSettings/k Ljava/util/Map;
+  getstatic MobWin/SysSettings/k Ljava/util/Map;
+  astore 11
+  ldc ""
+  astore 14
+  ldc ""
+  astore 20
+  aload 20
+  astore_2
+  aload 11
+  aload 14
+  aload_2
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+Label1:
+  getstatic MobWin/SysSettings/k Ljava/util/Map;
+  astore 11
+  bipush 9
+  istore 6
+  iconst_0
+  istore 10
+  aload_1
+  astore_2
+  aload_2
+  aload 11
+  iload 6
+  iload 10
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Ljava/lang/Object;IZ)Ljava/lang/Object;
+  astore 15
+  aload 15
+  astore 21
+  aload 21
+  checkcast java/util/Map
+  astore 21
+  aload 21
+  astore 11
+  aload_0
+  astore_2
+  aload_2
+  aload 11
+  invokevirtual MobWin/SysSettings/b(Ljava/util/Map;)V
+  return
+  nop
+.end <method>
+
+.method public writeTo(Lcom/qq/taf/jce/JceOutputStream;)V
+.limit locals 10
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/SysSettings/a Z
+  istore_2
+  iconst_1
+  istore_3
+  aload_1
+  iload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(ZI)V
+  aload_0
+  getfield MobWin/SysSettings/b J
+  lstore 4
+  iconst_2
+  istore_3
+  aload_1
+  lload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(JI)V
+  aload_0
+  getfield MobWin/SysSettings/c Ljava/util/Map;
+  astore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/SysSettings/c Ljava/util/Map;
+  astore 6
+  iconst_3
+  istore_3
+  aload_1
+  aload 6
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/util/Map;I)V
+Label0:
+  aload_0
+  getfield MobWin/SysSettings/d Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label1
+  aload_0
+  getfield MobWin/SysSettings/d Ljava/lang/String;
+  astore 7
+  iconst_4
+  istore_3
+  aload_1
+  aload 7
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+Label1:
+  aload_0
+  getfield MobWin/SysSettings/e I
+  istore 8
+  iconst_5
+  istore_3
+  aload_1
+  iload 8
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield MobWin/SysSettings/f I
+  istore 8
+  bipush 6
+  istore_3
+  aload_1
+  iload 8
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield MobWin/SysSettings/g I
+  istore 8
+  bipush 7
+  istore_3
+  aload_1
+  iload 8
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield MobWin/SysSettings/h F
+  fstore 9
+  bipush 8
+  istore_3
+  aload_1
+  fload 9
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(FI)V
+  aload_0
+  getfield MobWin/SysSettings/i Ljava/util/Map;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label2
+  aload_0
+  getfield MobWin/SysSettings/i Ljava/util/Map;
+  astore 6
+  bipush 9
+  istore_3
+  aload_1
+  aload 6
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/util/Map;I)V
+Label2:
+  return
+  nop
+.end <method>
+

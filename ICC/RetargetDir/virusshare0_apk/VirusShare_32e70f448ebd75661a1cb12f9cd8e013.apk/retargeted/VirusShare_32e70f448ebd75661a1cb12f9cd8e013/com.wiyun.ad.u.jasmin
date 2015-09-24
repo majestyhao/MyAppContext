@@ -1,0 +1,323 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/u
+.super org/json/JSONObject
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial org/json/JSONObject/<init>()V
+  return
+  nop
+.end <method>
+
+.method public <init>(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/<init>(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public <init>(Ljava/util/Map;)V
+  .signature_attr "(Ljava/util/Map<+Ljava/lang/Object;+Ljava/lang/Object;>;)V"
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/<init>(Ljava/util/Map;)V
+  return
+  nop
+.end <method>
+
+.method public <init>(Lorg/json/JSONObject;[Ljava/lang/String;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  invokespecial org/json/JSONObject/<init>(Lorg/json/JSONObject;[Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public <init>(Lorg/json/JSONTokener;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/<init>(Lorg/json/JSONTokener;)V
+  return
+  nop
+.end <method>
+
+.method public get(Ljava/lang/String;)Ljava/lang/Object;
+.limit locals 5
+.limit stack 200
+  .catch  org/json/JSONException <from> Label1 <to> Label2 <using> Label0
+  nop
+Label1:
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/get(Ljava/lang/String;)Ljava/lang/Object;
+  astore_2
+Label2:
+  aload_2
+  areturn
+Label0:
+  astore_3
+  aconst_null
+  astore 4
+  aload 4
+  areturn
+  nop
+.end <method>
+
+.method public getBoolean(Ljava/lang/String;)Z
+.limit locals 6
+.limit stack 200
+  .catch  org/json/JSONException <from> Label2 <to> Label3 <using> Label1
+  nop
+  iconst_0
+  istore_2
+Label2:
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/has(Ljava/lang/String;)Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/getBoolean(Ljava/lang/String;)Z
+  istore_3
+Label3:
+  iload_3
+  istore_2
+Label0:
+  iload_2
+  ireturn
+Label1:
+  astore 4
+  iconst_0
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public getDouble(Ljava/lang/String;)D
+.limit locals 8
+.limit stack 200
+  .catch  org/json/JSONException <from> Label2 <to> Label0 <using> Label1
+  nop
+  ldc2_w 0.000000000000000
+  dstore_2
+Label2:
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/has(Ljava/lang/String;)Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/getDouble(Ljava/lang/String;)D
+  dstore_2
+Label0:
+  dload_2
+  dreturn
+Label1:
+  astore 5
+  ldc2_w 0.000000000000000
+  dstore 6
+  dload 6
+  dreturn
+  nop
+.end <method>
+
+.method public getInt(Ljava/lang/String;)I
+.limit locals 6
+.limit stack 200
+  .catch  org/json/JSONException <from> Label2 <to> Label0 <using> Label1
+  nop
+  iconst_0
+  istore_2
+Label2:
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/has(Ljava/lang/String;)Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/getInt(Ljava/lang/String;)I
+  istore_2
+Label0:
+  iload_2
+  ireturn
+Label1:
+  astore 4
+  iconst_0
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+.limit locals 6
+.limit stack 200
+  .catch  org/json/JSONException <from> Label2 <to> Label0 <using> Label1
+  nop
+  iconst_0
+  istore_2
+Label2:
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/has(Ljava/lang/String;)Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+  astore_2
+Label0:
+  aload_2
+  areturn
+Label1:
+  astore 4
+  aconst_null
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method public getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+.limit locals 6
+.limit stack 200
+  .catch  org/json/JSONException <from> Label2 <to> Label0 <using> Label1
+  nop
+  iconst_0
+  istore_2
+Label2:
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/has(Ljava/lang/String;)Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+  astore_2
+Label0:
+  aload_2
+  areturn
+Label1:
+  astore 4
+  aconst_null
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method public getLong(Ljava/lang/String;)J
+.limit locals 8
+.limit stack 200
+  .catch  org/json/JSONException <from> Label2 <to> Label0 <using> Label1
+  nop
+  ldc2_w 0.000000000000000
+  dstore_2
+Label2:
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/has(Ljava/lang/String;)Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/getLong(Ljava/lang/String;)J
+  lstore_2
+Label0:
+  lload_2
+  lreturn
+Label1:
+  astore 5
+  ldc2_w 0
+  lstore 6
+  lload 6
+  lreturn
+  nop
+.end <method>
+
+.method public getString(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 6
+.limit stack 200
+  .catch  org/json/JSONException <from> Label2 <to> Label0 <using> Label1
+  nop
+  iconst_0
+  istore_2
+Label2:
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/has(Ljava/lang/String;)Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_0
+  aload_1
+  invokespecial org/json/JSONObject/getString(Ljava/lang/String;)Ljava/lang/String;
+  astore_2
+Label0:
+  aload_2
+  areturn
+Label1:
+  astore 4
+  aconst_null
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+

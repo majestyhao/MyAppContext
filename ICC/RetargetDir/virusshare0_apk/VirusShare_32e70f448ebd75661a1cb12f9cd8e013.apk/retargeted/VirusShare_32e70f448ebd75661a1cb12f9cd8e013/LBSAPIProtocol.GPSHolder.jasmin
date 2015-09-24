@@ -1,0 +1,28 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public final  LBSAPIProtocol/GPSHolder
+.super java/lang/Object
+.field public "value" LLBSAPIProtocol/GPS;
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public <init>(LLBSAPIProtocol/GPS;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  aload_1
+  putfield LBSAPIProtocol/GPSHolder/value LLBSAPIProtocol/GPS;
+  return
+  nop
+.end <method>
+

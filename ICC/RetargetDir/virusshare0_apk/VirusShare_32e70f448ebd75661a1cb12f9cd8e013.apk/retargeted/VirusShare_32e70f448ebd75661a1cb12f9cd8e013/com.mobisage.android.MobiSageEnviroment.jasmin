@@ -1,0 +1,72 @@
+.source SourceFile
+.class public final  com/mobisage/android/MobiSageEnviroment
+.super java/lang/Object
+.field public static final "App_Customer_Event" I =  0
+.field public static final "App_Launching_Event" I =  1
+.field public static final "App_Terminating_Event" I =  2
+.field public static final "SDK_Version" Ljava/lang/String; =  "2.3.0"
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method static a(I)I
+.limit locals 2
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  lookupswitch
+  0 : Label1
+  1 : Label2
+  2 : Label3
+  3 : Label4
+  4 : Label5
+  5 : Label6
+  default : Label0
+Label0:
+  goto Label3
+Label3:
+  bipush 20
+  istore_1
+  iload_1
+  ireturn
+Label1:
+  sipush 7200
+  istore_1
+  iload_1
+  ireturn
+Label2:
+  bipush 15
+  istore_1
+  iload_1
+  ireturn
+Label4:
+  bipush 25
+  istore_1
+  iload_1
+  ireturn
+Label5:
+  bipush 30
+  istore_1
+  iload_1
+  ireturn
+Label6:
+  bipush 60
+  istore_1
+  iload_1
+  ireturn
+  nop
+  nop
+  nop
+.end <method>
+

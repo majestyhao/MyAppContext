@@ -1,0 +1,42 @@
+.source R.java
+.class public final  maxstrom/game/llk/R$string
+.super java/lang/Object
+.field public static final "app_name" I =  2131165184
+.field public static final "attention" I =  2131165199
+.field public static final "btnCancel" I =  2131165198
+.field public static final "btnOK" I =  2131165197
+.field public static final "cbEnableMusic" I =  2131165188
+.field public static final "cbEnableSound" I =  2131165189
+.field public static final "cbEnableVibrate" I =  2131165190
+.field public static final "cfgEnableMusic" I =  2131165185
+.field public static final "cfgEnableSound" I =  2131165186
+.field public static final "cfgEnableVibrate" I =  2131165187
+.field public static final "menuExit" I =  2131165206
+.field public static final "menuOption" I =  2131165203
+.field public static final "menuPause" I =  2131165205
+.field public static final "menuSetting" I =  2131165204
+.field public static final "msgLevelFail" I =  2131165192
+.field public static final "msgLevelPosfix" I =  2131165194
+.field public static final "msgLevelPrefix" I =  2131165193
+.field public static final "msgLevelSuccess" I =  2131165191
+.field public static final "msgMaxLevelPosfix" I =  2131165196
+.field public static final "msgMaxLevelPrefix" I =  2131165195
+.field public static final "newGameDesc" I =  2131165201
+.field public static final "opCancel" I =  2131165210
+.field public static final "opHint" I =  2131165209
+.field public static final "opNewGame" I =  2131165207
+.field public static final "opRecomend" I =  2131165211
+.field public static final "opRerange" I =  2131165208
+.field public static final "quitDesc" I =  2131165200
+.field public static final "txtPauseContext" I =  2131165202
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

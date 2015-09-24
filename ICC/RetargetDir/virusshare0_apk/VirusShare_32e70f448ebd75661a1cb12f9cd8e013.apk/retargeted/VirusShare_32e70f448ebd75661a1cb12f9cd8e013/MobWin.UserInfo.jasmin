@@ -1,0 +1,1880 @@
+.source UserInfo.java
+.class public final  MobWin/UserInfo
+.super com/qq/taf/jce/JceStruct
+.field static final "$assertionsDisabled" Z =  0
+.field static "cache_net_type" I =  0
+.field public "brand" Ljava/lang/String;
+.field public "dm" S
+.field public "imei" Ljava/lang/String;
+.field public "imsi" Ljava/lang/String;
+.field public "ip" Ljava/lang/String;
+.field public "language" Ljava/lang/String;
+.field public "lwp_support" B
+.field public "mac" Ljava/lang/String;
+.field public "manufacturer" Ljava/lang/String;
+.field public "meid" Ljava/lang/String;
+.field public "model" Ljava/lang/String;
+.field public "net_type" I
+.field public "os" Ljava/lang/String;
+.field public "phone_number" J
+.field public "screen_x" S
+.field public "screen_y" S
+.field public "tel_support" B
+.field public "wifi_support" B
+
+.method static <clinit>()V
+.limit locals 2
+.limit stack 200
+  nop
+  ldc MobWin/UserInfo
+  astore_0
+  aload_0
+  invokevirtual java/lang/Class/desiredAssertionStatus()Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  iconst_1
+  istore_1
+Label1:
+  iload_1
+  putstatic MobWin/UserInfo/$assertionsDisabled Z
+  return
+Label0:
+  iconst_0
+  istore_1
+  goto Label1
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 11
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/imei Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/os Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/brand Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/model Ljava/lang/String;
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield MobWin/UserInfo/screen_x S
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield MobWin/UserInfo/screen_y S
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield MobWin/UserInfo/net_type I
+  ldc2_w 0
+  lstore_3
+  aload_0
+  lload_3
+  putfield MobWin/UserInfo/phone_number J
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/imsi Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/ip Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/mac Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/language Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/meid Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/manufacturer Ljava/lang/String;
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield MobWin/UserInfo/tel_support B
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield MobWin/UserInfo/wifi_support B
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield MobWin/UserInfo/lwp_support B
+  sipush 160
+  istore_2
+  aload_0
+  iload_2
+  putfield MobWin/UserInfo/dm S
+  aload_0
+  getfield MobWin/UserInfo/imei Ljava/lang/String;
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual MobWin/UserInfo/setImei(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/UserInfo/os Ljava/lang/String;
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual MobWin/UserInfo/setOs(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/UserInfo/brand Ljava/lang/String;
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual MobWin/UserInfo/setBrand(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/UserInfo/model Ljava/lang/String;
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual MobWin/UserInfo/setModel(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/UserInfo/screen_x S
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual MobWin/UserInfo/setScreen_x(S)V
+  aload_0
+  getfield MobWin/UserInfo/screen_y S
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual MobWin/UserInfo/setScreen_y(S)V
+  aload_0
+  getfield MobWin/UserInfo/net_type I
+  istore 7
+  aload_0
+  iload 7
+  invokevirtual MobWin/UserInfo/setNet_type(I)V
+  aload_0
+  getfield MobWin/UserInfo/phone_number J
+  lstore 8
+  aload_0
+  lload 8
+  invokevirtual MobWin/UserInfo/setPhone_number(J)V
+  aload_0
+  getfield MobWin/UserInfo/imsi Ljava/lang/String;
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual MobWin/UserInfo/setImsi(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/UserInfo/ip Ljava/lang/String;
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual MobWin/UserInfo/setIp(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/UserInfo/mac Ljava/lang/String;
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual MobWin/UserInfo/setMac(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/UserInfo/language Ljava/lang/String;
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual MobWin/UserInfo/setLanguage(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/UserInfo/meid Ljava/lang/String;
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual MobWin/UserInfo/setMeid(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/UserInfo/manufacturer Ljava/lang/String;
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual MobWin/UserInfo/setManufacturer(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/UserInfo/tel_support B
+  istore 10
+  aload_0
+  iload 10
+  invokevirtual MobWin/UserInfo/setTel_support(B)V
+  aload_0
+  getfield MobWin/UserInfo/wifi_support B
+  istore 10
+  aload_0
+  iload 10
+  invokevirtual MobWin/UserInfo/setWifi_support(B)V
+  aload_0
+  getfield MobWin/UserInfo/lwp_support B
+  istore 10
+  aload_0
+  iload 10
+  invokevirtual MobWin/UserInfo/setLwp_support(B)V
+  aload_0
+  getfield MobWin/UserInfo/dm S
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual MobWin/UserInfo/setDm(S)V
+  return
+  nop
+.end <method>
+
+.method public <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;SSIJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;BBBS)V
+.limit locals 25
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  ldc ""
+  astore 21
+  aload_0
+  aload 21
+  putfield MobWin/UserInfo/imei Ljava/lang/String;
+  ldc ""
+  astore 21
+  aload_0
+  aload 21
+  putfield MobWin/UserInfo/os Ljava/lang/String;
+  ldc ""
+  astore 21
+  aload_0
+  aload 21
+  putfield MobWin/UserInfo/brand Ljava/lang/String;
+  ldc ""
+  astore 21
+  aload_0
+  aload 21
+  putfield MobWin/UserInfo/model Ljava/lang/String;
+  iconst_0
+  istore 22
+  aload_0
+  iload 22
+  putfield MobWin/UserInfo/screen_x S
+  iconst_0
+  istore 22
+  aload_0
+  iload 22
+  putfield MobWin/UserInfo/screen_y S
+  iconst_0
+  istore 22
+  aload_0
+  iload 22
+  putfield MobWin/UserInfo/net_type I
+  ldc2_w 0
+  lstore 23
+  aload_0
+  lload 23
+  putfield MobWin/UserInfo/phone_number J
+  ldc ""
+  astore 21
+  aload_0
+  aload 21
+  putfield MobWin/UserInfo/imsi Ljava/lang/String;
+  ldc ""
+  astore 21
+  aload_0
+  aload 21
+  putfield MobWin/UserInfo/ip Ljava/lang/String;
+  ldc ""
+  astore 21
+  aload_0
+  aload 21
+  putfield MobWin/UserInfo/mac Ljava/lang/String;
+  ldc ""
+  astore 21
+  aload_0
+  aload 21
+  putfield MobWin/UserInfo/language Ljava/lang/String;
+  ldc ""
+  astore 21
+  aload_0
+  aload 21
+  putfield MobWin/UserInfo/meid Ljava/lang/String;
+  ldc ""
+  astore 21
+  aload_0
+  aload 21
+  putfield MobWin/UserInfo/manufacturer Ljava/lang/String;
+  iconst_0
+  istore 22
+  aload_0
+  iload 22
+  putfield MobWin/UserInfo/tel_support B
+  iconst_0
+  istore 22
+  aload_0
+  iload 22
+  putfield MobWin/UserInfo/wifi_support B
+  iconst_0
+  istore 22
+  aload_0
+  iload 22
+  putfield MobWin/UserInfo/lwp_support B
+  sipush 160
+  istore 22
+  aload_0
+  iload 22
+  putfield MobWin/UserInfo/dm S
+  aload_0
+  aload_1
+  invokevirtual MobWin/UserInfo/setImei(Ljava/lang/String;)V
+  aload_0
+  aload_2
+  invokevirtual MobWin/UserInfo/setOs(Ljava/lang/String;)V
+  aload_0
+  aload_3
+  invokevirtual MobWin/UserInfo/setBrand(Ljava/lang/String;)V
+  aload_0
+  aload 4
+  invokevirtual MobWin/UserInfo/setModel(Ljava/lang/String;)V
+  aload_0
+  iload 5
+  invokevirtual MobWin/UserInfo/setScreen_x(S)V
+  aload_0
+  iload 6
+  invokevirtual MobWin/UserInfo/setScreen_y(S)V
+  aload_0
+  iload 7
+  invokevirtual MobWin/UserInfo/setNet_type(I)V
+  aload_0
+  lload 8
+  invokevirtual MobWin/UserInfo/setPhone_number(J)V
+  aload_0
+  aload 10
+  invokevirtual MobWin/UserInfo/setImsi(Ljava/lang/String;)V
+  aload 11
+  astore 20
+  aload_0
+  aload 20
+  invokevirtual MobWin/UserInfo/setIp(Ljava/lang/String;)V
+  aload 12
+  astore 20
+  aload_0
+  aload 20
+  invokevirtual MobWin/UserInfo/setMac(Ljava/lang/String;)V
+  aload 13
+  astore 20
+  aload_0
+  aload 20
+  invokevirtual MobWin/UserInfo/setLanguage(Ljava/lang/String;)V
+  aload 14
+  astore 20
+  aload_0
+  aload 20
+  invokevirtual MobWin/UserInfo/setMeid(Ljava/lang/String;)V
+  aload 15
+  astore 20
+  aload_0
+  aload 20
+  invokevirtual MobWin/UserInfo/setManufacturer(Ljava/lang/String;)V
+  iload 16
+  istore 20
+  aload_0
+  iload 20
+  invokevirtual MobWin/UserInfo/setTel_support(B)V
+  iload 17
+  istore 20
+  aload_0
+  iload 20
+  invokevirtual MobWin/UserInfo/setWifi_support(B)V
+  iload 18
+  istore 20
+  aload_0
+  iload 20
+  invokevirtual MobWin/UserInfo/setLwp_support(B)V
+  iload 19
+  istore 20
+  aload_0
+  iload 20
+  invokevirtual MobWin/UserInfo/setDm(S)V
+  return
+  nop
+.end <method>
+
+.method public className()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  ldc "MobWin.UserInfo"
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public clone()Ljava/lang/Object;
+.limit locals 6
+.limit stack 200
+  .catch  java/lang/CloneNotSupportedException <from> Label2 <to> Label3 <using> Label1
+  nop
+  iconst_0
+  istore_1
+Label2:
+  aload_0
+  invokespecial java/lang/Object/clone()Ljava/lang/Object;
+  astore_2
+Label3:
+  aload_2
+  astore_1
+Label0:
+  aload_1
+  areturn
+Label1:
+  astore_3
+  getstatic MobWin/UserInfo/$assertionsDisabled Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifne Label0
+  new java/lang/AssertionError
+  astore 5
+  aload 5
+  invokespecial java/lang/AssertionError/<init>()V
+  aload 5
+  athrow
+  nop
+.end <method>
+
+.method public display(Ljava/lang/StringBuilder;I)V
+.limit locals 11
+.limit stack 200
+  nop
+  new com/qq/taf/jce/JceDisplayer
+  astore_3
+  aload_3
+  aload_1
+  iload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_0
+  getfield MobWin/UserInfo/imei Ljava/lang/String;
+  astore 4
+  ldc "imei"
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/os Ljava/lang/String;
+  astore 6
+  ldc "os"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/brand Ljava/lang/String;
+  astore 6
+  ldc "brand"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/model Ljava/lang/String;
+  astore 6
+  ldc "model"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/screen_x S
+  istore 7
+  ldc "screen_x"
+  astore 5
+  aload_3
+  iload 7
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(SLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/screen_y S
+  istore 7
+  ldc "screen_y"
+  astore 5
+  aload_3
+  iload 7
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(SLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/net_type I
+  istore_2
+  ldc "net_type"
+  astore 5
+  aload_3
+  iload_2
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/phone_number J
+  lstore 8
+  ldc "phone_number"
+  astore 5
+  aload_3
+  lload 8
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(JLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/imsi Ljava/lang/String;
+  astore 6
+  ldc "imsi"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/ip Ljava/lang/String;
+  astore 6
+  ldc "ip"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/mac Ljava/lang/String;
+  astore 6
+  ldc "mac"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/language Ljava/lang/String;
+  astore 6
+  ldc "language"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/meid Ljava/lang/String;
+  astore 6
+  ldc "meid"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/manufacturer Ljava/lang/String;
+  astore 6
+  ldc "manufacturer"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/tel_support B
+  istore 10
+  ldc "tel_support"
+  astore 5
+  aload_3
+  iload 10
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(BLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/wifi_support B
+  istore 10
+  ldc "wifi_support"
+  astore 5
+  aload_3
+  iload 10
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(BLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/lwp_support B
+  istore 10
+  ldc "lwp_support"
+  astore 5
+  aload_3
+  iload 10
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(BLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserInfo/dm S
+  istore 7
+  ldc "dm"
+  astore 5
+  aload_3
+  iload 7
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(SLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  return
+  nop
+.end <method>
+
+.method public equals(Ljava/lang/Object;)Z
+.limit locals 19
+.limit stack 200
+  nop
+  aload_1
+  astore 4
+  aload 4
+  checkcast MobWin/UserInfo
+  astore 4
+  aload 4
+  astore_3
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/imei Ljava/lang/String;
+  astore 5
+  aload_3
+  getfield MobWin/UserInfo/imei Ljava/lang/String;
+  astore 6
+  aload 5
+  aload 6
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/os Ljava/lang/String;
+  astore 6
+  aload_3
+  getfield MobWin/UserInfo/os Ljava/lang/String;
+  astore 5
+  aload 6
+  aload 5
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/brand Ljava/lang/String;
+  astore 6
+  aload_3
+  getfield MobWin/UserInfo/brand Ljava/lang/String;
+  astore 5
+  aload 6
+  aload 5
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/model Ljava/lang/String;
+  astore 6
+  aload_3
+  getfield MobWin/UserInfo/model Ljava/lang/String;
+  astore 5
+  aload 6
+  aload 5
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/screen_x S
+  istore 8
+  aload_3
+  getfield MobWin/UserInfo/screen_x S
+  istore 9
+  iload 8
+  iload 9
+  invokestatic com/qq/taf/jce/JceUtil/equals(SS)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/screen_y S
+  istore 9
+  aload_3
+  getfield MobWin/UserInfo/screen_y S
+  istore 8
+  iload 9
+  iload 8
+  invokestatic com/qq/taf/jce/JceUtil/equals(SS)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/net_type I
+  istore 10
+  aload_3
+  getfield MobWin/UserInfo/net_type I
+  istore 11
+  iload 10
+  iload 11
+  invokestatic com/qq/taf/jce/JceUtil/equals(II)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/phone_number J
+  lstore 12
+  aload_3
+  getfield MobWin/UserInfo/phone_number J
+  lstore 14
+  lload 12
+  lload 14
+  invokestatic com/qq/taf/jce/JceUtil/equals(JJ)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/imsi Ljava/lang/String;
+  astore 6
+  aload_3
+  getfield MobWin/UserInfo/imsi Ljava/lang/String;
+  astore 5
+  aload 6
+  aload 5
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/ip Ljava/lang/String;
+  astore 6
+  aload_3
+  getfield MobWin/UserInfo/ip Ljava/lang/String;
+  astore 5
+  aload 6
+  aload 5
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/mac Ljava/lang/String;
+  astore 6
+  aload_3
+  getfield MobWin/UserInfo/mac Ljava/lang/String;
+  astore 5
+  aload 6
+  aload 5
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/language Ljava/lang/String;
+  astore 6
+  aload_3
+  getfield MobWin/UserInfo/language Ljava/lang/String;
+  astore 5
+  aload 6
+  aload 5
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/meid Ljava/lang/String;
+  astore 6
+  aload_3
+  getfield MobWin/UserInfo/meid Ljava/lang/String;
+  astore 5
+  aload 6
+  aload 5
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/manufacturer Ljava/lang/String;
+  astore 6
+  aload_3
+  getfield MobWin/UserInfo/manufacturer Ljava/lang/String;
+  astore 5
+  aload 6
+  aload 5
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/tel_support B
+  istore 16
+  aload_3
+  getfield MobWin/UserInfo/tel_support B
+  istore 17
+  iload 16
+  iload 17
+  invokestatic com/qq/taf/jce/JceUtil/equals(BB)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/wifi_support B
+  istore 17
+  aload_3
+  getfield MobWin/UserInfo/wifi_support B
+  istore 16
+  iload 17
+  iload 16
+  invokestatic com/qq/taf/jce/JceUtil/equals(BB)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/lwp_support B
+  istore 17
+  aload_3
+  getfield MobWin/UserInfo/lwp_support B
+  istore 16
+  iload 17
+  iload 16
+  invokestatic com/qq/taf/jce/JceUtil/equals(BB)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/UserInfo/dm S
+  istore 9
+  aload_3
+  getfield MobWin/UserInfo/dm S
+  istore 8
+  iload 9
+  iload 8
+  invokestatic com/qq/taf/jce/JceUtil/equals(SS)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  iconst_1
+  istore 18
+  iload 18
+  ireturn
+Label0:
+  iconst_0
+  istore 18
+  iload 18
+  ireturn
+  nop
+.end <method>
+
+.method public getBrand()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/brand Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getDm()S
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/dm S
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public getImei()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/imei Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getImsi()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/imsi Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getIp()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/ip Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getLanguage()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/language Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getLwp_support()B
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/lwp_support B
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public getMac()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/mac Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getManufacturer()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/manufacturer Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getMeid()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/meid Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getModel()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/model Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getNet_type()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/net_type I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public getOs()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/os Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getPhone_number()J
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/phone_number J
+  lstore_1
+  lload_1
+  lreturn
+  nop
+.end <method>
+
+.method public getScreen_x()S
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/screen_x S
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public getScreen_y()S
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/screen_y S
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public getTel_support()B
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/tel_support B
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public getWifi_support()B
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/wifi_support B
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public readFrom(Lcom/qq/taf/jce/JceInputStream;)V
+.limit locals 11
+.limit stack 200
+  nop
+  iconst_0
+  istore_3
+  iload_3
+  istore_2
+  iconst_1
+  istore_3
+  aload_1
+  iload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/UserInfo/setImei(Ljava/lang/String;)V
+  iconst_1
+  istore_3
+  iload_3
+  istore_2
+  iconst_1
+  istore_3
+  aload_1
+  iload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/UserInfo/setOs(Ljava/lang/String;)V
+  iconst_2
+  istore_3
+  iconst_1
+  istore 5
+  aload_1
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/UserInfo/setBrand(Ljava/lang/String;)V
+  iconst_3
+  istore_3
+  iconst_1
+  istore 5
+  aload_1
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/UserInfo/setModel(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/UserInfo/screen_x S
+  istore 6
+  iconst_4
+  istore_3
+  iconst_1
+  istore 5
+  aload_1
+  iload 6
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/read(SIZ)S
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual MobWin/UserInfo/setScreen_x(S)V
+  aload_0
+  getfield MobWin/UserInfo/screen_y S
+  istore 6
+  iconst_5
+  istore_3
+  iconst_1
+  istore 5
+  aload_1
+  iload 6
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/read(SIZ)S
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual MobWin/UserInfo/setScreen_y(S)V
+  aload_0
+  getfield MobWin/UserInfo/net_type I
+  istore 7
+  bipush 6
+  istore_3
+  iconst_1
+  istore 5
+  aload_1
+  iload 7
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore_2
+  aload_0
+  iload_2
+  invokevirtual MobWin/UserInfo/setNet_type(I)V
+  aload_0
+  getfield MobWin/UserInfo/phone_number J
+  lstore 8
+  bipush 7
+  istore_3
+  iconst_0
+  istore 5
+  aload_1
+  lload 8
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/read(JIZ)J
+  lstore 8
+  aload_0
+  lload 8
+  invokevirtual MobWin/UserInfo/setPhone_number(J)V
+  bipush 8
+  istore_3
+  iconst_0
+  istore 5
+  aload_1
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/UserInfo/setImsi(Ljava/lang/String;)V
+  bipush 9
+  istore_3
+  iconst_0
+  istore 5
+  aload_1
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/UserInfo/setIp(Ljava/lang/String;)V
+  bipush 10
+  istore_3
+  iconst_0
+  istore 5
+  aload_1
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/UserInfo/setMac(Ljava/lang/String;)V
+  bipush 11
+  istore_3
+  iconst_0
+  istore 5
+  aload_1
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/UserInfo/setLanguage(Ljava/lang/String;)V
+  bipush 12
+  istore_3
+  iconst_0
+  istore 5
+  aload_1
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/UserInfo/setMeid(Ljava/lang/String;)V
+  bipush 13
+  istore_3
+  iconst_0
+  istore 5
+  aload_1
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/UserInfo/setManufacturer(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/UserInfo/tel_support B
+  istore 10
+  bipush 14
+  istore_3
+  iconst_0
+  istore 5
+  aload_1
+  iload 10
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/read(BIZ)B
+  istore 10
+  aload_0
+  iload 10
+  invokevirtual MobWin/UserInfo/setTel_support(B)V
+  aload_0
+  getfield MobWin/UserInfo/wifi_support B
+  istore 10
+  bipush 15
+  istore_3
+  iconst_0
+  istore 5
+  aload_1
+  iload 10
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/read(BIZ)B
+  istore 10
+  aload_0
+  iload 10
+  invokevirtual MobWin/UserInfo/setWifi_support(B)V
+  aload_0
+  getfield MobWin/UserInfo/lwp_support B
+  istore 10
+  bipush 16
+  istore_3
+  iconst_0
+  istore 5
+  aload_1
+  iload 10
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/read(BIZ)B
+  istore 10
+  aload_0
+  iload 10
+  invokevirtual MobWin/UserInfo/setLwp_support(B)V
+  aload_0
+  getfield MobWin/UserInfo/dm S
+  istore 6
+  bipush 17
+  istore_3
+  iconst_0
+  istore 5
+  aload_1
+  iload 6
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/read(SIZ)S
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual MobWin/UserInfo/setDm(S)V
+  return
+  nop
+.end <method>
+
+.method public setBrand(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/brand Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setDm(S)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/UserInfo/dm S
+  return
+  nop
+.end <method>
+
+.method public setImei(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/imei Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setImsi(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/imsi Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setIp(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/ip Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setLanguage(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/language Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setLwp_support(B)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/UserInfo/lwp_support B
+  return
+  nop
+.end <method>
+
+.method public setMac(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/mac Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setManufacturer(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/manufacturer Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setMeid(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/meid Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setModel(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/model Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setNet_type(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/UserInfo/net_type I
+  return
+  nop
+.end <method>
+
+.method public setOs(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/UserInfo/os Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setPhone_number(J)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  lload_1
+  putfield MobWin/UserInfo/phone_number J
+  return
+  nop
+.end <method>
+
+.method public setScreen_x(S)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/UserInfo/screen_x S
+  return
+  nop
+.end <method>
+
+.method public setScreen_y(S)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/UserInfo/screen_y S
+  return
+  nop
+.end <method>
+
+.method public setTel_support(B)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/UserInfo/tel_support B
+  return
+  nop
+.end <method>
+
+.method public setWifi_support(B)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/UserInfo/wifi_support B
+  return
+  nop
+.end <method>
+
+.method public writeTo(Lcom/qq/taf/jce/JceOutputStream;)V
+.limit locals 10
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserInfo/imei Ljava/lang/String;
+  astore_2
+  iconst_0
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+  aload_0
+  getfield MobWin/UserInfo/os Ljava/lang/String;
+  astore_2
+  iconst_1
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+  aload_0
+  getfield MobWin/UserInfo/brand Ljava/lang/String;
+  astore_2
+  iconst_2
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+  aload_0
+  getfield MobWin/UserInfo/model Ljava/lang/String;
+  astore_2
+  iconst_3
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+  aload_0
+  getfield MobWin/UserInfo/screen_x S
+  istore 4
+  iconst_4
+  istore_3
+  aload_1
+  iload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(SI)V
+  aload_0
+  getfield MobWin/UserInfo/screen_y S
+  istore 4
+  iconst_5
+  istore_3
+  aload_1
+  iload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(SI)V
+  aload_0
+  getfield MobWin/UserInfo/net_type I
+  istore 5
+  bipush 6
+  istore_3
+  aload_1
+  iload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield MobWin/UserInfo/phone_number J
+  lstore 6
+  bipush 7
+  istore_3
+  aload_1
+  lload 6
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(JI)V
+  aload_0
+  getfield MobWin/UserInfo/imsi Ljava/lang/String;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_0
+  getfield MobWin/UserInfo/imsi Ljava/lang/String;
+  astore_2
+  bipush 8
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+Label0:
+  aload_0
+  getfield MobWin/UserInfo/ip Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label1
+  aload_0
+  getfield MobWin/UserInfo/ip Ljava/lang/String;
+  astore_2
+  bipush 9
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+Label1:
+  aload_0
+  getfield MobWin/UserInfo/mac Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label2
+  aload_0
+  getfield MobWin/UserInfo/mac Ljava/lang/String;
+  astore_2
+  bipush 10
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+Label2:
+  aload_0
+  getfield MobWin/UserInfo/language Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label3
+  aload_0
+  getfield MobWin/UserInfo/language Ljava/lang/String;
+  astore_2
+  bipush 11
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+Label3:
+  aload_0
+  getfield MobWin/UserInfo/meid Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label4
+  aload_0
+  getfield MobWin/UserInfo/meid Ljava/lang/String;
+  astore_2
+  bipush 12
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+Label4:
+  aload_0
+  getfield MobWin/UserInfo/manufacturer Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label5
+  aload_0
+  getfield MobWin/UserInfo/manufacturer Ljava/lang/String;
+  astore_2
+  bipush 13
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+Label5:
+  aload_0
+  getfield MobWin/UserInfo/tel_support B
+  istore 8
+  bipush 14
+  istore_3
+  aload_1
+  iload 8
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(BI)V
+  aload_0
+  getfield MobWin/UserInfo/wifi_support B
+  istore 9
+  bipush 15
+  istore_3
+  aload_1
+  iload 9
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(BI)V
+  aload_0
+  getfield MobWin/UserInfo/lwp_support B
+  istore 9
+  bipush 16
+  istore_3
+  aload_1
+  iload 9
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(BI)V
+  aload_0
+  getfield MobWin/UserInfo/dm S
+  istore 4
+  bipush 17
+  istore_3
+  aload_1
+  iload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(SI)V
+  return
+  nop
+.end <method>
+

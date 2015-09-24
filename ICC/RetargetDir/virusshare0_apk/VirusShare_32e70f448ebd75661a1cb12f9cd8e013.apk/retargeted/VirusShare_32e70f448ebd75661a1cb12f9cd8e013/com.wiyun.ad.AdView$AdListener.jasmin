@@ -1,0 +1,25 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.interface public interface abstract  com/wiyun/ad/AdView$AdListener
+.super java/lang/Object
+
+.method public abstract onAdClicked()V
+.end <method>
+
+.method public abstract onAdLoadFailed()V
+.end <method>
+
+.method public abstract onAdLoaded()V
+.end <method>
+
+.method public abstract onAppDownloadFailed()V
+.end <method>
+
+.method public abstract onAppDownloaded()V
+.end <method>
+
+.method public abstract onExitButtonClicked()V
+.end <method>
+
+.method public abstract onMiniSiteClosed()V
+.end <method>
+

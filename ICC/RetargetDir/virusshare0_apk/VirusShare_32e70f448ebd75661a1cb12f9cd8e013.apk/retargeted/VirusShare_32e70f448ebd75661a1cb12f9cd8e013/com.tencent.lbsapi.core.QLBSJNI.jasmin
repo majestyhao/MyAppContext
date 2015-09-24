@@ -1,0 +1,66 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/tencent/lbsapi/core/QLBSJNI
+.super java/lang/Object
+
+.method static <clinit>()V
+.limit locals 1
+.limit stack 200
+  nop
+  ldc "lbs"
+  astore_0
+  aload_0
+  invokestatic java/lang/System/loadLibrary(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public native decode([BLjava/lang/String;Ljava/lang/String;)[B
+.end <method>
+
+.method public native encode([BLjava/lang/String;Ljava/lang/String;)[B
+.end <method>
+
+.method public static md5String(Ljava/lang/String;)[B
+.limit locals 6
+.limit stack 200
+  .catch  java/lang/Exception <from> Label1 <to> Label2 <using> Label0
+  nop
+Label1:
+  aload_0
+  invokevirtual java/lang/String/getBytes()[B
+  astore_1
+  ldc "MD5"
+  astore_3
+  aload_3
+  invokestatic java/security/MessageDigest/getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/security/MessageDigest/update([B)V
+  aload_2
+  invokevirtual java/security/MessageDigest/digest()[B
+  astore_1
+Label2:
+  aload_1
+  areturn
+Label0:
+  astore 4
+  aload 4
+  invokevirtual java/lang/Exception/printStackTrace()V
+  aconst_null
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+

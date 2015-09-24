@@ -1,0 +1,98 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public final  m
+.super java/lang/Object
+.implements  i
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public final a(Ld;Ljava/util/HashMap;Landroid/webkit/WebView;)V
+  .signature_attr "(Ld;Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;Landroid/webkit/WebView;)V"
+.limit locals 12
+.limit stack 200
+  nop
+  ldc "js"
+  astore 5
+  aload_2
+  aload 5
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 4
+  aload 4
+  astore 7
+  aload 7
+  checkcast java/lang/String
+  astore 7
+  aload 7
+  astore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifne Label0
+  ldc "Could not get the JS to evaluate."
+  astore 5
+  aload 5
+  invokestatic com/google/ads/util/a/b(Ljava/lang/String;)V
+Label0:
+  aload_3
+  instanceof g
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label1
+  aload_3
+  astore 10
+  aload 10
+  checkcast g
+  astore 10
+  aload 10
+  astore 9
+  aload 9
+  invokevirtual g/b()Lcom/google/ads/AdActivity;
+  astore 11
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  ifnonnull Label2
+  ldc "Could not get the AdActivity from the AdWebView."
+  astore 5
+  aload 5
+  invokestatic com/google/ads/util/a/b(Ljava/lang/String;)V
+Label3:
+  return
+Label1:
+  ldc "Trying to evaluate JS in a WebView that isn\'t an AdWebView"
+  astore 5
+  aload 5
+  invokestatic com/google/ads/util/a/b(Ljava/lang/String;)V
+  goto Label3
+Label2:
+  aload 11
+  invokevirtual com/google/ads/AdActivity/getOpeningAdWebView()Lg;
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnonnull Label4
+  ldc "Could not get the opening WebView."
+  astore 5
+  aload 5
+  invokestatic com/google/ads/util/a/b(Ljava/lang/String;)V
+  goto Label3
+Label4:
+  aload 9
+  aload 6
+  invokestatic a/a(Landroid/webkit/WebView;Ljava/lang/String;)V
+  goto Label3
+  nop
+.end <method>
+

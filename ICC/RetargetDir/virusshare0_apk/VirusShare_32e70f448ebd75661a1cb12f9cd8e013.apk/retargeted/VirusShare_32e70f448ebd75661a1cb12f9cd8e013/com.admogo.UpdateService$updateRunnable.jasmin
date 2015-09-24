@@ -1,0 +1,363 @@
+.source UpdateService.java
+.class  com/admogo/UpdateService$updateRunnable
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field "message" Landroid/os/Message;
+.field final "this$0" Lcom/admogo/UpdateService;
+
+.method <init>(Lcom/admogo/UpdateService;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/UpdateService$updateRunnable/this$0 Lcom/admogo/UpdateService;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  invokevirtual android/os/Handler/obtainMessage()Landroid/os/Message;
+  astore_3
+  aload_0
+  aload_3
+  putfield com/admogo/UpdateService$updateRunnable/message Landroid/os/Message;
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 23
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/message Landroid/os/Message;
+  astore 4
+  iconst_0
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+Label4:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/this$0 Lcom/admogo/UpdateService;
+  astore 6
+  aload 6
+  invokestatic com/admogo/UpdateService/access$9(Lcom/admogo/UpdateService;)Ljava/io/File;
+  astore 7
+  aload 7
+  invokevirtual java/io/File/exists()Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/this$0 Lcom/admogo/UpdateService;
+  astore 6
+  aload 6
+  invokestatic com/admogo/UpdateService/access$9(Lcom/admogo/UpdateService;)Ljava/io/File;
+  astore 7
+  aload 7
+  invokevirtual java/io/File/mkdirs()Z
+  pop
+Label0:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/this$0 Lcom/admogo/UpdateService;
+  astore 6
+  aload 6
+  invokestatic com/admogo/UpdateService/access$0(Lcom/admogo/UpdateService;)Ljava/io/File;
+  astore 7
+  aload 7
+  invokevirtual java/io/File/exists()Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label1
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/this$0 Lcom/admogo/UpdateService;
+  astore 6
+  aload 6
+  invokestatic com/admogo/UpdateService/access$0(Lcom/admogo/UpdateService;)Ljava/io/File;
+  astore 7
+  aload 7
+  invokevirtual java/io/File/createNewFile()Z
+  pop
+Label1:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/this$0 Lcom/admogo/UpdateService;
+  astore 9
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/this$0 Lcom/admogo/UpdateService;
+  astore 6
+  aload 6
+  invokestatic com/admogo/UpdateService/access$10(Lcom/admogo/UpdateService;)Ljava/lang/String;
+  astore 10
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/this$0 Lcom/admogo/UpdateService;
+  astore 6
+  aload 6
+  invokestatic com/admogo/UpdateService/access$0(Lcom/admogo/UpdateService;)Ljava/io/File;
+  astore 7
+  aload 9
+  aload 10
+  aload 7
+  invokevirtual com/admogo/UpdateService/downloadUpdateFile(Ljava/lang/String;Ljava/io/File;)J
+  lstore 11
+  ldc2_w 0
+  lstore 14
+  lload 11
+  lload 14
+  lcmp
+  istore 13
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  ifle Label2
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/this$0 Lcom/admogo/UpdateService;
+  astore 9
+  aload 9
+  invokestatic com/admogo/UpdateService/access$8(Lcom/admogo/UpdateService;)Landroid/os/Handler;
+  astore 16
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/message Landroid/os/Message;
+  astore 4
+  aload 16
+  aload 4
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+Label2:
+  return
+Label3:
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/printStackTrace()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/message Landroid/os/Message;
+  astore 4
+  iconst_1
+  istore 5
+  aload 4
+  iload 5
+  putfield android/os/Message/what I
+  new android/os/Bundle
+  astore 18
+  aload 18
+  astore_1
+  aload_1
+  invokespecial android/os/Bundle/<init>()V
+  new java/lang/StringBuilder
+  astore 19
+  ldc "\""
+  astore 20
+  aload 19
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/this$0 Lcom/admogo/UpdateService;
+  astore 9
+  aload 9
+  invokestatic com/admogo/UpdateService/access$3(Lcom/admogo/UpdateService;)Ljava/lang/String;
+  astore 21
+  aload 19
+  astore_1
+  aload 21
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 19
+  ldc "\"\u4e0b\u8f7d\u5931\u8d25\uff0c\u60a8\u7684SD\u5361\u5b58\u5728\u5f02\u5e38\u3002"
+  astore 20
+  aload 19
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 21
+  ldc "faild"
+  astore 20
+  aload 18
+  astore_1
+  aload 20
+  astore_2
+  aload 21
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokevirtual android/os/Bundle/putString(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/message Landroid/os/Message;
+  astore 4
+  aload 18
+  astore_1
+  aload 4
+  aload_1
+  invokevirtual android/os/Message/setData(Landroid/os/Bundle;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/this$0 Lcom/admogo/UpdateService;
+  astore 9
+  aload 9
+  invokestatic com/admogo/UpdateService/access$8(Lcom/admogo/UpdateService;)Landroid/os/Handler;
+  astore 16
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/message Landroid/os/Message;
+  astore 4
+  aload 16
+  aload 4
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+  goto Label2
+Label5:
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/printStackTrace()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/message Landroid/os/Message;
+  astore 4
+  iconst_1
+  istore 5
+  aload 4
+  iload 5
+  putfield android/os/Message/what I
+  new android/os/Bundle
+  astore 18
+  aload 18
+  astore_1
+  aload_1
+  invokespecial android/os/Bundle/<init>()V
+  new java/lang/StringBuilder
+  astore 19
+  ldc "\""
+  astore 20
+  aload 19
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/this$0 Lcom/admogo/UpdateService;
+  astore 9
+  aload 9
+  invokestatic com/admogo/UpdateService/access$3(Lcom/admogo/UpdateService;)Ljava/lang/String;
+  astore 10
+  aload 19
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 19
+  ldc "\"\u4e0b\u8f7d\u5931\u8d25\uff0c\u8bf7\u786e\u8ba4\u60a8\u7684\u7f51\u7edc\u8fde\u63a5\u662f\u5426\u6b63\u5e38\u3002"
+  astore 20
+  aload 19
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 10
+  ldc "faild"
+  astore 20
+  aload 18
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  aload 10
+  invokevirtual android/os/Bundle/putString(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/message Landroid/os/Message;
+  astore 4
+  aload 18
+  astore_1
+  aload 4
+  aload_1
+  invokevirtual android/os/Message/setData(Landroid/os/Bundle;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/this$0 Lcom/admogo/UpdateService;
+  astore 9
+  aload 9
+  invokestatic com/admogo/UpdateService/access$8(Lcom/admogo/UpdateService;)Landroid/os/Handler;
+  astore 16
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/UpdateService$updateRunnable/message Landroid/os/Message;
+  astore 4
+  aload 16
+  aload 4
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+  goto Label2
+  nop
+.end <method>
+

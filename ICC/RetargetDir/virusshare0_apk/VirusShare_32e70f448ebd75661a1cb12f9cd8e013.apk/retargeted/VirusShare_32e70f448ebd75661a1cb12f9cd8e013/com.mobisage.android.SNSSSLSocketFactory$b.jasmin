@@ -1,0 +1,56 @@
+.source SourceFile
+.class final  com/mobisage/android/SNSSSLSocketFactory$b
+.super java/lang/Object
+.implements  javax/net/ssl/X509TrustManager
+
+.method private <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method <init>(B)V
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/mobisage/android/SNSSSLSocketFactory$b/<init>()V
+  return
+  nop
+.end <method>
+
+.method public final checkClientTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
+.limit locals 3
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+
+.method public final checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
+.limit locals 3
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+
+.method public final getAcceptedIssuers()[Ljava/security/cert/X509Certificate;
+.limit locals 3
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  iload_2
+  anewarray java/security/cert/X509Certificate
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+

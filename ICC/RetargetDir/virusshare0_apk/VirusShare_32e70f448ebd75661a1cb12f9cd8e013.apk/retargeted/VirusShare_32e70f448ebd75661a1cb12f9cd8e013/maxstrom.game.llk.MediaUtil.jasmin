@@ -1,0 +1,499 @@
+.source MediaUtil.java
+.class public  maxstrom/game/llk/MediaUtil
+.super java/lang/Object
+.field private static "clicksound" I =  0
+.field private static "intentMusic" Landroid/content/Intent;
+.field private static "matchsound" I =  0
+.field private static "soundPool" Landroid/media/SoundPool;
+.field private static "toolsound" I =  0
+.field private static "winsound" I =  0
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static loadSound(Landroid/content/Context;)V
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_4
+  istore_2
+  iconst_3
+  istore_3
+  bipush 100
+  istore 4
+  aload_1
+  iload_2
+  iload_3
+  iload 4
+  invokespecial android/media/SoundPool/<init>(III)V
+  aload_1
+  putstatic maxstrom/game/llk/MediaUtil/soundPool Landroid/media/SoundPool;
+  getstatic maxstrom/game/llk/MediaUtil/soundPool Landroid/media/SoundPool;
+  astore_1
+  ldc 2131034113
+  istore_2
+  iconst_0
+  istore_3
+  aload_1
+  aload_0
+  iload_2
+  iload_3
+  invokevirtual android/media/SoundPool/load(Landroid/content/Context;II)I
+  istore 5
+  iload 5
+  putstatic maxstrom/game/llk/MediaUtil/clicksound I
+  getstatic maxstrom/game/llk/MediaUtil/soundPool Landroid/media/SoundPool;
+  astore_1
+  ldc 2131034114
+  istore_2
+  iconst_0
+  istore_3
+  aload_1
+  aload_0
+  iload_2
+  iload_3
+  invokevirtual android/media/SoundPool/load(Landroid/content/Context;II)I
+  istore 5
+  iload 5
+  putstatic maxstrom/game/llk/MediaUtil/matchsound I
+  getstatic maxstrom/game/llk/MediaUtil/soundPool Landroid/media/SoundPool;
+  astore_1
+  ldc 2131034116
+  istore_2
+  iconst_0
+  istore_3
+  aload_1
+  aload_0
+  iload_2
+  iload_3
+  invokevirtual android/media/SoundPool/load(Landroid/content/Context;II)I
+  istore 5
+  iload 5
+  putstatic maxstrom/game/llk/MediaUtil/toolsound I
+  getstatic maxstrom/game/llk/MediaUtil/soundPool Landroid/media/SoundPool;
+  astore_1
+  ldc 2131034117
+  istore_2
+  iconst_0
+  istore_3
+  aload_1
+  aload_0
+  iload_2
+  iload_3
+  invokevirtual android/media/SoundPool/load(Landroid/content/Context;II)I
+  istore 5
+  iload 5
+  putstatic maxstrom/game/llk/MediaUtil/winsound I
+  return
+  nop
+.end <method>
+
+.method public static playClickSound(Landroid/content/Context;)V
+.limit locals 17
+.limit stack 200
+  nop
+  getstatic maxstrom/game/llk/MediaUtil/soundPool Landroid/media/SoundPool;
+  astore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 8
+  ifne Label0
+  aload_0
+  astore_1
+  aload_1
+  invokestatic maxstrom/game/llk/MediaUtil/loadSound(Landroid/content/Context;)V
+Label0:
+  getstatic maxstrom/game/llk/Params/isSound Ljava/lang/Boolean;
+  astore 9
+  aload 9
+  invokevirtual java/lang/Boolean/booleanValue()Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label1
+  getstatic maxstrom/game/llk/MediaUtil/soundPool Landroid/media/SoundPool;
+  astore 8
+  getstatic maxstrom/game/llk/MediaUtil/clicksound I
+  istore 11
+  fconst_1
+  fstore 12
+  fconst_1
+  fstore 13
+  iconst_0
+  istore 14
+  iconst_0
+  istore 15
+  fconst_1
+  fstore 16
+  aload 8
+  astore_1
+  iload 11
+  istore_2
+  fload 12
+  fstore_3
+  fload 13
+  fstore 4
+  iload 14
+  istore 5
+  iload 15
+  istore 6
+  fload 16
+  fstore 7
+  aload_1
+  iload_2
+  fload_3
+  fload 4
+  iload 5
+  iload 6
+  fload 7
+  invokevirtual android/media/SoundPool/play(IFFIIF)I
+  pop
+Label1:
+  return
+  nop
+.end <method>
+
+.method public static playMatchSound(Landroid/content/Context;)V
+.limit locals 17
+.limit stack 200
+  nop
+  getstatic maxstrom/game/llk/MediaUtil/soundPool Landroid/media/SoundPool;
+  astore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 8
+  ifne Label0
+  aload_0
+  astore_1
+  aload_1
+  invokestatic maxstrom/game/llk/MediaUtil/loadSound(Landroid/content/Context;)V
+Label0:
+  getstatic maxstrom/game/llk/Params/isSound Ljava/lang/Boolean;
+  astore 9
+  aload 9
+  invokevirtual java/lang/Boolean/booleanValue()Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label1
+  getstatic maxstrom/game/llk/MediaUtil/soundPool Landroid/media/SoundPool;
+  astore 8
+  getstatic maxstrom/game/llk/MediaUtil/matchsound I
+  istore 11
+  fconst_1
+  fstore 12
+  fconst_1
+  fstore 13
+  iconst_0
+  istore 14
+  iconst_0
+  istore 15
+  fconst_1
+  fstore 16
+  aload 8
+  astore_1
+  iload 11
+  istore_2
+  fload 12
+  fstore_3
+  fload 13
+  fstore 4
+  iload 14
+  istore 5
+  iload 15
+  istore 6
+  fload 16
+  fstore 7
+  aload_1
+  iload_2
+  fload_3
+  fload 4
+  iload 5
+  iload 6
+  fload 7
+  invokevirtual android/media/SoundPool/play(IFFIIF)I
+  pop
+Label1:
+  return
+  nop
+.end <method>
+
+.method public static playMusic(Landroid/content/Context;)V
+.limit locals 5
+.limit stack 200
+  nop
+  getstatic maxstrom/game/llk/Params/isMusic Ljava/lang/Boolean;
+  astore_1
+  aload_1
+  invokevirtual java/lang/Boolean/booleanValue()Z
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_0
+  invokestatic maxstrom/game/llk/MediaUtil/stopMusic(Landroid/content/Context;)V
+  new android/content/Intent
+  astore_3
+  ldc "maxstrom.game.music.llk"
+  astore 4
+  aload_3
+  aload 4
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;)V
+  aload_3
+  putstatic maxstrom/game/llk/MediaUtil/intentMusic Landroid/content/Intent;
+  getstatic maxstrom/game/llk/MediaUtil/intentMusic Landroid/content/Intent;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual android/content/Context/startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+  pop
+Label0:
+  return
+  nop
+.end <method>
+
+.method public static playToolSound(Landroid/content/Context;)V
+.limit locals 17
+.limit stack 200
+  nop
+  getstatic maxstrom/game/llk/MediaUtil/soundPool Landroid/media/SoundPool;
+  astore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 8
+  ifne Label0
+  aload_0
+  astore_1
+  aload_1
+  invokestatic maxstrom/game/llk/MediaUtil/loadSound(Landroid/content/Context;)V
+Label0:
+  getstatic maxstrom/game/llk/Params/isSound Ljava/lang/Boolean;
+  astore 9
+  aload 9
+  invokevirtual java/lang/Boolean/booleanValue()Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label1
+  getstatic maxstrom/game/llk/MediaUtil/soundPool Landroid/media/SoundPool;
+  astore 8
+  getstatic maxstrom/game/llk/MediaUtil/toolsound I
+  istore 11
+  fconst_1
+  fstore 12
+  fconst_1
+  fstore 13
+  iconst_0
+  istore 14
+  iconst_0
+  istore 15
+  fconst_1
+  fstore 16
+  aload 8
+  astore_1
+  iload 11
+  istore_2
+  fload 12
+  fstore_3
+  fload 13
+  fstore 4
+  iload 14
+  istore 5
+  iload 15
+  istore 6
+  fload 16
+  fstore 7
+  aload_1
+  iload_2
+  fload_3
+  fload 4
+  iload 5
+  iload 6
+  fload 7
+  invokevirtual android/media/SoundPool/play(IFFIIF)I
+  pop
+Label1:
+  return
+  nop
+.end <method>
+
+.method public static playVibrate(Landroid/app/Activity;)V
+.limit locals 12
+.limit stack 200
+  nop
+  getstatic maxstrom/game/llk/Params/isVibrate Ljava/lang/Boolean;
+  astore_1
+  aload_1
+  invokevirtual java/lang/Boolean/booleanValue()Z
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+Label2:
+  ldc "vibrator"
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual android/app/Activity/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore_3
+  aload_3
+  astore 6
+  aload 6
+  checkcast android/os/Vibrator
+  astore 6
+  aload 6
+  astore 5
+  iconst_2
+  istore 8
+  iload 8
+  newarray long
+  astore 7
+  iconst_0
+  istore 8
+  ldc2_w 10
+  lstore 9
+  aload 7
+  iload 8
+  lload 9
+  lastore
+  iconst_1
+  istore 8
+  ldc2_w 30
+  lstore 9
+  aload 7
+  iload 8
+  lload 9
+  lastore
+  iconst_m1
+  istore 8
+  aload 5
+  aload 7
+  iload 8
+  invokevirtual android/os/Vibrator/vibrate([JI)V
+Label0:
+  return
+Label1:
+  astore 11
+  aload 11
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label0
+  nop
+.end <method>
+
+.method public static playWinSound(Landroid/content/Context;)V
+.limit locals 17
+.limit stack 200
+  nop
+  getstatic maxstrom/game/llk/MediaUtil/soundPool Landroid/media/SoundPool;
+  astore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 8
+  ifne Label0
+  aload_0
+  astore_1
+  aload_1
+  invokestatic maxstrom/game/llk/MediaUtil/loadSound(Landroid/content/Context;)V
+Label0:
+  getstatic maxstrom/game/llk/Params/isSound Ljava/lang/Boolean;
+  astore 9
+  aload 9
+  invokevirtual java/lang/Boolean/booleanValue()Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label1
+  getstatic maxstrom/game/llk/MediaUtil/soundPool Landroid/media/SoundPool;
+  astore 8
+  getstatic maxstrom/game/llk/MediaUtil/winsound I
+  istore 11
+  fconst_1
+  fstore 12
+  fconst_1
+  fstore 13
+  iconst_0
+  istore 14
+  iconst_0
+  istore 15
+  fconst_1
+  fstore 16
+  aload 8
+  astore_1
+  iload 11
+  istore_2
+  fload 12
+  fstore_3
+  fload 13
+  fstore 4
+  iload 14
+  istore 5
+  iload 15
+  istore 6
+  fload 16
+  fstore 7
+  aload_1
+  iload_2
+  fload_3
+  fload 4
+  iload 5
+  iload 6
+  fload 7
+  invokevirtual android/media/SoundPool/play(IFFIIF)I
+  pop
+Label1:
+  return
+  nop
+.end <method>
+
+.method public static stopMusic(Landroid/content/Context;)V
+.limit locals 2
+.limit stack 200
+  nop
+  getstatic maxstrom/game/llk/MediaUtil/intentMusic Landroid/content/Intent;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  getstatic maxstrom/game/llk/MediaUtil/intentMusic Landroid/content/Intent;
+  astore_1
+  aload_0
+  aload_1
+  invokevirtual android/content/Context/stopService(Landroid/content/Intent;)Z
+  pop
+Label0:
+  return
+  nop
+.end <method>
+

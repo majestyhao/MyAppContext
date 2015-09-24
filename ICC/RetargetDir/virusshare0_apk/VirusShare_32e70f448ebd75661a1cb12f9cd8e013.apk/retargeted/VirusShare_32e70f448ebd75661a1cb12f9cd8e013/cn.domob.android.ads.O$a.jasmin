@@ -1,0 +1,49 @@
+.source SourceFile
+.class  cn/domob/android/ads/O$a
+.super java/lang/Object
+.field "a" Ljava/lang/String;
+.field "b" I
+.field "c" Ljava/lang/String;
+.field "d" Ljava/lang/String;
+
+.method private <init>()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/O$a/a Ljava/lang/String;
+  iconst_m1
+  istore_2
+  aload_0
+  iload_2
+  putfield cn/domob/android/ads/O$a/b I
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/O$a/c Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/O$a/d Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method <init>(Lcn/domob/android/ads/O$1;)V
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial cn/domob/android/ads/O$a/<init>()V
+  return
+  nop
+.end <method>
+

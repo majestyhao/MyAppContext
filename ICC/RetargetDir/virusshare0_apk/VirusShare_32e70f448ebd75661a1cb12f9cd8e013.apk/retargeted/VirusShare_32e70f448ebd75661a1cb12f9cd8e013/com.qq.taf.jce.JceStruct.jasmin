@@ -1,0 +1,129 @@
+.source JceStruct.java
+.class public abstract  com/qq/taf/jce/JceStruct
+.super java/lang/Object
+.implements  java/io/Serializable
+.field public static final "BYTE" B =  0
+.field public static final "DOUBLE" B =  5
+.field public static final "FLOAT" B =  4
+.field public static final "INT" B =  2
+.field public static final "JCE_MAX_STRING_LENGTH" I =  104857600
+.field public static final "LIST" B =  9
+.field public static final "LONG" B =  3
+.field public static final "MAP" B =  8
+.field public static final "SHORT" B =  1
+.field public static final "SIMPLE_LIST" B =  13
+.field public static final "STRING1" B =  6
+.field public static final "STRING4" B =  7
+.field public static final "STRUCT_BEGIN" B =  10
+.field public static final "STRUCT_END" B =  11
+.field public static final "ZERO_TAG" B =  12
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public containField(Ljava/lang/String;)Z
+.limit locals 3
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public abstract display(Ljava/lang/StringBuilder;I)V
+.end <method>
+
+.method public getFieldByName(Ljava/lang/String;)Ljava/lang/Object;
+.limit locals 3
+.limit stack 200
+  nop
+  aconst_null
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public newInit()Lcom/qq/taf/jce/JceStruct;
+.limit locals 2
+.limit stack 200
+  nop
+  aconst_null
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public abstract readFrom(Lcom/qq/taf/jce/JceInputStream;)V
+.end <method>
+
+.method public recyle()V
+.limit locals 1
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+
+.method public setFieldByName(Ljava/lang/String;Ljava/lang/Object;)V
+.limit locals 3
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+
+.method public toByteArray()[B
+.limit locals 3
+.limit stack 200
+  nop
+  new com/qq/taf/jce/JceOutputStream
+  astore_1
+  aload_1
+  invokespecial com/qq/taf/jce/JceOutputStream/<init>()V
+  aload_0
+  aload_1
+  invokevirtual com/qq/taf/jce/JceStruct/writeTo(Lcom/qq/taf/jce/JceOutputStream;)V
+  aload_1
+  invokevirtual com/qq/taf/jce/JceOutputStream/toByteArray()[B
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public toString()Ljava/lang/String;
+.limit locals 4
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  iconst_0
+  istore_2
+  aload_0
+  aload_1
+  iload_2
+  invokevirtual com/qq/taf/jce/JceStruct/display(Ljava/lang/StringBuilder;I)V
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  areturn
+  nop
+.end <method>
+
+.method public abstract writeTo(Lcom/qq/taf/jce/JceOutputStream;)V
+.end <method>
+

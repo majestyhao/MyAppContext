@@ -1,0 +1,29 @@
+.source SourceFile
+.class final  com/mobisage/android/o
+.super com/mobisage/android/MobiSageResMessage
+.field public "a" Ljava/lang/String;
+
+.method <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/mobisage/android/MobiSageResMessage/<init>()V
+  return
+  nop
+.end <method>
+
+.method public final createMessageRunnable()Ljava/lang/Runnable;
+.limit locals 2
+.limit stack 200
+  nop
+  new com/mobisage/android/q
+  astore_1
+  aload_1
+  aload_0
+  invokespecial com/mobisage/android/q/<init>(Lcom/mobisage/android/MobiSageResMessage;)V
+  aload_1
+  areturn
+  nop
+.end <method>
+

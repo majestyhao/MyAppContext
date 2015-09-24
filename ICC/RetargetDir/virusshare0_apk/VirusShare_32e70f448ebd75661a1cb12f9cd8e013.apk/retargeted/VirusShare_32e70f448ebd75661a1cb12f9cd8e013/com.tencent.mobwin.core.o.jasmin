@@ -1,0 +1,77 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/tencent/mobwin/core/o
+.super java/lang/Object
+.field public static "a" Z =  0
+
+.method static <clinit>()V
+.limit locals 1
+.limit stack 200
+  nop
+  iconst_0
+  istore_0
+  iload_0
+  putstatic com/tencent/mobwin/core/o/a Z
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  getstatic com/tencent/mobwin/core/o/a Z
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+Label2:
+  aload_0
+  aload_1
+  invokestatic android/util/Log/v(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label0:
+  return
+Label1:
+  astore_3
+  goto Label0
+  nop
+.end <method>
+
+.method public static b(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  getstatic com/tencent/mobwin/core/o/a Z
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+Label2:
+  aload_0
+  aload_1
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label0:
+  return
+Label1:
+  astore_3
+  goto Label0
+  nop
+.end <method>
+

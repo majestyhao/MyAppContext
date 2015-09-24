@@ -1,0 +1,12 @@
+com.bratolubzet.stlstart.Bragushterra$1
+com.bratolubzet.stlstart.Bragushterra$2
+com.bratolubzet.stlstart.R$attr
+com.bratolubzet.stlstart.R$drawable
+com.bratolubzet.stlstart.R$id
+com.bratolubzet.stlstart.R$layout
+com.bratolubzet.stlstart.R$raw
+com.bratolubzet.stlstart.R$string
+com.bratolubzet.stlstart.R$style
+com.bratolubzet.stlstart.R
+com.bratolubzet.stlstart.Vertikalno$1
+com.bratolubzet.stlstart.Vertikalno$3

@@ -1,0 +1,158 @@
+.source SourceFile
+.class final  com/mobisage/android/h
+.super com/mobisage/android/C
+.field private "a" J
+.field private "b" I
+
+.method <init>()V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/mobisage/android/C/<init>()V
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/mobisage/android/h/b I
+  ldc2_w 0
+  lstore_2
+  aload_0
+  lload_2
+  putfield com/mobisage/android/h/a J
+  return
+  nop
+.end <method>
+
+.method public final a()Z
+.limit locals 21
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  ldc "intervalcountlimit"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual com/mobisage/android/w/a(Ljava/lang/String;)Ljava/lang/Object;
+  astore 4
+  aload 4
+  astore 7
+  aload 7
+  checkcast java/lang/Integer
+  astore 7
+  aload 7
+  astore 6
+  aload 6
+  invokevirtual java/lang/Integer/intValue()I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  ifne Label0
+  iconst_0
+  istore 9
+  iload 9
+  ireturn
+Label0:
+  new android/text/format/Time
+  astore 10
+  aload 10
+  invokespecial android/text/format/Time/<init>()V
+  aload 10
+  invokevirtual android/text/format/Time/setToNow()V
+  iconst_1
+  istore 9
+  aload 10
+  iload 9
+  invokevirtual android/text/format/Time/toMillis(Z)J
+  lstore 11
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/android/h/a J
+  lstore 13
+  lload 11
+  lload 13
+  lsub
+  lstore 15
+  ldc2_w 10000
+  lstore 18
+  lload 15
+  lload 18
+  lcmp
+  istore 17
+  iload 17
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 17
+  ifle Label1
+  aload_0
+  astore_1
+  aload_1
+  lload 11
+  putfield com/mobisage/android/h/a J
+  iconst_1
+  istore 9
+  iload 9
+  istore 20
+  iload 20
+  istore_1
+  aload_0
+  astore_2
+  aload_2
+  iload_1
+  putfield com/mobisage/android/h/b I
+Label3:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/android/h/b I
+  istore_1
+  iload_1
+  istore 20
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 20
+  istore_1
+  iload_1
+  iload 8
+  if_icmple Label2
+  iconst_1
+  istore 9
+  iload 9
+  ireturn
+Label1:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/android/h/b I
+  istore_1
+  iload_1
+  istore 20
+  iload 20
+  iconst_1
+  iadd
+  istore 20
+  iload 20
+  istore_1
+  aload_0
+  astore_2
+  aload_2
+  iload_1
+  putfield com/mobisage/android/h/b I
+  goto Label3
+Label2:
+  iconst_0
+  istore 9
+  iload 9
+  ireturn
+  nop
+.end <method>
+

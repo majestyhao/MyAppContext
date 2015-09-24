@@ -1,0 +1,60 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public abstract  com/wiyun/ad/ai
+.super java/lang/Object
+.field private static final "a" Lcom/wiyun/ad/p;
+
+.method static <clinit>()V
+.limit locals 1
+.limit stack 200
+  nop
+  new com/wiyun/ad/p
+  astore_0
+  aload_0
+  invokespecial com/wiyun/ad/p/<init>()V
+  aload_0
+  putstatic com/wiyun/ad/ai/a Lcom/wiyun/ad/p;
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 4
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  aconst_null
+  astore_1
+  aload_1
+  areturn
+Label0:
+  new com/wiyun/ad/t
+  astore_2
+  getstatic com/wiyun/ad/ai/a Lcom/wiyun/ad/p;
+  astore_3
+  aload_2
+  aload_3
+  aload_0
+  invokespecial com/wiyun/ad/t/<init>(Lcom/wiyun/ad/p;Ljava/lang/String;)V
+  aload_2
+  invokevirtual com/wiyun/ad/t/a()Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+

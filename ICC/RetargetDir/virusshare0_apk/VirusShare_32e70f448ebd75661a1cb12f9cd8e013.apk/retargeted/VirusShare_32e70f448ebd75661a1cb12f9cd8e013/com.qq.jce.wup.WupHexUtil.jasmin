@@ -1,0 +1,728 @@
+.source WupHexUtil.java
+.class public  com/qq/jce/wup/WupHexUtil
+.super java/lang/Object
+.field private static final "digits" [C
+.field public static final "emptybytes" [B
+
+.method static <clinit>()V
+.limit locals 4
+.limit stack 200
+  nop
+  bipush 16
+  istore_1
+  iload_1
+  newarray char
+  astore_0
+  iconst_0
+  istore_1
+  bipush 48
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_1
+  istore_1
+  bipush 49
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_2
+  istore_1
+  bipush 50
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_3
+  istore_1
+  bipush 51
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_4
+  istore_1
+  bipush 52
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_5
+  istore_1
+  bipush 53
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 6
+  istore_1
+  bipush 54
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 7
+  istore_1
+  bipush 55
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 8
+  istore_1
+  bipush 56
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 9
+  istore_1
+  bipush 57
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 10
+  istore_1
+  bipush 65
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 11
+  istore_1
+  bipush 66
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 12
+  istore_1
+  bipush 67
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 13
+  istore_1
+  bipush 68
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 14
+  istore_1
+  bipush 69
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 15
+  istore_1
+  bipush 70
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  aload_0
+  putstatic com/qq/jce/wup/WupHexUtil/digits [C
+  iconst_0
+  istore_1
+  iload_1
+  newarray byte
+  astore_3
+  aload_3
+  putstatic com/qq/jce/wup/WupHexUtil/emptybytes [B
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static byte2HexStr(B)Ljava/lang/String;
+.limit locals 8
+.limit stack 200
+  nop
+  iconst_2
+  istore_2
+  iload_2
+  newarray char
+  astore_1
+  getstatic com/qq/jce/wup/WupHexUtil/digits [C
+  astore_3
+  bipush 15
+  istore_2
+  iload_0
+  iload_2
+  iand
+  istore 4
+  aload_3
+  iload 4
+  caload
+  istore 5
+  iconst_1
+  istore_2
+  aload_1
+  iload_2
+  iload 5
+  castore
+  iconst_4
+  istore_2
+  iload_0
+  iload_2
+  iushr
+  istore 6
+  iload 6
+  i2b
+  istore 6
+  getstatic com/qq/jce/wup/WupHexUtil/digits [C
+  astore_3
+  bipush 15
+  istore_2
+  iload 6
+  iload_2
+  iand
+  istore 6
+  aload_3
+  iload 6
+  caload
+  istore 5
+  iconst_0
+  istore_2
+  aload_1
+  iload_2
+  iload 5
+  castore
+  new java/lang/String
+  astore 7
+  aload 7
+  aload_1
+  invokespecial java/lang/String/<init>([C)V
+  aload 7
+  areturn
+  nop
+.end <method>
+
+.method public static bytes2HexStr(Ljava/nio/ByteBuffer;)Ljava/lang/String;
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  invokevirtual java/nio/ByteBuffer/duplicate()Ljava/nio/ByteBuffer;
+  astore_0
+  aload_0
+  invokevirtual java/nio/ByteBuffer/flip()Ljava/nio/Buffer;
+  pop
+  aload_0
+  invokevirtual java/nio/ByteBuffer/limit()I
+  istore_1
+  iload_1
+  newarray byte
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/nio/ByteBuffer/get([B)Ljava/nio/ByteBuffer;
+  pop
+  aload_2
+  invokestatic com/qq/jce/wup/WupHexUtil/bytes2HexStr([B)Ljava/lang/String;
+  astore_3
+  aload_3
+  areturn
+  nop
+.end <method>
+
+.method public static bytes2HexStr([B)Ljava/lang/String;
+.limit locals 11
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  aload_0
+  arraylength
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  ifne Label1
+Label0:
+  aconst_null
+  astore_2
+  aload_2
+  areturn
+Label1:
+  aload_0
+  arraylength
+  istore_1
+  iload_1
+  iconst_2
+  imul
+  istore_1
+  iload_1
+  newarray char
+  astore_3
+  iconst_0
+  dstore_1
+Label3:
+  aload_0
+  arraylength
+  istore 4
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload 4
+  if_icmpge Label2
+  aload_0
+  iload_1
+  baload
+  istore 5
+  iload_1
+  iconst_2
+  imul
+  istore 4
+  iload 4
+  iconst_1
+  iadd
+  istore 4
+  getstatic com/qq/jce/wup/WupHexUtil/digits [C
+  astore 6
+  bipush 15
+  istore 8
+  iload 5
+  iload 8
+  iand
+  istore 7
+  aload 6
+  iload 7
+  caload
+  istore 9
+  aload_3
+  iload 4
+  iload 9
+  castore
+  iconst_4
+  istore 8
+  iload 5
+  iload 8
+  iushr
+  istore 7
+  iload 7
+  i2b
+  istore 7
+  iload_1
+  iconst_2
+  imul
+  istore 4
+  iload 4
+  iconst_0
+  iadd
+  istore 4
+  getstatic com/qq/jce/wup/WupHexUtil/digits [C
+  astore 6
+  bipush 15
+  istore 8
+  iload 7
+  iload 8
+  iand
+  istore 7
+  aload 6
+  iload 7
+  caload
+  istore 9
+  aload_3
+  iload 4
+  iload 9
+  castore
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  goto Label3
+Label2:
+  new java/lang/String
+  astore 10
+  aload 10
+  aload_3
+  invokespecial java/lang/String/<init>([C)V
+  aload 10
+  areturn
+  nop
+.end <method>
+
+.method public static char2Byte(C)B
+.limit locals 4
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  bipush 48
+  istore_1
+  iload_0
+  iload_1
+  if_icmplt Label0
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 57
+  istore_1
+  iload_0
+  iload_1
+  if_icmpgt Label0
+  iload_0
+  bipush -48
+  iadd
+  istore_2
+  iload_2
+  i2b
+  istore_3
+  iload_3
+  ireturn
+Label0:
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 97
+  istore_1
+  iload_0
+  iload_1
+  if_icmplt Label1
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 102
+  istore_1
+  iload_0
+  iload_1
+  if_icmpgt Label1
+  iload_0
+  bipush -97
+  iadd
+  istore_2
+  iload_2
+  bipush 10
+  iadd
+  istore_2
+  iload_2
+  i2b
+  istore_3
+  iload_3
+  ireturn
+Label1:
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 65
+  istore_1
+  iload_0
+  iload_1
+  if_icmplt Label2
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 70
+  istore_1
+  iload_0
+  iload_1
+  if_icmpgt Label2
+  iload_0
+  bipush -65
+  iadd
+  istore_2
+  iload_2
+  bipush 10
+  iadd
+  istore_2
+  iload_2
+  i2b
+  istore_3
+  iload_3
+  ireturn
+Label2:
+  iconst_0
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public static hexStr2Byte(Ljava/lang/String;)B
+.limit locals 5
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore_3
+  iload_2
+  iload_3
+  if_icmpne Label0
+  iconst_0
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual java/lang/String/charAt(I)C
+  istore 4
+  iload 4
+  invokestatic com/qq/jce/wup/WupHexUtil/char2Byte(C)B
+  istore_1
+Label0:
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public static hexStr2Bytes(Ljava/lang/String;)[B
+.limit locals 9
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  ldc ""
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label1
+Label0:
+  getstatic com/qq/jce/wup/WupHexUtil/emptybytes [B
+  astore_3
+Label2:
+  aload_3
+  areturn
+Label1:
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore 4
+  iload 4
+  iconst_2
+  idiv
+  istore 4
+  iload 4
+  newarray byte
+  astore_3
+  iconst_0
+  dstore 4
+Label3:
+  aload_3
+  arraylength
+  istore 5
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  iload 5
+  if_icmpge Label2
+  iload 4
+  iconst_2
+  imul
+  istore 5
+  aload_0
+  iload 5
+  invokevirtual java/lang/String/charAt(I)C
+  istore 6
+  iload 4
+  iconst_2
+  imul
+  istore 5
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  aload_0
+  iload 5
+  invokevirtual java/lang/String/charAt(I)C
+  istore 7
+  iload 6
+  invokestatic com/qq/jce/wup/WupHexUtil/char2Byte(C)B
+  istore 8
+  iload 8
+  bipush 16
+  imul
+  istore 5
+  iload 7
+  invokestatic com/qq/jce/wup/WupHexUtil/char2Byte(C)B
+  istore 8
+  iload 5
+  iload 8
+  iadd
+  istore 5
+  iload 5
+  i2b
+  istore 8
+  aload_3
+  iload 4
+  iload 8
+  bastore
+  iload 4
+  iconst_1
+  iadd
+  istore 4
+  goto Label3
+  nop
+.end <method>
+
+.method public static main([Ljava/lang/String;)V
+.limit locals 14
+.limit stack 200
+  nop
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore_1
+  iconst_0
+  istore_3
+Label2:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  ldc 1000000
+  istore 4
+  iload_3
+  iload 4
+  if_icmpge Label0
+  new java/lang/StringBuilder
+  astore 5
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "234"
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  iload_3
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/getBytes()[B
+  astore 8
+  aload 8
+  invokestatic com/qq/jce/wup/WupHexUtil/bytes2HexStr([B)Ljava/lang/String;
+  astore 9
+  aload 9
+  invokestatic com/qq/jce/wup/WupHexUtil/hexStr2Bytes(Ljava/lang/String;)[B
+  astore 8
+  new java/lang/String
+  astore 9
+  aload 9
+  aload 8
+  invokespecial java/lang/String/<init>([B)V
+  aload 9
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifne Label1
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore 11
+  new java/lang/StringBuilder
+  astore 5
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "error:"
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  aload 11
+  aload 7
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+Label1:
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label2
+Label0:
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore 11
+  new java/lang/StringBuilder
+  astore 5
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "use:"
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 12
+  lload 12
+  lload_1
+  lsub
+  lstore 12
+  aload 5
+  lload 12
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  aload 11
+  aload 7
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+

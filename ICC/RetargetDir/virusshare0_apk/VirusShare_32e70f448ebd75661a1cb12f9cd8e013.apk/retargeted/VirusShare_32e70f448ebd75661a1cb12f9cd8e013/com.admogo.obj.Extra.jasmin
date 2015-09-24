@@ -1,0 +1,122 @@
+.source Extra.java
+.class public  com/admogo/obj/Extra
+.super java/lang/Object
+.field public "SDKversion" I
+.field public "adFirst" I
+.field public "bgAlpha" I
+.field public "bgBlue" I
+.field public "bgGreen" I
+.field public "bgRed" I
+.field public "closeAdOn" I
+.field public "cycleTime" I
+.field public "fgAlpha" I
+.field public "fgBlue" I
+.field public "fgGreen" I
+.field public "fgRed" I
+.field public "improveClick" I
+.field public "locationOn" I
+.field public "packageName" Ljava/lang/String;
+.field public "timestamp" Ljava/lang/String;
+.field public "transition" I
+.field public "version" I
+
+.method public <init>()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  sipush 255
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Extra/fgRed I
+  sipush 255
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Extra/fgGreen I
+  sipush 255
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Extra/fgBlue I
+  iconst_1
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Extra/fgAlpha I
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Extra/bgRed I
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Extra/bgGreen I
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Extra/bgBlue I
+  iconst_1
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Extra/bgAlpha I
+  bipush 30
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Extra/cycleTime I
+  iconst_1
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Extra/locationOn I
+  bipush 7
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Extra/transition I
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Extra/closeAdOn I
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Extra/improveClick I
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Extra/adFirst I
+  ldc ""
+  astore_2
+  aload_0
+  aload_2
+  putfield com/admogo/obj/Extra/timestamp Ljava/lang/String;
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Extra/version I
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Extra/SDKversion I
+  ldc ""
+  astore_2
+  aload_0
+  aload_2
+  putfield com/admogo/obj/Extra/packageName Ljava/lang/String;
+  return
+  nop
+.end <method>
+

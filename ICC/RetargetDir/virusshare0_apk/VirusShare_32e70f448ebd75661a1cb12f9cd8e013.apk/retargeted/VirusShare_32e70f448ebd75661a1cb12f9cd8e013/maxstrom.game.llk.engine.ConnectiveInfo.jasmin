@@ -1,0 +1,67 @@
+.source ConnectiveInfo.java
+.class public  maxstrom/game/llk/engine/ConnectiveInfo
+.super java/lang/Object
+.field public static final "CANNOT_FIND" Lmaxstrom/game/llk/engine/ConnectiveInfo;
+.field private final "result" Z
+.field private final "route" Lmaxstrom/game/llk/engine/BlankRoute;
+
+.method static <clinit>()V
+.limit locals 3
+.limit stack 200
+  nop
+  new maxstrom/game/llk/engine/ConnectiveInfo
+  astore_0
+  iconst_0
+  istore_1
+  aconst_null
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  invokespecial maxstrom/game/llk/engine/ConnectiveInfo/<init>(ZLmaxstrom/game/llk/engine/BlankRoute;)V
+  aload_0
+  putstatic maxstrom/game/llk/engine/ConnectiveInfo/CANNOT_FIND Lmaxstrom/game/llk/engine/ConnectiveInfo;
+  return
+  nop
+.end <method>
+
+.method public <init>(ZLmaxstrom/game/llk/engine/BlankRoute;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  iload_1
+  putfield maxstrom/game/llk/engine/ConnectiveInfo/result Z
+  aload_0
+  aload_2
+  putfield maxstrom/game/llk/engine/ConnectiveInfo/route Lmaxstrom/game/llk/engine/BlankRoute;
+  return
+  nop
+.end <method>
+
+.method public getResult()Z
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield maxstrom/game/llk/engine/ConnectiveInfo/result Z
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public getRoute()Lmaxstrom/game/llk/engine/BlankRoute;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield maxstrom/game/llk/engine/ConnectiveInfo/route Lmaxstrom/game/llk/engine/BlankRoute;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+

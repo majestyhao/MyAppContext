@@ -1,0 +1,49 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/kuguo/ad/j
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcom/kuguo/ad/k;
+
+.method <init>(Lcom/kuguo/ad/k;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/kuguo/ad/j/a Lcom/kuguo/ad/k;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/ad/j/a Lcom/kuguo/ad/k;
+  astore_1
+  aload_1
+  getfield com/kuguo/ad/k/b Lcom/kuguo/ad/a;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_3
+  invokestatic com/kuguo/ad/t/a(Lcom/kuguo/ad/t;)Landroid/content/Context;
+  astore 4
+  aload_0
+  getfield com/kuguo/ad/j/a Lcom/kuguo/ad/k;
+  astore_1
+  aload_1
+  getfield com/kuguo/ad/k/a Lcom/kuguo/ad/p;
+  astore 5
+  aload 4
+  aload 5
+  invokestatic com/kuguo/ad/t/a(Landroid/content/Context;Lcom/kuguo/ad/p;)V
+  return
+  nop
+.end <method>
+

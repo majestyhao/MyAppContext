@@ -1,0 +1,154 @@
+.source SourceFile
+.class final  com/mobisage/android/v
+.super com/mobisage/android/MobiSageReqMessage
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/mobisage/android/MobiSageReqMessage/<init>()V
+  return
+  nop
+.end <method>
+
+.method public final createHttpRequest()Lorg/apache/http/client/methods/HttpRequestBase;
+.limit locals 12
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+Label2:
+  ldc "http://config.adsage.com/mobisdk/02/cfg.htm"
+  astore_2
+  aload_1
+  aload_2
+  invokespecial org/apache/http/client/methods/HttpPost/<init>(Ljava/lang/String;)V
+  ldc "Connection"
+  astore_2
+  ldc "close"
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokevirtual org/apache/http/client/methods/HttpPost/setHeader(Ljava/lang/String;Ljava/lang/String;)V
+  ldc "Host"
+  astore_2
+  ldc "config.adsage.com"
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokevirtual org/apache/http/client/methods/HttpPost/setHeader(Ljava/lang/String;Ljava/lang/String;)V
+  ldc "Content-Type"
+  astore_2
+  ldc "application/x-www-form-urlencoded"
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokevirtual org/apache/http/client/methods/HttpPost/setHeader(Ljava/lang/String;Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  new java/lang/StringBuilder
+  astore 5
+  ldc "pid="
+  astore_2
+  aload 5
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  getstatic com/mobisage/android/r/a Ljava/lang/String;
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload 4
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  getfield com/mobisage/android/MobiSageReqMessage/params Landroid/os/Bundle;
+  astore 7
+  ldc "key"
+  astore_2
+  aload 7
+  aload_2
+  invokevirtual android/os/Bundle/containsKey(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label0
+  new java/lang/StringBuilder
+  astore 5
+  ldc "&key="
+  astore_2
+  aload 5
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  getfield com/mobisage/android/MobiSageReqMessage/params Landroid/os/Bundle;
+  astore 7
+  ldc "key"
+  astore_2
+  aload 7
+  aload_2
+  invokevirtual android/os/Bundle/getString(Ljava/lang/String;)Ljava/lang/String;
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload 4
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+Label0:
+  new org/apache/http/entity/StringEntity
+  astore 9
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload 9
+  aload 6
+  invokespecial org/apache/http/entity/StringEntity/<init>(Ljava/lang/String;)V
+  aload_1
+  aload 9
+  invokevirtual org/apache/http/client/methods/HttpPost/setEntity(Lorg/apache/http/HttpEntity;)V
+Label3:
+  aload_1
+  areturn
+Label1:
+  astore 10
+  aconst_null
+  astore 11
+  aload 11
+  areturn
+  nop
+.end <method>
+
+.method public final createMessageRunnable()Ljava/lang/Runnable;
+.limit locals 2
+.limit stack 200
+  nop
+  new com/mobisage/android/x
+  astore_1
+  aload_1
+  aload_0
+  invokespecial com/mobisage/android/x/<init>(Lcom/mobisage/android/v;)V
+  aload_1
+  areturn
+  nop
+.end <method>
+

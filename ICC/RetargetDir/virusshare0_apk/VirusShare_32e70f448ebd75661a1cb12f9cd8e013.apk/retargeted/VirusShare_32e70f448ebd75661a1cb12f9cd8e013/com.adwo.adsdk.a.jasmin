@@ -1,0 +1,7 @@
+.source SourceFile
+.interface interface abstract  com/adwo/adsdk/a
+.super java/lang/Object
+
+.method public abstract a()V
+.end <method>
+

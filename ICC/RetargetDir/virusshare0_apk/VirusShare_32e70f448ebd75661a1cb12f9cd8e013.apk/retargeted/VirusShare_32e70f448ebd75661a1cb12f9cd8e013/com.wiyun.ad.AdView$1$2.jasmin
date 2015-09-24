@@ -1,0 +1,68 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/AdView$1$2
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcom/wiyun/ad/AdView$1;
+.field private final "b" Landroid/view/View;
+
+.method <init>(Lcom/wiyun/ad/AdView$1;Landroid/view/View;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/wiyun/ad/AdView$1$2/a Lcom/wiyun/ad/AdView$1;
+  aload_0
+  aload_2
+  putfield com/wiyun/ad/AdView$1$2/b Landroid/view/View;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 11
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/AdView$1$2/a Lcom/wiyun/ad/AdView$1;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  invokevirtual com/wiyun/ad/AdView/getContext()Landroid/content/Context;
+  astore_3
+  ldc "input_method"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 4
+  aload 4
+  astore 7
+  aload 7
+  checkcast android/view/inputmethod/InputMethodManager
+  astore 7
+  aload 7
+  astore 6
+  aload_0
+  getfield com/wiyun/ad/AdView$1$2/b Landroid/view/View;
+  astore 8
+  aload 8
+  invokevirtual android/view/View/getWindowToken()Landroid/os/IBinder;
+  astore 9
+  iconst_0
+  istore 10
+  aload 6
+  aload 9
+  iload 10
+  invokevirtual android/view/inputmethod/InputMethodManager/hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
+  pop
+  return
+  nop
+.end <method>
+

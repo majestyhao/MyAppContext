@@ -1,0 +1,48 @@
+version: 2.0.1
+apkFileName: VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '4'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '12'
+  versionName: '2.1'
+compressionType: false
+sharedLibrary: false
+unknownFiles:
+  com/admogo/assets/adsmogo_ad_close.png: '8'
+  com/admogo/assets/adsmogo_ad_close_h.png: '8'
+  com/admogo/assets/adsmogo_btn_bg.png: '8'
+  com/admogo/assets/adsmogo_btn_bg_prs.png: '8'
+  com/admogo/assets/adsmogo_close.png: '8'
+  com/admogo/assets/adsmogo_close_h.png: '8'
+  com/admogo/assets/adsmogo_dialog_bg.png: '8'
+  com/admogo/assets/adsmogo_fill_bgb.png: '8'
+  com/admogo/assets/adsmogo_fill_bgw.png: '8'
+  com/admogo/assets/adsmogo_logo.png: '8'
+  com/admogo/assets/baidu_icon.png: '8'
+  com/admogo/assets/close_btn.png: '8'
+  com/admogo/assets/progressbarbg.png: '8'
+  com/admogo/assets/webview_ad_bar_bgimg.png: '8'
+  com/admogo/assets/webview_bar_back.png: '8'
+  com/admogo/assets/webview_bar_back_grey.png: '8'
+  com/admogo/assets/webview_bar_back_hover.png: '8'
+  com/admogo/assets/webview_bar_close.png: '8'
+  com/admogo/assets/webview_bar_close_hover.png: '8'
+  com/admogo/assets/webview_bar_next.png: '8'
+  com/admogo/assets/webview_bar_next_grey.png: '8'
+  com/admogo/assets/webview_bar_next_hover.png: '8'
+  com/admogo/assets/webview_bar_pause.png: '8'
+  com/admogo/assets/webview_bar_pause_hover.png: '8'
+  com/admogo/assets/webview_bar_refresh.png: '8'
+  com/admogo/assets/webview_bar_refresh_hover.png: '8'
+  com/admogo/assets/webview_bar_share.png: '8'
+  com/admogo/assets/webview_bar_share_hover.png: '8'
+  com/qq/jce/wup/wup.properties: '8'
+  com/wiyun/ad/HtmlCharacterEntityReferences.properties: '8'
+  com/wiyun/ad/sdk.properties: '8'
+  com/wiyun/ad/sdk_zh.properties: '8'

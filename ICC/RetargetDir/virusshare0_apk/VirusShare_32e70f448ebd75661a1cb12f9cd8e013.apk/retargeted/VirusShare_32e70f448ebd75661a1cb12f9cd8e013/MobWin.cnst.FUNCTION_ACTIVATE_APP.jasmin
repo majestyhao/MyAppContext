@@ -1,0 +1,5 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.interface public interface abstract  MobWin/cnst/FUNCTION_ACTIVATE_APP
+.super java/lang/Object
+.field public static final "a" Ljava/lang/String; =  "activateApp"
+

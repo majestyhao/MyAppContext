@@ -1,0 +1,30 @@
+.source SourceFile
+.class  cn/domob/android/ads/u$a
+.super java/lang/Object
+.implements  javax/net/ssl/HostnameVerifier
+.field final "a" Lcn/domob/android/ads/u;
+
+.method <init>(Lcn/domob/android/ads/u;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/u$a/a Lcn/domob/android/ads/u;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public verify(Ljava/lang/String;Ljavax/net/ssl/SSLSession;)Z
+.limit locals 4
+.limit stack 200
+  nop
+  iconst_1
+  istore_3
+  iload_3
+  ireturn
+  nop
+.end <method>
+

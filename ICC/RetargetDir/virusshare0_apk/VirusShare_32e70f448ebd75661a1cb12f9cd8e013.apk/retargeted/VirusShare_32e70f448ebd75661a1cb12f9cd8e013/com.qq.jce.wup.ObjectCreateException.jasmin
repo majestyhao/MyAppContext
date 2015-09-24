@@ -1,0 +1,15 @@
+.source ObjectCreateException.java
+.class public  com/qq/jce/wup/ObjectCreateException
+.super java/lang/RuntimeException
+
+.method public <init>(Ljava/lang/Exception;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial java/lang/RuntimeException/<init>(Ljava/lang/Throwable;)V
+  return
+  nop
+.end <method>
+

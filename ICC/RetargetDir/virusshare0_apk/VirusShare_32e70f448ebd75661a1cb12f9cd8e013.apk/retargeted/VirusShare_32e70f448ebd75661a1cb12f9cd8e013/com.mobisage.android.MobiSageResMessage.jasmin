@@ -1,0 +1,130 @@
+.source SourceFile
+.class public  com/mobisage/android/MobiSageResMessage
+.super com/mobisage/android/MobiSageMessage
+.field "d" Ljava/lang/Boolean;
+.field "e" J
+.field public "sourceURL" Ljava/lang/String;
+.field public "targetURL" Ljava/lang/String;
+.field public "tempURL" Ljava/lang/String;
+
+.method public <init>()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/mobisage/android/MobiSageMessage/<init>()V
+  iconst_2
+  istore_1
+  aload_0
+  iload_1
+  putfield com/mobisage/android/MobiSageMessage/b I
+  return
+  nop
+.end <method>
+
+.method public createHttpRequest()Lorg/apache/http/client/methods/HttpRequestBase;
+.limit locals 13
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield com/mobisage/android/MobiSageResMessage/sourceURL Ljava/lang/String;
+  astore_2
+  aload_1
+  aload_2
+  invokespecial org/apache/http/client/methods/HttpGet/<init>(Ljava/lang/String;)V
+  new java/io/File
+  astore_3
+  aload_0
+  getfield com/mobisage/android/MobiSageResMessage/tempURL Ljava/lang/String;
+  astore_2
+  aload_3
+  aload_2
+  invokespecial java/io/File/<init>(Ljava/lang/String;)V
+  aload_3
+  invokevirtual java/io/File/exists()Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label0
+  iconst_1
+  istore 6
+  iload 6
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore 5
+  aload_0
+  aload 5
+  putfield com/mobisage/android/MobiSageResMessage/d Ljava/lang/Boolean;
+  aload_3
+  invokevirtual java/io/File/length()J
+  lstore 7
+  aload_0
+  lload 7
+  putfield com/mobisage/android/MobiSageResMessage/e J
+  iconst_1
+  istore 6
+  iload 6
+  istore 9
+  iload 9
+  anewarray java/lang/Object
+  astore 10
+  aload_3
+  invokevirtual java/io/File/length()J
+  lstore 7
+  lload 7
+  invokestatic java/lang/Long/valueOf(J)Ljava/lang/Long;
+  astore 11
+  iconst_0
+  istore 6
+  iload 6
+  istore 9
+  aload 10
+  iload 9
+  aload 11
+  aastore
+  ldc "bytes=%d-"
+  astore 12
+  aload 12
+  aload 10
+  invokestatic java/lang/String/format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  astore_2
+  ldc "Range"
+  astore 12
+  aload_1
+  aload 12
+  aload_2
+  invokevirtual org/apache/http/client/methods/HttpGet/setHeader(Ljava/lang/String;Ljava/lang/String;)V
+  aload_1
+  areturn
+Label0:
+  iconst_0
+  istore 6
+  iload 6
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore 5
+  aload_0
+  aload 5
+  putfield com/mobisage/android/MobiSageResMessage/d Ljava/lang/Boolean;
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public createMessageRunnable()Ljava/lang/Runnable;
+.limit locals 2
+.limit stack 200
+  nop
+  new com/mobisage/android/L
+  astore_1
+  aload_1
+  aload_0
+  invokespecial com/mobisage/android/L/<init>(Lcom/mobisage/android/MobiSageResMessage;)V
+  aload_1
+  areturn
+  nop
+.end <method>
+

@@ -1,0 +1,25 @@
+.source Const.java
+.class public  com/qq/taf/cnst/Const
+.super java/lang/Object
+.field public static final "INVALID_GRID_CODE" I =  -1
+.field public static final "INVALID_HASH_CODE" I =  -1
+.field public static final "PACKET_TYPE_JCENORMAL" B =  0
+.field public static final "PACKET_TYPE_JCEONEWAY" B =  1
+.field public static final "PACKET_TYPE_WUP" B =  2
+.field public static final "STATUS_DYED_KEY" Ljava/lang/String; =  "STATUS_DYED_KEY"
+.field public static final "STATUS_GRID_CODE" Ljava/lang/String; =  "STATUS_GRID_CODE"
+.field public static final "STATUS_GRID_KEY" Ljava/lang/String; =  "STATUS_GRID_KEY"
+.field public static final "STATUS_RESULT_CODE" Ljava/lang/String; =  "STATUS_RESULT_CODE"
+.field public static final "STATUS_RESULT_DESC" Ljava/lang/String; =  "STATUS_RESULT_DESC"
+.field public static final "STATUS_SAMPLE_KEY" Ljava/lang/String; =  "STATUS_SAMPLE_KEY"
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

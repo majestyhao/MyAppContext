@@ -1,0 +1,22 @@
+.source SourceFile
+.class public final  com/mobisage/android/MobiSageAnimeType
+.super java/lang/Object
+.field public static final "Anime_Base_Type" I =  65
+.field public static final "Anime_Eyes" I =  69
+.field public static final "Anime_Fade" I =  68
+.field public static final "Anime_LeftToRight" I =  67
+.field public static final "Anime_Random" I =  1
+.field public static final "Anime_Rotation" I =  65
+.field public static final "Anime_TopToBottom" I =  66
+.field public static final "Anime_Type_Count" I =  5
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

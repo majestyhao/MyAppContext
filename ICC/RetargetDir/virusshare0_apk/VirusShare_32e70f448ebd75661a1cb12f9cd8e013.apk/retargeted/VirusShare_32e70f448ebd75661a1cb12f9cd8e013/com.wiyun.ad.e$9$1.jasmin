@@ -1,0 +1,132 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/e$9$1
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcom/wiyun/ad/e$9;
+
+.method <init>(Lcom/wiyun/ad/e$9;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/wiyun/ad/e$9$1/a Lcom/wiyun/ad/e$9;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 11
+.limit stack 200
+  nop
+  ldc "WiYun"
+  astore_1
+  ldc "gif completed"
+  astore_2
+  aload_1
+  aload_2
+  invokestatic com/wiyun/ad/s/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  getfield com/wiyun/ad/e$9$1/a Lcom/wiyun/ad/e$9;
+  astore_3
+  aload_3
+  invokestatic com/wiyun/ad/e$9/a(Lcom/wiyun/ad/e$9;)Lcom/wiyun/ad/e;
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload 5
+  getfield com/wiyun/ad/j/H Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  ldc "WiYun"
+  astore_1
+  ldc "loopForever"
+  astore_2
+  aload_1
+  aload_2
+  invokestatic com/wiyun/ad/s/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  getfield com/wiyun/ad/e$9$1/a Lcom/wiyun/ad/e$9;
+  astore_3
+  aload_3
+  invokestatic com/wiyun/ad/e$9/a(Lcom/wiyun/ad/e$9;)Lcom/wiyun/ad/e;
+  astore 4
+  aload 4
+  invokestatic com/wiyun/ad/e/n(Lcom/wiyun/ad/e;)Lcom/wiyun/ad/a;
+  astore 7
+  aload 7
+  invokevirtual com/wiyun/ad/a/a()V
+Label1:
+  return
+Label0:
+  aload_0
+  getfield com/wiyun/ad/e$9$1/a Lcom/wiyun/ad/e$9;
+  astore_3
+  aload_3
+  getfield com/wiyun/ad/e$9/a I
+  istore 8
+  iload 8
+  iconst_m1
+  iadd
+  istore 8
+  aload_3
+  iload 8
+  putfield com/wiyun/ad/e$9/a I
+  aload_0
+  getfield com/wiyun/ad/e$9$1/a Lcom/wiyun/ad/e$9;
+  astore_3
+  aload_3
+  getfield com/wiyun/ad/e$9/a I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  ifle Label1
+  new java/lang/StringBuilder
+  astore 9
+  ldc "loopCount = "
+  astore_1
+  aload 9
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  getfield com/wiyun/ad/e$9$1/a Lcom/wiyun/ad/e$9;
+  astore_3
+  aload_3
+  getfield com/wiyun/ad/e$9/a I
+  istore 8
+  aload 9
+  iload 8
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 10
+  ldc "WiYun"
+  astore_1
+  aload_1
+  aload 10
+  invokestatic com/wiyun/ad/s/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  getfield com/wiyun/ad/e$9$1/a Lcom/wiyun/ad/e$9;
+  astore_3
+  aload_3
+  invokestatic com/wiyun/ad/e$9/a(Lcom/wiyun/ad/e$9;)Lcom/wiyun/ad/e;
+  astore 4
+  aload 4
+  invokestatic com/wiyun/ad/e/n(Lcom/wiyun/ad/e;)Lcom/wiyun/ad/a;
+  astore 7
+  aload 7
+  invokevirtual com/wiyun/ad/a/a()V
+  goto Label1
+  nop
+.end <method>
+

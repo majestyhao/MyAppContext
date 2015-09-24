@@ -1,0 +1,41 @@
+.source SuizongAPIAdapter.java
+.class  com/admogo/adapters/SuizongAPIAdapter$2
+.super java/lang/Thread
+.field final "this$0" Lcom/admogo/adapters/SuizongAPIAdapter;
+
+.method <init>(Lcom/admogo/adapters/SuizongAPIAdapter;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/adapters/SuizongAPIAdapter$2/this$0 Lcom/admogo/adapters/SuizongAPIAdapter;
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/SuizongAPIAdapter$2/this$0 Lcom/admogo/adapters/SuizongAPIAdapter;
+  astore_1
+  aload_0
+  getfield com/admogo/adapters/SuizongAPIAdapter$2/this$0 Lcom/admogo/adapters/SuizongAPIAdapter;
+  astore_2
+  aload_2
+  invokestatic com/admogo/adapters/SuizongAPIAdapter/access$2(Lcom/admogo/adapters/SuizongAPIAdapter;)Ljava/util/HashMap;
+  astore_3
+  ldc "click"
+  astore 4
+  aload_1
+  aload_3
+  aload 4
+  invokestatic com/admogo/adapters/SuizongAPIAdapter/access$3(Lcom/admogo/adapters/SuizongAPIAdapter;Ljava/util/HashMap;Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+

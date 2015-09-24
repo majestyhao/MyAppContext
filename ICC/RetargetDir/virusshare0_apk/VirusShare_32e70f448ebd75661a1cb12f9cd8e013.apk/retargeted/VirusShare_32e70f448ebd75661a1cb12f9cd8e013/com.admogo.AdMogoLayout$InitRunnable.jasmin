@@ -1,0 +1,810 @@
+.source AdMogoLayout.java
+.class  com/admogo/AdMogoLayout$InitRunnable
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field private "adMogoLayoutReference" Ljava/lang/ref/WeakReference;
+.field private "ad_Type" I
+.field private "expressMode" Z
+.field private "keyAdMogo" Ljava/lang/String;
+.field final "this$0" Lcom/admogo/AdMogoLayout;
+
+.method public <init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/AdMogoLayout;Ljava/lang/String;IZ)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  new java/lang/ref/WeakReference
+  astore 6
+  aload 6
+  aload_2
+  invokespecial java/lang/ref/WeakReference/<init>(Ljava/lang/Object;)V
+  aload_0
+  aload 6
+  putfield com/admogo/AdMogoLayout$InitRunnable/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  aload_0
+  aload_3
+  putfield com/admogo/AdMogoLayout$InitRunnable/keyAdMogo Ljava/lang/String;
+  aload_0
+  iload 4
+  putfield com/admogo/AdMogoLayout$InitRunnable/ad_Type I
+  aload_0
+  iload 5
+  putfield com/admogo/AdMogoLayout$InitRunnable/expressMode Z
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 46
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 7
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore 8
+  aload 8
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 9
+  aload 9
+  astore 11
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 11
+  astore 10
+  aload 7
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$4(Lcom/admogo/AdMogoLayout;Lcom/admogo/AdMogoLayout;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$5(Lcom/admogo/AdMogoLayout;)Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnull Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$5(Lcom/admogo/AdMogoLayout;)Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  getfield com/admogo/AdMogoLayout/activityReference Ljava/lang/ref/WeakReference;
+  astore 8
+  aload 8
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 9
+  aload 9
+  astore 13
+  aload 13
+  checkcast android/app/Activity
+  astore 13
+  aload 13
+  astore 12
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  ifnonnull Label1
+Label0:
+  return
+Label1:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$5(Lcom/admogo/AdMogoLayout;)Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  getfield com/admogo/AdMogoLayout/adMogoManager Lcom/admogo/AdMogoManager;
+  astore 14
+  aload 14
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 14
+  ifnonnull Label2
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$5(Lcom/admogo/AdMogoLayout;)Lcom/admogo/AdMogoLayout;
+  astore 10
+  new com/admogo/AdMogoManager
+  astore 14
+  new java/lang/ref/WeakReference
+  astore 8
+  aload 12
+  invokevirtual android/app/Activity/getApplicationContext()Landroid/content/Context;
+  astore 15
+  aload 8
+  aload 15
+  invokespecial java/lang/ref/WeakReference/<init>(Ljava/lang/Object;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/keyAdMogo Ljava/lang/String;
+  astore 16
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/ad_Type I
+  istore_1
+  iload_1
+  istore 17
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/expressMode Z
+  istore_1
+  iload_1
+  istore 18
+  iload 17
+  istore_1
+  iload 18
+  istore_2
+  aload 14
+  aload 8
+  aload 16
+  iload_1
+  iload_2
+  invokespecial com/admogo/AdMogoManager/<init>(Ljava/lang/ref/WeakReference;Ljava/lang/String;IZ)V
+  aload 10
+  aload 14
+  putfield com/admogo/AdMogoLayout/adMogoManager Lcom/admogo/AdMogoManager;
+Label2:
+  getstatic com/admogo/AdMogoManager/pngSize I
+  istore 17
+  iload 17
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_3
+  istore 19
+  iload 17
+  istore_1
+  iload 19
+  istore_2
+  iload_1
+  iload_2
+  if_icmpne Label3
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual java/lang/Object/getClass()Ljava/lang/Class;
+  astore 20
+  ldc "/com/admogo/assets/adsmogo_ad_close_h.png"
+  astore 22
+  aload 20
+  astore_1
+  aload 22
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/Class/getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream;
+  astore 21
+Label5:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  new android/graphics/drawable/BitmapDrawable
+  astore 23
+  aload 23
+  astore_1
+  aload 21
+  astore_2
+  aload_1
+  aload_2
+  invokespecial android/graphics/drawable/BitmapDrawable/<init>(Ljava/io/InputStream;)V
+  aload 23
+  astore_1
+  aload 10
+  aload_1
+  invokestatic com/admogo/AdMogoLayout/access$6(Lcom/admogo/AdMogoLayout;Landroid/graphics/drawable/Drawable;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$5(Lcom/admogo/AdMogoLayout;)Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$7(Lcom/admogo/AdMogoLayout;)Z
+  istore 18
+  iload 18
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 18
+  ifne Label4
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$5(Lcom/admogo/AdMogoLayout;)Lcom/admogo/AdMogoLayout;
+  astore 10
+  iconst_0
+  istore 19
+  iload 19
+  istore_1
+  aload 10
+  iload_1
+  invokestatic com/admogo/AdMogoLayout/access$8(Lcom/admogo/AdMogoLayout;Z)V
+  goto Label0
+Label3:
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual java/lang/Object/getClass()Ljava/lang/Class;
+  astore 20
+  ldc "/com/admogo/assets/adsmogo_ad_close.png"
+  astore 22
+  aload 20
+  astore_1
+  aload 22
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/Class/getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream;
+  astore 21
+  goto Label5
+Label4:
+  getstatic com/admogo/AdMogoTargeting/countryCode Ljava/lang/String;
+  astore 16
+  aload 16
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 18
+  iload 18
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 18
+  ifeq Label6
+  ldc "phone"
+  astore 22
+  aload 22
+  astore_1
+  aload 12
+  aload_1
+  invokevirtual android/app/Activity/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 9
+  aload 9
+  astore 25
+  aload 25
+  checkcast android/telephony/TelephonyManager
+  astore 25
+  aload 25
+  astore 24
+  aload 24
+  astore_1
+  aload_1
+  invokevirtual android/telephony/TelephonyManager/getDeviceId()Ljava/lang/String;
+  astore 16
+  aload 16
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 16
+  ifnull Label7
+  ldc "000000000000000"
+  astore 22
+  aload 22
+  astore_1
+  aload 16
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 18
+  iload 18
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 18
+  ifeq Label8
+Label7:
+  iconst_1
+  istore 19
+  iload 19
+  istore_1
+  iload_1
+  invokestatic com/admogo/AdMogoLayout/access$9(Z)V
+Label8:
+  invokestatic com/admogo/AdMogoLayout/access$10()Z
+  istore 18
+  iload 18
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 18
+  ifeq Label9
+  invokestatic java/util/Locale/getDefault()Ljava/util/Locale;
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  invokevirtual java/util/Locale/getCountry()Ljava/lang/String;
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokevirtual java/lang/String/toLowerCase()Ljava/lang/String;
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokestatic com/admogo/AdMogoLayout/access$11(Ljava/lang/String;)V
+Label13:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$5(Lcom/admogo/AdMogoLayout;)Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  getfield com/admogo/AdMogoLayout/adMogoManager Lcom/admogo/AdMogoManager;
+  astore 14
+  invokestatic com/admogo/AdMogoLayout/access$1()Ljava/lang/String;
+  astore 27
+  aload 27
+  astore_1
+  aload 14
+  aload_1
+  invokevirtual com/admogo/AdMogoManager/setLocation(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/expressMode Z
+  istore_1
+  iload_1
+  istore 18
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 18
+  ifeq Label10
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$5(Lcom/admogo/AdMogoLayout;)Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  getfield com/admogo/AdMogoLayout/adMogoManager Lcom/admogo/AdMogoManager;
+  astore 14
+  aload 14
+  invokevirtual com/admogo/AdMogoManager/offlineConfigurationPriority()V
+Label14:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$5(Lcom/admogo/AdMogoLayout;)Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 7
+  aload 7
+  invokestatic com/admogo/AdMogoLayout/access$5(Lcom/admogo/AdMogoLayout;)Lcom/admogo/AdMogoLayout;
+  astore 7
+  aload 7
+  getfield com/admogo/AdMogoLayout/adMogoManager Lcom/admogo/AdMogoManager;
+  astore 14
+  aload 14
+  invokevirtual com/admogo/AdMogoManager/getExtra()Lcom/admogo/obj/Extra;
+  astore 28
+  aload 28
+  astore_1
+  aload 10
+  aload_1
+  putfield com/admogo/AdMogoLayout/extra Lcom/admogo/obj/Extra;
+  getstatic com/admogo/AdMogoLayout/getContext Landroid/content/Context;
+  astore 15
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/keyAdMogo Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 27
+  iconst_0
+  istore 19
+  aload 27
+  astore_1
+  iload 19
+  istore_2
+  aload 15
+  aload_1
+  iload_2
+  invokevirtual android/content/Context/getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+  astore 29
+  ldc "mogo_update_time"
+  astore 22
+  ldc2_w 0
+  lstore 32
+  aload 29
+  astore_1
+  aload 22
+  astore_2
+  lload 32
+  lstore_3
+  aload_1
+  aload_2
+  lload_3
+  invokeinterface android/content/SharedPreferences/getLong(Ljava/lang/String;J)J 4
+  lstore 30
+  lload 30
+  lstore_1
+  lload_1
+  invokestatic java/lang/Long/valueOf(J)Ljava/lang/Long;
+  astore 34
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 30
+  invokestatic com/admogo/AdMogoLayout/access$12()I
+  istore 35
+  iload 35
+  istore_1
+  iload_1
+  i2l
+  lstore_1
+  lload_1
+  lstore 36
+  aload 34
+  astore_1
+  aload_1
+  invokevirtual java/lang/Long/longValue()J
+  lstore 38
+  lload 36
+  lload 38
+  ladd
+  lstore 38
+  lload 30
+  lload 38
+  lcmp
+  istore 40
+  iload 40
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 40
+  ifle Label11
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$5(Lcom/admogo/AdMogoLayout;)Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  getfield com/admogo/AdMogoLayout/extra Lcom/admogo/obj/Extra;
+  astore_1
+  aload_1
+  astore 28
+  aload 28
+  astore_1
+  aload_1
+  getfield com/admogo/obj/Extra/packageName Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 18
+  iload 18
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 18
+  ifne Label11
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  getfield com/admogo/AdMogoLayout/scheduler Ljava/util/concurrent/ScheduledExecutorService;
+  astore_1
+  aload_1
+  astore 41
+  new com/admogo/AdMogoLayout$IfUpdate
+  astore 42
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aconst_null
+  astore 43
+  aload 42
+  astore_1
+  aload 43
+  astore_2
+  aload_1
+  aload 10
+  aload_2
+  invokespecial com/admogo/AdMogoLayout$IfUpdate/<init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/AdMogoLayout$IfUpdate;)V
+  getstatic java/util/concurrent/TimeUnit/SECONDS Ljava/util/concurrent/TimeUnit;
+  astore 44
+  ldc2_w 0
+  lstore 32
+  aload 41
+  astore_1
+  aload 42
+  astore_2
+  lload 32
+  lstore_3
+  aload 44
+  astore 5
+  aload_1
+  aload_2
+  lload_3
+  aload 5
+  invokeinterface java/util/concurrent/ScheduledExecutorService/schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture; 5
+  pop
+Label11:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$5(Lcom/admogo/AdMogoLayout;)Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  getfield com/admogo/AdMogoLayout/extra Lcom/admogo/obj/Extra;
+  astore_1
+  aload_1
+  astore 28
+  aload 28
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 28
+  ifnonnull Label12
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 27
+  ldc "Stop Show Ads"
+  astore 22
+  aload 27
+  astore_1
+  aload 22
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/i(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label0
+Label9:
+  aload 24
+  astore_1
+  aload_1
+  invokevirtual android/telephony/TelephonyManager/getNetworkCountryIso()Ljava/lang/String;
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokevirtual java/lang/String/toLowerCase()Ljava/lang/String;
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokestatic com/admogo/AdMogoLayout/access$11(Ljava/lang/String;)V
+  invokestatic com/admogo/AdMogoLayout/access$1()Ljava/lang/String;
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 18
+  iload 18
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 18
+  ifeq Label13
+  invokestatic java/util/Locale/getDefault()Ljava/util/Locale;
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  invokevirtual java/util/Locale/getCountry()Ljava/lang/String;
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokevirtual java/lang/String/toLowerCase()Ljava/lang/String;
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokestatic com/admogo/AdMogoLayout/access$11(Ljava/lang/String;)V
+  goto Label13
+Label6:
+  getstatic com/admogo/AdMogoTargeting/countryCode Ljava/lang/String;
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokestatic com/admogo/AdMogoLayout/access$11(Ljava/lang/String;)V
+  goto Label13
+Label10:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$5(Lcom/admogo/AdMogoLayout;)Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  getfield com/admogo/AdMogoLayout/adMogoManager Lcom/admogo/AdMogoManager;
+  astore 14
+  aload 14
+  invokevirtual com/admogo/AdMogoManager/getConfigurationPriority()V
+  goto Label14
+Label12:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$5(Lcom/admogo/AdMogoLayout;)Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  getfield com/admogo/AdMogoLayout/extra Lcom/admogo/obj/Extra;
+  astore_1
+  aload_1
+  astore 28
+  aload 28
+  astore_1
+  aload_1
+  getfield com/admogo/obj/Extra/locationOn I
+  istore_1
+  iload_1
+  istore 35
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 19
+  iload 35
+  istore_1
+  iload 19
+  istore_2
+  iload_1
+  iload_2
+  if_icmpne Label15
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 27
+  ldc "location is ON"
+  astore 22
+  aload 27
+  astore_1
+  aload 22
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  invokestatic com/admogo/AdMogoLayout/access$10()Z
+  istore 18
+  iload 18
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 18
+  ifne Label15
+  getstatic com/admogo/AdMogoTargeting/countryCode Ljava/lang/String;
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 18
+  iload 18
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 18
+  ifeq Label15
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  getfield com/admogo/AdMogoLayout/scheduler Ljava/util/concurrent/ScheduledExecutorService;
+  astore_1
+  aload_1
+  astore 41
+  new com/admogo/AdMogoLayout$getAdByCountryCode
+  astore 45
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$5(Lcom/admogo/AdMogoLayout;)Lcom/admogo/AdMogoLayout;
+  astore 10
+  invokestatic com/admogo/AdMogoLayout/access$1()Ljava/lang/String;
+  astore 27
+  aload 45
+  astore_1
+  aload 27
+  astore_2
+  aload_1
+  aload 10
+  aload 12
+  aload_2
+  invokespecial com/admogo/AdMogoLayout$getAdByCountryCode/<init>(Lcom/admogo/AdMogoLayout;Landroid/content/Context;Ljava/lang/String;)V
+  getstatic java/util/concurrent/TimeUnit/SECONDS Ljava/util/concurrent/TimeUnit;
+  astore 44
+  ldc2_w 0
+  lstore 32
+  aload 41
+  astore_1
+  aload 45
+  astore_2
+  lload 32
+  lstore_3
+  aload 44
+  astore 5
+  aload_1
+  aload_2
+  lload_3
+  aload 5
+  invokeinterface java/util/concurrent/ScheduledExecutorService/schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture; 5
+  pop
+Label15:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$13(Lcom/admogo/AdMogoLayout;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/AdMogoLayout$InitRunnable/this$0 Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$5(Lcom/admogo/AdMogoLayout;)Lcom/admogo/AdMogoLayout;
+  astore 10
+  aload 10
+  invokestatic com/admogo/AdMogoLayout/access$14(Lcom/admogo/AdMogoLayout;)V
+  goto Label0
+  nop
+.end <method>
+

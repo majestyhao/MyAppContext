@@ -1,0 +1,3686 @@
+.source SourceFile
+.class  cn/domob/android/ads/b/b
+.super java/lang/Thread
+.field private static final "N" I =  4096
+.field public static final "a" I =  0
+.field public static final "b" I =  1
+.field public static final "c" I =  2
+.field public static final "d" I =  -1
+.field private "A" I
+.field private "B" I
+.field private "C" Landroid/graphics/Bitmap;
+.field private "D" Landroid/graphics/Bitmap;
+.field private "E" Lcn/domob/android/ads/b/c;
+.field private "F" Z
+.field private "G" [B
+.field private "H" I
+.field private "I" I
+.field private "J" I
+.field private "K" Z
+.field private "L" I
+.field private "M" I
+.field private "O" [S
+.field private "P" [B
+.field private "Q" [B
+.field private "R" [B
+.field private "S" Lcn/domob/android/ads/b/c;
+.field private "T" I
+.field private "U" Lcn/domob/android/ads/b/a;
+.field private "V" [B
+.field public "e" I
+.field public "f" I
+.field private "g" Ljava/io/InputStream;
+.field private "h" I
+.field private "i" Z
+.field private "j" I
+.field private "k" I
+.field private "l" [I
+.field private "m" [I
+.field private "n" [I
+.field private "o" I
+.field private "p" I
+.field private "q" I
+.field private "r" Z
+.field private "s" Z
+.field private "t" I
+.field private "u" I
+.field private "v" I
+.field private "w" I
+.field private "x" I
+.field private "y" I
+.field private "z" I
+
+.method public <init>(Ljava/io/InputStream;Lcn/domob/android/ads/b/a;)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  iconst_1
+  istore_3
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/b/b/k I
+  aconst_null
+  astore 4
+  aload_0
+  aload 4
+  putfield cn/domob/android/ads/b/b/E Lcn/domob/android/ads/b/c;
+  iconst_0
+  istore_3
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/b/b/F Z
+  sipush 256
+  istore_3
+  iload_3
+  newarray byte
+  astore 5
+  aload_0
+  aload 5
+  putfield cn/domob/android/ads/b/b/G [B
+  iconst_0
+  istore_3
+  iload_3
+  istore 6
+  aload_0
+  iload 6
+  putfield cn/domob/android/ads/b/b/H I
+  iconst_0
+  istore_3
+  iload_3
+  istore 6
+  aload_0
+  iload 6
+  putfield cn/domob/android/ads/b/b/I I
+  iconst_0
+  istore_3
+  iload_3
+  istore 6
+  aload_0
+  iload 6
+  putfield cn/domob/android/ads/b/b/J I
+  iconst_0
+  istore_3
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/b/b/K Z
+  iconst_0
+  istore_3
+  iload_3
+  istore 6
+  aload_0
+  iload 6
+  putfield cn/domob/android/ads/b/b/L I
+  aconst_null
+  astore 4
+  aload_0
+  aload 4
+  putfield cn/domob/android/ads/b/b/U Lcn/domob/android/ads/b/a;
+  aconst_null
+  astore 4
+  aload_0
+  aload 4
+  putfield cn/domob/android/ads/b/b/V [B
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/b/b/g Ljava/io/InputStream;
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/b/b/U Lcn/domob/android/ads/b/a;
+  return
+  nop
+.end <method>
+
+.method public <init>([BLcn/domob/android/ads/b/a;)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  iconst_1
+  istore_3
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/b/b/k I
+  aconst_null
+  astore 4
+  aload_0
+  aload 4
+  putfield cn/domob/android/ads/b/b/E Lcn/domob/android/ads/b/c;
+  iconst_0
+  istore_3
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/b/b/F Z
+  sipush 256
+  istore_3
+  iload_3
+  newarray byte
+  astore 5
+  aload_0
+  aload 5
+  putfield cn/domob/android/ads/b/b/G [B
+  iconst_0
+  istore_3
+  iload_3
+  istore 6
+  aload_0
+  iload 6
+  putfield cn/domob/android/ads/b/b/H I
+  iconst_0
+  istore_3
+  iload_3
+  istore 6
+  aload_0
+  iload 6
+  putfield cn/domob/android/ads/b/b/I I
+  iconst_0
+  istore_3
+  iload_3
+  istore 6
+  aload_0
+  iload 6
+  putfield cn/domob/android/ads/b/b/J I
+  iconst_0
+  istore_3
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/b/b/K Z
+  iconst_0
+  istore_3
+  iload_3
+  istore 6
+  aload_0
+  iload 6
+  putfield cn/domob/android/ads/b/b/L I
+  aconst_null
+  astore 4
+  aload_0
+  aload 4
+  putfield cn/domob/android/ads/b/b/U Lcn/domob/android/ads/b/a;
+  aconst_null
+  astore 4
+  aload_0
+  aload 4
+  putfield cn/domob/android/ads/b/b/V [B
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/b/b/V [B
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/b/b/U Lcn/domob/android/ads/b/a;
+  return
+  nop
+.end <method>
+
+.method private A()V
+.limit locals 3
+.limit stack 200
+  nop
+Label1:
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/r()I
+  pop
+  aload_0
+  getfield cn/domob/android/ads/b/b/H I
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifle Label0
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/o()Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label1
+Label0:
+  return
+  nop
+.end <method>
+
+.method public a(I)I
+.limit locals 5
+.limit stack 200
+  nop
+  iconst_m1
+  istore_2
+  aload_0
+  iload_2
+  putfield cn/domob/android/ads/b/b/L I
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  iflt Label0
+  aload_0
+  getfield cn/domob/android/ads/b/b/T I
+  istore_3
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload_3
+  if_icmpge Label0
+  aload_0
+  iload_1
+  invokevirtual cn/domob/android/ads/b/b/c(I)Lcn/domob/android/ads/b/c;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label0
+  aload 4
+  getfield cn/domob/android/ads/b/c/b I
+  istore_3
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/b/b/L I
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/b/b/L I
+  istore_3
+  iload_3
+  ireturn
+  nop
+.end <method>
+
+.method public a()V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/b/b/S Lcn/domob/android/ads/b/c;
+  astore_1
+Label2:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_1
+  getfield cn/domob/android/ads/b/c/a Landroid/graphics/Bitmap;
+  astore_2
+  aload_2
+  invokevirtual android/graphics/Bitmap/isRecycled()Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifne Label1
+  aload_1
+  getfield cn/domob/android/ads/b/c/a Landroid/graphics/Bitmap;
+  astore_2
+  aload_2
+  invokevirtual android/graphics/Bitmap/recycle()V
+Label1:
+  aconst_null
+  astore 4
+  aload_1
+  aload 4
+  putfield cn/domob/android/ads/b/c/a Landroid/graphics/Bitmap;
+  aload_0
+  getfield cn/domob/android/ads/b/b/S Lcn/domob/android/ads/b/c;
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/c/c Lcn/domob/android/ads/b/c;
+  astore_1
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/b/b/S Lcn/domob/android/ads/b/c;
+  aload_0
+  getfield cn/domob/android/ads/b/b/S Lcn/domob/android/ads/b/c;
+  astore_1
+  goto Label2
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/b/b/g Ljava/io/InputStream;
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  ifnull Label3
+Label6:
+  aload_0
+  getfield cn/domob/android/ads/b/b/g Ljava/io/InputStream;
+  astore 5
+  aload 5
+  invokevirtual java/io/InputStream/close()V
+Label4:
+  aconst_null
+  astore 4
+  aload_0
+  aload 4
+  putfield cn/domob/android/ads/b/b/g Ljava/io/InputStream;
+Label3:
+  aconst_null
+  astore 4
+  aload_0
+  aload 4
+  putfield cn/domob/android/ads/b/b/V [B
+  return
+Label5:
+  astore 6
+  goto Label4
+  nop
+.end <method>
+
+.method public b()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/b/b/h I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public b(I)Landroid/graphics/Bitmap;
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  invokevirtual cn/domob/android/ads/b/b/c(I)Lcn/domob/android/ads/b/c;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  aconst_null
+  astore_3
+  aload_3
+  areturn
+Label0:
+  aload_2
+  getfield cn/domob/android/ads/b/c/a Landroid/graphics/Bitmap;
+  astore 4
+  aload 4
+  areturn
+  nop
+.end <method>
+
+.method public c(I)Lcn/domob/android/ads/b/c;
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/b/b/S Lcn/domob/android/ads/b/c;
+  astore_2
+  iconst_0
+  istore_3
+Label2:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload_1
+  if_icmpne Label1
+  aload_2
+  areturn
+Label1:
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  aload_2
+  getfield cn/domob/android/ads/b/c/c Lcn/domob/android/ads/b/c;
+  astore_2
+  goto Label2
+Label0:
+  aconst_null
+  astore 4
+  aload 4
+  areturn
+  nop
+.end <method>
+
+.method public c()Z
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/b/b/h I
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_m1
+  istore_2
+  iload_1
+  iload_2
+  if_icmpne Label0
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public d()[I
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/b/b/S Lcn/domob/android/ads/b/c;
+  astore_1
+  aload_0
+  getfield cn/domob/android/ads/b/b/T I
+  istore_2
+  iload_2
+  newarray int
+  astore_3
+  iconst_0
+  istore 4
+Label1:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_0
+  getfield cn/domob/android/ads/b/b/T I
+  istore_2
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  iload_2
+  if_icmpge Label0
+  aload_1
+  getfield cn/domob/android/ads/b/c/b I
+  istore_2
+  aload_3
+  iload 4
+  iload_2
+  iastore
+  aload_1
+  getfield cn/domob/android/ads/b/c/c Lcn/domob/android/ads/b/c;
+  astore_1
+  iload 4
+  iconst_1
+  iadd
+  istore 4
+  goto Label1
+Label0:
+  aload_3
+  areturn
+  nop
+.end <method>
+
+.method private d(I)[I
+.limit locals 16
+.limit stack 200
+  .catch  java/lang/Exception <from> Label5 <to> Label1 <using> Label4
+  nop
+  iconst_0
+  istore_2
+  iload_1
+  iconst_3
+  imul
+  istore_3
+  iconst_0
+  istore 4
+  iload_3
+  newarray byte
+  astore 5
+Label5:
+  aload_0
+  getfield cn/domob/android/ads/b/b/g Ljava/io/InputStream;
+  astore 6
+  aload 6
+  aload 5
+  invokevirtual java/io/InputStream/read([B)I
+  istore 7
+Label1:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  iload_3
+  if_icmpge Label0
+  iconst_1
+  istore 8
+  aload_0
+  iload 8
+  putfield cn/domob/android/ads/b/b/h I
+Label2:
+  aload 4
+  areturn
+Label4:
+  astore 9
+  aload 9
+  invokevirtual java/lang/Exception/printStackTrace()V
+  iconst_0
+  istore 7
+  goto Label1
+Label0:
+  sipush 256
+  istore 8
+  iload 8
+  newarray int
+  astore 4
+  iconst_0
+  istore 7
+Label3:
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_1
+  if_icmpge Label2
+  iload 7
+  iconst_1
+  iadd
+  istore 10
+  aload 5
+  iload 7
+  baload
+  istore 11
+  sipush 255
+  istore 8
+  iload 11
+  iload 8
+  iand
+  istore 12
+  iload 10
+  iconst_1
+  iadd
+  istore_3
+  aload 5
+  iload 10
+  baload
+  istore 11
+  sipush 255
+  istore 8
+  iload 11
+  iload 8
+  iand
+  istore 13
+  iload_3
+  iconst_1
+  iadd
+  istore 7
+  aload 5
+  iload_3
+  baload
+  istore 11
+  sipush 255
+  istore 8
+  iload 11
+  iload 8
+  iand
+  istore 14
+  iload 12
+  bipush 16
+  ishl
+  istore 15
+  ldc -16777216
+  istore 8
+  iload 15
+  iload 8
+  ior
+  istore 15
+  iload 13
+  bipush 8
+  ishl
+  istore_3
+  iload 15
+  iload_3
+  ior
+  istore 15
+  iload 15
+  iload 14
+  ior
+  istore 15
+  aload 4
+  iload_2
+  iload 15
+  iastore
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label3
+  nop
+.end <method>
+
+.method public e()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/b/b/T I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public f()Landroid/graphics/Bitmap;
+.limit locals 3
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  invokevirtual cn/domob/android/ads/b/b/b(I)Landroid/graphics/Bitmap;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public g()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/b/b/k I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public h()Lcn/domob/android/ads/b/c;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/b/b/E Lcn/domob/android/ads/b/c;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public i()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/b/b/S Lcn/domob/android/ads/b/c;
+  astore_1
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/b/b/E Lcn/domob/android/ads/b/c;
+  return
+  nop
+.end <method>
+
+.method public j()Lcn/domob/android/ads/b/c;
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/b/b/F Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  iconst_1
+  istore_2
+  aload_0
+  iload_2
+  putfield cn/domob/android/ads/b/b/F Z
+  aload_0
+  getfield cn/domob/android/ads/b/b/S Lcn/domob/android/ads/b/c;
+  astore_3
+  aload_3
+  areturn
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/b/b/h I
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifne Label1
+  aload_0
+  getfield cn/domob/android/ads/b/b/E Lcn/domob/android/ads/b/c;
+  astore_3
+  aload_3
+  getfield cn/domob/android/ads/b/c/c Lcn/domob/android/ads/b/c;
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  ifnull Label2
+  aload_0
+  getfield cn/domob/android/ads/b/b/E Lcn/domob/android/ads/b/c;
+  astore_3
+  aload_3
+  getfield cn/domob/android/ads/b/c/c Lcn/domob/android/ads/b/c;
+  astore_3
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/b/b/E Lcn/domob/android/ads/b/c;
+Label2:
+  aload_0
+  getfield cn/domob/android/ads/b/b/E Lcn/domob/android/ads/b/c;
+  astore_3
+  aload_3
+  areturn
+Label1:
+  aload_0
+  getfield cn/domob/android/ads/b/b/E Lcn/domob/android/ads/b/c;
+  astore_3
+  aload_3
+  getfield cn/domob/android/ads/b/c/c Lcn/domob/android/ads/b/c;
+  astore_3
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/b/b/E Lcn/domob/android/ads/b/c;
+  aload_0
+  getfield cn/domob/android/ads/b/b/E Lcn/domob/android/ads/b/c;
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  ifnonnull Label2
+  aload_0
+  getfield cn/domob/android/ads/b/b/S Lcn/domob/android/ads/b/c;
+  astore_3
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/b/b/E Lcn/domob/android/ads/b/c;
+  goto Label2
+  nop
+.end <method>
+
+.method private k()V
+.limit locals 33
+.limit stack 200
+  nop
+  iconst_0
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/e I
+  istore 10
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/f I
+  istore 11
+  iload 10
+  iload 11
+  imul
+  istore 12
+  iload 12
+  newarray int
+  astore 13
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/J I
+  istore 12
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 12
+  ifle Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/J I
+  istore 12
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_3
+  istore 14
+  iload 12
+  iload 14
+  if_icmpne Label1
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/T I
+  istore 12
+  iload 12
+  bipush -2
+  iadd
+  istore 12
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 12
+  ifle Label2
+  iload 12
+  iconst_m1
+  iadd
+  istore 12
+  aload_0
+  astore_1
+  aload_1
+  iload 12
+  invokevirtual cn/domob/android/ads/b/b/b(I)Landroid/graphics/Bitmap;
+  astore 15
+  aload_0
+  astore_1
+  aload_1
+  aload 15
+  putfield cn/domob/android/ads/b/b/D Landroid/graphics/Bitmap;
+Label1:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/D Landroid/graphics/Bitmap;
+  astore 15
+  aload 15
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 15
+  ifnull Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/D Landroid/graphics/Bitmap;
+  astore 15
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/e I
+  istore 16
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/e I
+  istore_1
+  iload_1
+  istore 17
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/f I
+  istore 12
+  iconst_0
+  istore 14
+  iconst_0
+  istore 18
+  iconst_0
+  istore 19
+  aload 15
+  astore_1
+  aload 13
+  astore_2
+  iload 14
+  istore_3
+  iload 16
+  istore 4
+  iload 18
+  istore 5
+  iload 19
+  istore 6
+  iload 17
+  istore 7
+  iload 12
+  istore 8
+  aload_1
+  aload_2
+  iload_3
+  iload 4
+  iload 5
+  iload 6
+  iload 7
+  iload 8
+  invokevirtual android/graphics/Bitmap/getPixels([IIIIIII)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/J I
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 14
+  iload 16
+  iload 14
+  if_icmpne Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/K Z
+  istore_1
+  iload_1
+  istore 20
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 20
+  ifne Label3
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/q I
+  istore 16
+Label21:
+  iconst_0
+  dstore 12
+Label6:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/B I
+  istore_1
+  iload_1
+  istore 17
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 17
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 17
+  istore_1
+  iload 12
+  iload_1
+  if_icmpge Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/z I
+  istore_1
+  iload_1
+  istore 17
+  iload_1
+  iload 12
+  iadd
+  istore_1
+  iload_1
+  istore 17
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/e I
+  istore 11
+  iload 17
+  istore_1
+  iload_1
+  iload 11
+  imul
+  istore_1
+  iload_1
+  istore 17
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/y I
+  istore 11
+  iload 17
+  istore_1
+  iload_1
+  iload 11
+  iadd
+  istore_1
+  iload_1
+  istore 17
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/A I
+  istore 11
+  iload 17
+  istore_1
+  iload 11
+  iload_1
+  iadd
+  istore 11
+Label5:
+  iload 17
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 17
+  istore_1
+  iload_1
+  iload 11
+  if_icmpge Label4
+  aload 13
+  iload 17
+  iload 16
+  iastore
+  iload 17
+  iconst_1
+  iadd
+  istore 17
+  goto Label5
+Label2:
+  aconst_null
+  astore 21
+  aload 21
+  astore_1
+  aload_0
+  astore_2
+  aload_2
+  aload_1
+  putfield cn/domob/android/ads/b/b/D Landroid/graphics/Bitmap;
+  goto Label1
+Label4:
+  iload 12
+  iconst_1
+  iadd
+  istore 12
+  goto Label6
+Label0:
+  bipush 8
+  istore 22
+  iconst_1
+  istore 16
+  iconst_0
+  istore 17
+Label18:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/x I
+  istore 12
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  iload 12
+  if_icmpge Label7
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/s Z
+  istore_1
+  iload_1
+  istore 20
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 20
+  ifeq Label8
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/x I
+  istore 12
+  iload 17
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 17
+  istore_1
+  iload_1
+  iload 12
+  if_icmplt Label9
+  iload 16
+  iconst_1
+  iadd
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 16
+  lookupswitch
+  2 : Label11
+  3 : Label12
+  4 : Label13
+  default : Label10
+Label10:
+  goto Label9
+Label9:
+  iload 17
+  istore 12
+  iload 17
+  istore_1
+  iload 22
+  istore_2
+  iload_1
+  iload_2
+  iadd
+  istore_1
+  iload_1
+  istore 17
+Label20:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/v I
+  istore 11
+  iload 12
+  iload 11
+  iadd
+  istore 12
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/f I
+  istore 11
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 12
+  iload 11
+  if_icmpge Label14
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/e I
+  istore 11
+  iload 11
+  iload 12
+  imul
+  istore 11
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/u I
+  istore 12
+  iload 11
+  iload 12
+  iadd
+  istore 10
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/w I
+  istore 12
+  iload 12
+  iload 10
+  iadd
+  istore 23
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/e I
+  istore 12
+  iload 12
+  iload 11
+  iadd
+  istore 12
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 23
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 23
+  istore_1
+  iload 12
+  iload_1
+  if_icmpge Label15
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/e I
+  istore_1
+  iload_1
+  istore 23
+  iload_1
+  iload 11
+  iadd
+  istore_1
+  iload_1
+  istore 23
+Label15:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/w I
+  istore 12
+  iload 12
+  iload 9
+  imul
+  istore 12
+  iload 10
+  istore 11
+Label17:
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 23
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 23
+  istore_1
+  iload 11
+  iload_1
+  if_icmpge Label14
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/R [B
+  astore_1
+  aload_1
+  astore 24
+  iload 12
+  iconst_1
+  iadd
+  istore 10
+  aload 24
+  iload 12
+  baload
+  istore 25
+  sipush 255
+  istore 14
+  iload 25
+  iload 14
+  iand
+  istore 26
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/n [I
+  astore_1
+  aload_1
+  astore 27
+  aload 27
+  iload 26
+  iaload
+  istore 12
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 12
+  ifeq Label16
+  aload 13
+  iload 11
+  iload 12
+  iastore
+Label16:
+  iload 11
+  iconst_1
+  iadd
+  istore 11
+  iload 10
+  istore 12
+  goto Label17
+Label11:
+  iconst_4
+  istore 17
+  goto Label9
+Label12:
+  iconst_2
+  istore 17
+  iconst_4
+  istore 22
+  goto Label9
+Label13:
+  iconst_1
+  istore 17
+  iconst_2
+  istore 22
+  goto Label9
+Label14:
+  iload 9
+  iconst_1
+  iadd
+  istore 9
+  goto Label18
+Label7:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/e I
+  istore_1
+  iload_1
+  istore 23
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/f I
+  istore 16
+  getstatic android/graphics/Bitmap$Config/ARGB_4444 Landroid/graphics/Bitmap$Config;
+  astore 28
+  iload 23
+  istore_1
+  aload 28
+  astore_2
+  aload 13
+  iload_1
+  iload 16
+  aload_2
+  invokestatic android/graphics/Bitmap/createBitmap([IIILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+  astore 15
+  aload_0
+  astore_1
+  aload_1
+  aload 15
+  putfield cn/domob/android/ads/b/b/C Landroid/graphics/Bitmap;
+Label19:
+  return
+Label23:
+  astore 29
+  ldc "gif"
+  astore 30
+  ldc "out of memory"
+  astore 31
+  aload 30
+  astore_1
+  aload 31
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label19
+Label22:
+  astore 32
+  ldc "gif"
+  astore 30
+  ldc "out of memory"
+  astore 31
+  aload 30
+  astore_1
+  aload 31
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label19
+Label8:
+  iload 9
+  istore 12
+  goto Label20
+Label3:
+  iconst_0
+  istore 16
+  goto Label21
+  nop
+  nop
+  nop
+.end <method>
+
+.method private l()I
+.limit locals 5
+.limit stack 200
+  nop
+  new java/io/ByteArrayInputStream
+  astore_1
+  aload_0
+  getfield cn/domob/android/ads/b/b/V [B
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/io/ByteArrayInputStream/<init>([B)V
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/b/b/g Ljava/io/InputStream;
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/b/b/V [B
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/m()I
+  istore 4
+  iload 4
+  ireturn
+  nop
+.end <method>
+
+.method private m()I
+.limit locals 8
+.limit stack 200
+  nop
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/p()V
+  aload_0
+  getfield cn/domob/android/ads/b/b/g Ljava/io/InputStream;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/u()V
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/o()Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifne Label1
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/s()V
+  aload_0
+  getfield cn/domob/android/ads/b/b/T I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  ifge Label2
+  iconst_1
+  istore 4
+  iload 4
+  istore_3
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/b/b/h I
+  aload_0
+  getfield cn/domob/android/ads/b/b/U Lcn/domob/android/ads/b/a;
+  astore 5
+  iconst_0
+  istore 4
+  iconst_m1
+  istore 6
+  aload 5
+  iload 4
+  iload 6
+  invokeinterface cn/domob/android/ads/b/a/a(ZI)V 3
+Label1:
+  aload_0
+  getfield cn/domob/android/ads/b/b/g Ljava/io/InputStream;
+  astore_1
+  aload_1
+  invokevirtual java/io/InputStream/close()V
+Label3:
+  aload_0
+  getfield cn/domob/android/ads/b/b/h I
+  istore_3
+  iload_3
+  ireturn
+Label2:
+  iconst_m1
+  istore 4
+  aload_0
+  iload 4
+  putfield cn/domob/android/ads/b/b/h I
+  aload_0
+  getfield cn/domob/android/ads/b/b/U Lcn/domob/android/ads/b/a;
+  astore 5
+  iconst_1
+  istore 4
+  iconst_m1
+  istore 6
+  aload 5
+  iload 4
+  iload 6
+  invokeinterface cn/domob/android/ads/b/a/a(ZI)V 3
+  goto Label1
+Label4:
+  astore 7
+  aload 7
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label3
+Label0:
+  iconst_2
+  istore 4
+  aload_0
+  iload 4
+  putfield cn/domob/android/ads/b/b/h I
+  aload_0
+  getfield cn/domob/android/ads/b/b/U Lcn/domob/android/ads/b/a;
+  astore 5
+  iconst_0
+  istore 4
+  iconst_m1
+  istore 6
+  aload 5
+  iload 4
+  iload 6
+  invokeinterface cn/domob/android/ads/b/a/a(ZI)V 3
+  goto Label3
+  nop
+.end <method>
+
+.method private n()V
+.limit locals 29
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/w I
+  istore_3
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/x I
+  istore 4
+  iload_3
+  iload 4
+  imul
+  istore 5
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/R [B
+  astore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifeq Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/R [B
+  astore 6
+  aload 6
+  arraylength
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  iload 5
+  if_icmpge Label1
+Label0:
+  iload 5
+  newarray byte
+  astore 6
+  aload_0
+  astore_1
+  aload_1
+  aload 6
+  putfield cn/domob/android/ads/b/b/R [B
+Label1:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/O [S
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnonnull Label2
+  sipush 4096
+  istore 9
+  iload 9
+  newarray short
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  aload 8
+  putfield cn/domob/android/ads/b/b/O [S
+Label2:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/P [B
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnonnull Label3
+  sipush 4096
+  istore 9
+  iload 9
+  newarray byte
+  astore 6
+  aload_0
+  astore_1
+  aload_1
+  aload 6
+  putfield cn/domob/android/ads/b/b/P [B
+Label3:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/Q [B
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnonnull Label4
+  sipush 4097
+  istore 9
+  iload 9
+  newarray byte
+  astore 6
+  aload_0
+  astore_1
+  aload_1
+  aload 6
+  putfield cn/domob/android/ads/b/b/Q [B
+Label4:
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/b/b/q()I
+  istore 10
+  iconst_1
+  istore 9
+  iload 9
+  iload 10
+  ishl
+  istore 11
+  iload 11
+  iconst_1
+  iadd
+  istore 7
+  iload 11
+  iconst_2
+  iadd
+  istore 12
+  iload 10
+  iconst_1
+  iadd
+  istore 4
+  iconst_1
+  istore 9
+  iload 9
+  iload 4
+  ishl
+  istore 13
+  iload 13
+  iconst_m1
+  iadd
+  istore_3
+  iconst_0
+  dstore 13
+Label6:
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  iload 11
+  if_icmpge Label5
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/O [S
+  astore 8
+  iconst_0
+  istore 9
+  aload 8
+  iload 13
+  iload 9
+  sastore
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/P [B
+  astore 6
+  iload 13
+  i2b
+  istore 14
+  aload 6
+  iload 13
+  iload 14
+  bastore
+  iload 13
+  iconst_1
+  iadd
+  istore 13
+  goto Label6
+Label5:
+  iconst_0
+  istore 15
+  iconst_0
+  istore 16
+  iconst_0
+  istore 17
+  iconst_0
+  istore 18
+  iconst_0
+  dstore 13
+  iconst_0
+  istore 19
+  iconst_0
+  istore 20
+  iconst_m1
+  istore 21
+  iconst_0
+  istore 22
+Label14:
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  iload 5
+  if_icmpge Label7
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 16
+  ifne Label8
+  iload 20
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 20
+  istore_1
+  iload_1
+  iload 4
+  if_icmpge Label9
+  iload 19
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  ifne Label10
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/b/b/r()I
+  istore 19
+  iload 19
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  ifgt Label11
+Label7:
+  iload 15
+  istore 23
+Label13:
+  iload 23
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 23
+  istore_1
+  iload_1
+  iload 5
+  if_icmpge Label12
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/R [B
+  astore 6
+  iconst_0
+  istore 9
+  aload 6
+  iload 23
+  iload 9
+  bastore
+  iload 23
+  iconst_1
+  iadd
+  istore 23
+  goto Label13
+Label11:
+  iconst_0
+  istore 22
+Label10:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/G [B
+  astore 6
+  aload 6
+  iload 22
+  baload
+  istore 14
+  sipush 255
+  istore 9
+  iload 14
+  iload 9
+  iand
+  istore 24
+  iload 24
+  iload 20
+  ishl
+  istore 23
+  iload 18
+  istore_1
+  iload 23
+  istore_2
+  iload_1
+  iload_2
+  iadd
+  istore_1
+  iload_1
+  istore 18
+  iload 20
+  bipush 8
+  iadd
+  istore 20
+  iload 22
+  iconst_1
+  iadd
+  istore 22
+  iload 19
+  iconst_m1
+  iadd
+  istore 19
+  goto Label14
+Label9:
+  iload 18
+  iload_3
+  iand
+  istore 23
+  iload 18
+  istore_1
+  iload_1
+  iload 4
+  ishr
+  istore_1
+  iload_1
+  istore 18
+  iload 20
+  istore_1
+  iload_1
+  iload 4
+  isub
+  istore_1
+  iload_1
+  istore 20
+  iload 23
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 23
+  istore_1
+  iload_1
+  iload 12
+  if_icmpgt Label7
+  iload 23
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 23
+  istore_1
+  iload_1
+  iload 7
+  if_icmpeq Label7
+  iload 23
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 23
+  istore_1
+  iload_1
+  iload 11
+  if_icmpne Label15
+  iload 10
+  iconst_1
+  iadd
+  istore 4
+  iconst_1
+  istore 9
+  iload 9
+  iload 4
+  ishl
+  istore 25
+  iload 25
+  iconst_m1
+  iadd
+  istore_3
+  iload 11
+  iconst_2
+  iadd
+  istore 12
+  iconst_m1
+  istore 21
+  goto Label14
+Label15:
+  iload 21
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 9
+  iload 21
+  istore_1
+  iload_1
+  iload 9
+  if_icmpne Label16
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/Q [B
+  astore_1
+  aload_1
+  astore 26
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/P [B
+  astore 6
+  aload 6
+  iload 23
+  baload
+  istore 14
+  aload 26
+  iload 16
+  iload 14
+  bastore
+  iload 16
+  iconst_1
+  iadd
+  istore 16
+  iload 23
+  istore 21
+  iload 23
+  istore 17
+  goto Label14
+Label16:
+  iload 23
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 23
+  istore_1
+  iload_1
+  iload 12
+  if_icmpne Label17
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/Q [B
+  astore 6
+  iload 16
+  iconst_1
+  iadd
+  istore 25
+  iload 17
+  istore_1
+  iload_1
+  i2b
+  istore 14
+  aload 6
+  iload 16
+  iload 14
+  bastore
+  iload 21
+  istore 16
+Label19:
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 16
+  iload 11
+  if_icmple Label18
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/Q [B
+  astore_1
+  aload_1
+  astore 26
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/P [B
+  astore 6
+  aload 6
+  iload 16
+  baload
+  istore 14
+  aload 26
+  iload 25
+  iload 14
+  bastore
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/O [S
+  astore 8
+  aload 8
+  iload 16
+  saload
+  istore 16
+  iload 25
+  iconst_1
+  iadd
+  istore 25
+  goto Label19
+Label18:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/P [B
+  astore_1
+  aload_1
+  astore 26
+  aload 26
+  iload 16
+  baload
+  istore 14
+  sipush 255
+  istore 9
+  iload 14
+  iload 9
+  iand
+  istore 24
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 4096
+  istore 9
+  iload 12
+  iload 9
+  if_icmpge Label7
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/Q [B
+  astore_1
+  aload_1
+  astore 26
+  iload 25
+  iconst_1
+  iadd
+  istore 16
+  iload 24
+  istore_1
+  iload_1
+  i2b
+  istore 14
+  aload 26
+  iload 25
+  iload 14
+  bastore
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/O [S
+  astore 8
+  iload 21
+  istore_1
+  iload_1
+  i2s
+  istore_1
+  iload_1
+  istore 27
+  aload 8
+  iload 12
+  iload 27
+  sastore
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/P [B
+  astore_1
+  aload_1
+  astore 26
+  iload 24
+  istore_1
+  iload_1
+  i2b
+  istore 14
+  aload 26
+  iload 12
+  iload 14
+  bastore
+  iload 12
+  iconst_1
+  iadd
+  istore 25
+  iload 25
+  iload_3
+  iand
+  istore 12
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 12
+  ifne Label20
+  iload 25
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 4096
+  istore 9
+  iload 25
+  istore_1
+  iload_1
+  iload 9
+  if_icmpge Label20
+  iload 4
+  iconst_1
+  iadd
+  istore 4
+  iload 25
+  istore_1
+  iload_3
+  iload_1
+  iadd
+  istore_3
+Label20:
+  iload 16
+  istore 12
+  iload 18
+  istore 16
+  iload 24
+  istore 17
+  iload 12
+  istore 28
+Label21:
+  iload 28
+  iconst_m1
+  iadd
+  istore 28
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/R [B
+  astore_1
+  aload_1
+  astore 26
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/Q [B
+  astore 6
+  aload 6
+  iload 28
+  baload
+  istore 14
+  aload 26
+  iload 15
+  iload 14
+  bastore
+  iload 13
+  iconst_1
+  iadd
+  istore 13
+  iload 15
+  iconst_1
+  iadd
+  istore 15
+  iload 16
+  istore 18
+  iload 28
+  istore 16
+  iload 25
+  istore 12
+  iload 23
+  istore 21
+  goto Label14
+Label12:
+  return
+Label17:
+  iload 16
+  istore 25
+  iload 23
+  istore 16
+  goto Label19
+Label8:
+  iload 16
+  istore 28
+  iload 18
+  istore 16
+  iload 21
+  istore 23
+  iload 12
+  istore 25
+  goto Label21
+  nop
+.end <method>
+
+.method private o()Z
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/b/b/h I
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method private p()V
+.limit locals 3
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/b/b/h I
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/b/b/T I
+  aconst_null
+  astore_2
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/b/b/S Lcn/domob/android/ads/b/c;
+  aconst_null
+  astore_2
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/b/b/l [I
+  aconst_null
+  astore_2
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/b/b/m [I
+  return
+  nop
+.end <method>
+
+.method private q()I
+.limit locals 5
+.limit stack 200
+  .catch  java/lang/Exception <from> Label1 <to> Label2 <using> Label0
+  nop
+Label1:
+  aload_0
+  getfield cn/domob/android/ads/b/b/g Ljava/io/InputStream;
+  astore_1
+  aload_1
+  invokevirtual java/io/InputStream/read()I
+  istore_2
+Label2:
+  iload_2
+  ireturn
+Label0:
+  astore_3
+  iconst_1
+  istore 4
+  aload_0
+  iload 4
+  putfield cn/domob/android/ads/b/b/h I
+  iconst_0
+  istore 4
+  iload 4
+  ireturn
+  nop
+.end <method>
+
+.method private r()I
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/q()I
+  istore_1
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/b/b/H I
+  iconst_0
+  istore_2
+  aload_0
+  getfield cn/domob/android/ads/b/b/H I
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifle Label0
+Label3:
+  aload_0
+  getfield cn/domob/android/ads/b/b/H I
+  istore_1
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_1
+  if_icmpge Label1
+  aload_0
+  getfield cn/domob/android/ads/b/b/g Ljava/io/InputStream;
+  astore_3
+  aload_0
+  getfield cn/domob/android/ads/b/b/G [B
+  astore 4
+  aload_0
+  getfield cn/domob/android/ads/b/b/H I
+  istore_1
+  iload_1
+  iload_2
+  isub
+  istore_1
+  aload_3
+  aload 4
+  iload_2
+  iload_1
+  invokevirtual java/io/InputStream/read([BII)I
+  istore_1
+Label5:
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 5
+  iload_1
+  iload 5
+  if_icmpne Label2
+Label1:
+  aload_0
+  getfield cn/domob/android/ads/b/b/H I
+  istore_1
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_1
+  if_icmpge Label0
+  iconst_1
+  istore 5
+  aload_0
+  iload 5
+  putfield cn/domob/android/ads/b/b/h I
+Label0:
+  iload_2
+  ireturn
+Label2:
+  iload_2
+  iload_1
+  iadd
+  istore_2
+  goto Label3
+Label4:
+  astore 6
+  aload 6
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label1
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/b/b/g Ljava/io/InputStream;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/m()I
+  pop
+Label1:
+  return
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/b/b/V [B
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label1
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/l()I
+  pop
+  goto Label1
+  nop
+.end <method>
+
+.method private s()V
+.limit locals 11
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+Label2:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/o()Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifne Label0
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/q()I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  lookupswitch
+  0 : Label2
+  33 : Label3
+  44 : Label4
+  59 : Label5
+  default : Label1
+Label1:
+  goto Label6
+Label6:
+  iconst_1
+  istore 4
+  aload_0
+  iload 4
+  putfield cn/domob/android/ads/b/b/h I
+  goto Label2
+Label4:
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/v()V
+  goto Label2
+Label3:
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/q()I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  lookupswitch
+  249 : Label8
+  255 : Label9
+  default : Label7
+Label7:
+  goto Label10
+Label10:
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/A()V
+  goto Label2
+Label8:
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/t()V
+  goto Label2
+Label9:
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/r()I
+  pop
+  ldc ""
+  astore 5
+  iconst_0
+  dstore_3
+Label12:
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 11
+  istore 4
+  iload_3
+  iload 4
+  if_icmpge Label11
+  new java/lang/StringBuilder
+  astore 6
+  aload 6
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 6
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  aload_0
+  getfield cn/domob/android/ads/b/b/G [B
+  astore 7
+  aload 7
+  iload_3
+  baload
+  istore 8
+  iload 8
+  i2c
+  istore 9
+  aload 6
+  iload 9
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  astore 6
+  aload 6
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label12
+Label11:
+  ldc "NETSCAPE2.0"
+  astore 10
+  aload 5
+  aload 10
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label13
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/x()V
+  goto Label2
+Label13:
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/A()V
+  goto Label2
+Label5:
+  iconst_1
+  istore_1
+  goto Label2
+Label0:
+  return
+  nop
+  nop
+  nop
+  nop
+.end <method>
+
+.method private t()V
+.limit locals 5
+.limit stack 200
+  nop
+  iconst_1
+  istore_1
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/q()I
+  pop
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/q()I
+  istore_2
+  iload_2
+  bipush 28
+  iand
+  istore_3
+  iload_3
+  iconst_2
+  ishr
+  istore_3
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/b/b/I I
+  aload_0
+  getfield cn/domob/android/ads/b/b/I I
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifne Label0
+  iconst_1
+  istore 4
+  iload 4
+  istore_3
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/b/b/I I
+Label0:
+  iload_2
+  iconst_1
+  iand
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  ifeq Label1
+Label2:
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/b/b/K Z
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/y()I
+  istore_3
+  iload_3
+  bipush 10
+  imul
+  istore_3
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/b/b/L I
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/q()I
+  istore_3
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/b/b/M I
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/q()I
+  pop
+  return
+Label1:
+  iconst_0
+  istore_1
+  goto Label2
+  nop
+.end <method>
+
+.method private u()V
+.limit locals 10
+.limit stack 200
+  nop
+  ldc ""
+  astore_1
+  iconst_0
+  istore_2
+Label1:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  bipush 6
+  istore_3
+  iload_2
+  iload_3
+  if_icmpge Label0
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/q()I
+  istore 5
+  iload 5
+  i2c
+  istore 6
+  aload 4
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_1
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label1
+Label0:
+  ldc "GIF"
+  astore 8
+  aload_1
+  aload 8
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifne Label2
+  iconst_1
+  istore_3
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/b/b/h I
+Label3:
+  return
+Label2:
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/w()V
+  aload_0
+  getfield cn/domob/android/ads/b/b/i Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label3
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/o()Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifne Label3
+  aload_0
+  getfield cn/domob/android/ads/b/b/j I
+  istore 5
+  aload_0
+  iload 5
+  invokespecial cn/domob/android/ads/b/b/d(I)[I
+  astore 9
+  aload_0
+  aload 9
+  putfield cn/domob/android/ads/b/b/l [I
+  aload_0
+  getfield cn/domob/android/ads/b/b/l [I
+  astore 9
+  aload_0
+  getfield cn/domob/android/ads/b/b/o I
+  istore 5
+  aload 9
+  iload 5
+  iaload
+  istore 5
+  aload_0
+  iload 5
+  putfield cn/domob/android/ads/b/b/p I
+  goto Label3
+  nop
+.end <method>
+
+.method private v()V
+.limit locals 37
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/b/b/y()I
+  istore 8
+  aload_0
+  astore_1
+  aload_1
+  iload 8
+  putfield cn/domob/android/ads/b/b/u I
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/b/b/y()I
+  istore 8
+  aload_0
+  astore_1
+  aload_1
+  iload 8
+  putfield cn/domob/android/ads/b/b/v I
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/b/b/y()I
+  istore 8
+  aload_0
+  astore_1
+  aload_1
+  iload 8
+  putfield cn/domob/android/ads/b/b/w I
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/b/b/y()I
+  istore 8
+  aload_0
+  astore_1
+  aload_1
+  iload 8
+  putfield cn/domob/android/ads/b/b/x I
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/b/b/q()I
+  istore 8
+  iload 8
+  sipush 128
+  iadd
+  istore 9
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 9
+  ifeq Label0
+  iconst_1
+  istore 10
+Label6:
+  aload_0
+  astore_1
+  aload_1
+  iload 10
+  putfield cn/domob/android/ads/b/b/r Z
+  iload 8
+  bipush 64
+  iand
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifeq Label1
+  iconst_1
+  istore 10
+Label7:
+  aload_0
+  astore_1
+  aload_1
+  iload 10
+  putfield cn/domob/android/ads/b/b/s Z
+  iload 8
+  bipush 7
+  iand
+  istore 8
+  iconst_2
+  istore 11
+  iload 11
+  iload 8
+  ishl
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  iload 9
+  putfield cn/domob/android/ads/b/b/t I
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/r Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label2
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/t I
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  iload 9
+  invokespecial cn/domob/android/ads/b/b/d(I)[I
+  astore 12
+  aload_0
+  astore_1
+  aload_1
+  aload 12
+  putfield cn/domob/android/ads/b/b/m [I
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/m [I
+  astore 12
+  aload_0
+  astore_1
+  aload_1
+  aload 12
+  putfield cn/domob/android/ads/b/b/n [I
+Label8:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/K Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label3
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/n [I
+  astore 12
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/M I
+  istore 9
+  aload 12
+  iload 9
+  iaload
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/n [I
+  astore 12
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/M I
+  istore 8
+  iconst_0
+  istore 11
+  iload 11
+  istore 13
+  aload 12
+  iload 8
+  iload 13
+  iastore
+  iload 9
+  istore 8
+Label15:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/n [I
+  astore 12
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  ifnonnull Label4
+  iconst_1
+  istore 11
+  iload 11
+  istore 13
+  aload_0
+  astore_1
+  aload_1
+  iload 13
+  putfield cn/domob/android/ads/b/b/h I
+Label4:
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/b/b/o()Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label5
+Label9:
+  return
+Label0:
+  iconst_0
+  istore 10
+  goto Label6
+Label1:
+  iconst_0
+  istore 10
+  goto Label7
+Label2:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/l [I
+  astore 12
+  aload_0
+  astore_1
+  aload_1
+  aload 12
+  putfield cn/domob/android/ads/b/b/n [I
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/o I
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/M I
+  istore 8
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  iload 8
+  if_icmpne Label8
+  iconst_0
+  istore 11
+  iload 11
+  istore 13
+  aload_0
+  astore_1
+  aload_1
+  iload 13
+  putfield cn/domob/android/ads/b/b/p I
+  goto Label8
+Label5:
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/b/b/n()V
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/b/b/A()V
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/b/b/o()Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifne Label9
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/T I
+  istore 9
+  iload 9
+  iconst_1
+  iadd
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  iload 9
+  putfield cn/domob/android/ads/b/b/T I
+Label18:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/e I
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/f I
+  istore 14
+  getstatic android/graphics/Bitmap$Config/ARGB_4444 Landroid/graphics/Bitmap$Config;
+  astore 15
+  iload 9
+  iload 14
+  aload 15
+  invokestatic android/graphics/Bitmap/createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+  astore 16
+  aload_0
+  astore_1
+  aload_1
+  aload 16
+  putfield cn/domob/android/ads/b/b/C Landroid/graphics/Bitmap;
+Label19:
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/b/b/k()V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/U Lcn/domob/android/ads/b/a;
+  astore_1
+  aload_1
+  astore 17
+  aload 17
+  astore 19
+  aload 19
+  checkcast android/view/View
+  astore 19
+  aload 19
+  astore 18
+  aload 18
+  astore_1
+  aload_1
+  invokevirtual android/view/View/getResources()Landroid/content/res/Resources;
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  invokevirtual android/content/res/Resources/getDisplayMetrics()Landroid/util/DisplayMetrics;
+  astore 21
+  new android/graphics/Matrix
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  invokespecial android/graphics/Matrix/<init>()V
+  aload 21
+  astore_1
+  aload_1
+  getfield android/util/DisplayMetrics/density F
+  fstore_1
+  fload_1
+  fstore 23
+  aload 21
+  astore_1
+  aload_1
+  getfield android/util/DisplayMetrics/density F
+  fstore_1
+  fload_1
+  fstore 24
+  aload 22
+  astore_1
+  fload 23
+  fstore_2
+  fload 24
+  fstore_3
+  aload_1
+  fload_2
+  fload_3
+  invokevirtual android/graphics/Matrix/postScale(FF)Z
+  pop
+Label22:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/C Landroid/graphics/Bitmap;
+  astore_1
+  aload_1
+  astore 25
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/C Landroid/graphics/Bitmap;
+  astore 16
+  aload 16
+  invokevirtual android/graphics/Bitmap/getWidth()I
+  istore 26
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/C Landroid/graphics/Bitmap;
+  astore 16
+  aload 16
+  invokevirtual android/graphics/Bitmap/getHeight()I
+  istore 13
+  iconst_0
+  istore 11
+  iconst_0
+  istore 27
+  iconst_1
+  istore 28
+  aload 25
+  astore_1
+  iload 11
+  istore_2
+  iload 27
+  istore_3
+  iload 26
+  istore 4
+  iload 13
+  istore 5
+  aload 22
+  astore 6
+  iload 28
+  istore 7
+  aload_1
+  iload_2
+  iload_3
+  iload 4
+  iload 5
+  aload 6
+  iload 7
+  invokestatic android/graphics/Bitmap/createBitmap(Landroid/graphics/Bitmap;IIIILandroid/graphics/Matrix;Z)Landroid/graphics/Bitmap;
+  astore 25
+Label23:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/S Lcn/domob/android/ads/b/c;
+  astore_1
+  aload_1
+  astore 29
+  aload 29
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 29
+  ifnonnull Label10
+  new cn/domob/android/ads/b/c
+  astore 29
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/L I
+  istore 13
+  aload 29
+  astore_1
+  aload 25
+  astore_2
+  aload_1
+  aload_2
+  iload 13
+  invokespecial cn/domob/android/ads/b/c/<init>(Landroid/graphics/Bitmap;I)V
+  aload 29
+  astore_1
+  aload_0
+  astore_2
+  aload_2
+  aload_1
+  putfield cn/domob/android/ads/b/b/S Lcn/domob/android/ads/b/c;
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/S Lcn/domob/android/ads/b/c;
+  astore_1
+  aload_1
+  astore 29
+  aload 29
+  astore_1
+  aload_0
+  astore_2
+  aload_2
+  aload_1
+  putfield cn/domob/android/ads/b/b/E Lcn/domob/android/ads/b/c;
+Label14:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/K Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label11
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/n [I
+  astore 12
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/M I
+  istore 13
+  aload 12
+  iload 13
+  iload 8
+  iastore
+Label11:
+  aload_0
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/b/b/z()V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/U Lcn/domob/android/ads/b/a;
+  astore_1
+  aload_1
+  astore 17
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/T I
+  istore 13
+  iconst_1
+  istore 11
+  aload 17
+  astore_1
+  aload_1
+  iload 11
+  iload 13
+  invokeinterface cn/domob/android/ads/b/a/a(ZI)V 3
+  goto Label9
+Label17:
+  astore 30
+  ldc "gif"
+  astore 31
+  ldc "out of memory"
+  astore 32
+  aload 31
+  astore_1
+  aload 32
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label9
+Label16:
+  astore 33
+  ldc "gif"
+  astore 31
+  ldc "out of memory"
+  astore 32
+  aload 31
+  astore_1
+  aload 32
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label9
+Label21:
+  astore 34
+  ldc "gif"
+  astore 31
+  ldc "out of memory"
+  astore 32
+  aload 31
+  astore_1
+  aload 32
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label9
+Label20:
+  astore 35
+  ldc "gif"
+  astore 31
+  ldc "out of memory"
+  astore 32
+  aload 31
+  astore_1
+  aload 32
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label9
+Label10:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/S Lcn/domob/android/ads/b/c;
+  astore_1
+  aload_1
+  astore 29
+Label13:
+  aload 29
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/c/c Lcn/domob/android/ads/b/c;
+  astore_1
+  aload_1
+  astore 36
+  aload 36
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 36
+  ifnull Label12
+  aload 29
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/c/c Lcn/domob/android/ads/b/c;
+  astore_1
+  aload_1
+  astore 29
+  goto Label13
+Label12:
+  new cn/domob/android/ads/b/c
+  astore 36
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/b/b/L I
+  istore 13
+  aload 36
+  astore_1
+  aload 25
+  astore_2
+  aload_1
+  aload_2
+  iload 13
+  invokespecial cn/domob/android/ads/b/c/<init>(Landroid/graphics/Bitmap;I)V
+  aload 36
+  astore_1
+  aload 29
+  astore_2
+  aload_2
+  aload_1
+  putfield cn/domob/android/ads/b/c/c Lcn/domob/android/ads/b/c;
+  goto Label14
+Label3:
+  iconst_0
+  istore 11
+  iload 11
+  istore 8
+  goto Label15
+  nop
+.end <method>
+
+.method private w()V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/y()I
+  istore_1
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/b/b/e I
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/y()I
+  istore_1
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/b/b/f I
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/q()I
+  istore_1
+  iload_1
+  sipush 128
+  iadd
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  iconst_1
+  istore_3
+Label1:
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/b/b/i Z
+  iload_1
+  bipush 7
+  iand
+  istore_2
+  iconst_2
+  istore 4
+  iload 4
+  iload_2
+  ishl
+  istore_2
+  aload_0
+  iload_2
+  putfield cn/domob/android/ads/b/b/j I
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/q()I
+  istore_2
+  aload_0
+  iload_2
+  putfield cn/domob/android/ads/b/b/o I
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/q()I
+  pop
+  return
+Label0:
+  iconst_0
+  istore_3
+  goto Label1
+  nop
+.end <method>
+
+.method private x()V
+.limit locals 8
+.limit stack 200
+  nop
+Label2:
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/r()I
+  pop
+  aload_0
+  getfield cn/domob/android/ads/b/b/G [B
+  astore_1
+  iconst_0
+  istore_3
+  aload_1
+  iload_3
+  baload
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_1
+  istore_3
+  iload_2
+  iload_3
+  if_icmpne Label0
+  aload_0
+  getfield cn/domob/android/ads/b/b/G [B
+  astore_1
+  iconst_1
+  istore_3
+  aload_1
+  iload_3
+  baload
+  istore_2
+  sipush 255
+  istore_3
+  iload_2
+  iload_3
+  iand
+  istore 4
+  aload_0
+  getfield cn/domob/android/ads/b/b/G [B
+  astore_1
+  iconst_2
+  istore_3
+  aload_1
+  iload_3
+  baload
+  istore_2
+  sipush 255
+  istore_3
+  iload_2
+  iload_3
+  iand
+  istore 5
+  iload 5
+  bipush 8
+  ishl
+  istore 6
+  iload 4
+  iload 6
+  ior
+  istore 6
+  aload_0
+  iload 6
+  putfield cn/domob/android/ads/b/b/k I
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/b/b/H I
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifle Label1
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/o()Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label2
+Label1:
+  return
+  nop
+.end <method>
+
+.method private y()I
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/q()I
+  istore_1
+  aload_0
+  invokespecial cn/domob/android/ads/b/b/q()I
+  istore_2
+  iload_2
+  bipush 8
+  ishl
+  istore_2
+  iload_1
+  iload_2
+  ior
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method private z()V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/b/b/I I
+  istore_1
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/b/b/J I
+  aload_0
+  getfield cn/domob/android/ads/b/b/u I
+  istore_1
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/b/b/y I
+  aload_0
+  getfield cn/domob/android/ads/b/b/v I
+  istore_1
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/b/b/z I
+  aload_0
+  getfield cn/domob/android/ads/b/b/w I
+  istore_1
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/b/b/A I
+  aload_0
+  getfield cn/domob/android/ads/b/b/x I
+  istore_1
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/b/b/B I
+  aload_0
+  getfield cn/domob/android/ads/b/b/C Landroid/graphics/Bitmap;
+  astore_2
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/b/b/D Landroid/graphics/Bitmap;
+  aload_0
+  getfield cn/domob/android/ads/b/b/p I
+  istore_1
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/b/b/q I
+  iconst_0
+  istore_3
+  iload_3
+  istore_1
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/b/b/I I
+  iconst_0
+  istore_3
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/b/b/K Z
+  iconst_0
+  istore_3
+  iload_3
+  istore_1
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/b/b/L I
+  aconst_null
+  astore 4
+  aload_0
+  aload 4
+  putfield cn/domob/android/ads/b/b/m [I
+  return
+  nop
+.end <method>
+

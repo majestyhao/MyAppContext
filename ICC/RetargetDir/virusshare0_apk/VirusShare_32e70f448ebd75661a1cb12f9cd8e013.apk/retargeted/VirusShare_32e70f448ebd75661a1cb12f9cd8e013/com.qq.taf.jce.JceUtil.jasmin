@@ -1,0 +1,2636 @@
+.source JceUtil.java
+.class public final  com/qq/taf/jce/JceUtil
+.super java/lang/Object
+.field private static final "highDigits" [B
+.field private static final "iConstant" I =  37
+.field private static final "iTotal" I =  17
+.field private static final "lowDigits" [B
+
+.method static <clinit>()V
+.limit locals 8
+.limit stack 200
+  nop
+  bipush 16
+  istore_1
+  iload_1
+  newarray byte
+  astore_0
+  iconst_0
+  istore_1
+  bipush 48
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  bastore
+  iconst_1
+  istore_1
+  bipush 49
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  bastore
+  iconst_2
+  istore_1
+  bipush 50
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  bastore
+  iconst_3
+  istore_1
+  bipush 51
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  bastore
+  iconst_4
+  istore_1
+  bipush 52
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  bastore
+  iconst_5
+  istore_1
+  bipush 53
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  bastore
+  bipush 6
+  istore_1
+  bipush 54
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  bastore
+  bipush 7
+  istore_1
+  bipush 55
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  bastore
+  bipush 8
+  istore_1
+  bipush 56
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  bastore
+  bipush 9
+  istore_1
+  bipush 57
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  bastore
+  bipush 10
+  istore_1
+  bipush 65
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  bastore
+  bipush 11
+  istore_1
+  bipush 66
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  bastore
+  bipush 12
+  istore_1
+  bipush 67
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  bastore
+  bipush 13
+  istore_1
+  bipush 68
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  bastore
+  bipush 14
+  istore_1
+  bipush 69
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  bastore
+  bipush 15
+  istore_1
+  bipush 70
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  bastore
+  sipush 256
+  istore_1
+  iload_1
+  newarray byte
+  astore_3
+  sipush 256
+  istore_1
+  iload_1
+  newarray byte
+  astore 4
+  iconst_0
+  istore 5
+Label1:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  sipush 256
+  istore_1
+  iload 5
+  iload_1
+  if_icmpge Label0
+  iload 5
+  iconst_4
+  iushr
+  istore 6
+  aload_0
+  iload 6
+  baload
+  istore 7
+  aload_3
+  iload 5
+  iload 7
+  bastore
+  iload 5
+  bipush 15
+  iand
+  istore 6
+  aload_0
+  iload 6
+  baload
+  istore 7
+  aload 4
+  iload 5
+  iload 7
+  bastore
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  goto Label1
+Label0:
+  aload_3
+  putstatic com/qq/taf/jce/JceUtil/highDigits [B
+  aload 4
+  putstatic com/qq/taf/jce/JceUtil/lowDigits [B
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static compareTo(BB)I
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iload_1
+  if_icmpge Label0
+  iconst_m1
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iload_1
+  if_icmple Label1
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+Label1:
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo(CC)I
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iload_1
+  if_icmpge Label0
+  iconst_m1
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iload_1
+  if_icmple Label1
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+Label1:
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo(DD)I
+.limit locals 6
+.limit stack 200
+  nop
+  dload_0
+  dload_2
+  dcmpg
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifge Label0
+  iconst_m1
+  istore 5
+  iload 5
+  ireturn
+Label0:
+  dload_0
+  dload_2
+  dcmpl
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifle Label1
+  iconst_1
+  istore 5
+  iload 5
+  ireturn
+Label1:
+  iconst_0
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo(FF)I
+.limit locals 4
+.limit stack 200
+  nop
+  fload_0
+  fload_1
+  fcmpg
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifge Label0
+  iconst_m1
+  istore_3
+  iload_3
+  ireturn
+Label0:
+  fload_0
+  fload_1
+  fcmpl
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  ifle Label1
+  iconst_1
+  istore_3
+  iload_3
+  ireturn
+Label1:
+  iconst_0
+  istore_3
+  iload_3
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo(II)I
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iload_1
+  if_icmpge Label0
+  iconst_m1
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iload_1
+  if_icmple Label1
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+Label1:
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo(JJ)I
+.limit locals 6
+.limit stack 200
+  nop
+  lload_0
+  lload_2
+  lcmp
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifge Label0
+  iconst_m1
+  istore 5
+  iload 5
+  ireturn
+Label0:
+  lload_0
+  lload_2
+  lcmp
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifle Label1
+  iconst_1
+  istore 5
+  iload 5
+  ireturn
+Label1:
+  iconst_0
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
+  .signature_attr "<T::Ljava/lang/Comparable<TT;>;>(TT;TT;)I"
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokeinterface java/lang/Comparable/compareTo(Ljava/lang/Object;)I 2
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo(Ljava/util/List;Ljava/util/List;)I
+  .signature_attr "<T::Ljava/lang/Comparable<TT;>;>(Ljava/util/List<TT;>;Ljava/util/List<TT;>;)I"
+.limit locals 10
+.limit stack 200
+  nop
+  aload_0
+  invokeinterface java/util/List/iterator()Ljava/util/Iterator; 1
+  astore_2
+  aload_1
+  invokeinterface java/util/List/iterator()Ljava/util/Iterator; 1
+  astore_3
+Label1:
+  aload_2
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  aload_3
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label0
+  aload_2
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 5
+  aload 5
+  astore 7
+  aload 7
+  checkcast java/lang/Comparable
+  astore 7
+  aload 7
+  astore 6
+  aload_3
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 5
+  aload 6
+  aload 5
+  invokeinterface java/lang/Comparable/compareTo(Ljava/lang/Object;)I 2
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  ifeq Label1
+  iload 8
+  ireturn
+Label0:
+  aload_2
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 4
+  aload_3
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 9
+  iload 4
+  iload 9
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(ZZ)I
+  istore 8
+  iload 8
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo(SS)I
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iload_1
+  if_icmpge Label0
+  iconst_m1
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iload_1
+  if_icmple Label1
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+Label1:
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo(ZZ)I
+.limit locals 5
+.limit stack 200
+  nop
+  iconst_1
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  iconst_1
+  istore_3
+Label2:
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label1
+Label3:
+  iload_3
+  iload_2
+  isub
+  istore 4
+  iload 4
+  ireturn
+Label0:
+  iconst_0
+  istore_3
+  goto Label2
+Label1:
+  iconst_0
+  istore_2
+  goto Label3
+  nop
+.end <method>
+
+.method public static compareTo([B[B)I
+.limit locals 8
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  iconst_0
+  istore_3
+Label2:
+  aload_0
+  arraylength
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  aload_1
+  arraylength
+  istore 5
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 5
+  if_icmpge Label0
+  aload_0
+  iload_2
+  baload
+  istore 6
+  aload_1
+  iload_3
+  baload
+  istore 7
+  iload 6
+  iload 7
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(BB)I
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  ifeq Label1
+  iload 5
+  ireturn
+Label1:
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label2
+Label0:
+  aload_0
+  arraylength
+  istore 5
+  aload_1
+  arraylength
+  istore_3
+  iload 5
+  iload_3
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(II)I
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo([C[C)I
+.limit locals 8
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  iconst_0
+  istore_3
+Label2:
+  aload_0
+  arraylength
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  aload_1
+  arraylength
+  istore 5
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 5
+  if_icmpge Label0
+  aload_0
+  iload_2
+  caload
+  istore 6
+  aload_1
+  iload_3
+  caload
+  istore 7
+  iload 6
+  iload 7
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(CC)I
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  ifeq Label1
+  iload 5
+  ireturn
+Label1:
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label2
+Label0:
+  aload_0
+  arraylength
+  istore 5
+  aload_1
+  arraylength
+  istore_3
+  iload 5
+  iload_3
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(II)I
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo([D[D)I
+.limit locals 10
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  iconst_0
+  istore_3
+Label2:
+  aload_0
+  arraylength
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  aload_1
+  arraylength
+  istore 5
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 5
+  if_icmpge Label0
+  aload_0
+  iload_2
+  daload
+  dstore 6
+  aload_1
+  iload_3
+  daload
+  dstore 8
+  dload 6
+  dload 8
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(DD)I
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  ifeq Label1
+  iload 5
+  ireturn
+Label1:
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label2
+Label0:
+  aload_0
+  arraylength
+  istore 5
+  aload_1
+  arraylength
+  istore_3
+  iload 5
+  iload_3
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(II)I
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo([F[F)I
+.limit locals 8
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  iconst_0
+  istore_3
+Label2:
+  aload_0
+  arraylength
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  aload_1
+  arraylength
+  istore 5
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 5
+  if_icmpge Label0
+  aload_0
+  iload_2
+  faload
+  fstore 6
+  aload_1
+  iload_3
+  faload
+  fstore 7
+  fload 6
+  fload 7
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(FF)I
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  ifeq Label1
+  iload 5
+  ireturn
+Label1:
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label2
+Label0:
+  aload_0
+  arraylength
+  istore 5
+  aload_1
+  arraylength
+  istore_3
+  iload 5
+  iload_3
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(II)I
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo([I[I)I
+.limit locals 6
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  iconst_0
+  istore_3
+Label2:
+  aload_0
+  arraylength
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  aload_1
+  arraylength
+  istore 5
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 5
+  if_icmpge Label0
+  aload_0
+  iload_2
+  iaload
+  istore 5
+  aload_1
+  iload_3
+  iaload
+  istore 4
+  iload 5
+  iload 4
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(II)I
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  ifeq Label1
+  iload 5
+  ireturn
+Label1:
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label2
+Label0:
+  aload_0
+  arraylength
+  istore 5
+  aload_1
+  arraylength
+  istore_3
+  iload 5
+  iload_3
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(II)I
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo([J[J)I
+.limit locals 10
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  iconst_0
+  istore_3
+Label2:
+  aload_0
+  arraylength
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  aload_1
+  arraylength
+  istore 5
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 5
+  if_icmpge Label0
+  aload_0
+  iload_2
+  laload
+  lstore 6
+  aload_1
+  iload_3
+  laload
+  lstore 8
+  lload 6
+  lload 8
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(JJ)I
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  ifeq Label1
+  iload 5
+  ireturn
+Label1:
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label2
+Label0:
+  aload_0
+  arraylength
+  istore 5
+  aload_1
+  arraylength
+  istore_3
+  iload 5
+  iload_3
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(II)I
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo([Ljava/lang/Comparable;[Ljava/lang/Comparable;)I
+  .signature_attr "<T::Ljava/lang/Comparable<TT;>;>([TT;[TT;)I"
+.limit locals 8
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  iconst_0
+  istore_3
+Label2:
+  aload_0
+  arraylength
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  aload_1
+  arraylength
+  istore 5
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 5
+  if_icmpge Label0
+  aload_0
+  iload_2
+  aaload
+  astore 6
+  aload_1
+  iload_3
+  aaload
+  astore 7
+  aload 6
+  aload 7
+  invokeinterface java/lang/Comparable/compareTo(Ljava/lang/Object;)I 2
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  ifeq Label1
+  iload 5
+  ireturn
+Label1:
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label2
+Label0:
+  aload_0
+  arraylength
+  istore 5
+  aload_1
+  arraylength
+  istore_3
+  iload 5
+  iload_3
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(II)I
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo([S[S)I
+.limit locals 8
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  iconst_0
+  istore_3
+Label2:
+  aload_0
+  arraylength
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  aload_1
+  arraylength
+  istore 5
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 5
+  if_icmpge Label0
+  aload_0
+  iload_2
+  saload
+  istore 6
+  aload_1
+  iload_3
+  saload
+  istore 7
+  iload 6
+  iload 7
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(SS)I
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  ifeq Label1
+  iload 5
+  ireturn
+Label1:
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label2
+Label0:
+  aload_0
+  arraylength
+  istore 5
+  aload_1
+  arraylength
+  istore_3
+  iload 5
+  iload_3
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(II)I
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static compareTo([Z[Z)I
+.limit locals 8
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  iconst_0
+  istore_3
+Label2:
+  aload_0
+  arraylength
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  aload_1
+  arraylength
+  istore 5
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 5
+  if_icmpge Label0
+  aload_0
+  iload_2
+  baload
+  istore 6
+  aload_1
+  iload_3
+  baload
+  istore 7
+  iload 6
+  iload 7
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(ZZ)I
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  ifeq Label1
+  iload 5
+  ireturn
+Label1:
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label2
+Label0:
+  aload_0
+  arraylength
+  istore 5
+  aload_1
+  arraylength
+  istore_3
+  iload 5
+  iload_3
+  invokestatic com/qq/taf/jce/JceUtil/compareTo(II)I
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static equals(BB)Z
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iload_1
+  if_icmpne Label0
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public static equals(CC)Z
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iload_1
+  if_icmpne Label0
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public static equals(DD)Z
+.limit locals 6
+.limit stack 200
+  nop
+  dload_0
+  dload_2
+  dcmpl
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifne Label0
+  iconst_1
+  istore 5
+  iload 5
+  ireturn
+Label0:
+  iconst_0
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static equals(FF)Z
+.limit locals 4
+.limit stack 200
+  nop
+  fload_0
+  fload_1
+  fcmpl
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  iconst_1
+  istore_3
+  iload_3
+  ireturn
+Label0:
+  iconst_0
+  istore_3
+  iload_3
+  ireturn
+  nop
+.end <method>
+
+.method public static equals(II)Z
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iload_1
+  if_icmpne Label0
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public static equals(JJ)Z
+.limit locals 6
+.limit stack 200
+  nop
+  lload_0
+  lload_2
+  lcmp
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifne Label0
+  iconst_1
+  istore 5
+  iload 5
+  ireturn
+Label0:
+  iconst_0
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokevirtual java/lang/Object/equals(Ljava/lang/Object;)Z
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public static equals(SS)Z
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iload_1
+  if_icmpne Label0
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public static equals(ZZ)Z
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_0
+  iload_1
+  if_icmpne Label0
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public static getHexdump(Ljava/nio/ByteBuffer;)Ljava/lang/String;
+.limit locals 11
+.limit stack 200
+  nop
+  aload_0
+  invokevirtual java/nio/ByteBuffer/remaining()I
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  ldc "empty"
+  astore_2
+  aload_2
+  areturn
+Label0:
+  new java/lang/StringBuffer
+  astore_3
+  aload_0
+  invokevirtual java/nio/ByteBuffer/remaining()I
+  istore 4
+  iload 4
+  iconst_3
+  imul
+  istore 4
+  iload 4
+  iconst_m1
+  iadd
+  istore 4
+  aload_3
+  iload 4
+  invokespecial java/lang/StringBuffer/<init>(I)V
+  aload_0
+  invokevirtual java/nio/ByteBuffer/position()I
+  istore 4
+  aload_0
+  invokevirtual java/nio/ByteBuffer/get()B
+  istore 5
+  sipush 255
+  istore 7
+  iload 5
+  iload 7
+  iand
+  istore 6
+  getstatic com/qq/taf/jce/JceUtil/highDigits [B
+  astore 8
+  aload 8
+  iload 6
+  baload
+  istore 5
+  iload 5
+  i2c
+  istore 9
+  aload_3
+  iload 9
+  invokevirtual java/lang/StringBuffer/append(C)Ljava/lang/StringBuffer;
+  pop
+  getstatic com/qq/taf/jce/JceUtil/lowDigits [B
+  astore 8
+  aload 8
+  iload 6
+  baload
+  istore 5
+  iload 5
+  i2c
+  istore 9
+  aload_3
+  iload 9
+  invokevirtual java/lang/StringBuffer/append(C)Ljava/lang/StringBuffer;
+  pop
+  iload_1
+  iconst_m1
+  iadd
+  istore_1
+Label2:
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  ifle Label1
+  bipush 32
+  istore 7
+  aload_3
+  iload 7
+  invokevirtual java/lang/StringBuffer/append(C)Ljava/lang/StringBuffer;
+  pop
+  aload_0
+  invokevirtual java/nio/ByteBuffer/get()B
+  istore 5
+  sipush 255
+  istore 7
+  iload 5
+  iload 7
+  iand
+  istore 6
+  getstatic com/qq/taf/jce/JceUtil/highDigits [B
+  astore 8
+  aload 8
+  iload 6
+  baload
+  istore 5
+  iload 5
+  i2c
+  istore 9
+  aload_3
+  iload 9
+  invokevirtual java/lang/StringBuffer/append(C)Ljava/lang/StringBuffer;
+  pop
+  getstatic com/qq/taf/jce/JceUtil/lowDigits [B
+  astore 8
+  aload 8
+  iload 6
+  baload
+  istore 5
+  iload 5
+  i2c
+  istore 9
+  aload_3
+  iload 9
+  invokevirtual java/lang/StringBuffer/append(C)Ljava/lang/StringBuffer;
+  pop
+  iload_1
+  iconst_m1
+  iadd
+  istore_1
+  goto Label2
+Label1:
+  aload_0
+  iload 4
+  invokevirtual java/nio/ByteBuffer/position(I)Ljava/nio/Buffer;
+  pop
+  aload_3
+  invokevirtual java/lang/StringBuffer/toString()Ljava/lang/String;
+  astore 10
+  aload 10
+  areturn
+  nop
+.end <method>
+
+.method public static getHexdump([B)Ljava/lang/String;
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokestatic java/nio/ByteBuffer/wrap([B)Ljava/nio/ByteBuffer;
+  astore_1
+  aload_1
+  invokestatic com/qq/taf/jce/JceUtil/getHexdump(Ljava/nio/ByteBuffer;)Ljava/lang/String;
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public static getJceBufArray(Ljava/nio/ByteBuffer;)[B
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  invokevirtual java/nio/ByteBuffer/position()I
+  istore_1
+  iload_1
+  newarray byte
+  astore_2
+  aload_0
+  invokevirtual java/nio/ByteBuffer/array()[B
+  astore_3
+  aload_2
+  arraylength
+  istore_1
+  iconst_0
+  istore 4
+  iconst_0
+  istore 5
+  aload_3
+  iload 4
+  aload_2
+  iload 5
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public static hashCode(B)I
+.limit locals 2
+.limit stack 200
+  nop
+  iload_0
+  sipush 629
+  iadd
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public static hashCode(C)I
+.limit locals 2
+.limit stack 200
+  nop
+  iload_0
+  sipush 629
+  iadd
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public static hashCode(D)I
+.limit locals 5
+.limit stack 200
+  nop
+  dload_0
+  invokestatic java/lang/Double/doubleToLongBits(D)J
+  lstore_2
+  lload_2
+  invokestatic com/qq/taf/jce/JceUtil/hashCode(J)I
+  istore 4
+  iload 4
+  ireturn
+  nop
+.end <method>
+
+.method public static hashCode(F)I
+.limit locals 2
+.limit stack 200
+  nop
+  fload_0
+  invokestatic java/lang/Float/floatToIntBits(F)I
+  istore_1
+  iload_1
+  sipush 629
+  iadd
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public static hashCode(I)I
+.limit locals 1
+.limit stack 200
+  nop
+  iload_0
+  sipush 629
+  iadd
+  istore_0
+  iload_0
+  ireturn
+  nop
+.end <method>
+
+.method public static hashCode(J)I
+.limit locals 6
+.limit stack 200
+  nop
+  bipush 32
+  istore 4
+  lload_0
+  iload 4
+  lshr
+  lstore_2
+  lload_2
+  lload_0
+  lxor
+  lstore_2
+  lload_2
+  l2i
+  istore 5
+  iload 5
+  sipush 629
+  iadd
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static hashCode(Ljava/lang/Object;)I
+.limit locals 26
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  sipush 629
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual java/lang/Object/getClass()Ljava/lang/Class;
+  astore_3
+  aload_3
+  invokevirtual java/lang/Class/isArray()Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label1
+  aload_0
+  astore_1
+  aload_1
+  instanceof [J
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label2
+  aload_0
+  astore 6
+  aload 6
+  checkcast [J
+  astore 6
+  aload 6
+  astore 5
+  aload 5
+  checkcast [J
+  astore 5
+  aload 5
+  invokestatic com/qq/taf/jce/JceUtil/hashCode([J)I
+  istore 7
+  iload 7
+  ireturn
+Label2:
+  aload_0
+  astore_1
+  aload_1
+  instanceof [I
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label3
+  aload_0
+  astore 9
+  aload 9
+  checkcast [I
+  astore 9
+  aload 9
+  astore 8
+  aload 8
+  checkcast [I
+  astore 8
+  aload 8
+  invokestatic com/qq/taf/jce/JceUtil/hashCode([I)I
+  istore 7
+  iload 7
+  ireturn
+Label3:
+  aload_0
+  astore_1
+  aload_1
+  instanceof [S
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label4
+  aload_0
+  astore 11
+  aload 11
+  checkcast [S
+  astore 11
+  aload 11
+  astore 10
+  aload 10
+  checkcast [S
+  astore 10
+  aload 10
+  invokestatic com/qq/taf/jce/JceUtil/hashCode([S)I
+  istore 7
+  iload 7
+  ireturn
+Label4:
+  aload_0
+  astore_1
+  aload_1
+  instanceof [C
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label5
+  aload_0
+  astore 13
+  aload 13
+  checkcast [C
+  astore 13
+  aload 13
+  astore 12
+  aload 12
+  checkcast [C
+  astore 12
+  aload 12
+  invokestatic com/qq/taf/jce/JceUtil/hashCode([C)I
+  istore 7
+  iload 7
+  ireturn
+Label5:
+  aload_0
+  astore_1
+  aload_1
+  instanceof [B
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label6
+  aload_0
+  astore 15
+  aload 15
+  checkcast [B
+  astore 15
+  aload 15
+  astore 14
+  aload 14
+  checkcast [B
+  astore 14
+  aload 14
+  invokestatic com/qq/taf/jce/JceUtil/hashCode([B)I
+  istore 7
+  iload 7
+  ireturn
+Label6:
+  aload_0
+  astore_1
+  aload_1
+  instanceof [D
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label7
+  aload_0
+  astore 17
+  aload 17
+  checkcast [D
+  astore 17
+  aload 17
+  astore 16
+  aload 16
+  checkcast [D
+  astore 16
+  aload 16
+  invokestatic com/qq/taf/jce/JceUtil/hashCode([D)I
+  istore 7
+  iload 7
+  ireturn
+Label7:
+  aload_0
+  astore_1
+  aload_1
+  instanceof [F
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label8
+  aload_0
+  astore 19
+  aload 19
+  checkcast [F
+  astore 19
+  aload 19
+  astore 18
+  aload 18
+  checkcast [F
+  astore 18
+  aload 18
+  astore_1
+  aload_1
+  invokestatic com/qq/taf/jce/JceUtil/hashCode([F)I
+  istore 7
+  iload 7
+  ireturn
+Label8:
+  aload_0
+  astore_1
+  aload_1
+  instanceof [Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label9
+  aload_0
+  astore 21
+  aload 21
+  checkcast [Z
+  astore 21
+  aload 21
+  astore 20
+  aload 20
+  checkcast [Z
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  invokestatic com/qq/taf/jce/JceUtil/hashCode([Z)I
+  istore 7
+  iload 7
+  ireturn
+Label9:
+  aload_0
+  astore_1
+  aload_1
+  instanceof [Lcom/qq/taf/jce/JceStruct;
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label10
+  aload_0
+  astore 23
+  aload 23
+  checkcast [Lcom/qq/taf/jce/JceStruct;
+  astore 23
+  aload 23
+  astore 22
+  aload 22
+  checkcast [Lcom/qq/taf/jce/JceStruct;
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  invokestatic com/qq/taf/jce/JceUtil/hashCode([Lcom/qq/taf/jce/JceStruct;)I
+  istore 7
+  iload 7
+  ireturn
+Label10:
+  aload_0
+  astore 25
+  aload 25
+  checkcast [Ljava/lang/Object;
+  astore 25
+  aload 25
+  astore 24
+  aload 24
+  checkcast [Ljava/lang/Object;
+  astore 24
+  aload 24
+  astore_1
+  aload_1
+  invokestatic com/qq/taf/jce/JceUtil/hashCode(Ljava/lang/Object;)I
+  istore 7
+  iload 7
+  ireturn
+Label1:
+  aload_0
+  astore_1
+  aload_1
+  instanceof com/qq/taf/jce/JceStruct
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label11
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual java/lang/Object/hashCode()I
+  istore 7
+  iload 7
+  ireturn
+Label11:
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual java/lang/Object/hashCode()I
+  istore 7
+  iload 7
+  sipush 629
+  iadd
+  istore 7
+  iload 7
+  ireturn
+  nop
+.end <method>
+
+.method public static hashCode(S)I
+.limit locals 2
+.limit stack 200
+  nop
+  iload_0
+  sipush 629
+  iadd
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public static hashCode(Z)I
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  iconst_0
+  istore_1
+Label1:
+  iload_1
+  sipush 629
+  iadd
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  iconst_1
+  istore_1
+  goto Label1
+  nop
+.end <method>
+
+.method public static hashCode([B)I
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  sipush 629
+  istore_1
+Label1:
+  iload_1
+  ireturn
+Label0:
+  bipush 17
+  istore_1
+  iconst_0
+  dstore_2
+Label2:
+  aload_0
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  iload_1
+  bipush 37
+  imul
+  istore_3
+  aload_0
+  iload_2
+  baload
+  istore 4
+  iload_3
+  iload 4
+  iadd
+  istore_1
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public static hashCode([C)I
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  sipush 629
+  istore_1
+Label1:
+  iload_1
+  ireturn
+Label0:
+  bipush 17
+  istore_1
+  iconst_0
+  dstore_2
+Label2:
+  aload_0
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  iload_1
+  bipush 37
+  imul
+  istore_3
+  aload_0
+  iload_2
+  caload
+  istore 4
+  iload_3
+  iload 4
+  iadd
+  istore_1
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public static hashCode([D)I
+.limit locals 11
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  sipush 629
+  istore_1
+Label1:
+  iload_1
+  ireturn
+Label0:
+  bipush 17
+  istore_1
+  iconst_0
+  dstore_2
+Label2:
+  aload_0
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  iload_1
+  bipush 37
+  imul
+  istore_3
+  aload_0
+  iload_2
+  daload
+  dstore 4
+  dload 4
+  invokestatic java/lang/Double/doubleToLongBits(D)J
+  lstore 6
+  aload_0
+  iload_2
+  daload
+  dstore 4
+  dload 4
+  invokestatic java/lang/Double/doubleToLongBits(D)J
+  lstore 8
+  bipush 32
+  istore 10
+  lload 8
+  iload 10
+  lshr
+  lstore 8
+  lload 6
+  lload 8
+  lxor
+  lstore 8
+  lload 8
+  l2i
+  istore_1
+  iload_3
+  iload_1
+  iadd
+  istore_1
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public static hashCode([F)I
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  sipush 629
+  istore_1
+Label1:
+  iload_1
+  ireturn
+Label0:
+  bipush 17
+  istore_1
+  iconst_0
+  dstore_2
+Label2:
+  aload_0
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  iload_1
+  bipush 37
+  imul
+  istore_1
+  aload_0
+  iload_2
+  faload
+  fstore 4
+  fload 4
+  invokestatic java/lang/Float/floatToIntBits(F)I
+  istore_3
+  iload_1
+  iload_3
+  iadd
+  istore_1
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public static hashCode([I)I
+.limit locals 4
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  sipush 629
+  istore_1
+Label1:
+  iload_1
+  ireturn
+Label0:
+  bipush 17
+  istore_1
+  iconst_0
+  dstore_2
+Label2:
+  aload_0
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  iload_1
+  bipush 37
+  imul
+  istore_1
+  aload_0
+  iload_2
+  iaload
+  istore_3
+  iload_1
+  iload_3
+  iadd
+  istore_1
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public static hashCode([J)I
+.limit locals 9
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  sipush 629
+  istore_1
+Label1:
+  iload_1
+  ireturn
+Label0:
+  bipush 17
+  istore_1
+  iconst_0
+  dstore_2
+Label2:
+  aload_0
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  iload_1
+  bipush 37
+  imul
+  istore_3
+  aload_0
+  iload_2
+  laload
+  lstore 4
+  aload_0
+  iload_2
+  laload
+  lstore 6
+  bipush 32
+  istore 8
+  lload 6
+  iload 8
+  lshr
+  lstore 6
+  lload 4
+  lload 6
+  lxor
+  lstore 6
+  lload 6
+  l2i
+  istore_1
+  iload_3
+  iload_1
+  iadd
+  istore_1
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public static hashCode([Lcom/qq/taf/jce/JceStruct;)I
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  sipush 629
+  istore_1
+Label1:
+  iload_1
+  ireturn
+Label0:
+  bipush 17
+  istore_1
+  iconst_0
+  dstore_2
+Label2:
+  aload_0
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  iload_1
+  bipush 37
+  imul
+  istore_1
+  aload_0
+  iload_2
+  aaload
+  astore 4
+  aload 4
+  invokevirtual java/lang/Object/hashCode()I
+  istore_3
+  iload_1
+  iload_3
+  iadd
+  istore_1
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public static hashCode([S)I
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  sipush 629
+  istore_1
+Label1:
+  iload_1
+  ireturn
+Label0:
+  bipush 17
+  istore_1
+  iconst_0
+  dstore_2
+Label2:
+  aload_0
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  iload_1
+  bipush 37
+  imul
+  istore_3
+  aload_0
+  iload_2
+  saload
+  istore 4
+  iload_3
+  iload 4
+  iadd
+  istore_1
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public static hashCode([Z)I
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  sipush 629
+  istore_1
+Label1:
+  iload_1
+  ireturn
+Label0:
+  bipush 17
+  istore_1
+  iconst_0
+  dstore_2
+Label3:
+  aload_0
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  iload_1
+  bipush 37
+  imul
+  istore_3
+  aload_0
+  iload_2
+  baload
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label2
+  iconst_0
+  istore 5
+Label4:
+  iload_3
+  iload 5
+  iadd
+  istore_1
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label3
+Label2:
+  iconst_1
+  istore 5
+  goto Label4
+  nop
+.end <method>
+

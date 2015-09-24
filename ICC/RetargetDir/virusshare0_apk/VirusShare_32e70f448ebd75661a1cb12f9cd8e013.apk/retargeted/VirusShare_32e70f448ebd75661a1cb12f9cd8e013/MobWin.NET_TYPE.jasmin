@@ -1,0 +1,419 @@
+.source NET_TYPE.java
+.class public final  MobWin/NET_TYPE
+.super java/lang/Object
+.field static final "$assertionsDisabled" Z =  0
+.field public static final "CMNET" LMobWin/NET_TYPE;
+.field public static final "CMWAP" LMobWin/NET_TYPE;
+.field public static final "CTNET" LMobWin/NET_TYPE;
+.field public static final "CTWAP" LMobWin/NET_TYPE;
+.field public static final "GPRS" LMobWin/NET_TYPE;
+.field public static final "UNINET" LMobWin/NET_TYPE;
+.field public static final "UNIWAP" LMobWin/NET_TYPE;
+.field public static final "WIFI" LMobWin/NET_TYPE;
+.field public static final "_3GNET" LMobWin/NET_TYPE;
+.field public static final "_3GWAP" LMobWin/NET_TYPE;
+.field public static final "_CMNET" I =  6
+.field public static final "_CMWAP" I =  7
+.field public static final "_CTNET" I =  8
+.field public static final "_CTWAP" I =  9
+.field public static final "_GPRS" I =  0
+.field public static final "_UNINET" I =  4
+.field public static final "_UNIWAP" I =  5
+.field public static final "_WIFI" I =  1
+.field public static final "__3GNET" I =  2
+.field public static final "__3GWAP" I =  3
+.field private static "__values" [LMobWin/NET_TYPE;
+.field private "__T" Ljava/lang/String;
+.field private "__value" I
+
+.method static <clinit>()V
+.limit locals 9
+.limit stack 200
+  nop
+  ldc MobWin/NET_TYPE
+  astore_0
+  aload_0
+  invokevirtual java/lang/Class/desiredAssertionStatus()Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  iconst_1
+  istore_1
+Label1:
+  iload_1
+  putstatic MobWin/NET_TYPE/$assertionsDisabled Z
+  bipush 10
+  istore_3
+  iload_3
+  anewarray MobWin/NET_TYPE
+  astore_2
+  aload_2
+  putstatic MobWin/NET_TYPE/__values [LMobWin/NET_TYPE;
+  new MobWin/NET_TYPE
+  astore 4
+  iconst_0
+  istore_3
+  iload_3
+  istore 5
+  iconst_0
+  istore_3
+  iload_3
+  istore 6
+  ldc "GPRS"
+  astore 7
+  aload 4
+  iload 5
+  iload 6
+  aload 7
+  invokespecial MobWin/NET_TYPE/<init>(IILjava/lang/String;)V
+  aload 4
+  putstatic MobWin/NET_TYPE/GPRS LMobWin/NET_TYPE;
+  new MobWin/NET_TYPE
+  astore 4
+  iconst_1
+  istore_3
+  iload_3
+  istore 6
+  iconst_1
+  istore_3
+  iload_3
+  istore 5
+  ldc "WIFI"
+  astore 7
+  aload 4
+  iload 6
+  iload 5
+  aload 7
+  invokespecial MobWin/NET_TYPE/<init>(IILjava/lang/String;)V
+  aload 4
+  putstatic MobWin/NET_TYPE/WIFI LMobWin/NET_TYPE;
+  new MobWin/NET_TYPE
+  astore 4
+  iconst_2
+  istore_3
+  iconst_2
+  istore 8
+  ldc "_3GNET"
+  astore 7
+  aload 4
+  iload_3
+  iload 8
+  aload 7
+  invokespecial MobWin/NET_TYPE/<init>(IILjava/lang/String;)V
+  aload 4
+  putstatic MobWin/NET_TYPE/_3GNET LMobWin/NET_TYPE;
+  new MobWin/NET_TYPE
+  astore 4
+  iconst_3
+  istore_3
+  iconst_3
+  istore 8
+  ldc "_3GWAP"
+  astore 7
+  aload 4
+  iload_3
+  iload 8
+  aload 7
+  invokespecial MobWin/NET_TYPE/<init>(IILjava/lang/String;)V
+  aload 4
+  putstatic MobWin/NET_TYPE/_3GWAP LMobWin/NET_TYPE;
+  new MobWin/NET_TYPE
+  astore 4
+  iconst_4
+  istore_3
+  iconst_4
+  istore 8
+  ldc "UNINET"
+  astore 7
+  aload 4
+  iload_3
+  iload 8
+  aload 7
+  invokespecial MobWin/NET_TYPE/<init>(IILjava/lang/String;)V
+  aload 4
+  putstatic MobWin/NET_TYPE/UNINET LMobWin/NET_TYPE;
+  new MobWin/NET_TYPE
+  astore 4
+  iconst_5
+  istore_3
+  iconst_5
+  istore 8
+  ldc "UNIWAP"
+  astore 7
+  aload 4
+  iload_3
+  iload 8
+  aload 7
+  invokespecial MobWin/NET_TYPE/<init>(IILjava/lang/String;)V
+  aload 4
+  putstatic MobWin/NET_TYPE/UNIWAP LMobWin/NET_TYPE;
+  new MobWin/NET_TYPE
+  astore 4
+  bipush 6
+  istore_3
+  bipush 6
+  istore 8
+  ldc "CMNET"
+  astore 7
+  aload 4
+  iload_3
+  iload 8
+  aload 7
+  invokespecial MobWin/NET_TYPE/<init>(IILjava/lang/String;)V
+  aload 4
+  putstatic MobWin/NET_TYPE/CMNET LMobWin/NET_TYPE;
+  new MobWin/NET_TYPE
+  astore 4
+  bipush 7
+  istore_3
+  bipush 7
+  istore 8
+  ldc "CMWAP"
+  astore 7
+  aload 4
+  iload_3
+  iload 8
+  aload 7
+  invokespecial MobWin/NET_TYPE/<init>(IILjava/lang/String;)V
+  aload 4
+  putstatic MobWin/NET_TYPE/CMWAP LMobWin/NET_TYPE;
+  new MobWin/NET_TYPE
+  astore 4
+  bipush 8
+  istore_3
+  bipush 8
+  istore 8
+  ldc "CTNET"
+  astore 7
+  aload 4
+  iload_3
+  iload 8
+  aload 7
+  invokespecial MobWin/NET_TYPE/<init>(IILjava/lang/String;)V
+  aload 4
+  putstatic MobWin/NET_TYPE/CTNET LMobWin/NET_TYPE;
+  new MobWin/NET_TYPE
+  astore 4
+  bipush 9
+  istore_3
+  bipush 9
+  istore 8
+  ldc "CTWAP"
+  astore 7
+  aload 4
+  iload_3
+  iload 8
+  aload 7
+  invokespecial MobWin/NET_TYPE/<init>(IILjava/lang/String;)V
+  aload 4
+  putstatic MobWin/NET_TYPE/CTWAP LMobWin/NET_TYPE;
+  return
+Label0:
+  iconst_0
+  istore_1
+  goto Label1
+  nop
+.end <method>
+
+.method private <init>(IILjava/lang/String;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  new java/lang/String
+  astore 4
+  aload 4
+  invokespecial java/lang/String/<init>()V
+  aload_0
+  aload 4
+  putfield MobWin/NET_TYPE/__T Ljava/lang/String;
+  aload_0
+  aload_3
+  putfield MobWin/NET_TYPE/__T Ljava/lang/String;
+  aload_0
+  iload_2
+  putfield MobWin/NET_TYPE/__value I
+  getstatic MobWin/NET_TYPE/__values [LMobWin/NET_TYPE;
+  astore 5
+  aload 5
+  iload_1
+  aload_0
+  aastore
+  return
+  nop
+.end <method>
+
+.method public static convert(I)LMobWin/NET_TYPE;
+.limit locals 8
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+Label3:
+  getstatic MobWin/NET_TYPE/__values [LMobWin/NET_TYPE;
+  astore_2
+  aload_2
+  arraylength
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload_3
+  if_icmplt Label0
+  getstatic MobWin/NET_TYPE/$assertionsDisabled Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label1
+  new java/lang/AssertionError
+  astore 5
+  aload 5
+  invokespecial java/lang/AssertionError/<init>()V
+  aload 5
+  athrow
+Label0:
+  getstatic MobWin/NET_TYPE/__values [LMobWin/NET_TYPE;
+  astore_2
+  aload_2
+  iload_1
+  aaload
+  astore 6
+  aload 6
+  invokevirtual MobWin/NET_TYPE/value()I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload_0
+  if_icmpne Label2
+  getstatic MobWin/NET_TYPE/__values [LMobWin/NET_TYPE;
+  astore_2
+  aload_2
+  iload_1
+  aaload
+  astore 6
+  aload 6
+  areturn
+Label2:
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  goto Label3
+Label1:
+  aconst_null
+  astore 7
+  aload 7
+  areturn
+  nop
+.end <method>
+
+.method public static convert(Ljava/lang/String;)LMobWin/NET_TYPE;
+.limit locals 9
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+Label3:
+  getstatic MobWin/NET_TYPE/__values [LMobWin/NET_TYPE;
+  astore_2
+  aload_2
+  arraylength
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload_3
+  if_icmplt Label0
+  getstatic MobWin/NET_TYPE/$assertionsDisabled Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label1
+  new java/lang/AssertionError
+  astore 5
+  aload 5
+  invokespecial java/lang/AssertionError/<init>()V
+  aload 5
+  athrow
+Label0:
+  getstatic MobWin/NET_TYPE/__values [LMobWin/NET_TYPE;
+  astore_2
+  aload_2
+  iload_1
+  aaload
+  astore 6
+  aload 6
+  invokevirtual MobWin/NET_TYPE/toString()Ljava/lang/String;
+  astore 7
+  aload 7
+  aload_0
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label2
+  getstatic MobWin/NET_TYPE/__values [LMobWin/NET_TYPE;
+  astore_2
+  aload_2
+  iload_1
+  aaload
+  astore 6
+  aload 6
+  areturn
+Label2:
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  goto Label3
+Label1:
+  aconst_null
+  astore 8
+  aload 8
+  areturn
+  nop
+.end <method>
+
+.method public toString()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/NET_TYPE/__T Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public value()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/NET_TYPE/__value I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+

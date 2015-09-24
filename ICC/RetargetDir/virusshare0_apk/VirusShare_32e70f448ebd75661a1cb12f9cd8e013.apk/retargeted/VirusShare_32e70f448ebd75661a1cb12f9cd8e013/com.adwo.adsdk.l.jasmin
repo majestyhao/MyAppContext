@@ -1,0 +1,1993 @@
+.source SourceFile
+.class final  com/adwo/adsdk/l
+.super java/lang/Thread
+.field private "a" Lcom/adwo/adsdk/k;
+
+.method <init>(Lcom/adwo/adsdk/k;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  return
+  nop
+.end <method>
+
+.method public final run()V
+.limit locals 82
+.limit stack 200
+  nop
+  iconst_0
+  istore 4
+  iconst_0
+  istore 5
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/h B
+  istore 7
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/o Lcom/adwo/adsdk/o;
+  astore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 8
+  ifeq Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/o Lcom/adwo/adsdk/o;
+  astore 8
+Label0:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/e Ljava/lang/String;
+  astore 9
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/e Ljava/lang/String;
+  astore 10
+Label55:
+  ldc "clk?p0"
+  astore 12
+  aload 10
+  aload 12
+  invokevirtual java/lang/String/indexOf(Ljava/lang/String;)I
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 11
+  ifle Label1
+  new java/lang/StringBuilder
+  astore 13
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/e Ljava/lang/String;
+  astore 10
+  aload 10
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 10
+  aload 13
+  aload 10
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  ldc "&p1="
+  astore 12
+  aload 13
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  new java/text/SimpleDateFormat
+  astore 15
+  ldc "yyyyMMddHHmmss"
+  astore 12
+  aload 15
+  aload 12
+  invokespecial java/text/SimpleDateFormat/<init>(Ljava/lang/String;)V
+  new java/util/Date
+  astore 16
+  aload 16
+  invokespecial java/util/Date/<init>()V
+  aload 15
+  aload 16
+  invokevirtual java/text/SimpleDateFormat/format(Ljava/util/Date;)Ljava/lang/String;
+  astore 10
+  aload 14
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 9
+Label1:
+  new java/net/URL
+  astore 17
+  aload 17
+  astore 18
+  aload 17
+  astore_1
+  aload_1
+  aload 9
+  invokespecial java/net/URL/<init>(Ljava/lang/String;)V
+  getstatic com/adwo/adsdk/p/g I
+  istore 11
+  getstatic com/adwo/adsdk/p/c I
+  istore 19
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  istore_1
+  iload 11
+  iload_1
+  if_icmpne Label2
+  aload 17
+  astore_1
+  aload_1
+  invokevirtual java/net/URL/openConnection()Ljava/net/URLConnection;
+  astore 20
+Label56:
+  aload 20
+  astore 21
+  getstatic com/adwo/adsdk/Y/b I
+  istore 19
+  aload 20
+  checkcast java/net/URLConnection
+  astore 20
+Label59:
+  aload 20
+  astore_1
+  iload 19
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual java/net/URLConnection/setConnectTimeout(I)V
+  getstatic com/adwo/adsdk/Y/b I
+  istore 19
+  aload 21
+  astore 22
+  aload 22
+  checkcast java/net/URLConnection
+  astore 22
+  aload 22
+  astore 20
+  aload 20
+  astore_1
+  iload 19
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual java/net/URLConnection/setReadTimeout(I)V
+Label21:
+  aload 21
+  astore 23
+  aload 23
+  checkcast java/net/URLConnection
+  astore 23
+  aload 23
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  invokevirtual java/net/URLConnection/connect()V
+Label60:
+  aload 18
+  astore 24
+Label22:
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 25
+  iload 25
+  istore_1
+  iload 7
+  iload_1
+  if_icmpne Label3
+Label62:
+  aload 24
+  astore 26
+  aload 26
+  checkcast java/net/URL
+  astore 26
+  aload 26
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokevirtual java/net/URL/toString()Ljava/lang/String;
+  astore 10
+Label24:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/o Lcom/adwo/adsdk/o;
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label4
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/o Lcom/adwo/adsdk/o;
+  astore 8
+  aload 8
+  invokeinterface com/adwo/adsdk/o/b()V 1
+Label4:
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnull Label5
+  new android/content/Intent
+  astore 27
+  aload 27
+  astore 28
+  aload 27
+  astore_1
+  aload_1
+  invokespecial android/content/Intent/<init>()V
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  lookupswitch
+  1 : Label7
+  2 : Label7
+  3 : Label8
+  4 : Label8
+  5 : Label8
+  6 : Label8
+  7 : Label8
+  8 : Label9
+  9 : Label10
+  10 : Label11
+  11 : Label12
+  12 : Label13
+  13 : Label14
+  14 : Label15
+  15 : Label16
+  default : Label6
+Label6:
+  goto Label12
+Label12:
+  ldc 268435456
+  istore 25
+  aload 28
+  astore_1
+  iload 25
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual android/content/Intent/addFlags(I)Landroid/content/Intent;
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/a Landroid/content/Context;
+  astore_1
+  aload_1
+  astore 29
+Label64:
+  aload 29
+  astore_1
+  aload 28
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Context/startActivity(Landroid/content/Intent;)V
+  getstatic com/adwo/adsdk/p/h Ljava/util/Set;
+  astore 30
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/b I
+  istore_1
+  iload_1
+  istore 19
+  iload_1
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 31
+  aload 30
+  astore_1
+  aload 31
+  astore_2
+  aload_1
+  aload_2
+  invokeinterface java/util/Set/add(Ljava/lang/Object;)Z 2
+  pop
+Label5:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/i Ljava/util/List;
+  astore_1
+  aload_1
+  astore 32
+  aload 32
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 32
+  ifnull Label17
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/i Ljava/util/List;
+  astore_1
+  aload_1
+  astore 32
+  aload 32
+  astore_1
+  aload_1
+  invokeinterface java/util/List/size()I 1
+  istore 19
+  iload 19
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  ifeq Label17
+Label44:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/i Ljava/util/List;
+  astore_1
+  aload_1
+  astore 32
+  aload 32
+  astore_1
+  aload_1
+  invokeinterface java/util/List/size()I 1
+  istore 19
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  istore_1
+  iload 4
+  iload_1
+  if_icmplt Label18
+Label17:
+  return
+Label2:
+  getstatic com/adwo/adsdk/p/g I
+  istore 19
+  getstatic com/adwo/adsdk/p/d I
+  istore 11
+  iload 19
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  istore_1
+  iload_1
+  iload 11
+  if_icmpeq Label19
+  getstatic com/adwo/adsdk/p/g I
+  istore 19
+  getstatic com/adwo/adsdk/p/e I
+  istore 11
+  iload 19
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  istore_1
+  iload_1
+  iload 11
+  if_icmpne Label20
+Label19:
+  new java/net/Proxy
+  astore 33
+  getstatic java/net/Proxy$Type/HTTP Ljava/net/Proxy$Type;
+  astore 34
+  new java/net/InetSocketAddress
+  astore 35
+  new java/lang/String
+  astore 10
+  getstatic com/adwo/adsdk/Y/k [B
+  astore 36
+Label65:
+  ldc "utf-8"
+  astore 12
+  aload 36
+  astore_1
+  aload 10
+  aload_1
+  aload 12
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+  bipush 80
+  istore 25
+  aload 35
+  astore_1
+  iload 25
+  istore_2
+  aload_1
+  aload 10
+  iload_2
+  invokespecial java/net/InetSocketAddress/<init>(Ljava/lang/String;I)V
+  aload 33
+  astore_1
+  aload 34
+  astore_2
+  aload 35
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokespecial java/net/Proxy/<init>(Ljava/net/Proxy$Type;Ljava/net/SocketAddress;)V
+  aload 18
+  astore_1
+  aload 33
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/net/URL/openConnection(Ljava/net/Proxy;)Ljava/net/URLConnection;
+  astore 20
+Label66:
+  aload 20
+  astore 21
+  getstatic com/adwo/adsdk/Y/b I
+  istore 19
+  aload 20
+  checkcast java/net/URLConnection
+  astore 20
+Label67:
+  aload 20
+  astore_1
+  iload 19
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual java/net/URLConnection/setConnectTimeout(I)V
+  getstatic com/adwo/adsdk/Y/b I
+  istore 19
+  aload 21
+  astore 37
+  aload 37
+  checkcast java/net/URLConnection
+  astore 37
+  aload 37
+  astore 20
+  aload 20
+  astore_1
+  iload 19
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual java/net/URLConnection/setReadTimeout(I)V
+Label68:
+  goto Label21
+Label58:
+  astore 38
+Label49:
+  new java/lang/StringBuilder
+  astore 13
+  ldc "Malformed click URL.Will try to follow anyway."
+  astore 12
+  aload 13
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/e Ljava/lang/String;
+  astore 9
+  aload 13
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 9
+  ldc "Adwo SDK"
+  astore 12
+  aload 12
+  aload 9
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aconst_null
+  astore 24
+  goto Label22
+Label20:
+  getstatic com/adwo/adsdk/p/g I
+  istore 19
+  getstatic com/adwo/adsdk/p/f I
+  istore 11
+  iload 19
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  istore_1
+  iload_1
+  iload 11
+  if_icmpne Label23
+  new java/net/Proxy
+  astore 33
+  getstatic java/net/Proxy$Type/HTTP Ljava/net/Proxy$Type;
+  astore 34
+  new java/net/InetSocketAddress
+  astore 35
+  new java/lang/String
+  astore 39
+  getstatic com/adwo/adsdk/Y/j [B
+  astore 36
+Label69:
+  ldc "utf-8"
+  astore 12
+  aload 39
+  astore_1
+  aload 36
+  astore_2
+  aload_1
+  aload_2
+  aload 12
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+  bipush 80
+  istore 25
+  aload 35
+  astore_1
+  aload 39
+  astore_2
+  iload 25
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokespecial java/net/InetSocketAddress/<init>(Ljava/lang/String;I)V
+  aload 33
+  astore_1
+  aload 34
+  astore_2
+  aload 35
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokespecial java/net/Proxy/<init>(Ljava/net/Proxy$Type;Ljava/net/SocketAddress;)V
+  aload 17
+  astore_1
+  aload 33
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/net/URL/openConnection(Ljava/net/Proxy;)Ljava/net/URLConnection;
+  astore 20
+Label70:
+  aload 20
+  astore 21
+  getstatic com/adwo/adsdk/Y/b I
+  istore 19
+  aload 20
+  checkcast java/net/URLConnection
+  astore 20
+Label71:
+  aload 20
+  astore_1
+  iload 19
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual java/net/URLConnection/setConnectTimeout(I)V
+  getstatic com/adwo/adsdk/Y/b I
+  istore 19
+  aload 21
+  astore 40
+  aload 40
+  checkcast java/net/URLConnection
+  astore 40
+  aload 40
+  astore 20
+  aload 20
+  astore_1
+  iload 19
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual java/net/URLConnection/setReadTimeout(I)V
+Label72:
+  goto Label21
+Label57:
+  astore 41
+Label48:
+  new java/lang/StringBuilder
+  astore 13
+  ldc "Could not determine final click destination URL.  Will try to follow anyway.  "
+  astore 12
+  aload 13
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/e Ljava/lang/String;
+  astore 9
+  aload 13
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 9
+  ldc "Adwo SDK"
+  astore 12
+  aload 12
+  aload 9
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aconst_null
+  astore 24
+  goto Label22
+Label61:
+  astore 42
+  ldc "Adwo SDK"
+  astore 12
+  ldc "Could not get ad click url from  server."
+  astore 43
+  aload 43
+  astore_1
+  aload 12
+  aload_1
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aconst_null
+  astore 10
+  goto Label24
+Label3:
+  aload 21
+  astore 44
+  aload 44
+  checkcast java/net/URLConnection
+  astore 44
+  aload 44
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  invokevirtual java/net/URLConnection/getInputStream()Ljava/io/InputStream;
+  astore 45
+Label75:
+  aload 45
+  astore 46
+  aload 45
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 45
+  ifnull Label25
+  new java/io/ByteArrayOutputStream
+  astore 47
+Label78:
+  aload 47
+  astore_1
+  aload_1
+  invokespecial java/io/ByteArrayOutputStream/<init>()V
+Label28:
+  aload 46
+  astore 48
+  aload 48
+  checkcast java/io/InputStream
+  astore 48
+  aload 48
+  astore 45
+  aload 45
+  astore_1
+  aload_1
+  invokevirtual java/io/InputStream/read()I
+  istore 19
+  iload 19
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 25
+  iload 19
+  istore_1
+  iload 25
+  istore_2
+  iload_1
+  iload_2
+  if_icmpne Label26
+  new java/lang/String
+  astore 39
+  aload 39
+  astore 10
+  aload 47
+  astore_1
+  aload_1
+  invokevirtual java/io/ByteArrayOutputStream/toByteArray()[B
+  astore 36
+  ldc "UTF-8"
+  astore 12
+  aload 39
+  astore_1
+  aload 36
+  astore_2
+  aload_1
+  aload_2
+  aload 12
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+Label52:
+  aload 46
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 46
+  ifnull Label27
+Label80:
+  aload 46
+  astore 49
+  aload 49
+  checkcast java/io/InputStream
+  astore 49
+  aload 49
+  astore 45
+  aload 45
+  astore_1
+  aload_1
+  invokevirtual java/io/InputStream/close()V
+Label27:
+  goto Label24
+Label26:
+  aload 47
+  astore_1
+  iload 19
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual java/io/ByteArrayOutputStream/write(I)V
+Label81:
+  goto Label28
+Label77:
+  astore 50
+Label47:
+  new java/lang/StringBuilder
+  astore 13
+  ldc "Connection off "
+  astore 12
+  aload 13
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aconst_null
+  astore 51
+  aload 51
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 9
+  ldc "Adwo SDK"
+  astore 12
+  aload 12
+  aload 9
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label83:
+  aload 46
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 46
+  ifnull Label29
+Label85:
+  aload 46
+  astore 52
+  aload 52
+  checkcast java/io/InputStream
+  astore 52
+  aload 52
+  astore 45
+  aload 45
+  astore_1
+  aload_1
+  invokevirtual java/io/InputStream/close()V
+Label29:
+  aload 21
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 21
+  ifnull Label30
+  aconst_null
+  astore 10
+  goto Label24
+Label84:
+  astore 53
+  aconst_null
+  astore 10
+  goto Label24
+Label73:
+  astore 54
+  aconst_null
+  astore 46
+Label46:
+  aload 46
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 46
+  ifnull Label31
+Label87:
+  aload 46
+  astore 55
+  aload 55
+  checkcast java/io/InputStream
+  astore 55
+  aload 55
+  astore 45
+  aload 45
+  astore_1
+  aload_1
+  invokevirtual java/io/InputStream/close()V
+Label31:
+  aload 54
+  athrow
+Label79:
+  astore 56
+  goto Label24
+Label7:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/a Landroid/content/Context;
+  astore_1
+  aload_1
+  astore 29
+Label89:
+  ldc com/adwo/adsdk/AdwoAdBrowserActivity
+  astore 57
+  aload 27
+  astore_1
+  aload 29
+  astore_2
+  aload 57
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokevirtual android/content/Intent/setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+  pop
+  ldc "android.intent.action.VIEW"
+  astore 12
+  aload 27
+  astore_1
+  aload_1
+  aload 12
+  invokevirtual android/content/Intent/setAction(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  ldc "url"
+  astore 12
+  aload 27
+  astore_1
+  aload_1
+  aload 12
+  aload 10
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/g Ljava/lang/String;
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label32
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/g Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 39
+  ldc "recurl"
+  astore 12
+  aload 27
+  astore_1
+  aload 39
+  astore_2
+  aload_1
+  aload 12
+  aload_2
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label90:
+  aload 27
+  astore 28
+Label35:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/i Ljava/util/List;
+  astore_1
+  aload_1
+  astore 32
+  aload 32
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 32
+  ifnull Label33
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/i Ljava/util/List;
+  astore_1
+  aload_1
+  astore 32
+  aload 32
+  astore_1
+  aload_1
+  invokeinterface java/util/List/size()I 1
+  istore 19
+  iload 19
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  ifeq Label33
+  iconst_0
+  istore 19
+Label36:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/i Ljava/util/List;
+  astore_1
+  aload_1
+  astore 32
+  aload 32
+  astore_1
+  aload_1
+  invokeinterface java/util/List/size()I 1
+  istore 11
+  iload 19
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  istore_1
+  iload_1
+  iload 11
+  if_icmplt Label34
+  goto Label12
+Label88:
+  astore 58
+  new android/content/Intent
+  astore 27
+  aload 27
+  astore 28
+  aload 27
+  astore_1
+  aload_1
+  invokespecial android/content/Intent/<init>()V
+  new android/content/ComponentName
+  astore 59
+Label92:
+  ldc "com.android.browser"
+  astore 12
+  ldc "com.android.browser.BrowserActivity"
+  astore 43
+  aload 59
+  astore_1
+  aload 43
+  astore_2
+  aload_1
+  aload 12
+  aload_2
+  invokespecial android/content/ComponentName/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload 27
+  astore_1
+  aload 59
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Intent/setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+  pop
+  ldc "android.intent.action.VIEW"
+  astore 12
+  aload 27
+  astore_1
+  aload_1
+  aload 12
+  invokevirtual android/content/Intent/setAction(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload 10
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 60
+  aload 27
+  astore_1
+  aload 60
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Intent/setData(Landroid/net/Uri;)Landroid/content/Intent;
+  pop
+  ldc "CONFIGURATION ERROR:  com.adwo.adsdk.AdwoAdBrowserActivity must be registered in your AndroidManifest.xml file. "
+  astore 12
+  aload 12
+  invokestatic com/adwo/adsdk/p/a(Ljava/lang/String;)V
+Label93:
+  aload 27
+  astore 28
+  goto Label35
+Label91:
+  astore 61
+  goto Label35
+Label34:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload 6
+  getfield com/adwo/adsdk/k/i Ljava/util/List;
+  astore_1
+  aload_1
+  astore 32
+  aload 32
+  astore_1
+  iload 19
+  istore_2
+  aload_1
+  iload_2
+  invokeinterface java/util/List/get(I)Ljava/lang/Object; 2
+  astore 46
+  aload 46
+  astore 62
+  aload 62
+  checkcast java/lang/String
+  astore 62
+  aload 62
+  astore 9
+  aload 9
+  invokestatic com/adwo/adsdk/p/c(Ljava/lang/String;)V
+  iload 19
+  iconst_1
+  iadd
+  istore 19
+  goto Label36
+Label8:
+  aload 10
+  invokevirtual java/lang/String/trim()Ljava/lang/String;
+  astore 9
+  ldc ".apk"
+  astore 12
+  aload 9
+  aload 12
+  invokevirtual java/lang/String/endsWith(Ljava/lang/String;)Z
+  istore 63
+  iload 63
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 63
+  ifeq Label37
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore 6
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore_1
+  aload_1
+  astore 64
+  aload 64
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/k/a Landroid/content/Context;
+  astore_1
+  aload_1
+  astore 29
+  aload 29
+  astore_1
+  aload 6
+  aload 9
+  aload_1
+  invokevirtual com/adwo/adsdk/k/a(Ljava/lang/String;Landroid/content/Context;)V
+Label95:
+  goto Label17
+Label94:
+  astore 65
+  aload 65
+  astore_1
+  aload_1
+  invokevirtual java/lang/NullPointerException/printStackTrace()V
+  goto Label12
+Label37:
+  new android/content/ComponentName
+  astore 59
+Label96:
+  ldc "com.android.browser"
+  astore 12
+  ldc "com.android.browser.BrowserActivity"
+  astore 43
+  aload 59
+  astore_1
+  aload 43
+  astore_2
+  aload_1
+  aload 12
+  aload_2
+  invokespecial android/content/ComponentName/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload 27
+  astore_1
+  aload 59
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Intent/setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+  pop
+  ldc "android.intent.action.VIEW"
+  astore 12
+  aload 27
+  astore_1
+  aload_1
+  aload 12
+  invokevirtual android/content/Intent/setAction(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload 9
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 60
+  aload 27
+  astore_1
+  aload 60
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Intent/setData(Landroid/net/Uri;)Landroid/content/Intent;
+  pop
+Label97:
+  goto Label12
+Label9:
+  new java/lang/StringBuilder
+  astore 13
+Label99:
+  ldc "tel:"
+  astore 12
+  aload 13
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 13
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 9
+  ldc "android.intent.action.DIAL"
+  astore 12
+  aload 27
+  astore_1
+  aload_1
+  aload 12
+  invokevirtual android/content/Intent/setAction(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload 9
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 60
+  aload 27
+  astore_1
+  aload 60
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Intent/setData(Landroid/net/Uri;)Landroid/content/Intent;
+  pop
+Label100:
+  goto Label12
+Label98:
+  astore 66
+  aload 66
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label12
+Label10:
+  ldc "|"
+  astore 12
+  aload 10
+  aload 12
+  invokevirtual java/lang/String/contains(Ljava/lang/CharSequence;)Z
+  istore 63
+  iload 63
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 63
+  ifeq Label38
+  ldc "|"
+  astore 12
+  aload 10
+  aload 12
+  invokevirtual java/lang/String/indexOf(Ljava/lang/String;)I
+  istore 19
+  iconst_0
+  istore 25
+  iload 25
+  istore_1
+  iload 19
+  istore_2
+  aload 10
+  iload_1
+  iload_2
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 9
+  iload 19
+  iconst_1
+  iadd
+  istore 19
+  iload 19
+  istore_1
+  aload 10
+  iload_1
+  invokevirtual java/lang/String/substring(I)Ljava/lang/String;
+  astore 39
+Label39:
+  ldc "android.intent.action.VIEW"
+  astore 12
+  aload 28
+  astore_1
+  aload_1
+  aload 12
+  invokevirtual android/content/Intent/setAction(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  new java/lang/StringBuilder
+  astore 13
+  ldc "http://maps.google.com/maps?q="
+  astore 12
+  aload 13
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 13
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  ldc "("
+  astore 12
+  aload 14
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 39
+  astore_1
+  aload 14
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  ldc ")&z=22"
+  astore 12
+  aload 14
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 60
+  aload 28
+  astore_1
+  aload 60
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Intent/setData(Landroid/net/Uri;)Landroid/content/Intent;
+  pop
+Label102:
+  goto Label12
+Label101:
+  astore 67
+  aload 67
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/printStackTrace()V
+  ldc "android.intent.action.VIEW"
+  astore 12
+  aload 28
+  astore_1
+  aload_1
+  aload 12
+  invokevirtual android/content/Intent/setAction(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  new java/lang/StringBuilder
+  astore 13
+  ldc "http://maps.google.com/maps?q="
+  astore 12
+  aload 13
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 13
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  ldc "("
+  astore 12
+  aload 14
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 39
+  astore_1
+  aload 14
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  ldc ")&z=22"
+  astore 12
+  aload 14
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 9
+  aload 9
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 60
+  aload 28
+  astore_1
+  aload 60
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Intent/setData(Landroid/net/Uri;)Landroid/content/Intent;
+  pop
+  goto Label12
+Label38:
+  ldc ""
+  astore 39
+  aload 10
+  astore 9
+  goto Label39
+Label11:
+  new android/content/Intent
+  astore 68
+Label104:
+  ldc "android.intent.action.WEB_SEARCH"
+  astore 12
+  aload 68
+  astore_1
+  aload_1
+  aload 12
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;)V
+Label105:
+  ldc "query"
+  astore 12
+  aload 68
+  astore_1
+  aload_1
+  aload 12
+  aload 10
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label107:
+  aload 68
+  astore 28
+  goto Label12
+Label103:
+  astore 69
+Label45:
+  aload 69
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label12
+Label13:
+  ldc "|"
+  astore 12
+  aload 10
+  aload 12
+  invokevirtual java/lang/String/contains(Ljava/lang/CharSequence;)Z
+  istore 63
+  iload 63
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 63
+  ifeq Label40
+  ldc "|"
+  astore 12
+  aload 10
+  aload 12
+  invokevirtual java/lang/String/indexOf(Ljava/lang/String;)I
+  istore 19
+  iconst_0
+  istore 25
+  iload 25
+  istore_1
+  iload 19
+  istore_2
+  aload 10
+  iload_1
+  iload_2
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 9
+  iload 19
+  iconst_1
+  iadd
+  istore 19
+  iload 19
+  istore_1
+  aload 10
+  iload_1
+  invokevirtual java/lang/String/substring(I)Ljava/lang/String;
+  astore 5
+Label51:
+  ldc "android.intent.action.SENDTO"
+  astore 12
+  aload 28
+  astore_1
+  aload_1
+  aload 12
+  invokevirtual android/content/Intent/setAction(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  new java/lang/StringBuilder
+  astore 13
+  ldc "smsto:"
+  astore 12
+  aload 13
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 13
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 9
+  aload 9
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 60
+  aload 28
+  astore_1
+  aload 60
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Intent/setData(Landroid/net/Uri;)Landroid/content/Intent;
+  pop
+  ldc "sms_body"
+  astore 12
+  aload 28
+  astore_1
+  aload_1
+  aload 12
+  aload 5
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label109:
+  goto Label12
+Label108:
+  astore 70
+  aload 70
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label12
+Label14:
+  ldc "android.intent.action.SEND"
+  astore 12
+  aload 27
+  astore_1
+  aload_1
+  aload 12
+  invokevirtual android/content/Intent/setAction(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  ldc "|"
+  astore 12
+  aload 10
+  aload 12
+  invokevirtual java/lang/String/contains(Ljava/lang/CharSequence;)Z
+  istore 63
+  iload 63
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 63
+  ifeq Label41
+  iconst_3
+  istore 25
+  iload 25
+  istore_1
+  iload_1
+  anewarray java/lang/String
+  astore_1
+  aload_1
+  astore 71
+  ldc "|"
+  astore 12
+  aload 10
+  aload 12
+  invokevirtual java/lang/String/indexOf(Ljava/lang/String;)I
+  istore 19
+  iconst_0
+  istore 25
+  iload 25
+  istore_1
+  iload 19
+  istore_2
+  aload 10
+  iload_1
+  iload_2
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 9
+  iconst_0
+  istore 25
+  aload 71
+  iload 25
+  aload 9
+  aastore
+  iload 19
+  iconst_1
+  iadd
+  istore 72
+  iload 72
+  istore_1
+  aload 10
+  iload_1
+  invokevirtual java/lang/String/substring(I)Ljava/lang/String;
+  astore 9
+  ldc "|"
+  astore 12
+  aload 9
+  aload 12
+  invokevirtual java/lang/String/indexOf(Ljava/lang/String;)I
+  istore 72
+  iconst_0
+  istore 25
+  iload 25
+  istore_1
+  iload 72
+  istore_2
+  aload 9
+  iload_1
+  iload_2
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 39
+  iconst_1
+  istore 25
+  aload 71
+  iload 25
+  aload 39
+  aastore
+  iload 72
+  iconst_1
+  iadd
+  istore 72
+  iload 72
+  istore_1
+  aload 9
+  iload_1
+  invokevirtual java/lang/String/substring(I)Ljava/lang/String;
+  astore 9
+  iconst_2
+  istore 25
+  aload 71
+  iload 25
+  aload 9
+  aastore
+  iconst_0
+  istore 25
+  aload 71
+  iload 25
+  aaload
+  astore 9
+  iconst_1
+  istore 25
+  aload 71
+  iload 25
+  aaload
+  astore 5
+  iconst_2
+  istore 25
+  aload 71
+  iload 25
+  aaload
+  astore 39
+Label50:
+  aload 9
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 60
+  aload 28
+  astore_1
+  aload 60
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Intent/setData(Landroid/net/Uri;)Landroid/content/Intent;
+  pop
+  iconst_1
+  istore 25
+  iload 25
+  istore_1
+  iload_1
+  anewarray java/lang/String
+  astore_1
+  aload_1
+  astore 71
+  iconst_0
+  istore 25
+  aload 71
+  iload 25
+  aload 9
+  aastore
+  ldc "android.intent.extra.EMAIL"
+  astore 12
+  aload 28
+  astore_1
+  aload 71
+  astore_2
+  aload_1
+  aload 12
+  aload_2
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;[Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  ldc "android.intent.extra.TEXT"
+  astore 12
+  aload 28
+  astore_1
+  aload 39
+  astore_2
+  aload_1
+  aload 12
+  aload_2
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  ldc "android.intent.extra.SUBJECT"
+  astore 12
+  aload 28
+  astore_1
+  aload_1
+  aload 12
+  aload 5
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  ldc "message/rfc882"
+  astore 12
+  aload 28
+  astore_1
+  aload_1
+  aload 12
+  invokevirtual android/content/Intent/setType(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label111:
+  goto Label12
+Label110:
+  astore 73
+  aload 73
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label12
+Label15:
+  ldc ".mp3"
+  astore 12
+  aload 10
+  aload 12
+  invokevirtual java/lang/String/endsWith(Ljava/lang/String;)Z
+  istore 63
+  iload 63
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 63
+  ifne Label42
+  ldc ".wav"
+  astore 12
+  aload 10
+  aload 12
+  invokevirtual java/lang/String/endsWith(Ljava/lang/String;)Z
+  istore 63
+  iload 63
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 63
+  ifeq Label16
+Label42:
+  ldc "android.intent.action.VIEW"
+  astore 12
+  aload 28
+  astore_1
+  aload_1
+  aload 12
+  invokevirtual android/content/Intent/setAction(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload 10
+  invokestatic com/adwo/adsdk/Y/a(Ljava/lang/String;)Ljava/lang/String;
+  astore 9
+  aload 10
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 60
+  aload 28
+  astore_1
+  aload 60
+  astore_2
+  aload_1
+  aload_2
+  aload 9
+  invokevirtual android/content/Intent/setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label16:
+  ldc ".3gp"
+  astore 12
+  aload 10
+  aload 12
+  invokevirtual java/lang/String/endsWith(Ljava/lang/String;)Z
+  istore 63
+  iload 63
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 63
+  ifne Label43
+  ldc ".mp4"
+  astore 12
+  aload 10
+  aload 12
+  invokevirtual java/lang/String/endsWith(Ljava/lang/String;)Z
+  istore 63
+  iload 63
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 63
+  ifne Label43
+  ldc ".mpeg"
+  astore 12
+  aload 10
+  aload 12
+  invokevirtual java/lang/String/endsWith(Ljava/lang/String;)Z
+  istore 63
+  iload 63
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 63
+  ifeq Label12
+Label43:
+  ldc "android.intent.action.VIEW"
+  astore 12
+  aload 28
+  astore_1
+  aload_1
+  aload 12
+  invokevirtual android/content/Intent/setAction(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload 10
+  invokestatic com/adwo/adsdk/Y/a(Ljava/lang/String;)Ljava/lang/String;
+  astore 9
+  aload 10
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 60
+  aload 28
+  astore_1
+  aload 60
+  astore_2
+  aload_1
+  aload_2
+  aload 9
+  invokevirtual android/content/Intent/setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  goto Label12
+Label63:
+  astore 74
+  new java/lang/StringBuilder
+  astore 13
+  ldc "Could not intent to "
+  astore 12
+  aload 13
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 13
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 10
+  ldc "Adwo SDK"
+  astore 12
+  aload 74
+  astore_1
+  aload 12
+  aload 10
+  aload_1
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+  pop
+  goto Label5
+Label18:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/l/a Lcom/adwo/adsdk/k;
+  astore_1
+  aload_1
+  astore 64
+  aload 64
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/k/i Ljava/util/List;
+  astore_1
+  aload_1
+  astore 32
+  aload 32
+  astore_1
+  aload_1
+  iload 4
+  invokeinterface java/util/List/get(I)Ljava/lang/Object; 2
+  astore 46
+  aload 46
+  astore 75
+  aload 75
+  checkcast java/lang/String
+  astore 75
+  aload 75
+  astore 10
+  aload 10
+  invokestatic com/adwo/adsdk/p/c(Ljava/lang/String;)V
+  iload 4
+  iconst_1
+  iadd
+  istore 4
+  goto Label44
+Label86:
+  astore 76
+  goto Label31
+Label106:
+  astore 77
+  aload 68
+  astore 28
+  aload 77
+  astore 69
+  goto Label45
+Label76:
+  astore 54
+  goto Label46
+Label82:
+  astore 78
+  aload 78
+  astore 54
+  goto Label46
+Label74:
+  astore 79
+  aconst_null
+  astore 46
+  goto Label47
+Label53:
+  astore 80
+  aconst_null
+  astore 21
+  goto Label48
+Label54:
+  astore 81
+  aconst_null
+  astore 21
+  goto Label49
+Label41:
+  aconst_null
+  astore 9
+  aconst_null
+  astore 39
+  goto Label50
+Label40:
+  aconst_null
+  astore 9
+  goto Label51
+Label33:
+  goto Label12
+Label32:
+  aload 27
+  astore 28
+  goto Label35
+Label30:
+  aconst_null
+  astore 10
+  goto Label24
+Label25:
+  aconst_null
+  astore 10
+  goto Label52
+Label23:
+  aconst_null
+  astore 21
+  goto Label21
+  nop
+  nop
+.end <method>
+

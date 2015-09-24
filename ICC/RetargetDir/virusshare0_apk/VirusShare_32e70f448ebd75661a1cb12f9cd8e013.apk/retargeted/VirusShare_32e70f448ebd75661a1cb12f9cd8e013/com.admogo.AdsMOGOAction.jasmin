@@ -1,0 +1,587 @@
+.source AdsMOGOAction.java
+.class public  com/admogo/AdsMOGOAction
+.super java/lang/Object
+.field private static final "ADSMOGO" Ljava/lang/String; =  "AdsMogo Action SDK"
+.field private static final "TIMEOUT_TIME" I =  30000
+.field private static "actionRunnable" Ljava/lang/Runnable;
+.field private static "con" Landroid/content/Context;
+.field private static "deviceIDHash" Ljava/lang/String;
+.field private static "isSend" Z =  0
+.field private static "pid" Ljava/lang/String;
+.field private static "random" I =  0
+.field private static "testIndex" I =  0
+.field private static final "urlAction" [Ljava/lang/String;
+.field private static final "urlAction0" Ljava/lang/String; =  "http://cfg.adsmogo.com/Action.ashx?cid=%s&uid=%s"
+.field private static final "urlAction1" Ljava/lang/String; =  "http://cfg.adsmogo.net/Action.ashx?cid=%s&uid=%s"
+.field private static final "urlAction2" Ljava/lang/String; =  "http://cfg.adsmogo.org/Action.ashx?cid=%s&uid=%s"
+.field private static final "urlAction3" Ljava/lang/String; =  "http://cfg.adsmogo.mobi/Action.ashx?cid=%s&uid=%s"
+
+.method static <clinit>()V
+.limit locals 5
+.limit stack 200
+  nop
+  iconst_4
+  istore_1
+  iload_1
+  anewarray java/lang/String
+  astore_0
+  iconst_0
+  istore_1
+  iload_1
+  istore_2
+  ldc "http://cfg.adsmogo.com/Action.ashx?cid=%s&uid=%s"
+  astore_3
+  aload_0
+  iload_2
+  aload_3
+  aastore
+  iconst_1
+  istore_1
+  ldc "http://cfg.adsmogo.net/Action.ashx?cid=%s&uid=%s"
+  astore_3
+  aload_0
+  iload_1
+  aload_3
+  aastore
+  iconst_2
+  istore_1
+  ldc "http://cfg.adsmogo.org/Action.ashx?cid=%s&uid=%s"
+  astore_3
+  aload_0
+  iload_1
+  aload_3
+  aastore
+  iconst_3
+  istore_1
+  ldc "http://cfg.adsmogo.mobi/Action.ashx?cid=%s&uid=%s"
+  astore_3
+  aload_0
+  iload_1
+  aload_3
+  aastore
+  aload_0
+  putstatic com/admogo/AdsMOGOAction/urlAction [Ljava/lang/String;
+  iconst_0
+  istore_1
+  iload_1
+  istore_2
+  iload_2
+  putstatic com/admogo/AdsMOGOAction/testIndex I
+  iconst_0
+  istore_1
+  iload_1
+  istore_2
+  iload_2
+  putstatic com/admogo/AdsMOGOAction/random I
+  ldc ""
+  astore_3
+  aload_3
+  putstatic com/admogo/AdsMOGOAction/deviceIDHash Ljava/lang/String;
+  iconst_0
+  istore_1
+  iload_1
+  putstatic com/admogo/AdsMOGOAction/isSend Z
+  new com/admogo/AdsMOGOAction$1
+  astore 4
+  aload 4
+  invokespecial com/admogo/AdsMOGOAction$1/<init>()V
+  aload 4
+  putstatic com/admogo/AdsMOGOAction/actionRunnable Ljava/lang/Runnable;
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method static access$0()Z
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdsMOGOAction/isSend Z
+  istore_0
+  iload_0
+  ireturn
+  nop
+.end <method>
+
+.method static access$1()[Ljava/lang/String;
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdsMOGOAction/urlAction [Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method static access$2()I
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdsMOGOAction/random I
+  istore_0
+  iload_0
+  ireturn
+  nop
+.end <method>
+
+.method static access$3()Ljava/lang/String;
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdsMOGOAction/pid Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method static access$4()Ljava/lang/String;
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdsMOGOAction/deviceIDHash Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method static access$5(Z)V
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  iload_0
+  putstatic com/admogo/AdsMOGOAction/isSend Z
+  return
+  nop
+.end <method>
+
+.method static access$6()Landroid/content/Context;
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdsMOGOAction/con Landroid/content/Context;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method static access$7(I)V
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  iload_0
+  putstatic com/admogo/AdsMOGOAction/random I
+  return
+  nop
+.end <method>
+
+.method static access$8()I
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdsMOGOAction/testIndex I
+  istore_0
+  iload_0
+  ireturn
+  nop
+.end <method>
+
+.method static access$9(I)V
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  iload_0
+  putstatic com/admogo/AdsMOGOAction/testIndex I
+  return
+  nop
+.end <method>
+
+.method public static action(Landroid/content/Context;Ljava/lang/String;)V
+.limit locals 13
+.limit stack 200
+  nop
+  aload_0
+  putstatic com/admogo/AdsMOGOAction/con Landroid/content/Context;
+  aload_1
+  putstatic com/admogo/AdsMOGOAction/pid Ljava/lang/String;
+  aload_0
+  invokestatic com/admogo/AdsMOGOAction/getDeviceID(Landroid/content/Context;)Ljava/lang/String;
+  astore_1
+  aload_1
+  putstatic com/admogo/AdsMOGOAction/deviceIDHash Ljava/lang/String;
+  getstatic com/admogo/AdsMOGOAction/deviceIDHash Ljava/lang/String;
+  astore_1
+  aload_1
+  invokestatic com/admogo/AdsMOGOAction/convertToHex(Ljava/lang/String;)Ljava/lang/String;
+  astore_1
+  aload_1
+  putstatic com/admogo/AdsMOGOAction/deviceIDHash Ljava/lang/String;
+  invokestatic java/lang/Math/random()D
+  dstore_2
+  ldc2_w 3.000000000000000
+  dstore 4
+  dload_2
+  dload 4
+  dmul
+  dstore_2
+  dload_2
+  d2i
+  istore 6
+  iload 6
+  putstatic com/admogo/AdsMOGOAction/random I
+  ldc "AdsMogo Action SDK"
+  astore 8
+  iconst_0
+  istore 9
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  ldc "is_aciton"
+  astore 8
+  iconst_1
+  istore 9
+  aload 7
+  aload 8
+  iload 9
+  invokeinterface android/content/SharedPreferences/getBoolean(Ljava/lang/String;Z)Z 3
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label0
+  new java/lang/Thread
+  astore 11
+  getstatic com/admogo/AdsMOGOAction/actionRunnable Ljava/lang/Runnable;
+  astore 12
+  aload 11
+  aload 12
+  invokespecial java/lang/Thread/<init>(Ljava/lang/Runnable;)V
+  aload 11
+  invokevirtual java/lang/Thread/start()V
+Label0:
+  return
+  nop
+.end <method>
+
+.method public static convertToHex(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 12
+.limit stack 200
+  .catch  java/security/NoSuchAlgorithmException <from> Label7 <to> Label8 <using> Label6
+  nop
+Label7:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label0
+  ldc "000000000000000"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label1
+  new java/lang/StringBuilder
+  astore_3
+  aload_0
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_3
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "00"
+  astore_2
+  aload_3
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload 4
+  areturn
+Label1:
+  aload_0
+  invokevirtual java/lang/String/getBytes()[B
+  astore 5
+  ldc "MD5"
+  astore_2
+  aload_2
+  invokestatic java/security/MessageDigest/getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+  astore 6
+  aload 6
+  aload 5
+  invokevirtual java/security/MessageDigest/digest([B)[B
+  astore 5
+  new java/lang/StringBuffer
+  astore 7
+  aload 7
+  invokespecial java/lang/StringBuffer/<init>()V
+  iconst_0
+  dstore 8
+Label5:
+  aload 5
+  arraylength
+  istore 9
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  iload 9
+  if_icmplt Label2
+  aload 7
+  invokevirtual java/lang/StringBuffer/toString()Ljava/lang/String;
+  astore 4
+  aload 4
+  areturn
+Label2:
+  aload 5
+  iload 8
+  baload
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifge Label3
+  iload 9
+  sipush 256
+  iadd
+  istore 9
+Label3:
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 16
+  istore 10
+  iload 9
+  iload 10
+  if_icmpge Label4
+  ldc "0"
+  astore_2
+  aload 7
+  aload_2
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+Label4:
+  iload 9
+  invokestatic java/lang/Integer/toHexString(I)Ljava/lang/String;
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+Label8:
+  iload 8
+  iconst_1
+  iadd
+  istore 8
+  goto Label5
+Label6:
+  astore 11
+  aload 11
+  invokevirtual java/security/NoSuchAlgorithmException/printStackTrace()V
+Label0:
+  ldc ""
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public static getDeviceID(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 10
+.limit stack 200
+  nop
+  ldc "phone"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_1
+  astore 4
+  aload 4
+  checkcast android/telephony/TelephonyManager
+  astore 4
+  aload 4
+  astore_3
+  ldc ""
+  astore 5
+Label3:
+  ldc "android.permission.READ_PHONE_STATE"
+  astore_2
+  aload_0
+  aload_2
+  invokestatic com/admogo/AdsMOGOAction/isPermission(Landroid/content/Context;Ljava/lang/String;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_3
+  invokevirtual android/telephony/TelephonyManager/getDeviceId()Ljava/lang/String;
+  astore 7
+Label4:
+  aload 7
+  astore 5
+Label0:
+  aload 5
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label1
+  ldc "AdsMogo Action SDK"
+  astore_2
+  ldc "No IMEI"
+  astore 8
+  aload_2
+  aload 8
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aload_0
+  invokestatic com/admogo/AdsMOGOAction/getIDByMAC(Landroid/content/Context;)Ljava/lang/String;
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  ifnonnull Label1
+  ldc "AdsMogo Action SDK"
+  astore_2
+  ldc "Failed to take mac as IMEI"
+  astore 8
+  aload_2
+  aload 8
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  ldc ""
+  astore_2
+  aload_2
+  areturn
+Label2:
+  astore 9
+  aload 9
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label0
+Label1:
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method private static getIDByMAC(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 10
+.limit stack 200
+  .catch  java/lang/Exception <from> Label1 <to> Label2 <using> Label0
+  nop
+Label1:
+  ldc "wifi"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_1
+  astore 4
+  aload 4
+  checkcast android/net/wifi/WifiManager
+  astore 4
+  aload 4
+  astore_3
+  aload_3
+  invokevirtual android/net/wifi/WifiManager/getConnectionInfo()Landroid/net/wifi/WifiInfo;
+  astore 5
+  aload 5
+  invokevirtual android/net/wifi/WifiInfo/getMacAddress()Ljava/lang/String;
+  astore 6
+Label2:
+  aload 6
+  areturn
+Label0:
+  astore 7
+  ldc "AdsMogo Action SDK"
+  astore_2
+  ldc "Could not read MAC, forget to include ACCESS_WIFI_STATE permission?"
+  astore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aconst_null
+  astore 9
+  aload 9
+  areturn
+  nop
+.end <method>
+
+.method public static isPermission(Landroid/content/Context;Ljava/lang/String;)Z
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_0
+  invokevirtual android/content/Context/getPackageName()Ljava/lang/String;
+  astore_3
+  aload_2
+  aload_1
+  aload_3
+  invokevirtual android/content/pm/PackageManager/checkPermission(Ljava/lang/String;Ljava/lang/String;)I
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifne Label0
+  iconst_1
+  istore 5
+  iload 5
+  ireturn
+Label0:
+  iconst_0
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+

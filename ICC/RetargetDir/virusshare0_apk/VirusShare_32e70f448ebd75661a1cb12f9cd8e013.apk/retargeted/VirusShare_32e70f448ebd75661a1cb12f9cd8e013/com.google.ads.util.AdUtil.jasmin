@@ -1,0 +1,2309 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public final  com/google/ads/util/AdUtil
+.super java/lang/Object
+.field public static final "a" I =  0
+.field private static "b" Ljava/lang/Boolean;
+.field private static "c" Ljava/lang/String;
+.field private static "d" Ljava/lang/String;
+.field private static "e" Landroid/media/AudioManager;
+.field private static "f" Z =  0
+.field private static "g" Z =  0
+.field private static "h" Ljava/lang/String;
+
+.method static <clinit>()V
+.limit locals 7
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+Label2:
+  aload_0
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore_1
+Label0:
+  iload_1
+  putstatic com/google/ads/util/AdUtil/a I
+  aconst_null
+  astore_2
+  aload_2
+  putstatic com/google/ads/util/AdUtil/b Ljava/lang/Boolean;
+  aconst_null
+  astore_2
+  aload_2
+  putstatic com/google/ads/util/AdUtil/c Ljava/lang/String;
+  iconst_1
+  istore_3
+  iload_3
+  putstatic com/google/ads/util/AdUtil/f Z
+  iconst_0
+  istore_3
+  iload_3
+  putstatic com/google/ads/util/AdUtil/g Z
+  aconst_null
+  astore_2
+  aload_2
+  putstatic com/google/ads/util/AdUtil/h Ljava/lang/String;
+  return
+Label1:
+  astore 4
+  new java/lang/StringBuilder
+  astore 5
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "The Android SDK version couldn\'t be parsed to an int: "
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  getstatic android/os/Build$VERSION/SDK Ljava/lang/String;
+  astore_0
+  aload 5
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_0
+  aload_0
+  invokestatic com/google/ads/util/a/e(Ljava/lang/String;)V
+  ldc "Defaulting to Android SDK version 3."
+  astore 6
+  aload 6
+  invokestatic com/google/ads/util/a/e(Ljava/lang/String;)V
+  iconst_3
+  istore_1
+  goto Label0
+  nop
+.end <method>
+
+.method private <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static a()I
+.limit locals 2
+.limit stack 200
+  nop
+  getstatic com/google/ads/util/AdUtil/a I
+  istore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  bipush 9
+  istore_1
+  iload_0
+  iload_1
+  if_icmplt Label0
+  bipush 6
+  istore_1
+  iload_1
+  ireturn
+Label0:
+  iconst_0
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public static a(Landroid/content/Context;Landroid/util/DisplayMetrics;)I
+.limit locals 4
+.limit stack 200
+  nop
+  getstatic com/google/ads/util/AdUtil/a I
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_4
+  istore_3
+  iload_2
+  iload_3
+  if_icmplt Label0
+  aload_0
+  aload_1
+  invokestatic com/google/ads/util/c/a(Landroid/content/Context;Landroid/util/DisplayMetrics;)I
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  aload_1
+  getfield android/util/DisplayMetrics/heightPixels I
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public static a(Landroid/app/Activity;)Landroid/util/DisplayMetrics;
+.limit locals 4
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_1
+  invokespecial android/util/DisplayMetrics/<init>()V
+  aload_0
+  invokevirtual android/app/Activity/getWindowManager()Landroid/view/WindowManager;
+  astore_2
+  aload_2
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore_3
+  aload_3
+  aload_1
+  invokevirtual android/view/Display/getMetrics(Landroid/util/DisplayMetrics;)V
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static a(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 7
+.limit stack 200
+  nop
+  getstatic com/google/ads/util/AdUtil/c Ljava/lang/String;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  invokevirtual android/content/Context/getContentResolver()Landroid/content/ContentResolver;
+  astore_2
+  ldc "android_id"
+  astore_3
+  aload_2
+  aload_3
+  invokestatic android/provider/Settings$Secure/getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_1
+  ifnull Label1
+  invokestatic com/google/ads/util/AdUtil/c()Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label2
+Label1:
+  ldc "emulator"
+  astore_3
+  aload_3
+  invokestatic com/google/ads/util/AdUtil/a(Ljava/lang/String;)Ljava/lang/String;
+  astore_1
+Label4:
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_1
+  ifnonnull Label3
+  aconst_null
+  astore 5
+  aload 5
+  areturn
+Label2:
+  aload_1
+  invokestatic com/google/ads/util/AdUtil/a(Ljava/lang/String;)Ljava/lang/String;
+  astore_1
+  goto Label4
+Label3:
+  getstatic java/util/Locale/US Ljava/util/Locale;
+  astore 6
+  aload_1
+  aload 6
+  invokevirtual java/lang/String/toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+  astore_1
+  aload_1
+  putstatic com/google/ads/util/AdUtil/c Ljava/lang/String;
+Label0:
+  getstatic com/google/ads/util/AdUtil/c Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static a(Landroid/location/Location;)Ljava/lang/String;
+.limit locals 23
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  aconst_null
+  astore_3
+  aload_3
+  areturn
+Label0:
+  iconst_4
+  istore 5
+  iload 5
+  anewarray java/lang/Object
+  astore 4
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual android/location/Location/getTime()J
+  lstore 6
+  ldc2_w 1000
+  lstore 10
+  lload 6
+  lload 10
+  lmul
+  lstore 8
+  lload 8
+  invokestatic java/lang/Long/valueOf(J)Ljava/lang/Long;
+  astore 12
+  iconst_0
+  istore 5
+  aload 4
+  iload 5
+  aload 12
+  aastore
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual android/location/Location/getLatitude()D
+  dstore 13
+  ldc2_w 10000000.000000000000000
+  dstore 15
+  dload 13
+  dload 15
+  dmul
+  dstore 13
+  dload 13
+  d2l
+  lstore 8
+  lload 8
+  invokestatic java/lang/Long/valueOf(J)Ljava/lang/Long;
+  astore 12
+  iconst_1
+  istore 5
+  aload 4
+  iload 5
+  aload 12
+  aastore
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual android/location/Location/getLongitude()D
+  dstore 13
+  ldc2_w 10000000.000000000000000
+  dstore 15
+  dload 13
+  dload 15
+  dmul
+  dstore 13
+  dload 13
+  d2l
+  lstore 8
+  lload 8
+  invokestatic java/lang/Long/valueOf(J)Ljava/lang/Long;
+  astore 12
+  iconst_2
+  istore 5
+  aload 4
+  iload 5
+  aload 12
+  aastore
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual android/location/Location/getAccuracy()F
+  fstore 17
+  ldc 1000.000000
+  fstore 18
+  fload 17
+  fstore_1
+  fload 18
+  fstore_2
+  fload_1
+  fload_2
+  fmul
+  fstore_1
+  fload_1
+  fstore 17
+  fload_1
+  f2l
+  lstore 8
+  lload 8
+  invokestatic java/lang/Long/valueOf(J)Ljava/lang/Long;
+  astore 12
+  iconst_3
+  istore 5
+  aload 4
+  iload 5
+  aload 12
+  aastore
+  ldc "role: 6 producer: 24 historical_role: 1 historical_producer: 12 timestamp: %d latlng < latitude_e7: %d longitude_e7: %d> radius: %d"
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  aload 4
+  invokestatic java/lang/String/format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokestatic com/google/ads/util/AdUtil/b(Ljava/lang/String;)Ljava/lang/String;
+  astore 19
+  new java/lang/StringBuilder
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "e1+"
+  astore 20
+  aload 21
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 21
+  aload 21
+  astore_1
+  aload 19
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 22
+  aload 22
+  areturn
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 11
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  ifle Label0
+Label2:
+  ldc "MD5"
+  astore 4
+  aload 4
+  invokestatic java/security/MessageDigest/getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+  astore_3
+  aload_0
+  invokevirtual java/lang/String/getBytes()[B
+  astore 5
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore_2
+  iconst_0
+  istore 6
+  aload_3
+  aload 5
+  iload 6
+  iload_2
+  invokevirtual java/security/MessageDigest/update([BII)V
+  iconst_1
+  istore 6
+  iload 6
+  anewarray java/lang/Object
+  astore 7
+  new java/math/BigInteger
+  astore 8
+  aload_3
+  invokevirtual java/security/MessageDigest/digest()[B
+  astore 5
+  iconst_1
+  istore 6
+  aload 8
+  iload 6
+  aload 5
+  invokespecial java/math/BigInteger/<init>(I[B)V
+  iconst_0
+  istore 6
+  aload 7
+  iload 6
+  aload 8
+  aastore
+  ldc "%032X"
+  astore 4
+  aload 4
+  aload 7
+  invokestatic java/lang/String/format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  astore_1
+Label0:
+  aload_1
+  areturn
+Label1:
+  astore 9
+  iconst_0
+  istore 6
+  bipush 32
+  istore 10
+  aload_0
+  iload 6
+  iload 10
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static a(Ljava/util/Map;)Ljava/lang/String;
+  .signature_attr "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Ljava/lang/String;"
+.limit locals 6
+.limit stack 200
+  .catch  org/json/JSONException <from> Label1 <to> Label2 <using> Label0
+  nop
+Label1:
+  aload_0
+  invokestatic com/google/ads/util/AdUtil/b(Ljava/util/Map;)Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  invokevirtual org/json/JSONObject/toString()Ljava/lang/String;
+  astore_2
+Label2:
+  aload_2
+  areturn
+Label0:
+  astore_3
+  ldc "JsonException in serialization: "
+  astore 4
+  aload 4
+  aload_3
+  invokestatic com/google/ads/util/a/b(Ljava/lang/String;Ljava/lang/Throwable;)V
+  aconst_null
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method private static a(Ljava/util/Set;)Lorg/json/JSONArray;
+  .signature_attr "(Ljava/util/Set<Ljava/lang/Object;>;)Lorg/json/JSONArray;"
+.limit locals 15
+.limit stack 200
+  nop
+  new org/json/JSONArray
+  astore_1
+  aload_1
+  invokespecial org/json/JSONArray/<init>()V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  aload_0
+  invokeinterface java/util/Set/isEmpty()Z 1
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label1
+Label0:
+  aload_1
+  areturn
+Label1:
+  aload_0
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore_3
+Label5:
+  aload_3
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label2
+  aload_3
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 4
+  aload 4
+  instanceof java/lang/String
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifne Label3
+  aload 4
+  instanceof java/lang/Integer
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifne Label3
+  aload 4
+  instanceof java/lang/Double
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifne Label3
+  aload 4
+  instanceof java/lang/Long
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifne Label3
+  aload 4
+  instanceof java/lang/Float
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label4
+Label3:
+  aload_1
+  aload 4
+  invokevirtual org/json/JSONArray/put(Ljava/lang/Object;)Lorg/json/JSONArray;
+  pop
+  goto Label5
+Label4:
+  aload 4
+  instanceof java/util/Map
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label6
+Label9:
+  aload 4
+  astore 6
+  aload 6
+  checkcast java/util/Map
+  astore 6
+  aload 6
+  astore 5
+  aload 5
+  invokestatic com/google/ads/util/AdUtil/b(Ljava/util/Map;)Lorg/json/JSONObject;
+  astore 7
+  aload_1
+  aload 7
+  invokevirtual org/json/JSONArray/put(Ljava/lang/Object;)Lorg/json/JSONArray;
+  pop
+Label10:
+  goto Label5
+Label8:
+  astore 8
+  ldc "Unknown map type in json serialization: "
+  astore 9
+  aload 9
+  aload 8
+  invokestatic com/google/ads/util/a/b(Ljava/lang/String;Ljava/lang/Throwable;)V
+  goto Label5
+Label6:
+  aload 4
+  instanceof java/util/Set
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label7
+Label12:
+  aload 4
+  astore 10
+  aload 10
+  checkcast java/util/Set
+  astore 10
+  aload 10
+  astore_0
+  aload_0
+  invokestatic com/google/ads/util/AdUtil/a(Ljava/util/Set;)Lorg/json/JSONArray;
+  astore 11
+  aload_1
+  aload 11
+  invokevirtual org/json/JSONArray/put(Ljava/lang/Object;)Lorg/json/JSONArray;
+  pop
+Label13:
+  goto Label5
+Label11:
+  astore 12
+  ldc "Unknown map type in json serialization: "
+  astore 9
+  aload 9
+  aload 12
+  invokestatic com/google/ads/util/a/b(Ljava/lang/String;Ljava/lang/Throwable;)V
+  goto Label5
+Label7:
+  new java/lang/StringBuilder
+  astore 13
+  aload 13
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Unknown value in json serialization: "
+  astore 9
+  aload 13
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  aload 14
+  invokestatic com/google/ads/util/a/e(Ljava/lang/String;)V
+  goto Label5
+Label2:
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static a(Landroid/webkit/WebView;)V
+.limit locals 4
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_1
+  invokevirtual android/content/Context/getApplicationContext()Landroid/content/Context;
+  astore_1
+  aload_1
+  invokestatic com/google/ads/util/AdUtil/h(Landroid/content/Context;)Ljava/lang/String;
+  astore_2
+  aload_0
+  invokevirtual android/webkit/WebView/getSettings()Landroid/webkit/WebSettings;
+  astore_3
+  aload_3
+  aload_2
+  invokevirtual android/webkit/WebSettings/setUserAgentString(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public static a(Ljava/net/HttpURLConnection;Landroid/content/Context;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_1
+  invokestatic com/google/ads/util/AdUtil/h(Landroid/content/Context;)Ljava/lang/String;
+  astore_2
+  ldc "User-Agent"
+  astore_3
+  aload_0
+  aload_3
+  aload_2
+  invokevirtual java/net/HttpURLConnection/setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public static a(Z)V
+.limit locals 1
+.limit stack 200
+  nop
+  iload_0
+  putstatic com/google/ads/util/AdUtil/f Z
+  return
+  nop
+.end <method>
+
+.method public static a(Landroid/net/Uri;)Z
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  ldc "http"
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/lang/String/equalsIgnoreCase(Ljava/lang/String;)Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifne Label0
+  ldc "https"
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/lang/String/equalsIgnoreCase(Ljava/lang/String;)Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label1
+Label0:
+  iconst_1
+  istore 4
+  iload 4
+  ireturn
+Label1:
+  iconst_0
+  istore 4
+  iload 4
+  ireturn
+  nop
+.end <method>
+
+.method public static b()I
+.limit locals 2
+.limit stack 200
+  nop
+  getstatic com/google/ads/util/AdUtil/a I
+  istore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  bipush 9
+  istore_1
+  iload_0
+  iload_1
+  if_icmplt Label0
+  bipush 7
+  istore_1
+  iload_1
+  ireturn
+Label0:
+  iconst_1
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public static b(Landroid/content/Context;Landroid/util/DisplayMetrics;)I
+.limit locals 4
+.limit stack 200
+  nop
+  getstatic com/google/ads/util/AdUtil/a I
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_4
+  istore_3
+  iload_2
+  iload_3
+  if_icmplt Label0
+  aload_0
+  aload_1
+  invokestatic com/google/ads/util/c/b(Landroid/content/Context;Landroid/util/DisplayMetrics;)I
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  aload_1
+  getfield android/util/DisplayMetrics/widthPixels I
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method private static b(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 16
+.limit stack 200
+  .catch  java/security/GeneralSecurityException <from> Label1 <to> Label2 <using> Label0
+  nop
+Label1:
+  ldc "AES/CBC/PKCS5Padding"
+  astore_2
+  aload_2
+  invokestatic javax/crypto/Cipher/getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
+  astore_1
+  new javax/crypto/spec/SecretKeySpec
+  astore_3
+  bipush 16
+  istore 5
+  iload 5
+  newarray byte
+  astore 4
+  iconst_0
+  istore 5
+  bipush 10
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  bastore
+  iconst_1
+  istore 5
+  bipush 55
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  bastore
+  iconst_2
+  istore 5
+  bipush -112
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  bastore
+  iconst_3
+  istore 5
+  bipush -47
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  bastore
+  iconst_4
+  istore 5
+  bipush -6
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  bastore
+  iconst_5
+  istore 5
+  bipush 7
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  bastore
+  bipush 6
+  istore 5
+  bipush 11
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  bastore
+  bipush 7
+  istore 5
+  bipush 75
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  bastore
+  bipush 8
+  istore 5
+  bipush -7
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  bastore
+  bipush 9
+  istore 5
+  bipush -121
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  bastore
+  bipush 10
+  istore 5
+  bipush 121
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  bastore
+  bipush 11
+  istore 5
+  bipush 69
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  bastore
+  bipush 12
+  istore 5
+  bipush 80
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  bastore
+  bipush 13
+  istore 5
+  bipush -61
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  bastore
+  bipush 14
+  istore 5
+  bipush 15
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  bastore
+  bipush 15
+  istore 5
+  iconst_5
+  istore 6
+  aload 4
+  iload 5
+  iload 6
+  bastore
+  ldc "AES"
+  astore_2
+  aload_3
+  aload 4
+  aload_2
+  invokespecial javax/crypto/spec/SecretKeySpec/<init>([BLjava/lang/String;)V
+  aload_3
+  astore 8
+  aload 8
+  checkcast java/security/Key
+  astore 8
+  aload 8
+  astore 7
+  iconst_1
+  istore 5
+  aload_1
+  iload 5
+  aload 7
+  invokevirtual javax/crypto/Cipher/init(ILjava/security/Key;)V
+  aload_1
+  invokevirtual javax/crypto/Cipher/getIV()[B
+  astore 4
+  aload_0
+  invokevirtual java/lang/String/getBytes()[B
+  astore 9
+  aload_1
+  aload 9
+  invokevirtual javax/crypto/Cipher/doFinal([B)[B
+  astore 9
+  aload 4
+  arraylength
+  istore 10
+  aload 9
+  arraylength
+  istore 11
+  iload 10
+  iload 11
+  iadd
+  istore 11
+  iload 11
+  newarray byte
+  astore 12
+  aload 4
+  arraylength
+  istore 10
+  iconst_0
+  istore 5
+  iconst_0
+  istore 6
+  aload 4
+  iload 5
+  aload 12
+  iload 6
+  iload 10
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 4
+  arraylength
+  istore 11
+  aload 9
+  arraylength
+  istore 10
+  iconst_0
+  istore 5
+  aload 9
+  iload 5
+  aload 12
+  iload 11
+  iload 10
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload 12
+  invokestatic com/google/ads/util/b/a([B)Ljava/lang/String;
+  astore 13
+Label2:
+  aload 13
+  areturn
+Label0:
+  astore 14
+  aconst_null
+  astore 15
+  aload 15
+  areturn
+  nop
+.end <method>
+
+.method public static b(Landroid/net/Uri;)Ljava/util/HashMap;
+  .signature_attr "(Landroid/net/Uri;)Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;"
+.limit locals 11
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+Label3:
+  aconst_null
+  astore_1
+  aload_1
+  areturn
+Label0:
+  new java/util/HashMap
+  astore_2
+  aload_2
+  invokespecial java/util/HashMap/<init>()V
+  aload_0
+  invokevirtual android/net/Uri/getEncodedQuery()Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  ifnonnull Label1
+  aload_2
+  areturn
+Label1:
+  ldc "&"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/String/split(Ljava/lang/String;)[Ljava/lang/String;
+  astore 4
+  aload 4
+  arraylength
+  istore 6
+  iconst_0
+  dstore 7
+Label4:
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  iload 6
+  if_icmpge Label2
+  aload 4
+  iload 7
+  aaload
+  astore 8
+  bipush 61
+  istore 10
+  aload 8
+  iload 10
+  invokevirtual java/lang/String/indexOf(I)I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 10
+  iload 9
+  iload 10
+  if_icmpeq Label3
+  iconst_0
+  istore 10
+  aload 8
+  iload 10
+  iload 9
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore_3
+  iload 9
+  iconst_1
+  iadd
+  istore 9
+  aload 8
+  iload 9
+  invokevirtual java/lang/String/substring(I)Ljava/lang/String;
+  astore 8
+  aload_3
+  invokestatic java/net/URLDecoder/decode(Ljava/lang/String;)Ljava/lang/String;
+  astore_3
+  aload 8
+  invokestatic java/net/URLDecoder/decode(Ljava/lang/String;)Ljava/lang/String;
+  astore 8
+  aload_2
+  aload_3
+  aload 8
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  iload 7
+  iconst_1
+  iadd
+  istore 7
+  goto Label4
+Label2:
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method private static b(Ljava/util/Map;)Lorg/json/JSONObject;
+  .signature_attr "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/Object;>;)Lorg/json/JSONObject;"
+.limit locals 18
+.limit stack 200
+  nop
+  new org/json/JSONObject
+  astore_2
+  aload_2
+  invokespecial org/json/JSONObject/<init>()V
+  aload_0
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  aload_0
+  astore_1
+  aload_1
+  invokeinterface java/util/Map/isEmpty()Z 1
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label1
+Label0:
+  aload_2
+  areturn
+Label1:
+  aload_0
+  astore_1
+  aload_1
+  invokeinterface java/util/Map/keySet()Ljava/util/Set; 1
+  astore 4
+  aload 4
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore 5
+Label5:
+  aload 5
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label2
+  aload 5
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 6
+  aload 6
+  astore 8
+  aload 8
+  checkcast java/lang/String
+  astore 8
+  aload 8
+  astore 7
+  aload_0
+  astore_1
+  aload_1
+  aload 7
+  invokeinterface java/util/Map/get(Ljava/lang/Object;)Ljava/lang/Object; 2
+  astore 6
+  aload 6
+  instanceof java/lang/String
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifne Label3
+  aload 6
+  instanceof java/lang/Integer
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifne Label3
+  aload 6
+  instanceof java/lang/Double
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifne Label3
+  aload 6
+  instanceof java/lang/Long
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifne Label3
+  aload 6
+  instanceof java/lang/Float
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label4
+Label3:
+  aload_2
+  aload 7
+  aload 6
+  invokevirtual org/json/JSONObject/put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+  pop
+  goto Label5
+Label4:
+  aload 6
+  instanceof java/util/Map
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label6
+Label9:
+  aload 6
+  astore 10
+  aload 10
+  checkcast java/util/Map
+  astore 10
+  aload 10
+  astore 9
+  aload 9
+  invokestatic com/google/ads/util/AdUtil/b(Ljava/util/Map;)Lorg/json/JSONObject;
+  astore 11
+  aload_2
+  aload 7
+  aload 11
+  invokevirtual org/json/JSONObject/put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+  pop
+Label10:
+  goto Label5
+Label8:
+  astore 12
+  ldc "Unknown map type in json serialization: "
+  astore 13
+  aload 13
+  aload 12
+  invokestatic com/google/ads/util/a/b(Ljava/lang/String;Ljava/lang/Throwable;)V
+  goto Label5
+Label6:
+  aload 6
+  instanceof java/util/Set
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label7
+Label12:
+  aload 6
+  astore 14
+  aload 14
+  checkcast java/util/Set
+  astore 14
+  aload 14
+  astore 4
+  aload 4
+  invokestatic com/google/ads/util/AdUtil/a(Ljava/util/Set;)Lorg/json/JSONArray;
+  astore 15
+  aload_2
+  aload 7
+  aload 15
+  invokevirtual org/json/JSONObject/put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+  pop
+Label13:
+  goto Label5
+Label11:
+  astore 16
+  ldc "Unknown map type in json serialization: "
+  astore 13
+  aload 13
+  aload 16
+  invokestatic com/google/ads/util/a/b(Ljava/lang/String;Ljava/lang/Throwable;)V
+  goto Label5
+Label7:
+  new java/lang/StringBuilder
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Unknown value in json serialization: "
+  astore 13
+  aload 17
+  astore_1
+  aload_1
+  aload 13
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic com/google/ads/util/a/e(Ljava/lang/String;)V
+  goto Label5
+Label2:
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public static b(Landroid/content/Context;)Z
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_0
+  invokevirtual android/content/Context/getPackageName()Ljava/lang/String;
+  astore_2
+  ldc "android.permission.INTERNET"
+  astore 4
+  aload_1
+  aload 4
+  aload_2
+  invokevirtual android/content/pm/PackageManager/checkPermission(Ljava/lang/String;Ljava/lang/String;)I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 5
+  iload_3
+  iload 5
+  if_icmpne Label0
+  ldc "INTERNET permissions must be enabled in AndroidManifest.xml."
+  astore 4
+  aload 4
+  invokestatic com/google/ads/util/a/b(Ljava/lang/String;)V
+  iconst_0
+  istore 5
+  iload 5
+  ireturn
+Label0:
+  ldc "android.permission.ACCESS_NETWORK_STATE"
+  astore 4
+  aload_1
+  aload 4
+  aload_2
+  invokevirtual android/content/pm/PackageManager/checkPermission(Ljava/lang/String;Ljava/lang/String;)I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 5
+  iload_3
+  iload 5
+  if_icmpne Label1
+  ldc "ACCESS_NETWORK_STATE permissions must be enabled in AndroidManifest.xml."
+  astore 4
+  aload 4
+  invokestatic com/google/ads/util/a/b(Ljava/lang/String;)V
+  iconst_0
+  istore 5
+  iload 5
+  ireturn
+Label1:
+  iconst_1
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static c()Z
+.limit locals 4
+.limit stack 200
+  nop
+  ldc "unknown"
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label0
+  ldc "generic"
+  astore_1
+  getstatic android/os/Build/DEVICE Ljava/lang/String;
+  astore_0
+  aload_1
+  aload_0
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label0
+  ldc "generic"
+  astore_1
+  getstatic android/os/Build/BRAND Ljava/lang/String;
+  astore_0
+  aload_1
+  aload_0
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label0
+  iconst_1
+  istore_3
+  iload_3
+  ireturn
+Label0:
+  iconst_0
+  istore_3
+  iload_3
+  ireturn
+  nop
+.end <method>
+
+.method public static c(Landroid/content/Context;)Z
+.limit locals 12
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  getstatic com/google/ads/util/AdUtil/b Ljava/lang/Boolean;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  getstatic com/google/ads/util/AdUtil/b Ljava/lang/Boolean;
+  astore_2
+  aload_2
+  invokevirtual java/lang/Boolean/booleanValue()Z
+  istore_1
+  iload_1
+  ireturn
+Label0:
+  aload_0
+  invokevirtual android/content/Context/getPackageManager()Landroid/content/pm/PackageManager;
+  astore_3
+  new android/content/Intent
+  astore 4
+  ldc com/google/ads/AdActivity
+  astore 5
+  aload 4
+  aload_0
+  aload 5
+  invokespecial android/content/Intent/<init>(Landroid/content/Context;Ljava/lang/Class;)V
+  ldc 65536
+  istore 7
+  aload_3
+  aload 4
+  iload 7
+  invokevirtual android/content/pm/PackageManager/resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
+  astore 6
+  iconst_1
+  istore 8
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label1
+  aload 6
+  getfield android/content/pm/ResolveInfo/activityInfo Landroid/content/pm/ActivityInfo;
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnonnull Label2
+Label1:
+  ldc "Could not find com.google.ads.AdActivity, please make sure it is registered in AndroidManifest.xml."
+  astore 10
+  aload 10
+  invokestatic com/google/ads/util/a/b(Ljava/lang/String;)V
+Label6:
+  iload_1
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore_2
+  aload_2
+  putstatic com/google/ads/util/AdUtil/b Ljava/lang/Boolean;
+  iload_1
+  ireturn
+Label2:
+  aload 6
+  getfield android/content/pm/ResolveInfo/activityInfo Landroid/content/pm/ActivityInfo;
+  astore 9
+  aload 9
+  getfield android/content/pm/ActivityInfo/configChanges I
+  istore 11
+  iload 11
+  bipush 16
+  iand
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 11
+  ifne Label3
+  ldc "The android:configChanges value of the com.google.ads.AdActivity must include keyboard."
+  astore 10
+  aload 10
+  invokestatic com/google/ads/util/a/b(Ljava/lang/String;)V
+  iconst_0
+  istore 8
+Label3:
+  aload 6
+  getfield android/content/pm/ResolveInfo/activityInfo Landroid/content/pm/ActivityInfo;
+  astore 9
+  aload 9
+  getfield android/content/pm/ActivityInfo/configChanges I
+  istore 11
+  iload 11
+  bipush 32
+  iand
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 11
+  ifne Label4
+  ldc "The android:configChanges value of the com.google.ads.AdActivity must include keyboardHidden."
+  astore 10
+  aload 10
+  invokestatic com/google/ads/util/a/b(Ljava/lang/String;)V
+  iconst_0
+  istore 8
+Label4:
+  aload 6
+  getfield android/content/pm/ResolveInfo/activityInfo Landroid/content/pm/ActivityInfo;
+  astore 9
+  aload 9
+  getfield android/content/pm/ActivityInfo/configChanges I
+  istore 11
+  iload 11
+  sipush 128
+  iadd
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 11
+  ifne Label5
+  ldc "The android:configChanges value of the com.google.ads.AdActivity must include orientation."
+  astore 10
+  aload 10
+  invokestatic com/google/ads/util/a/b(Ljava/lang/String;)V
+  goto Label6
+Label5:
+  iload 8
+  istore_1
+  goto Label6
+  nop
+.end <method>
+
+.method public static d(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 8
+.limit stack 200
+  nop
+  ldc "connectivity"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_1
+  astore 4
+  aload 4
+  checkcast android/net/ConnectivityManager
+  astore 4
+  aload 4
+  astore_3
+  aload_3
+  invokevirtual android/net/ConnectivityManager/getActiveNetworkInfo()Landroid/net/NetworkInfo;
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  ifnonnull Label0
+  aconst_null
+  astore 6
+  aload 6
+  areturn
+Label0:
+  aload 5
+  invokevirtual android/net/NetworkInfo/getType()I
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  lookupswitch
+  0 : Label2
+  1 : Label3
+  default : Label1
+Label1:
+  goto Label4
+Label4:
+  ldc "unknown"
+  astore_2
+  aload_2
+  areturn
+Label2:
+  ldc "ed"
+  astore_2
+  aload_2
+  areturn
+Label3:
+  ldc "wi"
+  astore_2
+  aload_2
+  areturn
+  nop
+  nop
+  nop
+.end <method>
+
+.method public static d()Z
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/google/ads/util/AdUtil/f Z
+  istore_0
+  iload_0
+  ireturn
+  nop
+.end <method>
+
+.method public static e(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 11
+.limit stack 200
+  nop
+  getstatic com/google/ads/util/AdUtil/d Ljava/lang/String;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  new java/lang/StringBuilder
+  astore_2
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_0
+  invokevirtual android/content/Context/getPackageManager()Landroid/content/pm/PackageManager;
+  astore_3
+  new android/content/Intent
+  astore 4
+  ldc "geo:0,0?q=donuts"
+  astore 6
+  aload 6
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 5
+  ldc "android.intent.action.VIEW"
+  astore 6
+  aload 4
+  aload 6
+  aload 5
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;Landroid/net/Uri;)V
+  ldc 65536
+  istore 8
+  aload_3
+  aload 4
+  iload 8
+  invokevirtual android/content/pm/PackageManager/queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label1
+  aload 7
+  invokeinterface java/util/List/size()I 1
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifne Label2
+Label1:
+  ldc "m"
+  astore 6
+  aload_2
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+Label2:
+  new android/content/Intent
+  astore 4
+  ldc "market://search?q=pname:com.google"
+  astore 6
+  aload 6
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 5
+  ldc "android.intent.action.VIEW"
+  astore 6
+  aload 4
+  aload 6
+  aload 5
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;Landroid/net/Uri;)V
+  ldc 65536
+  istore 8
+  aload_3
+  aload 4
+  iload 8
+  invokevirtual android/content/pm/PackageManager/queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label3
+  aload 7
+  invokeinterface java/util/List/size()I 1
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifne Label4
+Label3:
+  aload_2
+  invokevirtual java/lang/StringBuilder/length()I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifle Label5
+  ldc ","
+  astore 6
+  aload_2
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+Label5:
+  ldc "a"
+  astore 6
+  aload_2
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+Label4:
+  new android/content/Intent
+  astore 4
+  ldc "tel://6509313940"
+  astore 6
+  aload 6
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 5
+  ldc "android.intent.action.VIEW"
+  astore 6
+  aload 4
+  aload 6
+  aload 5
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;Landroid/net/Uri;)V
+  ldc 65536
+  istore 8
+  aload_3
+  aload 4
+  iload 8
+  invokevirtual android/content/pm/PackageManager/queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label6
+  aload 7
+  invokeinterface java/util/List/size()I 1
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifne Label7
+Label6:
+  aload_2
+  invokevirtual java/lang/StringBuilder/length()I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifle Label8
+  ldc ","
+  astore 6
+  aload_2
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+Label8:
+  ldc "t"
+  astore 6
+  aload_2
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+Label7:
+  aload_2
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 10
+  aload 10
+  putstatic com/google/ads/util/AdUtil/d Ljava/lang/String;
+Label0:
+  getstatic com/google/ads/util/AdUtil/d Ljava/lang/String;
+  astore 10
+  aload 10
+  areturn
+  nop
+.end <method>
+
+.method public static f(Landroid/content/Context;)Lcom/google/ads/util/AdUtil$a;
+.limit locals 10
+.limit stack 200
+  nop
+  getstatic com/google/ads/util/AdUtil/e Landroid/media/AudioManager;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  ldc "audio"
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore_2
+  aload_2
+  astore 4
+  aload 4
+  checkcast android/media/AudioManager
+  astore 4
+  aload 4
+  astore_1
+  aload_1
+  putstatic com/google/ads/util/AdUtil/e Landroid/media/AudioManager;
+Label0:
+  getstatic com/google/ads/util/AdUtil$a/f Lcom/google/ads/util/AdUtil$a;
+  astore 5
+  getstatic com/google/ads/util/AdUtil/e Landroid/media/AudioManager;
+  astore_1
+  aload_1
+  invokevirtual android/media/AudioManager/getMode()I
+  istore 6
+  invokestatic com/google/ads/util/AdUtil/c()Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label1
+  getstatic com/google/ads/util/AdUtil$a/e Lcom/google/ads/util/AdUtil$a;
+  astore 5
+  aload 5
+  areturn
+Label1:
+  getstatic com/google/ads/util/AdUtil/e Landroid/media/AudioManager;
+  astore_1
+  aload_1
+  invokevirtual android/media/AudioManager/isMusicActive()Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifne Label2
+  getstatic com/google/ads/util/AdUtil/e Landroid/media/AudioManager;
+  astore_1
+  aload_1
+  invokevirtual android/media/AudioManager/isSpeakerphoneOn()Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifne Label2
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 8
+  iload 6
+  iload 8
+  if_icmpeq Label2
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 8
+  iload 6
+  iload 8
+  if_icmpne Label3
+Label2:
+  getstatic com/google/ads/util/AdUtil$a/d Lcom/google/ads/util/AdUtil$a;
+  astore 5
+  aload 5
+  areturn
+Label3:
+  getstatic com/google/ads/util/AdUtil/e Landroid/media/AudioManager;
+  astore_1
+  aload_1
+  invokevirtual android/media/AudioManager/getRingerMode()I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifeq Label4
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 8
+  iload 9
+  iload 8
+  if_icmpne Label5
+Label4:
+  getstatic com/google/ads/util/AdUtil$a/d Lcom/google/ads/util/AdUtil$a;
+  astore 5
+  aload 5
+  areturn
+Label5:
+  getstatic com/google/ads/util/AdUtil$a/b Lcom/google/ads/util/AdUtil$a;
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method public static g(Landroid/content/Context;)V
+.limit locals 6
+.limit stack 200
+  nop
+  getstatic com/google/ads/util/AdUtil/g Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+Label1:
+  return
+Label0:
+  new android/content/IntentFilter
+  astore_2
+  aload_2
+  invokespecial android/content/IntentFilter/<init>()V
+  ldc "android.intent.action.USER_PRESENT"
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual android/content/IntentFilter/addAction(Ljava/lang/String;)V
+  ldc "android.intent.action.SCREEN_OFF"
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual android/content/IntentFilter/addAction(Ljava/lang/String;)V
+  new com/google/ads/util/AdUtil$UserActivityReceiver
+  astore 4
+  aload 4
+  invokespecial com/google/ads/util/AdUtil$UserActivityReceiver/<init>()V
+  aload_0
+  aload 4
+  aload_2
+  invokevirtual android/content/Context/registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+  pop
+  iconst_1
+  istore 5
+  iload 5
+  putstatic com/google/ads/util/AdUtil/g Z
+  goto Label1
+  nop
+.end <method>
+
+.method private static h(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 15
+.limit stack 200
+  nop
+  getstatic com/google/ads/util/AdUtil/h Ljava/lang/String;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  new android/webkit/WebView
+  astore_2
+  aload_2
+  aload_0
+  invokespecial android/webkit/WebView/<init>(Landroid/content/Context;)V
+  aload_2
+  invokevirtual android/webkit/WebView/getSettings()Landroid/webkit/WebSettings;
+  astore_3
+  aload_3
+  invokevirtual android/webkit/WebSettings/getUserAgentString()Ljava/lang/String;
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_1
+  ifnull Label1
+  aload_1
+  invokevirtual java/lang/String/length()I
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifeq Label1
+  ldc "Java0"
+  astore 6
+  aload_1
+  aload 6
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 5
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 5
+  ifeq Label2
+Label1:
+  ldc "os.name"
+  astore 6
+  ldc "Linux"
+  astore 8
+  aload 6
+  aload 8
+  invokestatic java/lang/System/getProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  astore 7
+  new java/lang/StringBuilder
+  astore 9
+  aload 9
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Android "
+  astore 6
+  aload 9
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  getstatic android/os/Build$VERSION/RELEASE Ljava/lang/String;
+  astore_1
+  aload 9
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 10
+  invokestatic java/util/Locale/getDefault()Ljava/util/Locale;
+  astore 11
+  aload 11
+  invokevirtual java/util/Locale/getLanguage()Ljava/lang/String;
+  astore_1
+  getstatic java/util/Locale/US Ljava/util/Locale;
+  astore 12
+  aload_1
+  aload 12
+  invokevirtual java/lang/String/toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+  astore 13
+  aload 13
+  invokevirtual java/lang/String/length()I
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifne Label3
+  ldc "en"
+  astore 13
+Label3:
+  aload 11
+  invokevirtual java/util/Locale/getCountry()Ljava/lang/String;
+  astore_1
+  getstatic java/util/Locale/US Ljava/util/Locale;
+  astore 12
+  aload_1
+  aload 12
+  invokevirtual java/lang/String/toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+  astore_1
+  aload_1
+  invokevirtual java/lang/String/length()I
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifle Label4
+  new java/lang/StringBuilder
+  astore 9
+  aload 9
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 9
+  aload 13
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  ldc "-"
+  astore 6
+  aload 9
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 13
+Label4:
+  new java/lang/StringBuilder
+  astore 9
+  aload 9
+  invokespecial java/lang/StringBuilder/<init>()V
+  getstatic android/os/Build/MODEL Ljava/lang/String;
+  astore_1
+  aload 9
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  ldc " Build/"
+  astore 6
+  aload 9
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  getstatic android/os/Build/ID Ljava/lang/String;
+  astore_1
+  aload 9
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  new java/lang/StringBuilder
+  astore 9
+  aload 9
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Mozilla/5.0 ("
+  astore 6
+  aload 9
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  ldc "; U; "
+  astore 6
+  aload 9
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  ldc "; "
+  astore 6
+  aload 9
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  aload 13
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  ldc "; "
+  astore 6
+  aload 9
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  ldc ") AppleWebKit/0.0 (KHTML, like "
+  astore 6
+  aload 9
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  ldc "Gecko) Version/0.0 Mobile Safari/0.0"
+  astore 6
+  aload 9
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_1
+Label2:
+  new java/lang/StringBuilder
+  astore 9
+  aload 9
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 9
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  ldc " (Mobile; "
+  astore 6
+  aload 9
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  ldc "afma-sdk-a-v"
+  astore 6
+  aload 9
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  ldc "4.1.1"
+  astore 6
+  aload 9
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  ldc ")"
+  astore 6
+  aload 9
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  aload 14
+  putstatic com/google/ads/util/AdUtil/h Ljava/lang/String;
+Label0:
+  getstatic com/google/ads/util/AdUtil/h Ljava/lang/String;
+  astore 14
+  aload 14
+  areturn
+  nop
+.end <method>
+

@@ -1,0 +1,20 @@
+.source R.java
+.class public final  maxstrom/game/llk/R$attr
+.super java/lang/Object
+.field public static final "adSize" I =  2130771972
+.field public static final "adUnitId" I =  2130771973
+.field public static final "backAlpha" I =  2130771970
+.field public static final "backColor" I =  2130771968
+.field public static final "textColor" I =  2130771969
+.field public static final "titleColor" I =  2130771971
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,60 @@
+.source SourceFile
+.class public  com/mobisage/android/MobiSageReqMessage
+.super com/mobisage/android/MobiSageMessage
+.field public "params" Landroid/os/Bundle;
+
+.method public <init>()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/mobisage/android/MobiSageMessage/<init>()V
+  iconst_1
+  istore_1
+  aload_0
+  iload_1
+  putfield com/mobisage/android/MobiSageMessage/b I
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_2
+  invokespecial android/os/Bundle/<init>()V
+  aload_0
+  aload_2
+  putfield com/mobisage/android/MobiSageReqMessage/params Landroid/os/Bundle;
+  return
+  nop
+.end <method>
+
+.method public createMessageRunnable()Ljava/lang/Runnable;
+.limit locals 2
+.limit stack 200
+  nop
+  new com/mobisage/android/J
+  astore_1
+  aload_1
+  aload_0
+  invokespecial com/mobisage/android/J/<init>(Lcom/mobisage/android/MobiSageMessage;)V
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected finalize()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/mobisage/android/MobiSageMessage/finalize()V
+  aload_0
+  getfield com/mobisage/android/MobiSageReqMessage/params Landroid/os/Bundle;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+

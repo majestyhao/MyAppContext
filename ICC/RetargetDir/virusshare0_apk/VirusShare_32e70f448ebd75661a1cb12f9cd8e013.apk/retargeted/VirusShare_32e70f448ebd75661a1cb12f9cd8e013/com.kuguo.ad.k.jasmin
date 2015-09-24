@@ -1,0 +1,135 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/kuguo/ad/k
+.super java/lang/Object
+.implements  com/kuguo/a/d
+.field final "a" Lcom/kuguo/ad/p;
+.field final "b" Lcom/kuguo/ad/a;
+
+.method <init>(Lcom/kuguo/ad/a;Lcom/kuguo/ad/p;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/kuguo/ad/k/b Lcom/kuguo/ad/a;
+  aload_0
+  aload_2
+  putfield com/kuguo/ad/k/a Lcom/kuguo/ad/p;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public a(Lcom/kuguo/a/f;I)V
+.limit locals 13
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "download state == "
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  iload_2
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_4
+  istore 6
+  iload_2
+  iload 6
+  if_icmpeq Label0
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_5
+  istore 6
+  iload_2
+  iload 6
+  if_icmpne Label1
+Label0:
+  aload_0
+  getfield com/kuguo/ad/k/b Lcom/kuguo/ad/a;
+  astore 7
+  new com/kuguo/ad/j
+  astore 8
+  aload 8
+  aload_0
+  invokespecial com/kuguo/ad/j/<init>(Lcom/kuguo/ad/k;)V
+  aload 7
+  aload 8
+  invokevirtual com/kuguo/ad/a/post(Ljava/lang/Runnable;)Z
+  pop
+  aload_0
+  getfield com/kuguo/ad/k/a Lcom/kuguo/ad/p;
+  astore 9
+  iconst_0
+  istore 6
+  iload 6
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 10
+  aload 9
+  aload 10
+  putfield com/kuguo/ad/p/j Ljava/lang/Integer;
+  aload_0
+  getfield com/kuguo/ad/k/b Lcom/kuguo/ad/a;
+  astore 7
+  aload 7
+  getfield com/kuguo/ad/a/a Lcom/kuguo/ad/t;
+  astore 11
+  aload 11
+  invokestatic com/kuguo/ad/t/a(Lcom/kuguo/ad/t;)Landroid/content/Context;
+  astore 12
+  aload_0
+  getfield com/kuguo/ad/k/a Lcom/kuguo/ad/p;
+  astore 9
+  aload 12
+  aload 9
+  invokestatic com/kuguo/ad/d/b(Landroid/content/Context;Lcom/kuguo/ad/p;)Z
+  pop
+  invokestatic com/kuguo/ad/MainReceiver/a()V
+Label1:
+  return
+  nop
+.end <method>
+
+.method public a(Lcom/kuguo/a/f;J)V
+.limit locals 7
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "download size == "
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  lload_2
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload 6
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+

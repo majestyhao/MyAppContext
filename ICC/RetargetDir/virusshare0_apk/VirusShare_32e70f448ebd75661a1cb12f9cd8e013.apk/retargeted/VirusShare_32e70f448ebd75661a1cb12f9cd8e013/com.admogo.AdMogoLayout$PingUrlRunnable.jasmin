@@ -1,0 +1,227 @@
+.source AdMogoLayout.java
+.class  com/admogo/AdMogoLayout$PingUrlRunnable
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field private "data" [Ljava/lang/Object;
+.field private "type" Ljava/lang/String;
+.field private "url" Ljava/lang/String;
+
+.method public <init>(Ljava/lang/String;[Ljava/lang/Object;)V
+.limit locals 9
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc "unknown"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/admogo/AdMogoLayout$PingUrlRunnable/type Ljava/lang/String;
+  bipush 11
+  istore 5
+  iload 5
+  anewarray java/lang/Object
+  astore 4
+  aload_0
+  aload 4
+  putfield com/admogo/AdMogoLayout$PingUrlRunnable/data [Ljava/lang/Object;
+  aload_0
+  aload_1
+  putfield com/admogo/AdMogoLayout$PingUrlRunnable/url Ljava/lang/String;
+  aload_0
+  aload_2
+  putfield com/admogo/AdMogoLayout$PingUrlRunnable/data [Ljava/lang/Object;
+  aload_0
+  getfield com/admogo/AdMogoLayout$PingUrlRunnable/url Ljava/lang/String;
+  astore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield com/admogo/AdMogoLayout$PingUrlRunnable/url Ljava/lang/String;
+  astore 6
+  aload 6
+  invokevirtual java/lang/String/length()I
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 10
+  istore 5
+  iload 7
+  iload 5
+  if_icmple Label0
+  bipush 7
+  istore 5
+  bipush 10
+  istore 8
+  aload_1
+  iload 5
+  iload 8
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 6
+  aload_0
+  aload 6
+  putfield com/admogo/AdMogoLayout$PingUrlRunnable/type Ljava/lang/String;
+Label0:
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 14
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_1
+  invokespecial org/apache/http/params/BasicHttpParams/<init>()V
+  sipush 30000
+  istore_2
+  aload_1
+  iload_2
+  invokestatic org/apache/http/params/HttpConnectionParams/setConnectionTimeout(Lorg/apache/http/params/HttpParams;I)V
+  sipush 30000
+  istore_2
+  aload_1
+  iload_2
+  invokestatic org/apache/http/params/HttpConnectionParams/setSoTimeout(Lorg/apache/http/params/HttpParams;I)V
+  new org/apache/http/impl/client/DefaultHttpClient
+  astore_3
+  aload_3
+  aload_1
+  invokespecial org/apache/http/impl/client/DefaultHttpClient/<init>(Lorg/apache/http/params/HttpParams;)V
+  new org/apache/http/client/methods/HttpGet
+  astore 4
+  aload_0
+  getfield com/admogo/AdMogoLayout$PingUrlRunnable/url Ljava/lang/String;
+  astore 5
+  aload 4
+  aload 5
+  invokespecial org/apache/http/client/methods/HttpGet/<init>(Ljava/lang/String;)V
+  aload_0
+  getfield com/admogo/AdMogoLayout$PingUrlRunnable/data [Ljava/lang/Object;
+  astore 6
+  iconst_2
+  istore_2
+  aload 6
+  iload_2
+  aaload
+  astore 7
+  aload 7
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 27
+  istore_2
+  iload 8
+  iload_2
+  if_icmpne Label0
+  aload_0
+  getfield com/admogo/AdMogoLayout$PingUrlRunnable/data [Ljava/lang/Object;
+  astore 6
+  bipush 10
+  istore_2
+  aload 6
+  iload_2
+  aaload
+  astore 7
+  aload 7
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 9
+  ldc "c"
+  astore 10
+  aload 4
+  aload 10
+  aload 9
+  invokevirtual org/apache/http/client/methods/HttpGet/setHeader(Ljava/lang/String;Ljava/lang/String;)V
+Label0:
+  aload_3
+  aload 4
+  invokeinterface org/apache/http/client/HttpClient/execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse; 2
+  astore 11
+  iconst_2
+  istore_2
+  iload_2
+  anewarray java/lang/Object
+  astore 6
+  aload_0
+  getfield com/admogo/AdMogoLayout$PingUrlRunnable/type Ljava/lang/String;
+  astore 5
+  iconst_0
+  istore_2
+  aload 6
+  iload_2
+  aload 5
+  aastore
+  aload 11
+  invokeinterface org/apache/http/HttpResponse/getStatusLine()Lorg/apache/http/StatusLine; 1
+  astore 12
+  aload 12
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 5
+  iconst_1
+  istore_2
+  aload 6
+  iload_2
+  aload 5
+  aastore
+  ldc "Showing sendCount:\n type:%s \n Status:%s"
+  astore 10
+  aload 10
+  aload 6
+  invokestatic java/lang/String/format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  astore 5
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 9
+  aload 9
+  aload 5
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aload 11
+  invokeinterface org/apache/http/HttpResponse/getStatusLine()Lorg/apache/http/StatusLine; 1
+  astore 12
+  aload 12
+  invokeinterface org/apache/http/StatusLine/getStatusCode()I 1
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 200
+  istore_2
+  iload 8
+  iload_2
+  if_icmpeq Label1
+  aload_0
+  getfield com/admogo/AdMogoLayout$PingUrlRunnable/data [Ljava/lang/Object;
+  astore 6
+  aload 6
+  invokestatic com/admogo/AdMogoLayout/access$20([Ljava/lang/Object;)V
+Label1:
+  return
+Label2:
+  astore 13
+  aload_0
+  getfield com/admogo/AdMogoLayout$PingUrlRunnable/data [Ljava/lang/Object;
+  astore 6
+  aload 6
+  invokestatic com/admogo/AdMogoLayout/access$20([Ljava/lang/Object;)V
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 9
+  ldc "Caught IOException in PingUrlRunnable"
+  astore 10
+  aload 9
+  aload 10
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label1
+  nop
+.end <method>
+

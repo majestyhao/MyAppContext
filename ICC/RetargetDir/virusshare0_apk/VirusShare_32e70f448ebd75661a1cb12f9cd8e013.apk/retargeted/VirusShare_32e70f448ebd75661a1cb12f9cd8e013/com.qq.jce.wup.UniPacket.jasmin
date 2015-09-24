@@ -1,0 +1,747 @@
+.source UniPacket.java
+.class public  com/qq/jce/wup/UniPacket
+.super com/qq/jce/wup/UniAttribute
+.field public static final "UniPacketHeadSize" I =  4
+.field static "cache__tempdata" Ljava/util/HashMap;
+.field protected "_package" Lcom/qq/taf/RequestPacket;
+.field private "oldRespIret" I
+
+.method static <clinit>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aconst_null
+  astore_0
+  aload_0
+  putstatic com/qq/jce/wup/UniPacket/cache__tempdata Ljava/util/HashMap;
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/jce/wup/UniAttribute/<init>()V
+  new com/qq/taf/RequestPacket
+  astore_1
+  aload_1
+  invokespecial com/qq/taf/RequestPacket/<init>()V
+  aload_0
+  aload_1
+  putfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield com/qq/jce/wup/UniPacket/oldRespIret I
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  iconst_2
+  istore_2
+  aload_1
+  iload_2
+  putfield com/qq/taf/RequestPacket/iVersion S
+  return
+  nop
+.end <method>
+
+.method public createOldRespEncode()[B
+.limit locals 12
+.limit stack 200
+  nop
+  new com/qq/taf/jce/JceOutputStream
+  astore_1
+  iconst_0
+  istore_2
+  aload_1
+  iload_2
+  invokespecial com/qq/taf/jce/JceOutputStream/<init>(I)V
+  aload_0
+  getfield com/qq/jce/wup/UniAttribute/encodeName Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/setServerEncoding(Ljava/lang/String;)I
+  pop
+  aload_0
+  getfield com/qq/jce/wup/UniAttribute/_data Ljava/util/HashMap;
+  astore 4
+  iconst_0
+  istore_2
+  aload_1
+  aload 4
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/util/Map;I)V
+  aload_1
+  invokevirtual com/qq/taf/jce/JceOutputStream/getByteBuffer()Ljava/nio/ByteBuffer;
+  astore 5
+  aload 5
+  invokestatic com/qq/taf/jce/JceUtil/getJceBufArray(Ljava/nio/ByteBuffer;)[B
+  astore 6
+  new com/qq/taf/jce/JceOutputStream
+  astore_1
+  iconst_0
+  istore_2
+  aload_1
+  iload_2
+  invokespecial com/qq/taf/jce/JceOutputStream/<init>(I)V
+  aload_0
+  getfield com/qq/jce/wup/UniAttribute/encodeName Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/setServerEncoding(Ljava/lang/String;)I
+  pop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore 7
+  aload 7
+  getfield com/qq/taf/RequestPacket/iVersion S
+  istore 8
+  iconst_1
+  istore_2
+  aload_1
+  iload 8
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(SI)V
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore 7
+  aload 7
+  getfield com/qq/taf/RequestPacket/cPacketType B
+  istore 9
+  iconst_2
+  istore_2
+  aload_1
+  iload 9
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(BI)V
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore 7
+  aload 7
+  getfield com/qq/taf/RequestPacket/iRequestId I
+  istore 10
+  iconst_3
+  istore_2
+  aload_1
+  iload 10
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore 7
+  aload 7
+  getfield com/qq/taf/RequestPacket/iMessageType I
+  istore 10
+  iconst_4
+  istore_2
+  aload_1
+  iload 10
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/oldRespIret I
+  istore 10
+  iconst_5
+  istore_2
+  aload_1
+  iload 10
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  bipush 6
+  istore_2
+  aload_1
+  aload 6
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write([BI)V
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore 7
+  aload 7
+  getfield com/qq/taf/RequestPacket/status Ljava/util/Map;
+  astore 11
+  bipush 7
+  istore_2
+  aload_1
+  aload 11
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/util/Map;I)V
+  aload_1
+  invokevirtual com/qq/taf/jce/JceOutputStream/getByteBuffer()Ljava/nio/ByteBuffer;
+  astore 5
+  aload 5
+  invokestatic com/qq/taf/jce/JceUtil/getJceBufArray(Ljava/nio/ByteBuffer;)[B
+  astore 6
+  aload 6
+  areturn
+  nop
+.end <method>
+
+.method public createResponse()Lcom/qq/jce/wup/UniPacket;
+.limit locals 4
+.limit stack 200
+  nop
+  new com/qq/jce/wup/UniPacket
+  astore_1
+  aload_1
+  invokespecial com/qq/jce/wup/UniPacket/<init>()V
+  aload_0
+  invokevirtual com/qq/jce/wup/UniPacket/getRequestId()I
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual com/qq/jce/wup/UniPacket/setRequestId(I)V
+  aload_0
+  invokevirtual com/qq/jce/wup/UniPacket/getServantName()Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual com/qq/jce/wup/UniPacket/setServantName(Ljava/lang/String;)V
+  aload_0
+  invokevirtual com/qq/jce/wup/UniPacket/getFuncName()Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual com/qq/jce/wup/UniPacket/setFuncName(Ljava/lang/String;)V
+  aload_0
+  getfield com/qq/jce/wup/UniAttribute/encodeName Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual com/qq/jce/wup/UniPacket/setEncodeName(Ljava/lang/String;)V
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public decode([B)V
+.limit locals 18
+.limit stack 200
+  nop
+  aload_1
+  astore_2
+  aload_2
+  arraylength
+  istore_3
+  aload_2
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_4
+  istore 4
+  iload_3
+  iload 4
+  if_icmpge Label0
+  new java/lang/IllegalArgumentException
+  astore 5
+  ldc "decode package must include size head"
+  astore 6
+  aload 5
+  aload 6
+  invokespecial java/lang/IllegalArgumentException/<init>(Ljava/lang/String;)V
+  aload 5
+  athrow
+Label0:
+  new com/qq/taf/jce/JceInputStream
+  astore 7
+Label3:
+  iconst_4
+  istore 4
+  aload_1
+  astore_2
+  aload 7
+  aload_2
+  iload 4
+  invokespecial com/qq/taf/jce/JceInputStream/<init>([BI)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/qq/jce/wup/UniAttribute/encodeName Ljava/lang/String;
+  astore 8
+  aload 7
+  aload 8
+  invokevirtual com/qq/taf/jce/JceInputStream/setServerEncoding(Ljava/lang/String;)I
+  pop
+  aload_0
+  astore_2
+  aload_2
+  aload 7
+  invokevirtual com/qq/jce/wup/UniPacket/readFrom(Lcom/qq/taf/jce/JceInputStream;)V
+  new com/qq/taf/jce/JceInputStream
+  astore 7
+  aload_0
+  astore_2
+  aload_2
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore 9
+  aload 9
+  getfield com/qq/taf/RequestPacket/sBuffer [B
+  astore 10
+  aload 7
+  aload 10
+  invokespecial com/qq/taf/jce/JceInputStream/<init>([B)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/qq/jce/wup/UniAttribute/encodeName Ljava/lang/String;
+  astore 8
+  aload 7
+  aload 8
+  invokevirtual com/qq/taf/jce/JceInputStream/setServerEncoding(Ljava/lang/String;)I
+  pop
+  getstatic com/qq/jce/wup/UniPacket/cache__tempdata Ljava/util/HashMap;
+  astore 11
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  ifnonnull Label1
+  new java/util/HashMap
+  astore 11
+  aload 11
+  invokespecial java/util/HashMap/<init>()V
+  aload 11
+  putstatic com/qq/jce/wup/UniPacket/cache__tempdata Ljava/util/HashMap;
+  new java/util/HashMap
+  astore 11
+  aload 11
+  invokespecial java/util/HashMap/<init>()V
+  iconst_0
+  istore 4
+  iload 4
+  newarray byte
+  astore 10
+  ldc ""
+  astore 6
+  aload 11
+  aload 6
+  aload 10
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  getstatic com/qq/jce/wup/UniPacket/cache__tempdata Ljava/util/HashMap;
+  astore 12
+  ldc ""
+  astore 6
+  aload 12
+  aload 6
+  aload 11
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+Label1:
+  getstatic com/qq/jce/wup/UniPacket/cache__tempdata Ljava/util/HashMap;
+  astore 12
+  iconst_0
+  istore 4
+  iconst_0
+  istore 13
+  aload 7
+  aload 12
+  iload 4
+  iload 13
+  invokevirtual com/qq/taf/jce/JceInputStream/readMap(Ljava/util/Map;IZ)Ljava/util/HashMap;
+  astore 12
+  aload_0
+  astore_2
+  aload_2
+  aload 12
+  putfield com/qq/jce/wup/UniAttribute/_data Ljava/util/HashMap;
+Label4:
+  return
+Label2:
+  astore 14
+  aload 14
+  invokevirtual java/lang/Exception/printStackTrace()V
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore 15
+  new java/lang/StringBuilder
+  astore 16
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "decode error "
+  astore 6
+  aload 16
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 16
+  aload_1
+  astore_2
+  aload_2
+  invokestatic com/qq/jce/wup/WupHexUtil/bytes2HexStr([B)Ljava/lang/String;
+  astore 8
+  aload 16
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 16
+  aload 16
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 8
+  aload 15
+  aload 8
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  new java/lang/RuntimeException
+  astore 17
+  aload 17
+  aload 14
+  invokespecial java/lang/RuntimeException/<init>(Ljava/lang/Throwable;)V
+  aload 17
+  athrow
+  nop
+.end <method>
+
+.method public display(Ljava/lang/StringBuilder;I)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_3
+  aload_3
+  aload_1
+  iload_2
+  invokevirtual com/qq/taf/RequestPacket/display(Ljava/lang/StringBuilder;I)V
+  return
+  nop
+.end <method>
+
+.method public encode()[B
+.limit locals 14
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  aload_1
+  getfield com/qq/taf/RequestPacket/sServantName Ljava/lang/String;
+  astore_2
+  ldc ""
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  new java/lang/IllegalArgumentException
+  astore 5
+  ldc "servantName can not is null"
+  astore 4
+  aload 5
+  aload 4
+  invokespecial java/lang/IllegalArgumentException/<init>(Ljava/lang/String;)V
+  aload 5
+  athrow
+Label0:
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  aload_1
+  getfield com/qq/taf/RequestPacket/sFuncName Ljava/lang/String;
+  astore_2
+  ldc ""
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label1
+  new java/lang/IllegalArgumentException
+  astore 5
+  ldc "funcName can not is null"
+  astore 4
+  aload 5
+  aload 4
+  invokespecial java/lang/IllegalArgumentException/<init>(Ljava/lang/String;)V
+  aload 5
+  athrow
+Label1:
+  new com/qq/taf/jce/JceOutputStream
+  astore 6
+  iconst_0
+  istore 7
+  aload 6
+  iload 7
+  invokespecial com/qq/taf/jce/JceOutputStream/<init>(I)V
+  aload_0
+  getfield com/qq/jce/wup/UniAttribute/encodeName Ljava/lang/String;
+  astore_2
+  aload 6
+  aload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/setServerEncoding(Ljava/lang/String;)I
+  pop
+  aload_0
+  getfield com/qq/jce/wup/UniAttribute/_data Ljava/util/HashMap;
+  astore 8
+  iconst_0
+  istore 7
+  aload 6
+  aload 8
+  iload 7
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/util/Map;I)V
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  aload 6
+  invokevirtual com/qq/taf/jce/JceOutputStream/getByteBuffer()Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  invokestatic com/qq/taf/jce/JceUtil/getJceBufArray(Ljava/nio/ByteBuffer;)[B
+  astore 10
+  aload_1
+  aload 10
+  putfield com/qq/taf/RequestPacket/sBuffer [B
+  new com/qq/taf/jce/JceOutputStream
+  astore 6
+  iconst_0
+  istore 7
+  aload 6
+  iload 7
+  invokespecial com/qq/taf/jce/JceOutputStream/<init>(I)V
+  aload_0
+  getfield com/qq/jce/wup/UniAttribute/encodeName Ljava/lang/String;
+  astore_2
+  aload 6
+  aload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/setServerEncoding(Ljava/lang/String;)I
+  pop
+  aload_0
+  aload 6
+  invokevirtual com/qq/jce/wup/UniPacket/writeTo(Lcom/qq/taf/jce/JceOutputStream;)V
+  aload 6
+  invokevirtual com/qq/taf/jce/JceOutputStream/getByteBuffer()Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  invokestatic com/qq/taf/jce/JceUtil/getJceBufArray(Ljava/nio/ByteBuffer;)[B
+  astore 10
+  aload 10
+  arraylength
+  istore 11
+  iload 11
+  iconst_4
+  iadd
+  istore 12
+  iload 12
+  invokestatic java/nio/ByteBuffer/allocate(I)Ljava/nio/ByteBuffer;
+  astore 9
+  iload 11
+  iconst_4
+  iadd
+  istore 12
+  aload 9
+  iload 12
+  invokevirtual java/nio/ByteBuffer/putInt(I)Ljava/nio/ByteBuffer;
+  astore 13
+  aload 13
+  aload 10
+  invokevirtual java/nio/ByteBuffer/put([B)Ljava/nio/ByteBuffer;
+  astore 13
+  aload 13
+  invokevirtual java/nio/ByteBuffer/flip()Ljava/nio/Buffer;
+  pop
+  aload 9
+  invokevirtual java/nio/ByteBuffer/array()[B
+  astore 10
+  aload 10
+  areturn
+  nop
+.end <method>
+
+.method public getFuncName()Ljava/lang/String;
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  aload_1
+  getfield com/qq/taf/RequestPacket/sFuncName Ljava/lang/String;
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public getOldRespIret()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/oldRespIret I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public getRequestId()I
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  aload_1
+  getfield com/qq/taf/RequestPacket/iRequestId I
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public getServantName()Ljava/lang/String;
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  aload_1
+  getfield com/qq/taf/RequestPacket/sServantName Ljava/lang/String;
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public put(Ljava/lang/String;Ljava/lang/Object;)V
+  .signature_attr "<T:Ljava/lang/Object;>(Ljava/lang/String;TT;)V"
+.limit locals 8
+.limit stack 200
+  nop
+  ldc "."
+  astore 4
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  new java/lang/IllegalArgumentException
+  astore 5
+  new java/lang/StringBuilder
+  astore 6
+  aload 6
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "put name can not startwith . , now is "
+  astore 4
+  aload 6
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  aload 6
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  aload 6
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  aload 5
+  aload 7
+  invokespecial java/lang/IllegalArgumentException/<init>(Ljava/lang/String;)V
+  aload 5
+  athrow
+Label0:
+  aload_0
+  aload_1
+  aload_2
+  invokespecial com/qq/jce/wup/UniAttribute/put(Ljava/lang/String;Ljava/lang/Object;)V
+  return
+  nop
+.end <method>
+
+.method public readFrom(Lcom/qq/taf/jce/JceInputStream;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual com/qq/taf/RequestPacket/readFrom(Lcom/qq/taf/jce/JceInputStream;)V
+  return
+  nop
+.end <method>
+
+.method public setFuncName(Ljava/lang/String;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_2
+  aload_2
+  aload_1
+  putfield com/qq/taf/RequestPacket/sFuncName Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setOldRespIret(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield com/qq/jce/wup/UniPacket/oldRespIret I
+  return
+  nop
+.end <method>
+
+.method public setRequestId(I)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_2
+  aload_2
+  iload_1
+  putfield com/qq/taf/RequestPacket/iRequestId I
+  return
+  nop
+.end <method>
+
+.method public setServantName(Ljava/lang/String;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_2
+  aload_2
+  aload_1
+  putfield com/qq/taf/RequestPacket/sServantName Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public writeTo(Lcom/qq/taf/jce/JceOutputStream;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual com/qq/taf/RequestPacket/writeTo(Lcom/qq/taf/jce/JceOutputStream;)V
+  return
+  nop
+.end <method>
+

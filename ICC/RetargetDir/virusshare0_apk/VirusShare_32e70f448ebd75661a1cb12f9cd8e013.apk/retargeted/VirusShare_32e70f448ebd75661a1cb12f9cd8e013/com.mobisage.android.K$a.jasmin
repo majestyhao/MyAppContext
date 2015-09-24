@@ -1,0 +1,95 @@
+.source SourceFile
+.class final  com/mobisage/android/K$a
+.super java/lang/Object
+.implements  com/mobisage/android/IMobiSageMessageCallback
+.field private "a" Lcom/mobisage/android/K;
+
+.method private <init>(Lcom/mobisage/android/K;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/mobisage/android/K$a/a Lcom/mobisage/android/K;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method <init>(Lcom/mobisage/android/K;B)V
+  .synthetic
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial com/mobisage/android/K$a/<init>(Lcom/mobisage/android/K;)V
+  return
+  nop
+.end <method>
+
+.method public final onMobiSageMessageFinish(Lcom/mobisage/android/MobiSageMessage;)V
+.limit locals 10
+.limit stack 200
+  nop
+Label1:
+  aload_0
+  getfield com/mobisage/android/K$a/a Lcom/mobisage/android/K;
+  astore_2
+  aload_2
+  getfield com/mobisage/android/K/a Ljava/util/concurrent/LinkedBlockingQueue;
+  astore_3
+  aload_3
+  invokevirtual java/util/concurrent/LinkedBlockingQueue/size()I
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  aload_0
+  getfield com/mobisage/android/K$a/a Lcom/mobisage/android/K;
+  astore_2
+  aload_2
+  getfield com/mobisage/android/K/a Ljava/util/concurrent/LinkedBlockingQueue;
+  astore_3
+  aload_3
+  invokevirtual java/util/concurrent/LinkedBlockingQueue/poll()Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 7
+  aload 7
+  checkcast com/mobisage/android/MobiSageResMessage
+  astore 7
+  aload 7
+  astore 6
+  aload_0
+  getfield com/mobisage/android/K$a/a Lcom/mobisage/android/K;
+  astore_2
+  aload_2
+  getfield com/mobisage/android/MobiSageMessage/result Landroid/os/Bundle;
+  astore 8
+  aload 6
+  aload 8
+  putfield com/mobisage/android/MobiSageMessage/result Landroid/os/Bundle;
+  aload 6
+  getfield com/mobisage/android/MobiSageMessage/callback Lcom/mobisage/android/IMobiSageMessageCallback;
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label1
+  aload 6
+  getfield com/mobisage/android/MobiSageMessage/callback Lcom/mobisage/android/IMobiSageMessageCallback;
+  astore 9
+  aload 9
+  aload 6
+  invokeinterface com/mobisage/android/IMobiSageMessageCallback/onMobiSageMessageFinish(Lcom/mobisage/android/MobiSageMessage;)V 2
+  goto Label1
+Label0:
+  return
+  nop
+.end <method>
+

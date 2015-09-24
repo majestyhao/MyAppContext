@@ -1,0 +1,85 @@
+.source SourceFile
+.class final  com/mobisage/android/s$a
+.super java/lang/Object
+.implements  com/mobisage/android/a
+.field private "a" Lcom/mobisage/android/s;
+
+.method private <init>(Lcom/mobisage/android/s;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/mobisage/android/s$a/a Lcom/mobisage/android/s;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method <init>(Lcom/mobisage/android/s;B)V
+  .synthetic
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial com/mobisage/android/s$a/<init>(Lcom/mobisage/android/s;)V
+  return
+  nop
+.end <method>
+
+.method public final a(Lcom/mobisage/android/b;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  getfield com/mobisage/android/s$a/a Lcom/mobisage/android/s;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  invokestatic com/mobisage/android/s/a()I
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual android/os/Handler/obtainMessage(I)Landroid/os/Message;
+  astore 5
+  aload 5
+  aload_1
+  putfield android/os/Message/obj Ljava/lang/Object;
+  aload 5
+  invokevirtual android/os/Message/sendToTarget()V
+  return
+  nop
+.end <method>
+
+.method public final b(Lcom/mobisage/android/b;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  getfield com/mobisage/android/s$a/a Lcom/mobisage/android/s;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  invokestatic com/mobisage/android/s/b()I
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual android/os/Handler/obtainMessage(I)Landroid/os/Message;
+  astore 5
+  aload 5
+  aload_1
+  putfield android/os/Message/obj Ljava/lang/Object;
+  aload 5
+  invokevirtual android/os/Message/sendToTarget()V
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">经典连连看 Link it</string>
+    <string name="cfgEnableMusic">isMusic</string>
+    <string name="cfgEnableSound">isSound</string>
+    <string name="cfgEnableVibrate">isVibrate</string>
+    <string name="cbEnableMusic">Music</string>
+    <string name="cbEnableSound">Sound</string>
+    <string name="cbEnableVibrate">Vibration</string>
+    <string name="msgLevelSuccess">Good job! Next level!</string>
+    <string name="msgLevelFail">Fail! Try again.</string>
+    <string name="msgLevelPrefix">Level</string>
+    <string name="msgLevelPosfix" />
+    <string name="msgMaxLevelPrefix">Highest level:</string>
+    <string name="msgMaxLevelPosfix" />
+    <string name="btnOK">Confirm</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="attention">Attention</string>
+    <string name="quitDesc">Are you sure you want to exit?</string>
+    <string name="newGameDesc">Are you sure you want to restart the game?</string>
+    <string name="txtPauseContext">Pause...</string>
+    <string name="menuOption">Option</string>
+    <string name="menuSetting">Setting</string>
+    <string name="menuPause">Pause</string>
+    <string name="menuExit">Exit</string>
+    <string name="opNewGame">New Game</string>
+    <string name="opRerange">Rearrange</string>
+    <string name="opHint">Hint</string>
+    <string name="opCancel">Cancel</string>
+    <string name="opRecomend">Recommend Apps</string>
+</resources>

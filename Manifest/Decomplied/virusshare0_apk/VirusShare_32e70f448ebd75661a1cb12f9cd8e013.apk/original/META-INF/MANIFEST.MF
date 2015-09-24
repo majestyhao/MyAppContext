@@ -1,0 +1,420 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android)
+
+Name: assets/domob_next_off.png
+SHA1-Digest: Xjupp/Ag2wLZpifAiFRtfETN7qU=
+
+Name: res/drawable-hdpi/q7.PNG
+SHA1-Digest: faXUnUIHOhLwmWM37YNkH/UzH40=
+
+Name: res/drawable-hdpi/q30.png
+SHA1-Digest: BqdxWw3uWjAfmxdgYeNGIHT6ePA=
+
+Name: com/wiyun/ad/HtmlCharacterEntityReferences.properties
+SHA1-Digest: dt1LNAlGWKYxlnbls1sXeP0oZL8=
+
+Name: assets/domob_exit.png
+SHA1-Digest: ZXarJw64rywBR9mWLoRIz5YpIXI=
+
+Name: com/admogo/assets/webview_bar_close_hover.png
+SHA1-Digest: Uu2hSaZ7sCn5tjaUNV/9un+lRvE=
+
+Name: assets/mobisage/baidu.png
+SHA1-Digest: b3qF+uXb5cAdOMegLBcbEPlXFUI=
+
+Name: res/drawable-hdpi/q18.png
+SHA1-Digest: JYt3prlcj3GvVhDknQ7CXo7JYDE=
+
+Name: assets/mobisage/close.png
+SHA1-Digest: qmHVoMEi3d/MlreavaORVi63Q1k=
+
+Name: res/drawable-hdpi/q25.png
+SHA1-Digest: ZSKoeniUPHBA17UcmkS3qDoLVYs=
+
+Name: res/drawable-hdpi/explode2.png
+SHA1-Digest: 9yldW+b9wctEuapO4B/hBjhkCnE=
+
+Name: com/admogo/assets/adsmogo_ad_close.png
+SHA1-Digest: rVxr+6Dusb2iLIroRu7wYL0G+6o=
+
+Name: assets/domob_preview_off.png
+SHA1-Digest: 7PBMCBtD7LVBKytqXJIff4kbMd0=
+
+Name: res/drawable-hdpi/clock.png
+SHA1-Digest: S56Orwu3Kq1RdGzHKBuRH3e41IQ=
+
+Name: assets/def_0_32000048.png
+SHA1-Digest: kndimctb0rQoHz2T8JjBtbS1Ae0=
+
+Name: com/admogo/assets/webview_bar_share_hover.png
+SHA1-Digest: vsSmCAcJzAvJ5IHp5xbcW/rxxCA=
+
+Name: res/drawable-hdpi/q35.png
+SHA1-Digest: cUu5dyeMkYcLcE02y5p9X10hkOc=
+
+Name: com/admogo/assets/webview_ad_bar_bgimg.png
+SHA1-Digest: 0MV2WT7Y/ZPXrP8JSSB23FxqXPg=
+
+Name: res/raw/tool.mp3
+SHA1-Digest: 1Oy7qjN2Il/wlIDCJoQkMyKf6rM=
+
+Name: com/admogo/assets/webview_bar_back_hover.png
+SHA1-Digest: ELxmWjwoGbWz6XTpxPyeRnt0RAw=
+
+Name: res/layout/setting.xml
+SHA1-Digest: NQlMrSSliEyRqHd9j/TtfL/DZvc=
+
+Name: res/raw/timeout.mp3
+SHA1-Digest: RjiSv6MaojSbGm1U5zZe+r++kv8=
+
+Name: res/drawable-hdpi/q27.png
+SHA1-Digest: YN8Mqg88rCU4wmMMkWGNc5g+fhg=
+
+Name: com/admogo/assets/adsmogo_close.png
+SHA1-Digest: B+wkEK4+l9ItO9wQ6RZIY9Vbh2Y=
+
+Name: res/drawable-hdpi/btn_bg.png
+SHA1-Digest: iVvSoj9VQhCs+RBpdfIhSjJszd8=
+
+Name: res/drawable-hdpi/q8.PNG
+SHA1-Digest: wIFoO/SD4aIAGwU6TUkgiiFtyTg=
+
+Name: res/drawable-hdpi/dialog_bg.png
+SHA1-Digest: lWufQ7sAr7rGy/U8IXKBqzUXjAI=
+
+Name: res/drawable-hdpi/explode5.png
+SHA1-Digest: w8zfiNLni0Mjz/IIgZdN1/tbmPs=
+
+Name: assets/ads/push_cancel_btn.png
+SHA1-Digest: TPy+8tbvjxHd4AahzFYOc26/tB4=
+
+Name: res/drawable-hdpi/q31.png
+SHA1-Digest: qTT9LJGkT9nT6z/5LEH1qilMLQM=
+
+Name: res/drawable-hdpi/q3.PNG
+SHA1-Digest: PquskqS2F/+maTK4jV2e483Vhkc=
+
+Name: assets/domob_refresh.png
+SHA1-Digest: BwoiRqAz9PWmjE22fyT0kVIzG2Y=
+
+Name: res/drawable-hdpi/q5.PNG
+SHA1-Digest: Gi2PmZqFlVFW7WWbofRbIqjwFZ8=
+
+Name: com/admogo/assets/webview_bar_next_hover.png
+SHA1-Digest: YlSqpH59P2kmo1JS67lF5kyC/fU=
+
+Name: res/anim/explosion.xml
+SHA1-Digest: jLLCLckXnswuZn819EzEnOshfkE=
+
+Name: com/admogo/assets/adsmogo_btn_bg.png
+SHA1-Digest: w9+Rri4UcZEs6qdp/4FUZtJ2j7E=
+
+Name: res/drawable-hdpi/q32.png
+SHA1-Digest: iHU0P9zDfOZUqVHANCNLiCakwUs=
+
+Name: res/drawable-hdpi/q33.png
+SHA1-Digest: c9MYshrQtSk7tbj9+7WV6geFu3E=
+
+Name: res/drawable-hdpi/explode4.png
+SHA1-Digest: hF+i8dqa3sXBa3XA8QifUbx0czQ=
+
+Name: com/admogo/assets/webview_bar_next_grey.png
+SHA1-Digest: /8jxLzgyQqAJEHoAgXyWpiXW0Vk=
+
+Name: assets/domob_next.png
+SHA1-Digest: f42c0y/wh7N6xBRje4bC4656kbQ=
+
+Name: res/drawable-hdpi/btn_continue.xml
+SHA1-Digest: aYbsaES0LaRrxqECDjHzyNoedcs=
+
+Name: assets/domob_loading.png
+SHA1-Digest: FL55C1gRyTSyfjHId8rJHGTySz8=
+
+Name: assets/ads/spot_default.png
+SHA1-Digest: otjs5GEfzNKUyAbKGAEWJMUSfXE=
+
+Name: assets/ads/visitweb_btn.png
+SHA1-Digest: xtJAVgsPVKqA6EnOPKLMSodug7Q=
+
+Name: assets/adwo_bg.png
+SHA1-Digest: mp0iT3rii+nwV5MFxR7ozYfVkhI=
+
+Name: resources.arsc
+SHA1-Digest: agNEUzmVHRptN1VGosWFNgLzy8s=
+
+Name: com/admogo/assets/webview_bar_close.png
+SHA1-Digest: xLcH9A4UAhbicsZwbE71E70SSeE=
+
+Name: res/drawable-hdpi/q11.PNG
+SHA1-Digest: kwOiAd8BzBDVDm5CMl19a31cWQU=
+
+Name: res/drawable-hdpi/pop.9.png
+SHA1-Digest: ZpkLh7Inn2YhkglWIPoLZKiFLpg=
+
+Name: com/admogo/assets/adsmogo_ad_close_h.png
+SHA1-Digest: mnKAXtvB5kCP9TC0vxz13OVnETg=
+
+Name: com/admogo/assets/adsmogo_fill_bgb.png
+SHA1-Digest: WYRMoCBXFox4ELS+CCIgptJyV/U=
+
+Name: assets/domob_out.png
+SHA1-Digest: UOCtmFgBge0CR6Hf5aS0SZ+gSPE=
+
+Name: AndroidManifest.xml
+SHA1-Digest: 4B0AwNtxgP4x6ECtnxss7hEMsK4=
+
+Name: com/wiyun/ad/sdk.properties
+SHA1-Digest: +O1VK6FOyUKBCfYqAEiP5WeKR+o=
+
+Name: res/drawable-hdpi/explode1.png
+SHA1-Digest: OvRkPM5a6a92hzwFwoJx6LAMuNk=
+
+Name: assets/domob_close.png
+SHA1-Digest: EzTFh+1itbq0pmiica8OM7Cj1hY=
+
+Name: assets/def_0.png
+SHA1-Digest: MPxwuD54DTp8NkK/5/RUgiQ6c30=
+
+Name: res/drawable-hdpi/q2.PNG
+SHA1-Digest: daO8Ip93N+fFM4EF3SR1bMeMAa0=
+
+Name: res/raw/click.mp3
+SHA1-Digest: hvfJ1wIN2w+mU9UtOC5qT8/9snw=
+
+Name: assets/dea2b5d0496c42dc82f02e12aa6b30c3.config
+SHA1-Digest: WMYJOswVW6n9Lca67OwWmNXuPUQ=
+
+Name: assets/adwo_left_arrow.png
+SHA1-Digest: meeSLFqmxEGd3K7iVelDh/AmOzw=
+
+Name: res/layout/option.xml
+SHA1-Digest: 6/au2oYnIkAwPISuWMwPazZvyuU=
+
+Name: classes.dex
+SHA1-Digest: B7fuUJeff5DAkyLXB5kHNybPo58=
+
+Name: res/drawable-hdpi/q12.PNG
+SHA1-Digest: UekKzgPflyH4ud5EudN89ziI1/g=
+
+Name: res/layout/exit_dialog.xml
+SHA1-Digest: YTcymkgse2P6wAZKvMxSt/Oorn0=
+
+Name: com/admogo/assets/webview_bar_refresh_hover.png
+SHA1-Digest: nQ66TRPyf7TjrVzLWroP2Ztm8VM=
+
+Name: com/admogo/assets/webview_bar_pause.png
+SHA1-Digest: RGn0o5mJEhKcNab9w6VpwUI4eVc=
+
+Name: res/anim/adwo_shrink_from_top.xml
+SHA1-Digest: ffZbRXRT31f7SMENwytkHztmOmA=
+
+Name: res/drawable-hdpi/ic_menu_star.png
+SHA1-Digest: taRGbwIydyT2UyoEfApEY5kU3xY=
+
+Name: res/drawable-hdpi/q21.png
+SHA1-Digest: kOybfpsTqKbvVbhgadlHGWMQFAU=
+
+Name: res/anim/adwo_grow_from_bottom.xml
+SHA1-Digest: wdCZDyJHXwGA8eCyFr2g/Etmjn8=
+
+Name: res/drawable-hdpi/q34.png
+SHA1-Digest: 02JiEN9MS0u0+F5yx45vFHcOb5Q=
+
+Name: assets/domob_preview.png
+SHA1-Digest: c6+V3nd0HnYSpvyBHOI+rRLQmKQ=
+
+Name: res/drawable-hdpi/q13.PNG
+SHA1-Digest: iffxyOcVyfx4cUF3PPMSfxhWx94=
+
+Name: com/admogo/assets/close_btn.png
+SHA1-Digest: JadhAiuktMhA6/A4dSSzWn2wPVU=
+
+Name: res/layout/wy_ad_notification.xml
+SHA1-Digest: t1/29POdM2Z77Ga6qmkoyIbl2bk=
+
+Name: assets/domob_banner.png
+SHA1-Digest: pxTcvUnFGb+3etlJHikU+4KyzAc=
+
+Name: res/anim/adwo_shrink_from_bottom.xml
+SHA1-Digest: iHGZK92E2ijGHpeuQOADnCXkocM=
+
+Name: assets/adwo_rec.png
+SHA1-Digest: N/xL8WyMkMAftdfc/jBOYzB5GW0=
+
+Name: res/drawable-hdpi/q16.png
+SHA1-Digest: g2QFbnkZ+e+QiODzplF2g+gZdnM=
+
+Name: com/admogo/assets/webview_bar_back.png
+SHA1-Digest: DaezY7mHZ7MhezRXNM4lvvbYWVY=
+
+Name: assets/ads/spot_light.png
+SHA1-Digest: UAVbcXdQSX5UtsllV4nozLvEmwU=
+
+Name: res/anim/adwo_grow_from_top.xml
+SHA1-Digest: MVmUFuuDu+E/iImsL2BDIZXeEaE=
+
+Name: com/admogo/assets/webview_bar_refresh.png
+SHA1-Digest: Vcbmn0UhGpT1reCTf++hoiAAWR8=
+
+Name: assets/mobisage/clear.png
+SHA1-Digest: IUDodRbfBHjqP4tWlBfGNBuK2DM=
+
+Name: assets/mobisage/foward.png
+SHA1-Digest: MAju/r5gWewIdZzgsZJQZTATWr0=
+
+Name: assets/adwo_done.png
+SHA1-Digest: gqc4zhm4N8eWkwekeF24z+6jC2U=
+
+Name: res/raw/win.ogg
+SHA1-Digest: K18Clo8ba2NVPcdE1HLdt66OumI=
+
+Name: assets/adwo_right_arrow.png
+SHA1-Digest: h00fD7xWYHYyFnMu8wDIrBWkTjE=
+
+Name: assets/ads/push_cancel_btn_pressed.png
+SHA1-Digest: S6Aw14JRl5nZZH/eOUqYQCXct3A=
+
+Name: res/drawable-hdpi/q14.PNG
+SHA1-Digest: Uoos7Fve0dGn1QfnY2aTHTU1ty8=
+
+Name: com/admogo/assets/webview_bar_pause_hover.png
+SHA1-Digest: iamRhOZyuwVenSehITPfsgs9jQw=
+
+Name: res/drawable-hdpi/btn_continue_normal.png
+SHA1-Digest: 0ZxDZLD+v/usTCKEESZ+dFfWy9E=
+
+Name: res/layout/main.xml
+SHA1-Digest: pMeKpH+LnpGK8Fgfr4aIeKzqZnU=
+
+Name: assets/ads/download_btn2_pressed.png
+SHA1-Digest: +6jpHi0pG8LdgN87L8D/K123+ns=
+
+Name: com/admogo/assets/webview_bar_share.png
+SHA1-Digest: vTRgPnMin++0ylcON+wMYEg8UPw=
+
+Name: com/admogo/assets/adsmogo_btn_bg_prs.png
+SHA1-Digest: /1/xI9aJEo9pCxr9e1v84gE09uc=
+
+Name: com/admogo/assets/adsmogo_dialog_bg.png
+SHA1-Digest: rsAZZ58fi6+o0Mdpr7Hf1EEHadY=
+
+Name: res/drawable-hdpi/q10.PNG
+SHA1-Digest: xF9BtQNS1fvTtcp/NoXq9ms3D1s=
+
+Name: res/values/styles.xml
+SHA1-Digest: JF7Iq/7oV83MUgVqhA/pY8xP7oY=
+
+Name: res/layout/level.xml
+SHA1-Digest: F86t2PJeS+hV3AOBKTkzFAGB2cM=
+
+Name: lib/armeabi/liblbs.so
+SHA1-Digest: Aaj6tagN38YDq/XULjGEZ1thlgA=
+
+Name: com/wiyun/ad/sdk_zh.properties
+SHA1-Digest: 2pYbWJlUiGQkZWxwIy7GqCgRKXg=
+
+Name: res/drawable-hdpi/q20.png
+SHA1-Digest: rxVvA9djhO8NQKEjcyT/m6mhhxw=
+
+Name: res/drawable-hdpi/explode3.png
+SHA1-Digest: AfG2IKiIkIHD8BnWtg43qM3l9E0=
+
+Name: res/layout/pause.xml
+SHA1-Digest: vd25MbHorFculm/L37G+4duhdm0=
+
+Name: com/admogo/assets/adsmogo_logo.png
+SHA1-Digest: Dmemk/UL7IqiwtAKhK/JfSRg4Ok=
+
+Name: res/drawable-hdpi/q15.PNG
+SHA1-Digest: EzrisXTIHX4ROyUM17wxvOhAxTU=
+
+Name: res/drawable-hdpi/q6.PNG
+SHA1-Digest: ZYSxoViobvbABgfoo79nhqe3bqs=
+
+Name: assets/ads/snapshot_empty.png
+SHA1-Digest: DSmTSCP3TKTP8Cw8/9byyIcYP28=
+
+Name: assets/ads/fold_arrow.png
+SHA1-Digest: aPV5nrym+b3yv4JxlPO9BHg6+k0=
+
+Name: com/admogo/assets/webview_bar_next.png
+SHA1-Digest: kzsHeNI8uNPOiJ6AShWv81cc/cQ=
+
+Name: assets/ads/visitweb_btn_pressed.png
+SHA1-Digest: 5IzCKMnh4Nq+MGRwODHU6j6jyK8=
+
+Name: res/drawable-hdpi/q28.png
+SHA1-Digest: hunjZK18adIMZD951Cmyd2LDbo0=
+
+Name: com/admogo/assets/webview_bar_back_grey.png
+SHA1-Digest: Atf4/FLjtfApsvzBVbR6baMcIh4=
+
+Name: assets/ads/download_btn2.png
+SHA1-Digest: t/TUhYX3NLrPo/uUV16ZFLGq4I4=
+
+Name: res/drawable-hdpi/q19.png
+SHA1-Digest: 7Ax74eJRdHP72Tf46yhQ3lWpVNM=
+
+Name: res/drawable-hdpi/btn_continue_press.png
+SHA1-Digest: rqSTmFfZxOTtfHPytQBnhQU9/H0=
+
+Name: com/admogo/assets/baidu_icon.png
+SHA1-Digest: zhF8eUVoDhLMIqfDqhIoxd2PPaI=
+
+Name: com/qq/jce/wup/wup.properties
+SHA1-Digest: o5bD1sOoAP9KN7VDE0HtjC/JU40=
+
+Name: res/drawable-hdpi/q4.PNG
+SHA1-Digest: tvP/7ebT0mkmRxmfr792jhtY/F4=
+
+Name: res/drawable-hdpi/ic_menu_refresh.png
+SHA1-Digest: VLEX1uhZQd0g+9EKYxd8J3R4jsg=
+
+Name: res/drawable-hdpi/q24.png
+SHA1-Digest: rFHnI8hdR3WMMf0wvn4TIftJEi8=
+
+Name: com/admogo/assets/adsmogo_close_h.png
+SHA1-Digest: rhOhUG3UjzBBMfzGlt+wGyYiJLY=
+
+Name: com/admogo/assets/progressbarbg.png
+SHA1-Digest: 5OHjIEiVD+XD+z04q0xLOy/9Gkc=
+
+Name: res/drawable-hdpi/q1.PNG
+SHA1-Digest: AP50aLKWYK4+hK9g64z1HpD1qCY=
+
+Name: res/drawable-hdpi/q17.png
+SHA1-Digest: pf+cfWjgYKD0aXKiGQ4iPiq+YSE=
+
+Name: com/admogo/assets/adsmogo_fill_bgw.png
+SHA1-Digest: YEf0uA0nSFlVL6iLJJIHtt7Hex0=
+
+Name: res/drawable-hdpi/ic_menu_emoticons.png
+SHA1-Digest: laG82U+Ru1agfUhWI38V5wjUcQs=
+
+Name: res/raw/match.mp3
+SHA1-Digest: uFEC5PgHchSa+CdQkiKirRHuzng=
+
+Name: res/raw/bg.mid
+SHA1-Digest: vgSck15PoZGaIm8/DOvt+v9iBw8=
+
+Name: res/drawable-hdpi/q9.PNG
+SHA1-Digest: Uuj6pz/uKpbBwcwypzx9/M6rbSM=
+
+Name: res/drawable-hdpi/q26.png
+SHA1-Digest: PZN/SrbcZxTRO9PIX7Xwyn0dPhg=
+
+Name: res/drawable-hdpi/q22.png
+SHA1-Digest: onC1Jmn/ajktdgPzV0ftAoEY5b8=
+
+Name: assets/mobisage/back.png
+SHA1-Digest: v8G5hVuAzP+l7B47Uc55u1rQMng=
+
+Name: res/drawable-hdpi/q23.png
+SHA1-Digest: lchdaJKmaR6bhV3asf12rErORiY=
+
+Name: res/drawable-hdpi/icon.png
+SHA1-Digest: xanZr8eGuGWpHBNN8x8iTnu6bXo=
+
+Name: res/drawable-hdpi/q29.png
+SHA1-Digest: 9h4h2U4TpP8+R/WNFfL9RJ92M2U=
+

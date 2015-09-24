@@ -1,0 +1,15 @@
+.source BuildConfig.java
+.class public final  maxstrom/game/llk/BuildConfig
+.super java/lang/Object
+.field public static final "DEBUG" Z =  0
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

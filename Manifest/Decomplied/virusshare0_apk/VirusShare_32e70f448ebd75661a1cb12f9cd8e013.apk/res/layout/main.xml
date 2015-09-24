@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:umadsdk="http://schemas.android.com/apk/res/maxstrom.game.llk">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/layStatusBar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ProgressBar android:id="@id/pbGameTime" android:padding="4.0sp" android:layout_width="fill_parent" android:layout_height="28.0dip" android:max="100" android:progress="0" style="?android:attr/progressBarStyleHorizontal" />
+                <LinearLayout android:orientation="horizontal" android:padding="4.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/clock" android:layout_width="20.0sp" android:layout_height="20.0sp" android:layout_marginLeft="2.0sp" android:layout_marginRight="2.0sp" android:scaleType="fitStart" />
+                    <TextView android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/txtGameTime" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <maxstrom.game.llk.LLKView android:id="@id/llk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <ImageView android:background="@drawable/ic_menu_star" android:layout_width="22.0sp" android:layout_height="22.0sp" android:scaleType="fitStart" />
+            <TextView android:textColor="#ffffffff" android:id="@id/txtGameLevel" android:padding="4.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/layBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/btnHintTimesLeft" android:background="@drawable/ic_menu_emoticons" android:layout_width="22.0sp" android:layout_height="22.0sp" android:scaleType="fitStart" />
+            <TextView android:textColor="#ffffffff" android:id="@id/txtHintTimesLeft" android:padding="4.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/btnRefleshTimesLeft" android:background="@drawable/ic_menu_refresh" android:layout_width="22.0sp" android:layout_height="22.0sp" android:scaleType="fitStart" />
+            <TextView android:textColor="#ffffffff" android:id="@id/txtRefleshTimesLeft" android:padding="4.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.admogo.AdMogoLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/admogo_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/layBottom" />
+    </RelativeLayout>
+</FrameLayout>

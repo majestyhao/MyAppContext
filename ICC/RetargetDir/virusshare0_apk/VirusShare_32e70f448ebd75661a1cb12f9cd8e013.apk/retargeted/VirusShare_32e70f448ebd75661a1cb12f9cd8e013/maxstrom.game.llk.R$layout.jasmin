@@ -1,0 +1,21 @@
+.source R.java
+.class public final  maxstrom/game/llk/R$layout
+.super java/lang/Object
+.field public static final "exit_dialog" I =  2130903040
+.field public static final "level" I =  2130903041
+.field public static final "main" I =  2130903042
+.field public static final "option" I =  2130903043
+.field public static final "pause" I =  2130903044
+.field public static final "setting" I =  2130903045
+.field public static final "wy_ad_notification" I =  2130903046
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

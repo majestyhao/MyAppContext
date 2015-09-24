@@ -1,0 +1,10 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.interface public interface abstract  com/kuguo/a/d
+.super java/lang/Object
+
+.method public abstract a(Lcom/kuguo/a/f;I)V
+.end <method>
+
+.method public abstract a(Lcom/kuguo/a/f;J)V
+.end <method>
+

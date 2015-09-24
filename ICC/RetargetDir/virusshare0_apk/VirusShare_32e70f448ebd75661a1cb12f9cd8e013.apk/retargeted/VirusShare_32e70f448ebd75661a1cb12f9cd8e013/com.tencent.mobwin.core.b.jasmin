@@ -1,0 +1,111 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/tencent/mobwin/core/b
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcom/tencent/mobwin/core/v;
+
+.method <init>(Lcom/tencent/mobwin/core/v;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/b/a Lcom/tencent/mobwin/core/v;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 9
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/b/a Lcom/tencent/mobwin/core/v;
+  astore_1
+  aload_1
+  invokestatic com/tencent/mobwin/core/v/a(Lcom/tencent/mobwin/core/v;)Lcom/tencent/mobwin/core/g;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/b/a Lcom/tencent/mobwin/core/v;
+  astore_1
+  aload_1
+  invokestatic com/tencent/mobwin/core/v/a(Lcom/tencent/mobwin/core/v;)Lcom/tencent/mobwin/core/g;
+  astore_2
+  aload_2
+  invokestatic com/tencent/mobwin/core/g/b(Lcom/tencent/mobwin/core/g;)Lcom/tencent/mobwin/core/w;
+  astore 4
+  aload 4
+  invokestatic com/tencent/mobwin/core/w/c(Lcom/tencent/mobwin/core/w;)Lcom/tencent/mobwin/core/a/h;
+  astore 5
+  aload 5
+  getfield com/tencent/mobwin/core/a/h/b Landroid/graphics/Bitmap;
+  astore 6
+  aload_3
+  aload 6
+  invokestatic com/tencent/mobwin/core/w/a(Lcom/tencent/mobwin/core/w;Landroid/graphics/Bitmap;)V
+  aload_0
+  getfield com/tencent/mobwin/core/b/a Lcom/tencent/mobwin/core/v;
+  astore_1
+  aload_1
+  invokestatic com/tencent/mobwin/core/v/a(Lcom/tencent/mobwin/core/v;)Lcom/tencent/mobwin/core/g;
+  astore_2
+  aload_2
+  invokestatic com/tencent/mobwin/core/g/b(Lcom/tencent/mobwin/core/g;)Lcom/tencent/mobwin/core/w;
+  astore 4
+  aload 4
+  invokestatic com/tencent/mobwin/core/w/c(Lcom/tencent/mobwin/core/w;)Lcom/tencent/mobwin/core/a/h;
+  astore 5
+  aload_0
+  getfield com/tencent/mobwin/core/b/a Lcom/tencent/mobwin/core/v;
+  astore_1
+  aload_1
+  invokestatic com/tencent/mobwin/core/v/a(Lcom/tencent/mobwin/core/v;)Lcom/tencent/mobwin/core/g;
+  astore_2
+  aload_2
+  invokestatic com/tencent/mobwin/core/g/b(Lcom/tencent/mobwin/core/g;)Lcom/tencent/mobwin/core/w;
+  astore 4
+  aload 4
+  invokestatic com/tencent/mobwin/core/w/m(Lcom/tencent/mobwin/core/w;)LMobWin/ADInfo;
+  astore 7
+  aload 5
+  aload 7
+  putfield com/tencent/mobwin/core/a/h/a LMobWin/ADInfo;
+  aload_0
+  getfield com/tencent/mobwin/core/b/a Lcom/tencent/mobwin/core/v;
+  astore_1
+  aload_1
+  invokestatic com/tencent/mobwin/core/v/a(Lcom/tencent/mobwin/core/v;)Lcom/tencent/mobwin/core/g;
+  astore_2
+  aload_2
+  invokestatic com/tencent/mobwin/core/g/b(Lcom/tencent/mobwin/core/g;)Lcom/tencent/mobwin/core/w;
+  astore 4
+  aload 4
+  invokestatic com/tencent/mobwin/core/w/c(Lcom/tencent/mobwin/core/w;)Lcom/tencent/mobwin/core/a/h;
+  astore 5
+  aconst_null
+  astore 8
+  aload 5
+  aload 8
+  putfield com/tencent/mobwin/core/a/h/b Landroid/graphics/Bitmap;
+  aload_0
+  getfield com/tencent/mobwin/core/b/a Lcom/tencent/mobwin/core/v;
+  astore_1
+  aload_1
+  invokestatic com/tencent/mobwin/core/v/a(Lcom/tencent/mobwin/core/v;)Lcom/tencent/mobwin/core/g;
+  astore_2
+  aload_2
+  invokestatic com/tencent/mobwin/core/g/b(Lcom/tencent/mobwin/core/g;)Lcom/tencent/mobwin/core/w;
+  astore 4
+  aload 4
+  invokestatic com/tencent/mobwin/core/w/n(Lcom/tencent/mobwin/core/w;)V
+  return
+  nop
+.end <method>
+

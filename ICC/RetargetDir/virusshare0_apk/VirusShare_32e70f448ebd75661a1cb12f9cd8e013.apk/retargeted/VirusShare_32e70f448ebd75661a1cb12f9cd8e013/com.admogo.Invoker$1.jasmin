@@ -1,0 +1,77 @@
+.source Invoker.java
+.class  com/admogo/Invoker$1
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "this$0" Lcom/admogo/Invoker;
+
+.method <init>(Lcom/admogo/Invoker;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/Invoker$1/this$0 Lcom/admogo/Invoker;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 11
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  new java/lang/StringBuilder
+  astore_2
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_0
+  getfield com/admogo/Invoker$1/this$0 Lcom/admogo/Invoker;
+  astore_3
+  aload_3
+  getfield com/admogo/Invoker/m_nTime I
+  istore 4
+  iload 4
+  iconst_1
+  iadd
+  istore 5
+  aload_3
+  iload 5
+  putfield com/admogo/Invoker/m_nTime I
+  aload_2
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload_1
+  aload 6
+  invokevirtual android/widget/TextView/setText(Ljava/lang/CharSequence;)V
+  aload_0
+  getfield com/admogo/Invoker$1/this$0 Lcom/admogo/Invoker;
+  astore_3
+  aload_3
+  getfield com/admogo/Invoker/handle Landroid/os/Handler;
+  astore 7
+  aload_0
+  getfield com/admogo/Invoker$1/this$0 Lcom/admogo/Invoker;
+  astore_3
+  aload_3
+  getfield com/admogo/Invoker/getinfo Ljava/lang/Runnable;
+  astore 8
+  ldc2_w 1000
+  lstore 9
+  aload 7
+  aload 8
+  lload 9
+  invokevirtual android/os/Handler/postDelayed(Ljava/lang/Runnable;J)Z
+  pop
+  return
+  nop
+.end <method>
+

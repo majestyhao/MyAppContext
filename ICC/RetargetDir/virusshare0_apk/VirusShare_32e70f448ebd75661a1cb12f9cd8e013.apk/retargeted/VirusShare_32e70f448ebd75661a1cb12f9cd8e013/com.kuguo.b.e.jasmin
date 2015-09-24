@@ -1,0 +1,178 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/kuguo/b/e
+.super java/util/concurrent/ConcurrentLinkedQueue
+.field final "a" Lcom/kuguo/b/b;
+.field private "b" Ljava/lang/Thread;
+.field private "c" I
+
+.method public <init>(Lcom/kuguo/b/b;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/kuguo/b/e/a Lcom/kuguo/b/b;
+  aload_0
+  invokespecial java/util/concurrent/ConcurrentLinkedQueue/<init>()V
+  new java/util/Random
+  astore_2
+  aload_2
+  invokespecial java/util/Random/<init>()V
+  aload_2
+  invokevirtual java/util/Random/nextInt()I
+  istore_3
+  aload_0
+  iload_3
+  putfield com/kuguo/b/e/c I
+  return
+  nop
+.end <method>
+
+.method static a(Lcom/kuguo/b/e;Ljava/lang/Thread;)Ljava/lang/Thread;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/kuguo/b/e/b Ljava/lang/Thread;
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public a()V
+.limit locals 8
+.limit stack 200
+  nop
+  aload_0
+  invokevirtual com/kuguo/b/e/iterator()Ljava/util/Iterator;
+  astore_1
+Label1:
+  aload_1
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_1
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore_3
+  aload_3
+  astore 5
+  aload 5
+  checkcast com/kuguo/b/d
+  astore 5
+  aload 5
+  astore 4
+  aload 4
+  invokevirtual com/kuguo/b/d/h()I
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush -3
+  istore 7
+  iload 6
+  iload 7
+  if_icmpne Label1
+  aload_1
+  invokeinterface java/util/Iterator/remove()V 1
+  goto Label1
+Label0:
+  return
+  nop
+.end <method>
+
+.method public a(Lcom/kuguo/b/d;)Z
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial java/util/concurrent/ConcurrentLinkedQueue/add(Ljava/lang/Object;)Z
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_0
+  getfield com/kuguo/b/e/b Ljava/lang/Thread;
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  ifnonnull Label0
+  new com/kuguo/b/f
+  astore 4
+  aload 4
+  aload_0
+  invokespecial com/kuguo/b/f/<init>(Lcom/kuguo/b/e;)V
+  aload_0
+  aload 4
+  putfield com/kuguo/b/e/b Ljava/lang/Thread;
+  aload_0
+  getfield com/kuguo/b/e/b Ljava/lang/Thread;
+  astore_3
+  aload_3
+  invokevirtual java/lang/Thread/start()V
+Label0:
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public add(Ljava/lang/Object;)Z
+  .synthetic
+.limit locals 5
+.limit stack 200
+  nop
+  aload_1
+  astore_3
+  aload_3
+  checkcast com/kuguo/b/d
+  astore_3
+  aload_3
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual com/kuguo/b/e/a(Lcom/kuguo/b/d;)Z
+  istore 4
+  iload 4
+  ireturn
+  nop
+.end <method>
+
+.method public toString()Ljava/lang/String;
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "HttpConnectionQueue@"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/kuguo/b/e/c I
+  istore_3
+  aload_1
+  iload_3
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload 4
+  areturn
+  nop
+.end <method>
+

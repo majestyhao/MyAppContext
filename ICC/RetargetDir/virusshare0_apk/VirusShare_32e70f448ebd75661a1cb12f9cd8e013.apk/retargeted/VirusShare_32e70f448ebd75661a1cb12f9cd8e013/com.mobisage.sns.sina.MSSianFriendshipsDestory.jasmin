@@ -1,0 +1,26 @@
+.source SourceFile
+.class public  com/mobisage/sns/sina/MSSianFriendshipsDestory
+.super com/mobisage/sns/sina/MSSinaWeiboMessage
+
+.method public <init>(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  invokespecial com/mobisage/sns/sina/MSSinaWeiboMessage/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  ldc "https://api.weibo.com/2/friendships/destroy.json"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/mobisage/sns/sina/MSSinaWeiboMessage/urlPath Ljava/lang/String;
+  ldc "POST"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/mobisage/sns/sina/MSSinaWeiboMessage/httpMethod Ljava/lang/String;
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,5238 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/tencent/lbsapi/core/QLBSEngine
+.super java/lang/Object
+.field private static final "c" Ljava/lang/String; =  "com.tencent.lbsapi.GPS_SINGLE"
+.field private "A" Ljava/lang/String;
+.field private "B" Ljava/lang/String;
+.field protected "a" Ljava/lang/Runnable;
+.field protected "b" Ljava/lang/Runnable;
+.field private "d" Landroid/content/Context;
+.field private "e" Ljava/lang/ref/WeakReference;
+.field private "f" Landroid/os/Handler;
+.field private "g" Landroid/telephony/TelephonyManager;
+.field private "h" Landroid/location/LocationManager;
+.field private "i" Landroid/app/PendingIntent;
+.field private "j" Landroid/content/BroadcastReceiver;
+.field private "k" Landroid/net/wifi/WifiManager;
+.field private "l" Landroid/content/BroadcastReceiver;
+.field private "m" Z
+.field private "n" Z
+.field private "o" Z
+.field private "p" Z
+.field private "q" Z
+.field private "r" Z
+.field private "s" I
+.field private "t" I
+.field private "u" I
+.field private "v" I
+.field private "w" I
+.field private "x" I
+.field private "y" Ljava/util/ArrayList;
+.field private "z" Ljava/util/ArrayList;
+
+.method public <init>(Landroid/content/Context;Lcom/tencent/lbsapi/QLBSNotification;)V
+.limit locals 12
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield com/tencent/lbsapi/core/QLBSEngine/g Landroid/telephony/TelephonyManager;
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield com/tencent/lbsapi/core/QLBSEngine/h Landroid/location/LocationManager;
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield com/tencent/lbsapi/core/QLBSEngine/k Landroid/net/wifi/WifiManager;
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield com/tencent/lbsapi/core/QLBSEngine/l Landroid/content/BroadcastReceiver;
+  iconst_0
+  istore 4
+  aload_0
+  iload 4
+  putfield com/tencent/lbsapi/core/QLBSEngine/m Z
+  iconst_0
+  istore 4
+  aload_0
+  iload 4
+  putfield com/tencent/lbsapi/core/QLBSEngine/n Z
+  iconst_0
+  istore 4
+  aload_0
+  iload 4
+  putfield com/tencent/lbsapi/core/QLBSEngine/o Z
+  iconst_1
+  istore 4
+  aload_0
+  iload 4
+  putfield com/tencent/lbsapi/core/QLBSEngine/p Z
+  iconst_0
+  istore 4
+  aload_0
+  iload 4
+  putfield com/tencent/lbsapi/core/QLBSEngine/q Z
+  iconst_0
+  istore 4
+  aload_0
+  iload 4
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield com/tencent/lbsapi/core/QLBSEngine/y Ljava/util/ArrayList;
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield com/tencent/lbsapi/core/QLBSEngine/A Ljava/lang/String;
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield com/tencent/lbsapi/core/QLBSEngine/B Ljava/lang/String;
+  new com/tencent/lbsapi/core/b
+  astore 5
+  aload 5
+  aload_0
+  invokespecial com/tencent/lbsapi/core/b/<init>(Lcom/tencent/lbsapi/core/QLBSEngine;)V
+  aload_0
+  aload 5
+  putfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  new com/tencent/lbsapi/core/d
+  astore 6
+  aload 6
+  aload_0
+  invokespecial com/tencent/lbsapi/core/d/<init>(Lcom/tencent/lbsapi/core/QLBSEngine;)V
+  aload_0
+  aload 6
+  putfield com/tencent/lbsapi/core/QLBSEngine/b Ljava/lang/Runnable;
+  aload_0
+  aload_1
+  putfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  new java/lang/ref/WeakReference
+  astore 7
+  aload 7
+  aload_2
+  invokespecial java/lang/ref/WeakReference/<init>(Ljava/lang/Object;)V
+  aload_0
+  aload 7
+  putfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  ldc "com.tencent.lbsapi.GPS_SINGLE"
+  astore 9
+  aload 8
+  aload 9
+  invokespecial android/content/IntentFilter/<init>(Ljava/lang/String;)V
+  new com/tencent/lbsapi/core/c
+  astore 10
+  aload 10
+  aload_0
+  invokespecial com/tencent/lbsapi/core/c/<init>(Lcom/tencent/lbsapi/core/QLBSEngine;)V
+  aload_0
+  aload 10
+  putfield com/tencent/lbsapi/core/QLBSEngine/j Landroid/content/BroadcastReceiver;
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore_1
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/j Landroid/content/BroadcastReceiver;
+  astore 11
+  aload_1
+  aload 11
+  aload 8
+  invokevirtual android/content/Context/registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+  pop
+  aload_0
+  invokespecial com/tencent/lbsapi/core/QLBSEngine/s()V
+  return
+  nop
+.end <method>
+
+.method private static a([B)J
+.limit locals 22
+.limit stack 200
+  nop
+  iconst_0
+  istore 4
+  aload_0
+  iload 4
+  baload
+  istore_3
+  sipush 255
+  istore 4
+  iload_3
+  iload 4
+  iand
+  istore 5
+  iload 5
+  i2l
+  lstore 6
+  iconst_1
+  istore 4
+  aload_0
+  iload 4
+  baload
+  istore_3
+  sipush 255
+  istore 4
+  iload_3
+  iload 4
+  iand
+  istore 5
+  iload 5
+  i2l
+  lstore 8
+  iconst_2
+  istore 4
+  aload_0
+  iload 4
+  baload
+  istore_3
+  sipush 255
+  istore 4
+  iload_3
+  iload 4
+  iand
+  istore 5
+  iload 5
+  i2l
+  lstore 10
+  iconst_3
+  istore 4
+  aload_0
+  iload 4
+  baload
+  istore_3
+  sipush 255
+  istore 4
+  iload_3
+  iload 4
+  iand
+  istore 5
+  iload 5
+  i2l
+  lstore 12
+  iconst_4
+  istore 4
+  aload_0
+  iload 4
+  baload
+  istore_3
+  sipush 255
+  istore 4
+  iload_3
+  iload 4
+  iand
+  istore 5
+  iload 5
+  i2l
+  lstore 14
+  iconst_5
+  istore 4
+  aload_0
+  iload 4
+  baload
+  istore_3
+  sipush 255
+  istore 4
+  iload_3
+  iload 4
+  iand
+  istore 5
+  iload 5
+  i2l
+  lstore_1
+  lload_1
+  lstore 16
+  bipush 6
+  istore 4
+  aload_0
+  iload 4
+  baload
+  istore_3
+  sipush 255
+  istore 4
+  iload_3
+  iload 4
+  iand
+  istore 5
+  iload 5
+  i2l
+  lstore_1
+  lload_1
+  lstore 18
+  bipush 7
+  istore 4
+  aload_0
+  iload 4
+  baload
+  istore_3
+  sipush 255
+  istore 4
+  iload_3
+  iload 4
+  iand
+  istore 5
+  iload 5
+  i2l
+  lstore_1
+  lload_1
+  lstore 20
+  bipush 8
+  istore 4
+  lload 8
+  iload 4
+  lshl
+  lstore 8
+  bipush 16
+  istore 4
+  lload 10
+  iload 4
+  lshl
+  lstore 10
+  bipush 24
+  istore 4
+  lload 12
+  iload 4
+  lshl
+  lstore 12
+  bipush 32
+  istore 4
+  lload 14
+  iload 4
+  lshl
+  lstore 14
+  bipush 40
+  istore 4
+  lload 16
+  lstore_1
+  lload_1
+  iload 4
+  lshl
+  lstore_1
+  lload_1
+  lstore 16
+  bipush 48
+  istore 4
+  lload 18
+  lstore_1
+  lload_1
+  iload 4
+  lshl
+  lstore_1
+  lload_1
+  lstore 18
+  bipush 56
+  istore 4
+  lload 20
+  lstore_1
+  lload_1
+  iload 4
+  lshl
+  lstore_1
+  lload_1
+  lstore 20
+  lload 6
+  lload 8
+  lor
+  lstore 8
+  lload 8
+  lload 10
+  lor
+  lstore 10
+  lload 10
+  lload 12
+  lor
+  lstore 12
+  lload 12
+  lload 14
+  lor
+  lstore 14
+  lload 14
+  lload 16
+  lor
+  lstore 16
+  lload 16
+  lload 18
+  lor
+  lstore 18
+  lload 18
+  lload 20
+  lor
+  lstore 20
+  lload 20
+  lreturn
+  nop
+.end <method>
+
+.method public a()V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+Label0:
+  iconst_0
+  istore_3
+  aload_0
+  iload_3
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+  aload_0
+  invokespecial com/tencent/lbsapi/core/QLBSEngine/s()V
+  return
+  nop
+.end <method>
+
+.method public a(I)V
+.limit locals 3
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  iload_1
+  invokevirtual com/tencent/lbsapi/core/QLBSEngine/a(II)Z
+  pop
+  return
+  nop
+.end <method>
+
+.method static a(Lcom/tencent/lbsapi/core/QLBSEngine;)V
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/tencent/lbsapi/core/QLBSEngine/processReceiveWifi()V
+  return
+  nop
+.end <method>
+
+.method static a(Lcom/tencent/lbsapi/core/QLBSEngine;Landroid/location/Location;)V
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial com/tencent/lbsapi/core/QLBSEngine/processReceiveGps(Landroid/location/Location;)V
+  return
+  nop
+.end <method>
+
+.method private a(Ljava/util/ArrayList;)V
+.limit locals 25
+.limit stack 200
+  nop
+  iconst_0
+  istore_3
+  aload_1
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_1
+  astore_2
+  aload_2
+  invokevirtual java/util/ArrayList/size()I
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifne Label1
+Label0:
+  return
+Label1:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore 5
+  ldc "lbs_temp"
+  astore 7
+  iconst_0
+  istore 8
+  aload 5
+  aload 7
+  iload 8
+  invokevirtual android/content/Context/openFileOutput(Ljava/lang/String;I)Ljava/io/FileOutputStream;
+  astore 6
+Label10:
+  aload 6
+  astore 9
+  new java/io/ObjectOutputStream
+  astore 10
+  aload 10
+  astore 11
+Label13:
+  aload 10
+  aload 6
+  invokespecial java/io/ObjectOutputStream/<init>(Ljava/io/OutputStream;)V
+Label14:
+  aload 10
+  checkcast java/io/ObjectOutputStream
+  astore 10
+  aload_1
+  astore_2
+  aload 10
+  aload_2
+  invokevirtual java/io/ObjectOutputStream/writeObject(Ljava/lang/Object;)V
+Label17:
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label2
+  aload 6
+  checkcast java/io/FileOutputStream
+  astore 6
+Label19:
+  aload 6
+  invokevirtual java/io/FileOutputStream/close()V
+Label2:
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  ifnull Label0
+  aload 11
+  astore 12
+  aload 12
+  checkcast java/io/ObjectOutputStream
+  astore 12
+  aload 12
+  astore 10
+Label21:
+  aload 10
+  invokevirtual java/io/ObjectOutputStream/close()V
+Label22:
+  goto Label0
+Label20:
+  astore 13
+  aload 13
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label0
+Label18:
+  astore 14
+  aload 14
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label2
+Label9:
+  astore 15
+  aconst_null
+  astore 11
+Label7:
+  aload 15
+  invokevirtual java/lang/Exception/printStackTrace()V
+Label24:
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  ifnull Label3
+  aload_3
+  astore 16
+  aload 16
+  checkcast java/io/FileOutputStream
+  astore 16
+  aload 16
+  astore 6
+Label26:
+  aload 6
+  invokevirtual java/io/FileOutputStream/close()V
+Label3:
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  ifnull Label0
+  aload 11
+  astore 17
+  aload 17
+  checkcast java/io/ObjectOutputStream
+  astore 17
+  aload 17
+  astore 10
+Label28:
+  aload 10
+  invokevirtual java/io/ObjectOutputStream/close()V
+Label29:
+  goto Label0
+Label27:
+  astore 18
+  aload 18
+  astore_2
+  aload_2
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label0
+Label25:
+  astore 19
+  aload 19
+  astore_2
+  aload_2
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label3
+Label8:
+  astore 20
+  aconst_null
+  astore 9
+Label6:
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label4
+  aload 9
+  astore 21
+  aload 21
+  checkcast java/io/FileOutputStream
+  astore 21
+  aload 21
+  astore 6
+Label31:
+  aload 6
+  invokevirtual java/io/FileOutputStream/close()V
+Label4:
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  ifnull Label5
+  aload_3
+  astore 22
+  aload 22
+  checkcast java/io/ObjectOutputStream
+  astore 22
+  aload 22
+  astore 10
+Label33:
+  aload 10
+  invokevirtual java/io/ObjectOutputStream/close()V
+Label5:
+  aload 20
+  athrow
+Label30:
+  astore 23
+  aload 23
+  astore_2
+  aload_2
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label4
+Label32:
+  astore 24
+  aload 24
+  astore_2
+  aload_2
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label5
+Label11:
+  astore 20
+  goto Label6
+Label15:
+  astore 20
+  aload 11
+  astore_3
+  goto Label6
+Label23:
+  astore 20
+  aload_3
+  astore 9
+  aload 11
+  astore_3
+  goto Label6
+Label12:
+  astore 15
+  aconst_null
+  astore 11
+  aload 9
+  astore_3
+  goto Label7
+Label16:
+  astore 15
+  aload 9
+  astore_3
+  goto Label7
+  nop
+.end <method>
+
+.method public a(Z)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield com/tencent/lbsapi/core/QLBSEngine/p Z
+  return
+  nop
+.end <method>
+
+.method public a(II)Z
+.limit locals 21
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label10 <to> Label6 <using> Label9
+  .catch  java/lang/Throwable <from> Label1 <to> Label11 <using> Label9
+  .catch  java/lang/Throwable <from> Label5 <to> Label12 <using> Label9
+  nop
+  aload_0
+  monitorenter
+Label10:
+  aload_0
+  astore_3
+  aload_3
+  invokevirtual com/tencent/lbsapi/core/QLBSEngine/a()V
+  iconst_1
+  istore 6
+  aload_0
+  astore_3
+  aload_3
+  iload 6
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  ldc "airplane_mode_on"
+  astore 9
+  iconst_0
+  istore 6
+  aload 8
+  aload 9
+  iload 6
+  invokestatic android/provider/Settings$System/getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+  istore_1
+  iload_1
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  ifne Label0
+  aload_0
+  astore_3
+  aload_3
+  invokespecial com/tencent/lbsapi/core/QLBSEngine/readCell()V
+Label0:
+  aload_0
+  astore_3
+  aload_3
+  invokevirtual com/tencent/lbsapi/core/QLBSEngine/d()Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label1
+  aload_0
+  astore_3
+  aload_3
+  invokespecial com/tencent/lbsapi/core/QLBSEngine/t()V
+Label7:
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/lbsapi/core/QLBSEngine/p Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label2
+  aload_0
+  astore_3
+  aload_3
+  invokevirtual com/tencent/lbsapi/core/QLBSEngine/b()Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifne Label3
+  iconst_0
+  istore 6
+  aload_0
+  astore_3
+  aload_3
+  iload 6
+  putfield com/tencent/lbsapi/core/QLBSEngine/p Z
+Label3:
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/lbsapi/core/QLBSEngine/p Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label2
+  aload_0
+  astore_3
+  iload_2
+  istore 4
+  aload_3
+  iload 4
+  invokespecial com/tencent/lbsapi/core/QLBSEngine/b(I)V
+Label2:
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/lbsapi/core/QLBSEngine/p Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifne Label4
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/lbsapi/core/QLBSEngine/q Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifne Label4
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/lbsapi/core/QLBSEngine/v I
+  istore_3
+  iload_3
+  istore_2
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  ifne Label5
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 11
+  aload 11
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 12
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  ifnull Label6
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 11
+  aload 11
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 12
+  aload 12
+  astore 14
+  aload 14
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 14
+  aload 14
+  astore 13
+  iconst_0
+  istore 6
+  aload 13
+  iload 6
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  iconst_0
+  istore 6
+  aload_0
+  astore_3
+  aload_3
+  iload 6
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+Label6:
+  aload_0
+  monitorexit
+  iconst_1
+  istore 6
+  iload 6
+  ireturn
+Label1:
+  iconst_0
+  istore 6
+  aload_0
+  astore_3
+  aload_3
+  iload 6
+  putfield com/tencent/lbsapi/core/QLBSEngine/q Z
+Label11:
+  goto Label7
+Label9:
+  astore 15
+  aload_0
+  monitorexit
+  aload 15
+  athrow
+Label5:
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 11
+  aload 11
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 12
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  ifnull Label6
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 11
+  aload 11
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 12
+  aload 12
+  astore 16
+  aload 16
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 16
+  aload 16
+  astore 13
+  iconst_1
+  istore 6
+  aload 13
+  iload 6
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  iconst_0
+  istore 6
+  aload_0
+  astore_3
+  aload_3
+  iload 6
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+  goto Label6
+Label4:
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore 17
+  aload 17
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 17
+  ifnonnull Label8
+  new android/os/Handler
+  astore 17
+  aload 17
+  invokespecial android/os/Handler/<init>()V
+  aload_0
+  astore_3
+  aload_3
+  aload 17
+  putfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+Label8:
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore 17
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore 18
+  iload_2
+  istore_3
+  iload_3
+  sipush 1000
+  imul
+  istore_3
+  iload_3
+  istore_2
+  iload_3
+  i2l
+  lstore_3
+  lload_3
+  lstore 19
+  lload 19
+  lstore_3
+  aload 17
+  aload 18
+  lload_3
+  invokevirtual android/os/Handler/postDelayed(Ljava/lang/Runnable;J)Z
+  pop
+Label12:
+  goto Label6
+  nop
+.end <method>
+
+.method static a(Lcom/tencent/lbsapi/core/QLBSEngine;Z)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield com/tencent/lbsapi/core/QLBSEngine/o Z
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method private b(I)V
+.limit locals 23
+.limit stack 200
+  nop
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/n Z
+  istore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 8
+  ifeq Label0
+Label2:
+  return
+Label0:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/h Landroid/location/LocationManager;
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnonnull Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore 10
+  ldc "location"
+  astore 12
+  aload 10
+  aload 12
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 11
+  aload 11
+  astore 13
+  aload 13
+  checkcast android/location/LocationManager
+  astore 13
+  aload 13
+  astore 9
+  aload_0
+  astore_2
+  aload_2
+  aload 9
+  putfield com/tencent/lbsapi/core/QLBSEngine/h Landroid/location/LocationManager;
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/h Landroid/location/LocationManager;
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label2
+Label1:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/i Landroid/app/PendingIntent;
+  astore 14
+  aload 14
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 14
+  ifnonnull Label3
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore 10
+  new android/content/Intent
+  astore 15
+  ldc "com.tencent.lbsapi.GPS_SINGLE"
+  astore 12
+  aload 15
+  aload 12
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;)V
+  iconst_0
+  istore 16
+  ldc 134217728
+  istore 17
+  aload 10
+  iload 16
+  aload 15
+  iload 17
+  invokestatic android/app/PendingIntent/getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+  astore 14
+  aload_0
+  astore_2
+  aload_2
+  aload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/i Landroid/app/PendingIntent;
+Label3:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/i Landroid/app/PendingIntent;
+  astore 14
+  aload 14
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 14
+  ifnull Label2
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore 10
+  ldc "location"
+  astore 12
+  aload 10
+  aload 12
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 11
+  aload 11
+  astore 18
+  aload 18
+  checkcast android/location/LocationManager
+  astore 18
+  aload 18
+  astore 9
+  ldc "network"
+  astore 12
+  aload 9
+  aload 12
+  invokevirtual android/location/LocationManager/isProviderEnabled(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label4
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/h Landroid/location/LocationManager;
+  astore_2
+  aload_2
+  astore 19
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/i Landroid/app/PendingIntent;
+  astore 14
+  ldc "network"
+  astore 12
+  ldc2_w 2000
+  lstore 20
+  ldc 5.000000
+  fstore 22
+  aload 19
+  astore_2
+  aload 12
+  astore_3
+  lload 20
+  lstore 4
+  fload 22
+  fstore 6
+  aload 14
+  astore 7
+  aload_2
+  aload_3
+  lload 4
+  fload 6
+  aload 7
+  invokevirtual android/location/LocationManager/requestLocationUpdates(Ljava/lang/String;JFLandroid/app/PendingIntent;)V
+Label4:
+  ldc "gps"
+  astore 12
+  aload 9
+  aload 12
+  invokevirtual android/location/LocationManager/isProviderEnabled(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label5
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/h Landroid/location/LocationManager;
+  astore_2
+  aload_2
+  astore 19
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/i Landroid/app/PendingIntent;
+  astore 14
+  ldc "gps"
+  astore 12
+  ldc2_w 2000
+  lstore 20
+  ldc 5.000000
+  fstore 22
+  aload 19
+  astore_2
+  aload 12
+  astore_3
+  lload 20
+  lstore 4
+  fload 22
+  fstore 6
+  aload 14
+  astore 7
+  aload_2
+  aload_3
+  lload 4
+  fload 6
+  aload 7
+  invokevirtual android/location/LocationManager/requestLocationUpdates(Ljava/lang/String;JFLandroid/app/PendingIntent;)V
+Label5:
+  iconst_1
+  istore 16
+  aload_0
+  astore_2
+  aload_2
+  iload 16
+  putfield com/tencent/lbsapi/core/QLBSEngine/n Z
+  goto Label2
+  nop
+.end <method>
+
+.method public b()Z
+.limit locals 8
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore_1
+  ldc "location"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  astore 5
+  aload 5
+  checkcast android/location/LocationManager
+  astore 5
+  aload 5
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label0
+  ldc "gps"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual android/location/LocationManager/isProviderEnabled(Ljava/lang/String;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifne Label1
+  ldc "network"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual android/location/LocationManager/isProviderEnabled(Ljava/lang/String;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label2
+Label1:
+  iconst_1
+  istore 7
+  iload 7
+  ireturn
+Label2:
+  iconst_0
+  istore 7
+  iload 7
+  ireturn
+Label0:
+  iconst_0
+  istore 7
+  iload 7
+  ireturn
+  nop
+.end <method>
+
+.method static b(Lcom/tencent/lbsapi/core/QLBSEngine;)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/o Z
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static b(Lcom/tencent/lbsapi/core/QLBSEngine;Z)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public c()I
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/tencent/lbsapi/core/QLBSEngine/readCell()V
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/s I
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/t I
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  ifne Label0
+Label6:
+  iconst_m1
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/t I
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  ifeq Label1
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/t I
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore_2
+  iload_1
+  iload_2
+  if_icmpeq Label1
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/t I
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 7
+  istore_2
+  iload_1
+  iload_2
+  if_icmpne Label2
+Label1:
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+Label2:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/t I
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore_2
+  iload_1
+  iload_2
+  if_icmpeq Label3
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/t I
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 6
+  istore_2
+  iload_1
+  iload_2
+  if_icmpne Label4
+Label3:
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+Label4:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/t I
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_3
+  istore_2
+  iload_1
+  iload_2
+  if_icmpeq Label5
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/t I
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_5
+  istore_2
+  iload_1
+  iload_2
+  if_icmpne Label6
+Label5:
+  iconst_2
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method static c(Lcom/tencent/lbsapi/core/QLBSEngine;)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/n Z
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static c(Lcom/tencent/lbsapi/core/QLBSEngine;Z)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield com/tencent/lbsapi/core/QLBSEngine/m Z
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static d(Lcom/tencent/lbsapi/core/QLBSEngine;)Landroid/os/Handler;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public d()Z
+.limit locals 9
+.limit stack 200
+  .catch  java/lang/Exception <from> Label3 <to> Label4 <using> Label2
+  nop
+Label3:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/k Landroid/net/wifi/WifiManager;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore_2
+  ldc "wifi"
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore_3
+  aload_3
+  astore 5
+  aload 5
+  checkcast android/net/wifi/WifiManager
+  astore 5
+  aload 5
+  astore_1
+  aload_0
+  aload_1
+  putfield com/tencent/lbsapi/core/QLBSEngine/k Landroid/net/wifi/WifiManager;
+Label0:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/k Landroid/net/wifi/WifiManager;
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_1
+  ifnull Label1
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/k Landroid/net/wifi/WifiManager;
+  astore_1
+  aload_1
+  invokevirtual android/net/wifi/WifiManager/isWifiEnabled()Z
+  istore 6
+Label4:
+  iload 6
+  ireturn
+Label1:
+  iconst_0
+  istore 7
+  iload 7
+  ireturn
+Label2:
+  astore 8
+  iconst_0
+  istore 7
+  iload 7
+  ireturn
+  nop
+.end <method>
+
+.method static d(Lcom/tencent/lbsapi/core/QLBSEngine;Z)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield com/tencent/lbsapi/core/QLBSEngine/n Z
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static e(Lcom/tencent/lbsapi/core/QLBSEngine;)I
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/v I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public e()V
+.limit locals 9
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/l Landroid/content/BroadcastReceiver;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore_2
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/l Landroid/content/BroadcastReceiver;
+  astore_1
+  aload_2
+  aload_1
+  invokevirtual android/content/Context/unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+Label0:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  ifnull Label1
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_3
+  aload_3
+  invokevirtual java/lang/ref/WeakReference/clear()V
+Label1:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/h Landroid/location/LocationManager;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label2
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/i Landroid/app/PendingIntent;
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  ifnull Label2
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/h Landroid/location/LocationManager;
+  astore 4
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/i Landroid/app/PendingIntent;
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual android/location/LocationManager/removeUpdates(Landroid/app/PendingIntent;)V
+  aconst_null
+  astore 6
+  aload_0
+  aload 6
+  putfield com/tencent/lbsapi/core/QLBSEngine/h Landroid/location/LocationManager;
+  aconst_null
+  astore 6
+  aload_0
+  aload 6
+  putfield com/tencent/lbsapi/core/QLBSEngine/i Landroid/app/PendingIntent;
+Label2:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label3
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore 7
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore 8
+  aload 7
+  aload 8
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore 7
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/b Ljava/lang/Runnable;
+  astore 8
+  aload 7
+  aload 8
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+  aconst_null
+  astore 6
+  aload_0
+  aload 6
+  putfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+Label3:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore_2
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/j Landroid/content/BroadcastReceiver;
+  astore_1
+  aload_2
+  aload_1
+  invokevirtual android/content/Context/unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+  return
+  nop
+.end <method>
+
+.method public f()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/s I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static f(Lcom/tencent/lbsapi/core/QLBSEngine;)I
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/w I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public g()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/t I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static g(Lcom/tencent/lbsapi/core/QLBSEngine;)Ljava/util/ArrayList;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public h()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/u I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static h(Lcom/tencent/lbsapi/core/QLBSEngine;)Ljava/lang/ref/WeakReference;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public i()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/v I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static i(Lcom/tencent/lbsapi/core/QLBSEngine;)Landroid/location/LocationManager;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/h Landroid/location/LocationManager;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public j()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/w I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static j(Lcom/tencent/lbsapi/core/QLBSEngine;)Landroid/app/PendingIntent;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/i Landroid/app/PendingIntent;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public k()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/x I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public l()Ljava/util/ArrayList;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public m()Ljava/util/ArrayList;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/y Ljava/util/ArrayList;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public n()Ljava/lang/String;
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/A Ljava/lang/String;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  ldc ""
+  astore_2
+  aload_2
+  areturn
+Label0:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/A Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public o()Ljava/lang/String;
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/B Ljava/lang/String;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  ldc ""
+  astore_2
+  aload_2
+  areturn
+Label0:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/B Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public p()V
+.limit locals 21
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual com/tencent/lbsapi/core/QLBSEngine/q()Ljava/util/ArrayList;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  new java/util/ArrayList
+  astore_2
+  aload_2
+  invokespecial java/util/ArrayList/<init>()V
+Label3:
+  new LBSAPIProtocol/Measure
+  astore_3
+  aload_3
+  invokespecial LBSAPIProtocol/Measure/<init>()V
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/r()J
+  lstore 4
+  aload_3
+  lload 4
+  invokevirtual LBSAPIProtocol/Measure/setLTime(J)V
+  new LBSAPIProtocol/GPS
+  astore 6
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/w I
+  istore 7
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/x I
+  istore 8
+  iconst_m1
+  istore 9
+  iconst_0
+  istore 10
+  aload 6
+  iload 7
+  iload 8
+  iload 9
+  iload 10
+  invokespecial LBSAPIProtocol/GPS/<init>(IIII)V
+  aload_3
+  aload 6
+  invokevirtual LBSAPIProtocol/Measure/setStGps(LLBSAPIProtocol/GPS;)V
+  new java/util/ArrayList
+  astore 11
+  aload 11
+  invokespecial java/util/ArrayList/<init>()V
+  aload_3
+  aload 11
+  invokevirtual LBSAPIProtocol/Measure/setVCells(Ljava/util/ArrayList;)V
+  aload_3
+  invokevirtual LBSAPIProtocol/Measure/getVCells()Ljava/util/ArrayList;
+  astore 11
+  new LBSAPIProtocol/Cell
+  astore 12
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/s I
+  istore 7
+  iload 7
+  i2s
+  istore 13
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/t I
+  istore 7
+  iload 7
+  i2s
+  istore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/u I
+  istore 7
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/v I
+  istore 8
+  aload 12
+  iload 13
+  iload 14
+  iload 7
+  iload 8
+  invokespecial LBSAPIProtocol/Cell/<init>(SSII)V
+  aload 11
+  aload 12
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/y Ljava/util/ArrayList;
+  astore 11
+  aload 11
+  invokevirtual java/util/ArrayList/iterator()Ljava/util/Iterator;
+  astore 15
+Label2:
+  aload 15
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 16
+  iload 16
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 16
+  ifeq Label1
+  aload 15
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 17
+  aload 17
+  astore 19
+  aload 19
+  checkcast java/lang/Integer
+  astore 19
+  aload 19
+  astore 18
+  aload 18
+  astore_1
+  aload_1
+  invokevirtual java/lang/Integer/intValue()I
+  istore 7
+  aload_3
+  invokevirtual LBSAPIProtocol/Measure/getVCells()Ljava/util/ArrayList;
+  astore 11
+  new LBSAPIProtocol/Cell
+  astore 12
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/s I
+  istore 8
+  iload 8
+  i2s
+  istore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/t I
+  istore 8
+  iload 8
+  i2s
+  istore 13
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/u I
+  istore 8
+  aload 12
+  iload 14
+  iload 13
+  iload 8
+  iload 7
+  invokespecial LBSAPIProtocol/Cell/<init>(SSII)V
+  aload 11
+  aload 12
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  goto Label2
+Label1:
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual com/tencent/lbsapi/core/QLBSEngine/l()Ljava/util/ArrayList;
+  astore 11
+  aload_3
+  aload 11
+  invokevirtual LBSAPIProtocol/Measure/setVMacs(Ljava/util/ArrayList;)V
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual com/tencent/lbsapi/core/QLBSEngine/o()Ljava/lang/String;
+  astore 20
+  aload 20
+  astore_1
+  aload_3
+  aload_1
+  invokevirtual LBSAPIProtocol/Measure/setStrExtraInfo(Ljava/lang/String;)V
+  aload_2
+  aload_3
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  aload_0
+  astore_1
+  aload_1
+  aload_2
+  invokespecial com/tencent/lbsapi/core/QLBSEngine/a(Ljava/util/ArrayList;)V
+  return
+Label0:
+  goto Label3
+  nop
+.end <method>
+
+.method private processReceiveGps(Landroid/location/Location;)V
+.limit locals 29
+.limit stack 200
+  .catch  java/lang/Exception <from> Label17 <to> Label18 <using> Label16
+  .catch  java/lang/Exception <from> Label3 <to> Label19 <using> Label16
+  nop
+Label17:
+  aload_1
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  ldc2_w 1000000.000000000000000
+  dstore 6
+  dload 4
+  dload 6
+  dmul
+  dstore 4
+  dload 4
+  d2i
+  istore 8
+  aload_0
+  astore_2
+  aload_2
+  iload 8
+  putfield com/tencent/lbsapi/core/QLBSEngine/x I
+  aload_1
+  astore_2
+  aload_2
+  invokevirtual android/location/Location/getLatitude()D
+  dstore 4
+  ldc2_w 1000000.000000000000000
+  dstore 6
+  dload 4
+  dload 6
+  dmul
+  dstore 9
+  dload 9
+  d2i
+  istore 8
+  aload_0
+  astore_2
+  aload_2
+  iload 8
+  putfield com/tencent/lbsapi/core/QLBSEngine/w I
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/r Z
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifne Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/v I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  ifeq Label1
+  aload_0
+  astore_2
+  aload_2
+  invokevirtual com/tencent/lbsapi/core/QLBSEngine/p()V
+Label1:
+  return
+Label0:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/n Z
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/h Landroid/location/LocationManager;
+  astore 12
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/i Landroid/app/PendingIntent;
+  astore 13
+  aload 12
+  aload 13
+  invokevirtual android/location/LocationManager/removeUpdates(Landroid/app/PendingIntent;)V
+  iconst_0
+  istore 14
+  aload_0
+  astore_2
+  aload_2
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/n Z
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/q Z
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifne Label2
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/v I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  ifne Label3
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/w I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  ldc 900000000
+  istore 14
+  iload 8
+  iload 14
+  if_icmpne Label3
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 15
+  aload 15
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 16
+  aload 16
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 16
+  ifnull Label4
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 15
+  aload 15
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 16
+  aload 16
+  astore 18
+  aload 18
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 18
+  aload 18
+  astore 17
+  iconst_0
+  istore 14
+  aload 17
+  iload 14
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  iconst_0
+  istore 14
+  aload_0
+  astore_2
+  aload_2
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+Label4:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_2
+  aload_2
+  astore 19
+  aload 19
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 19
+  ifnull Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_2
+  aload_2
+  astore 20
+  aload 20
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 20
+  ifnull Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_2
+  aload_2
+  astore 19
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_2
+  aload_2
+  astore 20
+  aload 19
+  astore_2
+  aload 20
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+  iconst_0
+  istore 14
+  aload_0
+  astore_2
+  aload_2
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+Label18:
+  goto Label1
+Label16:
+  astore 21
+  aload 21
+  astore_2
+  aload_2
+  invokevirtual java/lang/Exception/printStackTrace()V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/q Z
+  istore 11
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 11
+  ifne Label5
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/v I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  ifne Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 15
+  aload 15
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 16
+  aload 16
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 16
+  ifnull Label6
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 15
+  aload 15
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 16
+  aload 16
+  astore 22
+  aload 22
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 22
+  aload 22
+  astore 17
+  iconst_0
+  istore 14
+  iload 14
+  istore 8
+  aload 17
+  iload 8
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  iconst_0
+  istore 14
+  aload_0
+  astore_2
+  aload_2
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+Label6:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_2
+  aload_2
+  astore 19
+  aload 19
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 19
+  ifnull Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_2
+  aload_2
+  astore 20
+  aload 20
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 20
+  ifnull Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_2
+  aload_2
+  astore 19
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_2
+  aload_2
+  astore 20
+  aload 19
+  astore_2
+  aload 20
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+  goto Label1
+Label3:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 15
+  aload 15
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 16
+  aload 16
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 16
+  ifnull Label7
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 15
+  aload 15
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 16
+  aload 16
+  astore 23
+  aload 23
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 23
+  aload 23
+  astore 17
+  iconst_1
+  istore 14
+  aload 17
+  iload 14
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  iconst_0
+  istore 14
+  aload_0
+  astore_2
+  aload_2
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+Label7:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_2
+  aload_2
+  astore 19
+  aload 19
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 19
+  ifnull Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_2
+  aload_2
+  astore 20
+  aload 20
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 20
+  ifnull Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_2
+  aload_2
+  astore 19
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_2
+  aload_2
+  astore 20
+  aload 19
+  astore_2
+  aload 20
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+  goto Label1
+Label2:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/m Z
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifne Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/v I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  ifne Label8
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/w I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  ldc 900000000
+  istore 14
+  iload 8
+  iload 14
+  if_icmpne Label8
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+  astore_2
+  aload_2
+  astore 24
+  aload 24
+  astore_2
+  aload_2
+  invokevirtual java/util/ArrayList/size()I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  ifeq Label9
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+  astore_2
+  aload_2
+  astore 24
+  aload 24
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 24
+  ifnonnull Label8
+Label9:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 15
+  aload 15
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 16
+  aload 16
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 16
+  ifnull Label10
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 15
+  aload 15
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 16
+  aload 16
+  astore 25
+  aload 25
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 25
+  aload 25
+  astore 17
+  iconst_0
+  istore 14
+  aload 17
+  iload 14
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  iconst_0
+  istore 14
+  aload_0
+  astore_2
+  aload_2
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+Label10:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_2
+  aload_2
+  astore 19
+  aload 19
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 19
+  ifnull Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_2
+  aload_2
+  astore 20
+  aload 20
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 20
+  ifnull Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_2
+  aload_2
+  astore 19
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_2
+  aload_2
+  astore 20
+  aload 19
+  astore_2
+  aload 20
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+  goto Label1
+Label8:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 15
+  aload 15
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 16
+  aload 16
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 16
+  ifnull Label11
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 15
+  aload 15
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 16
+  aload 16
+  astore 26
+  aload 26
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 26
+  aload 26
+  astore 17
+  iconst_1
+  istore 14
+  aload 17
+  iload 14
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  iconst_0
+  istore 14
+  aload_0
+  astore_2
+  aload_2
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+Label11:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_2
+  aload_2
+  astore 19
+  aload 19
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 19
+  ifnull Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_2
+  aload_2
+  astore 20
+  aload 20
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 20
+  ifnull Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_2
+  aload_2
+  astore 19
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_2
+  aload_2
+  astore 20
+  aload 19
+  astore_2
+  aload 20
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+Label19:
+  goto Label1
+Label5:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/m Z
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifne Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/v I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  ifne Label12
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+  astore_2
+  aload_2
+  astore 24
+  aload 24
+  astore_2
+  aload_2
+  invokevirtual java/util/ArrayList/size()I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  ifeq Label13
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+  astore_2
+  aload_2
+  astore 24
+  aload 24
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 24
+  ifnonnull Label12
+Label13:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 15
+  aload 15
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 16
+  aload 16
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 16
+  ifnull Label14
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 15
+  aload 15
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 16
+  aload 16
+  astore 27
+  aload 27
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 27
+  aload 27
+  astore 17
+  iconst_0
+  istore 14
+  iload 14
+  istore 8
+  aload 17
+  iload 8
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  iconst_0
+  istore 14
+  aload_0
+  astore_2
+  aload_2
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+Label14:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_2
+  aload_2
+  astore 19
+  aload 19
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 19
+  ifnull Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_2
+  aload_2
+  astore 20
+  aload 20
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 20
+  ifnull Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_2
+  aload_2
+  astore 19
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_2
+  aload_2
+  astore 20
+  aload 19
+  astore_2
+  aload 20
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+  goto Label1
+Label12:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 15
+  aload 15
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 16
+  aload 16
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 16
+  ifnull Label15
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore 15
+  aload 15
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 16
+  aload 16
+  astore 28
+  aload 28
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 28
+  aload 28
+  astore 17
+  iconst_1
+  istore 14
+  aload 17
+  iload 14
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  iconst_0
+  istore 14
+  aload_0
+  astore_2
+  aload_2
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+Label15:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_2
+  aload_2
+  astore 19
+  aload 19
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 19
+  ifnull Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_2
+  aload_2
+  astore 20
+  aload 20
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 20
+  ifnull Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_2
+  aload_2
+  astore 19
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_2
+  aload_2
+  astore 20
+  aload 19
+  astore_2
+  aload 20
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+  goto Label1
+  nop
+.end <method>
+
+.method private processReceiveWifi()V
+.limit locals 37
+.limit stack 200
+  .catch  java/lang/Exception <from> Label21 <to> Label22 <using> Label20
+  .catch  java/lang/Exception <from> Label3 <to> Label23 <using> Label20
+  nop
+Label21:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/m Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/k Landroid/net/wifi/WifiManager;
+  astore 5
+  aload 5
+  invokevirtual android/net/wifi/WifiManager/getScanResults()Ljava/util/List;
+  astore 6
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnonnull Label1
+  new java/util/ArrayList
+  astore 7
+  aload 7
+  invokespecial java/util/ArrayList/<init>()V
+  aload_0
+  astore_1
+  aload_1
+  aload 7
+  putfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+Label5:
+  iconst_0
+  dstore 9
+  dload 9
+  dstore 8
+Label8:
+  aload 6
+  invokeinterface java/util/List/size()I 1
+  istore 10
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  iload 10
+  if_icmpge Label2
+  aload 6
+  iload 8
+  invokeinterface java/util/List/get(I)Ljava/lang/Object; 2
+  astore 11
+  aload 11
+  astore 13
+  aload 13
+  checkcast android/net/wifi/ScanResult
+  astore 13
+  aload 13
+  astore 12
+  aload 12
+  getfield android/net/wifi/ScanResult/BSSID Ljava/lang/String;
+  astore 14
+  ldc ":"
+  astore 16
+  aload 14
+  aload 16
+  invokevirtual java/lang/String/split(Ljava/lang/String;)[Ljava/lang/String;
+  astore 15
+  bipush 8
+  istore 9
+  iload 9
+  newarray byte
+  astore_1
+  aload_1
+  astore 17
+  iconst_0
+  istore 9
+  iconst_0
+  istore 18
+  aload 17
+  iload 9
+  iload 18
+  bastore
+  iconst_1
+  istore 9
+  iconst_0
+  istore 18
+  aload 17
+  iload 9
+  iload 18
+  bastore
+  iconst_2
+  istore 9
+  iconst_0
+  istore 18
+  aload 17
+  iload 9
+  iload 18
+  bastore
+  iconst_3
+  istore 9
+  iconst_0
+  istore 18
+  aload 17
+  iload 9
+  iload 18
+  bastore
+  iconst_4
+  istore 9
+  iconst_0
+  istore 18
+  aload 17
+  iload 9
+  iload 18
+  bastore
+  iconst_5
+  istore 9
+  iconst_0
+  istore 18
+  aload 17
+  iload 9
+  iload 18
+  bastore
+  bipush 6
+  istore 9
+  iconst_0
+  istore 18
+  aload 17
+  iload 9
+  iload 18
+  bastore
+  bipush 7
+  istore 9
+  iconst_0
+  istore 18
+  aload 17
+  iload 9
+  iload 18
+  bastore
+  iconst_0
+  istore 9
+  iload 9
+  istore 19
+Label4:
+  aload 15
+  arraylength
+  istore 10
+  iload 19
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  istore_1
+  iload_1
+  iload 10
+  if_icmpge Label3
+  aload 15
+  iload 19
+  aaload
+  astore 14
+  bipush 16
+  istore 9
+  aload 14
+  iload 9
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;I)I
+  istore 10
+  iconst_5
+  istore 9
+  iload 9
+  iload 19
+  isub
+  istore 20
+  iload 10
+  i2b
+  istore_1
+  iload_1
+  istore 21
+  aload 17
+  iload 20
+  iload 21
+  bastore
+  iload 19
+  iconst_1
+  iadd
+  istore 19
+  goto Label4
+Label1:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+  astore 7
+  aload 7
+  invokevirtual java/util/ArrayList/clear()V
+Label22:
+  goto Label5
+Label20:
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/printStackTrace()V
+  iconst_0
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  iload 9
+  putfield com/tencent/lbsapi/core/QLBSEngine/m Z
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/p Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifne Label6
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/v I
+  istore_1
+  iload_1
+  istore 20
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 20
+  ifne Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 11
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  ifnull Label7
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 11
+  aload 11
+  astore 25
+  aload 25
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 25
+  aload 25
+  astore 24
+  iconst_0
+  istore 9
+  iload 9
+  istore 20
+  aload 24
+  astore_1
+  iload 20
+  istore_2
+  aload_1
+  iload_2
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  iconst_0
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  iload 9
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+Label7:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  aload_1
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 26
+  ifnull Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_1
+  aload_1
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 27
+  ifnull Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  aload_1
+  astore 26
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_1
+  aload_1
+  astore 27
+  aload 26
+  astore_1
+  aload 27
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+Label0:
+  return
+Label3:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+  astore 7
+  aload 17
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/a([B)J
+  lstore 28
+  lload 28
+  lstore_1
+  lload_1
+  invokestatic java/lang/Long/valueOf(J)Ljava/lang/Long;
+  astore 30
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  iload 8
+  iconst_1
+  iadd
+  istore 8
+  goto Label8
+Label2:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/p Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label9
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/v I
+  istore_1
+  iload_1
+  istore 20
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 20
+  ifne Label10
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+  astore 7
+  aload 7
+  invokevirtual java/util/ArrayList/size()I
+  istore 20
+  iload 20
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 20
+  ifne Label10
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 11
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  ifnull Label11
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 11
+  aload 11
+  astore 31
+  aload 31
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 31
+  aload 31
+  astore 24
+  iconst_0
+  istore 9
+  aload 24
+  astore_1
+  aload_1
+  iload 9
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  iconst_0
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  iload 9
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+Label11:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  aload_1
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 26
+  ifnull Label12
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  aload_1
+  astore 26
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_1
+  aload_1
+  astore 27
+  aload 26
+  astore_1
+  aload 27
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+Label12:
+  iconst_0
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  iload 9
+  putfield com/tencent/lbsapi/core/QLBSEngine/m Z
+  goto Label0
+Label10:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 11
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  ifnull Label13
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 11
+  aload 11
+  astore 32
+  aload 32
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 32
+  aload 32
+  astore 24
+  iconst_1
+  istore 9
+  aload 24
+  astore_1
+  aload_1
+  iload 9
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  iconst_0
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  iload 9
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+Label13:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  aload_1
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 26
+  ifnull Label12
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_1
+  aload_1
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 27
+  ifnull Label12
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  aload_1
+  astore 26
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_1
+  aload_1
+  astore 27
+  aload 26
+  astore_1
+  aload 27
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+  goto Label12
+Label9:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/n Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label12
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/v I
+  istore_1
+  iload_1
+  istore 20
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 20
+  ifne Label14
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/w I
+  istore_1
+  iload_1
+  istore 20
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  ldc 900000000
+  istore 9
+  iload 20
+  istore_1
+  iload_1
+  iload 9
+  if_icmpne Label14
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+  astore 7
+  aload 7
+  invokevirtual java/util/ArrayList/size()I
+  istore 20
+  iload 20
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 20
+  ifne Label14
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 11
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  ifnull Label15
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 11
+  aload 11
+  astore 33
+  aload 33
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 33
+  aload 33
+  astore 24
+  iconst_0
+  istore 9
+  aload 24
+  astore_1
+  aload_1
+  iload 9
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  iconst_0
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  iload 9
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+Label15:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  aload_1
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 26
+  ifnull Label12
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_1
+  aload_1
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 27
+  ifnull Label12
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  aload_1
+  astore 26
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_1
+  aload_1
+  astore 27
+  aload 26
+  astore_1
+  aload 27
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+  goto Label12
+Label14:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 11
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  ifnull Label16
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 11
+  aload 11
+  astore 34
+  aload 34
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 34
+  aload 34
+  astore 24
+  iconst_1
+  istore 9
+  aload 24
+  astore_1
+  aload_1
+  iload 9
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  iconst_0
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  iload 9
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+Label16:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  aload_1
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 26
+  ifnull Label12
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_1
+  aload_1
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 27
+  ifnull Label12
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  aload_1
+  astore 26
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_1
+  aload_1
+  astore 27
+  aload 26
+  astore_1
+  aload 27
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+Label23:
+  goto Label12
+Label6:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/n Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/v I
+  istore_1
+  iload_1
+  istore 20
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 20
+  ifne Label17
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/w I
+  istore_1
+  iload_1
+  istore 20
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  ldc 900000000
+  istore 9
+  iload 20
+  istore_1
+  iload_1
+  iload 9
+  if_icmpne Label17
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 11
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  ifnull Label18
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 11
+  aload 11
+  astore 35
+  aload 35
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 35
+  aload 35
+  astore 24
+  iconst_0
+  istore 9
+  iload 9
+  istore 20
+  aload 24
+  astore_1
+  iload 20
+  istore_2
+  aload_1
+  iload_2
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  iconst_0
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  iload 9
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+Label18:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  aload_1
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 26
+  ifnull Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_1
+  aload_1
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 27
+  ifnull Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  aload_1
+  astore 26
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_1
+  aload_1
+  astore 27
+  aload 26
+  astore_1
+  aload 27
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+  goto Label0
+Label17:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 11
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  ifnull Label19
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/e Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 11
+  aload 11
+  astore 36
+  aload 36
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 36
+  aload 36
+  astore 24
+  iconst_1
+  istore 9
+  aload 24
+  astore_1
+  aload_1
+  iload 9
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  iconst_0
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  iload 9
+  putfield com/tencent/lbsapi/core/QLBSEngine/r Z
+Label19:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  aload_1
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 26
+  ifnull Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_1
+  aload_1
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 27
+  ifnull Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/f Landroid/os/Handler;
+  astore_1
+  aload_1
+  astore 26
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore_1
+  aload_1
+  astore 27
+  aload 26
+  astore_1
+  aload 27
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+  goto Label0
+  nop
+.end <method>
+
+.method public q()Ljava/util/ArrayList;
+.limit locals 27
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label10 <to> Label11 <using> Label8
+  .catch  java/lang/Exception <from> Label10 <to> Label11 <using> Label9
+  nop
+  iconst_0
+  istore_2
+Label10:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore_3
+  ldc "lbs_temp"
+  astore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+Label11:
+  aload 4
+  astore 6
+  new java/io/ObjectInputStream
+  astore 7
+Label14:
+  aload 7
+  aload 4
+  invokespecial java/io/ObjectInputStream/<init>(Ljava/io/InputStream;)V
+Label15:
+  aload 7
+  invokevirtual java/io/ObjectInputStream/readObject()Ljava/lang/Object;
+  astore 8
+  aload 8
+  astore 10
+  aload 10
+  checkcast java/util/ArrayList
+  astore 10
+  aload 10
+  astore 9
+Label18:
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label0
+Label20:
+  aload 7
+  invokevirtual java/io/ObjectInputStream/close()V
+Label0:
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 6
+  ifeq Label1
+  aload 6
+  astore 11
+  aload 11
+  checkcast java/io/FileInputStream
+  astore 11
+  aload 11
+  astore 4
+Label22:
+  aload 4
+  invokevirtual java/io/FileInputStream/close()V
+Label1:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore_3
+  ldc "lbs_temp"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual android/content/Context/deleteFile(Ljava/lang/String;)Z
+  pop
+  aload 9
+  areturn
+Label19:
+  astore 12
+  aload 12
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label0
+Label21:
+  astore 13
+  aload 13
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label1
+Label9:
+  astore 14
+  iconst_0
+  istore 15
+  iconst_0
+  istore 6
+Label7:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 15
+  ifeq Label2
+Label24:
+  aload 15
+  invokevirtual java/io/ObjectInputStream/close()V
+Label2:
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 6
+  ifeq Label3
+  aload 6
+  astore 16
+  aload 16
+  checkcast java/io/FileInputStream
+  astore 16
+  aload 16
+  astore 4
+Label26:
+  aload 4
+  invokevirtual java/io/FileInputStream/close()V
+Label3:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore_3
+  ldc "lbs_temp"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual android/content/Context/deleteFile(Ljava/lang/String;)Z
+  pop
+  aconst_null
+  astore 17
+  aload 17
+  astore 18
+  aload 18
+  checkcast java/util/ArrayList
+  astore 18
+  aload 18
+  astore 9
+  aload 9
+  areturn
+Label23:
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label2
+Label25:
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label3
+Label8:
+  astore 21
+  iconst_0
+  istore 6
+Label6:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label4
+Label28:
+  aload_2
+  invokevirtual java/io/ObjectInputStream/close()V
+Label4:
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 6
+  ifeq Label5
+  aload 6
+  astore 22
+  aload 22
+  checkcast java/io/FileInputStream
+  astore 22
+  aload 22
+  astore 4
+Label30:
+  aload 4
+  invokevirtual java/io/FileInputStream/close()V
+Label5:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore_3
+  ldc "lbs_temp"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual android/content/Context/deleteFile(Ljava/lang/String;)Z
+  pop
+  aload 21
+  athrow
+Label27:
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label4
+Label29:
+  astore 24
+  aload 24
+  astore_1
+  aload_1
+  invokevirtual java/io/IOException/printStackTrace()V
+  goto Label5
+Label12:
+  astore 21
+  goto Label6
+Label16:
+  astore 21
+  aload 7
+  astore_2
+  goto Label6
+Label13:
+  astore 25
+  iconst_0
+  istore 15
+  goto Label7
+Label17:
+  astore 26
+  aload 7
+  astore 15
+  goto Label7
+  nop
+.end <method>
+
+.method public static r()J
+.limit locals 14
+.limit stack 200
+  nop
+  invokestatic java/util/Calendar/getInstance()Ljava/util/Calendar;
+  astore_0
+  sipush 1970
+  istore_1
+  iconst_0
+  istore_2
+  iconst_1
+  istore_3
+  bipush 8
+  istore 4
+  iconst_0
+  istore 5
+  iconst_0
+  istore 6
+  aload_0
+  iload_1
+  iload_2
+  iload_3
+  iload 4
+  iload 5
+  iload 6
+  invokevirtual java/util/Calendar/set(IIIIII)V
+  invokestatic java/util/Calendar/getInstance()Ljava/util/Calendar;
+  astore 7
+  aload 7
+  invokevirtual java/util/Calendar/getTimeInMillis()J
+  lstore 8
+  aload_0
+  invokevirtual java/util/Calendar/getTimeInMillis()J
+  lstore 10
+  lload 8
+  lload 10
+  lsub
+  lstore 10
+  ldc2_w 1000
+  lstore 12
+  lload 10
+  lload 12
+  ldiv
+  lstore 10
+  lload 10
+  lreturn
+  nop
+.end <method>
+
+.method private readCell()V
+.limit locals 34
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/g Landroid/telephony/TelephonyManager;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifne Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore 4
+  ldc "phone"
+  astore 6
+  aload 4
+  aload 6
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 7
+  aload 7
+  checkcast android/telephony/TelephonyManager
+  astore 7
+  aload 7
+  astore_3
+  aload_0
+  astore_1
+  aload_1
+  aload_3
+  putfield com/tencent/lbsapi/core/QLBSEngine/g Landroid/telephony/TelephonyManager;
+Label0:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/g Landroid/telephony/TelephonyManager;
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  ifnull Label1
+Label12:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/g Landroid/telephony/TelephonyManager;
+  astore_3
+  aload_3
+  invokevirtual android/telephony/TelephonyManager/getDeviceId()Ljava/lang/String;
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  aload 8
+  putfield com/tencent/lbsapi/core/QLBSEngine/A Ljava/lang/String;
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/A Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnonnull Label2
+  ldc ""
+  astore 6
+  aload_0
+  astore_1
+  aload_1
+  aload 6
+  putfield com/tencent/lbsapi/core/QLBSEngine/A Ljava/lang/String;
+Label2:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/g Landroid/telephony/TelephonyManager;
+  astore_3
+  aload_3
+  invokevirtual android/telephony/TelephonyManager/getPhoneType()I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 10
+  iload 9
+  iload 10
+  if_icmpne Label3
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/g Landroid/telephony/TelephonyManager;
+  astore_3
+  aload_3
+  invokevirtual android/telephony/TelephonyManager/getCellLocation()Landroid/telephony/CellLocation;
+  astore 11
+  aload 11
+  astore 13
+  aload 13
+  checkcast android/telephony/gsm/GsmCellLocation
+  astore 13
+  aload 13
+  astore 12
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  ifnull Label1
+  aload 12
+  invokevirtual android/telephony/gsm/GsmCellLocation/getLac()I
+  istore 14
+  aload_0
+  astore_1
+  aload_1
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/u I
+  aload 12
+  invokevirtual android/telephony/gsm/GsmCellLocation/getCid()I
+  istore 14
+  aload_0
+  astore_1
+  aload_1
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/v I
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/u I
+  istore 14
+  dload 14
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 14
+  ifgt Label4
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/v I
+  istore 14
+  dload 14
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 14
+  ifle Label5
+Label4:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/g Landroid/telephony/TelephonyManager;
+  astore_3
+  aload_3
+  invokevirtual android/telephony/TelephonyManager/getNetworkOperator()Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label6
+Label14:
+  iconst_0
+  istore 10
+  iconst_3
+  istore 16
+  aload 8
+  iload 10
+  iload 16
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 15
+  aload 15
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 14
+  aload_0
+  astore_1
+  aload_1
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/s I
+  iconst_3
+  istore 10
+  aload 8
+  iload 10
+  invokevirtual java/lang/String/substring(I)Ljava/lang/String;
+  astore 15
+  aload 15
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 14
+  aload_0
+  astore_1
+  aload_1
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/t I
+Label6:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/g Landroid/telephony/TelephonyManager;
+  astore_3
+  aload_3
+  invokevirtual android/telephony/TelephonyManager/getNeighboringCellInfo()Ljava/util/List;
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 17
+  ifnull Label1
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface java/util/List/iterator()Ljava/util/Iterator; 1
+  astore 18
+Label7:
+  aload 18
+  astore_1
+  aload_1
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 19
+  iload 19
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 19
+  ifeq Label1
+  aload 18
+  astore_1
+  aload_1
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 5
+  aload 5
+  astore 21
+  aload 21
+  checkcast android/telephony/NeighboringCellInfo
+  astore 21
+  aload 21
+  astore 20
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/y Ljava/util/ArrayList;
+  astore_1
+  aload_1
+  astore 22
+  aload 20
+  astore_1
+  aload_1
+  invokevirtual android/telephony/NeighboringCellInfo/getCid()I
+  istore 14
+  iload 14
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 23
+  aload 22
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  goto Label7
+Label11:
+  astore 24
+  ldc ""
+  astore 6
+  aload_0
+  astore_1
+  aload_1
+  aload 6
+  putfield com/tencent/lbsapi/core/QLBSEngine/A Ljava/lang/String;
+  goto Label2
+Label13:
+  astore 25
+  iconst_0
+  istore 10
+  aload_0
+  astore_1
+  aload_1
+  iload 10
+  putfield com/tencent/lbsapi/core/QLBSEngine/s I
+  iconst_0
+  istore 10
+  aload_0
+  astore_1
+  aload_1
+  iload 10
+  putfield com/tencent/lbsapi/core/QLBSEngine/t I
+  iconst_0
+  istore 10
+  aload_0
+  astore_1
+  aload_1
+  iload 10
+  putfield com/tencent/lbsapi/core/QLBSEngine/u I
+  iconst_0
+  istore 10
+  aload_0
+  astore_1
+  aload_1
+  iload 10
+  putfield com/tencent/lbsapi/core/QLBSEngine/v I
+  aload_0
+  astore_1
+  aload_1
+  aload 8
+  putfield com/tencent/lbsapi/core/QLBSEngine/B Ljava/lang/String;
+Label8:
+  return
+Label5:
+  iconst_0
+  istore 10
+  aload_0
+  astore_1
+  aload_1
+  iload 10
+  putfield com/tencent/lbsapi/core/QLBSEngine/u I
+  iconst_0
+  istore 10
+  aload_0
+  astore_1
+  aload_1
+  iload 10
+  putfield com/tencent/lbsapi/core/QLBSEngine/v I
+Label1:
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual com/tencent/lbsapi/core/QLBSEngine/toString()Ljava/lang/String;
+  astore 8
+  ldc "111"
+  astore 6
+  aload 6
+  aload 8
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label8
+Label3:
+  getstatic android/os/Build$VERSION/SDK Ljava/lang/String;
+  astore 15
+  aload 15
+  invokestatic java/lang/Integer/valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/Integer/intValue()I
+  istore 14
+  dload 14
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_4
+  istore 10
+  iload 14
+  iload 10
+  if_icmplt Label1
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/g Landroid/telephony/TelephonyManager;
+  astore_3
+  aload_3
+  invokevirtual android/telephony/TelephonyManager/getPhoneType()I
+  istore 14
+  dload 14
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 10
+  iload 14
+  iload 10
+  if_icmpne Label1
+Label16:
+  ldc "android.telephony.cdma.CdmaCellLocation"
+  astore 6
+  aload 6
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 26
+  ifnull Label1
+  aconst_null
+  astore 27
+  aload 26
+  astore_1
+  aload 27
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/Class/getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/g Landroid/telephony/TelephonyManager;
+  astore_3
+  aload_3
+  invokevirtual android/telephony/TelephonyManager/getCellLocation()Landroid/telephony/CellLocation;
+  astore 11
+  iconst_0
+  istore 10
+  iload 10
+  anewarray java/lang/Class
+  astore_1
+  aload_1
+  astore 28
+  ldc "getSystemId"
+  astore 6
+  aload 26
+  astore_1
+  aload 28
+  astore_2
+  aload_1
+  aload 6
+  aload_2
+  invokevirtual java/lang/Class/getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  astore 29
+  aload 29
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 29
+  ifnull Label9
+  aconst_null
+  astore 27
+  aload 29
+  astore_1
+  aload 27
+  astore_2
+  aload_1
+  aload 11
+  aload_2
+  invokevirtual java/lang/reflect/Method/invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 30
+  aload 30
+  checkcast java/lang/Integer
+  astore 30
+  aload 30
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/Integer/intValue()I
+  istore 14
+  aload_0
+  astore_1
+  aload_1
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/u I
+Label9:
+  iconst_0
+  istore 10
+  iload 10
+  anewarray java/lang/Class
+  astore_1
+  aload_1
+  astore 28
+  ldc "getBaseStationId"
+  astore 6
+  aload 26
+  astore_1
+  aload 28
+  astore_2
+  aload_1
+  aload 6
+  aload_2
+  invokevirtual java/lang/Class/getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  astore 29
+  aload 29
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 29
+  ifnull Label10
+  aconst_null
+  astore 27
+  aload 29
+  astore_1
+  aload 27
+  astore_2
+  aload_1
+  aload 11
+  aload_2
+  invokevirtual java/lang/reflect/Method/invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 31
+  aload 31
+  checkcast java/lang/Integer
+  astore 31
+  aload 31
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/Integer/intValue()I
+  istore 14
+  aload_0
+  astore_1
+  aload_1
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/v I
+Label10:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/g Landroid/telephony/TelephonyManager;
+  astore_3
+  aload_3
+  invokevirtual android/telephony/TelephonyManager/getNetworkOperator()Ljava/lang/String;
+  astore 15
+Label17:
+  aload 15
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 15
+  ifnull Label1
+Label19:
+  iconst_0
+  istore 10
+  iconst_3
+  istore 16
+  aload 15
+  iload 10
+  iload 16
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 14
+  aload_0
+  astore_1
+  aload_1
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/s I
+  iconst_3
+  istore 10
+  aload 15
+  iload 10
+  invokevirtual java/lang/String/substring(I)Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 14
+  aload_0
+  astore_1
+  aload_1
+  iload 14
+  putfield com/tencent/lbsapi/core/QLBSEngine/t I
+Label20:
+  goto Label1
+Label18:
+  astore 32
+Label21:
+  aload_0
+  astore_1
+  aload_1
+  aload 15
+  putfield com/tencent/lbsapi/core/QLBSEngine/B Ljava/lang/String;
+Label22:
+  goto Label1
+Label15:
+  astore 33
+  aload 33
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label1
+  nop
+.end <method>
+
+.method private s()V
+.limit locals 4
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/tencent/lbsapi/core/QLBSEngine/s I
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/tencent/lbsapi/core/QLBSEngine/t I
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/tencent/lbsapi/core/QLBSEngine/u I
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/tencent/lbsapi/core/QLBSEngine/v I
+  ldc 900000000
+  istore_1
+  aload_0
+  iload_1
+  putfield com/tencent/lbsapi/core/QLBSEngine/w I
+  ldc 900000000
+  istore_1
+  aload_0
+  iload_1
+  putfield com/tencent/lbsapi/core/QLBSEngine/x I
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/y Ljava/util/ArrayList;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  new java/util/ArrayList
+  astore_2
+  aload_2
+  invokespecial java/util/ArrayList/<init>()V
+  aload_0
+  aload_2
+  putfield com/tencent/lbsapi/core/QLBSEngine/y Ljava/util/ArrayList;
+Label2:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnonnull Label1
+  new java/util/ArrayList
+  astore_2
+  aload_2
+  invokespecial java/util/ArrayList/<init>()V
+  aload_0
+  aload_2
+  putfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+Label3:
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield com/tencent/lbsapi/core/QLBSEngine/B Ljava/lang/String;
+  return
+Label0:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/y Ljava/util/ArrayList;
+  astore_2
+  aload_2
+  invokevirtual java/util/ArrayList/clear()V
+  goto Label2
+Label1:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+  astore_2
+  aload_2
+  invokevirtual java/util/ArrayList/clear()V
+  goto Label3
+  nop
+.end <method>
+
+.method private t()V
+.limit locals 11
+.limit stack 200
+  .catch  java/lang/Exception <from> Label4 <to> Label2 <using> Label3
+  nop
+Label4:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/k Landroid/net/wifi/WifiManager;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore_2
+  ldc "wifi"
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore_3
+  aload_3
+  astore 5
+  aload 5
+  checkcast android/net/wifi/WifiManager
+  astore 5
+  aload 5
+  astore_1
+  aload_0
+  aload_1
+  putfield com/tencent/lbsapi/core/QLBSEngine/k Landroid/net/wifi/WifiManager;
+Label0:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/l Landroid/content/BroadcastReceiver;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnonnull Label1
+  new android/content/IntentFilter
+  astore 7
+  aload 7
+  invokespecial android/content/IntentFilter/<init>()V
+  ldc "android.net.wifi.SCAN_RESULTS"
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual android/content/IntentFilter/addAction(Ljava/lang/String;)V
+  new com/tencent/lbsapi/core/a
+  astore 8
+  aload 8
+  aload_0
+  invokespecial com/tencent/lbsapi/core/a/<init>(Lcom/tencent/lbsapi/core/QLBSEngine;)V
+  aload_0
+  aload 8
+  putfield com/tencent/lbsapi/core/QLBSEngine/l Landroid/content/BroadcastReceiver;
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/d Landroid/content/Context;
+  astore_2
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/l Landroid/content/BroadcastReceiver;
+  astore 6
+  aload_2
+  aload 6
+  aload 7
+  invokevirtual android/content/Context/registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+  pop
+Label1:
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/k Landroid/net/wifi/WifiManager;
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_1
+  ifnull Label2
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/k Landroid/net/wifi/WifiManager;
+  astore_1
+  aload_1
+  invokevirtual android/net/wifi/WifiManager/isWifiEnabled()Z
+  istore 9
+  aload_0
+  iload 9
+  putfield com/tencent/lbsapi/core/QLBSEngine/q Z
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/q Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label2
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/k Landroid/net/wifi/WifiManager;
+  astore_1
+  aload_1
+  invokevirtual android/net/wifi/WifiManager/startScan()Z
+  istore 9
+  aload_0
+  iload 9
+  putfield com/tencent/lbsapi/core/QLBSEngine/m Z
+Label2:
+  return
+Label3:
+  astore 10
+  aload 10
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label2
+  nop
+.end <method>
+
+.method public toString()Ljava/lang/String;
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "mcc="
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/s I
+  istore_3
+  aload_1
+  iload_3
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_1
+  ldc " mnc"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/t I
+  istore_3
+  aload_1
+  iload_3
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_1
+  ldc " cell="
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/v I
+  istore_3
+  aload_1
+  iload_3
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_1
+  ldc "  lat="
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/w I
+  istore_3
+  aload_1
+  iload_3
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_1
+  ldc " wifiNum="
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/tencent/lbsapi/core/QLBSEngine/z Ljava/util/ArrayList;
+  astore 4
+  aload 4
+  invokevirtual java/util/ArrayList/size()I
+  istore_3
+  aload_1
+  iload_3
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+

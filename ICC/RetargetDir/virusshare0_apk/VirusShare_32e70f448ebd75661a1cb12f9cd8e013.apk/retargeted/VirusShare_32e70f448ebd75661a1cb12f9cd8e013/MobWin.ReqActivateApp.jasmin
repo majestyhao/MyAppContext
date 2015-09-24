@@ -1,0 +1,603 @@
+.source ReqActivateApp.java
+.class public final  MobWin/ReqActivateApp
+.super com/qq/taf/jce/JceStruct
+.field static final "$assertionsDisabled" Z =  0
+.field static "cache_app_info" LMobWin/AppInfo;
+.field static "cache_loc" LMobWin/UserLocation;
+.field static "cache_user_info" LMobWin/UserInfo;
+.field public "app_info" LMobWin/AppInfo;
+.field public "loc" LMobWin/UserLocation;
+.field public "sid" Ljava/lang/String;
+.field public "user_info" LMobWin/UserInfo;
+
+.method static <clinit>()V
+.limit locals 2
+.limit stack 200
+  nop
+  ldc MobWin/ReqActivateApp
+  astore_0
+  aload_0
+  invokevirtual java/lang/Class/desiredAssertionStatus()Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  iconst_1
+  istore_1
+Label1:
+  iload_1
+  putstatic MobWin/ReqActivateApp/$assertionsDisabled Z
+  return
+Label0:
+  iconst_0
+  istore_1
+  goto Label1
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  aconst_null
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/ReqActivateApp/user_info LMobWin/UserInfo;
+  aconst_null
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/ReqActivateApp/app_info LMobWin/AppInfo;
+  aconst_null
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/ReqActivateApp/loc LMobWin/UserLocation;
+  ldc ""
+  astore_2
+  aload_0
+  aload_2
+  putfield MobWin/ReqActivateApp/sid Ljava/lang/String;
+  aload_0
+  getfield MobWin/ReqActivateApp/user_info LMobWin/UserInfo;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual MobWin/ReqActivateApp/setUser_info(LMobWin/UserInfo;)V
+  aload_0
+  getfield MobWin/ReqActivateApp/app_info LMobWin/AppInfo;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/ReqActivateApp/setApp_info(LMobWin/AppInfo;)V
+  aload_0
+  getfield MobWin/ReqActivateApp/loc LMobWin/UserLocation;
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual MobWin/ReqActivateApp/setLoc(LMobWin/UserLocation;)V
+  aload_0
+  getfield MobWin/ReqActivateApp/sid Ljava/lang/String;
+  astore 6
+  aload_0
+  aload 6
+  invokevirtual MobWin/ReqActivateApp/setSid(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public <init>(LMobWin/UserInfo;LMobWin/AppInfo;LMobWin/UserLocation;Ljava/lang/String;)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  aconst_null
+  astore 5
+  aload_0
+  aload 5
+  putfield MobWin/ReqActivateApp/user_info LMobWin/UserInfo;
+  aconst_null
+  astore 5
+  aload_0
+  aload 5
+  putfield MobWin/ReqActivateApp/app_info LMobWin/AppInfo;
+  aconst_null
+  astore 5
+  aload_0
+  aload 5
+  putfield MobWin/ReqActivateApp/loc LMobWin/UserLocation;
+  ldc ""
+  astore 6
+  aload_0
+  aload 6
+  putfield MobWin/ReqActivateApp/sid Ljava/lang/String;
+  aload_0
+  aload_1
+  invokevirtual MobWin/ReqActivateApp/setUser_info(LMobWin/UserInfo;)V
+  aload_0
+  aload_2
+  invokevirtual MobWin/ReqActivateApp/setApp_info(LMobWin/AppInfo;)V
+  aload_0
+  aload_3
+  invokevirtual MobWin/ReqActivateApp/setLoc(LMobWin/UserLocation;)V
+  aload_0
+  aload 4
+  invokevirtual MobWin/ReqActivateApp/setSid(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public className()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  ldc "MobWin.ReqActivateApp"
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public clone()Ljava/lang/Object;
+.limit locals 6
+.limit stack 200
+  .catch  java/lang/CloneNotSupportedException <from> Label2 <to> Label3 <using> Label1
+  nop
+  iconst_0
+  istore_1
+Label2:
+  aload_0
+  invokespecial java/lang/Object/clone()Ljava/lang/Object;
+  astore_2
+Label3:
+  aload_2
+  astore_1
+Label0:
+  aload_1
+  areturn
+Label1:
+  astore_3
+  getstatic MobWin/ReqActivateApp/$assertionsDisabled Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifne Label0
+  new java/lang/AssertionError
+  astore 5
+  aload 5
+  invokespecial java/lang/AssertionError/<init>()V
+  aload 5
+  athrow
+  nop
+.end <method>
+
+.method public display(Ljava/lang/StringBuilder;I)V
+.limit locals 9
+.limit stack 200
+  nop
+  new com/qq/taf/jce/JceDisplayer
+  astore_3
+  aload_3
+  aload_1
+  iload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_0
+  getfield MobWin/ReqActivateApp/user_info LMobWin/UserInfo;
+  astore 4
+  ldc "user_info"
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Lcom/qq/taf/jce/JceStruct;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ReqActivateApp/app_info LMobWin/AppInfo;
+  astore 6
+  ldc "app_info"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Lcom/qq/taf/jce/JceStruct;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ReqActivateApp/loc LMobWin/UserLocation;
+  astore 7
+  ldc "loc"
+  astore 5
+  aload_3
+  aload 7
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Lcom/qq/taf/jce/JceStruct;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ReqActivateApp/sid Ljava/lang/String;
+  astore 8
+  ldc "sid"
+  astore 5
+  aload_3
+  aload 8
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  return
+  nop
+.end <method>
+
+.method public equals(Ljava/lang/Object;)Z
+.limit locals 14
+.limit stack 200
+  nop
+  aload_1
+  astore_3
+  aload_3
+  checkcast MobWin/ReqActivateApp
+  astore_3
+  aload_3
+  astore_2
+  aload_0
+  getfield MobWin/ReqActivateApp/user_info LMobWin/UserInfo;
+  astore 4
+  aload_2
+  getfield MobWin/ReqActivateApp/user_info LMobWin/UserInfo;
+  astore 5
+  aload 4
+  aload 5
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/ReqActivateApp/app_info LMobWin/AppInfo;
+  astore 7
+  aload_2
+  getfield MobWin/ReqActivateApp/app_info LMobWin/AppInfo;
+  astore 8
+  aload 7
+  aload 8
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/ReqActivateApp/loc LMobWin/UserLocation;
+  astore 9
+  aload_2
+  getfield MobWin/ReqActivateApp/loc LMobWin/UserLocation;
+  astore 10
+  aload 9
+  aload 10
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/ReqActivateApp/sid Ljava/lang/String;
+  astore 11
+  aload_2
+  getfield MobWin/ReqActivateApp/sid Ljava/lang/String;
+  astore 12
+  aload 11
+  aload 12
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  iconst_1
+  istore 13
+  iload 13
+  ireturn
+Label0:
+  iconst_0
+  istore 13
+  iload 13
+  ireturn
+  nop
+.end <method>
+
+.method public getApp_info()LMobWin/AppInfo;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqActivateApp/app_info LMobWin/AppInfo;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getLoc()LMobWin/UserLocation;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqActivateApp/loc LMobWin/UserLocation;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getSid()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqActivateApp/sid Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getUser_info()LMobWin/UserInfo;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqActivateApp/user_info LMobWin/UserInfo;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public readFrom(Lcom/qq/taf/jce/JceInputStream;)V
+.limit locals 13
+.limit stack 200
+  nop
+  getstatic MobWin/ReqActivateApp/cache_user_info LMobWin/UserInfo;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  new MobWin/UserInfo
+  astore_2
+  aload_2
+  invokespecial MobWin/UserInfo/<init>()V
+  aload_2
+  putstatic MobWin/ReqActivateApp/cache_user_info LMobWin/UserInfo;
+Label0:
+  getstatic MobWin/ReqActivateApp/cache_user_info LMobWin/UserInfo;
+  astore_2
+  iconst_0
+  istore 4
+  iload 4
+  istore_3
+  iconst_1
+  istore 4
+  aload_1
+  aload_2
+  iload_3
+  iload 4
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Lcom/qq/taf/jce/JceStruct;IZ)Lcom/qq/taf/jce/JceStruct;
+  astore 5
+  aload 5
+  astore 6
+  aload 6
+  checkcast MobWin/UserInfo
+  astore 6
+  aload 6
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual MobWin/ReqActivateApp/setUser_info(LMobWin/UserInfo;)V
+  getstatic MobWin/ReqActivateApp/cache_app_info LMobWin/AppInfo;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnonnull Label1
+  new MobWin/AppInfo
+  astore 7
+  aload 7
+  invokespecial MobWin/AppInfo/<init>()V
+  aload 7
+  putstatic MobWin/ReqActivateApp/cache_app_info LMobWin/AppInfo;
+Label1:
+  getstatic MobWin/ReqActivateApp/cache_app_info LMobWin/AppInfo;
+  astore 7
+  iconst_1
+  istore 4
+  iload 4
+  istore_3
+  iconst_1
+  istore 4
+  aload_1
+  aload 7
+  iload_3
+  iload 4
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Lcom/qq/taf/jce/JceStruct;IZ)Lcom/qq/taf/jce/JceStruct;
+  astore 5
+  aload 5
+  astore 8
+  aload 8
+  checkcast MobWin/AppInfo
+  astore 8
+  aload 8
+  astore 7
+  aload_0
+  aload 7
+  invokevirtual MobWin/ReqActivateApp/setApp_info(LMobWin/AppInfo;)V
+  getstatic MobWin/ReqActivateApp/cache_loc LMobWin/UserLocation;
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnonnull Label2
+  new MobWin/UserLocation
+  astore 9
+  aload 9
+  invokespecial MobWin/UserLocation/<init>()V
+  aload 9
+  putstatic MobWin/ReqActivateApp/cache_loc LMobWin/UserLocation;
+Label2:
+  getstatic MobWin/ReqActivateApp/cache_loc LMobWin/UserLocation;
+  astore 9
+  iconst_2
+  istore 4
+  iconst_0
+  istore 10
+  aload_1
+  aload 9
+  iload 4
+  iload 10
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Lcom/qq/taf/jce/JceStruct;IZ)Lcom/qq/taf/jce/JceStruct;
+  astore 5
+  aload 5
+  astore 11
+  aload 11
+  checkcast MobWin/UserLocation
+  astore 11
+  aload 11
+  astore 9
+  aload_0
+  aload 9
+  invokevirtual MobWin/ReqActivateApp/setLoc(LMobWin/UserLocation;)V
+  iconst_3
+  istore 4
+  iconst_0
+  istore 10
+  aload_1
+  iload 4
+  iload 10
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 12
+  aload_0
+  aload 12
+  invokevirtual MobWin/ReqActivateApp/setSid(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public setApp_info(LMobWin/AppInfo;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ReqActivateApp/app_info LMobWin/AppInfo;
+  return
+  nop
+.end <method>
+
+.method public setLoc(LMobWin/UserLocation;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ReqActivateApp/loc LMobWin/UserLocation;
+  return
+  nop
+.end <method>
+
+.method public setSid(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ReqActivateApp/sid Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setUser_info(LMobWin/UserInfo;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ReqActivateApp/user_info LMobWin/UserInfo;
+  return
+  nop
+.end <method>
+
+.method public writeTo(Lcom/qq/taf/jce/JceOutputStream;)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqActivateApp/user_info LMobWin/UserInfo;
+  astore_2
+  iconst_0
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Lcom/qq/taf/jce/JceStruct;I)V
+  aload_0
+  getfield MobWin/ReqActivateApp/app_info LMobWin/AppInfo;
+  astore 4
+  iconst_1
+  istore_3
+  aload_1
+  aload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Lcom/qq/taf/jce/JceStruct;I)V
+  aload_0
+  getfield MobWin/ReqActivateApp/loc LMobWin/UserLocation;
+  astore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+  aload_0
+  getfield MobWin/ReqActivateApp/loc LMobWin/UserLocation;
+  astore 5
+  iconst_2
+  istore_3
+  aload_1
+  aload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Lcom/qq/taf/jce/JceStruct;I)V
+Label0:
+  aload_0
+  getfield MobWin/ReqActivateApp/sid Ljava/lang/String;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label1
+  aload_0
+  getfield MobWin/ReqActivateApp/sid Ljava/lang/String;
+  astore 6
+  iconst_3
+  istore_3
+  aload_1
+  aload 6
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+Label1:
+  return
+  nop
+.end <method>
+

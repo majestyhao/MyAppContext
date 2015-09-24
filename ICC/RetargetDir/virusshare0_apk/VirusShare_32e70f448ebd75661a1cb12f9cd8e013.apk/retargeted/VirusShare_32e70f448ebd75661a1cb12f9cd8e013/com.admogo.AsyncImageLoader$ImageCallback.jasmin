@@ -1,0 +1,7 @@
+.source AsyncImageLoader.java
+.interface public interface abstract  com/admogo/AsyncImageLoader$ImageCallback
+.super java/lang/Object
+
+.method public abstract imageLoaded(Landroid/graphics/drawable/Drawable;)V
+.end <method>
+

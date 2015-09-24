@@ -1,0 +1,713 @@
+.source SourceFile
+.class public abstract  com/mobisage/sns/renren/MSRenrenMessage
+.super com/mobisage/android/MobiSageReqMessage
+.field protected "accessToken" Ljava/lang/String;
+.field protected "clientID" Ljava/lang/String;
+.field protected "httpMethod" Ljava/lang/String;
+.field protected "isSignature" Z
+.field protected "paramMap" Ljava/util/HashMap;
+.field protected "secretKey" Ljava/lang/String;
+.field protected "urlPath" Ljava/lang/String;
+
+.method protected <init>(Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/mobisage/android/MobiSageReqMessage/<init>()V
+  aload_0
+  aload_1
+  putfield com/mobisage/sns/renren/MSRenrenMessage/clientID Ljava/lang/String;
+  new java/util/HashMap
+  astore_2
+  aload_2
+  invokespecial java/util/HashMap/<init>()V
+  aload_0
+  aload_2
+  putfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  iconst_0
+  istore_3
+  aload_0
+  iload_3
+  putfield com/mobisage/sns/renren/MSRenrenMessage/isSignature Z
+  return
+  nop
+.end <method>
+
+.method protected <init>(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/mobisage/android/MobiSageReqMessage/<init>()V
+  aload_0
+  aload_1
+  putfield com/mobisage/sns/renren/MSRenrenMessage/accessToken Ljava/lang/String;
+  aload_0
+  aload_2
+  putfield com/mobisage/sns/renren/MSRenrenMessage/secretKey Ljava/lang/String;
+  new java/util/HashMap
+  astore_3
+  aload_3
+  invokespecial java/util/HashMap/<init>()V
+  aload_0
+  aload_3
+  putfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  iconst_1
+  istore 4
+  aload_0
+  iload 4
+  putfield com/mobisage/sns/renren/MSRenrenMessage/isSignature Z
+  return
+  nop
+.end <method>
+
+.method private a()Lorg/apache/http/client/methods/HttpRequestBase;
+.limit locals 18
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/isSignature Z
+  istore_2
+  aload_1
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual com/mobisage/sns/renren/MSRenrenMessage/generateSignature()V
+Label0:
+  new org/apache/http/client/methods/HttpPost
+  astore_3
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/urlPath Ljava/lang/String;
+  astore 4
+  aload_3
+  aload 4
+  invokespecial org/apache/http/client/methods/HttpPost/<init>(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore 5
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 6
+  aload 6
+  invokevirtual java/util/HashMap/keySet()Ljava/util/Set;
+  astore 7
+  aload 7
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore 8
+Label3:
+  aload 8
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label1
+  aload 5
+  invokevirtual java/lang/StringBuilder/length()I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifeq Label2
+  ldc "&"
+  astore 10
+  aload 5
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+Label2:
+  aload 8
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 11
+  aload 11
+  astore 13
+  aload 13
+  checkcast java/lang/String
+  astore 13
+  aload 13
+  astore 12
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 14
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  ldc "="
+  astore 10
+  aload 14
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 6
+  aload 6
+  aload 12
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 11
+  aload 11
+  astore 15
+  aload 15
+  checkcast java/lang/String
+  astore 15
+  aload 15
+  astore 12
+  aload 12
+  invokestatic java/net/URLEncoder/encode(Ljava/lang/String;)Ljava/lang/String;
+  astore 12
+  aload 14
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 12
+  aload 5
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  goto Label3
+Label1:
+  new org/apache/http/entity/StringEntity
+  astore 16
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 12
+  aload 16
+  aload 12
+  invokespecial org/apache/http/entity/StringEntity/<init>(Ljava/lang/String;)V
+  aload_3
+  aload 16
+  invokevirtual org/apache/http/client/methods/HttpPost/setEntity(Lorg/apache/http/HttpEntity;)V
+  ldc "Content-Type"
+  astore 10
+  ldc "application/x-www-form-urlencoded"
+  astore 17
+  aload 17
+  astore_1
+  aload_3
+  aload 10
+  aload_1
+  invokevirtual org/apache/http/client/methods/HttpPost/setHeader(Ljava/lang/String;Ljava/lang/String;)V
+  aload_3
+  areturn
+  nop
+.end <method>
+
+.method public addParam(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore_3
+  aload_3
+  aload_1
+  aload_2
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  return
+  nop
+.end <method>
+
+.method public createHttpRequest()Lorg/apache/http/client/methods/HttpRequestBase;
+.limit locals 18
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/httpMethod Ljava/lang/String;
+  astore_2
+  aload_1
+  astore_0
+  ldc "GET"
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/isSignature Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label1
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual com/mobisage/sns/renren/MSRenrenMessage/generateSignature()V
+Label1:
+  new java/lang/StringBuilder
+  astore 5
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 6
+  aload 6
+  invokevirtual java/util/HashMap/keySet()Ljava/util/Set;
+  astore 7
+  aload 7
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore 8
+Label4:
+  aload 8
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label2
+  aload 5
+  invokevirtual java/lang/StringBuilder/length()I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifne Label3
+  ldc "?"
+  astore 4
+  aload 5
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+Label5:
+  aload 8
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 10
+  aload 10
+  astore 11
+  aload 11
+  checkcast java/lang/String
+  astore 11
+  aload 11
+  astore_2
+  new java/lang/StringBuilder
+  astore 12
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 12
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  ldc "="
+  astore 4
+  aload 12
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 6
+  aload 6
+  aload_2
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 10
+  aload 10
+  astore 14
+  aload 14
+  checkcast java/lang/String
+  astore 14
+  aload 14
+  astore 13
+  aload 13
+  invokestatic java/net/URLEncoder/encode(Ljava/lang/String;)Ljava/lang/String;
+  astore 13
+  aload 12
+  aload 13
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  aload 12
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 13
+  aload 5
+  aload 13
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  goto Label4
+Label3:
+  ldc "&"
+  astore 4
+  aload 5
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  goto Label5
+Label2:
+  new org/apache/http/client/methods/HttpGet
+  astore 15
+  new java/lang/StringBuilder
+  astore 12
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/urlPath Ljava/lang/String;
+  astore 13
+  aload 12
+  aload 13
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 13
+  aload 12
+  aload 13
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 13
+  aload 15
+  aload 13
+  invokespecial org/apache/http/client/methods/HttpGet/<init>(Ljava/lang/String;)V
+  aload 15
+  areturn
+Label0:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/httpMethod Ljava/lang/String;
+  astore 13
+  ldc "POST"
+  astore 4
+  aload 13
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label6
+  aload_0
+  astore_1
+  aload_1
+  invokespecial com/mobisage/sns/renren/MSRenrenMessage/a()Lorg/apache/http/client/methods/HttpRequestBase;
+  astore 16
+  aload 16
+  areturn
+Label6:
+  aconst_null
+  astore 17
+  aload 17
+  areturn
+  nop
+.end <method>
+
+.method protected generateSignature()V
+.limit locals 25
+.limit stack 200
+  nop
+  iconst_0
+  istore_3
+  new java/util/LinkedList
+  astore 4
+  aload 4
+  invokespecial java/util/LinkedList/<init>()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 5
+  aload 5
+  invokevirtual java/util/HashMap/keySet()Ljava/util/Set;
+  astore 6
+  aload 6
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore 7
+Label1:
+  aload 7
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 8
+  ifeq Label0
+  aload 7
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 9
+  aload 9
+  astore 11
+  aload 11
+  checkcast java/lang/String
+  astore 11
+  aload 11
+  astore 10
+  new java/lang/StringBuilder
+  astore 12
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 12
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  ldc "="
+  astore 13
+  aload 12
+  aload 13
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 5
+  aload 5
+  aload 10
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 9
+  aload 9
+  astore 14
+  aload 14
+  checkcast java/lang/String
+  astore 14
+  aload 14
+  astore 10
+  aload 12
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  aload 12
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 10
+  aload 4
+  aload 10
+  invokevirtual java/util/LinkedList/add(Ljava/lang/Object;)Z
+  pop
+  goto Label1
+Label0:
+  aload 4
+  invokestatic java/util/Collections/sort(Ljava/util/List;)V
+  new java/lang/StringBuilder
+  astore 12
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>()V
+  iconst_0
+  dstore 15
+Label3:
+  aload 4
+  invokevirtual java/util/LinkedList/size()I
+  istore 16
+  dload 15
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 15
+  iload 16
+  if_icmpge Label2
+  aload 4
+  iload 15
+  invokevirtual java/util/LinkedList/get(I)Ljava/lang/Object;
+  astore 9
+  aload 9
+  astore 17
+  aload 17
+  checkcast java/lang/String
+  astore 17
+  aload 17
+  astore 10
+  aload 12
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  iload 15
+  iconst_1
+  iadd
+  istore 15
+  goto Label3
+Label2:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/secretKey Ljava/lang/String;
+  astore 10
+  aload 12
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  ldc "MD5"
+  astore 13
+  aload 13
+  invokestatic java/security/MessageDigest/getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+  astore 18
+  aload 18
+  astore_1
+  aload_1
+  invokevirtual java/security/MessageDigest/reset()V
+  aload 12
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 10
+  ldc "UTF-8"
+  astore 13
+  aload 10
+  aload 13
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 19
+  aload 18
+  astore_1
+  aload 19
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/security/MessageDigest/digest([B)[B
+  astore 19
+  new java/lang/StringBuilder
+  astore 12
+  aload 19
+  astore_1
+  aload_1
+  arraylength
+  istore 16
+  iload 16
+  iconst_1
+  ishl
+  istore 16
+  aload 12
+  iload 16
+  invokespecial java/lang/StringBuilder/<init>(I)V
+Label5:
+  aload 19
+  astore_1
+  aload_1
+  arraylength
+  istore 16
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 16
+  if_icmpge Label4
+  aload 19
+  iload_3
+  baload
+  istore 20
+  sipush 240
+  istore 22
+  iload 20
+  iload 22
+  iand
+  istore 21
+  iconst_4
+  istore 22
+  iload 21
+  istore_1
+  iload 22
+  istore_2
+  iload_1
+  iload_2
+  ishr
+  istore_1
+  iload_1
+  istore 21
+  bipush 16
+  istore 22
+  iload 21
+  istore_1
+  iload 22
+  istore_2
+  iload_1
+  iload_2
+  invokestatic java/lang/Character/forDigit(II)C
+  istore 23
+  iload 23
+  istore_1
+  aload 12
+  iload_1
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload 19
+  iload_3
+  baload
+  istore 20
+  bipush 15
+  istore 22
+  iload 20
+  istore_1
+  iload 22
+  istore_2
+  iload_1
+  iload_2
+  iand
+  istore_1
+  iload_1
+  istore 20
+  bipush 16
+  istore 22
+  iload 20
+  istore_1
+  iload 22
+  istore_2
+  iload_1
+  iload_2
+  invokestatic java/lang/Character/forDigit(II)C
+  istore 23
+  iload 23
+  istore_1
+  aload 12
+  iload_1
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label5
+Label4:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 5
+  aload 12
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 24
+  ldc "sig"
+  astore 13
+  aload 24
+  astore_1
+  aload 5
+  aload 13
+  aload_1
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  return
+  nop
+.end <method>
+

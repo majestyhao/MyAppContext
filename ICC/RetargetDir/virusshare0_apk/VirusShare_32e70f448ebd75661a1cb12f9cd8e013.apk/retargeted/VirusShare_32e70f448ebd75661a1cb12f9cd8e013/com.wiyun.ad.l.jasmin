@@ -1,0 +1,249 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/wiyun/ad/l
+.super java/lang/Object
+.field private static "a" Lcom/wiyun/ad/l;
+.field private "b" Landroid/content/Context;
+.field private "c" Z
+.field private "d" Lcom/wiyun/ad/l$a;
+.field private "e" Landroid/content/BroadcastReceiver;
+
+.method private <init>(Landroid/content/Context;Lcom/wiyun/ad/l$a;)V
+.limit locals 9
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_3
+  aload_0
+  invokespecial com/wiyun/ad/h/<init>(Lcom/wiyun/ad/l;)V
+  aload_0
+  aload_3
+  putfield com/wiyun/ad/l/e Landroid/content/BroadcastReceiver;
+  aload_1
+  invokevirtual android/content/Context/getApplicationContext()Landroid/content/Context;
+  astore 4
+  aload_0
+  aload 4
+  putfield com/wiyun/ad/l/b Landroid/content/Context;
+  aload_0
+  aload_2
+  putfield com/wiyun/ad/l/d Lcom/wiyun/ad/l$a;
+  new android/content/IntentFilter
+  astore 5
+  ldc "android.net.wifi.STATE_CHANGE"
+  astore 6
+  aload 5
+  aload 6
+  invokespecial android/content/IntentFilter/<init>(Ljava/lang/String;)V
+  aload_0
+  getfield com/wiyun/ad/l/b Landroid/content/Context;
+  astore 4
+  aload_0
+  getfield com/wiyun/ad/l/e Landroid/content/BroadcastReceiver;
+  astore 7
+  aload 4
+  aload 7
+  aload 5
+  invokevirtual android/content/Context/registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+  pop
+  aload_1
+  invokestatic com/wiyun/ad/m/d(Landroid/content/Context;)Z
+  istore 8
+  aload_0
+  iload 8
+  putfield com/wiyun/ad/l/c Z
+  return
+  nop
+.end <method>
+
+.method public static a()V
+.limit locals 4
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/l/a Lcom/wiyun/ad/l;
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  getstatic com/wiyun/ad/l/a Lcom/wiyun/ad/l;
+  astore_0
+  aload_0
+  getfield com/wiyun/ad/l/b Landroid/content/Context;
+  astore_1
+  getstatic com/wiyun/ad/l/a Lcom/wiyun/ad/l;
+  astore_0
+  aload_0
+  getfield com/wiyun/ad/l/e Landroid/content/BroadcastReceiver;
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Context/unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+  getstatic com/wiyun/ad/l/a Lcom/wiyun/ad/l;
+  astore_0
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield com/wiyun/ad/l/b Landroid/content/Context;
+  getstatic com/wiyun/ad/l/a Lcom/wiyun/ad/l;
+  astore_0
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield com/wiyun/ad/l/d Lcom/wiyun/ad/l$a;
+  aconst_null
+  astore_3
+  aload_3
+  putstatic com/wiyun/ad/l/a Lcom/wiyun/ad/l;
+Label0:
+  return
+  nop
+.end <method>
+
+.method public static a(Landroid/content/Context;Lcom/wiyun/ad/l$a;)V
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/l/a Lcom/wiyun/ad/l;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  new com/wiyun/ad/l
+  astore_2
+  aload_2
+  aload_0
+  aload_1
+  invokespecial com/wiyun/ad/l/<init>(Landroid/content/Context;Lcom/wiyun/ad/l$a;)V
+  aload_2
+  putstatic com/wiyun/ad/l/a Lcom/wiyun/ad/l;
+Label0:
+  return
+  nop
+.end <method>
+
+.method static a(Lcom/wiyun/ad/l;Z)V
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield com/wiyun/ad/l/c Z
+  return
+  nop
+.end <method>
+
+.method static a(Lcom/wiyun/ad/l;)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/l/c Z
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static b(Lcom/wiyun/ad/l;)Lcom/wiyun/ad/l$a;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/l/d Lcom/wiyun/ad/l$a;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static b()Z
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/l/a Lcom/wiyun/ad/l;
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  iconst_0
+  istore_1
+  iload_1
+  ireturn
+Label0:
+  getstatic com/wiyun/ad/l/a Lcom/wiyun/ad/l;
+  astore_0
+  aload_0
+  getfield com/wiyun/ad/l/c Z
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public static c()Z
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_0
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label0
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public static d()Lorg/apache/http/HttpHost;
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  invokestatic android/net/Proxy/getDefaultHost()Ljava/lang/String;
+  astore_1
+  invokestatic android/net/Proxy/getDefaultPort()I
+  istore_2
+  aload_0
+  aload_1
+  iload_2
+  invokespecial org/apache/http/HttpHost/<init>(Ljava/lang/String;I)V
+  aload_0
+  areturn
+  nop
+.end <method>
+

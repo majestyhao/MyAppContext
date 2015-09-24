@@ -1,0 +1,593 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/tencent/mobwin/core/a/e
+.super java/lang/Object
+.field private static final "a" Ljava/lang/String; =  "AdCount:"
+.field private static final "b" Ljava/lang/String; =  "tencent.ad.activation"
+.field private static final "c" Ljava/lang/String; =  "tencent.ad.view"
+.field private static final "d" Ljava/lang/String; =  "tencent.ad.click"
+.field private static final "e" Ljava/lang/String; =  "activation"
+.field private static final "f" Ljava/lang/String; =  "save_date"
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static a(Landroid/content/Context;)V
+.limit locals 5
+.limit stack 200
+  nop
+  ldc "tencent.ad.activation"
+  astore_2
+  iconst_0
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_1
+  invokeinterface android/content/SharedPreferences/edit()Landroid/content/SharedPreferences$Editor; 1
+  astore 4
+  ldc "activation"
+  astore_2
+  iconst_1
+  istore_3
+  aload 4
+  aload_2
+  iload_3
+  invokeinterface android/content/SharedPreferences$Editor/putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload 4
+  invokeinterface android/content/SharedPreferences$Editor/commit()Z 1
+  pop
+  return
+  nop
+.end <method>
+
+.method public static a(Landroid/content/Context;Ljava/lang/String;)V
+.limit locals 14
+.limit stack 200
+  nop
+  new java/text/SimpleDateFormat
+  astore_2
+  ldc "yyyy-MM-dd"
+  astore_3
+  aload_2
+  aload_3
+  invokespecial java/text/SimpleDateFormat/<init>(Ljava/lang/String;)V
+  new java/util/Date
+  astore 4
+  aload 4
+  invokespecial java/util/Date/<init>()V
+  aload_2
+  aload 4
+  invokevirtual java/text/SimpleDateFormat/format(Ljava/util/Date;)Ljava/lang/String;
+  astore 5
+  ldc "tencent.ad.view"
+  astore_3
+  iconst_0
+  istore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload 6
+  invokeinterface android/content/SharedPreferences/edit()Landroid/content/SharedPreferences$Editor; 1
+  astore 8
+  ldc "save_date"
+  astore_3
+  ldc ""
+  astore 10
+  aload 6
+  aload_3
+  aload 10
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 9
+  aload 9
+  aload 5
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifne Label0
+  aload 8
+  invokeinterface android/content/SharedPreferences$Editor/clear()Landroid/content/SharedPreferences$Editor; 1
+  astore 12
+  aload 12
+  invokeinterface android/content/SharedPreferences$Editor/commit()Z 1
+  pop
+Label0:
+  iconst_0
+  istore 7
+  aload 6
+  aload_1
+  iload 7
+  invokeinterface android/content/SharedPreferences/getInt(Ljava/lang/String;I)I 3
+  istore 13
+  ldc "save_date"
+  astore_3
+  aload 8
+  aload_3
+  aload 5
+  invokeinterface android/content/SharedPreferences$Editor/putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  iload 13
+  iconst_1
+  iadd
+  istore 13
+  aload 8
+  aload_1
+  iload 13
+  invokeinterface android/content/SharedPreferences$Editor/putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload 8
+  invokeinterface android/content/SharedPreferences$Editor/commit()Z 1
+  pop
+  return
+  nop
+.end <method>
+
+.method public static b(Landroid/content/Context;Ljava/lang/String;)I
+.limit locals 6
+.limit stack 200
+  nop
+  ldc "tencent.ad.view"
+  astore_3
+  iconst_0
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iconst_0
+  istore 4
+  aload_2
+  aload_1
+  iload 4
+  invokeinterface android/content/SharedPreferences/getInt(Ljava/lang/String;I)I 3
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static b(Landroid/content/Context;)Z
+.limit locals 6
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  iload_2
+  istore_1
+  ldc "tencent.ad.activation"
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  ldc "activation"
+  astore 4
+  iconst_0
+  istore_2
+  aload_3
+  aload 4
+  iload_2
+  invokeinterface android/content/SharedPreferences/getBoolean(Ljava/lang/String;Z)Z 3
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static c(Landroid/content/Context;)Ljava/util/ArrayList;
+.limit locals 21
+.limit stack 200
+  nop
+  new java/util/ArrayList
+  astore_3
+  aload_3
+  invokespecial java/util/ArrayList/<init>()V
+  new java/text/SimpleDateFormat
+  astore 4
+  ldc "yyyy-MM-dd"
+  astore 5
+  aload 4
+  aload 5
+  invokespecial java/text/SimpleDateFormat/<init>(Ljava/lang/String;)V
+  new java/util/Date
+  astore 6
+  aload 6
+  invokespecial java/util/Date/<init>()V
+  aload 4
+  aload 6
+  invokevirtual java/text/SimpleDateFormat/format(Ljava/util/Date;)Ljava/lang/String;
+  astore 7
+  ldc "tencent.ad.view"
+  astore 5
+  iconst_0
+  istore 9
+  aload_0
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  ldc "save_date"
+  astore 5
+  ldc ""
+  astore 11
+  aload 8
+  aload 5
+  aload 11
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 10
+  aload 10
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifne Label0
+  aload 8
+  invokeinterface android/content/SharedPreferences/edit()Landroid/content/SharedPreferences$Editor; 1
+  astore 13
+  aload 13
+  invokeinterface android/content/SharedPreferences$Editor/clear()Landroid/content/SharedPreferences$Editor; 1
+  astore 13
+  aload 13
+  invokeinterface android/content/SharedPreferences$Editor/commit()Z 1
+  pop
+Label0:
+  aload 8
+  invokeinterface android/content/SharedPreferences/getAll()Ljava/util/Map; 1
+  astore 14
+  aload 14
+  invokeinterface java/util/Map/keySet()Ljava/util/Set; 1
+  astore 15
+  aload 15
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore 16
+Label2:
+  aload 16
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifne Label1
+  aload_3
+  areturn
+Label1:
+  aload 16
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 17
+  aload 17
+  astore 18
+  aload 18
+  checkcast java/lang/String
+  astore 18
+  aload 18
+  astore 10
+  ldc "save_date"
+  astore 5
+  aload 10
+  aload 5
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifne Label2
+  new MobWin/ADViewAccInfo
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokespecial MobWin/ADViewAccInfo/<init>()V
+  aload 10
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 20
+  iload 20
+  istore_1
+  aload 19
+  astore_2
+  aload_2
+  iload_1
+  putfield MobWin/ADViewAccInfo/ad_id I
+  aload 14
+  aload 10
+  invokeinterface java/util/Map/get(Ljava/lang/Object;)Ljava/lang/Object; 2
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 10
+  aload 10
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 20
+  iload 20
+  istore_1
+  aload 19
+  astore_2
+  aload_2
+  iload_1
+  putfield MobWin/ADViewAccInfo/view_count I
+  aload 19
+  astore_1
+  aload_3
+  aload_1
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  goto Label2
+  nop
+.end <method>
+
+.method public static c(Landroid/content/Context;Ljava/lang/String;)V
+.limit locals 14
+.limit stack 200
+  nop
+  new java/text/SimpleDateFormat
+  astore_2
+  ldc "yyyy-MM-dd"
+  astore_3
+  aload_2
+  aload_3
+  invokespecial java/text/SimpleDateFormat/<init>(Ljava/lang/String;)V
+  new java/util/Date
+  astore 4
+  aload 4
+  invokespecial java/util/Date/<init>()V
+  aload_2
+  aload 4
+  invokevirtual java/text/SimpleDateFormat/format(Ljava/util/Date;)Ljava/lang/String;
+  astore 5
+  ldc "tencent.ad.click"
+  astore_3
+  iconst_0
+  istore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload 6
+  invokeinterface android/content/SharedPreferences/edit()Landroid/content/SharedPreferences$Editor; 1
+  astore 8
+  ldc "save_date"
+  astore_3
+  ldc ""
+  astore 10
+  aload 6
+  aload_3
+  aload 10
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 9
+  aload 9
+  aload 5
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifne Label0
+  aload 8
+  invokeinterface android/content/SharedPreferences$Editor/clear()Landroid/content/SharedPreferences$Editor; 1
+  astore 12
+  aload 12
+  invokeinterface android/content/SharedPreferences$Editor/commit()Z 1
+  pop
+Label0:
+  iconst_0
+  istore 7
+  aload 6
+  aload_1
+  iload 7
+  invokeinterface android/content/SharedPreferences/getInt(Ljava/lang/String;I)I 3
+  istore 13
+  ldc "save_date"
+  astore_3
+  aload 8
+  aload_3
+  aload 5
+  invokeinterface android/content/SharedPreferences$Editor/putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  iload 13
+  iconst_1
+  iadd
+  istore 13
+  aload 8
+  aload_1
+  iload 13
+  invokeinterface android/content/SharedPreferences$Editor/putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload 8
+  invokeinterface android/content/SharedPreferences$Editor/commit()Z 1
+  pop
+  return
+  nop
+.end <method>
+
+.method public static d(Landroid/content/Context;Ljava/lang/String;)I
+.limit locals 6
+.limit stack 200
+  nop
+  ldc "tencent.ad.click"
+  astore_3
+  iconst_0
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iconst_0
+  istore 4
+  aload_2
+  aload_1
+  iload 4
+  invokeinterface android/content/SharedPreferences/getInt(Ljava/lang/String;I)I 3
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public static d(Landroid/content/Context;)Ljava/util/ArrayList;
+.limit locals 21
+.limit stack 200
+  nop
+  new java/util/ArrayList
+  astore_3
+  aload_3
+  invokespecial java/util/ArrayList/<init>()V
+  new java/text/SimpleDateFormat
+  astore 4
+  ldc "yyyy-MM-dd"
+  astore 5
+  aload 4
+  aload 5
+  invokespecial java/text/SimpleDateFormat/<init>(Ljava/lang/String;)V
+  new java/util/Date
+  astore 6
+  aload 6
+  invokespecial java/util/Date/<init>()V
+  aload 4
+  aload 6
+  invokevirtual java/text/SimpleDateFormat/format(Ljava/util/Date;)Ljava/lang/String;
+  astore 7
+  ldc "tencent.ad.click"
+  astore 5
+  iconst_0
+  istore 9
+  aload_0
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  ldc "save_date"
+  astore 5
+  ldc ""
+  astore 11
+  aload 8
+  aload 5
+  aload 11
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 10
+  aload 10
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifne Label0
+  aload 8
+  invokeinterface android/content/SharedPreferences/edit()Landroid/content/SharedPreferences$Editor; 1
+  astore 13
+  aload 13
+  invokeinterface android/content/SharedPreferences$Editor/clear()Landroid/content/SharedPreferences$Editor; 1
+  astore 13
+  aload 13
+  invokeinterface android/content/SharedPreferences$Editor/commit()Z 1
+  pop
+Label0:
+  aload 8
+  invokeinterface android/content/SharedPreferences/getAll()Ljava/util/Map; 1
+  astore 14
+  aload 14
+  invokeinterface java/util/Map/keySet()Ljava/util/Set; 1
+  astore 15
+  aload 15
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore 16
+Label2:
+  aload 16
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifne Label1
+  aload_3
+  areturn
+Label1:
+  aload 16
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 17
+  aload 17
+  astore 18
+  aload 18
+  checkcast java/lang/String
+  astore 18
+  aload 18
+  astore 10
+  ldc "save_date"
+  astore 5
+  aload 10
+  aload 5
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifne Label2
+  new MobWin/ADClickAccInfo
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokespecial MobWin/ADClickAccInfo/<init>()V
+  aload 10
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 20
+  iload 20
+  istore_1
+  aload 19
+  astore_2
+  aload_2
+  iload_1
+  putfield MobWin/ADClickAccInfo/ad_id I
+  aload 14
+  aload 10
+  invokeinterface java/util/Map/get(Ljava/lang/Object;)Ljava/lang/Object; 2
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 10
+  aload 10
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 20
+  iload 20
+  istore_1
+  aload 19
+  astore_2
+  aload_2
+  iload_1
+  putfield MobWin/ADClickAccInfo/click_count I
+  aload 19
+  astore_1
+  aload_3
+  aload_1
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  goto Label2
+  nop
+.end <method>
+

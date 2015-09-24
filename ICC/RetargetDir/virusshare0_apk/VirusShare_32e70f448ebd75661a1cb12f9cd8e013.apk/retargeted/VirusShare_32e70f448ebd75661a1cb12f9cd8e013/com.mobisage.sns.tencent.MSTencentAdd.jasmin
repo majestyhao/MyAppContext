@@ -1,0 +1,38 @@
+.source SourceFile
+.class public  com/mobisage/sns/tencent/MSTencentAdd
+.super com/mobisage/sns/tencent/MSTencentWeiboMessage
+
+.method public <init>(Lcom/mobisage/sns/common/MSOAToken;Lcom/mobisage/sns/common/MSOAConsumer;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  invokespecial com/mobisage/sns/tencent/MSTencentWeiboMessage/<init>(Lcom/mobisage/sns/common/MSOAToken;Lcom/mobisage/sns/common/MSOAConsumer;)V
+  ldc "http://open.t.qq.com/api/t/add"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/mobisage/sns/tencent/MSTencentWeiboMessage/urlPath Ljava/lang/String;
+  ldc "POST"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/mobisage/sns/tencent/MSTencentWeiboMessage/httpMethod Ljava/lang/String;
+  aload_0
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/paramMap Ljava/util/HashMap;
+  astore 4
+  ldc "format"
+  astore_3
+  ldc "json"
+  astore 5
+  aload 4
+  aload_3
+  aload 5
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  return
+  nop
+.end <method>
+

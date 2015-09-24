@@ -1,0 +1,229 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/google/ads/util/b
+.super java/lang/Object
+.field static final "a" Z =  0
+
+.method static <clinit>()V
+.limit locals 2
+.limit stack 200
+  nop
+  ldc com/google/ads/util/b
+  astore_0
+  aload_0
+  invokevirtual java/lang/Class/desiredAssertionStatus()Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  iconst_1
+  istore_1
+Label1:
+  iload_1
+  putstatic com/google/ads/util/b/a Z
+  return
+Label0:
+  iconst_0
+  istore_1
+  goto Label1
+  nop
+.end <method>
+
+.method private <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static a([B)Ljava/lang/String;
+.limit locals 12
+.limit stack 200
+  .catch  java/io/UnsupportedEncodingException <from> Label12 <to> Label13 <using> Label11
+  .catch  java/io/UnsupportedEncodingException <from> Label14 <to> Label15 <using> Label11
+  nop
+  new java/lang/String
+  astore_1
+  aload_0
+  arraylength
+  istore_2
+  new com/google/ads/util/b$b
+  astore_3
+Label12:
+  aload_3
+  invokespecial com/google/ads/util/b$b/<init>()V
+  iload_2
+  iconst_3
+  idiv
+  istore 4
+  iload 4
+  iconst_4
+  imul
+  istore 4
+  aload_3
+  getfield com/google/ads/util/b$b/d Z
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+  iload_2
+  iconst_3
+  irem
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifle Label1
+  iload 4
+  iconst_4
+  iadd
+  istore 4
+Label1:
+  aload_3
+  getfield com/google/ads/util/b$b/e Z
+  istore 5
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 5
+  ifeq Label2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  ifle Label2
+  iload_2
+  iconst_m1
+  iadd
+  istore 6
+  iload 6
+  bipush 57
+  idiv
+  istore 6
+  iload 6
+  iconst_1
+  iadd
+  istore 6
+  aload_3
+  getfield com/google/ads/util/b$b/f Z
+  istore 5
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 5
+  ifeq Label3
+  iconst_2
+  istore 7
+Label9:
+  iload 7
+  iload 6
+  imul
+  istore 6
+  iload 6
+  iload 4
+  iadd
+  istore 6
+Label10:
+  iload 6
+  newarray byte
+  astore 8
+  aload_3
+  aload 8
+  putfield com/google/ads/util/b$a/a [B
+  aload_3
+  aload_0
+  iload_2
+  invokevirtual com/google/ads/util/b$b/a([BI)Z
+  pop
+  getstatic com/google/ads/util/b/a Z
+  istore 5
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 5
+  ifne Label4
+  aload_3
+  getfield com/google/ads/util/b$a/b I
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 6
+  if_icmpeq Label4
+  new java/lang/AssertionError
+  astore 9
+  aload 9
+  invokespecial java/lang/AssertionError/<init>()V
+Label13:
+  aload 9
+  athrow
+Label11:
+  astore 10
+  new java/lang/AssertionError
+  astore 9
+  aload 9
+  aload 10
+  invokespecial java/lang/AssertionError/<init>(Ljava/lang/Object;)V
+  aload 9
+  athrow
+Label0:
+  iload_2
+  iconst_3
+  irem
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  lookupswitch
+  0 : Label1
+  1 : Label6
+  2 : Label7
+  default : Label5
+Label5:
+  goto Label8
+Label8:
+  goto Label1
+Label6:
+  iload 4
+  iconst_2
+  iadd
+  istore 4
+  goto Label1
+Label7:
+  iload 4
+  iconst_3
+  iadd
+  istore 4
+  goto Label1
+Label3:
+  iconst_1
+  istore 7
+  goto Label9
+Label4:
+  aload_3
+  getfield com/google/ads/util/b$a/a [B
+  astore 8
+Label14:
+  ldc "US-ASCII"
+  astore 11
+  aload_1
+  aload 8
+  aload 11
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+Label15:
+  aload_1
+  areturn
+Label2:
+  iload 4
+  istore 6
+  goto Label10
+  nop
+  nop
+.end <method>
+

@@ -1,0 +1,149 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/google/ads/AdSize
+.super java/lang/Object
+.field public static final "BANNER" Lcom/google/ads/AdSize;
+.field public static final "IAB_BANNER" Lcom/google/ads/AdSize;
+.field public static final "IAB_LEADERBOARD" Lcom/google/ads/AdSize;
+.field public static final "IAB_MRECT" Lcom/google/ads/AdSize;
+.field private "a" I
+.field private "b" I
+.field private "c" Ljava/lang/String;
+
+.method static <clinit>()V
+.limit locals 4
+.limit stack 200
+  nop
+  new com/google/ads/AdSize
+  astore_0
+  sipush 320
+  istore_1
+  bipush 50
+  istore_2
+  ldc "320x50_mb"
+  astore_3
+  aload_0
+  iload_1
+  iload_2
+  aload_3
+  invokespecial com/google/ads/AdSize/<init>(IILjava/lang/String;)V
+  aload_0
+  putstatic com/google/ads/AdSize/BANNER Lcom/google/ads/AdSize;
+  new com/google/ads/AdSize
+  astore_0
+  sipush 300
+  istore_1
+  sipush 250
+  istore_2
+  ldc "300x250_as"
+  astore_3
+  aload_0
+  iload_1
+  iload_2
+  aload_3
+  invokespecial com/google/ads/AdSize/<init>(IILjava/lang/String;)V
+  aload_0
+  putstatic com/google/ads/AdSize/IAB_MRECT Lcom/google/ads/AdSize;
+  new com/google/ads/AdSize
+  astore_0
+  sipush 468
+  istore_1
+  bipush 60
+  istore_2
+  ldc "468x60_as"
+  astore_3
+  aload_0
+  iload_1
+  iload_2
+  aload_3
+  invokespecial com/google/ads/AdSize/<init>(IILjava/lang/String;)V
+  aload_0
+  putstatic com/google/ads/AdSize/IAB_BANNER Lcom/google/ads/AdSize;
+  new com/google/ads/AdSize
+  astore_0
+  sipush 728
+  istore_1
+  bipush 90
+  istore_2
+  ldc "728x90_as"
+  astore_3
+  aload_0
+  iload_1
+  iload_2
+  aload_3
+  invokespecial com/google/ads/AdSize/<init>(IILjava/lang/String;)V
+  aload_0
+  putstatic com/google/ads/AdSize/IAB_LEADERBOARD Lcom/google/ads/AdSize;
+  return
+  nop
+.end <method>
+
+.method public <init>(II)V
+.limit locals 4
+.limit stack 200
+  nop
+  aconst_null
+  astore_3
+  aload_0
+  iload_1
+  iload_2
+  aload_3
+  invokespecial com/google/ads/AdSize/<init>(IILjava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method private <init>(IILjava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  iload_1
+  putfield com/google/ads/AdSize/a I
+  aload_0
+  iload_2
+  putfield com/google/ads/AdSize/b I
+  aload_0
+  aload_3
+  putfield com/google/ads/AdSize/c Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public getHeight()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/google/ads/AdSize/b I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public getWidth()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/google/ads/AdSize/a I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public toString()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/google/ads/AdSize/c Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+

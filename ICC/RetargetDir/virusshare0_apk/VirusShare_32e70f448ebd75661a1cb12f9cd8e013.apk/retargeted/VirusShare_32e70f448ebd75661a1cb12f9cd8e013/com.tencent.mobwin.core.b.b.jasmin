@@ -1,0 +1,1255 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/tencent/mobwin/core/b/b
+.super java/lang/Object
+.field public static final "a" I =  30000
+.field public static final "b" I =  30000
+.field public static final "c" I =  4096
+.field public static final "d" I =  3
+.field private static final "k" Ljava/lang/String; =  "HttpTask"
+.field public "e" Z
+.field public "f" Ljava/lang/String;
+.field public "g" I
+.field public "h" Landroid/os/Handler;
+.field "i" Lorg/apache/http/client/methods/HttpPost;
+.field "j" Lorg/apache/http/client/methods/HttpGet;
+.field private "l" Lcom/tencent/mobwin/core/b/a;
+.field private "m" I
+.field private "n" Z
+.field private "o" [B
+.field private "p" Ljava/util/Map;
+.field private "q" Ljava/net/URI;
+
+.method public <init>(Ljava/lang/String;ZI[BLcom/tencent/mobwin/core/b/a;Landroid/os/Handler;)V
+.limit locals 15
+.limit stack 200
+  .catch  java/net/URISyntaxException <from> Label2 <to> Label3 <using> Label1
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aconst_null
+  astore 7
+  aload_0
+  aload 7
+  putfield com/tencent/mobwin/core/b/b/l Lcom/tencent/mobwin/core/b/a;
+  iconst_0
+  istore 9
+  iload 9
+  istore 8
+  aload_0
+  iload 8
+  putfield com/tencent/mobwin/core/b/b/m I
+  iconst_0
+  istore 9
+  aload_0
+  iload 9
+  putfield com/tencent/mobwin/core/b/b/e Z
+  ldc ""
+  astore 10
+  aload_0
+  aload 10
+  putfield com/tencent/mobwin/core/b/b/f Ljava/lang/String;
+  iconst_1
+  istore 9
+  aload_0
+  iload 9
+  putfield com/tencent/mobwin/core/b/b/n Z
+  aconst_null
+  astore 7
+  aload_0
+  aload 7
+  putfield com/tencent/mobwin/core/b/b/o [B
+  iconst_0
+  istore 9
+  iload 9
+  istore 8
+  aload_0
+  iload 8
+  putfield com/tencent/mobwin/core/b/b/g I
+  aconst_null
+  astore 7
+  aload_0
+  aload 7
+  putfield com/tencent/mobwin/core/b/b/h Landroid/os/Handler;
+  aconst_null
+  astore 7
+  aload_0
+  aload 7
+  putfield com/tencent/mobwin/core/b/b/i Lorg/apache/http/client/methods/HttpPost;
+  aconst_null
+  astore 7
+  aload_0
+  aload 7
+  putfield com/tencent/mobwin/core/b/b/j Lorg/apache/http/client/methods/HttpGet;
+  new java/util/HashMap
+  astore 11
+  aload 11
+  invokespecial java/util/HashMap/<init>()V
+  aload_0
+  aload 11
+  putfield com/tencent/mobwin/core/b/b/p Ljava/util/Map;
+  aconst_null
+  astore 7
+  aload_0
+  aload 7
+  putfield com/tencent/mobwin/core/b/b/q Ljava/net/URI;
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/b/b/f Ljava/lang/String;
+  aload_0
+  iload_2
+  putfield com/tencent/mobwin/core/b/b/n Z
+  aload_0
+  iload_3
+  putfield com/tencent/mobwin/core/b/b/g I
+  aload_0
+  aload 4
+  putfield com/tencent/mobwin/core/b/b/o [B
+  aload_0
+  aload 5
+  putfield com/tencent/mobwin/core/b/b/l Lcom/tencent/mobwin/core/b/a;
+  aload_0
+  aload 6
+  putfield com/tencent/mobwin/core/b/b/h Landroid/os/Handler;
+  new java/net/URI
+  astore 12
+  aload_0
+  getfield com/tencent/mobwin/core/b/b/f Ljava/lang/String;
+  astore 13
+Label2:
+  aload 12
+  aload 13
+  invokespecial java/net/URI/<init>(Ljava/lang/String;)V
+Label3:
+  aload_0
+  aload 12
+  putfield com/tencent/mobwin/core/b/b/q Ljava/net/URI;
+Label0:
+  return
+Label1:
+  astore 14
+  aload 14
+  invokevirtual java/net/URISyntaxException/printStackTrace()V
+  goto Label0
+  nop
+.end <method>
+
+.method public a()V
+.limit locals 2
+.limit stack 200
+  nop
+  iconst_1
+  istore_1
+  aload_0
+  iload_1
+  putfield com/tencent/mobwin/core/b/b/e Z
+  return
+  nop
+.end <method>
+
+.method public static a(Lcom/tencent/mobwin/core/b/b;)V
+.limit locals 2
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+Label1:
+  return
+Label0:
+  new com/tencent/mobwin/core/b/c
+  astore_1
+  aload_1
+  aload_0
+  invokespecial com/tencent/mobwin/core/b/c/<init>(Lcom/tencent/mobwin/core/b/b;)V
+  aload_1
+  invokevirtual java/lang/Thread/start()V
+  goto Label1
+  nop
+.end <method>
+
+.method public a(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_1
+  invokevirtual java/lang/String/length()I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  ifle Label0
+  aload_0
+  getfield com/tencent/mobwin/core/b/b/p Ljava/util/Map;
+  astore 4
+  aload 4
+  aload_1
+  aload_2
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+Label0:
+  return
+  nop
+.end <method>
+
+.method private a(Ljava/net/URI;)Z
+.limit locals 7
+.limit stack 200
+  nop
+  aload_1
+  invokevirtual java/net/URI/getScheme()Ljava/lang/String;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_1
+  invokevirtual java/net/URI/getScheme()Ljava/lang/String;
+  astore_3
+  ldc "http"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label1
+Label0:
+  iconst_0
+  istore 6
+  iload 6
+  ireturn
+Label1:
+  iconst_1
+  istore 6
+  iload 6
+  ireturn
+  nop
+.end <method>
+
+.method public b()V
+.limit locals 38
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/e Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+Label2:
+  return
+Label0:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/q Ljava/net/URI;
+  astore 5
+  aload_0
+  astore_1
+  aload_1
+  aload 5
+  invokespecial com/tencent/mobwin/core/b/b/a(Ljava/net/URI;)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label1
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/l Lcom/tencent/mobwin/core/b/a;
+  astore 6
+  ldc 520224
+  istore 7
+  aload_0
+  astore_1
+  aload 6
+  iload 7
+  aload_1
+  invokeinterface com/tencent/mobwin/core/b/a/a(ILcom/tencent/mobwin/core/b/b;)V 3
+  goto Label2
+Label15:
+  aload_0
+  astore_1
+  aload_1
+  invokespecial com/tencent/mobwin/core/b/b/c()Lorg/apache/http/client/HttpClient;
+  astore 8
+Label40:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/e Z
+  istore 4
+Label42:
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label3
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label4
+  aload 8
+  invokeinterface org/apache/http/client/HttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager; 1
+  astore 9
+  aload 9
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+Label4:
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnull Label2
+  goto Label2
+Label3:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/n Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label5
+  new org/apache/http/client/methods/HttpPost
+  astore 11
+Label43:
+  aload 11
+  invokespecial org/apache/http/client/methods/HttpPost/<init>()V
+  aload_0
+  astore_1
+  aload_1
+  aload 11
+  putfield com/tencent/mobwin/core/b/b/i Lorg/apache/http/client/methods/HttpPost;
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/i Lorg/apache/http/client/methods/HttpPost;
+  astore 11
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/q Ljava/net/URI;
+  astore 5
+  aload 11
+  aload 5
+  invokevirtual org/apache/http/client/methods/HttpPost/setURI(Ljava/net/URI;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/o [B
+  astore 12
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  ifnull Label6
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/o [B
+  astore 12
+  aload 12
+  arraylength
+  istore 13
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  ifle Label6
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/i Lorg/apache/http/client/methods/HttpPost;
+  astore 11
+  new org/apache/http/entity/ByteArrayEntity
+  astore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/o [B
+  astore 12
+  aload 14
+  aload 12
+  invokespecial org/apache/http/entity/ByteArrayEntity/<init>([B)V
+  aload 11
+  aload 14
+  invokevirtual org/apache/http/client/methods/HttpPost/setEntity(Lorg/apache/http/HttpEntity;)V
+Label6:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/p Ljava/util/Map;
+  astore 15
+  aload 15
+  invokeinterface java/util/Map/size()I 1
+  istore 13
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  ifle Label7
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/p Ljava/util/Map;
+  astore 15
+  aload 15
+  invokeinterface java/util/Map/keySet()Ljava/util/Set; 1
+  astore 16
+  aload 16
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore 17
+Label17:
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label8
+Label7:
+  new org/apache/http/protocol/BasicHttpContext
+  astore 18
+  aload 18
+  astore_1
+  aload_1
+  invokespecial org/apache/http/protocol/BasicHttpContext/<init>()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/n Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label9
+  new java/lang/StringBuilder
+  astore 19
+  ldc "httpSend "
+  astore 20
+  aload 19
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  invokestatic java/lang/Thread/currentThread()Ljava/lang/Thread;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  invokevirtual java/lang/Thread/getName()Ljava/lang/String;
+  astore 22
+  aload 19
+  astore_1
+  aload 22
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 19
+  ldc "URL:"
+  astore 20
+  aload 19
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 19
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/i Lorg/apache/http/client/methods/HttpPost;
+  astore 11
+  aload 11
+  invokevirtual org/apache/http/client/methods/HttpPost/getURI()Ljava/net/URI;
+  astore 5
+  aload 19
+  astore_1
+  aload_1
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 22
+  ldc "HttpTask"
+  astore 20
+  aload 20
+  astore_1
+  aload 22
+  astore_2
+  aload_1
+  aload_2
+  invokestatic com/tencent/mobwin/core/o/b(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/i Lorg/apache/http/client/methods/HttpPost;
+  astore 11
+  aload 18
+  astore_1
+  aload 8
+  aload 11
+  aload_1
+  invokeinterface org/apache/http/client/HttpClient/execute(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse; 3
+  astore 23
+Label45:
+  aload 23
+  astore 10
+Label22:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/e Z
+  istore 4
+Label46:
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label10
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label11
+  aload 8
+  invokeinterface org/apache/http/client/HttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager; 1
+  astore 9
+  aload 9
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+Label11:
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnull Label2
+  goto Label2
+Label5:
+  new org/apache/http/client/methods/HttpGet
+  astore 24
+Label47:
+  aload 24
+  astore_1
+  aload_1
+  invokespecial org/apache/http/client/methods/HttpGet/<init>()V
+  aload 24
+  astore_1
+  aload_0
+  astore_2
+  aload_2
+  aload_1
+  putfield com/tencent/mobwin/core/b/b/j Lorg/apache/http/client/methods/HttpGet;
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/j Lorg/apache/http/client/methods/HttpGet;
+  astore_1
+  aload_1
+  astore 24
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/q Ljava/net/URI;
+  astore 5
+  aload 24
+  astore_1
+  aload_1
+  aload 5
+  invokevirtual org/apache/http/client/methods/HttpGet/setURI(Ljava/net/URI;)V
+Label48:
+  goto Label6
+Label44:
+  astore 25
+  aload 25
+  astore 26
+  aload 10
+  astore 23
+Label34:
+  aload 26
+  astore_1
+  aload_1
+  invokevirtual com/tencent/mobwin/core/z/printStackTrace()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/l Lcom/tencent/mobwin/core/b/a;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label12
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/m I
+  istore 13
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 7
+  iload 13
+  iload 7
+  if_icmplt Label12
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/l Lcom/tencent/mobwin/core/b/a;
+  astore 6
+  ldc 520240
+  istore 7
+  aload_0
+  astore_1
+  aload 6
+  iload 7
+  aload_1
+  invokeinterface com/tencent/mobwin/core/b/a/a(ILcom/tencent/mobwin/core/b/b;)V 3
+Label12:
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label13
+  aload 8
+  invokeinterface org/apache/http/client/HttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager; 1
+  astore 9
+  aload 9
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+  aconst_null
+  astore 27
+Label36:
+  aload 23
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 23
+  ifnull Label14
+  aconst_null
+  astore 23
+Label14:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/m I
+  istore 13
+  iload 13
+  iconst_1
+  iadd
+  istore 13
+  aload_0
+  astore_1
+  aload_1
+  iload 13
+  putfield com/tencent/mobwin/core/b/b/m I
+  aload 23
+  astore 10
+Label37:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/m I
+  istore 13
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_3
+  istore 7
+  iload 13
+  iload 7
+  if_icmplt Label15
+  goto Label2
+Label8:
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 28
+  aload 28
+  astore 30
+  aload 30
+  checkcast java/lang/String
+  astore 30
+  aload 30
+  astore 29
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/n Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label16
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/i Lorg/apache/http/client/methods/HttpPost;
+  astore 11
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/p Ljava/util/Map;
+  astore 15
+  aload 29
+  astore_1
+  aload 15
+  aload_1
+  invokeinterface java/util/Map/get(Ljava/lang/Object;)Ljava/lang/Object; 2
+  astore 28
+  aload 28
+  astore 31
+  aload 31
+  checkcast java/lang/String
+  astore 31
+  aload 31
+  astore 22
+  aload 29
+  astore_1
+  aload 22
+  astore_2
+  aload 11
+  aload_1
+  aload_2
+  invokevirtual org/apache/http/client/methods/HttpPost/addHeader(Ljava/lang/String;Ljava/lang/String;)V
+Label50:
+  goto Label17
+Label41:
+  astore 32
+  aload 32
+  astore 33
+  aload 10
+  astore 23
+Label33:
+  aload 33
+  astore_1
+  aload_1
+  invokevirtual java/lang/Throwable/printStackTrace()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/l Lcom/tencent/mobwin/core/b/a;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label18
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/m I
+  istore 13
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 7
+  iload 13
+  iload 7
+  if_icmplt Label18
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/l Lcom/tencent/mobwin/core/b/a;
+  astore 6
+  ldc 520208
+  istore 7
+  aload_0
+  astore_1
+  aload 6
+  iload 7
+  aload_1
+  invokeinterface com/tencent/mobwin/core/b/a/a(ILcom/tencent/mobwin/core/b/b;)V 3
+Label18:
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label19
+  aload 8
+  invokeinterface org/apache/http/client/HttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager; 1
+  astore 9
+  aload 9
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+  aconst_null
+  astore 27
+Label35:
+  aload 23
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 23
+  ifnull Label14
+  aconst_null
+  astore 23
+  goto Label14
+Label16:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/j Lorg/apache/http/client/methods/HttpGet;
+  astore_1
+  aload_1
+  astore 24
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/p Ljava/util/Map;
+  astore 15
+Label52:
+  aload 29
+  astore_1
+  aload 15
+  aload_1
+  invokeinterface java/util/Map/get(Ljava/lang/Object;)Ljava/lang/Object; 2
+  astore 28
+  aload 28
+  astore 34
+  aload 34
+  checkcast java/lang/String
+  astore 34
+  aload 34
+  astore 22
+  aload 24
+  astore_1
+  aload 29
+  astore_2
+  aload 22
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokevirtual org/apache/http/client/methods/HttpGet/addHeader(Ljava/lang/String;Ljava/lang/String;)V
+Label53:
+  goto Label17
+Label32:
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label20
+  aload 8
+  invokeinterface org/apache/http/client/HttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager; 1
+  astore 9
+  aload 9
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+Label20:
+  aload 23
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 23
+  ifnull Label21
+Label21:
+  aload 33
+  athrow
+Label9:
+  new java/lang/StringBuilder
+  astore 19
+Label54:
+  ldc "httpSend "
+  astore 20
+  aload 19
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  invokestatic java/lang/Thread/currentThread()Ljava/lang/Thread;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  invokevirtual java/lang/Thread/getName()Ljava/lang/String;
+  astore 22
+  aload 19
+  astore_1
+  aload 22
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 19
+  ldc "URL:"
+  astore 20
+  aload 19
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 19
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/j Lorg/apache/http/client/methods/HttpGet;
+  astore_1
+  aload_1
+  astore 24
+  aload 24
+  astore_1
+  aload_1
+  invokevirtual org/apache/http/client/methods/HttpGet/getURI()Ljava/net/URI;
+  astore 5
+  aload 19
+  astore_1
+  aload_1
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 22
+  ldc "HttpTask"
+  astore 20
+  aload 20
+  astore_1
+  aload 22
+  astore_2
+  aload_1
+  aload_2
+  invokestatic com/tencent/mobwin/core/o/b(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/j Lorg/apache/http/client/methods/HttpGet;
+  astore_1
+  aload_1
+  astore 24
+  aload 24
+  astore_1
+  aload 18
+  astore_2
+  aload 8
+  aload_1
+  aload_2
+  invokeinterface org/apache/http/client/HttpClient/execute(Lorg/apache/http/client/methods/HttpUriRequest;Lorg/apache/http/protocol/HttpContext;)Lorg/apache/http/HttpResponse; 3
+  astore 10
+  goto Label22
+Label10:
+  aload 10
+  invokeinterface org/apache/http/HttpResponse/getStatusLine()Lorg/apache/http/StatusLine; 1
+  astore 35
+  aload 35
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/StatusLine/getStatusCode()I 1
+  istore 13
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 200
+  istore 7
+  iload 13
+  iload 7
+  if_icmpeq Label23
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 206
+  istore 7
+  iload 13
+  iload 7
+  if_icmpeq Label23
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/n Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label24
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/i Lorg/apache/http/client/methods/HttpPost;
+  astore 11
+  aload 11
+  invokevirtual org/apache/http/client/methods/HttpPost/abort()V
+Label27:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/l Lcom/tencent/mobwin/core/b/a;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label25
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/l Lcom/tencent/mobwin/core/b/a;
+  astore 6
+  aload_0
+  astore_1
+  aload 6
+  iload 13
+  aload_1
+  invokeinterface com/tencent/mobwin/core/b/a/a(ILcom/tencent/mobwin/core/b/b;)V 3
+Label25:
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label26
+  aload 8
+  invokeinterface org/apache/http/client/HttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager; 1
+  astore 9
+  aload 9
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+Label26:
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnull Label2
+  goto Label2
+Label24:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/j Lorg/apache/http/client/methods/HttpGet;
+  astore_1
+  aload_1
+  astore 24
+Label55:
+  aload 24
+  astore_1
+  aload_1
+  invokevirtual org/apache/http/client/methods/HttpGet/abort()V
+Label56:
+  goto Label27
+Label23:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/e Z
+  istore 4
+Label57:
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label28
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label29
+  aload 8
+  invokeinterface org/apache/http/client/HttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager; 1
+  astore 9
+  aload 9
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+Label29:
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnull Label2
+  goto Label2
+Label28:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/l Lcom/tencent/mobwin/core/b/a;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label30
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/b/b/l Lcom/tencent/mobwin/core/b/a;
+  astore 6
+Label58:
+  aload_0
+  astore_1
+  aload 6
+  aload 10
+  aload_1
+  invokeinterface com/tencent/mobwin/core/b/a/a(Lorg/apache/http/HttpResponse;Lcom/tencent/mobwin/core/b/b;)V 3
+Label30:
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label31
+  aload 8
+  invokeinterface org/apache/http/client/HttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager; 1
+  astore 9
+  aload 9
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+Label31:
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnull Label2
+  goto Label2
+Label49:
+  astore 36
+  aload 36
+  astore 33
+  goto Label32
+Label51:
+  astore 37
+  aload 37
+  astore 33
+  goto Label32
+Label38:
+  astore 33
+  aload 27
+  astore 8
+  aload 10
+  astore 23
+  goto Label33
+Label39:
+  astore 26
+  aload 10
+  astore 23
+  aload 27
+  astore 8
+  goto Label34
+Label19:
+  aload 8
+  astore 27
+  goto Label35
+Label13:
+  aload 8
+  astore 27
+  goto Label36
+Label1:
+  aconst_null
+  astore 10
+  aconst_null
+  astore 27
+  goto Label37
+  nop
+.end <method>
+
+.method private c()Lorg/apache/http/client/HttpClient;
+.limit locals 11
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_1
+  invokespecial org/apache/http/params/BasicHttpParams/<init>()V
+  sipush 30000
+  istore_2
+  aload_1
+  iload_2
+  invokestatic org/apache/http/params/HttpConnectionParams/setConnectionTimeout(Lorg/apache/http/params/HttpParams;I)V
+  sipush 30000
+  istore_2
+  aload_1
+  iload_2
+  invokestatic org/apache/http/params/HttpConnectionParams/setSoTimeout(Lorg/apache/http/params/HttpParams;I)V
+  sipush 4096
+  istore_2
+  aload_1
+  iload_2
+  invokestatic org/apache/http/params/HttpConnectionParams/setSocketBufferSize(Lorg/apache/http/params/HttpParams;I)V
+  iconst_1
+  istore_2
+  aload_1
+  iload_2
+  invokestatic org/apache/http/client/params/HttpClientParams/setRedirecting(Lorg/apache/http/params/HttpParams;Z)V
+  new org/apache/http/impl/client/DefaultHttpClient
+  astore_3
+  aload_3
+  aload_1
+  invokespecial org/apache/http/impl/client/DefaultHttpClient/<init>(Lorg/apache/http/params/HttpParams;)V
+  new java/lang/StringBuilder
+  astore 4
+  ldc "Network"
+  astore 5
+  aload 4
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  getstatic com/tencent/mobwin/core/a/f/z I
+  istore 6
+  aload 4
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  ldc "Network"
+  astore 5
+  aload 5
+  aload 7
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  getstatic com/tencent/mobwin/core/a/f/z I
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 7
+  istore_2
+  iload 6
+  iload_2
+  if_icmpeq Label0
+  getstatic com/tencent/mobwin/core/a/f/z I
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_3
+  istore_2
+  iload 6
+  iload_2
+  if_icmpeq Label0
+  getstatic com/tencent/mobwin/core/a/f/z I
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_5
+  istore_2
+  iload 6
+  iload_2
+  if_icmpne Label1
+Label0:
+  new org/apache/http/HttpHost
+  astore 8
+  ldc "10.0.0.172"
+  astore 5
+  bipush 80
+  istore_2
+  ldc "http"
+  astore 9
+  aload 8
+  aload 5
+  iload_2
+  aload 9
+  invokespecial org/apache/http/HttpHost/<init>(Ljava/lang/String;ILjava/lang/String;)V
+  aload_3
+  invokeinterface org/apache/http/client/HttpClient/getParams()Lorg/apache/http/params/HttpParams; 1
+  astore 10
+  ldc "http.route.default-proxy"
+  astore 5
+  aload 10
+  aload 5
+  aload 8
+  invokeinterface org/apache/http/params/HttpParams/setParameter(Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/http/params/HttpParams; 3
+  pop
+Label1:
+  aload_3
+  areturn
+  nop
+.end <method>
+

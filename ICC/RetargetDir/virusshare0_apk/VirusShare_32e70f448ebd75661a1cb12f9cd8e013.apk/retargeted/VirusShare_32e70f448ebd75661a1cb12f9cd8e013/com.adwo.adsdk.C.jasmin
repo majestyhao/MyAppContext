@@ -1,0 +1,44 @@
+.source SourceFile
+.class final  com/adwo/adsdk/C
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field private "a" Lcom/adwo/adsdk/q;
+.field private final "b" Ljava/lang/String;
+
+.method <init>(Lcom/adwo/adsdk/q;Ljava/lang/String;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/adwo/adsdk/C/a Lcom/adwo/adsdk/q;
+  aload_0
+  aload_2
+  putfield com/adwo/adsdk/C/b Ljava/lang/String;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public final run()V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/adwo/adsdk/C/a Lcom/adwo/adsdk/q;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield com/adwo/adsdk/C/b Ljava/lang/String;
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual android/webkit/WebView/loadUrl(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+

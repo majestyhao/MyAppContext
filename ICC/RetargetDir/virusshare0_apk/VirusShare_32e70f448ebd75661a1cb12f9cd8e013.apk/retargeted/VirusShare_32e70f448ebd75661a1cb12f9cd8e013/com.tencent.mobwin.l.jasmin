@@ -1,0 +1,72 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/tencent/mobwin/l
+.super java/lang/Thread
+.field final "a" Lcom/tencent/mobwin/b;
+
+.method <init>(Lcom/tencent/mobwin/b;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/l/a Lcom/tencent/mobwin/b;
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 11
+.limit stack 200
+  .catch  java/lang/InterruptedException <from> Label2 <to> Label0 <using> Label1
+  nop
+Label2:
+  ldc2_w 5000
+  lstore_1
+  lload_1
+  invokestatic java/lang/Thread/sleep(J)V
+Label0:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  bipush 12
+  istore 4
+  aload_3
+  iload 4
+  putfield android/os/Message/what I
+  aload_0
+  getfield com/tencent/mobwin/l/a Lcom/tencent/mobwin/b;
+  astore 5
+  aload 5
+  invokestatic com/tencent/mobwin/b/a(Lcom/tencent/mobwin/b;)Lcom/tencent/mobwin/MobinWINBrowserActivity;
+  astore 6
+  aload 6
+  invokestatic com/tencent/mobwin/MobinWINBrowserActivity/e(Lcom/tencent/mobwin/MobinWINBrowserActivity;)Lcom/tencent/mobwin/m;
+  astore 7
+  aload 7
+  aload_3
+  invokevirtual com/tencent/mobwin/m/sendMessage(Landroid/os/Message;)Z
+  pop
+  iconst_1
+  istore 4
+  iload 4
+  putstatic com/tencent/mobwin/MobinWINBrowserActivity/f Z
+  ldc "CloseMessage"
+  astore 8
+  ldc "REMOVE"
+  astore 9
+  aload 8
+  aload 9
+  invokestatic com/tencent/mobwin/core/o/b(Ljava/lang/String;Ljava/lang/String;)V
+  return
+Label1:
+  astore 10
+  aload 10
+  invokevirtual java/lang/InterruptedException/printStackTrace()V
+  goto Label0
+  nop
+.end <method>
+

@@ -1,0 +1,511 @@
+.source SourceFile
+.class public  com/mobisage/sns/renren/MSRenrenPhotosUpload
+.super com/mobisage/sns/renren/MSRenrenMessage
+.field private "a" Ljava/lang/String;
+
+.method public <init>(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  invokespecial com/mobisage/sns/renren/MSRenrenMessage/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  ldc "http://api.renren.com/restserver.do"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/mobisage/sns/renren/MSRenrenMessage/urlPath Ljava/lang/String;
+  ldc "POST"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/mobisage/sns/renren/MSRenrenMessage/httpMethod Ljava/lang/String;
+  aload_0
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 4
+  ldc "access_token"
+  astore_3
+  aload 4
+  aload_3
+  aload_1
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_0
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 4
+  ldc "v"
+  astore_3
+  ldc "2.0"
+  astore 5
+  aload 4
+  aload_3
+  aload 5
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_0
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 4
+  ldc "method"
+  astore_3
+  ldc "photos.upload"
+  astore 5
+  aload 4
+  aload_3
+  aload 5
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_0
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 4
+  ldc "format"
+  astore_3
+  ldc "json"
+  astore 5
+  aload 4
+  aload_3
+  aload 5
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  return
+  nop
+.end <method>
+
+.method public addParam(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 5
+.limit stack 200
+  nop
+  ldc "upload"
+  astore 4
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_0
+  aload_2
+  putfield com/mobisage/sns/renren/MSRenrenPhotosUpload/a Ljava/lang/String;
+Label1:
+  return
+Label0:
+  aload_0
+  aload_1
+  aload_2
+  invokespecial com/mobisage/sns/renren/MSRenrenMessage/addParam(Ljava/lang/String;Ljava/lang/String;)V
+  goto Label1
+  nop
+.end <method>
+
+.method public createHttpRequest()Lorg/apache/http/client/methods/HttpRequestBase;
+.limit locals 24
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/isSignature Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual com/mobisage/sns/renren/MSRenrenPhotosUpload/generateSignature()V
+Label0:
+  invokestatic java/util/UUID/randomUUID()Ljava/util/UUID;
+  astore 4
+  new java/io/ByteArrayOutputStream
+  astore 5
+  aload 5
+  invokespecial java/io/ByteArrayOutputStream/<init>()V
+  new java/lang/StringBuilder
+  astore 6
+  ldc "\r\n--"
+  astore 7
+  aload 6
+  aload 7
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 4
+  invokevirtual java/util/UUID/toString()Ljava/lang/String;
+  astore 8
+  aload 6
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  ldc "\r\n"
+  astore 7
+  aload 6
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  aload 6
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 9
+  ldc "utf-8"
+  astore 7
+  aload 9
+  aload 7
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 10
+  aload 10
+  arraylength
+  istore 11
+  iconst_0
+  istore 12
+  aload 5
+  aload 10
+  iload 12
+  iload 11
+  invokevirtual java/io/ByteArrayOutputStream/write([BII)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 13
+  aload 13
+  invokevirtual java/util/HashMap/keySet()Ljava/util/Set;
+  astore 14
+  aload 14
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore 15
+Label2:
+  aload 15
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label1
+  aload 15
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 16
+  aload 16
+  astore 18
+  aload 18
+  checkcast java/lang/String
+  astore 18
+  aload 18
+  astore 17
+  new java/lang/StringBuilder
+  astore 6
+  ldc "Content-Disposition: form-data; name=\""
+  astore 7
+  aload 6
+  aload 7
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 17
+  astore_1
+  aload 6
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  ldc "\"\r\n\r\n"
+  astore 7
+  aload 6
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 13
+  aload 17
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 16
+  aload 16
+  astore 19
+  aload 19
+  checkcast java/lang/String
+  astore 19
+  aload 19
+  astore 17
+  aload 17
+  astore_1
+  aload 6
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  aload 6
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 17
+  ldc "UTF-8"
+  astore 7
+  aload 17
+  astore_1
+  aload_1
+  aload 7
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 10
+  aload 10
+  arraylength
+  istore 11
+  iconst_0
+  istore 12
+  aload 5
+  aload 10
+  iload 12
+  iload 11
+  invokevirtual java/io/ByteArrayOutputStream/write([BII)V
+  ldc "UTF-8"
+  astore 7
+  aload 9
+  aload 7
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 10
+  aload 10
+  arraylength
+  istore 11
+  iconst_0
+  istore 12
+  aload 5
+  aload 10
+  iload 12
+  iload 11
+  invokevirtual java/io/ByteArrayOutputStream/write([BII)V
+  goto Label2
+Label1:
+  new java/lang/StringBuilder
+  astore 6
+  ldc "Content-Disposition: form-data; name=\"upload\"; filename=\""
+  astore 7
+  aload 6
+  aload 7
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenPhotosUpload/a Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 17
+  aload 17
+  astore_1
+  aload 6
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  ldc "\"\r\n"
+  astore 7
+  aload 6
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  aload 6
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 17
+  ldc "UTF-8"
+  astore 7
+  aload 17
+  astore_1
+  aload_1
+  aload 7
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 10
+  aload 10
+  arraylength
+  istore 11
+  iconst_0
+  istore 12
+  aload 5
+  aload 10
+  iload 12
+  iload 11
+  invokevirtual java/io/ByteArrayOutputStream/write([BII)V
+  ldc "Content-Type:application/octet-stream\r\n\r\n"
+  astore 17
+  ldc "UTF-8"
+  astore 7
+  aload 17
+  astore_1
+  aload_1
+  aload 7
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 10
+  aload 10
+  arraylength
+  istore 11
+  iconst_0
+  istore 12
+  aload 5
+  aload 10
+  iload 12
+  iload 11
+  invokevirtual java/io/ByteArrayOutputStream/write([BII)V
+  new java/io/File
+  astore 20
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenPhotosUpload/a Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 17
+  aload 20
+  astore_1
+  aload 17
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/io/File/<init>(Ljava/lang/String;)V
+  new java/io/FileInputStream
+  astore 21
+  aload 21
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/io/FileInputStream/<init>(Ljava/io/File;)V
+  sipush 1024
+  istore 12
+  iload 12
+  newarray byte
+  astore 10
+Label4:
+  aload 21
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual java/io/FileInputStream/read([B)I
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 12
+  iload 11
+  iload 12
+  if_icmpeq Label3
+  iconst_0
+  istore 12
+  aload 5
+  aload 10
+  iload 12
+  iload 11
+  invokevirtual java/io/ByteArrayOutputStream/write([BII)V
+  goto Label4
+Label3:
+  aload 21
+  astore_1
+  aload_1
+  invokevirtual java/io/FileInputStream/close()V
+  new java/lang/StringBuilder
+  astore 6
+  ldc "\r\n--"
+  astore 7
+  aload 6
+  aload 7
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 4
+  invokevirtual java/util/UUID/toString()Ljava/lang/String;
+  astore 17
+  aload 17
+  astore_1
+  aload 6
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  ldc "--\r\n"
+  astore 7
+  aload 6
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  aload 6
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 17
+  ldc "UTF-8"
+  astore 7
+  aload 17
+  astore_1
+  aload_1
+  aload 7
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 10
+  aload 10
+  arraylength
+  istore 11
+  iconst_0
+  istore 12
+  aload 5
+  aload 10
+  iload 12
+  iload 11
+  invokevirtual java/io/ByteArrayOutputStream/write([BII)V
+  aload 5
+  invokevirtual java/io/ByteArrayOutputStream/toByteArray()[B
+  astore 10
+  new org/apache/http/client/methods/HttpPost
+  astore 22
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/renren/MSRenrenMessage/urlPath Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 17
+  aload 22
+  astore_1
+  aload 17
+  astore_2
+  aload_1
+  aload_2
+  invokespecial org/apache/http/client/methods/HttpPost/<init>(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore 6
+  ldc "multipart/form-data; boundary="
+  astore 7
+  aload 6
+  aload 7
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 4
+  invokevirtual java/util/UUID/toString()Ljava/lang/String;
+  astore 9
+  aload 6
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  aload 6
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 9
+  ldc "Content-Type"
+  astore 7
+  aload 22
+  astore_1
+  aload_1
+  aload 7
+  aload 9
+  invokevirtual org/apache/http/client/methods/HttpPost/setHeader(Ljava/lang/String;Ljava/lang/String;)V
+  new org/apache/http/entity/ByteArrayEntity
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  aload 10
+  invokespecial org/apache/http/entity/ByteArrayEntity/<init>([B)V
+  aload 22
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual org/apache/http/client/methods/HttpPost/setEntity(Lorg/apache/http/HttpEntity;)V
+  aload 5
+  invokevirtual java/io/ByteArrayOutputStream/close()V
+  aload 22
+  areturn
+  nop
+.end <method>
+

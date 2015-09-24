@@ -1,0 +1,341 @@
+.source ADPlayInfo.java
+.class public final  MobWin/ADPlayInfo
+.super com/qq/taf/jce/JceStruct
+.field static final "$assertionsDisabled" Z =  0
+.field public "ad_id" I
+.field public "play_seconds" I
+
+.method static <clinit>()V
+.limit locals 2
+.limit stack 200
+  nop
+  ldc MobWin/ADPlayInfo
+  astore_0
+  aload_0
+  invokevirtual java/lang/Class/desiredAssertionStatus()Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  iconst_1
+  istore_1
+Label1:
+  iload_1
+  putstatic MobWin/ADPlayInfo/$assertionsDisabled Z
+  return
+Label0:
+  iconst_0
+  istore_1
+  goto Label1
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield MobWin/ADPlayInfo/ad_id I
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield MobWin/ADPlayInfo/play_seconds I
+  aload_0
+  getfield MobWin/ADPlayInfo/ad_id I
+  istore_2
+  aload_0
+  iload_2
+  invokevirtual MobWin/ADPlayInfo/setAd_id(I)V
+  aload_0
+  getfield MobWin/ADPlayInfo/play_seconds I
+  istore_2
+  aload_0
+  iload_2
+  invokevirtual MobWin/ADPlayInfo/setPlay_seconds(I)V
+  return
+  nop
+.end <method>
+
+.method public <init>(II)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  iconst_0
+  istore_3
+  aload_0
+  iload_3
+  putfield MobWin/ADPlayInfo/ad_id I
+  iconst_0
+  istore_3
+  aload_0
+  iload_3
+  putfield MobWin/ADPlayInfo/play_seconds I
+  aload_0
+  iload_1
+  invokevirtual MobWin/ADPlayInfo/setAd_id(I)V
+  aload_0
+  iload_2
+  invokevirtual MobWin/ADPlayInfo/setPlay_seconds(I)V
+  return
+  nop
+.end <method>
+
+.method public className()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  ldc "MobWin.ADPlayInfo"
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public clone()Ljava/lang/Object;
+.limit locals 6
+.limit stack 200
+  .catch  java/lang/CloneNotSupportedException <from> Label2 <to> Label3 <using> Label1
+  nop
+  iconst_0
+  istore_1
+Label2:
+  aload_0
+  invokespecial java/lang/Object/clone()Ljava/lang/Object;
+  astore_2
+Label3:
+  aload_2
+  astore_1
+Label0:
+  aload_1
+  areturn
+Label1:
+  astore_3
+  getstatic MobWin/ADPlayInfo/$assertionsDisabled Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifne Label0
+  new java/lang/AssertionError
+  astore 5
+  aload 5
+  invokespecial java/lang/AssertionError/<init>()V
+  aload 5
+  athrow
+  nop
+.end <method>
+
+.method public display(Ljava/lang/StringBuilder;I)V
+.limit locals 5
+.limit stack 200
+  nop
+  new com/qq/taf/jce/JceDisplayer
+  astore_3
+  aload_3
+  aload_1
+  iload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_0
+  getfield MobWin/ADPlayInfo/ad_id I
+  istore_2
+  ldc "ad_id"
+  astore 4
+  aload_3
+  iload_2
+  aload 4
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ADPlayInfo/play_seconds I
+  istore_2
+  ldc "play_seconds"
+  astore 4
+  aload_3
+  iload_2
+  aload 4
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  return
+  nop
+.end <method>
+
+.method public equals(Ljava/lang/Object;)Z
+.limit locals 8
+.limit stack 200
+  nop
+  aload_1
+  astore_3
+  aload_3
+  checkcast MobWin/ADPlayInfo
+  astore_3
+  aload_3
+  astore_2
+  aload_0
+  getfield MobWin/ADPlayInfo/ad_id I
+  istore 4
+  aload_2
+  getfield MobWin/ADPlayInfo/ad_id I
+  istore 5
+  iload 4
+  iload 5
+  invokestatic com/qq/taf/jce/JceUtil/equals(II)Z
+  istore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/ADPlayInfo/play_seconds I
+  istore 5
+  aload_2
+  getfield MobWin/ADPlayInfo/play_seconds I
+  istore 4
+  iload 5
+  iload 4
+  invokestatic com/qq/taf/jce/JceUtil/equals(II)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  iconst_1
+  istore 7
+  iload 7
+  ireturn
+Label0:
+  iconst_0
+  istore 7
+  iload 7
+  ireturn
+  nop
+.end <method>
+
+.method public getAd_id()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ADPlayInfo/ad_id I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public getPlay_seconds()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ADPlayInfo/play_seconds I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public readFrom(Lcom/qq/taf/jce/JceInputStream;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ADPlayInfo/ad_id I
+  istore_2
+  iconst_0
+  istore 4
+  iconst_1
+  istore 5
+  aload_1
+  iload_2
+  iload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual MobWin/ADPlayInfo/setAd_id(I)V
+  aload_0
+  getfield MobWin/ADPlayInfo/play_seconds I
+  istore_3
+  iconst_1
+  istore 4
+  iload 4
+  istore_2
+  iconst_1
+  istore 4
+  aload_1
+  iload_3
+  iload_2
+  iload 4
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual MobWin/ADPlayInfo/setPlay_seconds(I)V
+  return
+  nop
+.end <method>
+
+.method public setAd_id(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/ADPlayInfo/ad_id I
+  return
+  nop
+.end <method>
+
+.method public setPlay_seconds(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/ADPlayInfo/play_seconds I
+  return
+  nop
+.end <method>
+
+.method public writeTo(Lcom/qq/taf/jce/JceOutputStream;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ADPlayInfo/ad_id I
+  istore_2
+  iconst_0
+  istore_3
+  aload_1
+  iload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield MobWin/ADPlayInfo/play_seconds I
+  istore_2
+  iconst_1
+  istore_3
+  aload_1
+  iload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  return
+  nop
+.end <method>
+

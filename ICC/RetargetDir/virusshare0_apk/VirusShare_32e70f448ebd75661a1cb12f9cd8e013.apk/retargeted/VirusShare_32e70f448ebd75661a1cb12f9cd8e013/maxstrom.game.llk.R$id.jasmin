@@ -1,0 +1,56 @@
+.source R.java
+.class public final  maxstrom/game/llk/R$id
+.super java/lang/Object
+.field public static final "BANNER" I =  2131099648
+.field public static final "IAB_BANNER" I =  2131099650
+.field public static final "IAB_LEADERBOARD" I =  2131099651
+.field public static final "IAB_MRECT" I =  2131099649
+.field public static final "ScrollView01" I =  2131099655
+.field public static final "adView" I =  2131099679
+.field public static final "admogo_layout" I =  2131099661
+.field public static final "banner" I =  2131099682
+.field public static final "btnArrange" I =  2131099673
+.field public static final "btnCancel" I =  2131099654
+.field public static final "btnConfirm" I =  2131099653
+.field public static final "btnContinue" I =  2131099660
+.field public static final "btnHint" I =  2131099674
+.field public static final "btnHintTimesLeft" I =  2131099668
+.field public static final "btnNewGame" I =  2131099672
+.field public static final "btnOK" I =  2131099678
+.field public static final "btnRecommend" I =  2131099675
+.field public static final "btnRefleshTimesLeft" I =  2131099670
+.field public static final "cbEnableMusic" I =  2131099676
+.field public static final "cbEnableSound" I =  2131099677
+.field public static final "down_progress_bar" I =  2131099688
+.field public static final "down_progress_info" I =  2131099689
+.field public static final "down_title" I =  2131099687
+.field public static final "event_info" I =  2131099685
+.field public static final "event_title" I =  2131099684
+.field public static final "image" I =  2131099680
+.field public static final "layBottom" I =  2131099667
+.field public static final "layMain" I =  2131099652
+.field public static final "layStatusBar" I =  2131099662
+.field public static final "llk" I =  2131099665
+.field public static final "panel_download" I =  2131099686
+.field public static final "panel_event" I =  2131099683
+.field public static final "panel_image" I =  2131099681
+.field public static final "pbGameTime" I =  2131099663
+.field public static final "txtGameLevel" I =  2131099666
+.field public static final "txtGameTime" I =  2131099664
+.field public static final "txtHintTimesLeft" I =  2131099669
+.field public static final "txtLevelDesc" I =  2131099658
+.field public static final "txtLevelFace" I =  2131099657
+.field public static final "txtLevelTitle" I =  2131099656
+.field public static final "txtMaxLevel" I =  2131099659
+.field public static final "txtRefleshTimesLeft" I =  2131099671
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

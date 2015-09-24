@@ -1,0 +1,59 @@
+.source SourceFile
+.class  cn/domob/android/ads/m$1$1
+.super java/lang/Object
+.implements  cn/domob/android/ads/b
+.field final "a" Lcn/domob/android/ads/m$1;
+
+.method <init>(Lcn/domob/android/ads/m$1;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/m$1$1/a Lcn/domob/android/ads/m$1;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public a(Lcn/domob/android/ads/n;)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_1
+  invokevirtual cn/domob/android/ads/n/g()I
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  sipush 200
+  istore_3
+  iload_2
+  iload_3
+  if_icmpne Label0
+  aload_0
+  getfield cn/domob/android/ads/m$1$1/a Lcn/domob/android/ads/m$1;
+  astore 4
+  aload 4
+  getfield cn/domob/android/ads/m$1/c Lcn/domob/android/ads/m;
+  astore 5
+  ldc "Success to report click."
+  astore 6
+  aload 5
+  aload 6
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+Label0:
+  return
+  nop
+.end <method>
+
+.method public a(Lcn/domob/android/ads/n;Ljava/lang/Exception;)V
+.limit locals 3
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+

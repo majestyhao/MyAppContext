@@ -1,0 +1,40 @@
+.source SourceFile
+.class  cn/domob/android/ads/DomobAdView$1$1
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcn/domob/android/ads/DomobAdView$1;
+
+.method <init>(Lcn/domob/android/ads/DomobAdView$1;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/DomobAdView$1$1/a Lcn/domob/android/ads/DomobAdView$1;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$1$1/a Lcn/domob/android/ads/DomobAdView$1;
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/DomobAdView$1/a Lcn/domob/android/ads/DomobAdView;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_3
+  invokevirtual cn/domob/android/ads/g/t()V
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,5 @@
+.source REQUEST_KEY.java
+.interface public interface abstract  MobWin/cnst/REQUEST_KEY
+.super java/lang/Object
+.field public static final "value" Ljava/lang/String; =  "req"
+

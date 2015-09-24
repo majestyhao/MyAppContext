@@ -1,0 +1,322 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/e$3$1
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcom/wiyun/ad/e$3;
+.field private final "b" Lcom/wiyun/ad/a;
+
+.method <init>(Lcom/wiyun/ad/e$3;Lcom/wiyun/ad/a;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/wiyun/ad/e$3$1/a Lcom/wiyun/ad/e$3;
+  aload_0
+  aload_2
+  putfield com/wiyun/ad/e$3$1/b Lcom/wiyun/ad/a;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method static a(Lcom/wiyun/ad/e$3$1;)Lcom/wiyun/ad/e$3;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/e$3$1/a Lcom/wiyun/ad/e$3;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 28
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/e$3$1/b Lcom/wiyun/ad/a;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  new android/widget/LinearLayout
+  astore 5
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/e$3$1/a Lcom/wiyun/ad/e$3;
+  astore 6
+  aload 6
+  invokestatic com/wiyun/ad/e$3/a(Lcom/wiyun/ad/e$3;)Lcom/wiyun/ad/e;
+  astore 7
+  aload 7
+  invokevirtual com/wiyun/ad/e/getContext()Landroid/content/Context;
+  astore 8
+  aload 5
+  aload 8
+  invokespecial android/widget/LinearLayout/<init>(Landroid/content/Context;)V
+  new android/widget/LinearLayout$LayoutParams
+  astore 9
+  iconst_m1
+  istore 10
+  aload 9
+  iload 10
+  iload 4
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  iconst_1
+  istore 10
+  aload 9
+  iload 10
+  putfield android/widget/LinearLayout$LayoutParams/gravity I
+  iconst_0
+  istore 10
+  aload 5
+  iload 10
+  invokevirtual android/widget/LinearLayout/setOrientation(I)V
+  new android/widget/LinearLayout$LayoutParams
+  astore 9
+  bipush -2
+  istore 10
+  bipush -2
+  istore 11
+  aload 9
+  iload 10
+  iload 11
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  iconst_1
+  istore 10
+  aload 9
+  iload 10
+  putfield android/widget/LinearLayout$LayoutParams/gravity I
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/e$3$1/a Lcom/wiyun/ad/e$3;
+  astore 6
+  aload 6
+  invokestatic com/wiyun/ad/e$3/a(Lcom/wiyun/ad/e$3;)Lcom/wiyun/ad/e;
+  astore 7
+  aload 7
+  invokestatic com/wiyun/ad/e/o(Lcom/wiyun/ad/e;)Landroid/widget/LinearLayout;
+  astore 12
+  aload 12
+  aload 5
+  aload 9
+  invokevirtual android/widget/LinearLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  new android/widget/Button
+  astore 13
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/e$3$1/a Lcom/wiyun/ad/e$3;
+  astore 6
+  aload 6
+  invokestatic com/wiyun/ad/e$3/a(Lcom/wiyun/ad/e$3;)Lcom/wiyun/ad/e;
+  astore 7
+  aload 7
+  invokevirtual com/wiyun/ad/e/getContext()Landroid/content/Context;
+  astore 8
+  aload 13
+  aload 8
+  invokespecial android/widget/Button/<init>(Landroid/content/Context;)V
+  aconst_null
+  astore 14
+  new java/io/ByteArrayInputStream
+  astore 15
+  getstatic com/wiyun/ad/d/a [B
+  astore 16
+Label2:
+  aload 15
+  aload 16
+  invokespecial java/io/ByteArrayInputStream/<init>([B)V
+  aconst_null
+  astore 18
+  aload 18
+  astore_1
+  aload 15
+  aload_1
+  invokestatic android/graphics/drawable/Drawable/createFromStream(Ljava/io/InputStream;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+  astore 17
+Label3:
+  aload 17
+  astore 14
+Label0:
+  aload 13
+  aload 14
+  invokevirtual android/widget/Button/setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+  getstatic com/wiyun/ad/e/d Ljava/lang/String;
+  astore 19
+  aload 19
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual android/widget/Button/setText(Ljava/lang/CharSequence;)V
+  new com/wiyun/ad/e$3$1$2
+  astore 20
+  aload 20
+  astore_1
+  aload_0
+  astore_2
+  aload_1
+  aload_2
+  invokespecial com/wiyun/ad/e$3$1$2/<init>(Lcom/wiyun/ad/e$3$1;)V
+  aload 20
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual android/widget/Button/setOnClickListener(Landroid/view/View$OnClickListener;)V
+  new android/widget/LinearLayout$LayoutParams
+  astore 9
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/e$3$1/a Lcom/wiyun/ad/e$3;
+  astore 6
+  aload 6
+  invokestatic com/wiyun/ad/e$3/a(Lcom/wiyun/ad/e$3;)Lcom/wiyun/ad/e;
+  astore 7
+  bipush 120
+  istore 10
+  aload 7
+  iload 10
+  invokestatic com/wiyun/ad/e/a(Lcom/wiyun/ad/e;I)I
+  istore 4
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/e$3$1/a Lcom/wiyun/ad/e$3;
+  astore 6
+  aload 6
+  invokestatic com/wiyun/ad/e$3/a(Lcom/wiyun/ad/e$3;)Lcom/wiyun/ad/e;
+  astore 7
+  bipush 35
+  istore 10
+  aload 7
+  iload 10
+  invokestatic com/wiyun/ad/e/a(Lcom/wiyun/ad/e;I)I
+  istore 21
+  iload 21
+  istore_1
+  aload 9
+  iload 4
+  iload_1
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  bipush 80
+  istore 10
+  aload 9
+  iload 10
+  putfield android/widget/LinearLayout$LayoutParams/gravity I
+  iconst_5
+  istore 10
+  bipush 12
+  istore 11
+  bipush 12
+  istore 22
+  iconst_0
+  istore 23
+  iload 22
+  istore_1
+  iload 23
+  istore_2
+  aload 9
+  iload 10
+  iload 11
+  iload_1
+  iload_2
+  invokevirtual android/widget/LinearLayout$LayoutParams/setMargins(IIII)V
+  aload 5
+  aload 13
+  aload 9
+  invokevirtual android/widget/LinearLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  new android/widget/Button
+  astore 13
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/e$3$1/a Lcom/wiyun/ad/e$3;
+  astore 6
+  aload 6
+  invokestatic com/wiyun/ad/e$3/a(Lcom/wiyun/ad/e$3;)Lcom/wiyun/ad/e;
+  astore 7
+  aload 7
+  invokevirtual com/wiyun/ad/e/getContext()Landroid/content/Context;
+  astore 8
+  aload 13
+  aload 8
+  invokespecial android/widget/Button/<init>(Landroid/content/Context;)V
+  aload 13
+  aload 14
+  invokevirtual android/widget/Button/setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+  getstatic com/wiyun/ad/e/c Ljava/lang/String;
+  astore 19
+  aload 19
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual android/widget/Button/setText(Ljava/lang/CharSequence;)V
+  new com/wiyun/ad/e$3$1$1
+  astore 24
+  aload 24
+  astore_1
+  aload_0
+  astore_2
+  aload_1
+  aload_2
+  invokespecial com/wiyun/ad/e$3$1$1/<init>(Lcom/wiyun/ad/e$3$1;)V
+  aload 24
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual android/widget/Button/setOnClickListener(Landroid/view/View$OnClickListener;)V
+  bipush 12
+  istore 10
+  iconst_5
+  istore 11
+  bipush 12
+  istore 22
+  iconst_0
+  istore 23
+  iload 22
+  istore_1
+  iload 23
+  istore_2
+  aload 9
+  iload 10
+  iload 11
+  iload_1
+  iload_2
+  invokevirtual android/widget/LinearLayout$LayoutParams/setMargins(IIII)V
+  aload 5
+  aload 13
+  aload 9
+  invokevirtual android/widget/LinearLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  return
+Label1:
+  astore 25
+  aload 25
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/toString()Ljava/lang/String;
+  astore 26
+  ldc "WiYun"
+  astore 27
+  aload 27
+  astore_1
+  aload 26
+  astore_2
+  aload_1
+  aload_2
+  invokestatic com/wiyun/ad/s/a(Ljava/lang/String;Ljava/lang/String;)V
+  goto Label0
+  nop
+.end <method>
+

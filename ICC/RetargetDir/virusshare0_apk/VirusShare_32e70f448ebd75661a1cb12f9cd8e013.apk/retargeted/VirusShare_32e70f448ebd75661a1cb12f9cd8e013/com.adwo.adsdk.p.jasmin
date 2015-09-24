@@ -1,0 +1,6353 @@
+.source SourceFile
+.class public final  com/adwo/adsdk/p
+.super java/lang/Object
+.field private static "A" Ljava/lang/String;
+.field private static "B" I =  0
+.field protected static "a" [B
+.field protected static "b" Ljava/lang/String;
+.field protected static "c" I =  0
+.field protected static "d" I =  0
+.field protected static "e" I =  0
+.field protected static "f" I =  0
+.field protected static volatile "g" I =  0
+.field protected static "h" Ljava/util/Set;
+.field private static "i" Landroid/telephony/TelephonyManager;
+.field private static "j" Z =  0
+.field private static "k" [B
+.field private static "l" Ljava/lang/String;
+.field private static "m" Ljava/lang/String;
+.field private static "n" Landroid/content/Context;
+.field private static "o" B =  0
+.field private static "p" B =  0
+.field private static "q" [B
+.field private static "r" [B
+.field private static "s" B =  0
+.field private static "t" S =  0
+.field private static "u" [B
+.field private static "v" B =  0
+.field private static "w" B =  0
+.field private static "x" B =  0
+.field private static "y" Ljava/lang/String;
+.field private static "z" [B
+
+.method static <clinit>()V
+.limit locals 7
+.limit stack 200
+  nop
+  iconst_0
+  istore_0
+  iload_0
+  putstatic com/adwo/adsdk/p/j Z
+  aconst_null
+  astore_1
+  aload_1
+  putstatic com/adwo/adsdk/p/a [B
+  aconst_null
+  astore_1
+  aload_1
+  putstatic com/adwo/adsdk/p/k [B
+  aconst_null
+  astore_1
+  aload_1
+  putstatic com/adwo/adsdk/p/b Ljava/lang/String;
+  iconst_1
+  istore_0
+  iload_0
+  putstatic com/adwo/adsdk/p/c I
+  iconst_2
+  istore_0
+  iload_0
+  putstatic com/adwo/adsdk/p/d I
+  iconst_3
+  istore_0
+  iload_0
+  putstatic com/adwo/adsdk/p/e I
+  iconst_4
+  istore_0
+  iload_0
+  putstatic com/adwo/adsdk/p/f I
+  iconst_1
+  istore_0
+  iload_0
+  putstatic com/adwo/adsdk/p/g I
+  aconst_null
+  astore_1
+  aload_1
+  putstatic com/adwo/adsdk/p/m Ljava/lang/String;
+  aconst_null
+  astore_1
+  aload_1
+  putstatic com/adwo/adsdk/p/n Landroid/content/Context;
+  iconst_0
+  istore_0
+  iload_0
+  i2b
+  istore_2
+  iload_2
+  putstatic com/adwo/adsdk/p/o B
+  iconst_0
+  istore_0
+  iload_0
+  i2b
+  istore_2
+  iload_2
+  putstatic com/adwo/adsdk/p/p B
+  aconst_null
+  astore_1
+  aload_1
+  putstatic com/adwo/adsdk/p/q [B
+  aconst_null
+  astore_1
+  aload_1
+  putstatic com/adwo/adsdk/p/r [B
+  iconst_0
+  istore_0
+  iload_0
+  i2b
+  istore_2
+  iload_2
+  putstatic com/adwo/adsdk/p/s B
+  iconst_0
+  istore_0
+  iload_0
+  i2s
+  istore_3
+  iload_3
+  putstatic com/adwo/adsdk/p/t S
+  aconst_null
+  astore_1
+  aload_1
+  putstatic com/adwo/adsdk/p/u [B
+  iconst_2
+  istore_0
+  iload_0
+  putstatic com/adwo/adsdk/p/v B
+  iconst_5
+  istore_0
+  iload_0
+  putstatic com/adwo/adsdk/p/w B
+  bipush 50
+  istore_0
+  iload_0
+  putstatic com/adwo/adsdk/p/x B
+  ldc ""
+  astore 4
+  aload 4
+  putstatic com/adwo/adsdk/p/y Ljava/lang/String;
+  new java/util/HashSet
+  astore 5
+  aload 5
+  invokespecial java/util/HashSet/<init>()V
+  aload 5
+  putstatic com/adwo/adsdk/p/h Ljava/util/Set;
+  aconst_null
+  astore_1
+  aload_1
+  putstatic com/adwo/adsdk/p/z [B
+  aconst_null
+  astore_1
+  aload_1
+  putstatic com/adwo/adsdk/p/A Ljava/lang/String;
+  iconst_0
+  istore_0
+  iload_0
+  istore 6
+  iload 6
+  putstatic com/adwo/adsdk/p/B I
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method protected static a(II)B
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  sipush 1024
+  istore_2
+  iload_0
+  iload_2
+  if_icmplt Label0
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 768
+  istore_2
+  iload_1
+  iload_2
+  if_icmpge Label1
+Label0:
+  bipush 6
+  istore_2
+  iload_2
+  ireturn
+Label1:
+  bipush 9
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method protected static a(Landroid/content/Context;BB)Lcom/adwo/adsdk/k;
+.limit locals 101
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label33 <to> Label34 <using> Label32
+  .catch  java/lang/Throwable <from> Label0 <to> Label35 <using> Label32
+  .catch  java/lang/Throwable <from> Label45 <to> Label5 <using> Label32
+  .catch  java/lang/Throwable <from> Label1 <to> Label46 <using> Label32
+  .catch  java/lang/Throwable <from> Label52 <to> Label53 <using> Label32
+  .catch  java/lang/Throwable <from> Label61 <to> Label18 <using> Label32
+  .catch  java/lang/Throwable <from> Label18 <to> Label32 <using> Label32
+  .catch  java/lang/Throwable <from> Label79 <to> Label80 <using> Label32
+  nop
+  ldc com/adwo/adsdk/p
+  astore 31
+  aload 31
+  monitorenter
+Label33:
+  ldc "android.permission.INTERNET"
+  astore 33
+  aload_0
+  astore_3
+  aload 33
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  dload 32
+  dstore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 34
+  iload 32
+  istore_3
+  iload 34
+  istore 4
+  iload_3
+  iload 4
+  if_icmpne Label0
+  ldc "Adwo SDK"
+  astore 33
+  ldc "Cannot request an ad without INTERNET permissions!  Open manifest.xml and just before the final </manifest> tag add:  <uses-permission android:name=\"android.permission.INTERNET\" />"
+  astore 35
+  aload 33
+  astore_3
+  aload 35
+  astore 4
+  aload_3
+  aload 4
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label34:
+  aconst_null
+  astore 36
+Label6:
+  ldc com/adwo/adsdk/p
+  astore 31
+  aload 31
+  monitorexit
+  aload 36
+  areturn
+Label0:
+  getstatic com/adwo/adsdk/p/j Z
+  istore 37
+  getstatic com/adwo/adsdk/p/h Ljava/util/Set;
+  astore 38
+  aload 38
+  astore_3
+  aload_3
+  invokeinterface java/util/Set/size()I 1
+  istore 32
+  iload 32
+  istore_3
+  iload_3
+  i2s
+  istore_3
+  iload_3
+  istore 39
+  iload_3
+  anewarray java/lang/Integer
+  astore_3
+  aload_3
+  astore 40
+  getstatic com/adwo/adsdk/p/h Ljava/util/Set;
+  astore 38
+  aload 38
+  astore_3
+  aload_3
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore 41
+  iconst_0
+  istore 32
+Label7:
+  aload 41
+  astore_3
+  aload_3
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 42
+  iload 42
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 42
+  ifne Label1
+  getstatic com/adwo/adsdk/p/w B
+  istore 43
+  getstatic com/adwo/adsdk/p/x B
+  istore 44
+  getstatic com/adwo/adsdk/p/s B
+  istore 45
+  getstatic com/adwo/adsdk/p/v B
+  istore_2
+  getstatic com/adwo/adsdk/p/a [B
+  astore 46
+  getstatic com/adwo/adsdk/p/k [B
+  astore 47
+  getstatic com/adwo/adsdk/p/q [B
+  astore 48
+  getstatic com/adwo/adsdk/p/r [B
+  astore 49
+  getstatic com/adwo/adsdk/p/B I
+  istore 32
+  iload 32
+  istore_3
+  iload_3
+  i2s
+  istore_3
+  iload_3
+  istore 50
+  getstatic com/adwo/adsdk/p/o B
+  istore 51
+  getstatic com/adwo/adsdk/p/p B
+  istore 52
+  getstatic com/adwo/adsdk/p/z [B
+  astore 53
+  getstatic com/adwo/adsdk/p/u [B
+  astore 54
+  getstatic com/adwo/adsdk/p/t S
+  istore 55
+  iconst_0
+  istore 34
+  iconst_0
+  istore 56
+  iconst_0
+  istore 57
+  iconst_0
+  istore 58
+  iconst_0
+  istore 59
+  ldc2_w 0.000000000000000
+  dstore 60
+  ldc2_w 0.000000000000000
+  dstore 62
+  iconst_0
+  istore 64
+  iload 43
+  istore_3
+  iload 44
+  istore 4
+  iload 45
+  istore 5
+  iload_1
+  istore 6
+  iload_2
+  istore 7
+  iload 37
+  istore 8
+  aload 46
+  astore 9
+  iload 34
+  istore 10
+  iload 56
+  istore 11
+  aload 47
+  astore 12
+  aload 48
+  astore 13
+  aload 49
+  astore 14
+  iload 57
+  istore 15
+  iload 58
+  istore 16
+  iload 50
+  istore 17
+  iload 51
+  istore 18
+  iload 52
+  istore 19
+  aload 53
+  astore 20
+  aload 54
+  astore 21
+  iload 59
+  istore 22
+  dload 60
+  dstore 23
+  dload 62
+  dstore 25
+  iload 64
+  istore 27
+  iload 39
+  istore 28
+  aload 40
+  astore 29
+  iload 55
+  istore 30
+  iload_3
+  iload 4
+  iload 5
+  iload 6
+  iload 7
+  iload 8
+  aload 9
+  iload 10
+  iload 11
+  aload 12
+  aload 13
+  aload 14
+  iload 15
+  iload 16
+  iload 17
+  iload 18
+  iload 19
+  aload 20
+  aload 21
+  iload 22
+  dload 23
+  dload 25
+  iload 27
+  iload 28
+  aload 29
+  iload 30
+  invokestatic com/adwo/adsdk/X/a(BBBBBZ[BBS[B[B[BSSSBB[B[BZDDBS[Ljava/lang/Integer;S)[B
+  astore 54
+  aconst_null
+  astore 65
+  aconst_null
+  astore 66
+  aconst_null
+  astore 67
+  getstatic com/adwo/adsdk/p/c I
+  istore 32
+  iload 32
+  putstatic com/adwo/adsdk/p/g I
+Label35:
+  getstatic com/adwo/adsdk/p/g I
+  istore 32
+  getstatic com/adwo/adsdk/p/c I
+  istore 68
+  iload 32
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 68
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 32
+  istore_3
+  iload 68
+  istore 4
+  iload_3
+  iload 4
+  if_icmpne Label2
+  getstatic com/adwo/adsdk/p/j Z
+  istore 42
+  iload 42
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 42
+  ifeq Label3
+  new java/net/URL
+  astore 69
+  new java/lang/String
+  astore 70
+  getstatic com/adwo/adsdk/Y/f [B
+  astore 53
+Label38:
+  ldc "UTF-8"
+  astore 33
+  aload 70
+  astore_3
+  aload 53
+  astore 4
+  aload 33
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+  aload 69
+  astore_3
+  aload 70
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/net/URL/<init>(Ljava/lang/String;)V
+Label8:
+  aload 69
+  astore_3
+  aload_3
+  invokevirtual java/net/URL/openConnection()Ljava/net/URLConnection;
+  astore 71
+  aload 71
+  astore 73
+  aload 73
+  checkcast java/net/HttpURLConnection
+  astore 73
+  aload 73
+  astore 72
+Label39:
+  getstatic com/adwo/adsdk/Y/a I
+  istore 68
+Label42:
+  aload 72
+  astore_3
+  iload 68
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual java/net/HttpURLConnection/setConnectTimeout(I)V
+  getstatic com/adwo/adsdk/Y/a I
+  istore 68
+  aload 72
+  astore_3
+  iload 68
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual java/net/HttpURLConnection/setReadTimeout(I)V
+Label43:
+  aload 72
+  astore 67
+Label14:
+  aload 67
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 67
+  ifnonnull Label4
+  aload 67
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 67
+  ifnull Label5
+Label45:
+  aload 67
+  astore_3
+  aload_3
+  invokevirtual java/net/HttpURLConnection/disconnect()V
+Label5:
+  aconst_null
+  astore 36
+  goto Label6
+Label1:
+  aload 41
+  astore_3
+  aload_3
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 74
+  aload 74
+  astore 76
+  aload 76
+  checkcast java/lang/Integer
+  astore 76
+  aload 76
+  astore 75
+  aload 75
+  astore_3
+  aload_3
+  invokevirtual java/lang/Integer/intValue()I
+  istore 68
+  iload 68
+  istore_3
+  iload_3
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 75
+  aload 40
+  iload 32
+  aload 75
+  aastore
+Label46:
+  iload 32
+  iconst_1
+  iadd
+  istore 32
+  goto Label7
+Label3:
+  new java/net/URL
+  astore 69
+  new java/lang/String
+  astore 70
+  getstatic com/adwo/adsdk/Y/c [B
+  astore 53
+Label47:
+  ldc "UTF-8"
+  astore 33
+  aload 70
+  astore_3
+  aload 53
+  astore 4
+  aload 33
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+  aload 69
+  astore_3
+  aload 70
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/net/URL/<init>(Ljava/lang/String;)V
+Label48:
+  goto Label8
+Label37:
+  astore 77
+  aconst_null
+  astore 78
+  aconst_null
+  astore 79
+  aconst_null
+  astore 72
+  aload 77
+  astore 80
+  aconst_null
+  astore 36
+Label28:
+  aload 80
+  astore_3
+  aload_3
+  invokevirtual java/lang/Exception/printStackTrace()V
+  ldc "Adwo SDK"
+  astore 33
+  ldc "Could not get ad from Adwo servers,Network Error!"
+  astore 35
+  aload 33
+  astore_3
+  aload 35
+  astore 4
+  aload_3
+  aload 4
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label50:
+  aload 78
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 78
+  ifnull Label9
+Label52:
+  aload 78
+  astore_3
+  aload_3
+  invokevirtual java/io/OutputStream/close()V
+Label9:
+  aload 79
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 79
+  ifnull Label10
+  aload 79
+  astore_3
+  aload_3
+  invokevirtual java/io/InputStream/close()V
+Label10:
+  aload 72
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 72
+  ifnull Label6
+  aload 72
+  astore_3
+  aload_3
+  invokevirtual java/net/HttpURLConnection/disconnect()V
+Label53:
+  goto Label6
+Label51:
+  astore 81
+  goto Label6
+Label2:
+  getstatic com/adwo/adsdk/p/g I
+  istore 68
+  getstatic com/adwo/adsdk/p/d I
+  istore 32
+  iload 68
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 32
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 68
+  istore_3
+  iload 32
+  istore 4
+  iload_3
+  iload 4
+  if_icmpeq Label11
+  getstatic com/adwo/adsdk/p/g I
+  istore 68
+  getstatic com/adwo/adsdk/p/e I
+  istore 32
+  iload 68
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 32
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 68
+  istore_3
+  iload 32
+  istore 4
+  iload_3
+  iload 4
+  if_icmpne Label12
+Label11:
+  getstatic com/adwo/adsdk/p/j Z
+  istore 42
+  iload 42
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 42
+  ifeq Label13
+  new java/net/URL
+  astore 69
+  new java/lang/String
+  astore 70
+  getstatic com/adwo/adsdk/Y/h [B
+  astore 53
+Label54:
+  ldc "utf-8"
+  astore 33
+  aload 70
+  astore_3
+  aload 53
+  astore 4
+  aload 33
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+  aload 69
+  astore_3
+  aload 70
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/net/URL/<init>(Ljava/lang/String;)V
+Label15:
+  aload 69
+  astore_3
+  aload_3
+  invokevirtual java/net/URL/openConnection()Ljava/net/URLConnection;
+  astore 71
+  aload 71
+  astore 82
+  aload 82
+  checkcast java/net/HttpURLConnection
+  astore 82
+  aload 82
+  astore 72
+Label55:
+  new java/lang/String
+  astore 83
+  getstatic com/adwo/adsdk/Y/g [B
+  astore 53
+Label56:
+  ldc "utf-8"
+  astore 33
+  aload 83
+  astore_3
+  aload 53
+  astore 4
+  aload 33
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+  ldc "X-Online-Host"
+  astore 33
+  aload 72
+  astore_3
+  aload 33
+  astore 4
+  aload 83
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual java/net/HttpURLConnection/setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+  getstatic com/adwo/adsdk/Y/a I
+  istore 68
+  iload 68
+  iconst_2
+  imul
+  istore 68
+  aload 72
+  astore_3
+  iload 68
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual java/net/HttpURLConnection/setConnectTimeout(I)V
+  getstatic com/adwo/adsdk/Y/a I
+  istore 68
+  iload 68
+  iconst_2
+  imul
+  istore 68
+  aload 72
+  astore_3
+  iload 68
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual java/net/HttpURLConnection/setReadTimeout(I)V
+Label57:
+  aload 72
+  astore 67
+  goto Label14
+Label13:
+  new java/net/URL
+  astore 69
+  new java/lang/String
+  astore 84
+  getstatic com/adwo/adsdk/Y/i [B
+  astore 53
+Label58:
+  ldc "utf-8"
+  astore 33
+  aload 84
+  astore_3
+  aload 53
+  astore 4
+  aload 33
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+  aload 69
+  astore_3
+  aload 84
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/net/URL/<init>(Ljava/lang/String;)V
+Label59:
+  goto Label15
+Label36:
+  astore 85
+Label31:
+  aload 65
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 65
+  ifnull Label16
+Label61:
+  aload 65
+  astore_3
+  aload_3
+  invokevirtual java/io/OutputStream/close()V
+Label16:
+  aload 66
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 66
+  ifnull Label17
+  aload 66
+  astore_3
+  aload_3
+  invokevirtual java/io/InputStream/close()V
+Label17:
+  aload 67
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 67
+  ifnull Label18
+  aload 67
+  astore_3
+  aload_3
+  invokevirtual java/net/HttpURLConnection/disconnect()V
+Label18:
+  aload 85
+  athrow
+Label32:
+  astore 86
+  ldc com/adwo/adsdk/p
+  astore 31
+  aload 31
+  monitorexit
+  aload 86
+  athrow
+Label12:
+  getstatic com/adwo/adsdk/p/g I
+  istore 68
+  getstatic com/adwo/adsdk/p/f I
+  istore 32
+  iload 68
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 32
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 68
+  istore_3
+  iload 32
+  istore 4
+  iload_3
+  iload 4
+  if_icmpne Label14
+  getstatic com/adwo/adsdk/p/j Z
+  istore 42
+  iload 42
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 42
+  ifeq Label19
+  new java/net/URL
+  astore 69
+  new java/lang/String
+  astore 84
+  getstatic com/adwo/adsdk/Y/f [B
+  astore 53
+Label62:
+  ldc "UTF-8"
+  astore 33
+  aload 84
+  astore_3
+  aload 53
+  astore 4
+  aload 33
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+  aload 69
+  astore_3
+  aload 84
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/net/URL/<init>(Ljava/lang/String;)V
+Label20:
+  new java/net/Proxy
+  astore 87
+  getstatic java/net/Proxy$Type/HTTP Ljava/net/Proxy$Type;
+  astore 88
+  new java/net/InetSocketAddress
+  astore 89
+  new java/lang/String
+  astore 84
+  getstatic com/adwo/adsdk/Y/j [B
+  astore 53
+  ldc "utf-8"
+  astore 33
+  aload 84
+  astore_3
+  aload 53
+  astore 4
+  aload 33
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+  bipush 80
+  istore 34
+  aload 89
+  astore_3
+  aload 84
+  astore 4
+  iload 34
+  istore 5
+  aload_3
+  aload 4
+  iload 5
+  invokespecial java/net/InetSocketAddress/<init>(Ljava/lang/String;I)V
+  aload 87
+  astore_3
+  aload 88
+  astore 4
+  aload 89
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokespecial java/net/Proxy/<init>(Ljava/net/Proxy$Type;Ljava/net/SocketAddress;)V
+  aload 69
+  astore_3
+  aload 87
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/net/URL/openConnection(Ljava/net/Proxy;)Ljava/net/URLConnection;
+  astore 71
+  aload 71
+  astore 90
+  aload 90
+  checkcast java/net/HttpURLConnection
+  astore 90
+  aload 90
+  astore 72
+Label63:
+  getstatic com/adwo/adsdk/Y/a I
+  istore 68
+  iload 68
+  iconst_2
+  imul
+  istore 68
+Label64:
+  aload 72
+  astore_3
+  iload 68
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual java/net/HttpURLConnection/setConnectTimeout(I)V
+  getstatic com/adwo/adsdk/Y/a I
+  istore 68
+  iload 68
+  iconst_2
+  imul
+  istore 68
+  aload 72
+  astore_3
+  iload 68
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual java/net/HttpURLConnection/setReadTimeout(I)V
+Label65:
+  aload 72
+  astore 67
+  goto Label14
+Label19:
+  new java/net/URL
+  astore 69
+  new java/lang/String
+  astore 84
+  getstatic com/adwo/adsdk/Y/c [B
+  astore 53
+Label66:
+  ldc "UTF-8"
+  astore 33
+  aload 84
+  astore_3
+  aload 53
+  astore 4
+  aload 33
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+  aload 69
+  astore_3
+  aload 84
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/net/URL/<init>(Ljava/lang/String;)V
+Label67:
+  goto Label20
+Label4:
+  ldc "POST"
+  astore 33
+  aload 67
+  astore_3
+  aload 33
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/net/HttpURLConnection/setRequestMethod(Ljava/lang/String;)V
+  iconst_1
+  istore 34
+  aload 67
+  astore_3
+  iload 34
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual java/net/HttpURLConnection/setDoOutput(Z)V
+  ldc "Content-Type"
+  astore 33
+  ldc "application/x-www-form-urlencoded"
+  astore 35
+  aload 67
+  astore_3
+  aload 33
+  astore 4
+  aload 35
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual java/net/HttpURLConnection/setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+  getstatic com/adwo/adsdk/p/j Z
+  istore 42
+  iload 42
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 42
+  ifeq Label21
+  aload 54
+  astore_3
+  aload_3
+  arraylength
+  istore_3
+  iload_3
+  istore 68
+  iload_3
+  invokestatic java/lang/Integer/toString(I)Ljava/lang/String;
+  astore 70
+  ldc "Content-Length"
+  astore 33
+  aload 67
+  astore_3
+  aload 33
+  astore 4
+  aload 70
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual java/net/HttpURLConnection/setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+Label27:
+  aload 67
+  astore_3
+  aload_3
+  invokevirtual java/net/HttpURLConnection/getOutputStream()Ljava/io/OutputStream;
+  astore 78
+Label69:
+  aload 78
+  astore 65
+  getstatic com/adwo/adsdk/p/j Z
+  istore 42
+Label71:
+  aload 78
+  astore_3
+  aload 54
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/io/OutputStream/write([B)V
+  aload 67
+  astore_3
+  aload_3
+  invokevirtual java/net/HttpURLConnection/getInputStream()Ljava/io/InputStream;
+  astore 79
+Label72:
+  aload 79
+  astore 66
+  new java/io/ByteArrayOutputStream
+  astore 91
+Label74:
+  aload 91
+  astore_3
+  aload_3
+  invokespecial java/io/ByteArrayOutputStream/<init>()V
+Label29:
+  aload 66
+  astore_3
+  aload_3
+  invokevirtual java/io/InputStream/read()I
+  istore 68
+  iload 68
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 34
+  iload 68
+  istore_3
+  iload 34
+  istore 4
+  iload_3
+  iload 4
+  if_icmpne Label22
+  aload 91
+  astore_3
+  aload_3
+  invokevirtual java/io/ByteArrayOutputStream/toByteArray()[B
+  astore 54
+  aload 54
+  astore_3
+  aload_3
+  arraylength
+  istore_3
+  iload_3
+  istore 68
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 68
+  ifle Label23
+  aload_0
+  astore_3
+  aload 54
+  astore 4
+  aload_3
+  aload 4
+  invokestatic com/adwo/adsdk/k/a(Landroid/content/Context;[B)Lcom/adwo/adsdk/k;
+  astore 36
+Label75:
+  aload 36
+  astore_3
+  aload_3
+  getfield com/adwo/adsdk/k/c Lcom/adwo/adsdk/ErrorCode;
+  astore_3
+  aload_3
+  astore 92
+Label77:
+  aload 92
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 92
+  ifnonnull Label24
+  getstatic com/adwo/adsdk/p/t S
+  istore 55
+  iload 55
+  iconst_1
+  iadd
+  istore 68
+  iload 68
+  istore_3
+  iload_3
+  i2s
+  istore_3
+  iload_3
+  istore 55
+  iload 55
+  putstatic com/adwo/adsdk/p/t S
+Label30:
+  aload 65
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 65
+  ifnull Label25
+Label79:
+  aload 65
+  astore_3
+  aload_3
+  invokevirtual java/io/OutputStream/close()V
+Label25:
+  aload 66
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 66
+  ifnull Label26
+  aload 66
+  astore_3
+  aload_3
+  invokevirtual java/io/InputStream/close()V
+Label26:
+  aload 67
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 67
+  ifnull Label6
+  aload 67
+  astore_3
+  aload_3
+  invokevirtual java/net/HttpURLConnection/disconnect()V
+Label80:
+  goto Label6
+Label78:
+  astore 93
+  goto Label6
+Label21:
+  aload 54
+  astore_3
+  aload_3
+  arraylength
+  istore_3
+  iload_3
+  istore 68
+  iload_3
+  invokestatic java/lang/Integer/toString(I)Ljava/lang/String;
+  astore 70
+  ldc "Content-Length"
+  astore 33
+  aload 67
+  astore_3
+  aload 33
+  astore 4
+  aload 70
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual java/net/HttpURLConnection/setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+Label81:
+  goto Label27
+Label68:
+  astore 94
+  aconst_null
+  astore 78
+  aconst_null
+  astore 79
+  aload 67
+  astore 72
+  aload 94
+  astore 80
+  aconst_null
+  astore 36
+  goto Label28
+Label22:
+  aload 91
+  astore_3
+  iload 68
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual java/io/ByteArrayOutputStream/write(I)V
+  goto Label29
+Label73:
+  astore 95
+  aload 65
+  astore 78
+  aload 66
+  astore 79
+  aload 67
+  astore 72
+  aload 95
+  astore 80
+  aconst_null
+  astore 36
+  goto Label28
+Label23:
+  ldc "Adwo SDK"
+  astore 33
+  ldc "Could not get ad from Adwo servers."
+  astore 35
+  aload 33
+  astore_3
+  aload 35
+  astore 4
+  aload_3
+  aload 4
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label82:
+  aconst_null
+  astore 36
+  goto Label30
+Label44:
+  astore 96
+  goto Label5
+Label60:
+  astore 97
+  goto Label18
+Label40:
+  astore 98
+  aload 72
+  astore 67
+  aload 98
+  astore 85
+  goto Label31
+Label49:
+  astore 85
+  aload 72
+  astore 67
+  aload 79
+  astore 66
+  aload 78
+  astore 65
+  goto Label31
+Label41:
+  astore 80
+  aconst_null
+  astore 78
+  aconst_null
+  astore 79
+  aconst_null
+  astore 36
+  goto Label28
+Label70:
+  astore 99
+  aload 65
+  astore 78
+  aconst_null
+  astore 79
+  aload 67
+  astore 72
+  aload 99
+  astore 80
+  aconst_null
+  astore 36
+  goto Label28
+Label76:
+  astore 100
+  aload 65
+  astore 78
+  aload 66
+  astore 79
+  aload 67
+  astore 72
+  aload 100
+  astore 80
+  goto Label28
+Label24:
+  goto Label30
+  nop
+.end <method>
+
+.method protected static a(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 11
+.limit stack 200
+  .catch  java/lang/Exception <from> Label2 <to> Label3 <using> Label1
+  nop
+  iconst_0
+  istore_1
+Label2:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_0
+  invokevirtual android/content/Context/getPackageName()Ljava/lang/String;
+  astore_3
+  sipush 128
+  istore 5
+  aload_2
+  aload_3
+  iload 5
+  invokevirtual android/content/pm/PackageManager/getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label0
+  aload 4
+  getfield android/content/pm/PackageItemInfo/metaData Landroid/os/Bundle;
+  astore 6
+  ldc "Adwo_PID"
+  astore 7
+  aload 6
+  aload 7
+  invokevirtual android/os/Bundle/getString(Ljava/lang/String;)Ljava/lang/String;
+  astore_3
+Label3:
+  aload_3
+  astore_1
+Label0:
+  aload_1
+  areturn
+Label1:
+  astore 8
+  ldc "Adwo SDK"
+  astore 7
+  ldc "Could not read Adwo_PID meta-data from AndroidManifest.xml."
+  astore 9
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aconst_null
+  astore 10
+  aload 10
+  areturn
+  nop
+.end <method>
+
+.method protected static a(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  ldc "Adwo SDK"
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method protected static a(Z)V
+.limit locals 1
+.limit stack 200
+  nop
+  iload_0
+  putstatic com/adwo/adsdk/p/j Z
+  return
+  nop
+.end <method>
+
+.method private static a()[B
+.limit locals 6
+.limit stack 200
+  nop
+  getstatic com/adwo/adsdk/p/i Landroid/telephony/TelephonyManager;
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  getstatic com/adwo/adsdk/p/i Landroid/telephony/TelephonyManager;
+  astore_0
+  aload_0
+  invokevirtual android/telephony/TelephonyManager/getLine1Number()Ljava/lang/String;
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_1
+  ifnull Label0
+Label2:
+  ldc "UTF-8"
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore_2
+  aload_2
+  putstatic com/adwo/adsdk/p/z [B
+  ldc "UTF-8"
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore_2
+Label3:
+  aload_2
+  areturn
+Label1:
+  astore 4
+Label0:
+  aconst_null
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method protected static b(Landroid/content/Context;)V
+.limit locals 41
+.limit stack 200
+  nop
+  aload_0
+  putstatic com/adwo/adsdk/p/n Landroid/content/Context;
+  ldc "phone"
+  astore 4
+  aload_0
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_3
+  astore 6
+  aload 6
+  checkcast android/telephony/TelephonyManager
+  astore 6
+  aload 6
+  astore 5
+  aload 5
+  putstatic com/adwo/adsdk/p/i Landroid/telephony/TelephonyManager;
+  aload_0
+  astore_1
+  aload_1
+  invokestatic com/adwo/adsdk/p/c(Landroid/content/Context;)[B
+  pop
+  invokestatic android/os/Environment/getExternalStorageState()Ljava/lang/String;
+  astore 7
+  ldc "mounted"
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label0
+  iconst_1
+  dstore 9
+Label187:
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual android/content/Context/getResources()Landroid/content/res/Resources;
+  astore 10
+  aload 10
+  invokevirtual android/content/res/Resources/getConfiguration()Landroid/content/res/Configuration;
+  astore 11
+  aload 11
+  getfield android/content/res/Configuration/locale Ljava/util/Locale;
+  astore 12
+  aload 12
+  invokevirtual java/util/Locale/getLanguage()Ljava/lang/String;
+  astore 7
+  ldc "en"
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/String/contains(Ljava/lang/CharSequence;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label1
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifeq Label2
+  bipush 18
+  istore 9
+Label15:
+  iload 9
+  putstatic com/adwo/adsdk/p/v B
+  getstatic com/adwo/adsdk/p/m Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnonnull Label3
+  getstatic com/adwo/adsdk/p/i Landroid/telephony/TelephonyManager;
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  ifnull Label4
+  getstatic com/adwo/adsdk/p/i Landroid/telephony/TelephonyManager;
+  astore 5
+  aload 5
+  invokevirtual android/telephony/TelephonyManager/getSimSerialNumber()Ljava/lang/String;
+  astore 7
+  aload 7
+  putstatic com/adwo/adsdk/p/l Ljava/lang/String;
+Label35:
+  aload 7
+  putstatic com/adwo/adsdk/p/m Ljava/lang/String;
+Label3:
+  getstatic com/adwo/adsdk/p/z [B
+  astore 13
+  aload 13
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 13
+  ifnonnull Label5
+  invokestatic com/adwo/adsdk/p/a()[B
+  pop
+Label5:
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual android/content/Context/getPackageName()Ljava/lang/String;
+  astore 7
+Label189:
+  ldc "UTF-8"
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 13
+Label190:
+  aload 13
+  putstatic com/adwo/adsdk/p/u [B
+Label36:
+  aload_0
+  astore_1
+  aload_1
+  invokestatic com/adwo/adsdk/p/d(Landroid/content/Context;)Ljava/lang/String;
+  pop
+  invokestatic java/lang/System/getProperties()Ljava/util/Properties;
+  astore 14
+  ldc "os.version"
+  astore 4
+  aload 14
+  aload 4
+  invokevirtual java/util/Properties/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore_3
+  aload_3
+  astore 15
+  aload 15
+  checkcast java/lang/String
+  astore 15
+  aload 15
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label6
+  aload 7
+  invokevirtual java/lang/String/length()I
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_3
+  istore 17
+  iload 17
+  istore_1
+  iload 16
+  iload_1
+  if_icmplt Label6
+  iconst_0
+  istore 17
+  iconst_3
+  istore 18
+  iload 17
+  istore_1
+  iload 18
+  istore_2
+  aload 7
+  iload_1
+  iload_2
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 7
+Label192:
+  aload 7
+  invokestatic java/lang/Double/parseDouble(Ljava/lang/String;)D
+  dstore 19
+Label193:
+  ldc2_w 10.000000000000000
+  dstore 23
+  dload 23
+  dload 19
+  dmul
+  dstore 21
+  dload 21
+  dstore_1
+  dload_1
+  d2i
+  istore 16
+  iload 16
+  i2b
+  istore 9
+  iload 9
+  putstatic com/adwo/adsdk/p/s B
+Label6:
+  ldc android/os/Build
+  astore 25
+  getstatic android/os/Build/MODEL Ljava/lang/String;
+  astore 7
+Label199:
+  aload 7
+  invokevirtual java/lang/String/toLowerCase()Ljava/lang/String;
+  astore 7
+  ldc "UTF-8"
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 13
+  aload 13
+  putstatic com/adwo/adsdk/p/r [B
+  ldc "MANUFACTURER"
+  astore 4
+  aload 25
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/Class/getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+  astore 26
+  new android/os/Build
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokespecial android/os/Build/<init>()V
+  aload 26
+  astore_1
+  aload 27
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/reflect/Field/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore_3
+  aload_3
+  astore 28
+  aload 28
+  checkcast java/lang/String
+  astore 28
+  aload 28
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label7
+  aload 7
+  invokevirtual java/lang/String/length()I
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 16
+  ifle Label7
+  aload 7
+  invokevirtual java/lang/String/toLowerCase()Ljava/lang/String;
+  astore 7
+  ldc "UTF-8"
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 13
+Label200:
+  aload 13
+  putstatic com/adwo/adsdk/p/q [B
+Label7:
+  getstatic com/adwo/adsdk/p/i Landroid/telephony/TelephonyManager;
+  astore 5
+Label202:
+  aload 5
+  invokevirtual android/telephony/TelephonyManager/getNetworkOperator()Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label8
+  aload 7
+  invokevirtual java/lang/String/length()I
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_4
+  istore 17
+  iload 17
+  istore_1
+  iload 16
+  iload_1
+  if_icmplt Label8
+  iconst_0
+  istore 17
+  iconst_3
+  istore 18
+  iload 17
+  istore_1
+  iload 18
+  istore_2
+  aload 7
+  iload_1
+  iload_2
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 29
+  aload 29
+  astore_1
+  aload_1
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 16
+  iload 16
+  putstatic com/adwo/adsdk/p/B I
+  iconst_3
+  istore 17
+  iload 17
+  istore_1
+  aload 7
+  iload_1
+  invokevirtual java/lang/String/substring(I)Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  pop
+Label8:
+  getstatic com/adwo/adsdk/p/B I
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 460
+  istore 17
+  iload 17
+  istore_1
+  iload 16
+  iload_1
+  if_icmpne Label9
+  getstatic com/adwo/adsdk/p/m Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label9
+  getstatic com/adwo/adsdk/p/m Ljava/lang/String;
+  astore 7
+  iconst_2
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  newarray byte
+  astore 13
+  aload 7
+  invokevirtual java/lang/String/length()I
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 6
+  istore 17
+  iload 17
+  istore_1
+  iload 16
+  iload_1
+  if_icmplt Label10
+  iconst_4
+  istore 17
+  bipush 6
+  istore 18
+  iload 17
+  istore_1
+  iload 18
+  istore_2
+  aload 7
+  iload_1
+  iload_2
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 30
+  ldc "0"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/endsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label11
+  ldc "2"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/endsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label11
+  ldc "7"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/endsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label12
+Label11:
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 7
+  istore 17
+  iload 17
+  istore_1
+  iload 16
+  iload_1
+  if_icmplt Label10
+  bipush 6
+  istore 17
+  bipush 7
+  istore 18
+  iload 17
+  istore_1
+  iload 18
+  istore_2
+  aload 7
+  iload_1
+  iload_2
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 30
+  ldc "0"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label13
+  iconst_0
+  istore 17
+  iconst_0
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+Label38:
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 10
+  istore 17
+  iload 17
+  istore_1
+  iload 16
+  iload_1
+  if_icmplt Label10
+  bipush 8
+  istore 17
+  bipush 10
+  istore 18
+  iload 17
+  istore_1
+  iload 18
+  istore_2
+  aload 7
+  iload_1
+  iload_2
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 30
+  ldc "01"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label14
+  iconst_1
+  istore 17
+  iconst_1
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+Label10:
+  iconst_0
+  istore 17
+  aload 13
+  iload 17
+  baload
+  istore 31
+  iload 31
+  putstatic com/adwo/adsdk/p/o B
+  iconst_1
+  istore 17
+  aload 13
+  iload 17
+  baload
+  istore 31
+  iload 31
+  putstatic com/adwo/adsdk/p/p B
+Label9:
+  return
+Label2:
+  iconst_2
+  istore 9
+  goto Label15
+Label1:
+  ldc "zh"
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/String/contains(Ljava/lang/CharSequence;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label16
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifeq Label17
+  bipush 16
+  istore 9
+  goto Label15
+Label17:
+  iconst_0
+  istore 9
+  goto Label15
+Label16:
+  ldc "ko"
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/String/contains(Ljava/lang/CharSequence;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label18
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifeq Label19
+  bipush 21
+  istore 9
+  goto Label15
+Label19:
+  iconst_5
+  istore 9
+  goto Label15
+Label18:
+  ldc "fr"
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/String/contains(Ljava/lang/CharSequence;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label20
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifeq Label21
+  bipush 19
+  istore 9
+  goto Label15
+Label21:
+  iconst_3
+  istore 9
+  goto Label15
+Label20:
+  ldc "es"
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/String/contains(Ljava/lang/CharSequence;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label22
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifeq Label23
+  bipush 24
+  istore 9
+  goto Label15
+Label23:
+  bipush 8
+  istore 9
+  goto Label15
+Label22:
+  ldc "de"
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/String/contains(Ljava/lang/CharSequence;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label24
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifeq Label25
+  bipush 22
+  istore 9
+  goto Label15
+Label25:
+  bipush 6
+  istore 9
+  goto Label15
+Label24:
+  ldc "it"
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/String/contains(Ljava/lang/CharSequence;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label26
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifeq Label27
+  bipush 23
+  istore 9
+  goto Label15
+Label27:
+  bipush 7
+  istore 9
+  goto Label15
+Label26:
+  ldc "ja"
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/String/contains(Ljava/lang/CharSequence;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label28
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifeq Label29
+  bipush 20
+  istore 9
+  goto Label15
+Label29:
+  iconst_4
+  istore 9
+  goto Label15
+Label28:
+  ldc "ru"
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/String/contains(Ljava/lang/CharSequence;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label30
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifeq Label31
+  bipush 25
+  istore 9
+  goto Label15
+Label31:
+  bipush 9
+  istore 9
+  goto Label15
+Label30:
+  ldc "pt"
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/String/contains(Ljava/lang/CharSequence;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label32
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifeq Label33
+  bipush 17
+  istore 9
+  goto Label15
+Label33:
+  iconst_1
+  istore 9
+  goto Label15
+Label32:
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifeq Label34
+  bipush 18
+  istore 9
+  goto Label15
+Label34:
+  iconst_2
+  istore 9
+  goto Label15
+Label4:
+  aconst_null
+  astore 7
+  goto Label35
+Label188:
+  astore 32
+  ldc "Adwo SDK"
+  astore 4
+  ldc "Package Name ERROR:  Incorrect application pakage name.  "
+  astore 33
+  aload 33
+  astore_1
+  aload 4
+  aload_1
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label36
+Label13:
+  ldc "1"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label37
+  iconst_0
+  istore 17
+  iconst_1
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label38
+Label37:
+  ldc "2"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label39
+  iconst_0
+  istore 17
+  iconst_2
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label38
+Label39:
+  ldc "3"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label40
+  iconst_0
+  istore 17
+  iconst_3
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label38
+Label40:
+  ldc "4"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label41
+  iconst_0
+  istore 17
+  iconst_4
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label38
+Label41:
+  ldc "5"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label42
+  iconst_0
+  istore 17
+  iconst_5
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label38
+Label42:
+  ldc "6"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label43
+  iconst_0
+  istore 17
+  bipush 6
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label38
+Label43:
+  ldc "7"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label44
+  iconst_0
+  istore 17
+  bipush 7
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label38
+Label44:
+  ldc "8"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label45
+  iconst_0
+  istore 17
+  bipush 8
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label38
+Label45:
+  ldc "9"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label46
+  iconst_0
+  istore 17
+  bipush 9
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label38
+Label46:
+  ldc "A"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label47
+  iconst_0
+  istore 17
+  bipush 10
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label38
+Label47:
+  ldc "B"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label48
+  iconst_0
+  istore 17
+  bipush 11
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label38
+Label48:
+  ldc "C"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label49
+  iconst_0
+  istore 17
+  bipush 12
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label38
+Label49:
+  ldc "D"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label50
+  iconst_0
+  istore 17
+  bipush 13
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label38
+Label50:
+  ldc "E"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label38
+  iconst_0
+  istore 17
+  bipush 14
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label38
+Label14:
+  ldc "02"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label51
+  iconst_1
+  istore 17
+  iconst_3
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label51:
+  ldc "03"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label52
+  iconst_1
+  istore 17
+  bipush 9
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label52:
+  ldc "04"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label53
+  iconst_1
+  istore 17
+  bipush 12
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label53:
+  ldc "05"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label54
+  iconst_1
+  istore 17
+  bipush 8
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label54:
+  ldc "06"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label55
+  iconst_1
+  istore 17
+  bipush 7
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label55:
+  ldc "07"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label56
+  iconst_1
+  istore 17
+  bipush 6
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label56:
+  ldc "08"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label57
+  iconst_1
+  istore 17
+  iconst_5
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label57:
+  ldc "09"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label58
+  iconst_1
+  istore 17
+  iconst_2
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label58:
+  ldc "10"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label59
+  iconst_1
+  istore 17
+  bipush 14
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label59:
+  ldc "11"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label60
+  iconst_1
+  istore 17
+  bipush 18
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label60:
+  ldc "12"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label61
+  iconst_1
+  istore 17
+  bipush 13
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label61:
+  ldc "13"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label62
+  iconst_1
+  istore 17
+  bipush 19
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label62:
+  ldc "14"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label63
+  iconst_1
+  istore 17
+  bipush 15
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label63:
+  ldc "15"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label64
+  iconst_1
+  istore 17
+  bipush 11
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label64:
+  ldc "16"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label65
+  iconst_1
+  istore 17
+  bipush 10
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label65:
+  ldc "17"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label66
+  iconst_1
+  istore 17
+  bipush 17
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label66:
+  ldc "18"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label67
+  iconst_1
+  istore 17
+  bipush 16
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label67:
+  ldc "19"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label68
+  iconst_1
+  istore 17
+  bipush 20
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label68:
+  ldc "20"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label69
+  iconst_1
+  istore 17
+  bipush 29
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label69:
+  ldc "21"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label70
+  iconst_1
+  istore 17
+  bipush 27
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label70:
+  ldc "22"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label71
+  iconst_1
+  istore 17
+  bipush 24
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label71:
+  ldc "23"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label72
+  iconst_1
+  istore 17
+  bipush 25
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label72:
+  ldc "24"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label73
+  iconst_1
+  istore 17
+  bipush 26
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label73:
+  ldc "25"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label74
+  iconst_1
+  istore 17
+  bipush 30
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label74:
+  ldc "26"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label75
+  iconst_1
+  istore 17
+  bipush 21
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label75:
+  ldc "27"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label76
+  iconst_1
+  istore 17
+  bipush 22
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label76:
+  ldc "28"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label77
+  iconst_1
+  istore 17
+  bipush 23
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label77:
+  ldc "29"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label78
+  iconst_1
+  istore 17
+  bipush 28
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label78:
+  ldc "30"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label79
+  iconst_1
+  istore 17
+  bipush 31
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label79:
+  ldc "31"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label10
+  iconst_1
+  istore 17
+  iconst_4
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label12:
+  ldc "1"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/endsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label80
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 9
+  istore 17
+  iload 17
+  istore_1
+  iload 16
+  iload_1
+  if_icmplt Label10
+  bipush 8
+  istore 17
+  bipush 9
+  istore 18
+  iload 17
+  istore_1
+  iload 18
+  istore_2
+  aload 7
+  iload_1
+  iload_2
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 30
+  ldc "0"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label81
+  iconst_0
+  istore 17
+  bipush 24
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+Label84:
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 13
+  istore 17
+  iload 17
+  istore_1
+  iload 16
+  iload_1
+  if_icmplt Label10
+  bipush 10
+  istore 17
+  bipush 13
+  istore 18
+  iload 17
+  istore_1
+  iload 18
+  istore_2
+  aload 7
+  iload_1
+  iload_2
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 30
+  ldc "010"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label82
+  iconst_1
+  istore 17
+  iconst_1
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label81:
+  ldc "1"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label83
+  iconst_0
+  istore 17
+  bipush 15
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label84
+Label83:
+  ldc "2"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label85
+  iconst_0
+  istore 17
+  bipush 16
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label84
+Label85:
+  ldc "5"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label86
+  iconst_0
+  istore 17
+  bipush 19
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label84
+Label86:
+  ldc "6"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label84
+  iconst_0
+  istore 17
+  bipush 20
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label84
+Label82:
+  ldc "022"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label87
+  iconst_1
+  istore 17
+  iconst_3
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label87:
+  ldc "31"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label88
+  ldc "33"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label89
+Label88:
+  iconst_1
+  istore 17
+  bipush 9
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label89:
+  ldc "35"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label90
+  ldc "34"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label91
+Label90:
+  iconst_1
+  istore 17
+  bipush 12
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label91:
+  ldc "47"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label92
+  ldc "48"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label93
+Label92:
+  iconst_1
+  istore 17
+  bipush 8
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label93:
+  ldc "024"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label94
+  ldc "41"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label94
+  ldc "42"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label95
+Label94:
+  iconst_1
+  istore 17
+  bipush 7
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label95:
+  ldc "43"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label96
+  iconst_1
+  istore 17
+  bipush 6
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label96:
+  ldc "45"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label97
+  ldc "46"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label98
+Label97:
+  iconst_1
+  istore 17
+  iconst_5
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label98:
+  ldc "021"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label99
+  iconst_1
+  istore 17
+  iconst_2
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label99:
+  ldc "025"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label100
+  ldc "51"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label100
+  ldc "52"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label101
+Label100:
+  iconst_1
+  istore 17
+  bipush 14
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label101:
+  ldc "57"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label102
+  iconst_1
+  istore 17
+  bipush 18
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label102:
+  ldc "55"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label103
+  ldc "56"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label104
+Label103:
+  iconst_1
+  istore 17
+  bipush 13
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label104:
+  ldc "59"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label105
+  iconst_1
+  istore 17
+  bipush 19
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label105:
+  ldc "79"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label106
+  ldc "70"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label107
+Label106:
+  iconst_1
+  istore 17
+  bipush 15
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label107:
+  ldc "53"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label108
+  ldc "54"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label108
+  ldc "63"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label109
+Label108:
+  iconst_1
+  istore 17
+  bipush 11
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label109:
+  ldc "37"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label110
+  ldc "39"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label111
+Label110:
+  iconst_1
+  istore 17
+  bipush 10
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label111:
+  ldc "027"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label112
+  ldc "71"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label112
+  ldc "72"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label113
+Label112:
+  iconst_1
+  istore 17
+  bipush 17
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label113:
+  ldc "73"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label114
+  ldc "74"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label115
+Label114:
+  iconst_1
+  istore 17
+  bipush 16
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label115:
+  ldc "020"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label116
+  ldc "75"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label116
+  ldc "76"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label116
+  ldc "66"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label117
+Label116:
+  iconst_1
+  istore 17
+  bipush 20
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label117:
+  ldc "77"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label118
+  iconst_1
+  istore 17
+  bipush 29
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label118:
+  ldc "898"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label119
+  iconst_1
+  istore 17
+  bipush 27
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label119:
+  ldc "028"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label120
+  ldc "81"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label120
+  ldc "82"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label120
+  ldc "83"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label121
+Label120:
+  iconst_1
+  istore 17
+  bipush 24
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label121:
+  ldc "85"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label10
+  ldc "87"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label122
+  ldc "88"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label122
+  ldc "69"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label123
+Label122:
+  iconst_1
+  istore 17
+  bipush 26
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label123:
+  ldc "89"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label124
+  iconst_1
+  istore 17
+  bipush 30
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label124:
+  ldc "029"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label125
+  ldc "91"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label126
+Label125:
+  iconst_1
+  istore 17
+  bipush 21
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label126:
+  ldc "93"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label127
+  ldc "94"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label128
+Label127:
+  iconst_1
+  istore 17
+  bipush 22
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label128:
+  ldc "97"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label129
+  iconst_1
+  istore 17
+  bipush 23
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label129:
+  ldc "95"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label130
+  iconst_1
+  istore 17
+  bipush 28
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label130:
+  ldc "90"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label131
+  ldc "99"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label132
+Label131:
+  iconst_1
+  istore 17
+  bipush 31
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label132:
+  ldc "023"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label10
+  iconst_1
+  istore 17
+  iconst_4
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label80:
+  ldc "3"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/endsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label10
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 9
+  istore 17
+  iload 17
+  istore_1
+  iload 16
+  iload_1
+  if_icmplt Label10
+  bipush 8
+  istore 17
+  bipush 9
+  istore 18
+  iload 17
+  istore_1
+  iload 18
+  istore_2
+  aload 7
+  iload_1
+  iload_2
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 30
+  ldc "3"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label133
+  iconst_0
+  istore 17
+  bipush 17
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+Label136:
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 13
+  istore 17
+  iload 17
+  istore_1
+  iload 16
+  iload_1
+  if_icmplt Label10
+  bipush 10
+  istore 17
+  bipush 13
+  istore 18
+  iload 17
+  istore_1
+  iload 18
+  istore_2
+  aload 7
+  iload_1
+  iload_2
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 30
+  ldc "010"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label134
+  iconst_1
+  istore 17
+  iconst_1
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label133:
+  ldc "4"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label135
+  iconst_0
+  istore 17
+  bipush 18
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label136
+Label135:
+  ldc "7"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label137
+  iconst_0
+  istore 17
+  bipush 21
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label136
+Label137:
+  ldc "8"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label138
+  iconst_0
+  istore 17
+  bipush 22
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label136
+Label138:
+  ldc "9"
+  astore 29
+  aload 29
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label136
+  iconst_0
+  istore 17
+  bipush 23
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label136
+Label134:
+  ldc "022"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label139
+  iconst_1
+  istore 17
+  iconst_3
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label139:
+  ldc "31"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label140
+  ldc "33"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label141
+Label140:
+  iconst_1
+  istore 17
+  bipush 9
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label141:
+  ldc "35"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label142
+  ldc "34"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label143
+Label142:
+  iconst_1
+  istore 17
+  bipush 12
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label143:
+  ldc "47"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label144
+  ldc "48"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label145
+Label144:
+  iconst_1
+  istore 17
+  bipush 8
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label145:
+  ldc "024"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label146
+  ldc "41"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label146
+  ldc "42"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label147
+Label146:
+  iconst_1
+  istore 17
+  bipush 7
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label147:
+  ldc "43"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label148
+  iconst_1
+  istore 17
+  bipush 6
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label148:
+  ldc "45"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label149
+  ldc "46"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label150
+Label149:
+  iconst_1
+  istore 17
+  iconst_5
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label150:
+  ldc "021"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label151
+  iconst_1
+  istore 17
+  iconst_2
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label151:
+  ldc "025"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label152
+  ldc "51"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label152
+  ldc "52"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label153
+Label152:
+  iconst_1
+  istore 17
+  bipush 14
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label153:
+  ldc "57"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label154
+  ldc "58"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label155
+Label154:
+  iconst_1
+  istore 17
+  bipush 18
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label155:
+  ldc "55"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label156
+  ldc "56"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label157
+Label156:
+  iconst_1
+  istore 17
+  bipush 13
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label157:
+  ldc "59"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label158
+  iconst_1
+  istore 17
+  bipush 19
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label158:
+  ldc "79"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label159
+  ldc "70"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label160
+Label159:
+  iconst_1
+  istore 17
+  bipush 15
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label160:
+  ldc "53"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label161
+  ldc "54"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label161
+  ldc "63"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label162
+Label161:
+  iconst_1
+  istore 17
+  bipush 11
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label162:
+  ldc "37"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label163
+  ldc "39"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label164
+Label163:
+  iconst_1
+  istore 17
+  bipush 10
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label164:
+  ldc "027"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label165
+  ldc "71"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label165
+  ldc "72"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label166
+Label165:
+  iconst_1
+  istore 17
+  bipush 17
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label166:
+  ldc "73"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label167
+  ldc "74"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label168
+Label167:
+  iconst_1
+  istore 17
+  bipush 16
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label168:
+  ldc "020"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label169
+  ldc "75"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label169
+  ldc "76"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label169
+  ldc "66"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label170
+Label169:
+  iconst_1
+  istore 17
+  bipush 20
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label170:
+  ldc "77"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label171
+  iconst_1
+  istore 17
+  bipush 29
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label171:
+  ldc "898"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label172
+  iconst_1
+  istore 17
+  bipush 27
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label172:
+  ldc "028"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label173
+  ldc "81"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label173
+  ldc "82"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label173
+  ldc "83"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label174
+Label173:
+  iconst_1
+  istore 17
+  bipush 24
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label174:
+  ldc "85"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label175
+  iconst_1
+  istore 17
+  bipush 25
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label175:
+  ldc "87"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label176
+  ldc "88"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label176
+  ldc "69"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label177
+Label176:
+  iconst_1
+  istore 17
+  bipush 26
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label177:
+  ldc "89"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label178
+  iconst_1
+  istore 17
+  bipush 30
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label178:
+  ldc "029"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label179
+  ldc "91"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label180
+Label179:
+  iconst_1
+  istore 17
+  bipush 21
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label180:
+  ldc "93"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label181
+  ldc "94"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label182
+Label181:
+  iconst_1
+  istore 17
+  bipush 22
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label182:
+  ldc "97"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label183
+  iconst_1
+  istore 17
+  bipush 23
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label183:
+  ldc "95"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label184
+  iconst_1
+  istore 17
+  bipush 28
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label184:
+  ldc "90"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label185
+  ldc "99"
+  astore 4
+  aload 30
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label186
+Label185:
+  iconst_1
+  istore 17
+  bipush 31
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label186:
+  ldc "023"
+  astore 7
+  aload 30
+  astore_1
+  aload 7
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label10
+  iconst_1
+  istore 17
+  iconst_4
+  istore 18
+  aload 13
+  iload 17
+  iload 18
+  bastore
+  goto Label10
+Label201:
+  astore 34
+  goto Label8
+Label194:
+  astore 35
+  goto Label7
+Label195:
+  astore 36
+  goto Label7
+Label196:
+  astore 37
+  goto Label7
+Label197:
+  astore 38
+  goto Label7
+Label198:
+  astore 39
+  goto Label7
+Label191:
+  astore 40
+  goto Label6
+Label0:
+  iconst_0
+  dstore 9
+  goto Label187
+  nop
+.end <method>
+
+.method protected static b(Ljava/lang/String;)V
+.limit locals 9
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 32
+  istore_2
+  iload_1
+  iload_2
+  if_icmpeq Label1
+Label0:
+  new java/lang/StringBuilder
+  astore_3
+  ldc "CONFIGURATION ERROR:  Incorrect Adwo publisher ID.  Should 32 [a-z,0-9] characters:  "
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  getstatic com/adwo/adsdk/p/a [B
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  ldc "Adwo SDK"
+  astore 4
+  aload 4
+  aload 6
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label1:
+  new java/lang/StringBuilder
+  astore_3
+  ldc "Your Adwo PID is "
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_3
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  ldc "Adwo SDK"
+  astore 4
+  aload 4
+  aload 6
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label4:
+  ldc "UTF-8"
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 5
+Label5:
+  aload 5
+  putstatic com/adwo/adsdk/p/a [B
+Label2:
+  return
+Label3:
+  astore 7
+  new java/lang/StringBuilder
+  astore_3
+  ldc "CONFIGURATION ERROR:  Incorrect Adwo publisher ID.  Should 32 [a-z,0-9] characters:  "
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  getstatic com/adwo/adsdk/p/a [B
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 8
+  ldc "Adwo SDK"
+  astore 4
+  aload 4
+  aload 8
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label2
+  nop
+.end <method>
+
+.method protected static c(Ljava/lang/String;)V
+.limit locals 26
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label9 <to> Label10 <using> Label7
+  .catch  java/lang/Exception <from> Label9 <to> Label10 <using> Label8
+  .catch  java/lang/Throwable <from> Label10 <to> Label13 <using> Label11
+  .catch  java/lang/Exception <from> Label10 <to> Label13 <using> Label12
+  .catch  java/lang/Throwable <from> Label15 <to> Label16 <using> Label11
+  .catch  java/lang/Exception <from> Label15 <to> Label16 <using> Label14
+  nop
+  iconst_0
+  istore_2
+  new java/net/URL
+  astore_3
+Label9:
+  aload_0
+  astore_1
+  aload_3
+  aload_1
+  invokespecial java/net/URL/<init>(Ljava/lang/String;)V
+  aload_3
+  invokevirtual java/net/URL/openConnection()Ljava/net/URLConnection;
+  astore 4
+  aload 4
+  astore 6
+  aload 6
+  checkcast java/net/HttpURLConnection
+  astore 6
+  aload 6
+  astore 5
+Label10:
+  ldc "GET"
+  astore 7
+  aload 5
+  aload 7
+  invokevirtual java/net/HttpURLConnection/setRequestMethod(Ljava/lang/String;)V
+  getstatic com/adwo/adsdk/Y/a I
+  istore 8
+  aload 5
+  iload 8
+  invokevirtual java/net/HttpURLConnection/setConnectTimeout(I)V
+  getstatic com/adwo/adsdk/p/y Ljava/lang/String;
+  astore 9
+  ldc "User-Agent"
+  astore 7
+  aload 5
+  aload 7
+  aload 9
+  invokevirtual java/net/HttpURLConnection/setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+  aload 5
+  invokevirtual java/net/HttpURLConnection/connect()V
+  aload 5
+  invokevirtual java/net/HttpURLConnection/getInputStream()Ljava/io/InputStream;
+  astore 10
+Label13:
+  aload 10
+  astore_2
+  new java/lang/StringBuilder
+  astore 11
+Label15:
+  ldc "Connect to beacon: "
+  astore 7
+  aload 11
+  aload 7
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload 11
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  aload 12
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 9
+  ldc "Adwo SDK"
+  astore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+Label16:
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 10
+  ifeq Label0
+  aload 10
+  checkcast java/io/InputStream
+  astore 10
+Label18:
+  aload 10
+  invokevirtual java/io/InputStream/close()V
+Label0:
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 5
+  ifeq Label1
+  aload 5
+  invokevirtual java/net/HttpURLConnection/disconnect()V
+Label1:
+  return
+Label8:
+  astore 13
+  iconst_0
+  istore 14
+Label6:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 14
+  ifeq Label2
+  aload 14
+  astore 15
+  aload 15
+  checkcast java/io/InputStream
+  astore 15
+  aload 15
+  astore 10
+Label20:
+  aload 10
+  invokevirtual java/io/InputStream/close()V
+Label2:
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_2
+  ifeq Label1
+  aload_2
+  astore 16
+  aload 16
+  checkcast java/net/HttpURLConnection
+  astore 16
+  aload 16
+  astore 5
+  aload 5
+  invokevirtual java/net/HttpURLConnection/disconnect()V
+  goto Label1
+Label7:
+  astore 17
+  iconst_0
+  istore 14
+Label5:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label3
+  aload_2
+  astore 18
+  aload 18
+  checkcast java/io/InputStream
+  astore 18
+  aload 18
+  astore 10
+Label22:
+  aload 10
+  invokevirtual java/io/InputStream/close()V
+Label3:
+  aload 14
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 14
+  ifeq Label4
+  aload 14
+  astore 19
+  aload 19
+  checkcast java/net/HttpURLConnection
+  astore 19
+  aload 19
+  astore 5
+  aload 5
+  invokevirtual java/net/HttpURLConnection/disconnect()V
+Label4:
+  aload 17
+  athrow
+Label19:
+  astore 20
+  goto Label2
+Label21:
+  astore 21
+  goto Label3
+Label17:
+  astore 22
+  goto Label0
+Label11:
+  astore 23
+  aload 5
+  astore 14
+  aload 23
+  astore 17
+  goto Label5
+Label12:
+  astore 24
+  aload 5
+  astore_2
+  iconst_0
+  istore 14
+  goto Label6
+Label14:
+  astore 25
+  aload_2
+  astore 14
+  aload 5
+  astore_2
+  goto Label6
+  nop
+.end <method>
+
+.method private static c(Landroid/content/Context;)[B
+.limit locals 16
+.limit stack 200
+  nop
+  ldc "android.permission.READ_PHONE_STATE"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore_3
+  iload_1
+  iload_3
+  if_icmpne Label0
+  ldc "Adwo SDK"
+  astore_2
+  ldc "Cannot request an ad without READ_PHONE_STATE permissions!  Open manifest.xml and just before the final </manifest> tag add:  <uses-permission android:name=\"android.permission.READ_PHONE_STATE\" />"
+  astore 4
+  aload_2
+  aload 4
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label0:
+  aconst_null
+  astore 5
+  getstatic com/adwo/adsdk/p/i Landroid/telephony/TelephonyManager;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label1
+  getstatic com/adwo/adsdk/p/i Landroid/telephony/TelephonyManager;
+  astore 6
+  aload 6
+  invokevirtual android/telephony/TelephonyManager/getDeviceId()Ljava/lang/String;
+  astore 5
+Label1:
+  aload_0
+  invokevirtual android/content/Context/getContentResolver()Landroid/content/ContentResolver;
+  astore 7
+  ldc "android_id"
+  astore_2
+  aload 7
+  aload_2
+  invokestatic android/provider/Settings$System/getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+  astore 8
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  ifnull Label2
+  new java/lang/StringBuilder
+  astore 9
+  aload 5
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 5
+  aload 9
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  ldc "|"
+  astore_2
+  aload 9
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  putstatic com/adwo/adsdk/p/b Ljava/lang/String;
+Label5:
+  getstatic com/adwo/adsdk/p/b Ljava/lang/String;
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  ifnull Label3
+  getstatic com/adwo/adsdk/p/b Ljava/lang/String;
+  astore 5
+Label7:
+  ldc "UTF-8"
+  astore_2
+  aload 5
+  aload_2
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 10
+  aload 10
+  putstatic com/adwo/adsdk/p/k [B
+  getstatic com/adwo/adsdk/p/b Ljava/lang/String;
+  astore 5
+  ldc "UTF-8"
+  astore_2
+  aload 5
+  aload_2
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 10
+Label8:
+  aload 10
+  areturn
+Label2:
+  ldc "android.permission.ACCESS_WIFI_STATE"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual android/content/Context/checkCallingOrSelfPermission(Ljava/lang/String;)I
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  ifne Label4
+  ldc "wifi"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 11
+  aload 11
+  astore 13
+  aload 13
+  checkcast android/net/wifi/WifiManager
+  astore 13
+  aload 13
+  astore 12
+  aload 12
+  invokevirtual android/net/wifi/WifiManager/getConnectionInfo()Landroid/net/wifi/WifiInfo;
+  astore 14
+  aload 14
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 14
+  ifnull Label5
+  new java/lang/StringBuilder
+  astore 9
+  aload 14
+  invokevirtual android/net/wifi/WifiInfo/getMacAddress()Ljava/lang/String;
+  astore 5
+  aload 5
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 5
+  aload 9
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  ldc "|"
+  astore_2
+  aload 9
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  putstatic com/adwo/adsdk/p/b Ljava/lang/String;
+  goto Label5
+Label4:
+  new java/lang/StringBuilder
+  astore 9
+  ldc "0|"
+  astore_2
+  aload 9
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 9
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  putstatic com/adwo/adsdk/p/b Ljava/lang/String;
+  goto Label5
+Label6:
+  astore 15
+Label3:
+  ldc "0|0"
+  astore 5
+  aload 5
+  invokevirtual java/lang/String/getBytes()[B
+  astore 10
+  aload 10
+  areturn
+  nop
+.end <method>
+
+.method private static d(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 15
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+Label1:
+  iconst_2
+  istore_3
+  iload_3
+  anewarray java/lang/Class
+  astore_2
+  iconst_0
+  istore_3
+  ldc android/content/Context
+  astore 4
+  aload_2
+  iload_3
+  aload 4
+  aastore
+  iconst_1
+  istore_3
+  ldc android/webkit/WebView
+  astore 4
+  aload_2
+  iload_3
+  aload 4
+  aastore
+  aload_1
+  aload_2
+  invokevirtual java/lang/Class/getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+  astore 5
+  iconst_1
+  istore_3
+  aload 5
+  iload_3
+  invokevirtual java/lang/reflect/Constructor/setAccessible(Z)V
+Label2:
+  iconst_2
+  istore_3
+  iload_3
+  anewarray java/lang/Object
+  astore 6
+  iconst_0
+  istore_3
+  aload 6
+  iload_3
+  aload_0
+  aastore
+  iconst_1
+  istore_3
+  aconst_null
+  astore 7
+  aload 6
+  iload_3
+  aload 7
+  aastore
+  aload 5
+  aload 6
+  invokevirtual java/lang/reflect/Constructor/newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+  astore 8
+  aload 8
+  astore 10
+  aload 10
+  checkcast android/webkit/WebSettings
+  astore 10
+  aload 10
+  astore 9
+  aload 9
+  invokevirtual android/webkit/WebSettings/getUserAgentString()Ljava/lang/String;
+  astore 11
+  aload 11
+  putstatic com/adwo/adsdk/p/y Ljava/lang/String;
+Label4:
+  iconst_0
+  istore_3
+  aload 5
+  iload_3
+  invokevirtual java/lang/reflect/Constructor/setAccessible(Z)V
+  aload 11
+  areturn
+Label3:
+  astore 12
+  iconst_0
+  istore_3
+  aload 5
+  iload_3
+  invokevirtual java/lang/reflect/Constructor/setAccessible(Z)V
+  aload 12
+  athrow
+Label0:
+  astore 13
+  new android/webkit/WebView
+  astore 14
+  aload 14
+  aload_0
+  invokespecial android/webkit/WebView/<init>(Landroid/content/Context;)V
+  aload 14
+  invokevirtual android/webkit/WebView/getSettings()Landroid/webkit/WebSettings;
+  astore 9
+  aload 9
+  invokevirtual android/webkit/WebSettings/getUserAgentString()Ljava/lang/String;
+  astore 11
+  aload 11
+  putstatic com/adwo/adsdk/p/y Ljava/lang/String;
+  aload 11
+  areturn
+  nop
+.end <method>
+

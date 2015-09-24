@@ -1,0 +1,41 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/ag$1
+.super java/lang/Thread
+.field final "a" Lcom/wiyun/ad/ag;
+.field private final "b" Landroid/content/Intent;
+
+.method <init>(Lcom/wiyun/ad/ag;Landroid/content/Intent;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/wiyun/ad/ag$1/a Lcom/wiyun/ad/ag;
+  aload_0
+  aload_2
+  putfield com/wiyun/ad/ag$1/b Landroid/content/Intent;
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 3
+.limit stack 200
+  .catch  java/lang/Exception <from> Label2 <to> Label0 <using> Label1
+  nop
+Label2:
+  aload_0
+  getfield com/wiyun/ad/ag$1/b Landroid/content/Intent;
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/c/a(Landroid/content/Intent;)V
+Label0:
+  return
+Label1:
+  astore_2
+  goto Label0
+  nop
+.end <method>
+

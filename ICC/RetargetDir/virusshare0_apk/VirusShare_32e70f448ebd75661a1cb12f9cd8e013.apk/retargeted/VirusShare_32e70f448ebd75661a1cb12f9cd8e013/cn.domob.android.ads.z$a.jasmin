@@ -1,0 +1,37 @@
+.source SourceFile
+.class  cn/domob/android/ads/z$a
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcn/domob/android/ads/z;
+
+.method <init>(Lcn/domob/android/ads/z;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/z$a/a Lcn/domob/android/ads/z;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/z$a/a Lcn/domob/android/ads/z;
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/z/w(Lcn/domob/android/ads/z;)Landroid/app/Dialog;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+

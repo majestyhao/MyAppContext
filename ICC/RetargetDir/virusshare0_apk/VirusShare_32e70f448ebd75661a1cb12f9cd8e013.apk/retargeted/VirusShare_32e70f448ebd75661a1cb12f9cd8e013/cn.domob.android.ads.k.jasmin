@@ -1,0 +1,419 @@
+.source SourceFile
+.class  cn/domob/android/ads/k
+.super java/lang/Object
+.field private "a" Ljava/lang/String;
+.field private "b" J
+.field private "c" J
+.field private "d" Z
+.field private "e" Z
+.field private "f" Ljava/util/ArrayList;
+.field private "g" Ljava/lang/String;
+.field private "h" Ljava/lang/String;
+
+.method <init>()V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc "320x48"
+  astore_1
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/k/a Ljava/lang/String;
+  ldc2_w 4278190080
+  lstore_2
+  aload_0
+  lload_2
+  putfield cn/domob/android/ads/k/b J
+  ldc2_w 4294967295
+  lstore_2
+  aload_0
+  lload_2
+  putfield cn/domob/android/ads/k/c J
+  iconst_0
+  istore 4
+  aload_0
+  iload 4
+  putfield cn/domob/android/ads/k/d Z
+  iconst_0
+  istore 4
+  aload_0
+  iload 4
+  putfield cn/domob/android/ads/k/e Z
+  new java/util/ArrayList
+  astore 5
+  aload 5
+  invokespecial java/util/ArrayList/<init>()V
+  aload_0
+  aload 5
+  putfield cn/domob/android/ads/k/f Ljava/util/ArrayList;
+  aconst_null
+  astore 6
+  aload_0
+  aload 6
+  putfield cn/domob/android/ads/k/g Ljava/lang/String;
+  aconst_null
+  astore 6
+  aload_0
+  aload 6
+  putfield cn/domob/android/ads/k/h Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method protected a()J
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/k/b J
+  lstore_1
+  lload_1
+  lreturn
+  nop
+.end <method>
+
+.method protected a(I)V
+.limit locals 5
+.limit stack 200
+  nop
+  iload_1
+  i2l
+  lstore_2
+  aload_0
+  lload_2
+  putfield cn/domob/android/ads/k/b J
+  iconst_1
+  istore 4
+  aload_0
+  iload 4
+  putfield cn/domob/android/ads/k/d Z
+  return
+  nop
+.end <method>
+
+.method protected a(Ljava/lang/String;)V
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_1
+  invokevirtual java/lang/String/length()I
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 200
+  istore_3
+  iload_2
+  iload_3
+  if_icmple Label0
+  ldc "DomobSDK"
+  astore 4
+  ldc "The length of keywords cannot exceed 200!"
+  astore 5
+  aload 4
+  aload 5
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label1:
+  return
+Label0:
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/k/g Ljava/lang/String;
+  goto Label1
+  nop
+.end <method>
+
+.method protected a([I)V
+.limit locals 9
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/k/f Ljava/util/ArrayList;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_0
+  getfield cn/domob/android/ads/k/f Ljava/util/ArrayList;
+  astore_2
+  aload_2
+  invokevirtual java/util/ArrayList/clear()V
+Label0:
+  new java/util/ArrayList
+  astore_2
+  aload_2
+  invokespecial java/util/ArrayList/<init>()V
+  iconst_1
+  istore 4
+  iload 4
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  iconst_3
+  istore 4
+  iload 4
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  iconst_5
+  istore 4
+  iload 4
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  bipush 7
+  istore 4
+  iload 4
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  iconst_0
+  dstore 5
+Label3:
+  aload_1
+  arraylength
+  istore 6
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  iload 6
+  if_icmpge Label1
+  aload_1
+  iload 5
+  iaload
+  istore 6
+  iload 6
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/util/ArrayList/contains(Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label2
+  aload_0
+  getfield cn/domob/android/ads/k/f Ljava/util/ArrayList;
+  astore 8
+  aload_1
+  iload 5
+  iaload
+  istore 6
+  iload 6
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore_3
+  aload 8
+  aload_3
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+Label2:
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  goto Label3
+Label1:
+  return
+  nop
+.end <method>
+
+.method protected b(I)V
+.limit locals 6
+.limit stack 200
+  nop
+  ldc -16777216
+  istore_3
+  iload_3
+  iload_1
+  ior
+  istore_2
+  iload_2
+  i2l
+  lstore 4
+  aload_0
+  lload 4
+  putfield cn/domob/android/ads/k/c J
+  iconst_1
+  istore_3
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/k/e Z
+  return
+  nop
+.end <method>
+
+.method protected b(Ljava/lang/String;)V
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_1
+  invokevirtual java/lang/String/length()I
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 200
+  istore_3
+  iload_2
+  iload_3
+  if_icmple Label0
+  ldc "DomobSDK"
+  astore 4
+  ldc "The length of spots cannot exceed 200!"
+  astore 5
+  aload 4
+  aload 5
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label1:
+  return
+Label0:
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/k/h Ljava/lang/String;
+  goto Label1
+  nop
+.end <method>
+
+.method protected b()Z
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/k/d Z
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method protected c()J
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/k/c J
+  lstore_1
+  lload_1
+  lreturn
+  nop
+.end <method>
+
+.method protected c(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/k/a Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method protected d()Z
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/k/e Z
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method protected e()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/k/g Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected f()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/k/h Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected g()Ljava/lang/String;
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/k/a Ljava/lang/String;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  ldc "320x48"
+  astore_2
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/k/a Ljava/lang/String;
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/k/a Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public h()Ljava/util/ArrayList;
+  .signature_attr "()Ljava/util/ArrayList<Ljava/lang/Integer;>;"
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/k/f Ljava/util/ArrayList;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+

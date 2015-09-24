@@ -1,0 +1,353 @@
+.source AppConfig.java
+.class public  maxstrom/game/llk/AppConfig
+.super java/lang/Object
+.field public static "lastAdDate" Ljava/lang/String;
+.field public "sp" Landroid/content/SharedPreferences;
+
+.method public <init>(Landroid/content/Context;)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc "config"
+  astore_3
+  ldc 32768
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_0
+  aload_2
+  putfield maxstrom/game/llk/AppConfig/sp Landroid/content/SharedPreferences;
+  aload_0
+  getfield maxstrom/game/llk/AppConfig/sp Landroid/content/SharedPreferences;
+  astore_2
+  ldc "lastAdDate"
+  astore_3
+  ldc ""
+  astore 6
+  aload_2
+  aload_3
+  aload 6
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 5
+  aload 5
+  putstatic maxstrom/game/llk/AppConfig/lastAdDate Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public getAdClickDays()I
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield maxstrom/game/llk/AppConfig/sp Landroid/content/SharedPreferences;
+  astore_1
+  ldc "adClickDays"
+  astore_3
+  iconst_0
+  istore 4
+  new java/lang/NoSuchMethodError
+  dup
+  invokespecial java/lang/NoSuchMethodError/<init>()V
+  athrow
+  nop
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public saveConfig(Ljava/lang/String;F)Ljava/lang/Boolean;
+.limit locals 8
+.limit stack 200
+  .catch  java/lang/Exception <from> Label1 <to> Label2 <using> Label0
+  nop
+Label1:
+  aload_0
+  getfield maxstrom/game/llk/AppConfig/sp Landroid/content/SharedPreferences;
+  astore_3
+  new java/lang/NoSuchMethodError
+  dup
+  invokespecial java/lang/NoSuchMethodError/<init>()V
+  athrow
+  nop
+  aload 4
+  aload_1
+  fload_2
+  invokeinterface android/content/SharedPreferences$Editor/putFloat(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload 4
+  invokeinterface android/content/SharedPreferences$Editor/commit()Z 1
+  pop
+  iconst_1
+  istore 6
+  iload 6
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore 5
+Label2:
+  aload 5
+  areturn
+Label0:
+  astore 7
+  aload 7
+  invokevirtual java/lang/Exception/printStackTrace()V
+  iconst_0
+  istore 6
+  iload 6
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method public saveConfig(Ljava/lang/String;I)Ljava/lang/Boolean;
+.limit locals 8
+.limit stack 200
+  .catch  java/lang/Exception <from> Label1 <to> Label2 <using> Label0
+  nop
+Label1:
+  aload_0
+  getfield maxstrom/game/llk/AppConfig/sp Landroid/content/SharedPreferences;
+  astore_3
+  new java/lang/NoSuchMethodError
+  dup
+  invokespecial java/lang/NoSuchMethodError/<init>()V
+  athrow
+  nop
+  aload 4
+  aload_1
+  iload_2
+  invokeinterface android/content/SharedPreferences$Editor/putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload 4
+  invokeinterface android/content/SharedPreferences$Editor/commit()Z 1
+  pop
+  iconst_1
+  istore 6
+  iload 6
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore 5
+Label2:
+  aload 5
+  areturn
+Label0:
+  astore 7
+  aload 7
+  invokevirtual java/lang/Exception/printStackTrace()V
+  iconst_0
+  istore 6
+  iload 6
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method public saveConfig(Ljava/lang/String;J)Ljava/lang/Boolean;
+.limit locals 9
+.limit stack 200
+  .catch  java/lang/Exception <from> Label1 <to> Label2 <using> Label0
+  nop
+Label1:
+  aload_0
+  getfield maxstrom/game/llk/AppConfig/sp Landroid/content/SharedPreferences;
+  astore 4
+  new java/lang/NoSuchMethodError
+  dup
+  invokespecial java/lang/NoSuchMethodError/<init>()V
+  athrow
+  nop
+  aload 5
+  aload_1
+  lload_2
+  invokeinterface android/content/SharedPreferences$Editor/putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor; 4
+  pop
+  aload 5
+  invokeinterface android/content/SharedPreferences$Editor/commit()Z 1
+  pop
+  iconst_1
+  istore 7
+  iload 7
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore 6
+Label2:
+  aload 6
+  areturn
+Label0:
+  astore 8
+  aload 8
+  invokevirtual java/lang/Exception/printStackTrace()V
+  iconst_0
+  istore 7
+  iload 7
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore 6
+  aload 6
+  areturn
+  nop
+.end <method>
+
+.method public saveConfig(Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+.limit locals 8
+.limit stack 200
+  .catch  java/lang/Exception <from> Label1 <to> Label2 <using> Label0
+  nop
+Label1:
+  aload_0
+  getfield maxstrom/game/llk/AppConfig/sp Landroid/content/SharedPreferences;
+  astore_3
+  new java/lang/NoSuchMethodError
+  dup
+  invokespecial java/lang/NoSuchMethodError/<init>()V
+  athrow
+  nop
+  aload_2
+  invokevirtual java/lang/Boolean/booleanValue()Z
+  istore 5
+  aload 4
+  aload_1
+  iload 5
+  invokeinterface android/content/SharedPreferences$Editor/putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload 4
+  invokeinterface android/content/SharedPreferences$Editor/commit()Z 1
+  pop
+  iconst_1
+  istore 6
+  iload 6
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore_2
+Label2:
+  aload_2
+  areturn
+Label0:
+  astore 7
+  aload 7
+  invokevirtual java/lang/Exception/printStackTrace()V
+  iconst_0
+  istore 6
+  iload 6
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public saveConfig(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Boolean;
+.limit locals 8
+.limit stack 200
+  .catch  java/lang/Exception <from> Label1 <to> Label2 <using> Label0
+  nop
+Label1:
+  aload_0
+  getfield maxstrom/game/llk/AppConfig/sp Landroid/content/SharedPreferences;
+  astore_3
+  new java/lang/NoSuchMethodError
+  dup
+  invokespecial java/lang/NoSuchMethodError/<init>()V
+  athrow
+  nop
+  aload 4
+  aload_1
+  aload_2
+  invokeinterface android/content/SharedPreferences$Editor/putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload 4
+  invokeinterface android/content/SharedPreferences$Editor/commit()Z 1
+  pop
+  iconst_1
+  istore 6
+  iload 6
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore 5
+Label2:
+  aload 5
+  areturn
+Label0:
+  astore 7
+  aload 7
+  invokevirtual java/lang/Exception/printStackTrace()V
+  iconst_0
+  istore 6
+  iload 6
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method public setLastClickDate()V
+.limit locals 11
+.limit stack 200
+  nop
+  new java/util/Date
+  astore_1
+  aload_1
+  invokespecial java/util/Date/<init>()V
+  new java/sql/Timestamp
+  astore_2
+  aload_1
+  invokevirtual java/util/Date/getTime()J
+  lstore_3
+  aload_2
+  lload_3
+  invokespecial java/sql/Timestamp/<init>(J)V
+  new java/text/SimpleDateFormat
+  astore 5
+  ldc "yyyy/MM/dd"
+  astore 6
+  aload 5
+  aload 6
+  invokespecial java/text/SimpleDateFormat/<init>(Ljava/lang/String;)V
+  aload 5
+  aload_2
+  invokevirtual java/text/SimpleDateFormat/format(Ljava/util/Date;)Ljava/lang/String;
+  astore 7
+  getstatic maxstrom/game/llk/AppConfig/lastAdDate Ljava/lang/String;
+  astore 8
+  aload 7
+  aload 8
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 9
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 9
+  ifeq Label0
+  aload 7
+  putstatic maxstrom/game/llk/AppConfig/lastAdDate Ljava/lang/String;
+  ldc "lastAdDate"
+  astore 6
+  aload_0
+  aload 6
+  aload 7
+  invokevirtual maxstrom/game/llk/AppConfig/saveConfig(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Boolean;
+  pop
+  aload_0
+  invokevirtual maxstrom/game/llk/AppConfig/getAdClickDays()I
+  istore 10
+  iload 10
+  iconst_1
+  iadd
+  istore 10
+  ldc "adClickDays"
+  astore 6
+  aload_0
+  aload 6
+  iload 10
+  invokevirtual maxstrom/game/llk/AppConfig/saveConfig(Ljava/lang/String;I)Ljava/lang/Boolean;
+  pop
+Label0:
+  return
+  nop
+.end <method>
+

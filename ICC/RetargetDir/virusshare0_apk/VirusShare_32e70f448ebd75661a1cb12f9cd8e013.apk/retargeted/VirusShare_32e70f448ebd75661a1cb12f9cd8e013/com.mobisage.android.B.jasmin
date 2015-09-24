@@ -1,0 +1,66 @@
+.source SourceFile
+.class final  com/mobisage/android/B
+.super com/mobisage/android/P
+
+.method <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/mobisage/android/P/<init>()V
+  return
+  nop
+.end <method>
+
+.method public final a(I)Landroid/view/animation/Animation;
+.limit locals 7
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  fconst_0
+  fstore_3
+  fconst_1
+  fstore 4
+  aload_2
+  fload_3
+  fload 4
+  invokespecial android/view/animation/AlphaAnimation/<init>(FF)V
+  ldc2_w 1000
+  lstore 5
+  aload_2
+  lload 5
+  invokevirtual android/view/animation/AlphaAnimation/setDuration(J)V
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public final b(I)Landroid/view/animation/Animation;
+.limit locals 7
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  fconst_1
+  fstore_3
+  fconst_0
+  fstore 4
+  aload_2
+  fload_3
+  fload 4
+  invokespecial android/view/animation/AlphaAnimation/<init>(FF)V
+  ldc2_w 1000
+  lstore 5
+  aload_2
+  lload 5
+  invokevirtual android/view/animation/AlphaAnimation/setDuration(J)V
+  aload_2
+  areturn
+  nop
+.end <method>
+

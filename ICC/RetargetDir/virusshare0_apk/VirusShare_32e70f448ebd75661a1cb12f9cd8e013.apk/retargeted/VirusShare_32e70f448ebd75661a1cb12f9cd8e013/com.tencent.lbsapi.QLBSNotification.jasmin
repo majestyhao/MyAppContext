@@ -1,0 +1,9 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.interface public interface abstract  com/tencent/lbsapi/QLBSNotification
+.super java/lang/Object
+.field public static final "RESULT_LOCATION_ERROR" I =  0
+.field public static final "RESULT_LOCATION_SUCCESS" I =  1
+
+.method public abstract onLocationNotification(I)V
+.end <method>
+

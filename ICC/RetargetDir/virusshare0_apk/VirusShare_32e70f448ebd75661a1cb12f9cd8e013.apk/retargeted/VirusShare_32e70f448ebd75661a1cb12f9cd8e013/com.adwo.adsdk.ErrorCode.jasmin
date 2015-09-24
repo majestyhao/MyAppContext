@@ -1,0 +1,58 @@
+.source SourceFile
+.class public final  com/adwo/adsdk/ErrorCode
+.super java/lang/Object
+.field private "a" I
+.field private "b" Ljava/lang/String;
+
+.method protected <init>(ILjava/lang/String;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  iload_1
+  putfield com/adwo/adsdk/ErrorCode/a I
+  aload_0
+  aload_2
+  putfield com/adwo/adsdk/ErrorCode/b Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public final getErrorCode()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/adwo/adsdk/ErrorCode/a I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public final getErrorString()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/adwo/adsdk/ErrorCode/b Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public final toString()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/adwo/adsdk/ErrorCode/b Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+

@@ -1,0 +1,33 @@
+.source PublicCustom.java
+.class public  com/admogo/obj/PublicCustom
+.super java/lang/Object
+.field public "adText" Ljava/lang/String;
+.field public "al" I
+.field public "animationType" I
+.field public "appDes" Ljava/lang/String;
+.field public "appIcon" Landroid/graphics/drawable/Drawable;
+.field public "appName" Ljava/lang/String;
+.field public "cid" Ljava/lang/String;
+.field public "clickLink" Ljava/lang/String;
+.field public "downloadLink" Ljava/lang/String;
+.field public "iconLink" Ljava/lang/String;
+.field public "image" Landroid/graphics/drawable/Drawable;
+.field public "imageLink" Ljava/lang/String;
+.field public "imageUrlList" Ljava/util/List;
+.field public "launchType" I
+.field public "link" Ljava/lang/String;
+.field public "linkType" I
+.field public "pn" Ljava/lang/String;
+.field public "subText" Ljava/lang/String;
+.field public "type" I
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

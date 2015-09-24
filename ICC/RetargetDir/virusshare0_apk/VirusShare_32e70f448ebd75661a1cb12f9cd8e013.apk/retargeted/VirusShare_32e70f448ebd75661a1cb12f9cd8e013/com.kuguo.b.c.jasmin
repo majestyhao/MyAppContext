@@ -1,0 +1,46 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/kuguo/b/c
+.super java/lang/Object
+.field private "a" Ljava/lang/String;
+.field private "b" I
+
+.method public <init>(Ljava/lang/String;I)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  aload_1
+  putfield com/kuguo/b/c/a Ljava/lang/String;
+  aload_0
+  iload_2
+  putfield com/kuguo/b/c/b I
+  return
+  nop
+.end <method>
+
+.method public a()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/b/c/a Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public b()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/b/c/b I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+

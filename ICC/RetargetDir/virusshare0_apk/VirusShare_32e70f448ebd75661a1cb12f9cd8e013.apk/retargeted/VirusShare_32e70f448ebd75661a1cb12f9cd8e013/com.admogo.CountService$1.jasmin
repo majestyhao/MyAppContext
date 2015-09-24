@@ -1,0 +1,279 @@
+.source CountService.java
+.class  com/admogo/CountService$1
+.super java/lang/Thread
+.field private "flag" Z
+.field final "this$0" Lcom/admogo/CountService;
+.field private final "val$intent" Landroid/content/Intent;
+.field private final "val$package_name" Ljava/lang/String;
+.field private final "val$package_time" J
+.field private final "val$startId" I
+
+.method <init>(Lcom/admogo/CountService;Ljava/lang/String;Landroid/content/Intent;IJ)V
+.limit locals 8
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/CountService$1/this$0 Lcom/admogo/CountService;
+  aload_0
+  aload_2
+  putfield com/admogo/CountService$1/val$package_name Ljava/lang/String;
+  aload_0
+  aload_3
+  putfield com/admogo/CountService$1/val$intent Landroid/content/Intent;
+  aload_0
+  iload 4
+  putfield com/admogo/CountService$1/val$startId I
+  aload_0
+  lload 5
+  putfield com/admogo/CountService$1/val$package_time J
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  iconst_1
+  istore 7
+  aload_0
+  iload 7
+  putfield com/admogo/CountService$1/flag Z
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 28
+.limit stack 200
+  nop
+Label3:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/CountService$1/flag Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifne Label0
+Label2:
+  return
+Label0:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/CountService$1/this$0 Lcom/admogo/CountService;
+  astore 5
+  aload 5
+  invokestatic com/admogo/CountService/access$0(Lcom/admogo/CountService;)Landroid/app/ActivityManager;
+  astore 6
+  iconst_1
+  istore 8
+  aload 6
+  iload 8
+  invokevirtual android/app/ActivityManager/getRunningTasks(I)Ljava/util/List;
+  astore 7
+  iconst_0
+  istore 8
+  iload 8
+  istore 9
+  aload 7
+  iload 9
+  invokeinterface java/util/List/get(I)Ljava/lang/Object; 2
+  astore 10
+  aload 10
+  astore 12
+  aload 12
+  checkcast android/app/ActivityManager$RunningTaskInfo
+  astore 12
+  aload 12
+  astore 11
+  aload 11
+  getfield android/app/ActivityManager$RunningTaskInfo/topActivity Landroid/content/ComponentName;
+  astore 13
+  aload 13
+  invokevirtual android/content/ComponentName/getPackageName()Ljava/lang/String;
+  astore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/CountService$1/val$package_name Ljava/lang/String;
+  astore 15
+  aload 14
+  aload 15
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label1
+  iconst_0
+  istore 8
+  aload_0
+  astore_1
+  aload_1
+  iload 8
+  putfield com/admogo/CountService$1/flag Z
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore 16
+  new java/lang/StringBuilder
+  astore 17
+  ldc "\u6210\u529f\u627e\u5230"
+  astore 18
+  aload 17
+  astore_1
+  aload 18
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 17
+  astore_1
+  aload_1
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 15
+  aload 16
+  aload 15
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/CountService$1/this$0 Lcom/admogo/CountService;
+  astore 5
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/CountService$1/val$intent Landroid/content/Intent;
+  astore_1
+  aload_1
+  astore 19
+  aload 19
+  astore_1
+  aload 5
+  aload_1
+  invokestatic com/admogo/CountService/access$1(Lcom/admogo/CountService;Landroid/content/Intent;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/CountService$1/this$0 Lcom/admogo/CountService;
+  astore 5
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/CountService$1/val$intent Landroid/content/Intent;
+  astore_1
+  aload_1
+  astore 19
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/CountService$1/val$startId I
+  istore 9
+  aload 19
+  astore_1
+  aload 5
+  aload_1
+  iload 9
+  invokestatic com/admogo/CountService/access$2(Lcom/admogo/CountService;Landroid/content/Intent;I)V
+  goto Label2
+Label1:
+  ldc2_w 1000
+  lstore 20
+  lload 20
+  lstore_1
+  lload_1
+  invokestatic com/admogo/CountService$1/sleep(J)V
+Label4:
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 22
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/CountService$1/val$package_time J
+  lstore_1
+  lload_1
+  lstore 24
+  lload 22
+  lload 24
+  lsub
+  lstore 24
+  ldc2_w 1800000
+  lstore 20
+  lload 24
+  lload 20
+  lcmp
+  istore 26
+  iload 26
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 26
+  ifle Label3
+  iconst_0
+  istore 8
+  aload_0
+  astore_1
+  aload_1
+  iload 8
+  putfield com/admogo/CountService$1/flag Z
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore 16
+  new java/lang/StringBuilder
+  astore 17
+  ldc "\u672a\u6210\u529f\u627e\u5230"
+  astore 18
+  aload 17
+  astore_1
+  aload 18
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 17
+  astore_1
+  aload_1
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 15
+  aload 16
+  aload 15
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/CountService$1/this$0 Lcom/admogo/CountService;
+  astore 5
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/CountService$1/val$intent Landroid/content/Intent;
+  astore_1
+  aload_1
+  astore 19
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/CountService$1/val$startId I
+  istore 9
+  aload 19
+  astore_1
+  aload 5
+  aload_1
+  iload 9
+  invokestatic com/admogo/CountService/access$2(Lcom/admogo/CountService;Landroid/content/Intent;I)V
+  goto Label2
+Label5:
+  astore 27
+  goto Label4
+  nop
+.end <method>
+

@@ -1,0 +1,366 @@
+.source TafUniPacket.java
+.class public  com/qq/jce/wup/TafUniPacket
+.super com/qq/jce/wup/UniPacket
+.field private static final "serialVersionUID" J =  1
+
+.method public <init>()V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/jce/wup/UniPacket/<init>()V
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  iconst_2
+  istore_2
+  aload_1
+  iload_2
+  putfield com/qq/taf/RequestPacket/iVersion S
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  iconst_2
+  istore_2
+  aload_1
+  iload_2
+  putfield com/qq/taf/RequestPacket/cPacketType B
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  iconst_0
+  istore_2
+  aload_1
+  iload_2
+  putfield com/qq/taf/RequestPacket/iMessageType I
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  iconst_0
+  istore_2
+  aload_1
+  iload_2
+  putfield com/qq/taf/RequestPacket/iTimeout I
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  iconst_0
+  istore_2
+  iload_2
+  newarray byte
+  astore_3
+  aload_1
+  aload_3
+  putfield com/qq/taf/RequestPacket/sBuffer [B
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  new java/util/HashMap
+  astore 4
+  aload 4
+  invokespecial java/util/HashMap/<init>()V
+  aload_1
+  aload 4
+  putfield com/qq/taf/RequestPacket/context Ljava/util/Map;
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  new java/util/HashMap
+  astore 4
+  aload 4
+  invokespecial java/util/HashMap/<init>()V
+  aload_1
+  aload 4
+  putfield com/qq/taf/RequestPacket/status Ljava/util/Map;
+  return
+  nop
+.end <method>
+
+.method public getTafBuffer()[B
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  aload_1
+  getfield com/qq/taf/RequestPacket/sBuffer [B
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public getTafContext()Ljava/util/Map;
+  .signature_attr "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  aload_1
+  getfield com/qq/taf/RequestPacket/context Ljava/util/Map;
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public getTafMessageType()I
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  aload_1
+  getfield com/qq/taf/RequestPacket/iMessageType I
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public getTafPacketType()B
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  aload_1
+  getfield com/qq/taf/RequestPacket/cPacketType B
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public getTafResultCode()I
+.limit locals 9
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  aload_1
+  getfield com/qq/taf/RequestPacket/status Ljava/util/Map;
+  astore_2
+  ldc "STATUS_RESULT_CODE"
+  astore 4
+  aload_2
+  aload 4
+  invokeinterface java/util/Map/get(Ljava/lang/Object;)Ljava/lang/Object; 2
+  astore_3
+  aload_3
+  astore 6
+  aload 6
+  checkcast java/lang/String
+  astore 6
+  aload 6
+  astore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+  aload 5
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 7
+  iload 7
+  ireturn
+Label0:
+  iconst_0
+  istore 8
+  iload 8
+  ireturn
+  nop
+.end <method>
+
+.method public getTafResultDesc()Ljava/lang/String;
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  aload_1
+  getfield com/qq/taf/RequestPacket/status Ljava/util/Map;
+  astore_2
+  ldc "STATUS_RESULT_DESC"
+  astore 4
+  aload_2
+  aload 4
+  invokeinterface java/util/Map/get(Ljava/lang/Object;)Ljava/lang/Object; 2
+  astore_3
+  aload_3
+  astore 6
+  aload 6
+  checkcast java/lang/String
+  astore 6
+  aload 6
+  astore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+  aload 5
+  areturn
+Label0:
+  ldc ""
+  astore 4
+  aload 4
+  areturn
+  nop
+.end <method>
+
+.method public getTafStatus()Ljava/util/Map;
+  .signature_attr "()Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  aload_1
+  getfield com/qq/taf/RequestPacket/status Ljava/util/Map;
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public getTafTimeout()I
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  aload_1
+  getfield com/qq/taf/RequestPacket/iTimeout I
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public getTafVersion()S
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_1
+  aload_1
+  getfield com/qq/taf/RequestPacket/iVersion S
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public setTafBuffer([B)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_2
+  aload_2
+  aload_1
+  putfield com/qq/taf/RequestPacket/sBuffer [B
+  return
+  nop
+.end <method>
+
+.method public setTafContext(Ljava/util/Map;)V
+  .signature_attr "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V"
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_2
+  aload_2
+  aload_1
+  putfield com/qq/taf/RequestPacket/context Ljava/util/Map;
+  return
+  nop
+.end <method>
+
+.method public setTafMessageType(I)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_2
+  aload_2
+  iload_1
+  putfield com/qq/taf/RequestPacket/iMessageType I
+  return
+  nop
+.end <method>
+
+.method public setTafPacketType(B)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_2
+  aload_2
+  iload_1
+  putfield com/qq/taf/RequestPacket/cPacketType B
+  return
+  nop
+.end <method>
+
+.method public setTafStatus(Ljava/util/Map;)V
+  .signature_attr "(Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;)V"
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_2
+  aload_2
+  aload_1
+  putfield com/qq/taf/RequestPacket/status Ljava/util/Map;
+  return
+  nop
+.end <method>
+
+.method public setTafTimeout(I)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_2
+  aload_2
+  iload_1
+  putfield com/qq/taf/RequestPacket/iTimeout I
+  return
+  nop
+.end <method>
+
+.method public setTafVersion(S)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/jce/wup/UniPacket/_package Lcom/qq/taf/RequestPacket;
+  astore_2
+  aload_2
+  iload_1
+  putfield com/qq/taf/RequestPacket/iVersion S
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,1049 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public final  MobWin/ADInfo
+.super com/qq/taf/jce/JceStruct
+.field static "j" I =  0
+.field static "k" Ljava/util/ArrayList;
+.field static "l" I =  0
+.field static "m" Ljava/util/ArrayList;
+.field static final "n" Z =  0
+.field public "a" I
+.field public "b" I
+.field public "c" Ljava/util/ArrayList;
+.field public "d" Ljava/lang/String;
+.field public "e" Ljava/lang/String;
+.field public "f" Ljava/lang/String;
+.field public "g" I
+.field public "h" Ljava/lang/String;
+.field public "i" Ljava/util/ArrayList;
+
+.method static <clinit>()V
+.limit locals 2
+.limit stack 200
+  nop
+  ldc MobWin/ADInfo
+  astore_0
+  aload_0
+  invokevirtual java/lang/Class/desiredAssertionStatus()Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  iconst_1
+  istore_1
+Label1:
+  iload_1
+  putstatic MobWin/ADInfo/n Z
+  return
+Label0:
+  iconst_0
+  istore_1
+  goto Label1
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield MobWin/ADInfo/a I
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield MobWin/ADInfo/b I
+  aconst_null
+  astore_2
+  aload_0
+  aload_2
+  putfield MobWin/ADInfo/c Ljava/util/ArrayList;
+  ldc ""
+  astore_3
+  aload_0
+  aload_3
+  putfield MobWin/ADInfo/d Ljava/lang/String;
+  ldc ""
+  astore_3
+  aload_0
+  aload_3
+  putfield MobWin/ADInfo/e Ljava/lang/String;
+  ldc ""
+  astore_3
+  aload_0
+  aload_3
+  putfield MobWin/ADInfo/f Ljava/lang/String;
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield MobWin/ADInfo/g I
+  ldc ""
+  astore_3
+  aload_0
+  aload_3
+  putfield MobWin/ADInfo/h Ljava/lang/String;
+  aconst_null
+  astore_2
+  aload_0
+  aload_2
+  putfield MobWin/ADInfo/i Ljava/util/ArrayList;
+  aload_0
+  getfield MobWin/ADInfo/a I
+  istore 4
+  aload_0
+  iload 4
+  invokevirtual MobWin/ADInfo/a(I)V
+  aload_0
+  getfield MobWin/ADInfo/b I
+  istore 4
+  aload_0
+  iload 4
+  invokevirtual MobWin/ADInfo/b(I)V
+  aload_0
+  getfield MobWin/ADInfo/c Ljava/util/ArrayList;
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual MobWin/ADInfo/a(Ljava/util/ArrayList;)V
+  aload_0
+  getfield MobWin/ADInfo/d Ljava/lang/String;
+  astore 6
+  aload_0
+  aload 6
+  invokevirtual MobWin/ADInfo/a(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/ADInfo/e Ljava/lang/String;
+  astore 6
+  aload_0
+  aload 6
+  invokevirtual MobWin/ADInfo/b(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/ADInfo/f Ljava/lang/String;
+  astore 6
+  aload_0
+  aload 6
+  invokevirtual MobWin/ADInfo/c(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/ADInfo/g I
+  istore 4
+  aload_0
+  iload 4
+  invokevirtual MobWin/ADInfo/c(I)V
+  aload_0
+  getfield MobWin/ADInfo/h Ljava/lang/String;
+  astore 6
+  aload_0
+  aload 6
+  invokevirtual MobWin/ADInfo/d(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/ADInfo/i Ljava/util/ArrayList;
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual MobWin/ADInfo/b(Ljava/util/ArrayList;)V
+  return
+  nop
+.end <method>
+
+.method public <init>(IILjava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/util/ArrayList;)V
+.limit locals 13
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  iconst_0
+  istore 10
+  aload_0
+  iload 10
+  putfield MobWin/ADInfo/a I
+  iconst_0
+  istore 10
+  aload_0
+  iload 10
+  putfield MobWin/ADInfo/b I
+  aconst_null
+  astore 11
+  aload_0
+  aload 11
+  putfield MobWin/ADInfo/c Ljava/util/ArrayList;
+  ldc ""
+  astore 12
+  aload_0
+  aload 12
+  putfield MobWin/ADInfo/d Ljava/lang/String;
+  ldc ""
+  astore 12
+  aload_0
+  aload 12
+  putfield MobWin/ADInfo/e Ljava/lang/String;
+  ldc ""
+  astore 12
+  aload_0
+  aload 12
+  putfield MobWin/ADInfo/f Ljava/lang/String;
+  iconst_0
+  istore 10
+  aload_0
+  iload 10
+  putfield MobWin/ADInfo/g I
+  ldc ""
+  astore 12
+  aload_0
+  aload 12
+  putfield MobWin/ADInfo/h Ljava/lang/String;
+  aconst_null
+  astore 11
+  aload_0
+  aload 11
+  putfield MobWin/ADInfo/i Ljava/util/ArrayList;
+  aload_0
+  iload_1
+  invokevirtual MobWin/ADInfo/a(I)V
+  aload_0
+  iload_2
+  invokevirtual MobWin/ADInfo/b(I)V
+  aload_0
+  aload_3
+  invokevirtual MobWin/ADInfo/a(Ljava/util/ArrayList;)V
+  aload_0
+  aload 4
+  invokevirtual MobWin/ADInfo/a(Ljava/lang/String;)V
+  aload_0
+  aload 5
+  invokevirtual MobWin/ADInfo/b(Ljava/lang/String;)V
+  aload_0
+  aload 6
+  invokevirtual MobWin/ADInfo/c(Ljava/lang/String;)V
+  aload_0
+  iload 7
+  invokevirtual MobWin/ADInfo/c(I)V
+  aload_0
+  aload 8
+  invokevirtual MobWin/ADInfo/d(Ljava/lang/String;)V
+  aload_0
+  aload 9
+  invokevirtual MobWin/ADInfo/b(Ljava/util/ArrayList;)V
+  return
+  nop
+.end <method>
+
+.method public a()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  ldc "MobWin.ADInfo"
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public a(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/ADInfo/a I
+  return
+  nop
+.end <method>
+
+.method public a(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ADInfo/d Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public a(Ljava/util/ArrayList;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ADInfo/c Ljava/util/ArrayList;
+  return
+  nop
+.end <method>
+
+.method public b()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ADInfo/a I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public b(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/ADInfo/b I
+  return
+  nop
+.end <method>
+
+.method public b(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ADInfo/e Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public b(Ljava/util/ArrayList;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ADInfo/i Ljava/util/ArrayList;
+  return
+  nop
+.end <method>
+
+.method public c()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ADInfo/b I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public c(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/ADInfo/g I
+  return
+  nop
+.end <method>
+
+.method public c(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ADInfo/f Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public clone()Ljava/lang/Object;
+.limit locals 6
+.limit stack 200
+  .catch  java/lang/CloneNotSupportedException <from> Label2 <to> Label3 <using> Label1
+  nop
+  iconst_0
+  istore_1
+Label2:
+  aload_0
+  invokespecial java/lang/Object/clone()Ljava/lang/Object;
+  astore_2
+Label3:
+  aload_2
+  astore_1
+Label0:
+  aload_1
+  areturn
+Label1:
+  astore_3
+  getstatic MobWin/ADInfo/n Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifne Label0
+  new java/lang/AssertionError
+  astore 5
+  aload 5
+  invokespecial java/lang/AssertionError/<init>()V
+  aload 5
+  athrow
+  nop
+.end <method>
+
+.method public d()Ljava/util/ArrayList;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ADInfo/c Ljava/util/ArrayList;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public d(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ADInfo/h Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public display(Ljava/lang/StringBuilder;I)V
+.limit locals 8
+.limit stack 200
+  nop
+  new com/qq/taf/jce/JceDisplayer
+  astore_3
+  aload_3
+  aload_1
+  iload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_0
+  getfield MobWin/ADInfo/a I
+  istore_2
+  ldc "ad_id"
+  astore 4
+  aload_3
+  iload_2
+  aload 4
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ADInfo/b I
+  istore_2
+  ldc "ad_type"
+  astore 4
+  aload_3
+  iload_2
+  aload 4
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ADInfo/c Ljava/util/ArrayList;
+  astore 5
+  ldc "ad_words"
+  astore 4
+  aload_3
+  aload 5
+  aload 4
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/util/Collection;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ADInfo/d Ljava/lang/String;
+  astore 6
+  ldc "ad_pic"
+  astore 4
+  aload_3
+  aload 6
+  aload 4
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ADInfo/e Ljava/lang/String;
+  astore 7
+  ldc "ad_link"
+  astore 4
+  aload_3
+  aload 7
+  aload 4
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ADInfo/f Ljava/lang/String;
+  astore 7
+  ldc "ver_key"
+  astore 4
+  aload_3
+  aload 7
+  aload 4
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ADInfo/g I
+  istore_2
+  ldc "ad_click_effective"
+  astore 4
+  aload_3
+  iload_2
+  aload 4
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ADInfo/h Ljava/lang/String;
+  astore 7
+  ldc "clickEffectiveAdditional"
+  astore 4
+  aload_3
+  aload 7
+  aload 4
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ADInfo/i Ljava/util/ArrayList;
+  astore 5
+  ldc "clickEffectiveAdditionalList"
+  astore 4
+  aload_3
+  aload 5
+  aload 4
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/util/Collection;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  return
+  nop
+.end <method>
+
+.method public e()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ADInfo/d Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public equals(Ljava/lang/Object;)Z
+.limit locals 12
+.limit stack 200
+  nop
+  aload_1
+  astore_3
+  aload_3
+  checkcast MobWin/ADInfo
+  astore_3
+  aload_3
+  astore_2
+  aload_0
+  getfield MobWin/ADInfo/a I
+  istore 4
+  aload_2
+  getfield MobWin/ADInfo/a I
+  istore 5
+  iload 4
+  iload 5
+  invokestatic com/qq/taf/jce/JceUtil/equals(II)Z
+  istore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/ADInfo/b I
+  istore 5
+  aload_2
+  getfield MobWin/ADInfo/b I
+  istore 4
+  iload 5
+  iload 4
+  invokestatic com/qq/taf/jce/JceUtil/equals(II)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/ADInfo/c Ljava/util/ArrayList;
+  astore 7
+  aload_2
+  getfield MobWin/ADInfo/c Ljava/util/ArrayList;
+  astore 8
+  aload 7
+  aload 8
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/ADInfo/d Ljava/lang/String;
+  astore 9
+  aload_2
+  getfield MobWin/ADInfo/d Ljava/lang/String;
+  astore 10
+  aload 9
+  aload 10
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/ADInfo/e Ljava/lang/String;
+  astore 10
+  aload_2
+  getfield MobWin/ADInfo/e Ljava/lang/String;
+  astore 9
+  aload 10
+  aload 9
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/ADInfo/f Ljava/lang/String;
+  astore 10
+  aload_2
+  getfield MobWin/ADInfo/f Ljava/lang/String;
+  astore 9
+  aload 10
+  aload 9
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/ADInfo/g I
+  istore 5
+  aload_2
+  getfield MobWin/ADInfo/g I
+  istore 4
+  iload 5
+  iload 4
+  invokestatic com/qq/taf/jce/JceUtil/equals(II)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/ADInfo/h Ljava/lang/String;
+  astore 10
+  aload_2
+  getfield MobWin/ADInfo/h Ljava/lang/String;
+  astore 9
+  aload 10
+  aload 9
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/ADInfo/i Ljava/util/ArrayList;
+  astore 8
+  aload_2
+  getfield MobWin/ADInfo/i Ljava/util/ArrayList;
+  astore 7
+  aload 8
+  aload 7
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  iconst_1
+  istore 11
+  iload 11
+  ireturn
+Label0:
+  iconst_0
+  istore 11
+  iload 11
+  ireturn
+  nop
+.end <method>
+
+.method public f()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ADInfo/e Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public g()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ADInfo/f Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public h()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ADInfo/g I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public i()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ADInfo/h Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public j()Ljava/util/ArrayList;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ADInfo/i Ljava/util/ArrayList;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public readFrom(Lcom/qq/taf/jce/JceInputStream;)V
+.limit locals 12
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ADInfo/a I
+  istore_2
+  iconst_0
+  istore 4
+  iload 4
+  istore_3
+  iconst_1
+  istore 4
+  aload_1
+  iload_2
+  iload_3
+  iload 4
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore_2
+  aload_0
+  iload_2
+  invokevirtual MobWin/ADInfo/a(I)V
+  aload_0
+  getfield MobWin/ADInfo/b I
+  istore_2
+  iconst_1
+  istore 4
+  iload 4
+  istore_3
+  iconst_1
+  istore 4
+  aload_1
+  iload_2
+  iload_3
+  iload 4
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore_2
+  aload_0
+  iload_2
+  invokevirtual MobWin/ADInfo/b(I)V
+  getstatic MobWin/ADInfo/k Ljava/util/ArrayList;
+  astore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifne Label0
+  new java/util/ArrayList
+  astore 5
+  aload 5
+  invokespecial java/util/ArrayList/<init>()V
+  aload 5
+  putstatic MobWin/ADInfo/k Ljava/util/ArrayList;
+  getstatic MobWin/ADInfo/k Ljava/util/ArrayList;
+  astore 5
+  ldc ""
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+Label0:
+  getstatic MobWin/ADInfo/k Ljava/util/ArrayList;
+  astore 5
+  iconst_2
+  istore 4
+  iconst_1
+  istore 8
+  aload_1
+  aload 5
+  iload 4
+  iload 8
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Ljava/lang/Object;IZ)Ljava/lang/Object;
+  astore 7
+  aload 7
+  astore 9
+  aload 9
+  checkcast java/util/ArrayList
+  astore 9
+  aload 9
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual MobWin/ADInfo/a(Ljava/util/ArrayList;)V
+  iconst_3
+  istore 4
+  iconst_1
+  istore 8
+  aload_1
+  iload 4
+  iload 8
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 10
+  aload_0
+  aload 10
+  invokevirtual MobWin/ADInfo/a(Ljava/lang/String;)V
+  iconst_4
+  istore 4
+  iconst_1
+  istore 8
+  aload_1
+  iload 4
+  iload 8
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 10
+  aload_0
+  aload 10
+  invokevirtual MobWin/ADInfo/b(Ljava/lang/String;)V
+  iconst_5
+  istore 4
+  iconst_1
+  istore 8
+  aload_1
+  iload 4
+  iload 8
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 10
+  aload_0
+  aload 10
+  invokevirtual MobWin/ADInfo/c(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/ADInfo/g I
+  istore_2
+  bipush 6
+  istore 4
+  iconst_0
+  istore 8
+  aload_1
+  iload_2
+  iload 4
+  iload 8
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual MobWin/ADInfo/c(I)V
+  bipush 7
+  istore 4
+  iconst_0
+  istore 8
+  aload_1
+  iload 4
+  iload 8
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 10
+  aload_0
+  aload 10
+  invokevirtual MobWin/ADInfo/d(Ljava/lang/String;)V
+  getstatic MobWin/ADInfo/m Ljava/util/ArrayList;
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  ifnonnull Label1
+  new java/util/ArrayList
+  astore 5
+  aload 5
+  invokespecial java/util/ArrayList/<init>()V
+  aload 5
+  putstatic MobWin/ADInfo/m Ljava/util/ArrayList;
+  getstatic MobWin/ADInfo/m Ljava/util/ArrayList;
+  astore 5
+  ldc ""
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+Label1:
+  getstatic MobWin/ADInfo/m Ljava/util/ArrayList;
+  astore 5
+  bipush 8
+  istore 4
+  iconst_0
+  istore 8
+  aload_1
+  aload 5
+  iload 4
+  iload 8
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Ljava/lang/Object;IZ)Ljava/lang/Object;
+  astore 7
+  aload 7
+  astore 11
+  aload 11
+  checkcast java/util/ArrayList
+  astore 11
+  aload 11
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual MobWin/ADInfo/b(Ljava/util/ArrayList;)V
+  return
+  nop
+.end <method>
+
+.method public writeTo(Lcom/qq/taf/jce/JceOutputStream;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ADInfo/a I
+  istore_2
+  iconst_0
+  istore_3
+  aload_1
+  iload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield MobWin/ADInfo/b I
+  istore_2
+  iconst_1
+  istore_3
+  aload_1
+  iload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield MobWin/ADInfo/c Ljava/util/ArrayList;
+  astore 4
+  iconst_2
+  istore_3
+  aload_1
+  aload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/util/Collection;I)V
+  aload_0
+  getfield MobWin/ADInfo/d Ljava/lang/String;
+  astore 5
+  iconst_3
+  istore_3
+  aload_1
+  aload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+  aload_0
+  getfield MobWin/ADInfo/e Ljava/lang/String;
+  astore 5
+  iconst_4
+  istore_3
+  aload_1
+  aload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+  aload_0
+  getfield MobWin/ADInfo/f Ljava/lang/String;
+  astore 5
+  iconst_5
+  istore_3
+  aload_1
+  aload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+  aload_0
+  getfield MobWin/ADInfo/g I
+  istore_2
+  bipush 6
+  istore_3
+  aload_1
+  iload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield MobWin/ADInfo/h Ljava/lang/String;
+  astore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+  aload_0
+  getfield MobWin/ADInfo/h Ljava/lang/String;
+  astore 5
+  bipush 7
+  istore_3
+  aload_1
+  aload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+Label0:
+  aload_0
+  getfield MobWin/ADInfo/i Ljava/util/ArrayList;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label1
+  aload_0
+  getfield MobWin/ADInfo/i Ljava/util/ArrayList;
+  astore 4
+  bipush 8
+  istore_3
+  aload_1
+  aload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/util/Collection;I)V
+Label1:
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/dialog_bg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="350.0px" android:minHeight="220.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:umadsdk="http://schemas.android.com/apk/res/maxstrom.game.llk">
+    <ScrollView android:scrollbarStyle="insideInset" android:id="@id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <CheckBox android:id="@id/cbEnableMusic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cbEnableMusic" />
+            <CheckBox android:id="@id/cbEnableSound" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cbEnableSound" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Button android:id="@id/btnOK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="70.0dip" android:text="@string/btnOK" />
+                <Button android:id="@id/btnCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:minWidth="70.0dip" android:text="@string/btnCancel" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.tencent.mobwin.AdView android:id="@id/adView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginBottom="0.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" mobwin:backColor="#808080" mobwin:textColor="#ffff3333" mobwin:titleColor="#ff000000" mobwin:backAlpha="250"
+                  xmlns:mobwin="http://mobwin.android.com/apk/res/maxstrom.game.llk" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

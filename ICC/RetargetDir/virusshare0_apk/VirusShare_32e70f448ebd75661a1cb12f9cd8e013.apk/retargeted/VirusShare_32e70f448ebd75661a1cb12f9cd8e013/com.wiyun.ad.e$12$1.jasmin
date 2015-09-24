@@ -1,0 +1,64 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/e$12$1
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcom/wiyun/ad/e$12;
+.field private final "b" Landroid/app/Activity;
+
+.method <init>(Lcom/wiyun/ad/e$12;Landroid/app/Activity;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/wiyun/ad/e$12$1/a Lcom/wiyun/ad/e$12;
+  aload_0
+  aload_2
+  putfield com/wiyun/ad/e$12$1/b Landroid/app/Activity;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 8
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  bipush -2
+  istore_2
+  bipush -2
+  istore_3
+  aload_1
+  iload_2
+  iload_3
+  invokespecial android/widget/FrameLayout$LayoutParams/<init>(II)V
+  bipush 81
+  istore_2
+  aload_1
+  iload_2
+  putfield android/widget/FrameLayout$LayoutParams/gravity I
+  aload_0
+  getfield com/wiyun/ad/e$12$1/b Landroid/app/Activity;
+  astore 4
+  aload_0
+  getfield com/wiyun/ad/e$12$1/a Lcom/wiyun/ad/e$12;
+  astore 5
+  aload 5
+  invokestatic com/wiyun/ad/e$12/a(Lcom/wiyun/ad/e$12;)Lcom/wiyun/ad/e;
+  astore 6
+  aload 6
+  invokestatic com/wiyun/ad/e/m(Lcom/wiyun/ad/e;)Landroid/widget/LinearLayout;
+  astore 7
+  aload 4
+  aload 7
+  aload_1
+  invokevirtual android/app/Activity/addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  return
+  nop
+.end <method>
+

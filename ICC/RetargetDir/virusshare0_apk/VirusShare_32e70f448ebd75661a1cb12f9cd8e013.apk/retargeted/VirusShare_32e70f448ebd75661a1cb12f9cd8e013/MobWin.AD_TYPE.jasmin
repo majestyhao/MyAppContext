@@ -1,0 +1,317 @@
+.source AD_TYPE.java
+.class public final  MobWin/AD_TYPE
+.super java/lang/Object
+.field static final "$assertionsDisabled" Z =  0
+.field public static final "LOGO_WORDS" LMobWin/AD_TYPE;
+.field public static final "PIC" LMobWin/AD_TYPE;
+.field public static final "SPOT" LMobWin/AD_TYPE;
+.field public static final "WORDS" LMobWin/AD_TYPE;
+.field public static final "_LOGO_WORDS" I =  2
+.field public static final "_PIC" I =  1
+.field public static final "_SPOT" I =  3
+.field public static final "_WORDS" I =  0
+.field private static "__values" [LMobWin/AD_TYPE;
+.field private "__T" Ljava/lang/String;
+.field private "__value" I
+
+.method static <clinit>()V
+.limit locals 9
+.limit stack 200
+  nop
+  ldc MobWin/AD_TYPE
+  astore_0
+  aload_0
+  invokevirtual java/lang/Class/desiredAssertionStatus()Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  iconst_1
+  istore_1
+Label1:
+  iload_1
+  putstatic MobWin/AD_TYPE/$assertionsDisabled Z
+  iconst_4
+  istore_3
+  iload_3
+  anewarray MobWin/AD_TYPE
+  astore_2
+  aload_2
+  putstatic MobWin/AD_TYPE/__values [LMobWin/AD_TYPE;
+  new MobWin/AD_TYPE
+  astore 4
+  iconst_0
+  istore_3
+  iload_3
+  istore 5
+  iconst_0
+  istore_3
+  iload_3
+  istore 6
+  ldc "WORDS"
+  astore 7
+  aload 4
+  iload 5
+  iload 6
+  aload 7
+  invokespecial MobWin/AD_TYPE/<init>(IILjava/lang/String;)V
+  aload 4
+  putstatic MobWin/AD_TYPE/WORDS LMobWin/AD_TYPE;
+  new MobWin/AD_TYPE
+  astore 4
+  iconst_1
+  istore_3
+  iload_3
+  istore 6
+  iconst_1
+  istore_3
+  iload_3
+  istore 5
+  ldc "PIC"
+  astore 7
+  aload 4
+  iload 6
+  iload 5
+  aload 7
+  invokespecial MobWin/AD_TYPE/<init>(IILjava/lang/String;)V
+  aload 4
+  putstatic MobWin/AD_TYPE/PIC LMobWin/AD_TYPE;
+  new MobWin/AD_TYPE
+  astore 4
+  iconst_2
+  istore_3
+  iconst_2
+  istore 8
+  ldc "LOGO_WORDS"
+  astore 7
+  aload 4
+  iload_3
+  iload 8
+  aload 7
+  invokespecial MobWin/AD_TYPE/<init>(IILjava/lang/String;)V
+  aload 4
+  putstatic MobWin/AD_TYPE/LOGO_WORDS LMobWin/AD_TYPE;
+  new MobWin/AD_TYPE
+  astore 4
+  iconst_3
+  istore_3
+  iconst_3
+  istore 8
+  ldc "SPOT"
+  astore 7
+  aload 4
+  iload_3
+  iload 8
+  aload 7
+  invokespecial MobWin/AD_TYPE/<init>(IILjava/lang/String;)V
+  aload 4
+  putstatic MobWin/AD_TYPE/SPOT LMobWin/AD_TYPE;
+  return
+Label0:
+  iconst_0
+  istore_1
+  goto Label1
+  nop
+.end <method>
+
+.method private <init>(IILjava/lang/String;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  new java/lang/String
+  astore 4
+  aload 4
+  invokespecial java/lang/String/<init>()V
+  aload_0
+  aload 4
+  putfield MobWin/AD_TYPE/__T Ljava/lang/String;
+  aload_0
+  aload_3
+  putfield MobWin/AD_TYPE/__T Ljava/lang/String;
+  aload_0
+  iload_2
+  putfield MobWin/AD_TYPE/__value I
+  getstatic MobWin/AD_TYPE/__values [LMobWin/AD_TYPE;
+  astore 5
+  aload 5
+  iload_1
+  aload_0
+  aastore
+  return
+  nop
+.end <method>
+
+.method public static convert(I)LMobWin/AD_TYPE;
+.limit locals 8
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+Label3:
+  getstatic MobWin/AD_TYPE/__values [LMobWin/AD_TYPE;
+  astore_2
+  aload_2
+  arraylength
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload_3
+  if_icmplt Label0
+  getstatic MobWin/AD_TYPE/$assertionsDisabled Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label1
+  new java/lang/AssertionError
+  astore 5
+  aload 5
+  invokespecial java/lang/AssertionError/<init>()V
+  aload 5
+  athrow
+Label0:
+  getstatic MobWin/AD_TYPE/__values [LMobWin/AD_TYPE;
+  astore_2
+  aload_2
+  iload_1
+  aaload
+  astore 6
+  aload 6
+  invokevirtual MobWin/AD_TYPE/value()I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload_0
+  if_icmpne Label2
+  getstatic MobWin/AD_TYPE/__values [LMobWin/AD_TYPE;
+  astore_2
+  aload_2
+  iload_1
+  aaload
+  astore 6
+  aload 6
+  areturn
+Label2:
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  goto Label3
+Label1:
+  aconst_null
+  astore 7
+  aload 7
+  areturn
+  nop
+.end <method>
+
+.method public static convert(Ljava/lang/String;)LMobWin/AD_TYPE;
+.limit locals 9
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+Label3:
+  getstatic MobWin/AD_TYPE/__values [LMobWin/AD_TYPE;
+  astore_2
+  aload_2
+  arraylength
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload_3
+  if_icmplt Label0
+  getstatic MobWin/AD_TYPE/$assertionsDisabled Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label1
+  new java/lang/AssertionError
+  astore 5
+  aload 5
+  invokespecial java/lang/AssertionError/<init>()V
+  aload 5
+  athrow
+Label0:
+  getstatic MobWin/AD_TYPE/__values [LMobWin/AD_TYPE;
+  astore_2
+  aload_2
+  iload_1
+  aaload
+  astore 6
+  aload 6
+  invokevirtual MobWin/AD_TYPE/toString()Ljava/lang/String;
+  astore 7
+  aload 7
+  aload_0
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label2
+  getstatic MobWin/AD_TYPE/__values [LMobWin/AD_TYPE;
+  astore_2
+  aload_2
+  iload_1
+  aaload
+  astore 6
+  aload 6
+  areturn
+Label2:
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  goto Label3
+Label1:
+  aconst_null
+  astore 8
+  aload 8
+  areturn
+  nop
+.end <method>
+
+.method public toString()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/AD_TYPE/__T Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public value()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/AD_TYPE/__value I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+

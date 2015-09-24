@@ -1,0 +1,231 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/tencent/lbsapi/core/b
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcom/tencent/lbsapi/core/QLBSEngine;
+
+.method <init>(Lcom/tencent/lbsapi/core/QLBSEngine;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 16
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/b(Lcom/tencent/lbsapi/core/QLBSEngine;)Z
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/c(Lcom/tencent/lbsapi/core/QLBSEngine;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label0
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  iconst_1
+  istore_3
+  aload_1
+  iload_3
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/a(Lcom/tencent/lbsapi/core/QLBSEngine;Z)Z
+  pop
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/d(Lcom/tencent/lbsapi/core/QLBSEngine;)Landroid/os/Handler;
+  astore 4
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/b Ljava/lang/Runnable;
+  astore 5
+  ldc2_w 30000
+  lstore 6
+  aload 4
+  aload 5
+  lload 6
+  invokevirtual android/os/Handler/postDelayed(Ljava/lang/Runnable;J)Z
+  pop
+Label0:
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/e(Lcom/tencent/lbsapi/core/QLBSEngine;)I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  ifne Label1
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/f(Lcom/tencent/lbsapi/core/QLBSEngine;)I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  ldc 900000000
+  istore_3
+  iload 8
+  iload_3
+  if_icmpne Label1
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/g(Lcom/tencent/lbsapi/core/QLBSEngine;)Ljava/util/ArrayList;
+  astore 9
+  aload 9
+  invokevirtual java/util/ArrayList/size()I
+  istore 10
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  ifne Label1
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/h(Lcom/tencent/lbsapi/core/QLBSEngine;)Ljava/lang/ref/WeakReference;
+  astore 11
+  aload 11
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 12
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  ifnull Label2
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/h(Lcom/tencent/lbsapi/core/QLBSEngine;)Ljava/lang/ref/WeakReference;
+  astore 11
+  aload 11
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 12
+  aload 12
+  astore 14
+  aload 14
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 14
+  aload 14
+  astore 13
+  iconst_0
+  istore_3
+  iload_3
+  istore 10
+  aload 13
+  iload 10
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  iconst_0
+  istore_3
+  aload_1
+  iload_3
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/b(Lcom/tencent/lbsapi/core/QLBSEngine;Z)Z
+  pop
+Label2:
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/d(Lcom/tencent/lbsapi/core/QLBSEngine;)Landroid/os/Handler;
+  astore 4
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/a Ljava/lang/Runnable;
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  iconst_0
+  istore_3
+  aload_1
+  iload_3
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/c(Lcom/tencent/lbsapi/core/QLBSEngine;Z)Z
+  pop
+  return
+Label1:
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/h(Lcom/tencent/lbsapi/core/QLBSEngine;)Ljava/lang/ref/WeakReference;
+  astore 11
+  aload 11
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 12
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  ifnull Label2
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/h(Lcom/tencent/lbsapi/core/QLBSEngine;)Ljava/lang/ref/WeakReference;
+  astore 11
+  aload 11
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 12
+  aload 12
+  astore 15
+  aload 15
+  checkcast com/tencent/lbsapi/QLBSNotification
+  astore 15
+  aload 15
+  astore 13
+  iconst_1
+  istore_3
+  iload_3
+  istore 10
+  aload 13
+  iload 10
+  invokeinterface com/tencent/lbsapi/QLBSNotification/onLocationNotification(I)V 2
+  aload_0
+  getfield com/tencent/lbsapi/core/b/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  iconst_0
+  istore_3
+  aload_1
+  iload_3
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/b(Lcom/tencent/lbsapi/core/QLBSEngine;Z)Z
+  pop
+  goto Label2
+  nop
+.end <method>
+

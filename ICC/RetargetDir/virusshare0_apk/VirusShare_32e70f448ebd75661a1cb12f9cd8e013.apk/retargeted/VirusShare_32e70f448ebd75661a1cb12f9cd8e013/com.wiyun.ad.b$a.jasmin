@@ -1,0 +1,378 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/b$a
+.super java/lang/Thread
+.field "a" Landroid/content/Context;
+.field "b" Ljava/lang/String;
+.field "c" Landroid/os/Handler;
+
+.method public <init>(Landroid/content/Context;Ljava/lang/String;Landroid/os/Handler;)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  new java/lang/StringBuilder
+  astore 4
+  ldc "AuxiDownloadThread(), handler: "
+  astore 5
+  aload 4
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload 4
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  ldc "WiYun"
+  astore 5
+  aload 5
+  aload 6
+  invokestatic com/wiyun/ad/s/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  putfield com/wiyun/ad/b$a/a Landroid/content/Context;
+  aload_0
+  aload_2
+  putfield com/wiyun/ad/b$a/b Ljava/lang/String;
+  aload_0
+  aload_3
+  putfield com/wiyun/ad/b$a/c Landroid/os/Handler;
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 25
+.limit stack 200
+  nop
+  ldc "WiYun"
+  astore_3
+  ldc "AuxiDownloadThread, run()"
+  astore 4
+  aload_3
+  aload 4
+  invokestatic com/wiyun/ad/s/a(Ljava/lang/String;Ljava/lang/String;)V
+  bipush 19
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  new java/io/File
+  astore 6
+  invokestatic com/wiyun/ad/x/b()Ljava/lang/String;
+  astore 7
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/b$a/b Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic com/wiyun/ad/ae/b(Ljava/lang/String;)[B
+  astore 9
+  aload 9
+  invokestatic com/wiyun/ad/ae/b([B)Ljava/lang/String;
+  astore 8
+  aload 6
+  aload 7
+  aload 8
+  invokespecial java/io/File/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload 6
+  invokestatic com/wiyun/ad/b/a(Ljava/io/File;)[B
+  astore 9
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/b$a/b Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic com/wiyun/ad/x/e(Ljava/lang/String;)Ljava/lang/String;
+  astore 7
+  invokestatic android/os/Message/obtain()Landroid/os/Message;
+  astore 10
+  ldc "gif"
+  astore 8
+  aload 8
+  aload 7
+  invokevirtual java/lang/String/equalsIgnoreCase(Ljava/lang/String;)Z
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label0
+  iconst_2
+  istore 5
+  aload 10
+  iload 5
+  putfield android/os/Message/what I
+Label2:
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label1
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/b$a/c Landroid/os/Handler;
+  astore 12
+  aload 12
+  aload 10
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+  ldc "WiYun"
+  astore_3
+  ldc "already  in  cache"
+  astore 4
+  aload_3
+  aload 4
+  invokestatic com/wiyun/ad/s/a(Ljava/lang/String;Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore 13
+  invokestatic com/wiyun/ad/x/b()Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 7
+  aload 13
+  aload 7
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/b$a/b Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic com/wiyun/ad/ae/b(Ljava/lang/String;)[B
+  astore 9
+  aload 9
+  invokestatic com/wiyun/ad/ae/b([B)Ljava/lang/String;
+  astore 7
+  aload 13
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  ldc "WiYun"
+  astore_3
+  aload_3
+  aload 7
+  invokestatic com/wiyun/ad/s/a(Ljava/lang/String;Ljava/lang/String;)V
+Label4:
+  return
+Label0:
+  iconst_1
+  istore 5
+  aload 10
+  iload 5
+  putfield android/os/Message/what I
+  goto Label2
+Label1:
+  ldc "WiYun"
+  astore_3
+  ldc "start to  download auxiliary resource"
+  astore 4
+  aload_3
+  aload 4
+  invokestatic com/wiyun/ad/s/a(Ljava/lang/String;Ljava/lang/String;)V
+  new java/net/URL
+  astore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/b$a/b Ljava/lang/String;
+  astore 8
+  aload 14
+  aload 8
+  invokespecial java/net/URL/<init>(Ljava/lang/String;)V
+  aload 14
+  invokevirtual java/net/URL/openConnection()Ljava/net/URLConnection;
+  astore 15
+  aload 15
+  astore 17
+  aload 17
+  checkcast java/net/HttpURLConnection
+  astore 17
+  aload 17
+  astore 16
+  aload 16
+  invokevirtual java/net/HttpURLConnection/connect()V
+  new java/io/BufferedInputStream
+  astore 18
+  aload 16
+  invokevirtual java/net/HttpURLConnection/getInputStream()Ljava/io/InputStream;
+  astore 19
+  aload 18
+  astore_1
+  aload 19
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/io/BufferedInputStream/<init>(Ljava/io/InputStream;)V
+  new java/io/FileOutputStream
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  aload 6
+  invokespecial java/io/FileOutputStream/<init>(Ljava/io/File;)V
+  sipush 1024
+  istore 5
+  iload 5
+  newarray byte
+  astore 9
+  iconst_0
+  istore 21
+Label5:
+  aload 18
+  astore_1
+  aload_1
+  aload 9
+  invokevirtual java/io/BufferedInputStream/read([B)I
+  istore 22
+  iload 22
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 5
+  iload 22
+  istore_1
+  iload_1
+  iload 5
+  if_icmpne Label3
+  new java/lang/StringBuilder
+  astore 13
+  ldc "saved file\uff1a "
+  astore_3
+  aload 13
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  invokestatic com/wiyun/ad/x/b()Ljava/lang/String;
+  astore 7
+  aload 13
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/b$a/b Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic com/wiyun/ad/ae/b(Ljava/lang/String;)[B
+  astore 9
+  aload 9
+  invokestatic com/wiyun/ad/ae/b([B)Ljava/lang/String;
+  astore 7
+  aload 13
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  ldc "WiYun"
+  astore_3
+  aload_3
+  aload 7
+  invokestatic com/wiyun/ad/s/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload 20
+  astore_1
+  aload_1
+  invokevirtual java/io/FileOutputStream/flush()V
+  aload 20
+  astore_1
+  aload_1
+  invokevirtual java/io/FileOutputStream/close()V
+  aload 18
+  astore_1
+  aload_1
+  invokevirtual java/io/BufferedInputStream/close()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/b$a/c Landroid/os/Handler;
+  astore 12
+  aload 12
+  aload 10
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+Label7:
+  goto Label4
+Label6:
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/toString()Ljava/lang/String;
+  astore 7
+  ldc "WiYun"
+  astore_3
+  aload_3
+  aload 7
+  invokestatic com/wiyun/ad/s/c(Ljava/lang/String;Ljava/lang/String;)V
+  goto Label4
+Label3:
+  iload 21
+  istore_1
+  iload 22
+  istore_2
+  iload_1
+  iload_2
+  iadd
+  istore_1
+  iload_1
+  istore 21
+  new java/lang/StringBuilder
+  astore 13
+Label8:
+  ldc "download KBs:  "
+  astore_3
+  aload 13
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  iload 21
+  istore_1
+  iload_1
+  sipush 1024
+  idiv
+  istore_1
+  iload_1
+  istore 24
+  aload 13
+  iload_1
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 8
+  ldc "AdRequester"
+  astore_3
+  aload_3
+  aload 8
+  invokestatic com/wiyun/ad/s/a(Ljava/lang/String;Ljava/lang/String;)V
+  iconst_0
+  istore 5
+  aload 20
+  astore_1
+  iload 22
+  istore_2
+  aload_1
+  aload 9
+  iload 5
+  iload_2
+  invokevirtual java/io/FileOutputStream/write([BII)V
+Label9:
+  goto Label5
+  nop
+.end <method>
+

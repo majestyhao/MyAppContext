@@ -1,0 +1,205 @@
+.source InmobiAD.java
+.class public  com/admogo/obj/InmobiAD
+.super java/lang/Object
+.field private "adImg" Landroid/graphics/drawable/Drawable;
+.field private "adUrl" Ljava/lang/String;
+.field private "adsType" I
+.field private "imgUrl" Ljava/lang/String;
+.field private "linkText" Ljava/lang/String;
+.field private "placement" Ljava/lang/String;
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public <init>(ILjava/lang/String;Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  iload_1
+  putfield com/admogo/obj/InmobiAD/adsType I
+  aload_0
+  aload_2
+  putfield com/admogo/obj/InmobiAD/imgUrl Ljava/lang/String;
+  aload_0
+  aload_3
+  putfield com/admogo/obj/InmobiAD/adImg Landroid/graphics/drawable/Drawable;
+  aload_0
+  aload 4
+  putfield com/admogo/obj/InmobiAD/placement Ljava/lang/String;
+  aload_0
+  aload 5
+  putfield com/admogo/obj/InmobiAD/adUrl Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public <init>(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  iload_1
+  putfield com/admogo/obj/InmobiAD/adsType I
+  aload_0
+  aload_2
+  putfield com/admogo/obj/InmobiAD/imgUrl Ljava/lang/String;
+  aload_0
+  aload_3
+  putfield com/admogo/obj/InmobiAD/placement Ljava/lang/String;
+  aload_0
+  aload 4
+  putfield com/admogo/obj/InmobiAD/adUrl Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public getAdImg()Landroid/graphics/drawable/Drawable;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/obj/InmobiAD/adImg Landroid/graphics/drawable/Drawable;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getAdUrl()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/obj/InmobiAD/adUrl Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getAdsType()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/obj/InmobiAD/adsType I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public getImgUrl()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/obj/InmobiAD/imgUrl Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getLinkText()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/obj/InmobiAD/linkText Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getPlacement()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/obj/InmobiAD/placement Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public setAdImg(Landroid/graphics/drawable/Drawable;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/obj/InmobiAD/adImg Landroid/graphics/drawable/Drawable;
+  return
+  nop
+.end <method>
+
+.method public setAdUrl(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/obj/InmobiAD/adUrl Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setAdsType(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield com/admogo/obj/InmobiAD/adsType I
+  return
+  nop
+.end <method>
+
+.method public setImgUrl(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/obj/InmobiAD/imgUrl Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setLinkText(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/obj/InmobiAD/linkText Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setPlacement(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/obj/InmobiAD/placement Ljava/lang/String;
+  return
+  nop
+.end <method>
+

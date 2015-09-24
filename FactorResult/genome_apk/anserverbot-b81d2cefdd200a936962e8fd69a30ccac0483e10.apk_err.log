@@ -1,0 +1,6 @@
+Exception in thread "main" java.io.FileNotFoundException: File './jellybean_publishedapimapping_parsed.txt' does not exist
+	at org.apache.commons.io.FileUtils.openInputStream(FileUtils.java:299)
+	at org.apache.commons.io.FileUtils.readLines(FileUtils.java:1783)
+	at org.apache.commons.io.FileUtils.readLines(FileUtils.java:1819)
+	at app.MyTest.myTestMain(MyTest.java:344)
+	at app.Main.main(Main.java:16)

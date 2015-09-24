@@ -1,0 +1,647 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/kuguo/b/a
+.super com/kuguo/b/d
+.field private "b" Lorg/apache/http/client/HttpClient;
+
+.method public <init>(Landroid/content/Context;Lcom/kuguo/b/g;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  invokespecial com/kuguo/b/d/<init>(Landroid/content/Context;Lcom/kuguo/b/g;)V
+  return
+  nop
+.end <method>
+
+.method public a()V
+.limit locals 49
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual com/kuguo/b/a/c()Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual com/kuguo/b/a/l()Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label1
+  bipush -4
+  istore 5
+  aload_0
+  astore_1
+  aload_1
+  iload 5
+  invokevirtual com/kuguo/b/a/a(I)V
+Label0:
+  return
+Label1:
+  aconst_null
+  astore 6
+  aload_0
+  astore_1
+  aload_1
+  aload 6
+  invokevirtual com/kuguo/b/a/a(Ljava/lang/Exception;)V
+  bipush -2
+  istore 5
+  aload_0
+  astore_1
+  aload_1
+  iload 5
+  invokevirtual com/kuguo/b/a/a(I)V
+  new org/apache/http/impl/client/DefaultHttpClient
+  astore 7
+  aload 7
+  invokespecial org/apache/http/impl/client/DefaultHttpClient/<init>()V
+  aload_0
+  astore_1
+  aload_1
+  aload 7
+  putfield com/kuguo/b/a/b Lorg/apache/http/client/HttpClient;
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual com/kuguo/b/a/j()F
+  fstore 8
+  fconst_0
+  fstore 10
+  fload 8
+  fload 10
+  fcmpl
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifle Label2
+  aload_0
+  astore_1
+  aload_1
+  getfield com/kuguo/b/a/b Lorg/apache/http/client/HttpClient;
+  astore 11
+  aload 11
+  invokeinterface org/apache/http/client/HttpClient/getParams()Lorg/apache/http/params/HttpParams; 1
+  astore 12
+  ldc 1000.000000
+  fstore 10
+  fload 8
+  fload 10
+  fmul
+  fstore 13
+  fload 13
+  f2i
+  istore 14
+  iload 14
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 15
+  ldc "http.socket.timeout"
+  astore 16
+  aload 12
+  aload 16
+  aload 15
+  invokeinterface org/apache/http/params/HttpParams/setParameter(Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/http/params/HttpParams; 3
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/kuguo/b/a/b Lorg/apache/http/client/HttpClient;
+  astore 11
+  aload 11
+  invokeinterface org/apache/http/client/HttpClient/getParams()Lorg/apache/http/params/HttpParams; 1
+  astore 12
+  ldc 1000.000000
+  fstore 10
+  fload 8
+  fload 10
+  fmul
+  fstore 8
+  fload 8
+  f2i
+  istore 14
+  iload 14
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 15
+  ldc "http.connection.timeout"
+  astore 16
+  aload 12
+  aload 16
+  aload 15
+  invokeinterface org/apache/http/params/HttpParams/setParameter(Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/http/params/HttpParams; 3
+  pop
+Label2:
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual com/kuguo/b/a/k()Lcom/kuguo/b/c;
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 17
+  ifnull Label3
+  new org/apache/http/HttpHost
+  astore 18
+  aload 17
+  astore_1
+  aload_1
+  invokevirtual com/kuguo/b/c/a()Ljava/lang/String;
+  astore 19
+  aload 17
+  astore_1
+  aload_1
+  invokevirtual com/kuguo/b/c/b()I
+  istore 14
+  ldc "http"
+  astore 16
+  aload 18
+  astore_1
+  aload 19
+  astore_2
+  aload_1
+  aload_2
+  iload 14
+  aload 16
+  invokespecial org/apache/http/HttpHost/<init>(Ljava/lang/String;ILjava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/kuguo/b/a/b Lorg/apache/http/client/HttpClient;
+  astore 11
+  aload 11
+  invokeinterface org/apache/http/client/HttpClient/getParams()Lorg/apache/http/params/HttpParams; 1
+  astore 12
+  ldc "http.route.default-proxy"
+  astore 16
+  aload 18
+  astore_1
+  aload 12
+  aload 16
+  aload_1
+  invokeinterface org/apache/http/params/HttpParams/setParameter(Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/http/params/HttpParams; 3
+  pop
+Label3:
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual com/kuguo/b/a/d()Lcom/kuguo/b/g;
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  invokevirtual com/kuguo/b/g/b()I
+  istore 14
+  dload 14
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 14
+  ifne Label4
+  new org/apache/http/client/methods/HttpGet
+  astore 21
+  aload 20
+  astore_1
+  aload_1
+  invokevirtual com/kuguo/b/g/toString()Ljava/lang/String;
+  astore 19
+  aload 21
+  astore_1
+  aload 19
+  astore_2
+  aload_1
+  aload_2
+  invokespecial org/apache/http/client/methods/HttpGet/<init>(Ljava/lang/String;)V
+  aload 21
+  astore 22
+Label7:
+  aload 20
+  astore_1
+  aload_1
+  invokevirtual com/kuguo/b/g/a()Ljava/util/Map;
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokeinterface java/util/Map/keySet()Ljava/util/Set; 1
+  astore 24
+  aload 24
+  astore_1
+  aload_1
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore 25
+Label6:
+  aload 25
+  astore_1
+  aload_1
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label5
+  aload 25
+  astore_1
+  aload_1
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 26
+  aload 26
+  astore 27
+  aload 27
+  checkcast java/lang/String
+  astore 27
+  aload 27
+  astore 19
+  aload 23
+  astore_1
+  aload 19
+  astore_2
+  aload_1
+  aload_2
+  invokeinterface java/util/Map/get(Ljava/lang/Object;)Ljava/lang/Object; 2
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 28
+  aload 22
+  astore 30
+  aload 30
+  checkcast org/apache/http/client/methods/HttpUriRequest
+  astore 30
+  aload 30
+  astore 29
+  aload 29
+  astore_1
+  aload 19
+  astore_2
+  aload 28
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokeinterface org/apache/http/client/methods/HttpUriRequest/addHeader(Ljava/lang/String;Ljava/lang/String;)V 3
+  goto Label6
+Label4:
+  new org/apache/http/client/methods/HttpPost
+  astore 31
+  aload 20
+  astore_1
+  aload_1
+  invokevirtual com/kuguo/b/g/c()Ljava/lang/String;
+  astore 19
+  aload 31
+  astore_1
+  aload 19
+  astore_2
+  aload_1
+  aload_2
+  invokespecial org/apache/http/client/methods/HttpPost/<init>(Ljava/lang/String;)V
+Label12:
+  aload 20
+  astore_1
+  aload_1
+  invokevirtual com/kuguo/b/g/d()Ljava/lang/String;
+  astore 19
+  new org/apache/http/entity/StringEntity
+  astore 32
+  aload 32
+  astore_1
+  aload 19
+  astore_2
+  aload_1
+  aload_2
+  invokespecial org/apache/http/entity/StringEntity/<init>(Ljava/lang/String;)V
+  aload 31
+  astore_1
+  aload 32
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual org/apache/http/client/methods/HttpPost/setEntity(Lorg/apache/http/HttpEntity;)V
+Label8:
+  aload 31
+  astore 22
+  goto Label7
+Label11:
+  astore 33
+  aload 33
+  astore_1
+  aload_1
+  invokevirtual java/io/UnsupportedEncodingException/printStackTrace()V
+  goto Label8
+Label5:
+  new java/lang/StringBuilder
+  astore 34
+Label14:
+  aload 34
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "---uri === "
+  astore 16
+  aload 34
+  astore_1
+  aload_1
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 35
+  aload 22
+  astore 36
+  aload 36
+  checkcast org/apache/http/client/methods/HttpUriRequest
+  astore 36
+  aload 36
+  astore 29
+  aload 29
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/client/methods/HttpUriRequest/getURI()Ljava/net/URI; 1
+  astore 37
+  aload 35
+  astore_1
+  aload 37
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore 35
+  aload 35
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 28
+  ldc "jerry"
+  astore 16
+  aload 28
+  astore_1
+  aload 16
+  aload_1
+  invokestatic com/kuguo/c/a/a(Ljava/lang/String;Ljava/lang/Object;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/kuguo/b/a/b Lorg/apache/http/client/HttpClient;
+  astore 11
+  aload 22
+  astore 38
+  aload 38
+  checkcast org/apache/http/client/methods/HttpUriRequest
+  astore 38
+  aload 38
+  astore 29
+  aload 29
+  astore_1
+  aload 11
+  aload_1
+  invokeinterface org/apache/http/client/HttpClient/execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse; 2
+  astore 39
+  aload 39
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/HttpResponse/getStatusLine()Lorg/apache/http/StatusLine; 1
+  astore 40
+  aload 40
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/StatusLine/getStatusCode()I 1
+  istore 41
+  new java/util/HashMap
+  astore 42
+  aload 42
+  astore_1
+  aload_1
+  invokespecial java/util/HashMap/<init>()V
+  aload 39
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/HttpResponse/getAllHeaders()[Lorg/apache/http/Header; 1
+  astore 43
+  aload 43
+  astore_1
+  aload_1
+  arraylength
+  istore 14
+  iconst_0
+  istore 44
+Label10:
+  iload 44
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 14
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 44
+  istore_1
+  iload_1
+  iload 14
+  if_icmpge Label9
+  aload 43
+  iload 44
+  aaload
+  astore 45
+  aload 45
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/Header/getName()Ljava/lang/String; 1
+  astore 28
+  aload 45
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/Header/getValue()Ljava/lang/String; 1
+  astore 19
+  aload 42
+  astore_1
+  aload 28
+  astore_2
+  aload 19
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  new java/lang/StringBuilder
+  astore 34
+  aload 34
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 45
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/Header/getName()Ljava/lang/String; 1
+  astore 19
+  aload 34
+  astore_1
+  aload 19
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 35
+  ldc " --- "
+  astore 16
+  aload 35
+  astore_1
+  aload_1
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 35
+  aload 45
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/Header/getValue()Ljava/lang/String; 1
+  astore 19
+  aload 35
+  astore_1
+  aload 19
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 35
+  aload 35
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 19
+  ldc "jerry"
+  astore 16
+  aload 19
+  astore_1
+  aload 16
+  aload_1
+  invokestatic com/kuguo/c/a/a(Ljava/lang/String;Ljava/lang/Object;)V
+  iload 44
+  iconst_1
+  iadd
+  istore 44
+  goto Label10
+Label9:
+  aload_0
+  astore_1
+  aload 42
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual com/kuguo/b/a/a(Ljava/util/Map;)V
+  aload 39
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/HttpResponse/getEntity()Lorg/apache/http/HttpEntity; 1
+  astore 46
+  aload 46
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/HttpEntity/getContent()Ljava/io/InputStream; 1
+  astore 47
+  aload_0
+  astore_1
+  aload 47
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual com/kuguo/b/a/a(Ljava/io/InputStream;)V
+  aload_0
+  astore_1
+  iload 41
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual com/kuguo/b/a/a(I)V
+  ldc "\u7f51\u7edc\u8bbf\u95ee\u5b8c\u6210"
+  astore 16
+  aload 16
+  invokestatic com/kuguo/c/a/a(Ljava/lang/Object;)V
+Label15:
+  goto Label0
+Label13:
+  astore 48
+  ldc "\u7f51\u7edc\u94fe\u63a5\u5f02\u5e38"
+  astore 16
+  aload 16
+  invokestatic com/kuguo/c/a/a(Ljava/lang/Object;)V
+  aload_0
+  astore_1
+  aload 48
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual com/kuguo/b/a/a(Ljava/lang/Exception;)V
+  bipush -3
+  istore 5
+  aload_0
+  astore_1
+  aload_1
+  iload 5
+  invokevirtual com/kuguo/b/a/a(I)V
+  goto Label0
+  nop
+.end <method>
+
+.method public b()V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  invokevirtual com/kuguo/b/a/c()Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/kuguo/b/a/b Lorg/apache/http/client/HttpClient;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label1
+  aload_0
+  getfield com/kuguo/b/a/b Lorg/apache/http/client/HttpClient;
+  astore_2
+  aload_2
+  invokeinterface org/apache/http/client/HttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager; 1
+  astore_3
+  aload_3
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+Label1:
+  aconst_null
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual com/kuguo/b/a/a(Ljava/util/Map;)V
+  aconst_null
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual com/kuguo/b/a/a(Ljava/io/InputStream;)V
+  aconst_null
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual com/kuguo/b/a/a(Ljava/lang/Exception;)V
+  bipush -3
+  istore 5
+  aload_0
+  iload 5
+  invokevirtual com/kuguo/b/a/a(I)V
+Label0:
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,466 @@
+.source WiyunAdapter.java
+.class public  com/admogo/adapters/WiyunAdapter
+.super com/admogo/adapters/AdMogoAdapter
+.implements  com/wiyun/ad/AdView$AdListener
+.field private "activity" Landroid/app/Activity;
+.field private "adView" Lcom/wiyun/ad/AdView;
+
+.method public <init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  invokespecial com/admogo/adapters/AdMogoAdapter/<init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+  return
+  nop
+.end <method>
+
+.method public click()V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore_2
+  aload_2
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 4
+  astore_3
+  aload_3
+  invokevirtual com/admogo/AdMogoLayout/countClick()V
+  return
+  nop
+.end <method>
+
+.method public finish()V
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_1
+  ldc "Wiyun Finished"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method public handle()V
+.limit locals 22
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore_3
+  aload_3
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 4
+  aload 4
+  astore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 6
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 5
+  ifne Label0
+Label1:
+  return
+Label0:
+  aload 5
+  getfield com/admogo/AdMogoLayout/activityReference Ljava/lang/ref/WeakReference;
+  astore_3
+  aload_3
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 4
+  aload 4
+  astore 8
+  aload 8
+  checkcast android/app/Activity
+  astore 8
+  aload 8
+  astore 7
+  aload_0
+  astore_1
+  aload_1
+  aload 7
+  putfield com/admogo/adapters/WiyunAdapter/activity Landroid/app/Activity;
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/WiyunAdapter/activity Landroid/app/Activity;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label1
+  new com/wiyun/ad/AdView
+  astore 9
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/WiyunAdapter/activity Landroid/app/Activity;
+  astore 7
+  aload 9
+  aload 7
+  invokespecial com/wiyun/ad/AdView/<init>(Landroid/content/Context;)V
+  aload_0
+  astore_1
+  aload_1
+  aload 9
+  putfield com/admogo/adapters/WiyunAdapter/adView Lcom/wiyun/ad/AdView;
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/WiyunAdapter/adView Lcom/wiyun/ad/AdView;
+  astore 9
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/AdMogoAdapter/ration Lcom/admogo/obj/Ration;
+  astore 10
+  aload 10
+  getfield com/admogo/obj/Ration/key Ljava/lang/String;
+  astore 11
+Label3:
+  aload 9
+  aload 11
+  invokevirtual com/wiyun/ad/AdView/setResId(Ljava/lang/String;)V
+Label4:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/WiyunAdapter/adView Lcom/wiyun/ad/AdView;
+  astore 9
+  aload_0
+  astore_1
+  aload 9
+  aload_1
+  invokevirtual com/wiyun/ad/AdView/setListener(Lcom/wiyun/ad/AdView$AdListener;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/WiyunAdapter/adView Lcom/wiyun/ad/AdView;
+  astore 9
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/AdMogoAdapter/ration Lcom/admogo/obj/Ration;
+  astore 10
+  aload 10
+  getfield com/admogo/obj/Ration/testmodel Z
+  istore 12
+  aload 9
+  iload 12
+  invokevirtual com/wiyun/ad/AdView/setTestMode(Z)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/WiyunAdapter/adView Lcom/wiyun/ad/AdView;
+  astore 9
+  iconst_2
+  istore 13
+  aload 9
+  iload 13
+  invokevirtual com/wiyun/ad/AdView/setTestAdType(I)V
+  aload 5
+  getfield com/admogo/AdMogoLayout/extra Lcom/admogo/obj/Extra;
+  astore 14
+  aload 14
+  getfield com/admogo/obj/Extra/bgRed I
+  istore 15
+  aload 14
+  getfield com/admogo/obj/Extra/bgGreen I
+  istore 16
+  aload 14
+  getfield com/admogo/obj/Extra/bgBlue I
+  istore_1
+  iload_1
+  istore 17
+  iload 15
+  iload 16
+  iload_1
+  invokestatic android/graphics/Color/rgb(III)I
+  istore 15
+  aload 14
+  getfield com/admogo/obj/Extra/fgRed I
+  istore 16
+  aload 14
+  getfield com/admogo/obj/Extra/fgGreen I
+  istore_1
+  iload_1
+  istore 17
+  aload 14
+  getfield com/admogo/obj/Extra/fgBlue I
+  istore_1
+  iload_1
+  istore 18
+  iload 17
+  istore_1
+  iload 18
+  istore_2
+  iload 16
+  iload_1
+  iload_2
+  invokestatic android/graphics/Color/rgb(III)I
+  istore 17
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/WiyunAdapter/adView Lcom/wiyun/ad/AdView;
+  astore 9
+  aload 9
+  iload 15
+  invokevirtual com/wiyun/ad/AdView/setBackgroundColor(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/WiyunAdapter/adView Lcom/wiyun/ad/AdView;
+  astore 9
+  iload 17
+  istore_1
+  aload 9
+  iload_1
+  invokevirtual com/wiyun/ad/AdView/setTextColor(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/WiyunAdapter/adView Lcom/wiyun/ad/AdView;
+  astore 9
+  new android/view/ViewGroup$LayoutParams
+  astore 19
+  bipush -2
+  istore 13
+  bipush -2
+  istore 20
+  aload 19
+  astore_1
+  iload 20
+  istore_2
+  aload_1
+  iload 13
+  iload_2
+  invokespecial android/view/ViewGroup$LayoutParams/<init>(II)V
+  aload 19
+  astore_1
+  aload 5
+  aload 9
+  aload_1
+  invokevirtual com/admogo/AdMogoLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/WiyunAdapter/adView Lcom/wiyun/ad/AdView;
+  astore 9
+  aload 9
+  invokevirtual com/wiyun/ad/AdView/requestAd()V
+  goto Label1
+Label2:
+  astore 21
+  aload 5
+  invokevirtual com/admogo/AdMogoLayout/rollover()V
+  goto Label1
+  nop
+.end <method>
+
+.method public onAdClicked()V
+.limit locals 1
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+
+.method public onAdLoadFailed()V
+.limit locals 11
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_1
+  ldc "WiYun failure"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield com/admogo/adapters/WiyunAdapter/adView Lcom/wiyun/ad/AdView;
+  astore_3
+  aconst_null
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual com/wiyun/ad/AdView/setListener(Lcom/wiyun/ad/AdView$AdListener;)V
+  aload_0
+  getfield com/admogo/adapters/WiyunAdapter/activity Landroid/app/Activity;
+  astore 5
+  aload 5
+  invokevirtual android/app/Activity/isFinishing()Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifne Label0
+  aload_0
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore 7
+  aload 7
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 8
+  aload 8
+  astore 10
+  aload 10
+  checkcast com/admogo/AdMogoLayout
+  astore 10
+  aload 10
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnonnull Label1
+Label0:
+  return
+Label1:
+  aload 9
+  invokevirtual com/admogo/AdMogoLayout/rollover()V
+  goto Label0
+  nop
+.end <method>
+
+.method public onAdLoaded()V
+.limit locals 15
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_1
+  ldc "Wiyun success"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield com/admogo/adapters/WiyunAdapter/adView Lcom/wiyun/ad/AdView;
+  astore_3
+  aconst_null
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual com/wiyun/ad/AdView/setListener(Lcom/wiyun/ad/AdView$AdListener;)V
+  aload_0
+  getfield com/admogo/adapters/WiyunAdapter/activity Landroid/app/Activity;
+  astore 5
+  aload 5
+  invokevirtual android/app/Activity/isFinishing()Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifne Label0
+  aload_0
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore 7
+  aload 7
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 8
+  aload 8
+  astore 10
+  aload 10
+  checkcast com/admogo/AdMogoLayout
+  astore 10
+  aload 10
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnonnull Label1
+Label0:
+  return
+Label1:
+  aload 9
+  getfield com/admogo/AdMogoLayout/adMogoManager Lcom/admogo/AdMogoManager;
+  astore 11
+  aload 11
+  invokevirtual com/admogo/AdMogoManager/resetRollover()V
+  aload 9
+  getfield com/admogo/AdMogoLayout/handler Landroid/os/Handler;
+  astore 12
+  new com/admogo/AdMogoLayout$ViewAdRunnable
+  astore 13
+  aload_0
+  getfield com/admogo/adapters/WiyunAdapter/adView Lcom/wiyun/ad/AdView;
+  astore_3
+  bipush 22
+  istore 14
+  aload 13
+  aload 9
+  aload_3
+  iload 14
+  invokespecial com/admogo/AdMogoLayout$ViewAdRunnable/<init>(Lcom/admogo/AdMogoLayout;Landroid/view/ViewGroup;I)V
+  aload 12
+  aload 13
+  invokevirtual android/os/Handler/post(Ljava/lang/Runnable;)Z
+  pop
+  aload 9
+  invokevirtual com/admogo/AdMogoLayout/rotateThreadedDelayed()V
+  goto Label0
+  nop
+.end <method>
+
+.method public onAppDownloadFailed()V
+.limit locals 1
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+
+.method public onAppDownloaded()V
+.limit locals 1
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+
+.method public onExitButtonClicked()V
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_1
+  ldc "WiYun onExitButtonClicked"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method public onMiniSiteClosed()V
+.limit locals 1
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+

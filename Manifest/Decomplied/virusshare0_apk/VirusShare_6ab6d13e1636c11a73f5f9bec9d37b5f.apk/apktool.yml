@@ -1,0 +1,16 @@
+version: 2.0.1
+apkFileName: VirusShare_6ab6d13e1636c11a73f5f9bec9d37b5f.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '5'
+  targetSdkVersion: '5'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '1'
+  versionName: '1.0'
+compressionType: true
+sharedLibrary: false

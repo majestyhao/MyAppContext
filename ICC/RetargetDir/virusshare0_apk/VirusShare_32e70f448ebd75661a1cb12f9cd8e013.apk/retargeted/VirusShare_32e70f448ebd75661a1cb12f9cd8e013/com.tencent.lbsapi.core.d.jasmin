@@ -1,0 +1,109 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/tencent/lbsapi/core/d
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcom/tencent/lbsapi/core/QLBSEngine;
+
+.method <init>(Lcom/tencent/lbsapi/core/QLBSEngine;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/tencent/lbsapi/core/d/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 8
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/lbsapi/core/d/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/c(Lcom/tencent/lbsapi/core/QLBSEngine;)Z
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_0
+  getfield com/tencent/lbsapi/core/d/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/i(Lcom/tencent/lbsapi/core/QLBSEngine;)Landroid/location/LocationManager;
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  ifnull Label1
+  aload_0
+  getfield com/tencent/lbsapi/core/d/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/j(Lcom/tencent/lbsapi/core/QLBSEngine;)Landroid/app/PendingIntent;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label1
+  aload_0
+  getfield com/tencent/lbsapi/core/d/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/i(Lcom/tencent/lbsapi/core/QLBSEngine;)Landroid/location/LocationManager;
+  astore_3
+  aload_0
+  getfield com/tencent/lbsapi/core/d/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/j(Lcom/tencent/lbsapi/core/QLBSEngine;)Landroid/app/PendingIntent;
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual android/location/LocationManager/removeUpdates(Landroid/app/PendingIntent;)V
+Label1:
+  aload_0
+  getfield com/tencent/lbsapi/core/d/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  iconst_0
+  istore 5
+  aload_1
+  iload 5
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/d(Lcom/tencent/lbsapi/core/QLBSEngine;Z)Z
+  pop
+Label0:
+  aload_0
+  getfield com/tencent/lbsapi/core/d/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/d(Lcom/tencent/lbsapi/core/QLBSEngine;)Landroid/os/Handler;
+  astore 6
+  aload_0
+  getfield com/tencent/lbsapi/core/d/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  aload_1
+  getfield com/tencent/lbsapi/core/QLBSEngine/b Ljava/lang/Runnable;
+  astore 7
+  aload 6
+  aload 7
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+  aload_0
+  getfield com/tencent/lbsapi/core/d/a Lcom/tencent/lbsapi/core/QLBSEngine;
+  astore_1
+  iconst_0
+  istore 5
+  aload_1
+  iload 5
+  invokestatic com/tencent/lbsapi/core/QLBSEngine/a(Lcom/tencent/lbsapi/core/QLBSEngine;Z)Z
+  pop
+  return
+  nop
+.end <method>
+

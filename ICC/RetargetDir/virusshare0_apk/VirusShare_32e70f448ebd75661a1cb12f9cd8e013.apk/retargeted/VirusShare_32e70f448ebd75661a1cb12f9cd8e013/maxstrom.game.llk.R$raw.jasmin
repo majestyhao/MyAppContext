@@ -1,0 +1,20 @@
+.source R.java
+.class public final  maxstrom/game/llk/R$raw
+.super java/lang/Object
+.field public static final "bg" I =  2131034112
+.field public static final "click" I =  2131034113
+.field public static final "match" I =  2131034114
+.field public static final "timeout" I =  2131034115
+.field public static final "tool" I =  2131034116
+.field public static final "win" I =  2131034117
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

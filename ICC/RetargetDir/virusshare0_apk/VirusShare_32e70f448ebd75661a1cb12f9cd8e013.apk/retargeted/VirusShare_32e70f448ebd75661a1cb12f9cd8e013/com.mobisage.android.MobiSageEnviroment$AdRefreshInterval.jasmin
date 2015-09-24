@@ -1,0 +1,20 @@
+.source SourceFile
+.class public  com/mobisage/android/MobiSageEnviroment$AdRefreshInterval
+.super java/lang/Object
+.field public static final "Ad_No_Refresh" I =  0
+.field public static final "Ad_Refresh_15" I =  1
+.field public static final "Ad_Refresh_20" I =  2
+.field public static final "Ad_Refresh_25" I =  3
+.field public static final "Ad_Refresh_30" I =  4
+.field public static final "Ad_Refresh_60" I =  5
+
+.method public <init>(Lcom/mobisage/android/MobiSageEnviroment;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

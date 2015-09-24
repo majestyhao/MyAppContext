@@ -1,0 +1,94 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class final  c$a
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lc;
+.field private final "b" Ld;
+.field private final "c" Landroid/webkit/WebView;
+.field private final "d" Lb;
+.field private final "e" Lcom/google/ads/AdRequest$ErrorCode;
+.field private final "f" Z
+
+.method public <init>(Lc;Ld;Landroid/webkit/WebView;Lb;Lcom/google/ads/AdRequest$ErrorCode;Z)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield c$a/a Lc;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  aload_2
+  putfield c$a/b Ld;
+  aload_0
+  aload_3
+  putfield c$a/c Landroid/webkit/WebView;
+  aload_0
+  aload 4
+  putfield c$a/d Lb;
+  aload_0
+  aload 5
+  putfield c$a/e Lcom/google/ads/AdRequest$ErrorCode;
+  aload_0
+  iload 6
+  putfield c$a/f Z
+  return
+  nop
+.end <method>
+
+.method public final run()V
+.limit locals 8
+.limit stack 200
+  nop
+  aload_0
+  getfield c$a/c Landroid/webkit/WebView;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield c$a/c Landroid/webkit/WebView;
+  astore_1
+  aload_1
+  invokevirtual android/webkit/WebView/destroy()V
+  aload_0
+  getfield c$a/d Lb;
+  astore_2
+  aload_2
+  invokevirtual b/a()V
+  aload_0
+  getfield c$a/f Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label0
+  aload_0
+  getfield c$a/b Ld;
+  astore 4
+  aload 4
+  invokevirtual d/i()Lg;
+  astore 5
+  aload 5
+  invokevirtual g/stopLoading()V
+  bipush 8
+  istore 6
+  aload 5
+  iload 6
+  invokevirtual g/setVisibility(I)V
+Label0:
+  aload_0
+  getfield c$a/b Ld;
+  astore 4
+  aload_0
+  getfield c$a/e Lcom/google/ads/AdRequest$ErrorCode;
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual d/a(Lcom/google/ads/AdRequest$ErrorCode;)V
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/dialog_bg" android:paddingLeft="6.0dip" android:paddingTop="6.0dip" android:paddingRight="6.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="350.0px" android:minHeight="220.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:umadsdk="http://schemas.android.com/apk/res/maxstrom.game.llk"
+  xmlns:adsdk="http://schemas.android.com/apk/res/maxstrom.game.llk">
+    <ScrollView android:scrollbarStyle="insideInset" android:id="@id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/txtLevelTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0px" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/txtLevelFace" android:paddingRight="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0px" />
+                <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/txtLevelDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0px" />
+            </LinearLayout>
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:id="@id/txtMaxLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0px" />
+            <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageButton android:id="@id/btnContinue" android:background="@drawable/btn_continue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" />
+            </LinearLayout>
+            <com.admogo.AdMogoLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/admogo_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

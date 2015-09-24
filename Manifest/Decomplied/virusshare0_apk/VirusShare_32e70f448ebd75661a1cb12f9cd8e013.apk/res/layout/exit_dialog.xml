@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="vertical" android:id="@id/layMain" android:padding="4.0sp" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:umadsdk="http://schemas.android.com/apk/res/maxstrom.game.llk"
+  xmlns:adsdk="http://schemas.android.com/apk/res/maxstrom.game.llk">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0sp">
+            <ImageView android:background="@drawable/icon" android:layout_width="35.0sp" android:layout_height="35.0sp" android:scaleType="fitStart" />
+            <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:background="@drawable/pop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/quitDesc" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/btnConfirm" android:background="@drawable/btn_bg" android:padding="10.0dip" android:paddingLeft="40.0sp" android:paddingRight="40.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btnOK" />
+            <Button android:id="@id/btnCancel" android:background="@drawable/btn_bg" android:padding="10.0dip" android:paddingLeft="40.0sp" android:paddingRight="40.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btnCancel" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

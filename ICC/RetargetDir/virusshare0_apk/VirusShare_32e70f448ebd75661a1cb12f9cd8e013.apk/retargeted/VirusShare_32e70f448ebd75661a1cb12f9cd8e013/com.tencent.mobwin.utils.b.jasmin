@@ -1,0 +1,925 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/tencent/mobwin/utils/b
+.super java/lang/Object
+.field public static final "a" I =  320
+.field public static final "b" Ljava/lang/String; =  ".ad"
+.field private static final "c" [C
+
+.method static <clinit>()V
+.limit locals 3
+.limit stack 200
+  nop
+  bipush 16
+  istore_1
+  iload_1
+  newarray char
+  astore_0
+  iconst_0
+  istore_1
+  bipush 48
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_1
+  istore_1
+  bipush 49
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_2
+  istore_1
+  bipush 50
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_3
+  istore_1
+  bipush 51
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_4
+  istore_1
+  bipush 52
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_5
+  istore_1
+  bipush 53
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 6
+  istore_1
+  bipush 54
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 7
+  istore_1
+  bipush 55
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 8
+  istore_1
+  bipush 56
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 9
+  istore_1
+  bipush 57
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 10
+  istore_1
+  bipush 65
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 11
+  istore_1
+  bipush 66
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 12
+  istore_1
+  bipush 67
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 13
+  istore_1
+  bipush 68
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 14
+  istore_1
+  bipush 69
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 15
+  istore_1
+  bipush 70
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  aload_0
+  putstatic com/tencent/mobwin/utils/b/c [C
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static a(ILandroid/content/Context;)I
+.limit locals 10
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_2
+  invokespecial android/util/DisplayMetrics/<init>()V
+  aload_1
+  instanceof android/app/Activity
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label0
+  aload_1
+  astore 5
+  aload 5
+  checkcast android/app/Activity
+  astore 5
+  aload 5
+  astore 4
+  aload 4
+  invokevirtual android/app/Activity/getWindowManager()Landroid/view/WindowManager;
+  astore 6
+  aload 6
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 7
+  aload 7
+  aload_2
+  invokevirtual android/view/Display/getMetrics(Landroid/util/DisplayMetrics;)V
+  aload_2
+  getfield android/util/DisplayMetrics/densityDpi I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 120
+  istore 9
+  iload 8
+  iload 9
+  if_icmpne Label1
+  iload_0
+  bipush 120
+  imul
+  istore 8
+  iload 8
+  sipush 320
+  idiv
+  istore_0
+Label4:
+  iload_0
+  ireturn
+Label1:
+  aload_2
+  getfield android/util/DisplayMetrics/densityDpi I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 160
+  istore 9
+  iload 8
+  iload 9
+  if_icmpne Label2
+  iload_0
+  sipush 160
+  imul
+  istore 8
+  iload 8
+  sipush 320
+  idiv
+  istore_0
+  iload_0
+  ireturn
+Label2:
+  aload_2
+  getfield android/util/DisplayMetrics/densityDpi I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 240
+  istore 9
+  iload 8
+  iload 9
+  if_icmpne Label3
+  iload_0
+  sipush 240
+  imul
+  istore 8
+  iload 8
+  sipush 320
+  idiv
+  istore_0
+  iload_0
+  ireturn
+Label3:
+  aload_2
+  getfield android/util/DisplayMetrics/densityDpi I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 320
+  istore 9
+  iload 8
+  iload 9
+  if_icmpeq Label4
+Label0:
+  aload_2
+  getfield android/util/DisplayMetrics/densityDpi I
+  istore 8
+  iload 8
+  iload_0
+  imul
+  istore 8
+  iload 8
+  sipush 320
+  idiv
+  istore_0
+  iload_0
+  ireturn
+  nop
+.end <method>
+
+.method public static a(Landroid/content/Context;)I
+.limit locals 9
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label0
+  aload_0
+  astore_3
+  aload_3
+  checkcast android/app/Activity
+  astore_3
+  aload_3
+  astore_2
+  new android/util/DisplayMetrics
+  astore 4
+  aload 4
+  invokespecial android/util/DisplayMetrics/<init>()V
+  aload_2
+  invokevirtual android/app/Activity/getWindowManager()Landroid/view/WindowManager;
+  astore 5
+  aload 5
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 6
+  aload 6
+  aload 4
+  invokevirtual android/view/Display/getMetrics(Landroid/util/DisplayMetrics;)V
+  aload 4
+  getfield android/util/DisplayMetrics/widthPixels I
+  istore 7
+  iload 7
+  ireturn
+Label0:
+  iconst_0
+  istore 8
+  iload 8
+  ireturn
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;I)I
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  aload_0
+  invokevirtual java/lang/String/trim()Ljava/lang/String;
+  astore_2
+  aload_2
+  invokevirtual java/lang/String/length()I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  ifne Label1
+Label0:
+  iload_1
+  ireturn
+Label1:
+  aload_0
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore_3
+Label3:
+  iload_3
+  ireturn
+Label2:
+  astore 4
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;J)J
+.limit locals 8
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  aload_0
+  invokevirtual java/lang/String/trim()Ljava/lang/String;
+  astore_3
+  aload_3
+  invokevirtual java/lang/String/length()I
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifne Label1
+Label0:
+  lload_1
+  lreturn
+Label1:
+  aload_0
+  invokestatic java/lang/Long/parseLong(Ljava/lang/String;)J
+  lstore 5
+Label3:
+  lload 5
+  lreturn
+Label2:
+  astore 7
+  lload_1
+  lreturn
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 6
+.limit stack 200
+  .catch  java/security/NoSuchAlgorithmException <from> Label1 <to> Label2 <using> Label0
+  nop
+Label1:
+  ldc "MD5"
+  astore_2
+  aload_2
+  invokestatic java/security/MessageDigest/getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+  astore_1
+  aload_0
+  invokevirtual java/lang/String/getBytes()[B
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/security/MessageDigest/update([B)V
+  aload_1
+  invokevirtual java/security/MessageDigest/digest()[B
+  astore_3
+  aload_3
+  invokestatic com/tencent/mobwin/utils/b/a([B)Ljava/lang/String;
+  astore 4
+Label2:
+  aload 4
+  areturn
+Label0:
+  astore 5
+  aload 5
+  invokevirtual java/security/NoSuchAlgorithmException/printStackTrace()V
+  ldc ""
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public static a([B)Ljava/lang/String;
+.limit locals 10
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore_1
+  aload_0
+  arraylength
+  istore_2
+  iload_2
+  iconst_2
+  imul
+  istore_2
+  aload_1
+  iload_2
+  invokespecial java/lang/StringBuilder/<init>(I)V
+  iconst_0
+  istore_3
+Label1:
+  aload_0
+  arraylength
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload_2
+  if_icmplt Label0
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload 4
+  areturn
+Label0:
+  getstatic com/tencent/mobwin/utils/b/c [C
+  astore 5
+  aload_0
+  iload_3
+  baload
+  istore 6
+  sipush 240
+  istore 8
+  iload 6
+  iload 8
+  iand
+  istore 7
+  iconst_4
+  istore 8
+  iload 7
+  iload 8
+  iushr
+  istore 7
+  aload 5
+  iload 7
+  caload
+  istore 9
+  aload_1
+  iload 9
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  getstatic com/tencent/mobwin/utils/b/c [C
+  astore 5
+  aload_0
+  iload_3
+  baload
+  istore 6
+  bipush 15
+  istore 8
+  iload 6
+  iload 8
+  iand
+  istore 6
+  aload 5
+  iload 6
+  caload
+  istore 9
+  aload_1
+  iload 9
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label1
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;S)S
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  aload_0
+  invokevirtual java/lang/String/trim()Ljava/lang/String;
+  astore_2
+  aload_2
+  invokevirtual java/lang/String/length()I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  ifne Label1
+Label0:
+  iload_1
+  ireturn
+Label1:
+  aload_0
+  invokestatic java/lang/Short/parseShort(Ljava/lang/String;)S
+  istore 4
+Label3:
+  iload 4
+  ireturn
+Label2:
+  astore 5
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public static b(Landroid/content/Context;)I
+.limit locals 9
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label0
+  aload_0
+  astore_3
+  aload_3
+  checkcast android/app/Activity
+  astore_3
+  aload_3
+  astore_2
+  new android/util/DisplayMetrics
+  astore 4
+  aload 4
+  invokespecial android/util/DisplayMetrics/<init>()V
+  aload_2
+  invokevirtual android/app/Activity/getWindowManager()Landroid/view/WindowManager;
+  astore 5
+  aload 5
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 6
+  aload 6
+  aload 4
+  invokevirtual android/view/Display/getMetrics(Landroid/util/DisplayMetrics;)V
+  aload 4
+  getfield android/util/DisplayMetrics/heightPixels I
+  istore 7
+  iload 7
+  ireturn
+Label0:
+  iconst_0
+  istore 8
+  iload 8
+  ireturn
+  nop
+.end <method>
+
+.method public static b(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_1
+  ifne Label0
+Label2:
+  aload_0
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_0
+  ifnull Label1
+  ldc "/"
+  astore_3
+  ldc "_"
+  astore 4
+  aload_0
+  aload_3
+  aload 4
+  invokevirtual java/lang/String/replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+  astore_2
+  ldc "\\"
+  astore_3
+  ldc "_"
+  astore 4
+  aload_2
+  aload_3
+  aload 4
+  invokevirtual java/lang/String/replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+  astore_2
+  ldc "*"
+  astore_3
+  ldc "_"
+  astore 4
+  aload_2
+  aload_3
+  aload 4
+  invokevirtual java/lang/String/replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+  astore_2
+  ldc "?"
+  astore_3
+  ldc "_"
+  astore 4
+  aload_2
+  aload_3
+  aload 4
+  invokevirtual java/lang/String/replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+  astore_2
+  ldc "="
+  astore_3
+  ldc "_"
+  astore 4
+  aload_2
+  aload_3
+  aload 4
+  invokevirtual java/lang/String/replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+  astore_2
+  ldc "."
+  astore_3
+  ldc "_"
+  astore 4
+  aload_2
+  aload_3
+  aload 4
+  invokevirtual java/lang/String/replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+  astore_0
+Label1:
+  aload_0
+  areturn
+Label0:
+  aload_1
+  invokevirtual android/net/Uri/getPath()Ljava/lang/String;
+  astore_0
+  aload_1
+  invokevirtual android/net/Uri/getQuery()Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label2
+  new java/lang/StringBuilder
+  astore 5
+  aload_1
+  invokevirtual android/net/Uri/getPath()Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore_2
+  aload 5
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  ldc "_"
+  astore_3
+  aload 5
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload_1
+  invokevirtual android/net/Uri/getQuery()Ljava/lang/String;
+  astore_2
+  aload 5
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_0
+  goto Label2
+  nop
+.end <method>
+
+.method public static c(Landroid/content/Context;)I
+.limit locals 9
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_1
+  invokespecial android/util/DisplayMetrics/<init>()V
+  aload_0
+  instanceof android/app/Activity
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label0
+  aload_0
+  astore 4
+  aload 4
+  checkcast android/app/Activity
+  astore 4
+  aload 4
+  astore_3
+  aload_3
+  invokevirtual android/app/Activity/getWindowManager()Landroid/view/WindowManager;
+  astore 5
+  aload 5
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 6
+  aload 6
+  aload_1
+  invokevirtual android/view/Display/getMetrics(Landroid/util/DisplayMetrics;)V
+  aload_1
+  getfield android/util/DisplayMetrics/densityDpi I
+  istore 7
+  iload 7
+  ireturn
+Label0:
+  sipush 160
+  istore 8
+  iload 8
+  ireturn
+  nop
+.end <method>
+
+.method public static c(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_1
+  ifeq Label0
+  aload_1
+  invokevirtual android/net/Uri/getPath()Ljava/lang/String;
+  astore_0
+Label0:
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static d(Landroid/content/Context;)I
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokestatic com/tencent/mobwin/utils/b/a(Landroid/content/Context;)I
+  istore_1
+  aload_0
+  invokestatic com/tencent/mobwin/utils/b/b(Landroid/content/Context;)I
+  istore_2
+  iload_1
+  iload_2
+  invokestatic java/lang/Math/min(II)I
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public static e(Landroid/content/Context;)I
+.limit locals 12
+.limit stack 200
+  nop
+  bipush 50
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_2
+  invokespecial android/util/DisplayMetrics/<init>()V
+  aload_0
+  instanceof android/app/Activity
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label0
+  aload_0
+  astore 5
+  aload 5
+  checkcast android/app/Activity
+  astore 5
+  aload 5
+  astore 4
+  aload 4
+  invokevirtual android/app/Activity/getWindowManager()Landroid/view/WindowManager;
+  astore 6
+  aload 6
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 7
+  aload 7
+  aload_2
+  invokevirtual android/view/Display/getMetrics(Landroid/util/DisplayMetrics;)V
+  aload_2
+  getfield android/util/DisplayMetrics/densityDpi I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 120
+  istore 9
+  iload 8
+  iload 9
+  if_icmpne Label1
+  bipush 38
+  istore_1
+Label0:
+  iload_1
+  ireturn
+Label1:
+  aload_2
+  getfield android/util/DisplayMetrics/densityDpi I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 160
+  istore 9
+  iload 8
+  iload 9
+  if_icmpeq Label0
+  aload_2
+  getfield android/util/DisplayMetrics/densityDpi I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 240
+  istore 9
+  iload 8
+  iload 9
+  if_icmpne Label2
+  bipush 75
+  istore 9
+  iload 9
+  ireturn
+Label2:
+  aload_2
+  getfield android/util/DisplayMetrics/densityDpi I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 320
+  istore 9
+  iload 8
+  iload 9
+  if_icmpne Label3
+  bipush 100
+  istore 9
+  iload 9
+  ireturn
+Label3:
+  aload_2
+  getfield android/util/DisplayMetrics/density F
+  fstore 10
+  ldc 50.000000
+  fstore 11
+  fload 11
+  fload 10
+  fmul
+  fstore 10
+  fload 10
+  f2i
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+

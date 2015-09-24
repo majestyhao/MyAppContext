@@ -1,0 +1,806 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/q
+.super java/lang/Object
+.field private static "a" Ljava/lang/String;
+.field private static "b" Ljava/lang/String;
+
+.method static <clinit>()V
+.limit locals 2
+.limit stack 200
+  nop
+  invokestatic java/util/Locale/getDefault()Ljava/util/Locale;
+  astore_0
+  aload_0
+  invokevirtual java/util/Locale/getCountry()Ljava/lang/String;
+  astore_1
+  aload_1
+  putstatic com/wiyun/ad/q/b Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static a(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;
+.limit locals 5
+.limit stack 200
+  .catch  java/lang/OutOfMemoryError <from> Label1 <to> Label2 <using> Label0
+  nop
+Label1:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+Label2:
+  aload_2
+  areturn
+Label0:
+  astore_3
+  aconst_null
+  astore 4
+  aload 4
+  areturn
+  nop
+.end <method>
+
+.method public static a([BII)Landroid/graphics/Bitmap;
+.limit locals 6
+.limit stack 200
+  .catch  java/lang/OutOfMemoryError <from> Label1 <to> Label2 <using> Label0
+  nop
+Label1:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+Label2:
+  aload_3
+  areturn
+Label0:
+  astore 4
+  aconst_null
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method public static a([B[B[B)Landroid/graphics/drawable/Drawable;
+.limit locals 21
+.limit stack 200
+  .catch  java/lang/OutOfMemoryError <from> Label5 <to> Label6 <using> Label4
+  nop
+Label5:
+  aload_0
+  astore_3
+  aload_3
+  arraylength
+  istore 4
+  aload_3
+  astore_0
+  iconst_0
+  istore 6
+  aload_0
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+Label6:
+  aload_1
+  astore_3
+  aload_3
+  arraylength
+  istore 4
+  aload_3
+  astore_1
+  iconst_0
+  istore 6
+  aload_1
+  astore_3
+  aload_3
+  iload 6
+  iload 4
+  invokestatic android/graphics/BitmapFactory/decodeByteArray([BII)Landroid/graphics/Bitmap;
+  astore 7
+Label8:
+  aload_2
+  astore_3
+  aload_3
+  arraylength
+  istore 4
+  aload_3
+  astore_2
+  iconst_0
+  istore 6
+  aload_2
+  astore_3
+  aload_3
+  iload 6
+  iload 4
+  invokestatic android/graphics/BitmapFactory/decodeByteArray([BII)Landroid/graphics/Bitmap;
+  astore 8
+Label10:
+  new android/graphics/drawable/BitmapDrawable
+  astore 9
+  aload 9
+  aload 5
+  invokespecial android/graphics/drawable/BitmapDrawable/<init>(Landroid/graphics/Bitmap;)V
+  new android/graphics/drawable/BitmapDrawable
+  astore 10
+  aload 10
+  aload 7
+  invokespecial android/graphics/drawable/BitmapDrawable/<init>(Landroid/graphics/Bitmap;)V
+  new android/graphics/drawable/BitmapDrawable
+  astore 11
+  aload 11
+  aload 8
+  invokespecial android/graphics/drawable/BitmapDrawable/<init>(Landroid/graphics/Bitmap;)V
+  new android/graphics/drawable/StateListDrawable
+  astore 12
+  aload 12
+  invokespecial android/graphics/drawable/StateListDrawable/<init>()V
+  iconst_1
+  istore 6
+  iload 6
+  newarray int
+  astore 13
+  iconst_0
+  istore 6
+  ldc 16842919
+  istore 14
+  aload 13
+  iload 6
+  iload 14
+  iastore
+  aload 12
+  aload 13
+  aload 11
+  invokevirtual android/graphics/drawable/StateListDrawable/addState([ILandroid/graphics/drawable/Drawable;)V
+  iconst_1
+  istore 6
+  iload 6
+  newarray int
+  astore 13
+  iconst_0
+  istore 6
+  ldc 16842908
+  istore 14
+  aload 13
+  iload 6
+  iload 14
+  iastore
+  aload 12
+  aload 13
+  aload 10
+  invokevirtual android/graphics/drawable/StateListDrawable/addState([ILandroid/graphics/drawable/Drawable;)V
+  iconst_1
+  istore 6
+  iload 6
+  newarray int
+  astore 13
+  iconst_0
+  istore 6
+  ldc 16842913
+  istore 14
+  aload 13
+  iload 6
+  iload 14
+  iastore
+  aload 12
+  aload 13
+  aload 10
+  invokevirtual android/graphics/drawable/StateListDrawable/addState([ILandroid/graphics/drawable/Drawable;)V
+  iconst_2
+  istore 6
+  iload 6
+  newarray int
+  astore 13
+  iconst_0
+  istore 6
+  ldc 16842919
+  istore 14
+  aload 13
+  iload 6
+  iload 14
+  iastore
+  iconst_1
+  istore 6
+  ldc 16842909
+  istore 14
+  aload 13
+  iload 6
+  iload 14
+  iastore
+  aload 12
+  aload 13
+  aload 11
+  invokevirtual android/graphics/drawable/StateListDrawable/addState([ILandroid/graphics/drawable/Drawable;)V
+  iconst_2
+  istore 6
+  iload 6
+  newarray int
+  astore 13
+  iconst_0
+  istore 6
+  ldc 16842908
+  istore 14
+  aload 13
+  iload 6
+  iload 14
+  iastore
+  iconst_1
+  istore 6
+  ldc 16842909
+  istore 14
+  aload 13
+  iload 6
+  iload 14
+  iastore
+  aload 12
+  aload 13
+  aload 10
+  invokevirtual android/graphics/drawable/StateListDrawable/addState([ILandroid/graphics/drawable/Drawable;)V
+  iconst_2
+  istore 6
+  iload 6
+  newarray int
+  astore 13
+  iconst_0
+  istore 6
+  ldc 16842913
+  istore 14
+  aload 13
+  iload 6
+  iload 14
+  iastore
+  iconst_1
+  istore 6
+  ldc 16842909
+  istore 14
+  aload 13
+  iload 6
+  iload 14
+  iastore
+  aload 12
+  aload 13
+  aload 10
+  invokevirtual android/graphics/drawable/StateListDrawable/addState([ILandroid/graphics/drawable/Drawable;)V
+  iconst_0
+  istore 6
+  iload 6
+  newarray int
+  astore 13
+  aload 12
+  aload 13
+  aload 9
+  invokevirtual android/graphics/drawable/StateListDrawable/addState([ILandroid/graphics/drawable/Drawable;)V
+Label12:
+  aload 12
+  areturn
+Label4:
+  astore 15
+  iconst_0
+  istore 8
+  iconst_0
+  istore 7
+  iconst_0
+  istore 5
+Label3:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+  aload 5
+  invokevirtual android/graphics/Bitmap/isRecycled()Z
+  istore 16
+  iload 16
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 16
+  ifne Label0
+  aload 5
+  invokevirtual android/graphics/Bitmap/recycle()V
+Label0:
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 7
+  ifeq Label1
+  aload 7
+  invokevirtual android/graphics/Bitmap/isRecycled()Z
+  istore 16
+  iload 16
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 16
+  ifne Label1
+  aload 7
+  invokevirtual android/graphics/Bitmap/recycle()V
+Label1:
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 8
+  ifeq Label2
+  aload 8
+  invokevirtual android/graphics/Bitmap/isRecycled()Z
+  istore 16
+  iload 16
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 16
+  ifne Label2
+  aload 8
+  invokevirtual android/graphics/Bitmap/recycle()V
+Label2:
+  aconst_null
+  astore 17
+  aload 17
+  areturn
+Label7:
+  astore 18
+  iconst_0
+  istore 8
+  iconst_0
+  istore 7
+  goto Label3
+Label9:
+  astore 19
+  iconst_0
+  istore 8
+  goto Label3
+Label11:
+  astore 20
+  goto Label3
+  nop
+.end <method>
+
+.method public static a()Ljava/lang/String;
+.limit locals 4
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/q/a Ljava/lang/String;
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  invokestatic com/wiyun/ad/q/e()Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label1
+Label0:
+  ldc "com.wiyun.ad.sdk"
+  astore_3
+  aload_3
+  invokestatic java/util/ResourceBundle/getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;
+  astore_2
+  ldc "loading_ad"
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/util/ResourceBundle/getString(Ljava/lang/String;)Ljava/lang/String;
+  astore_0
+  aload_0
+  putstatic com/wiyun/ad/q/a Ljava/lang/String;
+Label1:
+  getstatic com/wiyun/ad/q/a Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 4
+.limit stack 200
+  nop
+  ldc "com.wiyun.ad.sdk"
+  astore_2
+  aload_2
+  invokestatic java/util/ResourceBundle/getBundle(Ljava/lang/String;)Ljava/util/ResourceBundle;
+  astore_1
+  aload_1
+  aload_0
+  invokevirtual java/util/ResourceBundle/getString(Ljava/lang/String;)Ljava/lang/String;
+  astore_3
+  aload_3
+  areturn
+  nop
+.end <method>
+
+.method public static b()Landroid/graphics/drawable/Drawable;
+.limit locals 6
+.limit stack 200
+  .catch  java/lang/Exception <from> Label1 <to> Label2 <using> Label0
+  nop
+  new java/io/ByteArrayInputStream
+  astore_0
+  getstatic com/wiyun/ad/ad/e [B
+  astore_1
+Label1:
+  aload_0
+  aload_1
+  invokespecial java/io/ByteArrayInputStream/<init>([B)V
+  ldc "wy_dialog_bg"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+Label2:
+  aload_2
+  areturn
+Label0:
+  astore 4
+  aconst_null
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method public static c()Landroid/graphics/drawable/Drawable;
+.limit locals 6
+.limit stack 200
+  .catch  java/lang/Exception <from> Label1 <to> Label2 <using> Label0
+  nop
+  new java/io/ByteArrayInputStream
+  astore_0
+  getstatic com/wiyun/ad/ad/f [B
+  astore_1
+Label1:
+  aload_0
+  aload_1
+  invokespecial java/io/ByteArrayInputStream/<init>([B)V
+  ldc "wy_progress_dialog_bg"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+Label2:
+  aload_2
+  areturn
+Label0:
+  astore 4
+  aconst_null
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method public static d()Landroid/graphics/drawable/Drawable;
+.limit locals 19
+.limit stack 200
+  .catch  java/lang/OutOfMemoryError <from> Label5 <to> Label6 <using> Label4
+  nop
+Label5:
+  getstatic com/wiyun/ad/ad/c [B
+  astore_0
+  getstatic com/wiyun/ad/ad/c [B
+  astore_1
+  aload_1
+  arraylength
+  istore_2
+  iconst_0
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+Label6:
+  getstatic com/wiyun/ad/ad/b [B
+  astore_1
+  getstatic com/wiyun/ad/ad/b [B
+  astore_0
+  aload_0
+  arraylength
+  istore_2
+  iconst_0
+  istore 4
+  aload_1
+  iload 4
+  iload_2
+  invokestatic android/graphics/BitmapFactory/decodeByteArray([BII)Landroid/graphics/Bitmap;
+  astore 5
+Label8:
+  getstatic com/wiyun/ad/ad/d [B
+  astore_0
+  getstatic com/wiyun/ad/ad/d [B
+  astore_1
+  aload_1
+  arraylength
+  istore_2
+  iconst_0
+  istore 4
+  aload_0
+  iload 4
+  iload_2
+  invokestatic android/graphics/BitmapFactory/decodeByteArray([BII)Landroid/graphics/Bitmap;
+  astore 6
+Label10:
+  new android/graphics/drawable/BitmapDrawable
+  astore 7
+  aload 7
+  aload_3
+  invokespecial android/graphics/drawable/BitmapDrawable/<init>(Landroid/graphics/Bitmap;)V
+  new android/graphics/drawable/BitmapDrawable
+  astore 8
+  aload 8
+  aload 5
+  invokespecial android/graphics/drawable/BitmapDrawable/<init>(Landroid/graphics/Bitmap;)V
+  new android/graphics/drawable/BitmapDrawable
+  astore 9
+  aload 9
+  aload 6
+  invokespecial android/graphics/drawable/BitmapDrawable/<init>(Landroid/graphics/Bitmap;)V
+  new android/graphics/drawable/StateListDrawable
+  astore 10
+  aload 10
+  invokespecial android/graphics/drawable/StateListDrawable/<init>()V
+  iconst_1
+  istore 4
+  iload 4
+  newarray int
+  astore 11
+  iconst_0
+  istore 4
+  ldc 16842919
+  istore 12
+  aload 11
+  iload 4
+  iload 12
+  iastore
+  aload 10
+  aload 11
+  aload 9
+  invokevirtual android/graphics/drawable/StateListDrawable/addState([ILandroid/graphics/drawable/Drawable;)V
+  iconst_1
+  istore 4
+  iload 4
+  newarray int
+  astore 11
+  iconst_0
+  istore 4
+  ldc 16842908
+  istore 12
+  aload 11
+  iload 4
+  iload 12
+  iastore
+  aload 10
+  aload 11
+  aload 8
+  invokevirtual android/graphics/drawable/StateListDrawable/addState([ILandroid/graphics/drawable/Drawable;)V
+  iconst_1
+  istore 4
+  iload 4
+  newarray int
+  astore 11
+  iconst_0
+  istore 4
+  ldc 16842913
+  istore 12
+  aload 11
+  iload 4
+  iload 12
+  iastore
+  aload 10
+  aload 11
+  aload 8
+  invokevirtual android/graphics/drawable/StateListDrawable/addState([ILandroid/graphics/drawable/Drawable;)V
+  iconst_2
+  istore 4
+  iload 4
+  newarray int
+  astore 11
+  iconst_0
+  istore 4
+  ldc 16842919
+  istore 12
+  aload 11
+  iload 4
+  iload 12
+  iastore
+  iconst_1
+  istore 4
+  ldc 16842909
+  istore 12
+  aload 11
+  iload 4
+  iload 12
+  iastore
+  aload 10
+  aload 11
+  aload 9
+  invokevirtual android/graphics/drawable/StateListDrawable/addState([ILandroid/graphics/drawable/Drawable;)V
+  iconst_2
+  istore 4
+  iload 4
+  newarray int
+  astore 11
+  iconst_0
+  istore 4
+  ldc 16842908
+  istore 12
+  aload 11
+  iload 4
+  iload 12
+  iastore
+  iconst_1
+  istore 4
+  ldc 16842909
+  istore 12
+  aload 11
+  iload 4
+  iload 12
+  iastore
+  aload 10
+  aload 11
+  aload 8
+  invokevirtual android/graphics/drawable/StateListDrawable/addState([ILandroid/graphics/drawable/Drawable;)V
+  iconst_2
+  istore 4
+  iload 4
+  newarray int
+  astore 11
+  iconst_0
+  istore 4
+  ldc 16842913
+  istore 12
+  aload 11
+  iload 4
+  iload 12
+  iastore
+  iconst_1
+  istore 4
+  ldc 16842909
+  istore 12
+  aload 11
+  iload 4
+  iload 12
+  iastore
+  aload 10
+  aload 11
+  aload 8
+  invokevirtual android/graphics/drawable/StateListDrawable/addState([ILandroid/graphics/drawable/Drawable;)V
+  iconst_0
+  istore 4
+  iload 4
+  newarray int
+  astore 11
+  aload 10
+  aload 11
+  aload 7
+  invokevirtual android/graphics/drawable/StateListDrawable/addState([ILandroid/graphics/drawable/Drawable;)V
+Label12:
+  aload 10
+  areturn
+Label4:
+  astore 13
+  iconst_0
+  istore 6
+  iconst_0
+  istore 5
+  iconst_0
+  istore_3
+Label3:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_3
+  invokevirtual android/graphics/Bitmap/isRecycled()Z
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifne Label0
+  aload_3
+  invokevirtual android/graphics/Bitmap/recycle()V
+Label0:
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 5
+  ifeq Label1
+  aload 5
+  invokevirtual android/graphics/Bitmap/isRecycled()Z
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifne Label1
+  aload 5
+  invokevirtual android/graphics/Bitmap/recycle()V
+Label1:
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 6
+  ifeq Label2
+  aload 6
+  invokevirtual android/graphics/Bitmap/isRecycled()Z
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifne Label2
+  aload 6
+  invokevirtual android/graphics/Bitmap/recycle()V
+Label2:
+  aconst_null
+  astore 15
+  aload 15
+  areturn
+Label7:
+  astore 16
+  iconst_0
+  istore 6
+  iconst_0
+  istore 5
+  goto Label3
+Label9:
+  astore 17
+  iconst_0
+  istore 6
+  goto Label3
+Label11:
+  astore 18
+  goto Label3
+  nop
+.end <method>
+
+.method private static e()Z
+.limit locals 5
+.limit stack 200
+  nop
+  invokestatic java/util/Locale/getDefault()Ljava/util/Locale;
+  astore_0
+  aload_0
+  invokevirtual java/util/Locale/getCountry()Ljava/lang/String;
+  astore_1
+  getstatic com/wiyun/ad/q/b Ljava/lang/String;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifne Label0
+  aload_1
+  putstatic com/wiyun/ad/q/b Ljava/lang/String;
+  iconst_1
+  istore 4
+  iload 4
+  ireturn
+Label0:
+  iconst_0
+  istore 4
+  iload 4
+  ireturn
+  nop
+.end <method>
+

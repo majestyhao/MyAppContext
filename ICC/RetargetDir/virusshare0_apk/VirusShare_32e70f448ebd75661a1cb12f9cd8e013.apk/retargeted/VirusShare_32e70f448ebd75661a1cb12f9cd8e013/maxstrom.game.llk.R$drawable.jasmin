@@ -1,0 +1,65 @@
+.source R.java
+.class public final  maxstrom/game/llk/R$drawable
+.super java/lang/Object
+.field public static final "btn_bg" I =  2130837504
+.field public static final "btn_continue" I =  2130837505
+.field public static final "btn_continue_normal" I =  2130837506
+.field public static final "btn_continue_press" I =  2130837507
+.field public static final "clock" I =  2130837508
+.field public static final "dialog_bg" I =  2130837509
+.field public static final "explode1" I =  2130837510
+.field public static final "explode2" I =  2130837511
+.field public static final "explode3" I =  2130837512
+.field public static final "explode4" I =  2130837513
+.field public static final "explode5" I =  2130837514
+.field public static final "ic_menu_emoticons" I =  2130837515
+.field public static final "ic_menu_refresh" I =  2130837516
+.field public static final "ic_menu_star" I =  2130837517
+.field public static final "icon" I =  2130837518
+.field public static final "pop" I =  2130837519
+.field public static final "q1" I =  2130837520
+.field public static final "q10" I =  2130837521
+.field public static final "q11" I =  2130837522
+.field public static final "q12" I =  2130837523
+.field public static final "q13" I =  2130837524
+.field public static final "q14" I =  2130837525
+.field public static final "q15" I =  2130837526
+.field public static final "q16" I =  2130837527
+.field public static final "q17" I =  2130837528
+.field public static final "q18" I =  2130837529
+.field public static final "q19" I =  2130837530
+.field public static final "q2" I =  2130837531
+.field public static final "q20" I =  2130837532
+.field public static final "q21" I =  2130837533
+.field public static final "q22" I =  2130837534
+.field public static final "q23" I =  2130837535
+.field public static final "q24" I =  2130837536
+.field public static final "q25" I =  2130837537
+.field public static final "q26" I =  2130837538
+.field public static final "q27" I =  2130837539
+.field public static final "q28" I =  2130837540
+.field public static final "q29" I =  2130837541
+.field public static final "q3" I =  2130837542
+.field public static final "q30" I =  2130837543
+.field public static final "q31" I =  2130837544
+.field public static final "q32" I =  2130837545
+.field public static final "q33" I =  2130837546
+.field public static final "q34" I =  2130837547
+.field public static final "q35" I =  2130837548
+.field public static final "q4" I =  2130837549
+.field public static final "q5" I =  2130837550
+.field public static final "q6" I =  2130837551
+.field public static final "q7" I =  2130837552
+.field public static final "q8" I =  2130837553
+.field public static final "q9" I =  2130837554
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

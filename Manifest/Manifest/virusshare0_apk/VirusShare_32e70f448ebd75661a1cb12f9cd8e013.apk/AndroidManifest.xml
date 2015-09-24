@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="maxstrom.game.llk">
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:label="@string/app_name" android:name="maxstrom.game.llk.LinkLink" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="maxstrom.game.llk.Pause" android:screenOrientation="portrait"/>
+        <service android:name="maxstrom.game.llk.MusicService">
+            <intent-filter>
+                <action android:name="maxstrom.game.music.llk"/>
+                <category android:name="android.intent.category.default"/>
+            </intent-filter>
+        </service>
+        <activity android:name="maxstrom.game.llk.ExitActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.tencent.mobwin.MobinWINBrowserActivity"/>
+        <meta-data android:name="APP_ID" android:value="42B83BBD7043E16B8D6F8A5E388401C2"/>
+        <meta-data android:name="APP_INTERVAL" android:value="30"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="net.youmi.android.AdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="net.youmi.android.spotad.AdActivity"/>
+        <activity android:name="cn.domob.android.ads.DomobActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.MMAdViewOverlayActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.millennialmedia.android.VideoPlayer" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.mobisage.android.MobiSageActivity"/>
+        <service android:exported="true" android:name="com.mobisage.android.MobiSageApkService"/>
+        <activity android:label="@string/app_name" android:name="com.adwo.adsdk.AdwoAdBrowserActivity"/>
+        <activity android:label="@string/app_name" android:name="com.adwo.adsdk.AdwoSplashAdActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.google.ads.AdActivity"/>
+        <activity android:name="com.tencent.mobwin.MobinWINBrowserActivity"/>
+        <service android:exported="true" android:name="com.admogo.UpdateService" android:process=":remote"/>
+        <meta-data android:name="ADMOGO_KEY" android:value="dea2b5d0496c42dc82f02e12aa6b30c3"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="net.youmi.android.appoffers.YoumiOffersActivity"/>
+        <meta-data android:name="YOUMI_CHANNEL" android:value="0"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.kuguo.ad.MainActivity" android:theme="@android:style/Theme.Dialog"/>
+        <service android:name="com.kuguo.ad.MainService"/>
+        <receiver android:name="com.kuguo.ad.MainReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="cooId" android:value="ffb17c5b80a04c40925083da1eb75034"/>
+        <meta-data android:name="channelId" android:value="appchina"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+</manifest>

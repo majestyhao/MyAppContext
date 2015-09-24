@@ -1,0 +1,311 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/wiyun/ad/ac
+.super java/lang/Object
+.field private static "a" Ljava/io/File;
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;)Z
+.limit locals 26
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  getstatic com/wiyun/ad/ac/a Ljava/io/File;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifne Label0
+  new java/io/File
+  astore 4
+Label13:
+  invokestatic android/os/Environment/getExternalStorageDirectory()Ljava/io/File;
+  astore_3
+  ldc ".wiyun/winotice/lock"
+  astore 5
+  aload 4
+  aload_3
+  aload 5
+  invokespecial java/io/File/<init>(Ljava/io/File;Ljava/lang/String;)V
+  aload 4
+  putstatic com/wiyun/ad/ac/a Ljava/io/File;
+Label0:
+  getstatic com/wiyun/ad/ac/a Ljava/io/File;
+  astore 4
+  aload 4
+  invokevirtual java/io/File/getParentFile()Ljava/io/File;
+  astore 4
+  aload 4
+  invokevirtual java/io/File/exists()Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifne Label1
+  getstatic com/wiyun/ad/ac/a Ljava/io/File;
+  astore 4
+  aload 4
+  invokevirtual java/io/File/getParentFile()Ljava/io/File;
+  astore 4
+  aload 4
+  invokevirtual java/io/File/mkdirs()Z
+  pop
+Label1:
+  getstatic com/wiyun/ad/ac/a Ljava/io/File;
+  astore 4
+  aload 4
+  invokevirtual java/io/File/exists()Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifne Label2
+  getstatic com/wiyun/ad/ac/a Ljava/io/File;
+  astore 4
+  aload 4
+  invokevirtual java/io/File/createNewFile()Z
+  pop
+  new java/io/FileOutputStream
+  astore 7
+  getstatic com/wiyun/ad/ac/a Ljava/io/File;
+  astore 4
+  aload 7
+  aload 4
+  invokespecial java/io/FileOutputStream/<init>(Ljava/io/File;)V
+Label14:
+  aload_0
+  astore_1
+  aload_1
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic com/wiyun/ad/x/a(Ljava/lang/String;)[B
+  astore 9
+  aload 7
+  aload 9
+  invokevirtual java/io/FileOutputStream/write([B)V
+  aload 7
+  invokevirtual java/io/FileOutputStream/flush()V
+Label17:
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label3
+Label19:
+  aload 7
+  invokevirtual java/io/FileOutputStream/close()V
+Label3:
+  iconst_1
+  istore 10
+  iload 10
+  ireturn
+Label2:
+  getstatic com/wiyun/ad/ac/a Ljava/io/File;
+  astore 4
+Label20:
+  aload 4
+  invokestatic com/wiyun/ad/x/b(Ljava/io/File;)[B
+  astore 9
+  aload 9
+  invokestatic com/wiyun/ad/x/b([B)Ljava/lang/String;
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  aload 8
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label4
+  getstatic com/wiyun/ad/ac/a Ljava/io/File;
+  astore 4
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 11
+  aload 4
+  lload 11
+  invokevirtual java/io/File/setLastModified(J)Z
+  pop
+Label21:
+  goto Label3
+Label4:
+  getstatic com/wiyun/ad/ac/a Ljava/io/File;
+  astore 4
+Label22:
+  aload 4
+  invokevirtual java/io/File/lastModified()J
+  lstore 11
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 13
+  lload 13
+  lload 11
+  lsub
+  lstore 13
+  ldc2_w 600000
+  lstore 16
+  lload 13
+  lload 16
+  lcmp
+  istore 15
+  dload 15
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 15
+  ifle Label5
+  new java/io/FileOutputStream
+  astore 7
+  getstatic com/wiyun/ad/ac/a Ljava/io/File;
+  astore 4
+  aload 7
+  aload 4
+  invokespecial java/io/FileOutputStream/<init>(Ljava/io/File;)V
+Label23:
+  aload_0
+  astore_1
+  aload_1
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic com/wiyun/ad/x/a(Ljava/lang/String;)[B
+  astore 9
+  aload 7
+  aload 9
+  invokevirtual java/io/FileOutputStream/write([B)V
+  aload 7
+  invokevirtual java/io/FileOutputStream/flush()V
+Label26:
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label3
+Label28:
+  aload 7
+  invokevirtual java/io/FileOutputStream/close()V
+Label29:
+  iconst_1
+  istore 10
+  iload 10
+  ireturn
+Label27:
+  astore 18
+  iconst_1
+  istore 10
+  iload 10
+  ireturn
+Label5:
+  goto Label6
+Label6:
+  iconst_0
+  istore 10
+  iload 10
+  ireturn
+Label12:
+  astore 19
+  aconst_null
+  astore 7
+Label10:
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label7
+Label31:
+  aload 7
+  invokevirtual java/io/FileOutputStream/close()V
+Label7:
+  iconst_0
+  istore 10
+  iload 10
+  ireturn
+Label11:
+  astore 20
+Label9:
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label8
+Label33:
+  aload_2
+  invokevirtual java/io/FileOutputStream/close()V
+Label8:
+  aload 20
+  athrow
+Label18:
+  astore 21
+  iconst_1
+  istore 10
+  iload 10
+  ireturn
+Label30:
+  astore 22
+  goto Label7
+Label32:
+  astore 23
+  goto Label8
+Label15:
+  astore 20
+  aload 7
+  astore_2
+  goto Label9
+Label24:
+  astore 20
+  aload 7
+  astore_2
+  goto Label9
+Label16:
+  astore 24
+  goto Label10
+Label25:
+  astore 25
+  goto Label10
+  nop
+.end <method>
+
+.method public static b(Ljava/lang/String;)V
+.limit locals 5
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/ac/a Ljava/io/File;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  getstatic com/wiyun/ad/ac/a Ljava/io/File;
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/x/b(Ljava/io/File;)[B
+  astore_2
+  aload_2
+  invokestatic com/wiyun/ad/x/b([B)Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label0
+  getstatic com/wiyun/ad/ac/a Ljava/io/File;
+  astore_1
+  aload_1
+  invokevirtual java/io/File/delete()Z
+  pop
+Label0:
+  return
+  nop
+.end <method>
+

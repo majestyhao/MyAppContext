@@ -1,0 +1,19 @@
+.source Mogo.java
+.class public  com/admogo/obj/Mogo
+.super java/lang/Object
+.field public "description" Ljava/lang/String;
+.field public "image" Landroid/graphics/drawable/Drawable;
+.field public "imageLink" Ljava/lang/String;
+.field public "link" Ljava/lang/String;
+.field public "type" I
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,17 @@
+.source SourceFile
+.class  cn/domob/android/ads/i$b
+.super java/lang/Object
+.field public "a" Landroid/view/View;
+.field public "b" Landroid/widget/RelativeLayout$LayoutParams;
+.field public "c" Ljava/lang/String;
+
+.method <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

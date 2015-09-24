@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/explode1" />
+    <item android:duration="50" android:drawable="@drawable/explode2" />
+    <item android:duration="50" android:drawable="@drawable/explode3" />
+    <item android:duration="50" android:drawable="@drawable/explode4" />
+    <item android:duration="50" android:drawable="@drawable/explode5" />
+</animation-list>

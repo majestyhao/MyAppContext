@@ -1,0 +1,35 @@
+.source SourceFile
+.class final  com/adwo/adsdk/g
+.super java/lang/Thread
+.field private "a" Lcom/adwo/adsdk/b;
+
+.method <init>(Lcom/adwo/adsdk/b;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/adwo/adsdk/g/a Lcom/adwo/adsdk/b;
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  return
+  nop
+.end <method>
+
+.method public final run()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/adwo/adsdk/g/a Lcom/adwo/adsdk/b;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_2
+  invokevirtual com/adwo/adsdk/k/b()V
+  return
+  nop
+.end <method>
+

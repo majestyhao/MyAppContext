@@ -1,0 +1,905 @@
+.source SourceFile
+.class  cn/domob/android/ads/j
+.super java/lang/Object
+.field protected static final "a" Ljava/lang/String; =  "0"
+.field protected static final "b" Ljava/lang/String; =  "1"
+.field protected static final "c" I =  0
+.field protected static final "d" I =  1
+.field private "e" Landroid/content/Context;
+.field private "f" Ljava/lang/String;
+.field private "g" Ljava/lang/String;
+.field private "h" Ljava/lang/String;
+.field private "i" Ljava/util/ArrayList;
+.field private "j" Landroid/graphics/PointF;
+.field private "k" Lcn/domob/android/ads/j$d;
+.field private "l" Ljava/lang/String;
+.field private "m" Ljava/lang/String;
+.field private "n" J
+
+.method private <init>(Landroid/content/Context;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/j/e Landroid/content/Context;
+  return
+  nop
+.end <method>
+
+.method protected a()Landroid/content/Context;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/j/e Landroid/content/Context;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static a(Lcn/domob/android/ads/j;)Landroid/content/Context;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/j/e Landroid/content/Context;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private static a(Lorg/json/JSONArray;)Landroid/graphics/PointF;
+.limit locals 7
+.limit stack 200
+  nop
+  iconst_0
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual org/json/JSONArray/getDouble(I)D
+  dstore_1
+  dload_1
+  d2f
+  fstore 4
+  iconst_1
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual org/json/JSONArray/getDouble(I)D
+  dstore_1
+  dload_1
+  d2f
+  fstore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 6
+  fload 4
+  fload 5
+  invokespecial android/graphics/PointF/<init>(FF)V
+  aload 6
+  areturn
+  nop
+.end <method>
+
+.method protected static a(Landroid/content/Context;Lorg/json/JSONObject;)Lcn/domob/android/ads/j;
+.limit locals 5
+.limit stack 200
+  nop
+  new cn/domob/android/ads/j
+  astore_2
+  aload_2
+  aload_0
+  invokespecial cn/domob/android/ads/j/<init>(Landroid/content/Context;)V
+  aload_2
+  aload_1
+  invokespecial cn/domob/android/ads/j/a(Lorg/json/JSONObject;)Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_2
+  areturn
+Label0:
+  aconst_null
+  astore 4
+  aload 4
+  areturn
+  nop
+.end <method>
+
+.method private a(Ljava/lang/String;)V
+.limit locals 8
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/j/e Landroid/content/Context;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  new android/content/ContentValues
+  astore 4
+  aload 4
+  invokespecial android/content/ContentValues/<init>()V
+  new java/lang/StringBuilder
+  astore 5
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "update cid:"
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  aload_0
+  aload 7
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  ldc "_cid"
+  astore 6
+  aload 4
+  aload 6
+  aload_1
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_3
+  aload 4
+  invokevirtual cn/domob/android/ads/d/a(Landroid/content/ContentValues;)I
+  pop
+  return
+  nop
+.end <method>
+
+.method private a(Lorg/json/JSONObject;)Z
+.limit locals 32
+.limit stack 200
+  .catch  java/lang/Exception <from> Label7 <to> Label8 <using> Label6
+  nop
+Label7:
+  ldc "identifier"
+  astore 7
+  aload_1
+  astore_2
+  aload_2
+  aload 7
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 6
+  aload_0
+  astore_2
+  aload_2
+  aload 6
+  putfield cn/domob/android/ads/j/f Ljava/lang/String;
+  new java/lang/StringBuilder
+  astore 8
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "adIndentifier="
+  astore 7
+  aload 8
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload_0
+  astore_2
+  aload_2
+  getfield cn/domob/android/ads/j/f Ljava/lang/String;
+  astore 6
+  aload 8
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload_0
+  astore_2
+  aload_2
+  aload 6
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  ldc "sid"
+  astore 7
+  aconst_null
+  astore 9
+  aload_1
+  astore_2
+  aload_2
+  aload 7
+  aload 9
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  astore 6
+  aload_0
+  astore_2
+  aload_2
+  aload 6
+  putfield cn/domob/android/ads/j/h Ljava/lang/String;
+  new java/lang/StringBuilder
+  astore 8
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "searchID="
+  astore 7
+  aload 8
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload_0
+  astore_2
+  aload_2
+  getfield cn/domob/android/ads/j/h Ljava/lang/String;
+  astore 6
+  aload 8
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload_0
+  astore_2
+  aload_2
+  aload 6
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  ldc "rp_url"
+  astore 7
+  aconst_null
+  astore 9
+  aload_1
+  astore_2
+  aload_2
+  aload 7
+  aload 9
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  astore 6
+  aload_0
+  astore_2
+  aload_2
+  aload 6
+  putfield cn/domob/android/ads/j/g Ljava/lang/String;
+  new java/lang/StringBuilder
+  astore 8
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "reportURL="
+  astore 7
+  aload 8
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload_0
+  astore_2
+  aload_2
+  getfield cn/domob/android/ads/j/g Ljava/lang/String;
+  astore 6
+  aload 8
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload_0
+  astore_2
+  aload_2
+  aload 6
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  ldc "d"
+  astore 7
+  aload_1
+  astore_2
+  aload_2
+  aload 7
+  invokevirtual org/json/JSONObject/optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+  astore 10
+  aload 10
+  invokestatic cn/domob/android/ads/j/a(Lorg/json/JSONArray;)Landroid/graphics/PointF;
+  astore 11
+  aload_0
+  astore_2
+  aload_2
+  aload 11
+  putfield cn/domob/android/ads/j/j Landroid/graphics/PointF;
+  iconst_2
+  istore 13
+  iload 13
+  anewarray java/lang/Object
+  astore 12
+  aload_0
+  astore_2
+  aload_2
+  getfield cn/domob/android/ads/j/j Landroid/graphics/PointF;
+  astore 11
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  fload 14
+  invokestatic java/lang/Float/valueOf(F)Ljava/lang/Float;
+  astore 15
+  iconst_0
+  istore 13
+  aload 12
+  iload 13
+  aload 15
+  aastore
+  aload_0
+  astore_2
+  aload_2
+  getfield cn/domob/android/ads/j/j Landroid/graphics/PointF;
+  astore 11
+  aload 11
+  getfield android/graphics/PointF/y F
+  fstore 14
+  fload 14
+  invokestatic java/lang/Float/valueOf(F)Ljava/lang/Float;
+  astore 15
+  iconst_1
+  istore 13
+  aload 12
+  iload 13
+  aload 15
+  aastore
+  ldc "adDimension=[%f,%f]"
+  astore 7
+  aload 7
+  aload 12
+  invokestatic java/lang/String/format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  astore 6
+  aload_0
+  astore_2
+  aload_2
+  aload 6
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  ldc "cid"
+  astore 7
+  aconst_null
+  astore 9
+  aload_1
+  astore_2
+  aload_2
+  aload 7
+  aload 9
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label0
+  new java/lang/StringBuilder
+  astore 8
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "ad response CID:"
+  astore 7
+  aload 8
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 16
+  aload_0
+  astore_2
+  aload_2
+  aload 16
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  astore_2
+  aload_2
+  aload 6
+  invokespecial cn/domob/android/ads/j/a(Ljava/lang/String;)V
+Label0:
+  new java/util/ArrayList
+  astore 17
+  aload 17
+  invokespecial java/util/ArrayList/<init>()V
+  aload_0
+  astore_2
+  aload_2
+  aload 17
+  putfield cn/domob/android/ads/j/i Ljava/util/ArrayList;
+  ldc "ac"
+  astore 7
+  aload_1
+  astore_2
+  aload_2
+  aload 7
+  invokevirtual org/json/JSONObject/optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+  astore 10
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnull Label1
+  iconst_0
+  istore 13
+  iload 13
+  istore 18
+Label3:
+  aload 10
+  invokevirtual org/json/JSONArray/length()I
+  istore 19
+  iload 18
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 18
+  istore_2
+  iload 19
+  istore_3
+  iload_2
+  iload_3
+  if_icmpge Label1
+  iload 18
+  istore_2
+  aload 10
+  iload_2
+  invokevirtual org/json/JSONArray/getJSONObject(I)Lorg/json/JSONObject;
+  astore 20
+  new cn/domob/android/ads/j$a
+  astore 21
+  aload 21
+  astore_2
+  aload_0
+  astore_3
+  aload 20
+  astore 4
+  aload_2
+  aload_3
+  aload 4
+  invokespecial cn/domob/android/ads/j$a/<init>(Lcn/domob/android/ads/j;Lorg/json/JSONObject;)V
+  aload 21
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 21
+  ifnull Label2
+  new java/lang/StringBuilder
+  astore 8
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "action"
+  astore 7
+  aload 8
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  iload 18
+  istore_2
+  aload 8
+  iload_2
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 8
+  ldc ":"
+  astore 7
+  aload 8
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload 21
+  astore_2
+  aload_2
+  invokevirtual cn/domob/android/ads/j$a/toString()Ljava/lang/String;
+  astore 16
+  aload 8
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 16
+  aload_0
+  astore_2
+  aload_2
+  aload 16
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield cn/domob/android/ads/j/i Ljava/util/ArrayList;
+  astore 17
+  aload 21
+  astore_2
+  aload 17
+  aload_2
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+Label2:
+  iload 18
+  iconst_1
+  iadd
+  istore 18
+  goto Label3
+Label1:
+  ldc "markup"
+  astore 7
+  aload_1
+  astore_2
+  aload_2
+  aload 7
+  invokevirtual org/json/JSONObject/optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+  astore 20
+  aload 20
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 20
+  ifnull Label4
+  new cn/domob/android/ads/j$d
+  astore 22
+  aload 22
+  astore_2
+  aload_0
+  astore_3
+  aload 20
+  astore 4
+  aload_2
+  aload_3
+  aload 4
+  invokespecial cn/domob/android/ads/j$d/<init>(Lcn/domob/android/ads/j;Lorg/json/JSONObject;)V
+  aload 22
+  astore_2
+  aload_0
+  astore_3
+  aload_3
+  aload_2
+  putfield cn/domob/android/ads/j/k Lcn/domob/android/ads/j$d;
+  new java/lang/StringBuilder
+  astore 8
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "markup:"
+  astore 7
+  aload 8
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload_0
+  astore_2
+  aload_2
+  getfield cn/domob/android/ads/j/k Lcn/domob/android/ads/j$d;
+  astore_2
+  aload_2
+  astore 22
+  aload 22
+  astore_2
+  aload_2
+  invokevirtual cn/domob/android/ads/j$d/toString()Ljava/lang/String;
+  astore 16
+  aload 8
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 16
+  aload_0
+  astore_2
+  aload_2
+  aload 16
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+Label4:
+  ldc "pkg"
+  astore 7
+  aload_1
+  astore_2
+  aload_2
+  aload 7
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 16
+  aload_0
+  astore_2
+  aload_2
+  aload 16
+  putfield cn/domob/android/ads/j/l Ljava/lang/String;
+  invokestatic cn/domob/android/ads/p/a()Lcn/domob/android/ads/p;
+  astore 23
+  aload_0
+  astore_2
+  aload_2
+  getfield cn/domob/android/ads/j/e Landroid/content/Context;
+  astore_2
+  aload_2
+  astore 24
+  aload_0
+  astore_2
+  aload_2
+  getfield cn/domob/android/ads/j/l Ljava/lang/String;
+  astore 16
+  aload 23
+  astore_2
+  aload 24
+  astore_3
+  aload_2
+  aload_3
+  aload 16
+  invokevirtual cn/domob/android/ads/p/a(Landroid/content/Context;Ljava/lang/String;)Z
+  istore 25
+  iload 25
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 25
+  ifeq Label5
+  invokestatic cn/domob/android/ads/h/a()Lcn/domob/android/ads/h;
+  astore 26
+  aload_0
+  astore_2
+  aload_2
+  getfield cn/domob/android/ads/j/l Ljava/lang/String;
+  astore 16
+  aload 26
+  astore_2
+  aload_2
+  aload 16
+  invokevirtual cn/domob/android/ads/h/c(Ljava/lang/String;)V
+Label5:
+  new java/lang/StringBuilder
+  astore 8
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "pkgNameForDownloadAd="
+  astore 7
+  aload 8
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload_0
+  astore_2
+  aload_2
+  getfield cn/domob/android/ads/j/l Ljava/lang/String;
+  astore 16
+  aload 8
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 16
+  aload_0
+  astore_2
+  aload_2
+  aload 16
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  ldc "ver"
+  astore 7
+  aload_1
+  astore_2
+  aload_2
+  aload 7
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 16
+  aload_0
+  astore_2
+  aload_2
+  aload 16
+  putfield cn/domob/android/ads/j/m Ljava/lang/String;
+  new java/lang/StringBuilder
+  astore 8
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "versionForDownloadAd="
+  astore 7
+  aload 8
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload_0
+  astore_2
+  aload_2
+  getfield cn/domob/android/ads/j/m Ljava/lang/String;
+  astore 16
+  aload 8
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 16
+  aload_0
+  astore_2
+  aload_2
+  aload 16
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  ldc "cache"
+  astore 7
+  ldc2_w 1440
+  lstore 29
+  aload_1
+  astore_2
+  lload 29
+  lstore_3
+  aload_2
+  aload 7
+  lload_3
+  invokevirtual org/json/JSONObject/optLong(Ljava/lang/String;J)J
+  lstore 27
+  lload 27
+  lstore_2
+  aload_0
+  astore 4
+  aload 4
+  lload_2
+  putfield cn/domob/android/ads/j/n J
+  new java/lang/StringBuilder
+  astore 8
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "cache="
+  astore 7
+  aload 8
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload_0
+  astore_2
+  aload_2
+  getfield cn/domob/android/ads/j/n J
+  lstore_2
+  lload_2
+  lstore 27
+  lload 27
+  lstore_2
+  aload 8
+  lload_2
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 16
+  aload_0
+  astore_2
+  aload_2
+  aload 16
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+Label8:
+  iconst_1
+  istore 13
+  iload 13
+  ireturn
+Label6:
+  astore 31
+  aload 31
+  astore_2
+  aload_2
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Throwable;)V
+  iconst_0
+  istore 13
+  iload 13
+  ireturn
+  nop
+.end <method>
+
+.method protected b()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/j/f Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected c()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/j/g Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected d()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/j/h Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected e()Ljava/util/ArrayList;
+  .signature_attr "()Ljava/util/ArrayList<Lcn/domob/android/ads/j$a;>;"
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/j/i Ljava/util/ArrayList;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected f()Landroid/graphics/PointF;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/j/j Landroid/graphics/PointF;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected g()Lcn/domob/android/ads/j$d;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/j/k Lcn/domob/android/ads/j$d;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected h()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/j/l Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected i()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/j/m Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected j()J
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/j/n J
+  lstore_1
+  lload_1
+  lreturn
+  nop
+.end <method>
+

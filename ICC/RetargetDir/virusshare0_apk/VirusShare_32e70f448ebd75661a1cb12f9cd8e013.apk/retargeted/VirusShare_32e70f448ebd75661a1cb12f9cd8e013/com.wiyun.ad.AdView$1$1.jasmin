@@ -1,0 +1,89 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/AdView$1$1
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcom/wiyun/ad/AdView$1;
+.field private final "b" Landroid/view/View;
+
+.method <init>(Lcom/wiyun/ad/AdView$1;Landroid/view/View;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/wiyun/ad/AdView$1$1/a Lcom/wiyun/ad/AdView$1;
+  aload_0
+  aload_2
+  putfield com/wiyun/ad/AdView$1$1/b Landroid/view/View;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 13
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/AdView$1$1/a Lcom/wiyun/ad/AdView$1;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  invokevirtual com/wiyun/ad/AdView/getContext()Landroid/content/Context;
+  astore_3
+  ldc "input_method"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 4
+  aload 4
+  astore 7
+  aload 7
+  checkcast android/view/inputmethod/InputMethodManager
+  astore 7
+  aload 7
+  astore 6
+  aload_0
+  getfield com/wiyun/ad/AdView$1$1/b Landroid/view/View;
+  astore 8
+  aload 6
+  aload 8
+  invokevirtual android/view/inputmethod/InputMethodManager/isActive(Landroid/view/View;)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label0
+  aload_0
+  getfield com/wiyun/ad/AdView$1$1/b Landroid/view/View;
+  astore 8
+  iconst_0
+  istore 10
+  aload 6
+  aload 8
+  iload 10
+  invokevirtual android/view/inputmethod/InputMethodManager/showSoftInput(Landroid/view/View;I)Z
+  pop
+Label1:
+  return
+Label0:
+  aload_0
+  getfield com/wiyun/ad/AdView$1$1/b Landroid/view/View;
+  astore 8
+  ldc2_w 50
+  lstore 11
+  aload 8
+  aload_0
+  lload 11
+  invokevirtual android/view/View/postDelayed(Ljava/lang/Runnable;J)Z
+  pop
+  goto Label1
+  nop
+.end <method>
+

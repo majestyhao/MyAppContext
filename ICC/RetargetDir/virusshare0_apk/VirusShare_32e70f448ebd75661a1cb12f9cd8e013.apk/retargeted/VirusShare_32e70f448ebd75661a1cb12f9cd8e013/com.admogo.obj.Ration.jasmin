@@ -1,0 +1,143 @@
+.source Ration.java
+.class public  com/admogo/obj/Ration
+.super java/lang/Object
+.implements  java/lang/Comparable
+  .signature_attr "Ljava/lang/Object;Ljava/lang/Comparable<Lcom/admogo/obj/Ration;>;"
+.field public "bf" I
+.field public "key" Ljava/lang/String;
+.field public "key2" Ljava/lang/String;
+.field public "name" Ljava/lang/String;
+.field public "nid" Ljava/lang/String;
+.field public "priority" I
+.field public "testmodel" Z
+.field public "type" I
+.field public "weight" D
+
+.method public <init>()V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/Ration/nid Ljava/lang/String;
+  iconst_0
+  istore_3
+  iload_3
+  istore_2
+  aload_0
+  iload_2
+  putfield com/admogo/obj/Ration/type I
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/Ration/name Ljava/lang/String;
+  ldc2_w 0.000000000000000
+  dstore 4
+  aload_0
+  dload 4
+  putfield com/admogo/obj/Ration/weight D
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/Ration/key Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/Ration/key2 Ljava/lang/String;
+  iconst_0
+  istore_3
+  iload_3
+  istore_2
+  aload_0
+  iload_2
+  putfield com/admogo/obj/Ration/priority I
+  iconst_0
+  istore_3
+  iload_3
+  istore_2
+  aload_0
+  iload_2
+  putfield com/admogo/obj/Ration/bf I
+  iconst_0
+  istore_3
+  aload_0
+  iload_3
+  putfield com/admogo/obj/Ration/testmodel Z
+  return
+  nop
+.end <method>
+
+.method public compareTo(Lcom/admogo/obj/Ration;)I
+.limit locals 5
+.limit stack 200
+  nop
+  aload_1
+  getfield com/admogo/obj/Ration/priority I
+  istore_2
+  aload_0
+  getfield com/admogo/obj/Ration/priority I
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload_2
+  if_icmpge Label0
+  iconst_m1
+  istore 4
+  iload 4
+  ireturn
+Label0:
+  aload_0
+  getfield com/admogo/obj/Ration/priority I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload_2
+  if_icmple Label1
+  iconst_1
+  istore 4
+  iload 4
+  ireturn
+Label1:
+  iconst_0
+  istore 4
+  iload 4
+  ireturn
+  nop
+.end <method>
+
+.method public compareTo(Ljava/lang/Object;)I
+  .synthetic
+.limit locals 5
+.limit stack 200
+  nop
+  aload_1
+  astore_3
+  aload_3
+  checkcast com/admogo/obj/Ration
+  astore_3
+  aload_3
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual com/admogo/obj/Ration/compareTo(Lcom/admogo/obj/Ration;)I
+  istore 4
+  iload 4
+  ireturn
+  nop
+.end <method>
+

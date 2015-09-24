@@ -1,0 +1,598 @@
+.source GoogleAdMobAdsAdapter.java
+.class public  com/admogo/adapters/GoogleAdMobAdsAdapter
+.super com/admogo/adapters/AdMogoAdapter
+.implements  com/google/ads/AdListener
+.field private static "$SWITCH_TABLE$com$admogo$AdMogoTargeting$Gender" [I
+.field private "activity" Landroid/app/Activity;
+.field private "adView" Lcom/google/ads/AdView;
+
+.method static $SWITCH_TABLE$com$admogo$AdMogoTargeting$Gender()[I
+  .synthetic
+.limit locals 8
+.limit stack 200
+  nop
+  getstatic com/admogo/adapters/GoogleAdMobAdsAdapter/$SWITCH_TABLE$com$admogo$AdMogoTargeting$Gender [I
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  aload_0
+  areturn
+Label0:
+  invokestatic com/admogo/AdMogoTargeting$Gender/values()[Lcom/admogo/AdMogoTargeting$Gender;
+  astore_1
+  aload_1
+  arraylength
+  istore_2
+  iload_2
+  newarray int
+  astore_0
+Label5:
+  getstatic com/admogo/AdMogoTargeting$Gender/FEMALE Lcom/admogo/AdMogoTargeting$Gender;
+  astore_3
+  aload_3
+  invokevirtual com/admogo/AdMogoTargeting$Gender/ordinal()I
+  istore_2
+Label6:
+  iconst_3
+  istore 4
+  aload_0
+  iload_2
+  iload 4
+  iastore
+Label3:
+  getstatic com/admogo/AdMogoTargeting$Gender/MALE Lcom/admogo/AdMogoTargeting$Gender;
+  astore_3
+  aload_3
+  invokevirtual com/admogo/AdMogoTargeting$Gender/ordinal()I
+  istore_2
+Label8:
+  iconst_2
+  istore 4
+  aload_0
+  iload_2
+  iload 4
+  iastore
+Label2:
+  getstatic com/admogo/AdMogoTargeting$Gender/UNKNOWN Lcom/admogo/AdMogoTargeting$Gender;
+  astore_3
+  aload_3
+  invokevirtual com/admogo/AdMogoTargeting$Gender/ordinal()I
+  istore_2
+Label10:
+  iconst_1
+  istore 4
+  aload_0
+  iload_2
+  iload 4
+  iastore
+Label1:
+  aload_0
+  putstatic com/admogo/adapters/GoogleAdMobAdsAdapter/$SWITCH_TABLE$com$admogo$AdMogoTargeting$Gender [I
+  aload_0
+  areturn
+Label9:
+  astore 5
+  goto Label1
+Label7:
+  astore 6
+  goto Label2
+Label4:
+  astore 7
+  goto Label3
+  nop
+.end <method>
+
+.method public <init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  invokespecial com/admogo/adapters/AdMogoAdapter/<init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+  return
+  nop
+.end <method>
+
+.method protected birthdayForAdMogoTargeting()Ljava/lang/String;
+.limit locals 7
+.limit stack 200
+  nop
+  invokestatic com/admogo/AdMogoTargeting/getBirthDate()Ljava/util/GregorianCalendar;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  new java/text/SimpleDateFormat
+  astore_2
+  ldc "yyyyMMdd"
+  astore_3
+  aload_2
+  aload_3
+  invokespecial java/text/SimpleDateFormat/<init>(Ljava/lang/String;)V
+  invokestatic com/admogo/AdMogoTargeting/getBirthDate()Ljava/util/GregorianCalendar;
+  astore_1
+  aload_1
+  invokevirtual java/util/GregorianCalendar/getTime()Ljava/util/Date;
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/text/SimpleDateFormat/format(Ljava/util/Date;)Ljava/lang/String;
+  astore 5
+  aload 5
+  areturn
+Label0:
+  aconst_null
+  astore 6
+  aload 6
+  areturn
+  nop
+.end <method>
+
+.method public click()V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore_2
+  aload_2
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 4
+  astore_3
+  aload_3
+  invokevirtual com/admogo/AdMogoLayout/countClick()V
+  return
+  nop
+.end <method>
+
+.method public finish()V
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_1
+  ldc "AdMob Finished"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method protected genderForAdMogoTargeting()Lcom/google/ads/AdRequest$Gender;
+.limit locals 6
+.limit stack 200
+  nop
+  invokestatic com/admogo/adapters/GoogleAdMobAdsAdapter/$SWITCH_TABLE$com$admogo$AdMogoTargeting$Gender()[I
+  astore_1
+  invokestatic com/admogo/AdMogoTargeting/getGender()Lcom/admogo/AdMogoTargeting$Gender;
+  astore_2
+  aload_2
+  invokevirtual com/admogo/AdMogoTargeting$Gender/ordinal()I
+  istore_3
+  aload_1
+  iload_3
+  iaload
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  lookupswitch
+  2 : Label1
+  3 : Label2
+  default : Label0
+Label0:
+  goto Label3
+Label3:
+  aconst_null
+  astore 4
+  aload 4
+  areturn
+Label1:
+  getstatic com/google/ads/AdRequest$Gender/MALE Lcom/google/ads/AdRequest$Gender;
+  astore 5
+  aload 5
+  areturn
+Label2:
+  getstatic com/google/ads/AdRequest$Gender/FEMALE Lcom/google/ads/AdRequest$Gender;
+  astore 5
+  aload 5
+  areturn
+  nop
+  nop
+  nop
+.end <method>
+
+.method public handle()V
+.limit locals 14
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore_2
+  aload_2
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 4
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_3
+  ifne Label0
+Label1:
+  return
+Label0:
+  aload_3
+  getfield com/admogo/AdMogoLayout/activityReference Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore_2
+  aload_2
+  astore 6
+  aload 6
+  checkcast android/app/Activity
+  astore 6
+  aload 6
+  astore 5
+  aload_0
+  aload 5
+  putfield com/admogo/adapters/GoogleAdMobAdsAdapter/activity Landroid/app/Activity;
+  aload_0
+  getfield com/admogo/adapters/GoogleAdMobAdsAdapter/activity Landroid/app/Activity;
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  ifnull Label1
+  new com/google/ads/AdView
+  astore 7
+Label4:
+  aload_0
+  getfield com/admogo/adapters/GoogleAdMobAdsAdapter/activity Landroid/app/Activity;
+  astore 5
+  getstatic com/google/ads/AdSize/BANNER Lcom/google/ads/AdSize;
+  astore 8
+  aload_0
+  getfield com/admogo/adapters/AdMogoAdapter/ration Lcom/admogo/obj/Ration;
+  astore 9
+  aload 9
+  getfield com/admogo/obj/Ration/key Ljava/lang/String;
+  astore 10
+  aload 7
+  aload 5
+  aload 8
+  aload 10
+  invokespecial com/google/ads/AdView/<init>(Landroid/app/Activity;Lcom/google/ads/AdSize;Ljava/lang/String;)V
+  aload_0
+  aload 7
+  putfield com/admogo/adapters/GoogleAdMobAdsAdapter/adView Lcom/google/ads/AdView;
+Label2:
+  aload_0
+  getfield com/admogo/adapters/GoogleAdMobAdsAdapter/adView Lcom/google/ads/AdView;
+  astore 7
+  aload 7
+  aload_0
+  invokevirtual com/google/ads/AdView/setAdListener(Lcom/google/ads/AdListener;)V
+  aload_0
+  getfield com/admogo/adapters/GoogleAdMobAdsAdapter/adView Lcom/google/ads/AdView;
+  astore 7
+  aload_0
+  aload_3
+  invokevirtual com/admogo/adapters/GoogleAdMobAdsAdapter/requestForAdMogoLayout(Lcom/admogo/AdMogoLayout;)Lcom/google/ads/AdRequest;
+  astore 11
+  aload 7
+  aload 11
+  invokevirtual com/google/ads/AdView/loadAd(Lcom/google/ads/AdRequest;)V
+  goto Label1
+Label3:
+  astore 12
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 10
+  aload 12
+  invokevirtual java/lang/Exception/toString()Ljava/lang/String;
+  astore 13
+  aload 10
+  aload 13
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aload_3
+  invokevirtual com/admogo/AdMogoLayout/rollover()V
+  goto Label2
+  nop
+.end <method>
+
+.method protected log(Ljava/lang/String;)V
+.limit locals 6
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_2
+  new java/lang/StringBuilder
+  astore_3
+  ldc "GoogleAdapter "
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_3
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method public onDismissScreen(Lcom/google/ads/Ad;)V
+.limit locals 2
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+
+.method public onFailedToReceiveAd(Lcom/google/ads/Ad;Lcom/google/ads/AdRequest$ErrorCode;)V
+.limit locals 16
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_3
+  new java/lang/StringBuilder
+  astore 4
+  ldc "GoogleAdMob failure , code is"
+  astore 5
+  aload 4
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 4
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_1
+  astore 8
+  aload 8
+  checkcast com/google/ads/AdView
+  astore 8
+  aload 8
+  astore 7
+  aconst_null
+  astore 9
+  aload 7
+  aload 9
+  invokeinterface com/google/ads/Ad/setAdListener(Lcom/google/ads/AdListener;)V 2
+  aload_0
+  getfield com/admogo/adapters/GoogleAdMobAdsAdapter/activity Landroid/app/Activity;
+  astore 10
+  aload 10
+  invokevirtual android/app/Activity/isFinishing()Z
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifne Label0
+  aload_0
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore 12
+  aload 12
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 13
+  aload 13
+  astore 15
+  aload 15
+  checkcast com/admogo/AdMogoLayout
+  astore 15
+  aload 15
+  astore 14
+  aload 14
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 14
+  ifnonnull Label1
+Label0:
+  return
+Label1:
+  aload 14
+  invokevirtual com/admogo/AdMogoLayout/rollover()V
+  goto Label0
+  nop
+.end <method>
+
+.method public onLeaveApplication(Lcom/google/ads/Ad;)V
+.limit locals 2
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+
+.method public onPresentScreen(Lcom/google/ads/Ad;)V
+.limit locals 2
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+
+.method public onReceiveAd(Lcom/google/ads/Ad;)V
+.limit locals 18
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_3
+  ldc "GoogleAdMob success"
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_1
+  astore 6
+  aload 6
+  checkcast com/google/ads/AdView
+  astore 6
+  aload 6
+  astore 5
+  aconst_null
+  astore 7
+  aload 5
+  aload 7
+  invokevirtual com/google/ads/AdView/setAdListener(Lcom/google/ads/AdListener;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/admogo/adapters/GoogleAdMobAdsAdapter/activity Landroid/app/Activity;
+  astore 8
+  aload 8
+  invokevirtual android/app/Activity/isFinishing()Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifne Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore 10
+  aload 10
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 11
+  aload 11
+  astore 13
+  aload 13
+  checkcast com/admogo/AdMogoLayout
+  astore 13
+  aload 13
+  astore 12
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  ifnonnull Label1
+Label0:
+  return
+Label1:
+  aload_1
+  astore_2
+  aload_2
+  instanceof com/google/ads/AdView
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifne Label2
+  ldc "invalid AdView"
+  astore 4
+  aload_0
+  astore_2
+  aload_2
+  aload 4
+  invokevirtual com/admogo/adapters/GoogleAdMobAdsAdapter/log(Ljava/lang/String;)V
+  goto Label0
+Label2:
+  aload 12
+  aload 5
+  invokevirtual com/admogo/AdMogoLayout/removeView(Landroid/view/View;)V
+  aload 12
+  getfield com/admogo/AdMogoLayout/adMogoManager Lcom/admogo/AdMogoManager;
+  astore 14
+  aload 14
+  invokevirtual com/admogo/AdMogoManager/resetRollover()V
+  aload 12
+  getfield com/admogo/AdMogoLayout/handler Landroid/os/Handler;
+  astore 15
+  new com/admogo/AdMogoLayout$ViewAdRunnable
+  astore 16
+  iconst_1
+  istore 17
+  aload 16
+  aload 12
+  aload 5
+  iload 17
+  invokespecial com/admogo/AdMogoLayout$ViewAdRunnable/<init>(Lcom/admogo/AdMogoLayout;Landroid/view/ViewGroup;I)V
+  aload 15
+  aload 16
+  invokevirtual android/os/Handler/post(Ljava/lang/Runnable;)Z
+  pop
+  aload 12
+  invokevirtual com/admogo/AdMogoLayout/rotateThreadedDelayed()V
+  goto Label0
+  nop
+.end <method>
+
+.method protected requestForAdMogoLayout(Lcom/admogo/AdMogoLayout;)Lcom/google/ads/AdRequest;
+.limit locals 8
+.limit stack 200
+  nop
+  new com/google/ads/AdRequest
+  astore_2
+  aload_2
+  invokespecial com/google/ads/AdRequest/<init>()V
+  aload_0
+  getfield com/admogo/adapters/AdMogoAdapter/ration Lcom/admogo/obj/Ration;
+  astore_3
+  aload_3
+  getfield com/admogo/obj/Ration/testmodel Z
+  istore 4
+  aload_2
+  iload 4
+  invokevirtual com/google/ads/AdRequest/setTesting(Z)V
+  aload_0
+  invokevirtual com/admogo/adapters/GoogleAdMobAdsAdapter/genderForAdMogoTargeting()Lcom/google/ads/AdRequest$Gender;
+  astore 5
+  aload_2
+  aload 5
+  invokevirtual com/google/ads/AdRequest/setGender(Lcom/google/ads/AdRequest$Gender;)V
+  aload_0
+  invokevirtual com/admogo/adapters/GoogleAdMobAdsAdapter/birthdayForAdMogoTargeting()Ljava/lang/String;
+  astore 6
+  aload_2
+  aload 6
+  invokevirtual com/google/ads/AdRequest/setBirthday(Ljava/lang/String;)V
+  invokestatic com/admogo/AdMogoTargeting/getKeywordSet()Ljava/util/Set;
+  astore 7
+  aload_2
+  aload 7
+  invokevirtual com/google/ads/AdRequest/setKeywords(Ljava/util/Set;)V
+  aload_2
+  areturn
+  nop
+.end <method>
+

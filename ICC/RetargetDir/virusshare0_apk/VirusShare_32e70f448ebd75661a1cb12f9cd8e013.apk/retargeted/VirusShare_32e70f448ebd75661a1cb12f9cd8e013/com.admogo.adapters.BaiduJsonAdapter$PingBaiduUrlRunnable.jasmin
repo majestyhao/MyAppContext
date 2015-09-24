@@ -1,0 +1,108 @@
+.source BaiduJsonAdapter.java
+.class public  com/admogo/adapters/BaiduJsonAdapter$PingBaiduUrlRunnable
+.super java/lang/Object
+.implements  java/lang/Runnable
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 16
+.limit stack 200
+  nop
+  getstatic com/admogo/adapters/BaiduJsonAdapter/baiduAd Lcom/baidu/Ad;
+  astore_1
+  getstatic com/admogo/adapters/BaiduJsonAdapter/baiduImp I
+  istore_2
+  getstatic com/admogo/adapters/BaiduJsonAdapter/baiduClick1 I
+  istore_3
+  getstatic com/admogo/adapters/BaiduJsonAdapter/baiduClick2 I
+  istore 4
+  getstatic com/admogo/adapters/BaiduJsonAdapter/baiduClick3 I
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  new org/apache/http/params/BasicHttpParams
+  astore 7
+  aload 7
+  invokespecial org/apache/http/params/BasicHttpParams/<init>()V
+  sipush 10000
+  istore 8
+  aload 7
+  iload 8
+  invokestatic org/apache/http/params/HttpConnectionParams/setConnectionTimeout(Lorg/apache/http/params/HttpParams;I)V
+  sipush 10000
+  istore 8
+  aload 7
+  iload 8
+  invokestatic org/apache/http/params/HttpConnectionParams/setSoTimeout(Lorg/apache/http/params/HttpParams;I)V
+  new org/apache/http/impl/client/DefaultHttpClient
+  astore 9
+  aload 9
+  aload 7
+  invokespecial org/apache/http/impl/client/DefaultHttpClient/<init>(Lorg/apache/http/params/HttpParams;)V
+  new org/apache/http/client/methods/HttpGet
+  astore 10
+  aload 10
+  aload 6
+  invokespecial org/apache/http/client/methods/HttpGet/<init>(Ljava/lang/String;)V
+Label2:
+  aload 9
+  aload 10
+  invokeinterface org/apache/http/client/HttpClient/execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse; 2
+  astore 11
+  aload 11
+  invokeinterface org/apache/http/HttpResponse/getStatusLine()Lorg/apache/http/StatusLine; 1
+  astore 12
+  aload 12
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 13
+  ldc "Baidu"
+  astore 14
+  aload 14
+  aload 13
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label0:
+  iconst_0
+  istore 8
+  iload 8
+  putstatic com/admogo/adapters/BaiduJsonAdapter/baiduImp I
+  iconst_0
+  istore 8
+  iload 8
+  putstatic com/admogo/adapters/BaiduJsonAdapter/baiduClick1 I
+  iconst_0
+  istore 8
+  iload 8
+  putstatic com/admogo/adapters/BaiduJsonAdapter/baiduClick2 I
+  iconst_0
+  istore 8
+  iload 8
+  putstatic com/admogo/adapters/BaiduJsonAdapter/baiduClick3 I
+  return
+Label1:
+  astore 15
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 13
+  ldc "Caught IOException in PingBaiduUrlRunnable"
+  astore 14
+  aload 13
+  aload 14
+  aload 15
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+  pop
+  goto Label0
+  nop
+.end <method>
+

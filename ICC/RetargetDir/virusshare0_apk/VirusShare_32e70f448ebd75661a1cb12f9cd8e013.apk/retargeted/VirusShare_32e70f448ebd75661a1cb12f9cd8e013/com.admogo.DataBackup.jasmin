@@ -1,0 +1,1309 @@
+.source DataBackup.java
+.class public  com/admogo/DataBackup
+.super java/lang/Object
+.field private static final "CREATE_MOGO_BACKUP" Ljava/lang/String; =  "CREATE TABLE IF NOT EXISTS mogo_backup (_id INTEGER PRIMARY KEY AUTOINCREMENT, uuid TEXT NOT NULL, nid TEXT NOT NULL, aid TEXT NOT NULL, country TEXT NOT NULL, type INTEGER NOT NULL, request INTEGER NOT NULL, impression INTEGER NOT NULL, click INTEGER NOT NULL, blank INTEGER NOT NULL, datetime DATETIME NOT NULL, adtype INTEGER NOT NULL, bf INTEGER NOT NULL)"
+.field private static final "DATABASE_NAME" Ljava/lang/String; =  "AdsMOGO"
+.field private static final "DATABASE_VERSION" I =  2
+.field private static final "DROP_MOGO_BACKUP" Ljava/lang/String; =  "DROP mogo_backup"
+.field private "ADTYPE" Ljava/lang/String;
+.field private "AID" Ljava/lang/String;
+.field private "BF" Ljava/lang/String;
+.field private "BLANK" Ljava/lang/String;
+.field private "CLICK" Ljava/lang/String;
+.field private "COUNTRY" Ljava/lang/String;
+.field private "DATETIME" Ljava/lang/String;
+.field private "IMPRESSION" Ljava/lang/String;
+.field private "NID" Ljava/lang/String;
+.field private "REQUEST" Ljava/lang/String;
+.field private "TABLE_MOGO_BACKUP" Ljava/lang/String;
+.field private "TYPE" Ljava/lang/String;
+.field private "UID" Ljava/lang/String;
+.field private "mDb" Landroid/database/sqlite/SQLiteDatabase;
+.field private "mDbHelper" Lcom/admogo/DataBackup$DatabaseHelper;
+
+.method public <init>()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc "mogo_backup"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/DataBackup/TABLE_MOGO_BACKUP Ljava/lang/String;
+  ldc "uuid"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/DataBackup/UID Ljava/lang/String;
+  ldc "nid"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/DataBackup/NID Ljava/lang/String;
+  ldc "aid"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/DataBackup/AID Ljava/lang/String;
+  ldc "country"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/DataBackup/COUNTRY Ljava/lang/String;
+  ldc "type"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/DataBackup/TYPE Ljava/lang/String;
+  ldc "request"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/DataBackup/REQUEST Ljava/lang/String;
+  ldc "impression"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/DataBackup/IMPRESSION Ljava/lang/String;
+  ldc "click"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/DataBackup/CLICK Ljava/lang/String;
+  ldc "blank"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/DataBackup/BLANK Ljava/lang/String;
+  ldc "datetime"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/DataBackup/DATETIME Ljava/lang/String;
+  ldc "adtype"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/DataBackup/ADTYPE Ljava/lang/String;
+  ldc "bf"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/DataBackup/BF Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public clearData()Z
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/DataBackup/mDb Landroid/database/sqlite/SQLiteDatabase;
+  astore_1
+  aload_0
+  getfield com/admogo/DataBackup/TABLE_MOGO_BACKUP Ljava/lang/String;
+  astore_2
+  iconst_0
+  istore 4
+  iconst_0
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  ifle Label0
+  iconst_1
+  istore 6
+  iload 6
+  ireturn
+Label0:
+  iconst_0
+  istore 6
+  iload 6
+  ireturn
+  nop
+.end <method>
+
+.method public close()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/DataBackup/mDb Landroid/database/sqlite/SQLiteDatabase;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield com/admogo/DataBackup/mDbHelper Lcom/admogo/DataBackup$DatabaseHelper;
+  astore_2
+  aload_2
+  invokevirtual com/admogo/DataBackup$DatabaseHelper/close()V
+  return
+  nop
+.end <method>
+
+.method public getDataList()Ljava/lang/String;
+.limit locals 36
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/mDb Landroid/database/sqlite/SQLiteDatabase;
+  astore 9
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/TABLE_MOGO_BACKUP Ljava/lang/String;
+  astore 10
+  bipush 12
+  istore 12
+  iload 12
+  anewarray java/lang/String
+  astore 11
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/UID Ljava/lang/String;
+  astore 13
+  iconst_0
+  istore 12
+  aload 11
+  iload 12
+  aload 13
+  aastore
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/NID Ljava/lang/String;
+  astore 14
+  iconst_1
+  istore 12
+  aload 11
+  iload 12
+  aload 14
+  aastore
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/AID Ljava/lang/String;
+  astore 14
+  iconst_2
+  istore 12
+  aload 11
+  iload 12
+  aload 14
+  aastore
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/COUNTRY Ljava/lang/String;
+  astore 14
+  iconst_3
+  istore 12
+  aload 11
+  iload 12
+  aload 14
+  aastore
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/TYPE Ljava/lang/String;
+  astore 14
+  iconst_4
+  istore 12
+  aload 11
+  iload 12
+  aload 14
+  aastore
+  new java/lang/StringBuilder
+  astore 15
+  ldc "SUM ("
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/REQUEST Ljava/lang/String;
+  astore 14
+  aload 15
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc ")"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  iconst_5
+  istore 12
+  aload 11
+  iload 12
+  aload 14
+  aastore
+  new java/lang/StringBuilder
+  astore 15
+  ldc "SUM ("
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/IMPRESSION Ljava/lang/String;
+  astore 14
+  aload 15
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc ")"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  bipush 6
+  istore 12
+  aload 11
+  iload 12
+  aload 14
+  aastore
+  new java/lang/StringBuilder
+  astore 15
+  ldc "SUM ("
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/CLICK Ljava/lang/String;
+  astore 14
+  aload 15
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc ")"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  bipush 7
+  istore 12
+  aload 11
+  iload 12
+  aload 14
+  aastore
+  new java/lang/StringBuilder
+  astore 15
+  ldc "SUM ("
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/BLANK Ljava/lang/String;
+  astore 14
+  aload 15
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc ")"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  bipush 8
+  istore 12
+  aload 11
+  iload 12
+  aload 14
+  aastore
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/DATETIME Ljava/lang/String;
+  astore 14
+  bipush 9
+  istore 12
+  aload 11
+  iload 12
+  aload 14
+  aastore
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/ADTYPE Ljava/lang/String;
+  astore 14
+  bipush 10
+  istore 12
+  aload 11
+  iload 12
+  aload 14
+  aastore
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/BF Ljava/lang/String;
+  astore 14
+  bipush 11
+  istore 12
+  aload 11
+  iload 12
+  aload 14
+  aastore
+  new java/lang/StringBuilder
+  astore 15
+  ldc "strftime(\'%Y-%m-%d %H\',"
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/DATETIME Ljava/lang/String;
+  astore 14
+  aload 15
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc "),"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/TYPE Ljava/lang/String;
+  astore 14
+  aload 15
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc ","
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/AID Ljava/lang/String;
+  astore 14
+  aload 15
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc ","
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/DataBackup/BF Ljava/lang/String;
+  astore 14
+  aload 15
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  aconst_null
+  astore 18
+  aconst_null
+  astore 19
+  aconst_null
+  astore 20
+  aconst_null
+  astore 21
+  aload 9
+  astore_1
+  aload 10
+  astore_2
+  aload 11
+  astore_3
+  aload 18
+  astore 4
+  aload 19
+  astore 5
+  aload 14
+  astore 6
+  aload 20
+  astore 7
+  aload 21
+  astore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  ldc ""
+  astore 22
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface android/database/Cursor/getCount()I 1
+  istore 23
+  iload 23
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 23
+  ifle Label0
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface android/database/Cursor/moveToFirst()Z 1
+  istore 24
+  iload 24
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 24
+  ifeq Label1
+Label2:
+  new java/lang/StringBuilder
+  astore 15
+  ldc "<HitTable><ID>"
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  iconst_0
+  istore 12
+  aload 17
+  astore_1
+  aload_1
+  iload 12
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 14
+  aload 15
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc "</ID>"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 25
+  new java/lang/StringBuilder
+  astore 15
+  ldc "<Nid>"
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  iconst_1
+  istore 12
+  aload 17
+  astore_1
+  aload_1
+  iload 12
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 14
+  aload 15
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc "</Nid>"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 26
+  new java/lang/StringBuilder
+  astore 15
+  ldc "<Aid>"
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  iconst_2
+  istore 12
+  aload 17
+  astore_1
+  aload_1
+  iload 12
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 14
+  aload 15
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc "</Aid>"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 10
+  new java/lang/StringBuilder
+  astore 15
+  ldc "<Country>"
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  iconst_3
+  istore 12
+  aload 17
+  astore_1
+  aload_1
+  iload 12
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 14
+  aload 15
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc "</Country>"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 27
+  new java/lang/StringBuilder
+  astore 15
+  ldc "<Type>"
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  iconst_4
+  istore 12
+  aload 17
+  astore_1
+  aload_1
+  iload 12
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 14
+  aload 15
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc "</Type>"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  new java/lang/StringBuilder
+  astore 15
+  ldc "<Requests>"
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  iconst_5
+  istore 12
+  aload 17
+  astore_1
+  aload_1
+  iload 12
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 28
+  aload 28
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc "</Requests>"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 28
+  new java/lang/StringBuilder
+  astore 15
+  ldc "<Impressions>"
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  bipush 6
+  istore 12
+  aload 17
+  astore_1
+  aload_1
+  iload 12
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 29
+  aload 29
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc "</Impressions>"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 29
+  new java/lang/StringBuilder
+  astore 15
+  ldc "<Clicks>"
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  bipush 7
+  istore 12
+  aload 17
+  astore_1
+  aload_1
+  iload 12
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 30
+  aload 30
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc "</Clicks>"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 31
+  new java/lang/StringBuilder
+  astore 15
+  ldc "<Blanks>"
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  bipush 8
+  istore 12
+  aload 17
+  astore_1
+  aload_1
+  iload 12
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 30
+  aload 30
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc "</Blanks>"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 32
+  new java/lang/StringBuilder
+  astore 15
+  ldc "<DateTime>"
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  bipush 9
+  istore 12
+  aload 17
+  astore_1
+  aload_1
+  iload 12
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 30
+  ldc " "
+  astore 16
+  ldc "T"
+  astore 33
+  aload 30
+  astore_1
+  aload 33
+  astore_2
+  aload_1
+  aload 16
+  aload_2
+  invokevirtual java/lang/String/replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+  astore 30
+  aload 30
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc "</DateTime>"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 34
+  new java/lang/StringBuilder
+  astore 15
+  ldc "<ADType>"
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  bipush 10
+  istore 12
+  aload 17
+  astore_1
+  aload_1
+  iload 12
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 30
+  aload 30
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc "</ADType>"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 13
+  new java/lang/StringBuilder
+  astore 15
+  ldc "<Bf>"
+  astore 16
+  aload 15
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  bipush 11
+  istore 12
+  aload 17
+  astore_1
+  aload_1
+  iload 12
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 30
+  aload 30
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc "</Bf>"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 35
+  new java/lang/StringBuilder
+  astore 15
+  aload 22
+  astore_1
+  aload_1
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 22
+  aload 22
+  astore_1
+  aload 15
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 25
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 26
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 27
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 28
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 29
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 31
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 32
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 34
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  aload 13
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 35
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc "</HitTable>"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 22
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface android/database/Cursor/moveToNext()Z 1
+  istore 24
+  iload 24
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 24
+  ifne Label2
+Label1:
+  new java/lang/StringBuilder
+  astore 15
+  ldc "<?xml version=\"1.0\" standalone=\"yes\"?><DocumentElement>"
+  astore 16
+  aload 16
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 14
+  aload 15
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 22
+  astore_1
+  aload 15
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  ldc "</DocumentElement>"
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 22
+Label0:
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface android/database/Cursor/close()V 1
+  aload 22
+  areturn
+  nop
+.end <method>
+
+.method public static getStrTime(J)Ljava/lang/String;
+.limit locals 6
+.limit stack 200
+  nop
+  new java/text/SimpleDateFormat
+  astore_2
+  ldc "yyyy-MM-dd HH:00:00"
+  astore_3
+  aload_2
+  aload_3
+  invokespecial java/text/SimpleDateFormat/<init>(Ljava/lang/String;)V
+  new java/util/Date
+  astore 4
+  aload 4
+  lload_0
+  invokespecial java/util/Date/<init>(J)V
+  aload_2
+  aload 4
+  invokevirtual java/text/SimpleDateFormat/format(Ljava/util/Date;)Ljava/lang/String;
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method public insertData([Ljava/lang/Object;)J
+.limit locals 19
+.limit stack 200
+  nop
+  invokestatic java/util/Calendar/getInstance()Ljava/util/Calendar;
+  astore_3
+  aload_3
+  invokevirtual java/util/Calendar/getTimeInMillis()J
+  lstore 4
+  invokestatic java/util/TimeZone/getDefault()Ljava/util/TimeZone;
+  astore 6
+  aload 6
+  invokevirtual java/util/TimeZone/getRawOffset()I
+  istore 7
+  iload 7
+  i2l
+  lstore 8
+  lload 4
+  lload 8
+  lsub
+  lstore 4
+  lload 4
+  invokestatic com/admogo/DataBackup/getStrTime(J)Ljava/lang/String;
+  astore 10
+  invokestatic java/util/UUID/randomUUID()Ljava/util/UUID;
+  astore 11
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 12
+  invokespecial android/content/ContentValues/<init>()V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/admogo/DataBackup/UID Ljava/lang/String;
+  astore 13
+  aload 11
+  invokevirtual java/util/UUID/toString()Ljava/lang/String;
+  astore 14
+  aload 12
+  aload 13
+  aload 14
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/admogo/DataBackup/AID Ljava/lang/String;
+  astore 13
+  iconst_0
+  istore 16
+  aload_1
+  iload 16
+  aaload
+  astore 15
+  aload 15
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 14
+  aload 12
+  aload 13
+  aload 14
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/admogo/DataBackup/NID Ljava/lang/String;
+  astore 13
+  iconst_1
+  istore 16
+  aload_1
+  iload 16
+  aaload
+  astore 15
+  aload 15
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 14
+  aload 12
+  aload 13
+  aload 14
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/admogo/DataBackup/TYPE Ljava/lang/String;
+  astore 13
+  iconst_2
+  istore 16
+  aload_1
+  iload 16
+  aaload
+  astore 15
+  aload 15
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 14
+  aload 12
+  aload 13
+  aload 14
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/admogo/DataBackup/ADTYPE Ljava/lang/String;
+  astore 13
+  iconst_3
+  istore 16
+  aload_1
+  iload 16
+  aaload
+  astore 15
+  aload 15
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 14
+  aload 12
+  aload 13
+  aload 14
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/admogo/DataBackup/BF Ljava/lang/String;
+  astore 13
+  iconst_4
+  istore 16
+  aload_1
+  iload 16
+  aaload
+  astore 15
+  aload 15
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 14
+  aload 12
+  aload 13
+  aload 14
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/admogo/DataBackup/COUNTRY Ljava/lang/String;
+  astore 13
+  iconst_5
+  istore 16
+  aload_1
+  iload 16
+  aaload
+  astore 15
+  aload 15
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 14
+  aload 12
+  aload 13
+  aload 14
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/admogo/DataBackup/REQUEST Ljava/lang/String;
+  astore 13
+  bipush 6
+  istore 16
+  aload_1
+  iload 16
+  aaload
+  astore 15
+  aload 15
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 14
+  aload 12
+  aload 13
+  aload 14
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/admogo/DataBackup/IMPRESSION Ljava/lang/String;
+  astore 13
+  bipush 7
+  istore 16
+  aload_1
+  iload 16
+  aaload
+  astore 15
+  aload 15
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 14
+  aload 12
+  aload 13
+  aload 14
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/admogo/DataBackup/CLICK Ljava/lang/String;
+  astore 13
+  bipush 8
+  istore 16
+  aload_1
+  iload 16
+  aaload
+  astore 15
+  aload 15
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 14
+  aload 12
+  aload 13
+  aload 14
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/admogo/DataBackup/BLANK Ljava/lang/String;
+  astore 13
+  bipush 9
+  istore 16
+  aload_1
+  iload 16
+  aaload
+  astore 15
+  aload 15
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 14
+  aload 12
+  aload 13
+  aload 14
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/admogo/DataBackup/DATETIME Ljava/lang/String;
+  astore 13
+  aload 12
+  aload 13
+  aload 10
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/admogo/DataBackup/mDb Landroid/database/sqlite/SQLiteDatabase;
+  astore 17
+  aload_0
+  astore_2
+  aload_2
+  getfield com/admogo/DataBackup/TABLE_MOGO_BACKUP Ljava/lang/String;
+  astore 13
+  aconst_null
+  astore 18
+  aload 18
+  astore_2
+  aload 17
+  aload 13
+  aload_2
+  aload 12
+  invokevirtual android/database/sqlite/SQLiteDatabase/insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
+  lstore 8
+  lload 8
+  lreturn
+  nop
+.end <method>
+
+.method public open(Landroid/content/Context;)V
+.limit locals 4
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_2
+  aload_1
+  invokespecial com/admogo/DataBackup$DatabaseHelper/<init>(Landroid/content/Context;)V
+  aload_0
+  aload_2
+  putfield com/admogo/DataBackup/mDbHelper Lcom/admogo/DataBackup$DatabaseHelper;
+  aload_0
+  getfield com/admogo/DataBackup/mDbHelper Lcom/admogo/DataBackup$DatabaseHelper;
+  astore_2
+  aload_2
+  invokevirtual com/admogo/DataBackup$DatabaseHelper/getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+  astore_3
+  aload_0
+  aload_3
+  putfield com/admogo/DataBackup/mDb Landroid/database/sqlite/SQLiteDatabase;
+  return
+  nop
+.end <method>
+

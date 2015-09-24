@@ -1,0 +1,2511 @@
+.source BasicClassTypeUtil.java
+.class public  com/qq/jce/wup/BasicClassTypeUtil
+.super java/lang/Object
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method private static addType(Ljava/util/ArrayList;Ljava/lang/String;)V
+  .signature_attr "(Ljava/util/ArrayList<Ljava/lang/String;>;Ljava/lang/String;)V"
+.limit locals 6
+.limit stack 200
+  nop
+  aload_1
+  invokevirtual java/lang/String/length()I
+  istore_2
+Label1:
+  iload_2
+  iconst_m1
+  iadd
+  istore_3
+  aload_1
+  iload_3
+  invokevirtual java/lang/String/charAt(I)C
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  bipush 62
+  istore 5
+  iload 4
+  iload 5
+  if_icmpne Label0
+  iload_2
+  iconst_m1
+  iadd
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  ifne Label1
+Label0:
+  iconst_0
+  istore 5
+  aload_1
+  iload 5
+  iload_2
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore_1
+  aload_1
+  invokestatic com/qq/jce/wup/BasicClassTypeUtil/uni2JavaType(Ljava/lang/String;)Ljava/lang/String;
+  astore_1
+  iconst_0
+  istore 5
+  aload_0
+  iload 5
+  aload_1
+  invokevirtual java/util/ArrayList/add(ILjava/lang/Object;)V
+  return
+  nop
+.end <method>
+
+.method public static createClassByName(Ljava/lang/String;)Ljava/lang/Object;
+.limit locals 46
+.limit stack 200
+  nop
+  aload_0
+  astore 5
+  aload 5
+  checkcast java/lang/String
+  astore 5
+  aload 5
+  astore 4
+  ldc "java.lang.Integer"
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifeq Label0
+  iconst_0
+  istore 9
+  iload 9
+  istore 8
+  iload 8
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore_0
+Label12:
+  aload_0
+  areturn
+Label0:
+  aload_0
+  astore 10
+  aload 10
+  checkcast java/lang/String
+  astore 10
+  aload 10
+  astore 4
+  ldc "java.lang.Boolean"
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label1
+  iconst_0
+  istore 9
+  iload 9
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore 11
+  aload 11
+  areturn
+Label1:
+  aload_0
+  astore 12
+  aload 12
+  checkcast java/lang/String
+  astore 12
+  aload 12
+  astore 4
+  ldc "java.lang.Byte"
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label2
+  iconst_0
+  istore 9
+  iload 9
+  i2b
+  istore 13
+  iload 13
+  invokestatic java/lang/Byte/valueOf(B)Ljava/lang/Byte;
+  astore 14
+  aload 14
+  areturn
+Label2:
+  aload_0
+  astore 15
+  aload 15
+  checkcast java/lang/String
+  astore 15
+  aload 15
+  astore 4
+  ldc "java.lang.Double"
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label3
+  ldc2_w 0.000000000000000
+  dstore 17
+  dload 17
+  dstore_1
+  dload_1
+  invokestatic java/lang/Double/valueOf(D)Ljava/lang/Double;
+  astore 16
+  aload 16
+  areturn
+Label3:
+  aload_0
+  astore 19
+  aload 19
+  checkcast java/lang/String
+  astore 19
+  aload 19
+  astore 4
+  ldc "java.lang.Float"
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label4
+  fconst_0
+  fstore 21
+  fload 21
+  fstore_1
+  fload_1
+  invokestatic java/lang/Float/valueOf(F)Ljava/lang/Float;
+  astore 20
+  aload 20
+  areturn
+Label4:
+  aload_0
+  astore 22
+  aload 22
+  checkcast java/lang/String
+  astore 22
+  aload 22
+  astore 4
+  ldc "java.lang.Long"
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label5
+  ldc2_w 0
+  lstore 24
+  lload 24
+  lstore_1
+  lload_1
+  invokestatic java/lang/Long/valueOf(J)Ljava/lang/Long;
+  astore 23
+  aload 23
+  areturn
+Label5:
+  aload_0
+  astore 26
+  aload 26
+  checkcast java/lang/String
+  astore 26
+  aload 26
+  astore 4
+  ldc "java.lang.Short"
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label6
+  iconst_0
+  istore 9
+  iload 9
+  i2s
+  istore_1
+  iload_1
+  istore 27
+  iload_1
+  invokestatic java/lang/Short/valueOf(S)Ljava/lang/Short;
+  astore 28
+  aload 28
+  areturn
+Label6:
+  aload_0
+  astore 29
+  aload 29
+  checkcast java/lang/String
+  astore 29
+  aload 29
+  astore 4
+  ldc "java.lang.Character"
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label7
+  new java/lang/IllegalArgumentException
+  astore 30
+  ldc "can not support java.lang.Character"
+  astore 7
+  aload 30
+  astore_1
+  aload_1
+  aload 7
+  invokespecial java/lang/IllegalArgumentException/<init>(Ljava/lang/String;)V
+  aload 30
+  athrow
+Label7:
+  aload_0
+  astore 31
+  aload 31
+  checkcast java/lang/String
+  astore 31
+  aload 31
+  astore 4
+  ldc "java.lang.String"
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label8
+  ldc ""
+  astore 7
+  aload 7
+  areturn
+Label8:
+  aload_0
+  astore 32
+  aload 32
+  checkcast java/lang/String
+  astore 32
+  aload 32
+  astore 4
+  ldc "java.util.List"
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label9
+  new java/util/ArrayList
+  astore 33
+  aload 33
+  astore_1
+  aload_1
+  invokespecial java/util/ArrayList/<init>()V
+  aload 33
+  areturn
+Label9:
+  aload_0
+  astore 34
+  aload 34
+  checkcast java/lang/String
+  astore 34
+  aload 34
+  astore 4
+  ldc "java.util.Map"
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label10
+  new java/util/HashMap
+  astore 35
+  aload 35
+  astore_1
+  aload_1
+  invokespecial java/util/HashMap/<init>()V
+  aload 35
+  areturn
+Label10:
+  aload_0
+  astore 36
+  aload 36
+  checkcast java/lang/String
+  astore 36
+  aload 36
+  astore 4
+  ldc "Array"
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label11
+  ldc "Array"
+  astore 7
+  aload 7
+  areturn
+Label11:
+  aload_0
+  astore 37
+  aload 37
+  checkcast java/lang/String
+  astore 37
+  aload 37
+  astore 4
+  ldc "?"
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifne Label12
+Label14:
+  aload_0
+  astore 38
+  aload 38
+  checkcast java/lang/String
+  astore 38
+  aload 38
+  astore 4
+  aload 4
+  invokestatic java/lang/Class/forName(Ljava/lang/String;)Ljava/lang/Class;
+  astore 39
+  iconst_0
+  istore 9
+  iload 9
+  anewarray java/lang/Class
+  astore_1
+  aload_1
+  astore 40
+  aload 39
+  astore_1
+  aload 40
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/Class/getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+  astore 41
+  iconst_0
+  istore 9
+  iload 9
+  anewarray java/lang/Object
+  astore_1
+  aload_1
+  astore 42
+  aload 41
+  astore_1
+  aload 42
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/reflect/Constructor/newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+  astore 43
+Label15:
+  aload 43
+  areturn
+Label13:
+  astore 44
+  aload 44
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/printStackTrace()V
+  new com/qq/jce/wup/ObjectCreateException
+  astore 45
+  aload 45
+  astore_1
+  aload 44
+  astore_2
+  aload_1
+  aload_2
+  invokespecial com/qq/jce/wup/ObjectCreateException/<init>(Ljava/lang/Exception;)V
+  aload 45
+  athrow
+  nop
+.end <method>
+
+.method public static createClassByUni(Ljava/lang/String;)Ljava/lang/Object;
+.limit locals 22
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  invokestatic com/qq/jce/wup/BasicClassTypeUtil/getTypeList(Ljava/lang/String;)Ljava/util/ArrayList;
+  astore_3
+  iconst_0
+  istore 4
+  aload_3
+  invokevirtual java/util/ArrayList/iterator()Ljava/util/Iterator;
+  astore 5
+  iconst_0
+  istore 6
+  iconst_0
+  istore 7
+Label4:
+  aload 5
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 8
+  ifeq Label0
+  aload 5
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 4
+  aload 4
+  astore 9
+  aload 9
+  checkcast java/lang/String
+  astore 9
+  aload 9
+  astore_0
+  aload_0
+  astore_1
+  aload_1
+  invokestatic com/qq/jce/wup/BasicClassTypeUtil/createClassByName(Ljava/lang/String;)Ljava/lang/Object;
+  astore 4
+  aload 4
+  instanceof java/lang/String
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label1
+  ldc "Array"
+  astore_0
+  aload 4
+  astore 11
+  aload 11
+  checkcast java/lang/String
+  astore 11
+  aload 11
+  astore 10
+  aload 10
+  checkcast java/lang/String
+  astore 10
+  aload_0
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label2
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 7
+  ifne Label3
+  ldc java/lang/Byte
+  astore 12
+  iconst_0
+  istore 13
+  aload 12
+  iload 13
+  invokestatic java/lang/reflect/Array/newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
+  astore 4
+  aload 7
+  astore 14
+  aload 6
+  astore 7
+Label6:
+  aload 7
+  astore 6
+  aload 14
+  astore 7
+  goto Label4
+Label2:
+  ldc "?"
+  astore 10
+  aload 4
+  astore 15
+  aload 15
+  checkcast java/lang/String
+  astore 15
+  aload 15
+  astore_0
+  aload_0
+  checkcast java/lang/String
+  astore_0
+  aload_0
+  astore_1
+  aload 10
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label5
+  aload 7
+  astore 14
+  aload 6
+  astore 7
+  goto Label6
+Label5:
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 7
+  ifne Label7
+  aload 4
+  astore 14
+  aload 6
+  astore 7
+  goto Label6
+Label7:
+  aload 4
+  astore 14
+  goto Label6
+Label1:
+  aload 4
+  instanceof java/util/List
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label8
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 7
+  ifeq Label9
+  aload 7
+  instanceof java/lang/Byte
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label9
+  ldc java/lang/Byte
+  astore 12
+  iconst_1
+  istore 13
+  aload 12
+  iload 13
+  invokestatic java/lang/reflect/Array/newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
+  astore 4
+  iconst_0
+  istore 13
+  aload 4
+  iload 13
+  aload 7
+  invokestatic java/lang/reflect/Array/set(Ljava/lang/Object;ILjava/lang/Object;)V
+  aload 7
+  astore 14
+  aload 6
+  astore 7
+  goto Label6
+Label9:
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 7
+  ifeq Label10
+  aload 4
+  astore 17
+  aload 17
+  checkcast java/util/List
+  astore 17
+  aload 17
+  astore 16
+  aload 16
+  aload 7
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+Label10:
+  aconst_null
+  astore 14
+  aload 6
+  astore 7
+  goto Label6
+Label8:
+  aload 4
+  instanceof java/util/Map
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label11
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 7
+  ifeq Label12
+  iconst_1
+  istore 18
+Label15:
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 6
+  ifeq Label13
+  iconst_1
+  istore 19
+Label16:
+  iload 19
+  istore_1
+  iload 18
+  istore_2
+  iload_1
+  iload_2
+  iand
+  istore_1
+  iload_1
+  istore 19
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  ifeq Label14
+  aload 4
+  astore 21
+  aload 21
+  checkcast java/util/Map
+  astore 21
+  aload 21
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  aload 7
+  aload 6
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+Label14:
+  aconst_null
+  astore 14
+  aconst_null
+  astore 7
+  goto Label6
+Label12:
+  iconst_0
+  istore 18
+  goto Label15
+Label13:
+  iconst_0
+  istore 19
+  goto Label16
+Label11:
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 7
+  ifne Label17
+  aload 4
+  astore 14
+  aload 6
+  astore 7
+  goto Label6
+Label17:
+  aload 4
+  astore 14
+  goto Label6
+Label0:
+  aload 4
+  areturn
+Label3:
+  aload 7
+  astore 14
+  aload 6
+  astore 7
+  goto Label6
+  nop
+.end <method>
+
+.method public static getClassTransName(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 3
+.limit stack 200
+  nop
+  ldc "int"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  ldc "Integer"
+  astore_0
+Label7:
+  aload_0
+  areturn
+Label0:
+  ldc "boolean"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label1
+  ldc "Boolean"
+  astore_2
+  aload_2
+  areturn
+Label1:
+  ldc "byte"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label2
+  ldc "Byte"
+  astore_2
+  aload_2
+  areturn
+Label2:
+  ldc "double"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label3
+  ldc "Double"
+  astore_2
+  aload_2
+  areturn
+Label3:
+  ldc "float"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label4
+  ldc "Float"
+  astore_2
+  aload_2
+  areturn
+Label4:
+  ldc "long"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label5
+  ldc "Long"
+  astore_2
+  aload_2
+  areturn
+Label5:
+  ldc "short"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label6
+  ldc "Short"
+  astore_2
+  aload_2
+  areturn
+Label6:
+  ldc "char"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label7
+  ldc "Character"
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public static getTypeList(Ljava/lang/String;)Ljava/util/ArrayList;
+  .signature_attr "(Ljava/lang/String;)Ljava/util/ArrayList<Ljava/lang/String;>;"
+.limit locals 8
+.limit stack 200
+  nop
+  new java/util/ArrayList
+  astore_1
+  aload_1
+  invokespecial java/util/ArrayList/<init>()V
+  iconst_0
+  istore_2
+  ldc "<"
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual java/lang/String/indexOf(Ljava/lang/String;)I
+  istore_3
+Label2:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label0
+  aload_0
+  iload_2
+  iload_3
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 5
+  aload_1
+  aload 5
+  invokestatic com/qq/jce/wup/BasicClassTypeUtil/addType(Ljava/util/ArrayList;Ljava/lang/String;)V
+  iload_3
+  iconst_1
+  iadd
+  istore_2
+  ldc "<"
+  astore 4
+  aload_0
+  aload 4
+  iload_2
+  invokevirtual java/lang/String/indexOf(Ljava/lang/String;I)I
+  istore_3
+  ldc ","
+  astore 4
+  aload_0
+  aload 4
+  iload_2
+  invokevirtual java/lang/String/indexOf(Ljava/lang/String;I)I
+  istore 6
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 7
+  iload_3
+  iload 7
+  if_icmpne Label1
+  iload 6
+  istore_3
+Label1:
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 7
+  iload 6
+  iload 7
+  if_icmpeq Label2
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  iload_3
+  if_icmpge Label2
+  iload 6
+  istore_3
+  goto Label2
+Label0:
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore_3
+  aload_0
+  iload_2
+  iload_3
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 5
+  aload_1
+  aload 5
+  invokestatic com/qq/jce/wup/BasicClassTypeUtil/addType(Ljava/util/ArrayList;Ljava/lang/String;)V
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static getVariableInit(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.limit locals 6
+.limit stack 200
+  nop
+  ldc "int"
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc " "
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc "=0 ;\n"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  areturn
+Label0:
+  ldc "boolean"
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label1
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc " "
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc "=false ;\n"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  areturn
+Label1:
+  ldc "byte"
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label2
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc " "
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc " ;\n"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  areturn
+Label2:
+  ldc "double"
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label3
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc " "
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc "=0 ;\n"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  areturn
+Label3:
+  ldc "float"
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label4
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc " "
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc "=0 ;\n"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  areturn
+Label4:
+  ldc "long"
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label5
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc " "
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc "=0 ;\n"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  areturn
+Label5:
+  ldc "short"
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label6
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc " "
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc "=0 ;\n"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  areturn
+Label6:
+  ldc "char"
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label7
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc " "
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc " ;\n"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  areturn
+Label7:
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc " "
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc " = null ;\n"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method public static isBasicType(Ljava/lang/String;)Z
+.limit locals 4
+.limit stack 200
+  nop
+  ldc "int"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+Label1:
+  iconst_1
+  istore_3
+  iload_3
+  ireturn
+Label0:
+  ldc "boolean"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label1
+  ldc "byte"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label1
+  ldc "double"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label1
+  ldc "float"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label1
+  ldc "long"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label1
+  ldc "short"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label1
+  ldc "char"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label1
+  ldc "Integer"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label1
+  ldc "Boolean"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label1
+  ldc "Byte"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label1
+  ldc "Double"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label1
+  ldc "Float"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label1
+  ldc "Long"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label1
+  ldc "Short"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label1
+  ldc "Char"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label1
+  iconst_0
+  istore_3
+  iload_3
+  ireturn
+  nop
+.end <method>
+
+.method public static java2UniType(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 4
+.limit stack 200
+  nop
+  ldc "java.lang.Integer"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  ldc "int"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label1
+Label0:
+  ldc "int32"
+  astore_0
+Label17:
+  aload_0
+  areturn
+Label1:
+  ldc "java.lang.Boolean"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label2
+  ldc "boolean"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label3
+Label2:
+  ldc "bool"
+  astore_2
+  aload_2
+  areturn
+Label3:
+  ldc "java.lang.Byte"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label4
+  ldc "byte"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label5
+Label4:
+  ldc "char"
+  astore_2
+  aload_2
+  areturn
+Label5:
+  ldc "java.lang.Double"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label6
+  ldc "double"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label7
+Label6:
+  ldc "double"
+  astore_2
+  aload_2
+  areturn
+Label7:
+  ldc "java.lang.Float"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label8
+  ldc "float"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label9
+Label8:
+  ldc "float"
+  astore_2
+  aload_2
+  areturn
+Label9:
+  ldc "java.lang.Long"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label10
+  ldc "long"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label11
+Label10:
+  ldc "int64"
+  astore_2
+  aload_2
+  areturn
+Label11:
+  ldc "java.lang.Short"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label12
+  ldc "short"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label13
+Label12:
+  ldc "short"
+  astore_2
+  aload_2
+  areturn
+Label13:
+  ldc "java.lang.Character"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label14
+  new java/lang/IllegalArgumentException
+  astore_3
+  ldc "can not support java.lang.Character"
+  astore_2
+  aload_3
+  aload_2
+  invokespecial java/lang/IllegalArgumentException/<init>(Ljava/lang/String;)V
+  aload_3
+  athrow
+Label14:
+  ldc "java.lang.String"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label15
+  ldc "string"
+  astore_2
+  aload_2
+  areturn
+Label15:
+  ldc "java.util.List"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label16
+  ldc "list"
+  astore_2
+  aload_2
+  areturn
+Label16:
+  ldc "java.util.Map"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label17
+  ldc "map"
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public static main([Ljava/lang/String;)V
+.limit locals 12
+.limit stack 200
+  nop
+  new java/util/ArrayList
+  astore_1
+  aload_1
+  invokespecial java/util/ArrayList/<init>()V
+  ldc "char"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  ldc "list<char>"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  ldc "list<list<char>>"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  ldc "map<short,string>"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  ldc "map<double,map<float,list<bool>>>"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  ldc "map<int64,list<Test.UserInfo>>"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  ldc "map<short,Test.FriendInfo>"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+  aload_1
+  invokevirtual java/util/ArrayList/iterator()Ljava/util/Iterator;
+  astore_3
+Label3:
+  aload_3
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  aload_3
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 5
+  aload 5
+  astore 7
+  aload 7
+  checkcast java/lang/String
+  astore 7
+  aload 7
+  astore 6
+  aload 6
+  invokestatic com/qq/jce/wup/BasicClassTypeUtil/getTypeList(Ljava/lang/String;)Ljava/util/ArrayList;
+  astore_1
+  aload_1
+  invokevirtual java/util/ArrayList/iterator()Ljava/util/Iterator;
+  astore 8
+Label2:
+  aload 8
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label1
+  aload 8
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 5
+  aload 5
+  astore 9
+  aload 9
+  checkcast java/lang/String
+  astore 9
+  aload 9
+  astore 6
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore 10
+  aload 10
+  aload 6
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  goto Label2
+Label1:
+  aload_1
+  invokestatic java/util/Collections/reverse(Ljava/util/List;)V
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore 10
+  new java/lang/StringBuilder
+  astore 11
+  aload 11
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "-------------finished "
+  astore_2
+  aload 11
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload_1
+  invokestatic com/qq/jce/wup/BasicClassTypeUtil/transTypeList(Ljava/util/ArrayList;)Ljava/lang/String;
+  astore 6
+  aload 11
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload 11
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload 10
+  aload 6
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  goto Label3
+Label0:
+  return
+  nop
+.end <method>
+
+.method public static transTypeList(Ljava/util/ArrayList;)Ljava/lang/String;
+  .signature_attr "(Ljava/util/ArrayList<Ljava/lang/String;>;)Ljava/lang/String;"
+.limit locals 23
+.limit stack 200
+  nop
+  new java/lang/StringBuffer
+  astore_2
+  aload_2
+  invokespecial java/lang/StringBuffer/<init>()V
+  iconst_0
+  istore_3
+Label1:
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual java/util/ArrayList/size()I
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 4
+  if_icmpge Label0
+  aload_0
+  astore_1
+  aload_1
+  iload_3
+  invokevirtual java/util/ArrayList/get(I)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 7
+  aload 7
+  checkcast java/lang/String
+  astore 7
+  aload 7
+  astore 6
+  aload 6
+  invokestatic com/qq/jce/wup/BasicClassTypeUtil/java2UniType(Ljava/lang/String;)Ljava/lang/String;
+  astore 6
+  aload_0
+  astore_1
+  aload_1
+  iload_3
+  aload 6
+  invokevirtual java/util/ArrayList/set(ILjava/lang/Object;)Ljava/lang/Object;
+  pop
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label1
+Label0:
+  aload_0
+  astore_1
+  aload_1
+  invokestatic java/util/Collections/reverse(Ljava/util/List;)V
+  iconst_0
+  dstore_3
+Label4:
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual java/util/ArrayList/size()I
+  istore 4
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 4
+  if_icmpge Label2
+  aload_0
+  astore_1
+  aload_1
+  iload_3
+  invokevirtual java/util/ArrayList/get(I)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 8
+  aload 8
+  checkcast java/lang/String
+  astore 8
+  aload 8
+  astore 6
+  ldc "list"
+  astore 10
+  aload 6
+  aload 10
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label3
+  iload_3
+  iconst_m1
+  iadd
+  istore 4
+  new java/lang/StringBuilder
+  astore 11
+  aload 11
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "<"
+  astore 10
+  aload 11
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  iload_3
+  iconst_m1
+  iadd
+  istore 12
+  aload_0
+  astore_1
+  aload_1
+  iload 12
+  invokevirtual java/util/ArrayList/get(I)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 14
+  aload 14
+  checkcast java/lang/String
+  astore 14
+  aload 14
+  astore 13
+  aload 11
+  aload 13
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload 11
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 13
+  aload_0
+  astore_1
+  aload_1
+  iload 4
+  aload 13
+  invokevirtual java/util/ArrayList/set(ILjava/lang/Object;)Ljava/lang/Object;
+  pop
+  new java/lang/StringBuilder
+  astore 11
+  aload 11
+  invokespecial java/lang/StringBuilder/<init>()V
+  iconst_0
+  istore 15
+  aload_0
+  astore_1
+  aload_1
+  iload 15
+  invokevirtual java/util/ArrayList/get(I)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 16
+  aload 16
+  checkcast java/lang/String
+  astore 16
+  aload 16
+  astore 13
+  aload 11
+  aload 13
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  ldc ">"
+  astore 10
+  aload 11
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload 11
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 13
+  iconst_0
+  istore 15
+  aload_0
+  astore_1
+  aload_1
+  iload 15
+  aload 13
+  invokevirtual java/util/ArrayList/set(ILjava/lang/Object;)Ljava/lang/Object;
+  pop
+Label6:
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label4
+Label3:
+  ldc "map"
+  astore 10
+  aload 6
+  aload 10
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label5
+  iload_3
+  iconst_m1
+  iadd
+  istore 12
+  new java/lang/StringBuilder
+  astore 11
+  aload 11
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "<"
+  astore 10
+  aload 11
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  iload_3
+  iconst_m1
+  iadd
+  istore 4
+  aload_0
+  astore_1
+  aload_1
+  iload 4
+  invokevirtual java/util/ArrayList/get(I)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 17
+  aload 17
+  checkcast java/lang/String
+  astore 17
+  aload 17
+  astore 13
+  aload 11
+  aload 13
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  ldc ","
+  astore 10
+  aload 11
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload 11
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 13
+  aload_0
+  astore_1
+  aload_1
+  iload 12
+  aload 13
+  invokevirtual java/util/ArrayList/set(ILjava/lang/Object;)Ljava/lang/Object;
+  pop
+  new java/lang/StringBuilder
+  astore 11
+  aload 11
+  invokespecial java/lang/StringBuilder/<init>()V
+  iconst_0
+  istore 15
+  aload_0
+  astore_1
+  aload_1
+  iload 15
+  invokevirtual java/util/ArrayList/get(I)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 18
+  aload 18
+  checkcast java/lang/String
+  astore 18
+  aload 18
+  astore 13
+  aload 11
+  aload 13
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  ldc ">"
+  astore 10
+  aload 11
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload 11
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 13
+  iconst_0
+  istore 15
+  aload_0
+  astore_1
+  aload_1
+  iload 15
+  aload 13
+  invokevirtual java/util/ArrayList/set(ILjava/lang/Object;)Ljava/lang/Object;
+  pop
+  goto Label6
+Label5:
+  ldc "Array"
+  astore 10
+  aload 6
+  aload 10
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label6
+  iload_3
+  iconst_m1
+  iadd
+  istore 12
+  new java/lang/StringBuilder
+  astore 11
+  aload 11
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "<"
+  astore 10
+  aload 11
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  iload_3
+  iconst_m1
+  iadd
+  istore 4
+  aload_0
+  astore_1
+  aload_1
+  iload 4
+  invokevirtual java/util/ArrayList/get(I)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 19
+  aload 19
+  checkcast java/lang/String
+  astore 19
+  aload 19
+  astore 13
+  aload 11
+  aload 13
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload 11
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 13
+  aload_0
+  astore_1
+  aload_1
+  iload 12
+  aload 13
+  invokevirtual java/util/ArrayList/set(ILjava/lang/Object;)Ljava/lang/Object;
+  pop
+  new java/lang/StringBuilder
+  astore 11
+  aload 11
+  invokespecial java/lang/StringBuilder/<init>()V
+  iconst_0
+  istore 15
+  aload_0
+  astore_1
+  aload_1
+  iload 15
+  invokevirtual java/util/ArrayList/get(I)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 20
+  aload 20
+  checkcast java/lang/String
+  astore 20
+  aload 20
+  astore 13
+  aload 11
+  aload 13
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  ldc ">"
+  astore 10
+  aload 11
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 11
+  aload 11
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 13
+  iconst_0
+  istore 15
+  aload_0
+  astore_1
+  aload_1
+  iload 15
+  aload 13
+  invokevirtual java/util/ArrayList/set(ILjava/lang/Object;)Ljava/lang/Object;
+  pop
+  goto Label6
+Label2:
+  aload_0
+  astore_1
+  aload_1
+  invokestatic java/util/Collections/reverse(Ljava/util/List;)V
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual java/util/ArrayList/iterator()Ljava/util/Iterator;
+  astore 21
+Label8:
+  aload 21
+  astore_1
+  aload_1
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label7
+  aload 21
+  astore_1
+  aload_1
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 5
+  aload 5
+  astore 22
+  aload 22
+  checkcast java/lang/String
+  astore 22
+  aload 22
+  astore 13
+  aload_2
+  aload 13
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  goto Label8
+Label7:
+  aload_2
+  invokevirtual java/lang/StringBuffer/toString()Ljava/lang/String;
+  astore 13
+  aload 13
+  areturn
+  nop
+.end <method>
+
+.method public static uni2JavaType(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 3
+.limit stack 200
+  nop
+  ldc "int32"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  ldc "java.lang.Integer"
+  astore_0
+Label9:
+  aload_0
+  areturn
+Label0:
+  ldc "bool"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label1
+  ldc "java.lang.Boolean"
+  astore_2
+  aload_2
+  areturn
+Label1:
+  ldc "char"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label2
+  ldc "java.lang.Byte"
+  astore_2
+  aload_2
+  areturn
+Label2:
+  ldc "double"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label3
+  ldc "java.lang.Double"
+  astore_2
+  aload_2
+  areturn
+Label3:
+  ldc "float"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label4
+  ldc "java.lang.Float"
+  astore_2
+  aload_2
+  areturn
+Label4:
+  ldc "int64"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label5
+  ldc "java.lang.Long"
+  astore_2
+  aload_2
+  areturn
+Label5:
+  ldc "short"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label6
+  ldc "java.lang.Short"
+  astore_2
+  aload_2
+  areturn
+Label6:
+  ldc "string"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label7
+  ldc "java.lang.String"
+  astore_2
+  aload_2
+  areturn
+Label7:
+  ldc "list"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label8
+  ldc "java.util.List"
+  astore_2
+  aload_2
+  areturn
+Label8:
+  ldc "map"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label9
+  ldc "java.util.Map"
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+

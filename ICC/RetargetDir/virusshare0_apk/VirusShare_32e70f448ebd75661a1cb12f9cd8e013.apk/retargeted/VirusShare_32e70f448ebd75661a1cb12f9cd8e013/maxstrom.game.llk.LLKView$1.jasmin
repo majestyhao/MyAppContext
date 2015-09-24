@@ -1,0 +1,53 @@
+.source LLKView.java
+.class  maxstrom/game/llk/LLKView$1
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "this$0" Lmaxstrom/game/llk/LLKView;
+
+.method <init>(Lmaxstrom/game/llk/LLKView;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield maxstrom/game/llk/LLKView$1/this$0 Lmaxstrom/game/llk/LLKView;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 6
+.limit stack 200
+  .catch  java/lang/Exception <from> Label2 <to> Label0 <using> Label1
+  nop
+Label2:
+  iconst_0
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield maxstrom/game/llk/LLKView$1/this$0 Lmaxstrom/game/llk/LLKView;
+  astore_2
+  aload_2
+  invokevirtual maxstrom/game/llk/LLKView/postInvalidate()V
+Label0:
+  return
+Label1:
+  astore_3
+  aload_3
+  invokevirtual java/lang/Exception/toString()Ljava/lang/String;
+  astore 4
+  ldc "LLK:"
+  astore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  goto Label0
+  nop
+.end <method>
+

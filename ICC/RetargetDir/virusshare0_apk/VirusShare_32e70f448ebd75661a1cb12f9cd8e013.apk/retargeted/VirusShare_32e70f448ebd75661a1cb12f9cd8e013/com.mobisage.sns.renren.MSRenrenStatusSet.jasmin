@@ -1,0 +1,72 @@
+.source SourceFile
+.class public  com/mobisage/sns/renren/MSRenrenStatusSet
+.super com/mobisage/sns/renren/MSRenrenMessage
+
+.method public <init>(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  invokespecial com/mobisage/sns/renren/MSRenrenMessage/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  ldc "http://api.renren.com/restserver.do"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/mobisage/sns/renren/MSRenrenMessage/urlPath Ljava/lang/String;
+  ldc "POST"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/mobisage/sns/renren/MSRenrenMessage/httpMethod Ljava/lang/String;
+  aload_0
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 4
+  ldc "access_token"
+  astore_3
+  aload 4
+  aload_3
+  aload_1
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_0
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 4
+  ldc "v"
+  astore_3
+  ldc "2.0"
+  astore 5
+  aload 4
+  aload_3
+  aload 5
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_0
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 4
+  ldc "method"
+  astore_3
+  ldc "status.set"
+  astore 5
+  aload 4
+  aload_3
+  aload 5
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_0
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 4
+  ldc "format"
+  astore_3
+  ldc "json"
+  astore 5
+  aload 4
+  aload_3
+  aload 5
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  return
+  nop
+.end <method>
+

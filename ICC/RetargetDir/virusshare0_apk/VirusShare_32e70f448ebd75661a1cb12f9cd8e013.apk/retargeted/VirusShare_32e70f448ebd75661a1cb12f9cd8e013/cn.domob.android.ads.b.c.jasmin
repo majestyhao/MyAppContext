@@ -1,0 +1,28 @@
+.source SourceFile
+.class  cn/domob/android/ads/b/c
+.super java/lang/Object
+.field public "a" Landroid/graphics/Bitmap;
+.field public "b" I
+.field public "c" Lcn/domob/android/ads/b/c;
+
+.method public <init>(Landroid/graphics/Bitmap;I)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/b/c/c Lcn/domob/android/ads/b/c;
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/b/c/a Landroid/graphics/Bitmap;
+  aload_0
+  iload_2
+  putfield cn/domob/android/ads/b/c/b I
+  return
+  nop
+.end <method>
+

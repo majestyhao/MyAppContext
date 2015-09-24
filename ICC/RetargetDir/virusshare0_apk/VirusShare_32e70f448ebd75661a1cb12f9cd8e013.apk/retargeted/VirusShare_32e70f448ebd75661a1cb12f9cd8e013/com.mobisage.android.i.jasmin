@@ -1,0 +1,845 @@
+.source SourceFile
+.class final  com/mobisage/android/i
+.super com/mobisage/android/O
+.field private "g" Lcom/mobisage/android/i$a;
+
+.method public <init>(Landroid/os/Handler;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial com/mobisage/android/O/<init>(Landroid/os/Handler;)V
+  sipush 1005
+  istore_2
+  aload_0
+  iload_2
+  putfield com/mobisage/android/O/c I
+  new com/mobisage/android/i$a
+  astore_3
+  iconst_0
+  istore_2
+  aload_3
+  aload_0
+  iload_2
+  invokespecial com/mobisage/android/i$a/<init>(Lcom/mobisage/android/i;B)V
+  aload_0
+  aload_3
+  putfield com/mobisage/android/i/g Lcom/mobisage/android/i$a;
+  new com/mobisage/android/h
+  astore 4
+  aload 4
+  invokespecial com/mobisage/android/h/<init>()V
+  aload_0
+  getfield com/mobisage/android/O/d Ljava/util/LinkedList;
+  astore 5
+  aload 5
+  aload 4
+  invokevirtual java/util/LinkedList/add(Ljava/lang/Object;)Z
+  pop
+  return
+  nop
+.end <method>
+
+.method private a(Ljava/lang/String;Lcom/mobisage/android/b;Ljava/util/ArrayList;)Ljava/lang/String;
+  .signature_attr "(Ljava/lang/String;Lcom/mobisage/android/b;Ljava/util/ArrayList<Ljava/lang/String;>;)Ljava/lang/String;"
+.limit locals 26
+.limit stack 200
+  nop
+  new java/util/LinkedList
+  astore 6
+  aload 6
+  invokespecial java/util/LinkedList/<init>()V
+  aload_1
+  astore 4
+  aload 4
+  aload 6
+  invokestatic com/mobisage/android/SNSSSLSocketFactory$a/a(Ljava/lang/String;Ljava/util/LinkedList;)Z
+  istore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 7
+  ifne Label0
+  aconst_null
+  astore_1
+Label2:
+  aload_1
+  areturn
+Label0:
+  aload_1
+  astore 4
+  aload 4
+  aload 6
+  invokestatic com/mobisage/android/SNSSSLSocketFactory$a/b(Ljava/lang/String;Ljava/util/LinkedList;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifne Label1
+  aconst_null
+  astore 8
+  aload 8
+  areturn
+Label1:
+  iconst_0
+  dstore 9
+Label7:
+  aload 6
+  invokevirtual java/util/LinkedList/size()I
+  istore 10
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  iload 10
+  if_icmpge Label2
+  aload 6
+  iload 9
+  invokevirtual java/util/LinkedList/get(I)Ljava/lang/Object;
+  astore 11
+  aload 11
+  astore 13
+  aload 13
+  checkcast java/lang/String
+  astore 13
+  aload 13
+  astore 12
+  aload_1
+  astore 4
+  aload 4
+  aload 12
+  invokevirtual java/lang/String/indexOf(Ljava/lang/String;)I
+  istore 10
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 14
+  iload 10
+  iload 14
+  if_icmpeq Label3
+  new java/lang/StringBuilder
+  astore 15
+  aload 15
+  invokespecial java/lang/StringBuilder/<init>()V
+  new java/lang/StringBuilder
+  astore 16
+  aload 16
+  invokespecial java/lang/StringBuilder/<init>()V
+  aconst_null
+  astore 8
+  aload 8
+  aload 12
+  aload 15
+  aload 16
+  invokestatic com/mobisage/android/SNSSSLSocketFactory$a/a(Ljava/security/MessageDigest;Ljava/lang/String;Ljava/lang/StringBuilder;Ljava/lang/StringBuilder;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifne Label4
+  aconst_null
+  astore 8
+  aload 8
+  areturn
+Label4:
+  ldc "."
+  astore 17
+  aload 12
+  aload 17
+  invokevirtual java/lang/String/lastIndexOf(Ljava/lang/String;)I
+  istore 10
+  iload 10
+  iconst_1
+  iadd
+  istore 10
+  aload 12
+  iload 10
+  invokevirtual java/lang/String/substring(I)Ljava/lang/String;
+  astore 18
+  ldc "htm"
+  astore 17
+  aload 18
+  aload 17
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifne Label5
+  ldc "html"
+  astore 17
+  aload 18
+  aload 17
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label6
+Label5:
+  new java/lang/StringBuilder
+  astore 19
+  ldc "file://"
+  astore 17
+  aload 19
+  aload 17
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 19
+  aload 15
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore 19
+  aload 19
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 18
+  aload_3
+  astore 4
+  aload 4
+  aload 18
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+Label6:
+  new com/mobisage/android/b
+  astore 20
+  aload 20
+  astore 4
+  aload 4
+  invokespecial com/mobisage/android/b/<init>()V
+  aload 20
+  astore 4
+  aload 4
+  getfield com/mobisage/android/b/c Landroid/os/Bundle;
+  astore 4
+  aload 4
+  astore 21
+  ldc "SourceURL"
+  astore 17
+  aload 21
+  astore 4
+  aload 4
+  aload 17
+  aload 12
+  invokevirtual android/os/Bundle/putString(Ljava/lang/String;Ljava/lang/String;)V
+  aload 20
+  astore 4
+  aload 4
+  getfield com/mobisage/android/b/c Landroid/os/Bundle;
+  astore 4
+  aload 4
+  astore 21
+  aload 16
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 22
+  ldc "TempURL"
+  astore 17
+  aload 21
+  astore 4
+  aload 22
+  astore 5
+  aload 4
+  aload 17
+  aload 5
+  invokevirtual android/os/Bundle/putString(Ljava/lang/String;Ljava/lang/String;)V
+  aload 20
+  astore 4
+  aload 4
+  getfield com/mobisage/android/b/c Landroid/os/Bundle;
+  astore 4
+  aload 4
+  astore 21
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 22
+  ldc "TargetURL"
+  astore 17
+  aload 21
+  astore 4
+  aload 22
+  astore 5
+  aload 4
+  aload 17
+  aload 5
+  invokevirtual android/os/Bundle/putString(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore 4
+  aload 4
+  getfield com/mobisage/android/O/b Lcom/mobisage/android/O$a;
+  astore 4
+  aload 4
+  astore 23
+  aload 23
+  astore 4
+  aload 20
+  astore 5
+  aload 5
+  aload 4
+  putfield com/mobisage/android/b/g Lcom/mobisage/android/a;
+  aload_2
+  astore 4
+  aload 4
+  getfield com/mobisage/android/b/b Ljava/util/UUID;
+  astore 4
+  aload 4
+  astore 24
+  aload 24
+  astore 4
+  aload 20
+  astore 5
+  aload 5
+  aload 4
+  putfield com/mobisage/android/b/a Ljava/util/UUID;
+  aload_2
+  astore 4
+  aload 4
+  getfield com/mobisage/android/b/e Ljava/util/concurrent/LinkedBlockingQueue;
+  astore 4
+  aload 4
+  astore 25
+  aload 25
+  astore 4
+  aload 20
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual java/util/concurrent/LinkedBlockingQueue/add(Ljava/lang/Object;)Z
+  pop
+  new java/lang/StringBuilder
+  astore 19
+  ldc "file://"
+  astore 17
+  aload 19
+  aload 17
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 19
+  aload 15
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore 19
+  aload 19
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 18
+  aload_1
+  astore 4
+  aload 4
+  aload 12
+  aload 18
+  invokevirtual java/lang/String/replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+  astore 18
+Label8:
+  iload 9
+  iconst_1
+  iadd
+  istore 9
+  aload 18
+  astore_1
+  goto Label7
+Label3:
+  aload_1
+  astore 18
+  goto Label8
+  nop
+.end <method>
+
+.method public final a(Landroid/os/Message;)V
+.limit locals 33
+.limit stack 200
+  nop
+  aload_1
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 5
+  instanceof com/mobisage/android/b
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_1
+  astore_2
+  aload_2
+  getfield android/os/Message/obj Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 8
+  aload 8
+  checkcast com/mobisage/android/b
+  astore 8
+  aload 8
+  astore 7
+  aload_0
+  astore_2
+  aload_2
+  aload 7
+  invokevirtual com/mobisage/android/i/b(Lcom/mobisage/android/b;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label1
+  aload_1
+  astore_2
+  aload_2
+  getfield android/os/Message/obj Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 9
+  aload 9
+  checkcast com/mobisage/android/b
+  astore 9
+  aload 9
+  astore 7
+  aload_0
+  astore_2
+  aload_2
+  aload 7
+  invokevirtual com/mobisage/android/i/c(Lcom/mobisage/android/b;)V
+Label2:
+  return
+Label1:
+  aload_1
+  astore_2
+  aload_2
+  getfield android/os/Message/obj Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 10
+  aload 10
+  checkcast com/mobisage/android/b
+  astore 10
+  aload 10
+  astore 7
+  aload_0
+  astore_2
+  aload_2
+  getfield com/mobisage/android/O/e Ljava/util/concurrent/ConcurrentHashMap;
+  astore 11
+  aload 7
+  getfield com/mobisage/android/b/b Ljava/util/UUID;
+  astore 12
+  aload 11
+  aload 12
+  aload 7
+  invokevirtual java/util/concurrent/ConcurrentHashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  new com/mobisage/android/I
+  astore 13
+  aload 13
+  invokespecial com/mobisage/android/I/<init>()V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/mobisage/android/i/g Lcom/mobisage/android/i$a;
+  astore 14
+  aload 13
+  aload 14
+  putfield com/mobisage/android/MobiSageMessage/callback Lcom/mobisage/android/IMobiSageMessageCallback;
+  aload 7
+  getfield com/mobisage/android/b/c Landroid/os/Bundle;
+  astore 15
+  aload 13
+  aload 15
+  putfield com/mobisage/android/MobiSageReqMessage/params Landroid/os/Bundle;
+  aload 7
+  getfield com/mobisage/android/b/f Ljava/util/concurrent/LinkedBlockingQueue;
+  astore 16
+  aload 16
+  aload 13
+  invokevirtual java/util/concurrent/LinkedBlockingQueue/add(Ljava/lang/Object;)Z
+  pop
+  aload_0
+  astore_2
+  aload_2
+  getfield com/mobisage/android/O/f Ljava/util/concurrent/ConcurrentHashMap;
+  astore 11
+  aload 13
+  getfield com/mobisage/android/MobiSageMessage/c Ljava/util/UUID;
+  astore 12
+  aload 7
+  getfield com/mobisage/android/b/b Ljava/util/UUID;
+  astore 17
+  aload 11
+  aload 12
+  aload 17
+  invokevirtual java/util/concurrent/ConcurrentHashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  invokestatic com/mobisage/android/H/a()Lcom/mobisage/android/H;
+  astore 18
+  aload 18
+  astore_2
+  aload_2
+  aload 13
+  invokevirtual com/mobisage/android/H/a(Lcom/mobisage/android/MobiSageMessage;)V
+  goto Label2
+Label0:
+  aload_1
+  astore_2
+  aload_2
+  getfield android/os/Message/obj Ljava/lang/Object;
+  astore 5
+  aload 5
+  instanceof com/mobisage/android/I
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label2
+  aload_1
+  astore_2
+  aload_2
+  getfield android/os/Message/obj Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 19
+  aload 19
+  checkcast com/mobisage/android/I
+  astore 19
+  aload 19
+  astore 13
+  aload_0
+  astore_2
+  aload_2
+  getfield com/mobisage/android/O/f Ljava/util/concurrent/ConcurrentHashMap;
+  astore 11
+  aload 13
+  getfield com/mobisage/android/MobiSageMessage/c Ljava/util/UUID;
+  astore 17
+  aload 11
+  aload 17
+  invokevirtual java/util/concurrent/ConcurrentHashMap/containsKey(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label2
+  aload_0
+  astore_2
+  aload_2
+  getfield com/mobisage/android/O/f Ljava/util/concurrent/ConcurrentHashMap;
+  astore 11
+  aload 13
+  getfield com/mobisage/android/MobiSageMessage/c Ljava/util/UUID;
+  astore 17
+  aload 11
+  aload 17
+  invokevirtual java/util/concurrent/ConcurrentHashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 20
+  aload 20
+  checkcast java/util/UUID
+  astore 20
+  aload 20
+  astore 17
+  aload_0
+  astore_2
+  aload_2
+  getfield com/mobisage/android/O/e Ljava/util/concurrent/ConcurrentHashMap;
+  astore 11
+  aload 11
+  aload 17
+  invokevirtual java/util/concurrent/ConcurrentHashMap/containsKey(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label2
+  aload_0
+  astore_2
+  aload_2
+  getfield com/mobisage/android/O/e Ljava/util/concurrent/ConcurrentHashMap;
+  astore 11
+  aload 11
+  aload 17
+  invokevirtual java/util/concurrent/ConcurrentHashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 21
+  aload 21
+  checkcast com/mobisage/android/b
+  astore 21
+  aload 21
+  astore 7
+  aload_0
+  astore_2
+  aload_2
+  getfield com/mobisage/android/O/f Ljava/util/concurrent/ConcurrentHashMap;
+  astore 11
+  aload 13
+  getfield com/mobisage/android/MobiSageMessage/c Ljava/util/UUID;
+  astore 17
+  aload 11
+  aload 17
+  invokevirtual java/util/concurrent/ConcurrentHashMap/remove(Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload 7
+  getfield com/mobisage/android/b/f Ljava/util/concurrent/LinkedBlockingQueue;
+  astore 16
+  aload 16
+  aload 13
+  invokevirtual java/util/concurrent/LinkedBlockingQueue/remove(Ljava/lang/Object;)Z
+  pop
+  aload 13
+  getfield com/mobisage/android/MobiSageMessage/result Landroid/os/Bundle;
+  astore 15
+  ldc "StatusCode"
+  astore 23
+  aload 23
+  astore_2
+  aload 15
+  aload_2
+  invokevirtual android/os/Bundle/getInt(Ljava/lang/String;)I
+  istore 22
+  iload 22
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 200
+  istore 24
+  iload 22
+  istore_2
+  iload 24
+  istore_3
+  iload_2
+  iload_3
+  if_icmpeq Label3
+  iload 22
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 302
+  istore 24
+  iload 22
+  istore_2
+  iload 24
+  istore_3
+  iload_2
+  iload_3
+  if_icmpeq Label3
+  aload_0
+  astore_2
+  aload_2
+  aload 7
+  invokevirtual com/mobisage/android/i/c(Lcom/mobisage/android/b;)V
+  goto Label2
+Label3:
+  aload 13
+  getfield com/mobisage/android/MobiSageMessage/result Landroid/os/Bundle;
+  astore 15
+  ldc "ResponseBody"
+  astore 23
+  aload 23
+  astore_2
+  aload 15
+  aload_2
+  invokevirtual android/os/Bundle/getByteArray(Ljava/lang/String;)[B
+  astore 25
+  ldc "UTF-8"
+  astore 23
+  aload 25
+  astore_2
+  aload 23
+  astore_3
+  aload_2
+  aload_3
+  invokestatic org/apache/http/util/EncodingUtils/getString([BLjava/lang/String;)Ljava/lang/String;
+  astore 26
+  aload 26
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 26
+  ifnull Label4
+  aload 26
+  astore_2
+  aload_2
+  invokevirtual java/lang/String/length()I
+  istore 22
+  iload 22
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 22
+  ifne Label5
+Label4:
+  aload_0
+  astore_2
+  aload_2
+  aload 7
+  invokevirtual com/mobisage/android/i/c(Lcom/mobisage/android/b;)V
+  goto Label2
+Label5:
+  new java/util/ArrayList
+  astore 27
+  aload 27
+  astore_2
+  aload_2
+  invokespecial java/util/ArrayList/<init>()V
+  aload_0
+  astore_2
+  aload 26
+  astore_3
+  aload 27
+  astore 4
+  aload_2
+  aload_3
+  aload 7
+  aload 4
+  invokespecial com/mobisage/android/i/a(Ljava/lang/String;Lcom/mobisage/android/b;Ljava/util/ArrayList;)Ljava/lang/String;
+  astore 26
+  aload 26
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 26
+  ifnonnull Label6
+  aload_0
+  astore_2
+  aload_2
+  aload 7
+  invokevirtual com/mobisage/android/i/c(Lcom/mobisage/android/b;)V
+  goto Label2
+Label6:
+  aload 7
+  getfield com/mobisage/android/b/e Ljava/util/concurrent/LinkedBlockingQueue;
+  astore 16
+  aload 16
+  invokevirtual java/util/concurrent/LinkedBlockingQueue/iterator()Ljava/util/Iterator;
+  astore 28
+Label8:
+  aload 28
+  astore_2
+  aload_2
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label7
+  aload 28
+  astore_2
+  aload_2
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 5
+  aload 5
+  astore 30
+  aload 30
+  checkcast com/mobisage/android/b
+  astore 30
+  aload 30
+  astore 29
+  aload_0
+  astore_2
+  aload_2
+  getfield com/mobisage/android/O/a Landroid/os/Handler;
+  astore_2
+  aload_2
+  astore 31
+  sipush 1013
+  istore 24
+  aload 31
+  astore_2
+  iload 24
+  istore_3
+  aload_2
+  iload_3
+  invokevirtual android/os/Handler/obtainMessage(I)Landroid/os/Message;
+  astore_1
+  aload 29
+  astore_2
+  aload_1
+  astore_3
+  aload_3
+  aload_2
+  putfield android/os/Message/obj Ljava/lang/Object;
+  aload_1
+  astore_2
+  aload_2
+  invokevirtual android/os/Message/sendToTarget()V
+  goto Label8
+Label7:
+  aload 7
+  getfield com/mobisage/android/b/d Landroid/os/Bundle;
+  astore 15
+  ldc "BannerHTML"
+  astore 23
+  aload 23
+  astore_2
+  aload 26
+  astore_3
+  aload 15
+  aload_2
+  aload_3
+  invokevirtual android/os/Bundle/putString(Ljava/lang/String;Ljava/lang/String;)V
+  aload 27
+  astore_2
+  aload_2
+  invokevirtual java/util/ArrayList/size()I
+  istore 22
+  iload 22
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 22
+  ifeq Label9
+  aload 7
+  getfield com/mobisage/android/b/d Landroid/os/Bundle;
+  astore 15
+  ldc "LpgCache"
+  astore 23
+  aload 23
+  astore_2
+  aload 27
+  astore_3
+  aload 15
+  aload_2
+  aload_3
+  invokevirtual android/os/Bundle/putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
+Label9:
+  aload 7
+  invokevirtual com/mobisage/android/b/a()Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label2
+  aload_0
+  astore_2
+  aload_2
+  getfield com/mobisage/android/O/e Ljava/util/concurrent/ConcurrentHashMap;
+  astore 11
+  aload 7
+  getfield com/mobisage/android/b/b Ljava/util/UUID;
+  astore 17
+  aload 11
+  aload 17
+  invokevirtual java/util/concurrent/ConcurrentHashMap/remove(Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload 7
+  getfield com/mobisage/android/b/g Lcom/mobisage/android/a;
+  astore_2
+  aload_2
+  astore 32
+  aload 32
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 32
+  ifnull Label2
+  aload 7
+  getfield com/mobisage/android/b/g Lcom/mobisage/android/a;
+  astore_2
+  aload_2
+  astore 32
+  aload 32
+  astore_2
+  aload_2
+  aload 7
+  invokeinterface com/mobisage/android/a/a(Lcom/mobisage/android/b;)V 2
+  goto Label2
+  nop
+.end <method>
+

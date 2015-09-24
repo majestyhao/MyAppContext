@@ -1,0 +1,231 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/kuguo/b/g
+.super java/lang/Object
+.field private "a" Ljava/lang/String;
+.field private "b" Ljava/util/Map;
+.field private "c" Ljava/util/Map;
+.field private "d" I
+.field private "e" Z
+
+.method public <init>(Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  aload_1
+  putfield com/kuguo/b/g/a Ljava/lang/String;
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield com/kuguo/b/g/d I
+  new java/util/LinkedHashMap
+  astore_3
+  aload_3
+  invokespecial java/util/LinkedHashMap/<init>()V
+  aload_0
+  aload_3
+  putfield com/kuguo/b/g/b Ljava/util/Map;
+  new java/util/LinkedHashMap
+  astore_3
+  aload_3
+  invokespecial java/util/LinkedHashMap/<init>()V
+  aload_0
+  aload_3
+  putfield com/kuguo/b/g/c Ljava/util/Map;
+  return
+  nop
+.end <method>
+
+.method public a()Ljava/util/Map;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/b/g/c Ljava/util/Map;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public b()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/b/g/d I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public c()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/b/g/a Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public d()Ljava/lang/String;
+.limit locals 12
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/b/g/b Ljava/util/Map;
+  astore_1
+  aload_1
+  invokeinterface java/util/Map/isEmpty()Z 1
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  ldc ""
+  astore_3
+Label3:
+  aload_3
+  areturn
+Label0:
+  new java/util/ArrayList
+  astore 4
+  aload 4
+  invokespecial java/util/ArrayList/<init>()V
+  aload_0
+  getfield com/kuguo/b/g/b Ljava/util/Map;
+  astore_1
+  aload_1
+  invokeinterface java/util/Map/keySet()Ljava/util/Set; 1
+  astore 5
+  aload 5
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore 6
+Label2:
+  aload 6
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label1
+  aload 6
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 7
+  aload 7
+  astore 8
+  aload 8
+  checkcast java/lang/String
+  astore 8
+  aload 8
+  astore_3
+  aload_0
+  getfield com/kuguo/b/g/b Ljava/util/Map;
+  astore_1
+  aload_1
+  aload_3
+  invokeinterface java/util/Map/get(Ljava/lang/Object;)Ljava/lang/Object; 2
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label2
+  new org/apache/http/message/BasicNameValuePair
+  astore 9
+  aload 7
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 10
+  aload 9
+  aload_3
+  aload 10
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload 4
+  aload 9
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  goto Label2
+Label1:
+  ldc "utf-8"
+  astore 11
+  aload 4
+  aload 11
+  invokestatic org/apache/http/client/utils/URLEncodedUtils/format(Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
+  astore_3
+  aload_0
+  getfield com/kuguo/b/g/e Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label3
+  aload_3
+  invokestatic com/kuguo/c/c/a(Ljava/lang/String;)Ljava/lang/String;
+  astore 10
+  aload 10
+  areturn
+  nop
+.end <method>
+
+.method public toString()Ljava/lang/String;
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  invokevirtual com/kuguo/b/g/d()Ljava/lang/String;
+  astore_1
+  ldc ""
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_0
+  getfield com/kuguo/b/g/a Ljava/lang/String;
+  astore 4
+  aload 4
+  areturn
+Label0:
+  new java/lang/StringBuilder
+  astore 5
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_0
+  getfield com/kuguo/b/g/a Ljava/lang/String;
+  astore 4
+  aload 5
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  ldc "?"
+  astore_3
+  aload 5
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload 4
+  areturn
+  nop
+.end <method>
+

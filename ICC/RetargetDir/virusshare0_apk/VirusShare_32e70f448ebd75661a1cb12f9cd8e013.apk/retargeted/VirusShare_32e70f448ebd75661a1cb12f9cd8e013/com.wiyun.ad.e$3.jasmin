@@ -1,0 +1,71 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/e$3
+.super java/lang/Object
+.implements  com/wiyun/ad/a$a
+.field final "a" Lcom/wiyun/ad/e;
+.field private final "b" Lcom/wiyun/ad/a;
+
+.method <init>(Lcom/wiyun/ad/e;Lcom/wiyun/ad/a;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/wiyun/ad/e$3/a Lcom/wiyun/ad/e;
+  aload_0
+  aload_2
+  putfield com/wiyun/ad/e$3/b Lcom/wiyun/ad/a;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method static a(Lcom/wiyun/ad/e$3;)Lcom/wiyun/ad/e;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/e$3/a Lcom/wiyun/ad/e;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public a()V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/e$3/a Lcom/wiyun/ad/e;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  astore 4
+  aload 4
+  checkcast android/app/Activity
+  astore 4
+  aload 4
+  astore_3
+  new com/wiyun/ad/e$3$1
+  astore 5
+  aload_0
+  getfield com/wiyun/ad/e$3/b Lcom/wiyun/ad/a;
+  astore 6
+  aload 5
+  aload_0
+  aload 6
+  invokespecial com/wiyun/ad/e$3$1/<init>(Lcom/wiyun/ad/e$3;Lcom/wiyun/ad/a;)V
+  aload_3
+  aload 5
+  invokevirtual android/app/Activity/runOnUiThread(Ljava/lang/Runnable;)V
+  return
+  nop
+.end <method>
+

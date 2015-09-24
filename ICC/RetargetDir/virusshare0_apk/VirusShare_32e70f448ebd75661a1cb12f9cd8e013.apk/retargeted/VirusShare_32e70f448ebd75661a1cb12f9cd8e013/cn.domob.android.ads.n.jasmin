@@ -1,0 +1,528 @@
+.source SourceFile
+.class abstract  cn/domob/android/ads/n
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field protected static "a" Ljava/util/concurrent/Executor;
+.field static final "r" Ljava/lang/String; =  "ctwap"
+.field protected "b" Ljava/net/URL;
+.field protected "c" Ljava/net/Proxy;
+.field protected "d" Ljava/lang/String;
+.field protected "e" Lcn/domob/android/ads/b;
+.field protected "f" Ljava/lang/String;
+.field protected "g" I
+.field protected "h" Ljava/util/Map;
+.field protected "i" Ljava/lang/String;
+.field protected "j" Ljava/lang/String;
+.field protected "k" [B
+.field protected "l" Z
+.field protected "m" I
+.field protected "n" I
+.field protected "o" I
+.field protected "p" Ljava/lang/String;
+.field protected "q" Ljava/lang/String;
+.field private "s" Ljava/lang/String;
+
+.method static <clinit>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aconst_null
+  astore_0
+  aload_0
+  putstatic cn/domob/android/ads/n/a Ljava/util/concurrent/Executor;
+  return
+  nop
+.end <method>
+
+.method protected <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcn/domob/android/ads/b;ILjava/util/Map;Ljava/lang/String;)V
+  .signature_attr "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcn/domob/android/ads/b;ILjava/util/Map<Ljava/lang/String;Ljava/lang/String;>;Ljava/lang/String;)V"
+.limit locals 11
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/n/s Ljava/lang/String;
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/n/d Ljava/lang/String;
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/n/i Ljava/lang/String;
+  aload_0
+  aload 4
+  putfield cn/domob/android/ads/n/e Lcn/domob/android/ads/b;
+  aload_0
+  aload 6
+  putfield cn/domob/android/ads/n/h Ljava/util/Map;
+  aload_0
+  iload 5
+  putfield cn/domob/android/ads/n/g I
+  iconst_0
+  istore 8
+  aload_0
+  iload 8
+  putfield cn/domob/android/ads/n/o I
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 7
+  ifeq Label0
+  aload_0
+  aload 7
+  putfield cn/domob/android/ads/n/j Ljava/lang/String;
+  ldc "application/x-www-form-urlencoded"
+  astore 9
+  aload_0
+  aload 9
+  putfield cn/domob/android/ads/n/f Ljava/lang/String;
+Label1:
+  aconst_null
+  astore 10
+  aload_0
+  aload 10
+  putfield cn/domob/android/ads/n/c Ljava/net/Proxy;
+  iconst_1
+  istore 8
+  aload_0
+  iload 8
+  putfield cn/domob/android/ads/n/l Z
+  iconst_0
+  istore 8
+  aload_0
+  iload 8
+  putfield cn/domob/android/ads/n/m I
+  iconst_3
+  istore 8
+  aload_0
+  iload 8
+  putfield cn/domob/android/ads/n/n I
+  return
+Label0:
+  aconst_null
+  astore 10
+  aload_0
+  aload 10
+  putfield cn/domob/android/ads/n/j Ljava/lang/String;
+  aconst_null
+  astore 10
+  aload_0
+  aload 10
+  putfield cn/domob/android/ads/n/f Ljava/lang/String;
+  goto Label1
+  nop
+.end <method>
+
+.method protected final a(I)V
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore_2
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Set conn retry max:"
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  iload_1
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/n/n I
+  return
+  nop
+.end <method>
+
+.method protected a(Landroid/content/Context;)V
+.limit locals 13
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+Label2:
+  return
+Label0:
+  aconst_null
+  astore_2
+Label4:
+  invokestatic cn/domob/android/ads/p/a()Lcn/domob/android/ads/p;
+  astore_3
+  aload_3
+  aload_1
+  invokevirtual cn/domob/android/ads/p/v(Landroid/content/Context;)Landroid/database/Cursor;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label1
+  aload_2
+  invokeinterface android/database/Cursor/getCount()I 1
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifle Label1
+  aload_2
+  invokeinterface android/database/Cursor/moveToFirst()Z 1
+  pop
+  ldc "proxy"
+  astore 5
+  aload_2
+  aload 5
+  invokeinterface android/database/Cursor/getColumnIndexOrThrow(Ljava/lang/String;)I 2
+  istore 4
+  aload_2
+  iload 4
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 6
+  ldc "port"
+  astore 5
+  aload_2
+  aload 5
+  invokeinterface android/database/Cursor/getColumnIndexOrThrow(Ljava/lang/String;)I 2
+  istore 4
+  aload_2
+  iload 4
+  invokeinterface android/database/Cursor/getInt(I)I 2
+  istore 4
+  ldc "apn"
+  astore 5
+  aload_2
+  aload 5
+  invokeinterface android/database/Cursor/getColumnIndexOrThrow(Ljava/lang/String;)I 2
+  istore 7
+  aload_2
+  iload 7
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 8
+  new java/lang/StringBuilder
+  astore 9
+  aload 9
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Current apnType is "
+  astore 5
+  aload 9
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 10
+  aload_0
+  aload 10
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore 9
+  aload 9
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "proxy:"
+  astore 5
+  aload 9
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  ldc "| port:"
+  astore 5
+  aload 9
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 10
+  aload_0
+  aload 10
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label1
+  aload 6
+  invokevirtual java/lang/String/trim()Ljava/lang/String;
+  astore 10
+  ldc ""
+  astore 5
+  aload 10
+  aload 5
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifne Label1
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifeq Label1
+  ldc "ctwap"
+  astore 5
+  aload 8
+  aload 5
+  invokevirtual java/lang/String/equalsIgnoreCase(Ljava/lang/String;)Z
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifne Label1
+  ldc "ad request use proxy"
+  astore 5
+  aload_0
+  aload 5
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  aload 6
+  iload 4
+  invokespecial cn/domob/android/ads/n/a(Ljava/lang/String;I)V
+Label1:
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label2
+  aload_2
+  invokeinterface android/database/Cursor/close()V 1
+  goto Label2
+Label3:
+  astore 12
+  aload 12
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label1
+  nop
+.end <method>
+
+.method protected a(Lcn/domob/android/ads/b;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/n/e Lcn/domob/android/ads/b;
+  return
+  nop
+.end <method>
+
+.method protected final a(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/n/f Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method private final a(Ljava/lang/String;I)V
+.limit locals 9
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "setProxy -- proxy:"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "| port:"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  iload_2
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload_0
+  aload 5
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  new java/net/Proxy
+  astore 6
+  getstatic java/net/Proxy$Type/HTTP Ljava/net/Proxy$Type;
+  astore 7
+  new java/net/InetSocketAddress
+  astore 8
+  aload 8
+  aload_1
+  iload_2
+  invokespecial java/net/InetSocketAddress/<init>(Ljava/lang/String;I)V
+  aload 6
+  aload 7
+  aload 8
+  invokespecial java/net/Proxy/<init>(Ljava/net/Proxy$Type;Ljava/net/SocketAddress;)V
+  aload_0
+  aload 6
+  putfield cn/domob/android/ads/n/c Ljava/net/Proxy;
+  return
+  nop
+.end <method>
+
+.method abstract a()Z
+.end <method>
+
+.method abstract b()V
+.end <method>
+
+.method protected final c()V
+.limit locals 6
+.limit stack 200
+  nop
+  getstatic cn/domob/android/ads/n/a Ljava/util/concurrent/Executor;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  ldc "Executors.newCachedThreadPool is called"
+  astore_2
+  aload_0
+  aload_2
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  invokestatic java/util/concurrent/Executors/newCachedThreadPool()Ljava/util/concurrent/ExecutorService;
+  astore_3
+  aload_3
+  putstatic cn/domob/android/ads/n/a Ljava/util/concurrent/Executor;
+Label0:
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Execute task thread:"
+  astore_2
+  aload 4
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload_0
+  aload 5
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  getstatic cn/domob/android/ads/n/a Ljava/util/concurrent/Executor;
+  astore_1
+  aload_1
+  aload_0
+  invokeinterface java/util/concurrent/Executor/execute(Ljava/lang/Runnable;)V 2
+  return
+  nop
+.end <method>
+
+.method protected final d()Ljava/net/URL;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/n/b Ljava/net/URL;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected final e()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/n/s Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected final f()[B
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/n/k [B
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected final g()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/n/o I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method h()Ljava/lang/String;
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/n/q Ljava/lang/String;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  ldc "UTF-8"
+  astore_2
+  aload_2
+  areturn
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/n/q Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+

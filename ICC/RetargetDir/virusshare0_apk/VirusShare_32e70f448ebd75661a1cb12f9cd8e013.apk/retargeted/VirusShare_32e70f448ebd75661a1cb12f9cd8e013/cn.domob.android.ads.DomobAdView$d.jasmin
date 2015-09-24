@@ -1,0 +1,379 @@
+.source SourceFile
+.class  cn/domob/android/ads/DomobAdView$d
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcn/domob/android/ads/DomobAdView;
+.field private "b" Lcn/domob/android/ads/DomobAdView;
+.field private "c" Lcn/domob/android/ads/i;
+.field private "d" I
+.field private "e" Z
+
+.method public <init>(Lcn/domob/android/ads/DomobAdView;Lcn/domob/android/ads/i;IZ)V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/DomobAdView$d/a Lcn/domob/android/ads/DomobAdView;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/DomobAdView$d/b Lcn/domob/android/ads/DomobAdView;
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/DomobAdView$d/c Lcn/domob/android/ads/i;
+  aload_0
+  iload_3
+  putfield cn/domob/android/ads/DomobAdView$d/d I
+  aload_0
+  iload 4
+  putfield cn/domob/android/ads/DomobAdView$d/e Z
+  return
+  nop
+.end <method>
+
+.method public final run()V
+.limit locals 15
+.limit stack 200
+  .catch  java/lang/Exception <from> Label5 <to> Label6 <using> Label4
+  nop
+Label5:
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/b Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/c Lcn/domob/android/ads/i;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label0
+  ldc "show ad!"
+  astore_3
+  aload_0
+  aload_3
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "WindowVisibility:"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/a Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/DomobAdView/h(Lcn/domob/android/ads/DomobAdView;)I
+  istore 5
+  aload 4
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload_0
+  aload 6
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "WindowFocus:"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/a Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/DomobAdView/i(Lcn/domob/android/ads/DomobAdView;)Z
+  istore 7
+  aload 4
+  iload 7
+  invokevirtual java/lang/StringBuilder/append(Z)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload_0
+  aload 6
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/a Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/DomobAdView/h(Lcn/domob/android/ads/DomobAdView;)I
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  ifne Label0
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/a Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/DomobAdView/i(Lcn/domob/android/ads/DomobAdView;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iconst_1
+  istore 8
+  iload 7
+  iload 8
+  if_icmpne Label0
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/c Lcn/domob/android/ads/i;
+  astore_2
+  iconst_4
+  istore 8
+  aload_2
+  iload 8
+  invokevirtual cn/domob/android/ads/i/setVisibility(I)V
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/a Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  iconst_0
+  istore 8
+  aload_1
+  iload 8
+  invokestatic cn/domob/android/ads/DomobAdView/c(Lcn/domob/android/ads/DomobAdView;Z)Z
+  pop
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/a Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/DomobAdView/j(Lcn/domob/android/ads/DomobAdView;)Ljava/util/Vector;
+  astore 9
+  aload 9
+  invokevirtual java/util/Vector/clear()V
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/a Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/c Lcn/domob/android/ads/i;
+  astore_2
+  aload_2
+  invokevirtual cn/domob/android/ads/i/f()I
+  istore 5
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/c Lcn/domob/android/ads/i;
+  astore_2
+  aload_2
+  invokevirtual cn/domob/android/ads/i/g()I
+  istore 10
+  aload_1
+  iload 5
+  iload 10
+  invokestatic cn/domob/android/ads/DomobAdView/b(Lcn/domob/android/ads/DomobAdView;II)V
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/b Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/c Lcn/domob/android/ads/i;
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual cn/domob/android/ads/DomobAdView/addView(Landroid/view/View;)V
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/b Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/DomobAdView/e()V
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/a Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/DomobAdView/c(Lcn/domob/android/ads/DomobAdView;)Lcn/domob/android/ads/g;
+  astore 11
+  iconst_0
+  istore 8
+  aload 11
+  iload 8
+  invokevirtual cn/domob/android/ads/g/a(Z)V
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/a Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/DomobAdView/c(Lcn/domob/android/ads/DomobAdView;)Lcn/domob/android/ads/g;
+  astore 11
+  iconst_1
+  istore 8
+  aload 11
+  iload 8
+  invokevirtual cn/domob/android/ads/g/f(Z)V
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/e Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label1
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/b Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/c Lcn/domob/android/ads/i;
+  astore_2
+  aload_1
+  aload_2
+  invokestatic cn/domob/android/ads/DomobAdView/b(Lcn/domob/android/ads/DomobAdView;Lcn/domob/android/ads/i;)V
+Label2:
+  return
+Label1:
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/d I
+  istore 10
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  ifne Label2
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/b Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/DomobAdView/hasWindowFocus()Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label2
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/c Lcn/domob/android/ads/i;
+  astore_2
+  aload_2
+  invokevirtual cn/domob/android/ads/i/a()Ljava/lang/String;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label3
+  ldc "fr2l"
+  astore_3
+  aload 6
+  aload_3
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label2
+Label3:
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/b Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/c Lcn/domob/android/ads/i;
+  astore_2
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/b Lcn/domob/android/ads/DomobAdView;
+  astore 12
+  aload 12
+  invokestatic cn/domob/android/ads/a/d/a(Lcn/domob/android/ads/DomobAdView;)I
+  istore 10
+  aload_1
+  aload_2
+  iload 10
+  invokestatic cn/domob/android/ads/DomobAdView/a(Lcn/domob/android/ads/DomobAdView;Lcn/domob/android/ads/i;I)V
+Label6:
+  goto Label2
+Label4:
+  astore 13
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Unhandled exception in showAdThread.run() "
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 13
+  invokevirtual java/lang/Exception/getMessage()Ljava/lang/String;
+  astore 6
+  aload 4
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  ldc "DomobSDK"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 13
+  invokevirtual java/lang/Exception/printStackTrace()V
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/c Lcn/domob/android/ads/i;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label2
+  ldc "error or view is invisible, clear resources!"
+  astore_3
+  aload_0
+  aload_3
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/b Lcn/domob/android/ads/DomobAdView;
+  astore 12
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/c Lcn/domob/android/ads/i;
+  astore_2
+  aload 12
+  aload_2
+  invokevirtual cn/domob/android/ads/DomobAdView/removeView(Landroid/view/View;)V
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/c Lcn/domob/android/ads/i;
+  astore_2
+  aload_2
+  invokevirtual cn/domob/android/ads/i/h()V
+  aconst_null
+  astore 14
+  aload_0
+  aload 14
+  putfield cn/domob/android/ads/DomobAdView$d/c Lcn/domob/android/ads/i;
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/e Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label2
+  ldc "reset mNoAd"
+  astore_3
+  aload_0
+  aload_3
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$d/a Lcn/domob/android/ads/DomobAdView;
+  astore 12
+  iconst_1
+  istore 8
+  aload 12
+  iload 8
+  invokestatic cn/domob/android/ads/DomobAdView/d(Lcn/domob/android/ads/DomobAdView;Z)Z
+  pop
+  goto Label2
+  nop
+.end <method>
+

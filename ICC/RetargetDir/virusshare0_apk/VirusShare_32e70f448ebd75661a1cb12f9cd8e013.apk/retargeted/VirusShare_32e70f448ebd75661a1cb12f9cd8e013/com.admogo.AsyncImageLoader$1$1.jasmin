@@ -1,0 +1,44 @@
+.source AsyncImageLoader.java
+.class  com/admogo/AsyncImageLoader$1$1
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "this$1" Lcom/admogo/AsyncImageLoader$1;
+.field private final "val$callback" Lcom/admogo/AsyncImageLoader$ImageCallback;
+.field private final "val$drawable" Landroid/graphics/drawable/Drawable;
+
+.method <init>(Lcom/admogo/AsyncImageLoader$1;Lcom/admogo/AsyncImageLoader$ImageCallback;Landroid/graphics/drawable/Drawable;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/AsyncImageLoader$1$1/this$1 Lcom/admogo/AsyncImageLoader$1;
+  aload_0
+  aload_2
+  putfield com/admogo/AsyncImageLoader$1$1/val$callback Lcom/admogo/AsyncImageLoader$ImageCallback;
+  aload_0
+  aload_3
+  putfield com/admogo/AsyncImageLoader$1$1/val$drawable Landroid/graphics/drawable/Drawable;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/AsyncImageLoader$1$1/val$callback Lcom/admogo/AsyncImageLoader$ImageCallback;
+  astore_1
+  aload_0
+  getfield com/admogo/AsyncImageLoader$1$1/val$drawable Landroid/graphics/drawable/Drawable;
+  astore_2
+  aload_1
+  aload_2
+  invokeinterface com/admogo/AsyncImageLoader$ImageCallback/imageLoaded(Landroid/graphics/drawable/Drawable;)V 2
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,189 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public final enum  com/google/ads/AdRequest$ErrorCode
+.super java/lang/Enum
+  .signature_attr "Ljava/lang/Enum<Lcom/google/ads/AdRequest$ErrorCode;>;"
+.field public static final enum "INTERNAL_ERROR" Lcom/google/ads/AdRequest$ErrorCode;
+.field public static final enum "INVALID_REQUEST" Lcom/google/ads/AdRequest$ErrorCode;
+.field public static final enum "NETWORK_ERROR" Lcom/google/ads/AdRequest$ErrorCode;
+.field public static final enum "NO_FILL" Lcom/google/ads/AdRequest$ErrorCode;
+.field private static final "b" [Lcom/google/ads/AdRequest$ErrorCode;
+.field private "a" Ljava/lang/String;
+
+.method static <clinit>()V
+.limit locals 5
+.limit stack 200
+  nop
+  new com/google/ads/AdRequest$ErrorCode
+  astore_0
+  ldc "INVALID_REQUEST"
+  astore_1
+  iconst_0
+  istore_2
+  ldc "Invalid Google Ad request."
+  astore_3
+  aload_0
+  aload_1
+  iload_2
+  aload_3
+  invokespecial com/google/ads/AdRequest$ErrorCode/<init>(Ljava/lang/String;ILjava/lang/String;)V
+  aload_0
+  putstatic com/google/ads/AdRequest$ErrorCode/INVALID_REQUEST Lcom/google/ads/AdRequest$ErrorCode;
+  new com/google/ads/AdRequest$ErrorCode
+  astore_0
+  ldc "NO_FILL"
+  astore_1
+  iconst_1
+  istore_2
+  ldc "Ad request successful, but no ad returned due to lack of ad inventory."
+  astore_3
+  aload_0
+  aload_1
+  iload_2
+  aload_3
+  invokespecial com/google/ads/AdRequest$ErrorCode/<init>(Ljava/lang/String;ILjava/lang/String;)V
+  aload_0
+  putstatic com/google/ads/AdRequest$ErrorCode/NO_FILL Lcom/google/ads/AdRequest$ErrorCode;
+  new com/google/ads/AdRequest$ErrorCode
+  astore_0
+  ldc "NETWORK_ERROR"
+  astore_1
+  iconst_2
+  istore_2
+  ldc "A network error occurred."
+  astore_3
+  aload_0
+  aload_1
+  iload_2
+  aload_3
+  invokespecial com/google/ads/AdRequest$ErrorCode/<init>(Ljava/lang/String;ILjava/lang/String;)V
+  aload_0
+  putstatic com/google/ads/AdRequest$ErrorCode/NETWORK_ERROR Lcom/google/ads/AdRequest$ErrorCode;
+  new com/google/ads/AdRequest$ErrorCode
+  astore_0
+  ldc "INTERNAL_ERROR"
+  astore_1
+  iconst_3
+  istore_2
+  ldc "There was an internal error."
+  astore_3
+  aload_0
+  aload_1
+  iload_2
+  aload_3
+  invokespecial com/google/ads/AdRequest$ErrorCode/<init>(Ljava/lang/String;ILjava/lang/String;)V
+  aload_0
+  putstatic com/google/ads/AdRequest$ErrorCode/INTERNAL_ERROR Lcom/google/ads/AdRequest$ErrorCode;
+  iconst_4
+  istore_2
+  iload_2
+  anewarray com/google/ads/AdRequest$ErrorCode
+  astore 4
+  getstatic com/google/ads/AdRequest$ErrorCode/INVALID_REQUEST Lcom/google/ads/AdRequest$ErrorCode;
+  astore_0
+  iconst_0
+  istore_2
+  aload 4
+  iload_2
+  aload_0
+  aastore
+  getstatic com/google/ads/AdRequest$ErrorCode/NO_FILL Lcom/google/ads/AdRequest$ErrorCode;
+  astore_0
+  iconst_1
+  istore_2
+  aload 4
+  iload_2
+  aload_0
+  aastore
+  getstatic com/google/ads/AdRequest$ErrorCode/NETWORK_ERROR Lcom/google/ads/AdRequest$ErrorCode;
+  astore_0
+  iconst_2
+  istore_2
+  aload 4
+  iload_2
+  aload_0
+  aastore
+  getstatic com/google/ads/AdRequest$ErrorCode/INTERNAL_ERROR Lcom/google/ads/AdRequest$ErrorCode;
+  astore_0
+  iconst_3
+  istore_2
+  aload 4
+  iload_2
+  aload_0
+  aastore
+  aload 4
+  putstatic com/google/ads/AdRequest$ErrorCode/b [Lcom/google/ads/AdRequest$ErrorCode;
+  return
+  nop
+.end <method>
+
+.method private <init>(Ljava/lang/String;ILjava/lang/String;)V
+  .signature_attr "(Ljava/lang/String;)V"
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  iload_2
+  invokespecial java/lang/Enum/<init>(Ljava/lang/String;I)V
+  aload_0
+  aload_3
+  putfield com/google/ads/AdRequest$ErrorCode/a Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public final toString()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/google/ads/AdRequest$ErrorCode/a Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static valueOf(Ljava/lang/String;)Lcom/google/ads/AdRequest$ErrorCode;
+.limit locals 5
+.limit stack 200
+  nop
+  ldc com/google/ads/AdRequest$ErrorCode
+  astore_2
+  aload_2
+  aload_0
+  invokestatic java/lang/Enum/valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+  astore_1
+  aload_1
+  astore 4
+  aload 4
+  checkcast com/google/ads/AdRequest$ErrorCode
+  astore 4
+  aload 4
+  astore_3
+  aload_3
+  areturn
+  nop
+.end <method>
+
+.method public static values()[Lcom/google/ads/AdRequest$ErrorCode;
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/google/ads/AdRequest$ErrorCode/b [Lcom/google/ads/AdRequest$ErrorCode;
+  astore_0
+  aload_0
+  invokevirtual java/lang/Object/clone()Ljava/lang/Object;
+  astore_1
+  aload_1
+  astore_2
+  aload_2
+  checkcast [Lcom/google/ads/AdRequest$ErrorCode;
+  astore_2
+  aload_2
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+

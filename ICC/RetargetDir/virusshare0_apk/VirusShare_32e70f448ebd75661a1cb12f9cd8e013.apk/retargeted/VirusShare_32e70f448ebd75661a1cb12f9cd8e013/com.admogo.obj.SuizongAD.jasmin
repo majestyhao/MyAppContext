@@ -1,0 +1,104 @@
+.source SuizongAD.java
+.class public  com/admogo/obj/SuizongAD
+.super java/lang/Object
+.field public "adType" Ljava/lang/String;
+.field public "adid" Ljava/lang/String;
+.field public "aheight" Ljava/lang/String;
+.field public "awidth" Ljava/lang/String;
+.field public "clickURL" Ljava/lang/String;
+.field public "clkResult" Ljava/lang/String;
+.field public "data" Ljava/lang/String;
+.field public "impResult" Ljava/lang/String;
+.field public "impURL" Ljava/lang/String;
+.field public "msg" Ljava/lang/String;
+.field public "price" Ljava/lang/String;
+.field public "priceType" Ljava/lang/String;
+.field public "refreshTime" Ljava/lang/String;
+.field public "status" Ljava/lang/String;
+.field public "updateTime" Ljava/lang/String;
+
+.method public <init>()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/SuizongAD/adid Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/SuizongAD/status Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/SuizongAD/msg Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/SuizongAD/updateTime Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/SuizongAD/refreshTime Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/SuizongAD/awidth Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/SuizongAD/aheight Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/SuizongAD/impURL Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/SuizongAD/clickURL Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/SuizongAD/priceType Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/SuizongAD/price Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/SuizongAD/adType Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/SuizongAD/impResult Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/SuizongAD/clkResult Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/admogo/obj/SuizongAD/data Ljava/lang/String;
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,21 @@
+.source SourceFile
+.class public  cn/domob/android/ads/D$b
+.super java/lang/Object
+.field static final "a" I =  0
+.field static final "b" I =  1
+.field static final "c" I =  2
+.field final "d" Lcn/domob/android/ads/D;
+
+.method public <init>(Lcn/domob/android/ads/D;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/D$b/d Lcn/domob/android/ads/D;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

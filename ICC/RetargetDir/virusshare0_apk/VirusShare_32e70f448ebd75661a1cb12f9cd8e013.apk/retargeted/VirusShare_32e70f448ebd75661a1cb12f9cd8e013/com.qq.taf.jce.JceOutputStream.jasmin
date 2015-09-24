@@ -1,0 +1,2313 @@
+.source JceOutputStream.java
+.class public  com/qq/taf/jce/JceOutputStream
+.super java/lang/Object
+.field private "bs" Ljava/nio/ByteBuffer;
+.field protected "sServerEncoding" Ljava/lang/String;
+
+.method public <init>()V
+.limit locals 2
+.limit stack 200
+  nop
+  sipush 128
+  istore_1
+  aload_0
+  iload_1
+  invokespecial com/qq/taf/jce/JceOutputStream/<init>(I)V
+  return
+  nop
+.end <method>
+
+.method public <init>(I)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc "GBK"
+  astore_2
+  aload_0
+  aload_2
+  putfield com/qq/taf/jce/JceOutputStream/sServerEncoding Ljava/lang/String;
+  iload_1
+  invokestatic java/nio/ByteBuffer/allocate(I)Ljava/nio/ByteBuffer;
+  astore_3
+  aload_0
+  aload_3
+  putfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  return
+  nop
+.end <method>
+
+.method public <init>(Ljava/nio/ByteBuffer;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc "GBK"
+  astore_2
+  aload_0
+  aload_2
+  putfield com/qq/taf/jce/JceOutputStream/sServerEncoding Ljava/lang/String;
+  aload_0
+  aload_1
+  putfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  return
+  nop
+.end <method>
+
+.method public getByteBuffer()Ljava/nio/ByteBuffer;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static main([Ljava/lang/String;)V
+.limit locals 9
+.limit stack 200
+  nop
+  new com/qq/taf/jce/JceOutputStream
+  astore_1
+  aload_1
+  invokespecial com/qq/taf/jce/JceOutputStream/<init>()V
+  ldc2_w 1311768467283714885
+  lstore_2
+  iconst_0
+  istore 4
+  aload_1
+  lload_2
+  iload 4
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(JI)V
+  aload_1
+  invokevirtual com/qq/taf/jce/JceOutputStream/getByteBuffer()Ljava/nio/ByteBuffer;
+  astore 5
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore 6
+  aload 5
+  invokevirtual java/nio/ByteBuffer/array()[B
+  astore 7
+  aload 7
+  invokestatic com/qq/taf/jce/HexUtil/bytes2HexStr([B)Ljava/lang/String;
+  astore 8
+  aload 6
+  aload 8
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore 6
+  aload_1
+  invokevirtual com/qq/taf/jce/JceOutputStream/toByteArray()[B
+  astore 7
+  aload 7
+  invokestatic java/util/Arrays/toString([B)Ljava/lang/String;
+  astore 8
+  aload 6
+  aload 8
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public reserve(I)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore_2
+  aload_2
+  invokevirtual java/nio/ByteBuffer/remaining()I
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload_1
+  if_icmpge Label0
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 4
+  aload 4
+  invokevirtual java/nio/ByteBuffer/capacity()I
+  istore_3
+  iload_3
+  iload_1
+  iadd
+  istore_3
+  iload_3
+  iconst_2
+  imul
+  istore_1
+  iload_1
+  invokestatic java/nio/ByteBuffer/allocate(I)Ljava/nio/ByteBuffer;
+  astore_2
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 4
+  aload 4
+  invokevirtual java/nio/ByteBuffer/array()[B
+  astore 5
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 4
+  aload 4
+  invokevirtual java/nio/ByteBuffer/position()I
+  istore_3
+  iconst_0
+  istore 6
+  aload_2
+  aload 5
+  iload 6
+  iload_3
+  invokevirtual java/nio/ByteBuffer/put([BII)Ljava/nio/ByteBuffer;
+  pop
+  aload_0
+  aload_2
+  putfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+Label0:
+  return
+  nop
+.end <method>
+
+.method public setServerEncoding(Ljava/lang/String;)I
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/qq/taf/jce/JceOutputStream/sServerEncoding Ljava/lang/String;
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public toByteArray()[B
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore_1
+  aload_1
+  invokevirtual java/nio/ByteBuffer/position()I
+  istore_2
+  iload_2
+  newarray byte
+  astore_3
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore_1
+  aload_1
+  invokevirtual java/nio/ByteBuffer/array()[B
+  astore 4
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore_1
+  aload_1
+  invokevirtual java/nio/ByteBuffer/position()I
+  istore_2
+  iconst_0
+  istore 5
+  iconst_0
+  istore 6
+  aload 4
+  iload 5
+  aload_3
+  iload 6
+  iload_2
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload_3
+  areturn
+  nop
+.end <method>
+
+.method public write(BI)V
+.limit locals 5
+.limit stack 200
+  nop
+  iconst_3
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  bipush 12
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+Label1:
+  return
+Label0:
+  iconst_0
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 4
+  aload 4
+  iload_1
+  invokevirtual java/nio/ByteBuffer/put(B)Ljava/nio/ByteBuffer;
+  pop
+  goto Label1
+  nop
+.end <method>
+
+.method public write(DI)V
+.limit locals 6
+.limit stack 200
+  nop
+  bipush 10
+  istore 4
+  aload_0
+  iload 4
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  iconst_5
+  istore 4
+  aload_0
+  iload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 5
+  aload 5
+  dload_1
+  invokevirtual java/nio/ByteBuffer/putDouble(D)Ljava/nio/ByteBuffer;
+  pop
+  return
+  nop
+.end <method>
+
+.method public write(FI)V
+.limit locals 5
+.limit stack 200
+  nop
+  bipush 6
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  iconst_4
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 4
+  aload 4
+  fload_1
+  invokevirtual java/nio/ByteBuffer/putFloat(F)Ljava/nio/ByteBuffer;
+  pop
+  return
+  nop
+.end <method>
+
+.method public write(II)V
+.limit locals 6
+.limit stack 200
+  nop
+  bipush 6
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  sipush -32768
+  istore_3
+  iload_1
+  iload_3
+  if_icmplt Label0
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 32767
+  istore_3
+  iload_1
+  iload_3
+  if_icmpgt Label0
+  iload_1
+  i2s
+  istore 4
+  aload_0
+  iload 4
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(SI)V
+Label1:
+  return
+Label0:
+  iconst_2
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 5
+  aload 5
+  iload_1
+  invokevirtual java/nio/ByteBuffer/putInt(I)Ljava/nio/ByteBuffer;
+  pop
+  goto Label1
+  nop
+.end <method>
+
+.method public write(JI)V
+.limit locals 10
+.limit stack 200
+  nop
+  bipush 10
+  istore 4
+  aload_0
+  iload 4
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  ldc2_w 2147483648
+  lstore 6
+  lload_1
+  lload 6
+  lcmp
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  iflt Label0
+  ldc2_w 2147483647
+  lstore 6
+  lload_1
+  lload 6
+  lcmp
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  ifgt Label0
+  lload_1
+  l2i
+  istore 8
+  aload_0
+  iload 8
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+Label1:
+  return
+Label0:
+  iconst_3
+  istore 4
+  aload_0
+  iload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 9
+  aload 9
+  lload_1
+  invokevirtual java/nio/ByteBuffer/putLong(J)Ljava/nio/ByteBuffer;
+  pop
+  goto Label1
+  nop
+.end <method>
+
+.method public write(Lcom/qq/taf/jce/JceStruct;I)V
+.limit locals 5
+.limit stack 200
+  nop
+  iconst_2
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  bipush 10
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_1
+  aload_0
+  invokevirtual com/qq/taf/jce/JceStruct/writeTo(Lcom/qq/taf/jce/JceOutputStream;)V
+  iconst_2
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  bipush 11
+  istore_3
+  iconst_0
+  istore 4
+  aload_0
+  iload_3
+  iload 4
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  return
+  nop
+.end <method>
+
+.method public write(Ljava/lang/Boolean;I)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_1
+  invokevirtual java/lang/Boolean/booleanValue()Z
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(ZI)V
+  return
+  nop
+.end <method>
+
+.method public write(Ljava/lang/Byte;I)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_1
+  invokevirtual java/lang/Byte/byteValue()B
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(BI)V
+  return
+  nop
+.end <method>
+
+.method public write(Ljava/lang/Double;I)V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_1
+  invokevirtual java/lang/Double/doubleValue()D
+  dstore_3
+  aload_0
+  dload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(DI)V
+  return
+  nop
+.end <method>
+
+.method public write(Ljava/lang/Float;I)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_1
+  invokevirtual java/lang/Float/floatValue()F
+  fstore_3
+  aload_0
+  fload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(FI)V
+  return
+  nop
+.end <method>
+
+.method public write(Ljava/lang/Integer;I)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_1
+  invokevirtual java/lang/Integer/intValue()I
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  return
+  nop
+.end <method>
+
+.method public write(Ljava/lang/Long;I)V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_1
+  invokevirtual java/lang/Long/longValue()J
+  lstore_3
+  aload_0
+  lload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(JI)V
+  return
+  nop
+.end <method>
+
+.method public write(Ljava/lang/Object;I)V
+.limit locals 61
+.limit stack 200
+  nop
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/lang/Byte
+  istore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 8
+  ifeq Label0
+  aload_1
+  astore 10
+  aload 10
+  checkcast java/lang/Byte
+  astore 10
+  aload 10
+  astore 9
+  aload 9
+  invokevirtual java/lang/Byte/byteValue()B
+  istore 11
+  aload_0
+  astore_3
+  iload_2
+  istore 4
+  aload_3
+  iload 11
+  iload 4
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(BI)V
+Label2:
+  return
+Label0:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/lang/Boolean
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label1
+  aload_1
+  astore 13
+  aload 13
+  checkcast java/lang/Boolean
+  astore 13
+  aload 13
+  astore 12
+  aload 12
+  invokevirtual java/lang/Boolean/booleanValue()Z
+  istore 8
+  aload_0
+  astore_3
+  iload_2
+  istore 4
+  aload_3
+  iload 8
+  iload 4
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(ZI)V
+  goto Label2
+Label1:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/lang/Short
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label3
+  aload_1
+  astore 15
+  aload 15
+  checkcast java/lang/Short
+  astore 15
+  aload 15
+  astore 14
+  aload 14
+  invokevirtual java/lang/Short/shortValue()S
+  istore 16
+  aload_0
+  astore_3
+  iload_2
+  istore 4
+  aload_3
+  iload 16
+  iload 4
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(SI)V
+  goto Label2
+Label3:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/lang/Integer
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label4
+  aload_1
+  astore 18
+  aload 18
+  checkcast java/lang/Integer
+  astore 18
+  aload 18
+  astore 17
+  aload 17
+  invokevirtual java/lang/Integer/intValue()I
+  istore 19
+  aload_0
+  astore_3
+  iload 19
+  istore 4
+  iload_2
+  istore 5
+  aload_3
+  iload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  goto Label2
+Label4:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/lang/Long
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label5
+  aload_1
+  astore 21
+  aload 21
+  checkcast java/lang/Long
+  astore 21
+  aload 21
+  astore 20
+  aload 20
+  astore_3
+  aload_3
+  invokevirtual java/lang/Long/longValue()J
+  lstore 22
+  aload_0
+  astore_3
+  lload 22
+  lstore 4
+  iload_2
+  istore 6
+  aload_3
+  lload 4
+  iload 6
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(JI)V
+  goto Label2
+Label5:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/lang/Float
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label6
+  aload_1
+  astore 25
+  aload 25
+  checkcast java/lang/Float
+  astore 25
+  aload 25
+  astore 24
+  aload 24
+  astore_3
+  aload_3
+  invokevirtual java/lang/Float/floatValue()F
+  fstore 26
+  aload_0
+  astore_3
+  fload 26
+  fstore 4
+  iload_2
+  istore 5
+  aload_3
+  fload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(FI)V
+  goto Label2
+Label6:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/lang/Double
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label7
+  aload_1
+  astore 28
+  aload 28
+  checkcast java/lang/Double
+  astore 28
+  aload 28
+  astore 27
+  aload 27
+  astore_3
+  aload_3
+  invokevirtual java/lang/Double/doubleValue()D
+  dstore 29
+  aload_0
+  astore_3
+  dload 29
+  dstore 4
+  iload_2
+  istore 6
+  aload_3
+  dload 4
+  iload 6
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(DI)V
+  goto Label2
+Label7:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/lang/String
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label8
+  aload_1
+  astore 32
+  aload 32
+  checkcast java/lang/String
+  astore 32
+  aload 32
+  astore 31
+  aload_0
+  astore_3
+  aload 31
+  astore 4
+  iload_2
+  istore 5
+  aload_3
+  aload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+  goto Label2
+Label8:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/util/Map
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label9
+  aload_1
+  astore 34
+  aload 34
+  checkcast java/util/Map
+  astore 34
+  aload 34
+  astore 33
+  aload_0
+  astore_3
+  aload 33
+  astore 4
+  iload_2
+  istore 5
+  aload_3
+  aload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/util/Map;I)V
+  goto Label2
+Label9:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/util/List
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label10
+  aload_1
+  astore 36
+  aload 36
+  checkcast java/util/List
+  astore 36
+  aload 36
+  astore 35
+  aload_0
+  astore_3
+  aload 35
+  astore 4
+  iload_2
+  istore 5
+  aload_3
+  aload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/util/Collection;I)V
+  goto Label2
+Label10:
+  aload_1
+  astore_3
+  aload_3
+  instanceof com/qq/taf/jce/JceStruct
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label11
+  aload_1
+  astore 38
+  aload 38
+  checkcast com/qq/taf/jce/JceStruct
+  astore 38
+  aload 38
+  astore 37
+  aload_0
+  astore_3
+  aload 37
+  astore 4
+  iload_2
+  istore 5
+  aload_3
+  aload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Lcom/qq/taf/jce/JceStruct;I)V
+  goto Label2
+Label11:
+  aload_1
+  astore_3
+  aload_3
+  instanceof [B
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label12
+  aload_1
+  astore 40
+  aload 40
+  checkcast [B
+  astore 40
+  aload 40
+  astore 39
+  aload 39
+  checkcast [B
+  astore 39
+  aload_0
+  astore_3
+  aload 39
+  astore 4
+  iload_2
+  istore 5
+  aload_3
+  aload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceOutputStream/write([BI)V
+  goto Label2
+Label12:
+  aload_1
+  astore_3
+  aload_3
+  instanceof [Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label13
+  aload_1
+  astore 42
+  aload 42
+  checkcast [Z
+  astore 42
+  aload 42
+  astore 41
+  aload 41
+  checkcast [Z
+  astore 41
+  aload_0
+  astore_3
+  aload 41
+  astore 4
+  iload_2
+  istore 5
+  aload_3
+  aload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceOutputStream/write([ZI)V
+  goto Label2
+Label13:
+  aload_1
+  astore_3
+  aload_3
+  instanceof [S
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label14
+  aload_1
+  astore 44
+  aload 44
+  checkcast [S
+  astore 44
+  aload 44
+  astore 43
+  aload 43
+  checkcast [S
+  astore 43
+  aload_0
+  astore_3
+  aload 43
+  astore 4
+  iload_2
+  istore 5
+  aload_3
+  aload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceOutputStream/write([SI)V
+  goto Label2
+Label14:
+  aload_1
+  astore_3
+  aload_3
+  instanceof [I
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label15
+  aload_1
+  astore 46
+  aload 46
+  checkcast [I
+  astore 46
+  aload 46
+  astore 45
+  aload 45
+  checkcast [I
+  astore 45
+  aload_0
+  astore_3
+  aload 45
+  astore 4
+  iload_2
+  istore 5
+  aload_3
+  aload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceOutputStream/write([II)V
+  goto Label2
+Label15:
+  aload_1
+  astore_3
+  aload_3
+  instanceof [J
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label16
+  aload_1
+  astore 48
+  aload 48
+  checkcast [J
+  astore 48
+  aload 48
+  astore 47
+  aload 47
+  checkcast [J
+  astore 47
+  aload_0
+  astore_3
+  aload 47
+  astore 4
+  iload_2
+  istore 5
+  aload_3
+  aload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceOutputStream/write([JI)V
+  goto Label2
+Label16:
+  aload_1
+  astore_3
+  aload_3
+  instanceof [F
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label17
+  aload_1
+  astore 50
+  aload 50
+  checkcast [F
+  astore 50
+  aload 50
+  astore 49
+  aload 49
+  checkcast [F
+  astore 49
+  aload_0
+  astore_3
+  aload 49
+  astore 4
+  iload_2
+  istore 5
+  aload_3
+  aload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceOutputStream/write([FI)V
+  goto Label2
+Label17:
+  aload_1
+  astore_3
+  aload_3
+  instanceof [D
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label18
+  aload_1
+  astore 52
+  aload 52
+  checkcast [D
+  astore 52
+  aload 52
+  astore 51
+  aload 51
+  checkcast [D
+  astore 51
+  aload_0
+  astore_3
+  aload 51
+  astore 4
+  iload_2
+  istore 5
+  aload_3
+  aload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceOutputStream/write([DI)V
+  goto Label2
+Label18:
+  aload_1
+  astore_3
+  aload_3
+  invokevirtual java/lang/Object/getClass()Ljava/lang/Class;
+  astore 53
+  aload 53
+  astore_3
+  aload_3
+  invokevirtual java/lang/Class/isArray()Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label19
+  aload_1
+  astore 55
+  aload 55
+  checkcast [Ljava/lang/Object;
+  astore 55
+  aload 55
+  astore 54
+  aload 54
+  checkcast [Ljava/lang/Object;
+  astore 54
+  aload_0
+  astore_3
+  aload 54
+  astore 4
+  iload_2
+  istore 5
+  aload_3
+  aload 4
+  iload 5
+  invokespecial com/qq/taf/jce/JceOutputStream/writeArray([Ljava/lang/Object;I)V
+  goto Label2
+Label19:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/util/Collection
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label20
+  aload_1
+  astore 57
+  aload 57
+  checkcast java/util/Collection
+  astore 57
+  aload 57
+  astore 56
+  aload_0
+  astore_3
+  aload 56
+  astore 4
+  iload_2
+  istore 5
+  aload_3
+  aload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/util/Collection;I)V
+  goto Label2
+Label20:
+  new com/qq/taf/jce/JceEncodeException
+  astore 58
+  new java/lang/StringBuilder
+  astore 59
+  aload 59
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "write object error: unsupport type. "
+  astore 60
+  aload 59
+  astore_3
+  aload 60
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 59
+  aload_1
+  astore_3
+  aload_3
+  invokevirtual java/lang/Object/getClass()Ljava/lang/Class;
+  astore 53
+  aload 59
+  astore_3
+  aload 53
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore 59
+  aload 59
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 31
+  aload 58
+  astore_3
+  aload 31
+  astore 4
+  aload_3
+  aload 4
+  invokespecial com/qq/taf/jce/JceEncodeException/<init>(Ljava/lang/String;)V
+  aload 58
+  athrow
+  nop
+.end <method>
+
+.method public write(Ljava/lang/Short;I)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_1
+  invokevirtual java/lang/Short/shortValue()S
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(SI)V
+  return
+  nop
+.end <method>
+
+.method public write(Ljava/lang/String;I)V
+.limit locals 10
+.limit stack 200
+  .catch  java/io/UnsupportedEncodingException <from> Label4 <to> Label1 <using> Label3
+  nop
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/sServerEncoding Ljava/lang/String;
+  astore_3
+Label4:
+  aload_1
+  aload_3
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 4
+Label1:
+  aload 4
+  arraylength
+  istore 5
+  iload 5
+  bipush 10
+  iadd
+  istore 5
+  aload_0
+  iload 5
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  aload 4
+  arraylength
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  sipush 255
+  istore 6
+  iload 5
+  iload 6
+  if_icmple Label0
+  bipush 7
+  istore 6
+  aload_0
+  iload 6
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 7
+  aload 4
+  arraylength
+  istore 5
+  aload 7
+  iload 5
+  invokevirtual java/nio/ByteBuffer/putInt(I)Ljava/nio/ByteBuffer;
+  pop
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 7
+  aload 7
+  aload 4
+  invokevirtual java/nio/ByteBuffer/put([B)Ljava/nio/ByteBuffer;
+  pop
+Label2:
+  return
+Label3:
+  astore 8
+  aload_1
+  invokevirtual java/lang/String/getBytes()[B
+  astore 4
+  goto Label1
+Label0:
+  bipush 6
+  istore 6
+  aload_0
+  iload 6
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 7
+  aload 4
+  arraylength
+  istore 5
+  iload 5
+  i2b
+  istore 9
+  aload 7
+  iload 9
+  invokevirtual java/nio/ByteBuffer/put(B)Ljava/nio/ByteBuffer;
+  pop
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 7
+  aload 7
+  aload 4
+  invokevirtual java/nio/ByteBuffer/put([B)Ljava/nio/ByteBuffer;
+  pop
+  goto Label2
+  nop
+.end <method>
+
+.method public write(Ljava/util/Collection;I)V
+  .signature_attr "<T:Ljava/lang/Object;>(Ljava/util/Collection<TT;>;I)V"
+.limit locals 7
+.limit stack 200
+  nop
+  bipush 8
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  bipush 9
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  iconst_0
+  istore_2
+Label3:
+  iconst_0
+  istore_3
+  aload_0
+  iload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_1
+  ifeq Label1
+  aload_1
+  invokeinterface java/util/Collection/iterator()Ljava/util/Iterator; 1
+  astore 4
+Label2:
+  aload 4
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 5
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 5
+  ifeq Label1
+  aload 4
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 6
+  iconst_0
+  istore_3
+  aload_0
+  aload 6
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/Object;I)V
+  goto Label2
+Label0:
+  aload_1
+  invokeinterface java/util/Collection/size()I 1
+  istore_2
+  goto Label3
+Label1:
+  return
+  nop
+.end <method>
+
+.method public write(Ljava/util/Map;I)V
+  .signature_attr "<K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;TV;>;I)V"
+.limit locals 10
+.limit stack 200
+  nop
+  bipush 8
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  bipush 8
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  iconst_0
+  istore_2
+Label3:
+  iconst_0
+  istore_3
+  aload_0
+  iload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_1
+  ifeq Label1
+  aload_1
+  invokeinterface java/util/Map/entrySet()Ljava/util/Set; 1
+  astore 4
+  aload 4
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore 5
+Label2:
+  aload 5
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label1
+  aload 5
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 7
+  aload 7
+  astore 9
+  aload 9
+  checkcast java/util/Map$Entry
+  astore 9
+  aload 9
+  astore 8
+  aload 8
+  invokeinterface java/util/Map$Entry/getKey()Ljava/lang/Object; 1
+  astore 7
+  iconst_0
+  istore_3
+  aload_0
+  aload 7
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/Object;I)V
+  aload 8
+  invokeinterface java/util/Map$Entry/getValue()Ljava/lang/Object; 1
+  astore 7
+  iconst_1
+  istore_3
+  aload_0
+  aload 7
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/Object;I)V
+  goto Label2
+Label0:
+  aload_1
+  invokeinterface java/util/Map/size()I 1
+  istore_2
+  goto Label3
+Label1:
+  return
+  nop
+.end <method>
+
+.method public write(SI)V
+.limit locals 6
+.limit stack 200
+  nop
+  iconst_4
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  bipush -128
+  istore_3
+  iload_1
+  iload_3
+  if_icmplt Label0
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 127
+  istore_3
+  iload_1
+  iload_3
+  if_icmpgt Label0
+  iload_1
+  i2b
+  istore 4
+  aload_0
+  iload 4
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(BI)V
+Label1:
+  return
+Label0:
+  iconst_1
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 5
+  aload 5
+  iload_1
+  invokevirtual java/nio/ByteBuffer/putShort(S)Ljava/nio/ByteBuffer;
+  pop
+  goto Label1
+  nop
+.end <method>
+
+.method public write(ZI)V
+.limit locals 4
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  iconst_1
+  istore_1
+Label1:
+  iload_1
+  i2b
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(BI)V
+  return
+Label0:
+  iconst_0
+  istore_1
+  goto Label1
+  nop
+.end <method>
+
+.method public write([BI)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_1
+  arraylength
+  istore_3
+  iload_3
+  bipush 8
+  iadd
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  bipush 13
+  istore 4
+  aload_0
+  iload 4
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  iconst_0
+  istore 4
+  iconst_0
+  istore 5
+  aload_0
+  iload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_1
+  arraylength
+  istore_3
+  iconst_0
+  istore 4
+  aload_0
+  iload_3
+  iload 4
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 6
+  aload 6
+  aload_1
+  invokevirtual java/nio/ByteBuffer/put([B)Ljava/nio/ByteBuffer;
+  pop
+  return
+  nop
+.end <method>
+
+.method public write([DI)V
+.limit locals 7
+.limit stack 200
+  nop
+  bipush 8
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  bipush 9
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_1
+  arraylength
+  istore 4
+  iconst_0
+  istore_3
+  aload_0
+  iload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_1
+  arraylength
+  istore 4
+  iconst_0
+  istore_2
+Label1:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  aload_1
+  iload_2
+  daload
+  dstore 5
+  iconst_0
+  istore_3
+  aload_0
+  dload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(DI)V
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label1
+Label0:
+  return
+  nop
+.end <method>
+
+.method public write([FI)V
+.limit locals 6
+.limit stack 200
+  nop
+  bipush 8
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  bipush 9
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_1
+  arraylength
+  istore 4
+  iconst_0
+  istore_3
+  aload_0
+  iload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_1
+  arraylength
+  istore 4
+  iconst_0
+  istore_2
+Label1:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  aload_1
+  iload_2
+  faload
+  fstore 5
+  iconst_0
+  istore_3
+  aload_0
+  fload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(FI)V
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label1
+Label0:
+  return
+  nop
+.end <method>
+
+.method public write([II)V
+.limit locals 6
+.limit stack 200
+  nop
+  bipush 8
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  bipush 9
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_1
+  arraylength
+  istore 4
+  iconst_0
+  istore_3
+  aload_0
+  iload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_1
+  arraylength
+  istore 4
+  iconst_0
+  istore 5
+Label1:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  iload 4
+  if_icmpge Label0
+  aload_1
+  iload 5
+  iaload
+  istore_2
+  iconst_0
+  istore_3
+  aload_0
+  iload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  goto Label1
+Label0:
+  return
+  nop
+.end <method>
+
+.method public write([JI)V
+.limit locals 7
+.limit stack 200
+  nop
+  bipush 8
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  bipush 9
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_1
+  arraylength
+  istore 4
+  iconst_0
+  istore_3
+  aload_0
+  iload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_1
+  arraylength
+  istore 4
+  iconst_0
+  istore_2
+Label1:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  aload_1
+  iload_2
+  laload
+  lstore 5
+  iconst_0
+  istore_3
+  aload_0
+  lload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(JI)V
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label1
+Label0:
+  return
+  nop
+.end <method>
+
+.method public write([Ljava/lang/Object;I)V
+  .signature_attr "<T:Ljava/lang/Object;>([TT;I)V"
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  iload_2
+  invokespecial com/qq/taf/jce/JceOutputStream/writeArray([Ljava/lang/Object;I)V
+  return
+  nop
+.end <method>
+
+.method public write([SI)V
+.limit locals 6
+.limit stack 200
+  nop
+  bipush 8
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  bipush 9
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_1
+  arraylength
+  istore 4
+  iconst_0
+  istore_3
+  aload_0
+  iload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_1
+  arraylength
+  istore 4
+  iconst_0
+  istore_2
+Label1:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  aload_1
+  iload_2
+  saload
+  istore 5
+  iconst_0
+  istore_3
+  aload_0
+  iload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(SI)V
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label1
+Label0:
+  return
+  nop
+.end <method>
+
+.method public write([ZI)V
+.limit locals 6
+.limit stack 200
+  nop
+  bipush 8
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  bipush 9
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_1
+  arraylength
+  istore 4
+  iconst_0
+  istore_3
+  aload_0
+  iload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_1
+  arraylength
+  istore 4
+  iconst_0
+  istore_2
+Label1:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  aload_1
+  iload_2
+  baload
+  istore 5
+  iconst_0
+  istore_3
+  aload_0
+  iload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(ZI)V
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label1
+Label0:
+  return
+  nop
+.end <method>
+
+.method private writeArray([Ljava/lang/Object;I)V
+.limit locals 6
+.limit stack 200
+  nop
+  bipush 8
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  bipush 9
+  istore_3
+  aload_0
+  iload_3
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_1
+  arraylength
+  istore 4
+  iconst_0
+  istore_3
+  aload_0
+  iload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_1
+  arraylength
+  istore 4
+  iconst_0
+  istore_2
+Label1:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  aload_1
+  iload_2
+  aaload
+  astore 5
+  iconst_0
+  istore_3
+  aload_0
+  aload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/Object;I)V
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label1
+Label0:
+  return
+  nop
+.end <method>
+
+.method public writeByteString(Ljava/lang/String;I)V
+.limit locals 8
+.limit stack 200
+  nop
+  aload_1
+  invokevirtual java/lang/String/length()I
+  istore_3
+  iload_3
+  bipush 10
+  iadd
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  aload_1
+  invokestatic com/qq/taf/jce/HexUtil/hexStr2Bytes(Ljava/lang/String;)[B
+  astore 4
+  aload 4
+  arraylength
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  sipush 255
+  istore 5
+  iload_3
+  iload 5
+  if_icmple Label0
+  bipush 7
+  istore 5
+  aload_0
+  iload 5
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 6
+  aload 4
+  arraylength
+  istore_3
+  aload 6
+  iload_3
+  invokevirtual java/nio/ByteBuffer/putInt(I)Ljava/nio/ByteBuffer;
+  pop
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 6
+  aload 6
+  aload 4
+  invokevirtual java/nio/ByteBuffer/put([B)Ljava/nio/ByteBuffer;
+  pop
+Label1:
+  return
+Label0:
+  bipush 6
+  istore 5
+  aload_0
+  iload 5
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 6
+  aload 4
+  arraylength
+  istore_3
+  iload_3
+  i2b
+  istore 7
+  aload 6
+  iload 7
+  invokevirtual java/nio/ByteBuffer/put(B)Ljava/nio/ByteBuffer;
+  pop
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 6
+  aload 6
+  aload 4
+  invokevirtual java/nio/ByteBuffer/put([B)Ljava/nio/ByteBuffer;
+  pop
+  goto Label1
+  nop
+.end <method>
+
+.method public writeHead(BI)V
+.limit locals 11
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  bipush 15
+  istore_3
+  iload_2
+  iload_3
+  if_icmpge Label0
+  iload_2
+  iconst_4
+  ishl
+  istore_2
+  iload_2
+  iload_1
+  ior
+  istore_2
+  iload_2
+  i2b
+  istore_1
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 4
+  aload 4
+  iload_1
+  invokevirtual java/nio/ByteBuffer/put(B)Ljava/nio/ByteBuffer;
+  pop
+Label2:
+  return
+Label0:
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 256
+  istore_3
+  iload_2
+  iload_3
+  if_icmpge Label1
+  sipush 240
+  istore_3
+  iload_1
+  iload_3
+  ior
+  istore 5
+  iload 5
+  i2b
+  istore 6
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 4
+  aload 4
+  iload 6
+  invokevirtual java/nio/ByteBuffer/put(B)Ljava/nio/ByteBuffer;
+  pop
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 4
+  iload_2
+  i2b
+  istore 6
+  aload 4
+  iload 6
+  invokevirtual java/nio/ByteBuffer/put(B)Ljava/nio/ByteBuffer;
+  pop
+  goto Label2
+Label1:
+  new com/qq/taf/jce/JceEncodeException
+  astore 7
+  new java/lang/StringBuilder
+  astore 8
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "tag is too large: "
+  astore 9
+  aload 8
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  iload_2
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 10
+  aload 7
+  aload 10
+  invokespecial com/qq/taf/jce/JceEncodeException/<init>(Ljava/lang/String;)V
+  aload 7
+  athrow
+  nop
+.end <method>
+
+.method public writeStringByte(Ljava/lang/String;I)V
+.limit locals 8
+.limit stack 200
+  nop
+  aload_1
+  invokestatic com/qq/taf/jce/HexUtil/hexStr2Bytes(Ljava/lang/String;)[B
+  astore_3
+  aload_3
+  arraylength
+  istore 4
+  iload 4
+  bipush 10
+  iadd
+  istore 4
+  aload_0
+  iload 4
+  invokevirtual com/qq/taf/jce/JceOutputStream/reserve(I)V
+  aload_3
+  arraylength
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  sipush 255
+  istore 5
+  iload 4
+  iload 5
+  if_icmple Label0
+  bipush 7
+  istore 5
+  aload_0
+  iload 5
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 6
+  aload_3
+  arraylength
+  istore 4
+  aload 6
+  iload 4
+  invokevirtual java/nio/ByteBuffer/putInt(I)Ljava/nio/ByteBuffer;
+  pop
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 6
+  aload 6
+  aload_3
+  invokevirtual java/nio/ByteBuffer/put([B)Ljava/nio/ByteBuffer;
+  pop
+Label1:
+  return
+Label0:
+  bipush 6
+  istore 5
+  aload_0
+  iload 5
+  iload_2
+  invokevirtual com/qq/taf/jce/JceOutputStream/writeHead(BI)V
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 6
+  aload_3
+  arraylength
+  istore 4
+  iload 4
+  i2b
+  istore 7
+  aload 6
+  iload 7
+  invokevirtual java/nio/ByteBuffer/put(B)Ljava/nio/ByteBuffer;
+  pop
+  aload_0
+  getfield com/qq/taf/jce/JceOutputStream/bs Ljava/nio/ByteBuffer;
+  astore 6
+  aload 6
+  aload_3
+  invokevirtual java/nio/ByteBuffer/put([B)Ljava/nio/ByteBuffer;
+  pop
+  goto Label1
+  nop
+.end <method>
+

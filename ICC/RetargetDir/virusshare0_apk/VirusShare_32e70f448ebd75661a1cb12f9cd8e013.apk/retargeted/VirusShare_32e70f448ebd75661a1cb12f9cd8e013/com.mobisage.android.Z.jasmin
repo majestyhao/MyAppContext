@@ -1,0 +1,347 @@
+.source SourceFile
+.class final  com/mobisage/android/Z
+.super com/mobisage/android/N
+
+.method <init>(Lcom/mobisage/android/X;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial com/mobisage/android/N/<init>(Lcom/mobisage/android/MobiSageMessage;)V
+  return
+  nop
+.end <method>
+
+.method public final run()V
+.limit locals 29
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+Label5:
+  aload 4
+  invokespecial org/apache/http/conn/scheme/SchemeRegistry/<init>()V
+  new org/apache/http/conn/scheme/Scheme
+  astore 5
+  invokestatic org/apache/http/conn/scheme/PlainSocketFactory/getSocketFactory()Lorg/apache/http/conn/scheme/PlainSocketFactory;
+  astore 6
+  ldc "http"
+  astore 7
+  bipush 80
+  istore 8
+  aload 5
+  aload 7
+  aload 6
+  iload 8
+  invokespecial org/apache/http/conn/scheme/Scheme/<init>(Ljava/lang/String;Lorg/apache/http/conn/scheme/SocketFactory;I)V
+  aload 4
+  aload 5
+  invokevirtual org/apache/http/conn/scheme/SchemeRegistry/register(Lorg/apache/http/conn/scheme/Scheme;)Lorg/apache/http/conn/scheme/Scheme;
+  pop
+  new org/apache/http/conn/scheme/Scheme
+  astore 5
+  new com/mobisage/android/SNSSSLSocketFactory
+  astore 9
+  aload 9
+  invokespecial com/mobisage/android/SNSSSLSocketFactory/<init>()V
+  aload 9
+  astore 11
+  aload 11
+  checkcast org/apache/http/conn/scheme/SocketFactory
+  astore 11
+  aload 11
+  astore 10
+  ldc "https"
+  astore 7
+  sipush 443
+  istore 8
+  aload 5
+  aload 7
+  aload 10
+  iload 8
+  invokespecial org/apache/http/conn/scheme/Scheme/<init>(Ljava/lang/String;Lorg/apache/http/conn/scheme/SocketFactory;I)V
+  aload 4
+  aload 5
+  invokevirtual org/apache/http/conn/scheme/SchemeRegistry/register(Lorg/apache/http/conn/scheme/Scheme;)Lorg/apache/http/conn/scheme/Scheme;
+  pop
+  new org/apache/http/params/BasicHttpParams
+  astore 12
+  aload 12
+  invokespecial org/apache/http/params/BasicHttpParams/<init>()V
+  sipush 5000
+  istore 8
+  iload 8
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 13
+  ldc "http.connection.timeout"
+  astore 7
+  aload 12
+  aload 7
+  aload 13
+  invokeinterface org/apache/http/params/HttpParams/setParameter(Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/http/params/HttpParams; 3
+  pop
+  sipush 5000
+  istore 8
+  iload 8
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 13
+  ldc "http.socket.timeout"
+  astore 7
+  aload 12
+  aload 7
+  aload 13
+  invokeinterface org/apache/http/params/HttpParams/setParameter(Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/http/params/HttpParams; 3
+  pop
+  getstatic org/apache/http/HttpVersion/HTTP_1_1 Lorg/apache/http/HttpVersion;
+  astore 14
+  aload 12
+  aload 14
+  invokestatic org/apache/http/params/HttpProtocolParams/setVersion(Lorg/apache/http/params/HttpParams;Lorg/apache/http/ProtocolVersion;)V
+  ldc "UTF-8"
+  astore 7
+  aload 12
+  aload 7
+  invokestatic org/apache/http/params/HttpProtocolParams/setContentCharset(Lorg/apache/http/params/HttpParams;Ljava/lang/String;)V
+  new org/apache/http/impl/conn/SingleClientConnManager
+  astore 15
+  aload 15
+  aload 12
+  aload 4
+  invokespecial org/apache/http/impl/conn/SingleClientConnManager/<init>(Lorg/apache/http/params/HttpParams;Lorg/apache/http/conn/scheme/SchemeRegistry;)V
+  new org/apache/http/impl/client/DefaultHttpClient
+  astore 16
+  aload 16
+  aload 15
+  aload 12
+  invokespecial org/apache/http/impl/client/DefaultHttpClient/<init>(Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/params/HttpParams;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/android/N/a Lcom/mobisage/android/MobiSageMessage;
+  astore_1
+  aload_1
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokevirtual com/mobisage/android/MobiSageMessage/createHttpRequest()Lorg/apache/http/client/methods/HttpRequestBase;
+  astore 18
+  aload 18
+  astore_1
+  aload 16
+  aload_1
+  invokeinterface org/apache/http/client/HttpClient/execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse; 2
+  astore 19
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/android/N/a Lcom/mobisage/android/MobiSageMessage;
+  astore_1
+  aload_1
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  getfield com/mobisage/android/MobiSageMessage/result Landroid/os/Bundle;
+  astore_1
+  aload_1
+  astore 20
+  aload 19
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/HttpResponse/getStatusLine()Lorg/apache/http/StatusLine; 1
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/StatusLine/getStatusCode()I 1
+  istore 22
+  ldc "StatusCode"
+  astore 7
+  aload 20
+  astore_1
+  iload 22
+  istore_2
+  aload_1
+  aload 7
+  iload_2
+  invokevirtual android/os/Bundle/putInt(Ljava/lang/String;I)V
+Label6:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/android/N/a Lcom/mobisage/android/MobiSageMessage;
+  astore_1
+  aload_1
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  getfield com/mobisage/android/MobiSageMessage/callback Lcom/mobisage/android/IMobiSageMessageCallback;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 23
+  ifnull Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/android/N/a Lcom/mobisage/android/MobiSageMessage;
+  astore_1
+  aload_1
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  getfield com/mobisage/android/MobiSageMessage/callback Lcom/mobisage/android/IMobiSageMessageCallback;
+  astore_1
+  aload_1
+  astore 23
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/android/N/a Lcom/mobisage/android/MobiSageMessage;
+  astore_1
+  aload_1
+  astore 17
+  aload 23
+  astore_1
+  aload 17
+  astore_2
+  aload_1
+  aload_2
+  invokeinterface com/mobisage/android/IMobiSageMessageCallback/onMobiSageMessageFinish(Lcom/mobisage/android/MobiSageMessage;)V 2
+Label0:
+  aload_0
+  astore_1
+  aload_1
+  invokespecial com/mobisage/android/N/run()V
+  return
+Label4:
+  astore 24
+Label8:
+  ldc2_w 1000
+  lstore 25
+  iconst_0
+  istore 8
+  lload 25
+  lstore_1
+  lload_1
+  iload 8
+  invokestatic java/lang/Thread/sleep(JI)V
+Label2:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/android/N/a Lcom/mobisage/android/MobiSageMessage;
+  astore_1
+  aload_1
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  getfield com/mobisage/android/MobiSageMessage/callback Lcom/mobisage/android/IMobiSageMessageCallback;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 23
+  ifnull Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/android/N/a Lcom/mobisage/android/MobiSageMessage;
+  astore_1
+  aload_1
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  getfield com/mobisage/android/MobiSageMessage/callback Lcom/mobisage/android/IMobiSageMessageCallback;
+  astore_1
+  aload_1
+  astore 23
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/android/N/a Lcom/mobisage/android/MobiSageMessage;
+  astore_1
+  aload_1
+  astore 17
+  aload 23
+  astore_1
+  aload 17
+  astore_2
+  aload_1
+  aload_2
+  invokeinterface com/mobisage/android/IMobiSageMessageCallback/onMobiSageMessageFinish(Lcom/mobisage/android/MobiSageMessage;)V 2
+  goto Label0
+Label3:
+  astore 27
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/android/N/a Lcom/mobisage/android/MobiSageMessage;
+  astore_1
+  aload_1
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  getfield com/mobisage/android/MobiSageMessage/callback Lcom/mobisage/android/IMobiSageMessageCallback;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 23
+  ifnull Label1
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/android/N/a Lcom/mobisage/android/MobiSageMessage;
+  astore_1
+  aload_1
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  getfield com/mobisage/android/MobiSageMessage/callback Lcom/mobisage/android/IMobiSageMessageCallback;
+  astore_1
+  aload_1
+  astore 23
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/android/N/a Lcom/mobisage/android/MobiSageMessage;
+  astore_1
+  aload_1
+  astore 17
+  aload 23
+  astore_1
+  aload 17
+  astore_2
+  aload_1
+  aload_2
+  invokeinterface com/mobisage/android/IMobiSageMessageCallback/onMobiSageMessageFinish(Lcom/mobisage/android/MobiSageMessage;)V 2
+Label1:
+  aload 27
+  athrow
+Label7:
+  astore 28
+  goto Label2
+  nop
+.end <method>
+

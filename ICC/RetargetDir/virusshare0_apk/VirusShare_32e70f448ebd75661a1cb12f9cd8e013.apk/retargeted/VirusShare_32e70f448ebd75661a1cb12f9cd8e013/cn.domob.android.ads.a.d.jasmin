@@ -1,0 +1,624 @@
+.source SourceFile
+.class public final  cn/domob/android/ads/a/d
+.super java/lang/Object
+.field public static final "a" I =  1
+.field public static final "b" I =  2
+.field public static final "c" I =  3
+.field public static final "d" I =  4
+.field public static final "e" I =  5
+.field public static final "f" I =  7
+.field public static final "g" I =  9
+.field private static final "h" I =  5
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static a(Lcn/domob/android/ads/DomobAdView;)I
+.limit locals 8
+.limit stack 200
+  nop
+  new java/util/Random
+  astore_1
+  aload_1
+  invokespecial java/util/Random/<init>()V
+  iconst_5
+  istore_3
+  aload_1
+  iload_3
+  invokevirtual java/util/Random/nextInt(I)I
+  istore_2
+  iload_2
+  iconst_2
+  imul
+  istore_2
+  iload_2
+  iconst_1
+  iadd
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+Label1:
+  aload 5
+  invokevirtual java/util/ArrayList/size()I
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  ifle Label0
+  iload 4
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/util/ArrayList/contains(Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifne Label0
+  iconst_5
+  istore_3
+  aload_1
+  iload_3
+  invokevirtual java/util/Random/nextInt(I)I
+  istore 4
+  iload 4
+  iconst_2
+  imul
+  istore 4
+  iload 4
+  iconst_1
+  iadd
+  istore 4
+  goto Label1
+Label0:
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 9
+  istore_3
+  iload 4
+  iload_3
+  if_icmpne Label2
+  bipush 7
+  istore 4
+Label2:
+  iload 4
+  ireturn
+  nop
+.end <method>
+
+.method private static a()Landroid/view/animation/Animation;
+.limit locals 7
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  fconst_1
+  fstore_1
+  ldc 0.200000
+  fstore_2
+  aload_0
+  fload_1
+  fload_2
+  invokespecial android/view/animation/AlphaAnimation/<init>(FF)V
+  ldc2_w 1000
+  lstore_3
+  aload_0
+  lload_3
+  invokevirtual android/view/animation/Animation/setDuration(J)V
+  iconst_1
+  istore 5
+  aload_0
+  iload 5
+  invokevirtual android/view/animation/Animation/setFillAfter(Z)V
+  new android/view/animation/DecelerateInterpolator
+  astore 6
+  aload 6
+  invokespecial android/view/animation/DecelerateInterpolator/<init>()V
+  aload_0
+  aload 6
+  invokevirtual android/view/animation/Animation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static a(ILcn/domob/android/ads/DomobAdView;)Landroid/view/animation/Animation;
+.limit locals 4
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  lookupswitch
+  1 : Label1
+  2 : Label2
+  3 : Label3
+  4 : Label4
+  5 : Label5
+  6 : Label6
+  7 : Label7
+  default : Label0
+Label0:
+  goto Label6
+Label6:
+  aconst_null
+  astore_2
+  aload_2
+  areturn
+Label1:
+  aload_1
+  invokestatic cn/domob/android/ads/a/d/b(Lcn/domob/android/ads/DomobAdView;)Landroid/view/animation/Animation;
+  astore_3
+  aload_3
+  areturn
+Label2:
+  aload_1
+  invokestatic cn/domob/android/ads/a/d/c(Lcn/domob/android/ads/DomobAdView;)Landroid/view/animation/Animation;
+  astore_3
+  aload_3
+  areturn
+Label3:
+  invokestatic cn/domob/android/ads/a/d/a()Landroid/view/animation/Animation;
+  astore_3
+  aload_3
+  areturn
+Label4:
+  invokestatic cn/domob/android/ads/a/d/b()Landroid/view/animation/Animation;
+  astore_3
+  aload_3
+  areturn
+Label5:
+  invokestatic cn/domob/android/ads/a/d/c()Landroid/view/animation/Animation;
+  astore_3
+  aload_3
+  areturn
+Label7:
+  invokestatic cn/domob/android/ads/a/d/d()Landroid/view/animation/Animation;
+  astore_3
+  aload_3
+  areturn
+  nop
+  nop
+  nop
+.end <method>
+
+.method private static b()Landroid/view/animation/Animation;
+.limit locals 7
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  ldc 0.300000
+  fstore_1
+  fconst_1
+  fstore_2
+  aload_0
+  fload_1
+  fload_2
+  invokespecial android/view/animation/AlphaAnimation/<init>(FF)V
+  ldc2_w 1600
+  lstore_3
+  aload_0
+  lload_3
+  invokevirtual android/view/animation/Animation/setDuration(J)V
+  iconst_1
+  istore 5
+  aload_0
+  iload 5
+  invokevirtual android/view/animation/Animation/setFillAfter(Z)V
+  new android/view/animation/DecelerateInterpolator
+  astore 6
+  aload 6
+  invokespecial android/view/animation/DecelerateInterpolator/<init>()V
+  aload_0
+  aload 6
+  invokevirtual android/view/animation/Animation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method private static b(Lcn/domob/android/ads/DomobAdView;)Landroid/view/animation/Animation;
+.limit locals 20
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iload 8
+  i2f
+  fstore 9
+  fconst_2
+  fstore 11
+  fload 9
+  fload 11
+  fdiv
+  fstore 10
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/DomobAdView/getHeight()I
+  istore 8
+  iload 8
+  i2f
+  fstore 9
+  fconst_2
+  fstore 11
+  fload 9
+  fload 11
+  fdiv
+  fstore 12
+  new cn/domob/android/ads/a/a
+  astore 13
+  fconst_0
+  fstore 11
+  ldc -90.000000
+  fstore 14
+  fconst_0
+  fstore 15
+  iconst_1
+  istore 16
+  aload 13
+  astore_1
+  fload 11
+  fstore_2
+  fload 14
+  fstore_3
+  fload 10
+  fstore 4
+  fload 12
+  fstore 5
+  fload 15
+  fstore 6
+  iload 16
+  istore 7
+  aload_1
+  fload_2
+  fload_3
+  fload 4
+  fload 5
+  fload 6
+  iload 7
+  invokespecial cn/domob/android/ads/a/a/<init>(FFFFFZ)V
+  ldc2_w 500
+  lstore 17
+  lload 17
+  lstore_1
+  aload 13
+  lload_1
+  invokevirtual android/view/animation/Animation/setDuration(J)V
+  iconst_1
+  istore 16
+  aload 13
+  iload 16
+  invokevirtual android/view/animation/Animation/setFillAfter(Z)V
+  new android/view/animation/AccelerateInterpolator
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokespecial android/view/animation/AccelerateInterpolator/<init>()V
+  aload 19
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual android/view/animation/Animation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  aload 13
+  areturn
+  nop
+.end <method>
+
+.method private static c()Landroid/view/animation/Animation;
+.limit locals 12
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  fconst_0
+  fstore_1
+  fconst_1
+  fstore_2
+  fconst_0
+  fstore_3
+  fconst_1
+  fstore 4
+  iconst_1
+  istore 5
+  ldc 0.500000
+  fstore 6
+  iconst_1
+  istore 7
+  ldc 0.500000
+  fstore 8
+  aload_0
+  fload_1
+  fload_2
+  fload_3
+  fload 4
+  iload 5
+  fload 6
+  iload 7
+  fload 8
+  invokespecial android/view/animation/ScaleAnimation/<init>(FFFFIFIF)V
+  ldc2_w 1000
+  lstore 9
+  aload_0
+  lload 9
+  invokevirtual android/view/animation/Animation/setDuration(J)V
+  iconst_0
+  istore 5
+  aload_0
+  iload 5
+  invokevirtual android/view/animation/Animation/setFillAfter(Z)V
+  new android/view/animation/DecelerateInterpolator
+  astore 11
+  aload 11
+  invokespecial android/view/animation/DecelerateInterpolator/<init>()V
+  aload_0
+  aload 11
+  invokevirtual android/view/animation/Animation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method private static c(Lcn/domob/android/ads/DomobAdView;)Landroid/view/animation/Animation;
+.limit locals 20
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iload 8
+  i2f
+  fstore 9
+  fconst_2
+  fstore 11
+  fload 9
+  fload 11
+  fdiv
+  fstore 10
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/DomobAdView/getHeight()I
+  istore 8
+  iload 8
+  i2f
+  fstore 9
+  fconst_2
+  fstore 11
+  fload 9
+  fload 11
+  fdiv
+  fstore 12
+  new cn/domob/android/ads/a/a
+  astore 13
+  ldc 90.000000
+  fstore 11
+  fconst_0
+  fstore 14
+  fconst_0
+  fstore 15
+  iconst_0
+  istore 16
+  aload 13
+  astore_1
+  fload 11
+  fstore_2
+  fload 14
+  fstore_3
+  fload 10
+  fstore 4
+  fload 12
+  fstore 5
+  fload 15
+  fstore 6
+  iload 16
+  istore 7
+  aload_1
+  fload_2
+  fload_3
+  fload 4
+  fload 5
+  fload 6
+  iload 7
+  invokespecial cn/domob/android/ads/a/a/<init>(FFFFFZ)V
+  ldc2_w 500
+  lstore 17
+  lload 17
+  lstore_1
+  aload 13
+  lload_1
+  invokevirtual android/view/animation/Animation/setDuration(J)V
+  iconst_1
+  istore 16
+  aload 13
+  iload 16
+  invokevirtual android/view/animation/Animation/setFillAfter(Z)V
+  new android/view/animation/DecelerateInterpolator
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokespecial android/view/animation/DecelerateInterpolator/<init>()V
+  aload 19
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual android/view/animation/Animation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  aload 13
+  areturn
+  nop
+.end <method>
+
+.method private static d()Landroid/view/animation/Animation;
+.limit locals 23
+.limit stack 200
+  nop
+  new java/util/Random
+  astore 9
+  aload 9
+  invokespecial java/util/Random/<init>()V
+  iconst_3
+  istore 11
+  aload 9
+  iload 11
+  invokevirtual java/util/Random/nextInt(I)I
+  istore 10
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 10
+  ifne Label0
+  new android/view/animation/TranslateAnimation
+  astore 12
+  iconst_1
+  istore 11
+  ldc -1.000000
+  fstore 13
+  iconst_1
+  istore 14
+  fconst_0
+  fstore 15
+  iconst_1
+  istore 16
+  fconst_0
+  fstore 17
+  iconst_1
+  istore 18
+  fconst_0
+  fstore 19
+  aload 12
+  astore_0
+  iload 11
+  istore_1
+  fload 13
+  fstore_2
+  iload 14
+  istore_3
+  fload 15
+  fstore 4
+  iload 16
+  istore 5
+  fload 17
+  fstore 6
+  iload 18
+  istore 7
+  fload 19
+  fstore 8
+  aload_0
+  iload_1
+  fload_2
+  iload_3
+  fload 4
+  iload 5
+  fload 6
+  iload 7
+  fload 8
+  invokespecial android/view/animation/TranslateAnimation/<init>(IFIFIFIF)V
+Label1:
+  ldc2_w 1500
+  lstore 20
+  lload 20
+  lstore_0
+  aload 12
+  lload_0
+  invokevirtual android/view/animation/TranslateAnimation/setDuration(J)V
+  iconst_0
+  istore 11
+  aload 12
+  iload 11
+  invokevirtual android/view/animation/TranslateAnimation/setFillAfter(Z)V
+  new android/view/animation/DecelerateInterpolator
+  astore 22
+  aload 22
+  astore_0
+  aload_0
+  invokespecial android/view/animation/DecelerateInterpolator/<init>()V
+  aload 22
+  astore_0
+  aload 12
+  aload_0
+  invokevirtual android/view/animation/TranslateAnimation/setInterpolator(Landroid/view/animation/Interpolator;)V
+  aload 12
+  areturn
+Label0:
+  new android/view/animation/TranslateAnimation
+  astore 12
+  iconst_1
+  istore 11
+  fconst_1
+  fstore 13
+  iconst_1
+  istore 14
+  fconst_0
+  fstore 15
+  iconst_1
+  istore 16
+  fconst_0
+  fstore 17
+  iconst_1
+  istore 18
+  fconst_0
+  fstore 19
+  aload 12
+  astore_0
+  iload 11
+  istore_1
+  fload 13
+  fstore_2
+  iload 14
+  istore_3
+  fload 15
+  fstore 4
+  iload 16
+  istore 5
+  fload 17
+  fstore 6
+  iload 18
+  istore 7
+  fload 19
+  fstore 8
+  aload_0
+  iload_1
+  fload_2
+  iload_3
+  fload 4
+  iload 5
+  fload 6
+  iload 7
+  fload 8
+  invokespecial android/view/animation/TranslateAnimation/<init>(IFIFIFIF)V
+  goto Label1
+  nop
+.end <method>
+

@@ -1,0 +1,7 @@
+.source SourceFile
+.interface interface abstract  cn/domob/android/ads/b/a
+.super java/lang/Object
+
+.method public abstract a(ZI)V
+.end <method>
+

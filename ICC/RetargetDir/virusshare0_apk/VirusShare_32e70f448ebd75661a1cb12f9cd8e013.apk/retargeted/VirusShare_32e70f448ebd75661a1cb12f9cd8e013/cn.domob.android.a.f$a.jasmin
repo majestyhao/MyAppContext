@@ -1,0 +1,24 @@
+.source SourceFile
+.class public  cn/domob/android/a/f$a
+.super java/lang/Object
+.field protected "a" Z
+.field final "b" Lcn/domob/android/a/f;
+
+.method protected <init>(Lcn/domob/android/a/f;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/a/f$a/b Lcn/domob/android/a/f;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield cn/domob/android/a/f$a/a Z
+  return
+  nop
+.end <method>
+

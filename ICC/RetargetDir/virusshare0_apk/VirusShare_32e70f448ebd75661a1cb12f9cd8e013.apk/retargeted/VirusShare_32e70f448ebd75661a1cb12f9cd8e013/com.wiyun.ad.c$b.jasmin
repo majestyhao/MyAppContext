@@ -1,0 +1,226 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public final  com/wiyun/ad/c$b
+.super java/lang/Object
+.field "a" Ljava/lang/String;
+.field "b" Ljava/lang/String;
+.field "c" Ljava/lang/String;
+.field "d" Ljava/lang/String;
+.field "e" Ljava/lang/String;
+.field "f" I
+.field "g" I
+.field "h" Z
+.field "i" Z
+.field "j" Landroid/graphics/Bitmap;
+.field "k" Ljava/lang/String;
+.field "l" Ljava/lang/String;
+.field "m" Ljava/lang/String;
+.field "n" Ljava/lang/String;
+.field "o" Lorg/json/JSONObject;
+.field "p" Ljava/lang/String;
+.field "q" Ljava/lang/String;
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method static a(Lorg/json/JSONObject;)Lcom/wiyun/ad/c$b;
+.limit locals 12
+.limit stack 200
+  nop
+  ldc "id"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore_1
+  ldc "title"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore_3
+  ldc "intent_action"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 5
+  ifne Label0
+  aload 4
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 5
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 5
+  ifne Label0
+  aload_3
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 5
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 5
+  ifeq Label1
+Label0:
+  aconst_null
+  astore 6
+  aload 6
+  areturn
+Label1:
+  new com/wiyun/ad/c$b
+  astore 7
+  aload 7
+  invokespecial com/wiyun/ad/c$b/<init>()V
+  aload 7
+  aload_1
+  putfield com/wiyun/ad/c$b/a Ljava/lang/String;
+  aload 7
+  aload_3
+  putfield com/wiyun/ad/c$b/d Ljava/lang/String;
+  ldc "description"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore_3
+  aload 7
+  aload_3
+  putfield com/wiyun/ad/c$b/e Ljava/lang/String;
+  ldc "icon_url"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore_3
+  aload 7
+  aload_3
+  putfield com/wiyun/ad/c$b/c Ljava/lang/String;
+  ldc "notify_icon"
+  astore_2
+  ldc "stat_notify_chat"
+  astore 8
+  aload_0
+  aload_2
+  aload 8
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  astore_3
+  aload 7
+  aload_3
+  putfield com/wiyun/ad/c$b/b Ljava/lang/String;
+  ldc "banner"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual org/json/JSONObject/optBoolean(Ljava/lang/String;)Z
+  istore 5
+  aload 7
+  iload 5
+  putfield com/wiyun/ad/c$b/h Z
+  ldc "delay"
+  astore_2
+  sipush 30000
+  istore 10
+  aload_0
+  aload_2
+  iload 10
+  invokevirtual org/json/JSONObject/optInt(Ljava/lang/String;I)I
+  istore 9
+  aload 7
+  iload 9
+  putfield com/wiyun/ad/c$b/f I
+  ldc "timeout"
+  astore_2
+  ldc 600000
+  istore 10
+  aload_0
+  aload_2
+  iload 10
+  invokevirtual org/json/JSONObject/optInt(Ljava/lang/String;I)I
+  istore 9
+  aload 7
+  iload 9
+  putfield com/wiyun/ad/c$b/g I
+  ldc "cancelable"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual org/json/JSONObject/optBoolean(Ljava/lang/String;)Z
+  istore 5
+  aload 7
+  iload 5
+  putfield com/wiyun/ad/c$b/i Z
+  aload 7
+  aload 4
+  putfield com/wiyun/ad/c$b/k Ljava/lang/String;
+  ldc "intent_category"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 4
+  aload 7
+  aload 4
+  putfield com/wiyun/ad/c$b/l Ljava/lang/String;
+  ldc "intent_package"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 4
+  aload 7
+  aload 4
+  putfield com/wiyun/ad/c$b/m Ljava/lang/String;
+  ldc "intent_class"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 4
+  aload 7
+  aload 4
+  putfield com/wiyun/ad/c$b/n Ljava/lang/String;
+  ldc "intent_extra"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual org/json/JSONObject/optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+  astore 11
+  aload 7
+  aload 11
+  putfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  ldc "data_uri"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 4
+  aload 7
+  aload 4
+  putfield com/wiyun/ad/c$b/p Ljava/lang/String;
+  ldc "data_type"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 4
+  aload 7
+  aload 4
+  putfield com/wiyun/ad/c$b/q Ljava/lang/String;
+  aload 7
+  areturn
+  nop
+.end <method>
+

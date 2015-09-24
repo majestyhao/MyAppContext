@@ -1,0 +1,6795 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/wiyun/ad/c
+.super java/lang/Object
+.field private static "a" Ljava/lang/String;
+.field private static "b" Ljava/util/Map;
+.field private static "c" Ljava/util/Map;
+.field private static "d" Ljava/util/List;
+.field private static "e" Ljava/lang/String;
+.field private static "f" Ljava/lang/String;
+.field private static "g" Ljava/lang/String;
+.field private static "h" Ljava/lang/String;
+.field private static "i" Ljava/lang/String;
+.field private static "j" Ljava/io/File;
+.field private static "k" Ljava/io/File;
+.field private static "l" Ljava/io/File;
+.field private static "m" Ljava/io/File;
+.field private static "n" Z =  0
+.field private static "o" I =  0
+.field private static "p" Landroid/os/Handler;
+.field private static "q" Landroid/content/BroadcastReceiver;
+.field private static "r" Landroid/content/BroadcastReceiver;
+
+.method static <clinit>()V
+.limit locals 5
+.limit stack 200
+  nop
+  new java/util/HashMap
+  astore_0
+  aload_0
+  invokespecial java/util/HashMap/<init>()V
+  aload_0
+  putstatic com/wiyun/ad/c/b Ljava/util/Map;
+  new java/util/HashMap
+  astore_0
+  aload_0
+  invokespecial java/util/HashMap/<init>()V
+  aload_0
+  putstatic com/wiyun/ad/c/c Ljava/util/Map;
+  new java/util/ArrayList
+  astore_1
+  aload_1
+  invokespecial java/util/ArrayList/<init>()V
+  aload_1
+  putstatic com/wiyun/ad/c/d Ljava/util/List;
+  ldc "last_req"
+  astore_2
+  aload_2
+  putstatic com/wiyun/ad/c/f Ljava/lang/String;
+  ldc "last_dreq"
+  astore_2
+  aload_2
+  putstatic com/wiyun/ad/c/g Ljava/lang/String;
+  ldc "ri"
+  astore_2
+  aload_2
+  putstatic com/wiyun/ad/c/h Ljava/lang/String;
+  ldc "dn"
+  astore_2
+  aload_2
+  putstatic com/wiyun/ad/c/i Ljava/lang/String;
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_3
+  invokespecial com/wiyun/ad/ag/<init>()V
+  aload_3
+  putstatic com/wiyun/ad/c/q Landroid/content/BroadcastReceiver;
+  new com/wiyun/ad/af
+  astore 4
+  aload 4
+  invokespecial com/wiyun/ad/af/<init>()V
+  aload 4
+  putstatic com/wiyun/ad/c/r Landroid/content/BroadcastReceiver;
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method private static a(Landroid/view/WindowManager;Landroid/content/Context;Landroid/content/Intent;)Landroid/view/View;
+.limit locals 26
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_1
+  astore_3
+  aload 6
+  aload_3
+  invokespecial android/widget/LinearLayout/<init>(Landroid/content/Context;)V
+  iconst_1
+  istore 8
+  iload 8
+  istore 7
+  aload 6
+  iload 7
+  invokevirtual android/widget/LinearLayout/setOrientation(I)V
+  new android/widget/LinearLayout
+  astore 9
+  aload_1
+  astore_3
+  aload 9
+  aload_3
+  invokespecial android/widget/LinearLayout/<init>(Landroid/content/Context;)V
+  ldc -13347463
+  istore 8
+  aload 9
+  iload 8
+  invokevirtual android/widget/LinearLayout/setBackgroundColor(I)V
+  iconst_0
+  istore 8
+  iload 8
+  istore 7
+  aload 9
+  iload 7
+  invokevirtual android/widget/LinearLayout/setOrientation(I)V
+  bipush 16
+  istore 8
+  aload 9
+  iload 8
+  invokevirtual android/widget/LinearLayout/setGravity(I)V
+  new android/widget/LinearLayout$LayoutParams
+  astore 10
+  iconst_m1
+  istore 8
+  bipush -2
+  istore 11
+  aload 10
+  iload 8
+  iload 11
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  iconst_5
+  istore 8
+  iconst_5
+  istore 11
+  iconst_5
+  istore 12
+  iconst_2
+  istore 13
+  aload 9
+  iload 8
+  iload 11
+  iload 12
+  iload 13
+  invokevirtual android/widget/LinearLayout/setPadding(IIII)V
+  aload 6
+  aload 9
+  aload 10
+  invokevirtual android/widget/LinearLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  new android/widget/Button
+  astore 14
+  aload_1
+  astore_3
+  aload 14
+  aload_3
+  invokespecial android/widget/Button/<init>(Landroid/content/Context;)V
+  ldc "wy_button_close"
+  astore 16
+  aload 16
+  invokestatic com/wiyun/ad/v/d(Ljava/lang/String;)I
+  istore 15
+  aload 14
+  iload 15
+  invokevirtual android/widget/Button/setText(I)V
+  new com/wiyun/ad/c$2
+  astore 17
+  aload_0
+  astore_3
+  aload 17
+  aload_3
+  aload 6
+  invokespecial com/wiyun/ad/c$2/<init>(Landroid/view/WindowManager;Landroid/widget/LinearLayout;)V
+  aload 14
+  aload 17
+  invokevirtual android/widget/Button/setOnClickListener(Landroid/view/View$OnClickListener;)V
+  new android/widget/LinearLayout$LayoutParams
+  astore 10
+  bipush -2
+  istore 8
+  bipush -2
+  istore 11
+  aload 10
+  iload 8
+  iload 11
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  aload 9
+  aload 14
+  aload 10
+  invokevirtual android/widget/LinearLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  new android/widget/TextView
+  astore 18
+  aload_1
+  astore_3
+  aload 18
+  aload_3
+  invokespecial android/widget/TextView/<init>(Landroid/content/Context;)V
+  ldc 16973892
+  istore 8
+  aload_1
+  astore_3
+  aload 18
+  aload_3
+  iload 8
+  invokevirtual android/widget/TextView/setTextAppearance(Landroid/content/Context;I)V
+  ldc "title"
+  astore 16
+  aload_2
+  astore_3
+  aload_3
+  aload 16
+  invokevirtual android/content/Intent/getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+  astore 19
+  aload 19
+  astore_3
+  aload 18
+  aload_3
+  invokevirtual android/widget/TextView/setText(Ljava/lang/CharSequence;)V
+  bipush 17
+  istore 8
+  aload 18
+  iload 8
+  invokevirtual android/widget/TextView/setGravity(I)V
+  iconst_1
+  istore 8
+  aload 18
+  iload 8
+  invokevirtual android/widget/TextView/setSingleLine(Z)V
+  new android/widget/LinearLayout$LayoutParams
+  astore 10
+  iconst_m1
+  istore 8
+  bipush -2
+  istore 11
+  aload 10
+  iload 8
+  iload 11
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  fconst_1
+  fstore 20
+  fload 20
+  fstore_3
+  aload 10
+  fload_3
+  putfield android/widget/LinearLayout$LayoutParams/weight F
+  ldc 5.000000
+  fstore 20
+  fload 20
+  fstore_3
+  fload_3
+  invokestatic com/wiyun/ad/x/a(F)F
+  fstore 21
+  fload 21
+  fstore_3
+  fload_3
+  f2i
+  istore 15
+  aload 10
+  iload 15
+  putfield android/view/ViewGroup$MarginLayoutParams/leftMargin I
+  aload 9
+  aload 18
+  aload 10
+  invokevirtual android/widget/LinearLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  new android/widget/ProgressBar
+  astore 22
+  aload 22
+  astore_3
+  aload_1
+  astore 4
+  aload_3
+  aload 4
+  invokespecial android/widget/ProgressBar/<init>(Landroid/content/Context;)V
+  iconst_1
+  istore 8
+  aload 22
+  astore_3
+  aload_3
+  iload 8
+  invokevirtual android/widget/ProgressBar/setIndeterminate(Z)V
+  new android/widget/LinearLayout$LayoutParams
+  astore 10
+  bipush -2
+  istore 8
+  bipush -2
+  istore 11
+  aload 10
+  iload 8
+  iload 11
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  ldc 17.000000
+  fstore 20
+  fload 20
+  fstore_3
+  fload_3
+  invokestatic com/wiyun/ad/x/a(F)F
+  fstore 21
+  fload 21
+  fstore_3
+  fload_3
+  f2i
+  istore 15
+  aload 10
+  iload 15
+  putfield android/view/ViewGroup$MarginLayoutParams/leftMargin I
+  aload 22
+  astore_3
+  aload 9
+  aload_3
+  aload 10
+  invokevirtual android/widget/LinearLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  iconst_0
+  istore 8
+  iload 8
+  istore 15
+  aload 22
+  astore_3
+  aload_3
+  iload 15
+  invokevirtual android/widget/ProgressBar/setVisibility(I)V
+  new android/webkit/WebView
+  astore 23
+  aload 23
+  astore_3
+  aload_1
+  astore 4
+  aload_3
+  aload 4
+  invokespecial android/webkit/WebView/<init>(Landroid/content/Context;)V
+  new android/widget/LinearLayout$LayoutParams
+  astore 10
+  iconst_m1
+  istore 8
+  iconst_m1
+  istore 11
+  aload 10
+  iload 8
+  iload 11
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  fconst_1
+  fstore 20
+  fload 20
+  fstore_3
+  aload 10
+  fload_3
+  putfield android/widget/LinearLayout$LayoutParams/weight F
+  aload 23
+  astore_3
+  aload 6
+  aload_3
+  aload 10
+  invokevirtual android/widget/LinearLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  ldc 33554432
+  istore 8
+  aload 23
+  astore_3
+  aload_3
+  iload 8
+  invokevirtual android/webkit/WebView/setScrollBarStyle(I)V
+  iconst_0
+  istore 8
+  aload 23
+  astore_3
+  aload_3
+  iload 8
+  invokevirtual android/webkit/WebView/setMapTrackballToArrowKeys(Z)V
+  aload 23
+  astore_3
+  aload_3
+  invokevirtual android/webkit/WebView/getSettings()Landroid/webkit/WebSettings;
+  astore 24
+  iconst_1
+  istore 8
+  aload 24
+  astore_3
+  aload_3
+  iload 8
+  invokevirtual android/webkit/WebSettings/setJavaScriptEnabled(Z)V
+  aload 23
+  astore_3
+  aload_3
+  invokevirtual android/webkit/WebView/getSettings()Landroid/webkit/WebSettings;
+  astore 24
+  iconst_0
+  istore 8
+  aload 24
+  astore_3
+  aload_3
+  iload 8
+  invokevirtual android/webkit/WebSettings/setBuiltInZoomControls(Z)V
+  new com/wiyun/ad/c$1
+  astore 25
+  aload 25
+  astore_3
+  aload 22
+  astore 4
+  aload 23
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokespecial com/wiyun/ad/c$1/<init>(Landroid/widget/ProgressBar;Landroid/webkit/WebView;)V
+  aload 23
+  astore_3
+  aload 25
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual android/webkit/WebView/setWebViewClient(Landroid/webkit/WebViewClient;)V
+  ldc "data_uri"
+  astore 16
+  aload_2
+  astore_3
+  aload_3
+  aload 16
+  invokevirtual android/content/Intent/getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+  astore 19
+  aload 23
+  astore_3
+  aload 19
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual android/webkit/WebView/loadUrl(Ljava/lang/String;)V
+  aload 6
+  areturn
+  nop
+.end <method>
+
+.method static a(Lorg/apache/http/HttpEntity;)Ljava/lang/String;
+.limit locals 9
+.limit stack 200
+  .catch  java/lang/Exception <from> Label3 <to> Label4 <using> Label2
+  nop
+  iconst_0
+  istore_1
+  new java/io/ByteArrayOutputStream
+  astore_2
+Label3:
+  aload_2
+  invokespecial java/io/ByteArrayOutputStream/<init>()V
+  sipush 2048
+  istore 4
+  iload 4
+  newarray byte
+  astore_3
+  new java/lang/NoSuchMethodError
+  dup
+  invokespecial java/lang/NoSuchMethodError/<init>()V
+  athrow
+  nop
+Label1:
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 4
+  iload_1
+  iload 4
+  if_icmpne Label0
+  aload_2
+  invokevirtual java/io/ByteArrayOutputStream/toByteArray()[B
+  astore_3
+  aload_3
+  invokestatic com/wiyun/ad/x/b([B)Ljava/lang/String;
+  astore 6
+  aload 6
+  areturn
+Label0:
+  iconst_0
+  istore 4
+  aload_2
+  aload_3
+  iload 4
+  iload_1
+  invokevirtual java/io/ByteArrayOutputStream/write([BII)V
+  aload 5
+  aload_3
+  invokevirtual java/io/InputStream/read([B)I
+  istore_1
+Label4:
+  goto Label1
+Label2:
+  astore 7
+  ldc ""
+  astore 8
+  aload 8
+  areturn
+  nop
+.end <method>
+
+.method public static a()V
+.limit locals 27
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label6 <to> Label7 <using> Label5
+  .catch  java/lang/Throwable <from> Label2 <to> Label8 <using> Label5
+  .catch  java/lang/Throwable <from> Label4 <to> Label9 <using> Label5
+  nop
+  ldc com/wiyun/ad/c
+  astore 4
+  aload 4
+  monitorenter
+Label6:
+  getstatic com/wiyun/ad/c/n Z
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifne Label0
+  iconst_1
+  istore 6
+  iload 6
+  putstatic com/wiyun/ad/c/n Z
+  getstatic com/wiyun/ad/c/p Landroid/os/Handler;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnonnull Label1
+  new com/wiyun/ad/c$4
+  astore 8
+  invokestatic android/os/Looper/getMainLooper()Landroid/os/Looper;
+  astore 9
+  aload 8
+  aload 9
+  invokespecial com/wiyun/ad/c$4/<init>(Landroid/os/Looper;)V
+  aload 8
+  putstatic com/wiyun/ad/c/p Landroid/os/Handler;
+Label1:
+  new android/content/IntentFilter
+  astore 10
+  ldc "com.wiyun.hsup.DOWNLOAD_APP"
+  astore 11
+  aload 10
+  aload 11
+  invokespecial android/content/IntentFilter/<init>(Ljava/lang/String;)V
+  ldc "com.wiyun.hsup.FORWARD_INTENT"
+  astore 11
+  aload 10
+  aload 11
+  invokevirtual android/content/IntentFilter/addAction(Ljava/lang/String;)V
+  ldc "com.wiyun.hsup.DOWNLOAD_OR_FORWARD"
+  astore 11
+  aload 10
+  aload 11
+  invokevirtual android/content/IntentFilter/addAction(Ljava/lang/String;)V
+  ldc "com.wiyun.hsup.SHOW_MINISITE"
+  astore 11
+  aload 10
+  aload 11
+  invokevirtual android/content/IntentFilter/addAction(Ljava/lang/String;)V
+  ldc "WiAd"
+  astore 11
+  aload 10
+  aload 11
+  invokevirtual android/content/IntentFilter/addCategory(Ljava/lang/String;)V
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 12
+  getstatic com/wiyun/ad/c/q Landroid/content/BroadcastReceiver;
+  astore 13
+  aload 12
+  aload 13
+  aload 10
+  invokevirtual android/content/Context/registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+  pop
+  new android/content/IntentFilter
+  astore 10
+  aload 10
+  invokespecial android/content/IntentFilter/<init>()V
+  ldc "android.intent.action.PACKAGE_ADDED"
+  astore 11
+  aload 10
+  aload 11
+  invokevirtual android/content/IntentFilter/addAction(Ljava/lang/String;)V
+  ldc "package"
+  astore 11
+  aload 10
+  aload 11
+  invokevirtual android/content/IntentFilter/addDataScheme(Ljava/lang/String;)V
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 12
+  getstatic com/wiyun/ad/c/r Landroid/content/BroadcastReceiver;
+  astore 13
+  aload 12
+  aload 13
+  aload 10
+  invokevirtual android/content/Context/registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+  pop
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 12
+  aload 12
+  invokevirtual android/content/Context/getResources()Landroid/content/res/Resources;
+  astore 14
+  invokestatic com/wiyun/ad/ab/q()Ljava/lang/String;
+  astore 15
+  ldc "wy_ad_notification"
+  astore 11
+  ldc "layout"
+  astore 17
+  aload 17
+  astore_0
+  aload 14
+  aload 11
+  aload_0
+  aload 15
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 16
+  iload 16
+  putstatic com/wiyun/ad/c/o I
+  new java/lang/StringBuilder
+  astore 18
+  invokestatic com/wiyun/ad/ab/q()Ljava/lang/String;
+  astore 19
+  aload 19
+  astore_0
+  aload_0
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 19
+  aload 18
+  astore_0
+  aload 19
+  astore_1
+  aload_0
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  bipush 95
+  istore 6
+  aload 18
+  astore_0
+  aload_0
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  astore 18
+  ldc "WiAd"
+  astore 11
+  aload 18
+  astore_0
+  aload_0
+  aload 11
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 18
+  aload 18
+  astore_0
+  aload_0
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 19
+  aload 19
+  astore_0
+  aload_0
+  invokestatic com/wiyun/ad/ae/c(Ljava/lang/String;)Ljava/lang/String;
+  astore 19
+  aload 19
+  putstatic com/wiyun/ad/c/a Ljava/lang/String;
+Label0:
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 12
+  ldc "android.permission.WRITE_EXTERNAL_STORAGE"
+  astore 11
+  aload 12
+  aload 11
+  invokevirtual android/content/Context/checkCallingOrSelfPermission(Ljava/lang/String;)I
+  istore 16
+Label7:
+  iload 16
+  istore_0
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 16
+  ifeq Label2
+Label3:
+  ldc com/wiyun/ad/c
+  astore 4
+  aload 4
+  monitorexit
+  return
+Label2:
+  invokestatic com/wiyun/ad/x/a()Z
+  istore 5
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 5
+  ifeq Label3
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 12
+  ldc "android.permission.INTERNET"
+  astore 11
+  aload 12
+  aload 11
+  invokevirtual android/content/Context/checkCallingOrSelfPermission(Ljava/lang/String;)I
+  istore 16
+  iload 16
+  istore_0
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 16
+  ifne Label3
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 12
+  ldc "android.permission.READ_PHONE_STATE"
+  astore 11
+  aload 12
+  aload 11
+  invokevirtual android/content/Context/checkCallingOrSelfPermission(Ljava/lang/String;)I
+  istore 16
+  iload 16
+  istore_0
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 16
+  ifne Label3
+  getstatic com/wiyun/ad/c/a Ljava/lang/String;
+  astore 19
+  aload 19
+  astore_0
+  aload_0
+  invokestatic com/wiyun/ad/ac/a(Ljava/lang/String;)Z
+  istore 5
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 5
+  ifeq Label3
+  invokestatic com/wiyun/ad/c/k()J
+  lstore 20
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 22
+  lload 22
+  lstore_0
+  lload 20
+  lstore_2
+  lload_0
+  lload_2
+  lsub
+  lstore_0
+  lload_0
+  lstore 22
+  invokestatic com/wiyun/ad/c/m()J
+  lstore 20
+  lload 22
+  lload 20
+  lcmp
+  istore 24
+  iload 24
+  istore_0
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 24
+  ifge Label4
+  getstatic com/wiyun/ad/c/a Ljava/lang/String;
+  astore 19
+  aload 19
+  astore_0
+  aload_0
+  invokestatic com/wiyun/ad/ac/b(Ljava/lang/String;)V
+Label8:
+  goto Label3
+Label5:
+  astore 25
+  ldc com/wiyun/ad/c
+  astore 4
+  aload 4
+  monitorexit
+  aload 25
+  athrow
+Label4:
+  invokestatic com/wiyun/ad/c/b()V
+  new com/wiyun/ad/c$3
+  astore 26
+  aload 26
+  astore_0
+  aload_0
+  invokespecial com/wiyun/ad/c$3/<init>()V
+  iconst_1
+  istore 6
+  aload 26
+  astore_0
+  aload_0
+  iload 6
+  invokevirtual java/lang/Thread/setDaemon(Z)V
+  aload 26
+  astore_0
+  aload_0
+  invokevirtual java/lang/Thread/start()V
+Label9:
+  goto Label3
+  nop
+.end <method>
+
+.method private static a(J)V
+.limit locals 8
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/c/j Ljava/io/File;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  new java/io/File
+  astore_3
+  invokestatic android/os/Environment/getExternalStorageDirectory()Ljava/io/File;
+  astore_2
+  new java/lang/StringBuilder
+  astore 4
+  ldc ".wiyun/winotice/"
+  astore 5
+  aload 4
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  getstatic com/wiyun/ad/c/f Ljava/lang/String;
+  astore 6
+  aload 4
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload_3
+  aload_2
+  aload 6
+  invokespecial java/io/File/<init>(Ljava/io/File;Ljava/lang/String;)V
+  aload_3
+  putstatic com/wiyun/ad/c/j Ljava/io/File;
+Label0:
+  getstatic com/wiyun/ad/c/j Ljava/io/File;
+  astore_3
+  lload_0
+  invokestatic java/lang/String/valueOf(J)Ljava/lang/String;
+  astore 6
+  aload 6
+  invokestatic com/wiyun/ad/x/a(Ljava/lang/String;)[B
+  astore 7
+  aload_3
+  aload 7
+  invokestatic com/wiyun/ad/x/a(Ljava/io/File;[B)Z
+  pop
+  return
+  nop
+.end <method>
+
+.method static a(Landroid/content/Intent;)V
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokestatic com/wiyun/ad/c/d(Landroid/content/Intent;)V
+  return
+  nop
+.end <method>
+
+.method private static a(Ljava/io/File;)V
+.limit locals 7
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  ldc "android.intent.action.VIEW"
+  astore_2
+  aload_1
+  aload_2
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;)V
+  aload_0
+  invokestatic android/net/Uri/fromFile(Ljava/io/File;)Landroid/net/Uri;
+  astore_3
+  ldc "application/vnd.android.package-archive"
+  astore_2
+  aload_1
+  aload_3
+  aload_2
+  invokevirtual android/content/Intent/setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  ldc 268435456
+  istore 4
+  aload_1
+  iload 4
+  invokevirtual android/content/Intent/addFlags(I)Landroid/content/Intent;
+  pop
+Label2:
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 5
+  aload 5
+  aload_1
+  invokevirtual android/content/Context/startActivity(Landroid/content/Intent;)V
+Label0:
+  return
+Label1:
+  astore 6
+  aload_0
+  invokevirtual java/io/File/delete()Z
+  pop
+  goto Label0
+  nop
+.end <method>
+
+.method static a(Ljava/lang/String;Landroid/content/Intent;)V
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/String;Landroid/content/Intent;)V
+  return
+  nop
+.end <method>
+
+.method static a(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  new com/wiyun/ad/c$5
+  astore_2
+  aload_2
+  aload_0
+  aload_1
+  invokespecial com/wiyun/ad/c$5/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  iconst_1
+  istore_3
+  aload_2
+  iload_3
+  invokevirtual java/lang/Thread/setDaemon(Z)V
+  aload_2
+  invokevirtual java/lang/Thread/start()V
+  return
+  nop
+.end <method>
+
+.method private static a(Ljava/lang/String;Ljava/lang/String;II)V
+.limit locals 34
+.limit stack 200
+  nop
+  iconst_0
+  istore 9
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 10
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  invokestatic com/wiyun/ad/ab/q()Ljava/lang/String;
+  astore 12
+  new java/lang/StringBuilder
+  astore 13
+  aload 13
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Downloading"
+  astore 14
+  aload 13
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  ldc " \""
+  astore 14
+  aload 13
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  aload_1
+  astore 4
+  aload 13
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  ldc "\"..."
+  astore 14
+  aload 13
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_1
+  new android/app/Notification
+  astore 15
+  aload 15
+  invokespecial android/app/Notification/<init>()V
+  aload 15
+  getfield android/app/Notification/flags I
+  istore 16
+  iload 16
+  iconst_2
+  ior
+  istore 16
+  aload 15
+  iload 16
+  putfield android/app/Notification/flags I
+  ldc 17301633
+  istore 17
+  aload 15
+  iload 17
+  putfield android/app/Notification/icon I
+  aload_1
+  astore 4
+  aload 15
+  aload 4
+  putfield android/app/Notification/tickerText Ljava/lang/CharSequence;
+  new android/content/Intent
+  astore 18
+  ldc "com.wiyun.action.dummy"
+  astore 14
+  aload 18
+  aload 14
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;)V
+  ldc 268435456
+  istore 17
+  aload 18
+  iload 17
+  invokevirtual android/content/Intent/addFlags(I)Landroid/content/Intent;
+  pop
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 10
+  iconst_0
+  istore 17
+  iconst_0
+  istore 20
+  iload 20
+  istore 4
+  aload 10
+  iload 17
+  aload 18
+  iload 4
+  invokestatic android/app/PendingIntent/getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+  astore 19
+  aload 15
+  aload 19
+  putfield android/app/Notification/contentIntent Landroid/app/PendingIntent;
+  new android/widget/RemoteViews
+  astore 21
+  getstatic com/wiyun/ad/c/o I
+  istore 16
+  aload 21
+  astore 4
+  aload 4
+  aload 12
+  iload 16
+  invokespecial android/widget/RemoteViews/<init>(Ljava/lang/String;I)V
+  ldc "panel_event"
+  astore 14
+  ldc "id"
+  astore 22
+  aload 22
+  astore 4
+  aload 11
+  aload 14
+  aload 4
+  aload 12
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 16
+  bipush 8
+  istore 17
+  aload 21
+  astore 4
+  aload 4
+  iload 16
+  iload 17
+  invokevirtual android/widget/RemoteViews/setViewVisibility(II)V
+  ldc "panel_image"
+  astore 14
+  ldc "id"
+  astore 22
+  aload 22
+  astore 4
+  aload 11
+  aload 14
+  aload 4
+  aload 12
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 16
+  bipush 8
+  istore 17
+  aload 21
+  astore 4
+  aload 4
+  iload 16
+  iload 17
+  invokevirtual android/widget/RemoteViews/setViewVisibility(II)V
+  ldc "down_progress_bar"
+  astore 14
+  ldc "id"
+  astore 22
+  aload 22
+  astore 4
+  aload 11
+  aload 14
+  aload 4
+  aload 12
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 23
+  iconst_0
+  istore 17
+  iload 17
+  istore 24
+  aload 21
+  astore 4
+  iload 23
+  istore 5
+  iload_2
+  istore 6
+  iload_3
+  istore 7
+  iload 24
+  istore 8
+  aload 4
+  iload 5
+  iload 6
+  iload 7
+  iload 8
+  invokevirtual android/widget/RemoteViews/setProgressBar(IIIZ)V
+  ldc "down_title"
+  astore 14
+  ldc "id"
+  astore 22
+  aload 22
+  astore 4
+  aload 11
+  aload 14
+  aload 4
+  aload 12
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 23
+  aload 21
+  astore 4
+  iload 23
+  istore 5
+  aload_1
+  astore 6
+  aload 4
+  iload 5
+  aload 6
+  invokevirtual android/widget/RemoteViews/setTextViewText(ILjava/lang/CharSequence;)V
+  ldc "down_progress_info"
+  astore 14
+  ldc "id"
+  astore 22
+  aload 22
+  astore 4
+  aload 11
+  aload 14
+  aload 4
+  aload 12
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 23
+  iconst_3
+  istore 17
+  iload 17
+  anewarray java/lang/Object
+  astore 4
+  aload 4
+  astore 25
+  iload_3
+  istore 4
+  iload 4
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 26
+  iconst_0
+  istore 17
+  aload 25
+  iload 17
+  aload 26
+  aastore
+  iload_2
+  istore 4
+  iload 4
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 26
+  iconst_1
+  istore 17
+  aload 25
+  iload 17
+  aload 26
+  aastore
+  dload_2
+  dstore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  ifne Label0
+Label2:
+  iload 9
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 26
+  iconst_2
+  istore 17
+  aload 25
+  iload 17
+  aload 26
+  aastore
+  ldc "%d/%d (%d%%)"
+  astore 14
+  aload 25
+  astore 4
+  aload 14
+  aload 4
+  invokestatic java/lang/String/format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  astore 27
+  aload 21
+  astore 4
+  iload 23
+  istore 5
+  aload 27
+  astore 6
+  aload 4
+  iload 5
+  aload 6
+  invokevirtual android/widget/RemoteViews/setTextViewText(ILjava/lang/CharSequence;)V
+  getstatic com/wiyun/ad/c/b Ljava/util/Map;
+  astore 28
+  aload 28
+  astore 4
+  aload_0
+  astore 5
+  aload 4
+  aload 5
+  invokeinterface java/util/Map/get(Ljava/lang/Object;)Ljava/lang/Object; 2
+  astore 29
+  aload 29
+  astore 31
+  aload 31
+  checkcast android/graphics/Bitmap
+  astore 31
+  aload 31
+  astore 30
+  aload 30
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 30
+  ifnonnull Label1
+  ldc "image"
+  astore 14
+  ldc "id"
+  astore 22
+  aload 22
+  astore 4
+  aload 11
+  aload 14
+  aload 4
+  aload 12
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 23
+  ldc "icon"
+  astore 14
+  ldc "drawable"
+  astore 22
+  aload 22
+  astore 4
+  aload 11
+  aload 14
+  aload 4
+  aload 12
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 16
+  aload 21
+  astore 4
+  iload 23
+  istore 5
+  aload 4
+  iload 5
+  iload 16
+  invokevirtual android/widget/RemoteViews/setImageViewResource(II)V
+Label3:
+  aload 21
+  astore 4
+  aload 15
+  aload 4
+  putfield android/app/Notification/contentView Landroid/widget/RemoteViews;
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 10
+  ldc "notification"
+  astore 14
+  aload 10
+  aload 14
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 29
+  aload 29
+  astore 33
+  aload 33
+  checkcast android/app/NotificationManager
+  astore 33
+  aload 33
+  astore 32
+  aload_0
+  astore 4
+  aload 4
+  invokevirtual java/lang/String/hashCode()I
+  istore 23
+  aload 32
+  astore 4
+  iload 23
+  istore 5
+  aload 4
+  iload 5
+  aload 15
+  invokevirtual android/app/NotificationManager/notify(ILandroid/app/Notification;)V
+  return
+Label0:
+  iload_3
+  bipush 100
+  imul
+  istore 9
+  iload_2
+  istore 4
+  iload 9
+  iload 4
+  idiv
+  istore 9
+  goto Label2
+Label1:
+  ldc "image"
+  astore 14
+  ldc "id"
+  astore 22
+  aload 22
+  astore 4
+  aload 11
+  aload 14
+  aload 4
+  aload 12
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 23
+  aload 21
+  astore 4
+  iload 23
+  istore 5
+  aload 30
+  astore 6
+  aload 4
+  iload 5
+  aload 6
+  invokevirtual android/widget/RemoteViews/setImageViewBitmap(ILandroid/graphics/Bitmap;)V
+  goto Label3
+  nop
+.end <method>
+
+.method private static a(Ljava/lang/StringBuilder;)V
+.limit locals 8
+.limit stack 200
+  nop
+  invokestatic com/wiyun/ad/ab/h()Ljava/lang/String;
+  astore_1
+  ldc "device_id"
+  astore_2
+  aload_0
+  aload_2
+  aload_1
+  invokestatic com/wiyun/ad/c/a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  invokestatic com/wiyun/ad/ab/g()Ljava/lang/String;
+  astore_3
+  ldc "app_key"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  ldc "sdk_name"
+  astore_2
+  ldc "WiAd"
+  astore 4
+  aload_0
+  aload_2
+  aload 4
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  ldc "os"
+  astore_2
+  ldc "Android"
+  astore 4
+  aload_0
+  aload_2
+  aload 4
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  invokestatic com/wiyun/ad/ab/j()I
+  istore 5
+  iload 5
+  invokestatic java/lang/String/valueOf(I)Ljava/lang/String;
+  astore_3
+  ldc "os_version"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  invokestatic com/wiyun/ad/ab/o()D
+  dstore 6
+  dload 6
+  invokestatic java/lang/String/valueOf(D)Ljava/lang/String;
+  astore_3
+  ldc "lat"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  invokestatic com/wiyun/ad/ab/p()D
+  dstore 6
+  dload 6
+  invokestatic java/lang/String/valueOf(D)Ljava/lang/String;
+  astore_3
+  ldc "lon"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  invokestatic com/wiyun/ad/ab/d()Ljava/lang/String;
+  astore_3
+  ldc "brand"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  invokestatic com/wiyun/ad/ab/e()Ljava/lang/String;
+  astore_3
+  ldc "model"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  invokestatic com/wiyun/ad/ab/k()Ljava/lang/String;
+  astore_3
+  ldc "lan"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  invokestatic com/wiyun/ad/ab/l()Ljava/lang/String;
+  astore_3
+  ldc "country"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  invokestatic com/wiyun/ad/ab/f()I
+  istore 5
+  iload 5
+  invokestatic java/lang/String/valueOf(I)Ljava/lang/String;
+  astore_3
+  ldc "network"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  invokestatic com/wiyun/ad/ab/q()Ljava/lang/String;
+  astore_3
+  ldc "pkg"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  invokestatic com/wiyun/ad/ab/a()I
+  istore 5
+  iload 5
+  invokestatic java/lang/String/valueOf(I)Ljava/lang/String;
+  astore_3
+  ldc "screen_width"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  invokestatic com/wiyun/ad/ab/b()I
+  istore 5
+  iload 5
+  invokestatic java/lang/String/valueOf(I)Ljava/lang/String;
+  astore_3
+  ldc "screen_height"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  invokestatic com/wiyun/ad/ab/c()I
+  istore 5
+  iload 5
+  invokestatic java/lang/String/valueOf(I)Ljava/lang/String;
+  astore_3
+  ldc "screen_dpi"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method private static a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_2
+  invokevirtual java/lang/String/length()I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  ifle Label0
+  aload_0
+  invokevirtual java/lang/StringBuilder/length()I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  ifle Label1
+  bipush 63
+  istore 4
+  aload_0
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+Label1:
+  aload_0
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_0
+  ldc "="
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_0
+  ldc "UTF-8"
+  astore 5
+  aload_2
+  aload 5
+  invokestatic java/net/URLEncoder/encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+Label0:
+  return
+  nop
+.end <method>
+
+.method static a(Lcom/wiyun/ad/c$b;)Z
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokestatic com/wiyun/ad/c/b(Lcom/wiyun/ad/c$b;)Z
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static a(Ljava/lang/String;)Z
+.limit locals 7
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+Label2:
+  aload_3
+  aload_0
+  invokevirtual android/content/pm/PackageManager/getPackageGids(Ljava/lang/String;)[I
+  astore 4
+Label3:
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label0
+  iconst_1
+  istore_1
+Label0:
+  iload_1
+  ireturn
+Label1:
+  astore 5
+  iconst_0
+  istore 6
+  iload 6
+  ireturn
+  nop
+.end <method>
+
+.method static b()V
+.limit locals 14
+.limit stack 200
+  nop
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore_0
+  getstatic com/wiyun/ad/c/d Ljava/util/List;
+  astore_2
+  aload_2
+  invokeinterface java/util/List/size()I 1
+  istore_3
+  iload_3
+  iconst_m1
+  iadd
+  istore_3
+Label2:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifge Label0
+  return
+Label0:
+  getstatic com/wiyun/ad/c/d Ljava/util/List;
+  astore_2
+  aload_2
+  iload_3
+  invokeinterface java/util/List/get(I)Ljava/lang/Object; 2
+  astore 4
+  aload 4
+  astore 6
+  aload 6
+  checkcast com/wiyun/ad/c$a
+  astore 6
+  aload 6
+  astore 5
+  aload 5
+  getfield com/wiyun/ad/c$a/c J
+  lstore 7
+  lload_0
+  lload 7
+  lsub
+  lstore 9
+  ldc2_w 600000
+  lstore 12
+  lload 9
+  lload 12
+  lcmp
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 11
+  ifle Label1
+  getstatic com/wiyun/ad/c/d Ljava/util/List;
+  astore_2
+  aload_2
+  iload_3
+  invokeinterface java/util/List/remove(I)Ljava/lang/Object; 2
+  pop
+Label1:
+  iload_3
+  iconst_m1
+  iadd
+  istore_3
+  goto Label2
+  nop
+.end <method>
+
+.method private static b(J)V
+.limit locals 8
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/c/k Ljava/io/File;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  new java/io/File
+  astore_3
+  invokestatic android/os/Environment/getExternalStorageDirectory()Ljava/io/File;
+  astore_2
+  new java/lang/StringBuilder
+  astore 4
+  ldc ".wiyun/winotice/"
+  astore 5
+  aload 4
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  getstatic com/wiyun/ad/c/g Ljava/lang/String;
+  astore 6
+  aload 4
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload_3
+  aload_2
+  aload 6
+  invokespecial java/io/File/<init>(Ljava/io/File;Ljava/lang/String;)V
+  aload_3
+  putstatic com/wiyun/ad/c/k Ljava/io/File;
+Label0:
+  getstatic com/wiyun/ad/c/k Ljava/io/File;
+  astore_3
+  lload_0
+  invokestatic java/lang/String/valueOf(J)Ljava/lang/String;
+  astore 6
+  aload 6
+  invokestatic com/wiyun/ad/x/a(Ljava/lang/String;)[B
+  astore 7
+  aload_3
+  aload 7
+  invokestatic com/wiyun/ad/x/a(Ljava/io/File;[B)Z
+  pop
+  return
+  nop
+.end <method>
+
+.method static b(Landroid/content/Intent;)V
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokestatic com/wiyun/ad/c/c(Landroid/content/Intent;)V
+  return
+  nop
+.end <method>
+
+.method static b(Ljava/lang/String;)V
+.limit locals 8
+.limit stack 200
+  nop
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore_1
+  ldc "notification"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  astore 5
+  aload 5
+  checkcast android/app/NotificationManager
+  astore 5
+  aload 5
+  astore 4
+  aload_0
+  invokevirtual java/lang/String/hashCode()I
+  istore 6
+  aload 4
+  iload 6
+  invokevirtual android/app/NotificationManager/cancel(I)V
+  getstatic com/wiyun/ad/c/c Ljava/util/Map;
+  astore 7
+  aload 7
+  aload_0
+  invokeinterface java/util/Map/remove(Ljava/lang/Object;)Ljava/lang/Object; 2
+  pop
+  return
+  nop
+.end <method>
+
+.method private static b(Ljava/lang/String;Landroid/content/Intent;)V
+.limit locals 8
+.limit stack 200
+  nop
+  ldc "notice_id"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label0
+  aload_0
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label0
+  aload_0
+  invokestatic com/wiyun/ad/g/b(Ljava/lang/String;)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label0
+  aload_2
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/String;)V
+  getstatic com/wiyun/ad/c/b Ljava/util/Map;
+  astore 5
+  aload 5
+  aload_2
+  invokeinterface java/util/Map/remove(Ljava/lang/Object;)Ljava/lang/Object; 2
+  pop
+  ldc "installed"
+  astore_3
+  ldc ""
+  astore 6
+  aload_3
+  aload 6
+  invokestatic com/wiyun/ad/c/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload_1
+  invokevirtual android/content/Intent/getAction()Ljava/lang/String;
+  astore 7
+  ldc "com.wiyun.hsup.DOWNLOAD_OR_FORWARD"
+  astore_2
+  aload_2
+  aload 7
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label1
+  aload_1
+  invokestatic com/wiyun/ad/c/f(Landroid/content/Intent;)V
+Label0:
+  return
+Label1:
+  aload_0
+  invokestatic com/wiyun/ad/c/c(Ljava/lang/String;)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label0
+  aload_0
+  invokestatic com/wiyun/ad/g/d(Ljava/lang/String;)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label0
+  ldc "launched"
+  astore_3
+  aload_3
+  aload_0
+  invokestatic com/wiyun/ad/c/a(Ljava/lang/String;Ljava/lang/String;)V
+  goto Label0
+  nop
+.end <method>
+
+.method private static b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_2
+  invokevirtual java/lang/String/length()I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  ifle Label0
+  aload_0
+  invokevirtual java/lang/StringBuilder/length()I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  ifle Label1
+  bipush 38
+  istore 4
+  aload_0
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+Label1:
+  aload_0
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_0
+  ldc "="
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_0
+  ldc "UTF-8"
+  astore 5
+  aload_2
+  aload 5
+  invokestatic java/net/URLEncoder/encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+Label0:
+  return
+  nop
+.end <method>
+
+.method private static b(Lcom/wiyun/ad/c$b;)Z
+.limit locals 47
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+Label4:
+  iconst_0
+  istore 4
+  iload 4
+  ireturn
+Label0:
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 5
+  aload 5
+  invokevirtual android/content/Context/getResources()Landroid/content/res/Resources;
+  astore 6
+  invokestatic com/wiyun/ad/ab/q()Ljava/lang/String;
+  astore 7
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/k Ljava/lang/String;
+  astore 8
+  ldc "ACTION_"
+  astore 10
+  aload 8
+  aload 10
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label1
+  ldc android/content/Intent
+  astore 11
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/k Ljava/lang/String;
+  astore 12
+  aload 11
+  aload 12
+  invokevirtual java/lang/Class/getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+  astore 13
+  aconst_null
+  astore 15
+  aload 13
+  aload 15
+  invokevirtual java/lang/reflect/Field/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 14
+  aload 14
+  astore 16
+  aload 16
+  checkcast java/lang/String
+  astore 16
+  aload 16
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  aload 8
+  putfield com/wiyun/ad/c$b/k Ljava/lang/String;
+Label1:
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifne Label2
+  ldc "com.wiyun.hsup.DOWNLOAD_APP"
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/k Ljava/lang/String;
+  astore 12
+  aload 8
+  aload 12
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifeq Label3
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  astore 18
+  aload 18
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 18
+  ifnull Label4
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  astore 18
+  ldc "app_pkg"
+  astore 10
+  aload 18
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  astore 18
+  ldc "app_url"
+  astore 10
+  aload 18
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 12
+  aload 8
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label4
+  aload 12
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label4
+  aload 8
+  invokestatic com/wiyun/ad/c/a(Ljava/lang/String;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifeq Label2
+  aload 8
+  invokestatic com/wiyun/ad/g/b(Ljava/lang/String;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifeq Label4
+Label2:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/l Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label5
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/l Ljava/lang/String;
+  astore 8
+  ldc "CATEGORY_"
+  astore 10
+  aload 8
+  aload 10
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifeq Label5
+  ldc android/content/Intent
+  astore 11
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/l Ljava/lang/String;
+  astore 8
+  aload 11
+  aload 8
+  invokevirtual java/lang/Class/getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+  astore 13
+  aconst_null
+  astore 15
+  aload 13
+  aload 15
+  invokevirtual java/lang/reflect/Field/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 14
+  aload 14
+  astore 19
+  aload 19
+  checkcast java/lang/String
+  astore 19
+  aload 19
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  aload 8
+  putfield com/wiyun/ad/c$b/l Ljava/lang/String;
+Label5:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/h Z
+  istore_1
+  iload_1
+  istore 17
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifeq Label6
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/j Landroid/graphics/Bitmap;
+  astore_1
+  aload_1
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 20
+  ifnull Label4
+Label6:
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label7
+  new android/content/Intent
+  astore 21
+  ldc "com.wiyun.hsup.FORWARD_INTENT"
+  astore 10
+  aload 21
+  astore_1
+  aload_1
+  aload 10
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/k Ljava/lang/String;
+  astore 12
+  ldc "intent_action"
+  astore 10
+  aload 21
+  astore_1
+  aload_1
+  aload 10
+  aload 12
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/l Ljava/lang/String;
+  astore 12
+  ldc "intent_category"
+  astore 10
+  aload 21
+  astore_1
+  aload_1
+  aload 10
+  aload 12
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/m Ljava/lang/String;
+  astore 12
+  ldc "intent_package"
+  astore 10
+  aload 21
+  astore_1
+  aload_1
+  aload 10
+  aload 12
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/n Ljava/lang/String;
+  astore 12
+  ldc "intent_class"
+  astore 10
+  aload 21
+  astore_1
+  aload_1
+  aload 10
+  aload 12
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  astore 18
+  aload 18
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 18
+  ifnonnull Label8
+  ldc ""
+  astore 12
+Label14:
+  ldc "intent_extra"
+  astore 10
+  aload 21
+  astore_1
+  aload_1
+  aload 10
+  aload 12
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/p Ljava/lang/String;
+  astore 12
+  ldc "data_uri"
+  astore 10
+  aload 21
+  astore_1
+  aload_1
+  aload 10
+  aload 12
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/q Ljava/lang/String;
+  astore 12
+  ldc "data_type"
+  astore 10
+  aload 21
+  astore_1
+  aload_1
+  aload 10
+  aload 12
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label33:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/a Ljava/lang/String;
+  astore 12
+  ldc "notice_id"
+  astore 10
+  aload 21
+  astore_1
+  aload_1
+  aload 10
+  aload 12
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  ldc "WiAd"
+  astore 10
+  aload 21
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual android/content/Intent/addCategory(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  ldc 1073741824
+  istore 4
+  aload 21
+  astore_1
+  aload_1
+  iload 4
+  invokevirtual android/content/Intent/addFlags(I)Landroid/content/Intent;
+  pop
+  aload 21
+  astore_1
+  aload_1
+  aload 7
+  invokevirtual android/content/Intent/setPackage(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  new java/util/ArrayList
+  astore 22
+  getstatic com/wiyun/ad/c/c Ljava/util/Map;
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokeinterface java/util/Map/keySet()Ljava/util/Set; 1
+  astore 24
+  aload 22
+  astore_1
+  aload 24
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/util/ArrayList/<init>(Ljava/util/Collection;)V
+  aload 22
+  astore_1
+  aload_1
+  invokeinterface java/util/List/iterator()Ljava/util/Iterator; 1
+  astore 25
+Label36:
+  aload 25
+  astore_1
+  aload_1
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label9
+  new android/app/Notification
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  invokespecial android/app/Notification/<init>()V
+  ldc android/R$drawable
+  astore 11
+Label42:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/b Ljava/lang/String;
+  astore 8
+  aload 11
+  aload 8
+  invokevirtual java/lang/Class/getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+  astore 13
+  aconst_null
+  astore 15
+  aload 13
+  aload 15
+  invokevirtual java/lang/reflect/Field/getInt(Ljava/lang/Object;)I
+  istore 27
+Label43:
+  iload 27
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 27
+  ifne Label10
+  ldc "icon"
+  astore 10
+  ldc "drawable"
+  astore 28
+  aload 28
+  astore_1
+  aload 6
+  aload 10
+  aload_1
+  aload 7
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 27
+Label10:
+  iload 27
+  istore_1
+  aload 26
+  astore_2
+  aload_2
+  iload_1
+  putfield android/app/Notification/icon I
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/d Ljava/lang/String;
+  astore 8
+  aload 26
+  astore_1
+  aload_1
+  aload 8
+  putfield android/app/Notification/tickerText Ljava/lang/CharSequence;
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 5
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 29
+  lload 29
+  lstore_1
+  lload_1
+  l2i
+  istore_1
+  iload_1
+  istore 27
+  iconst_0
+  istore 4
+  iload 27
+  istore_1
+  aload 21
+  astore_2
+  aload 5
+  iload_1
+  aload_2
+  iload 4
+  invokestatic android/app/PendingIntent/getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+  astore 31
+  aload 31
+  astore_1
+  aload 26
+  astore_2
+  aload_2
+  aload_1
+  putfield android/app/Notification/contentIntent Landroid/app/PendingIntent;
+  new android/widget/RemoteViews
+  astore 32
+  getstatic com/wiyun/ad/c/o I
+  istore 27
+  aload 32
+  astore_1
+  iload 27
+  istore_2
+  aload_1
+  aload 7
+  iload_2
+  invokespecial android/widget/RemoteViews/<init>(Ljava/lang/String;I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/h Z
+  istore_1
+  iload_1
+  istore 17
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifeq Label11
+  ldc "panel_download"
+  astore 10
+  ldc "id"
+  astore 28
+  aload 28
+  astore_1
+  aload 6
+  aload 10
+  aload_1
+  aload 7
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 27
+  bipush 8
+  istore 4
+  aload 32
+  astore_1
+  iload 27
+  istore_2
+  aload_1
+  iload_2
+  iload 4
+  invokevirtual android/widget/RemoteViews/setViewVisibility(II)V
+  ldc "panel_event"
+  astore 10
+  ldc "id"
+  astore 28
+  aload 28
+  astore_1
+  aload 6
+  aload 10
+  aload_1
+  aload 7
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 27
+  bipush 8
+  istore 4
+  aload 32
+  astore_1
+  iload 27
+  istore_2
+  aload_1
+  iload_2
+  iload 4
+  invokevirtual android/widget/RemoteViews/setViewVisibility(II)V
+  ldc "image"
+  astore 10
+  ldc "id"
+  astore 28
+  aload 28
+  astore_1
+  aload 6
+  aload 10
+  aload_1
+  aload 7
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 27
+  bipush 8
+  istore 4
+  aload 32
+  astore_1
+  iload 27
+  istore_2
+  aload_1
+  iload_2
+  iload 4
+  invokevirtual android/widget/RemoteViews/setViewVisibility(II)V
+  ldc "banner"
+  astore 10
+  ldc "id"
+  astore 28
+  aload 28
+  astore_1
+  aload 6
+  aload 10
+  aload_1
+  aload 7
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 27
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/j Landroid/graphics/Bitmap;
+  astore_1
+  aload_1
+  astore 20
+  aload 32
+  astore_1
+  iload 27
+  istore_2
+  aload 20
+  astore_3
+  aload_1
+  iload_2
+  aload_3
+  invokevirtual android/widget/RemoteViews/setImageViewBitmap(ILandroid/graphics/Bitmap;)V
+Label39:
+  aload 32
+  astore_1
+  aload 26
+  astore_2
+  aload_2
+  aload_1
+  putfield android/app/Notification/contentView Landroid/widget/RemoteViews;
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 5
+  ldc "notification"
+  astore 10
+  aload 5
+  aload 10
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 14
+  aload 14
+  astore 34
+  aload 34
+  checkcast android/app/NotificationManager
+  astore 34
+  aload 34
+  astore 33
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/a Ljava/lang/String;
+  astore 8
+  aload 8
+  invokevirtual java/lang/String/hashCode()I
+  istore 27
+  aload 33
+  astore_1
+  iload 27
+  istore_2
+  aload 26
+  astore_3
+  aload_1
+  iload_2
+  aload_3
+  invokevirtual android/app/NotificationManager/notify(ILandroid/app/Notification;)V
+  getstatic com/wiyun/ad/c/c Ljava/util/Map;
+  astore 23
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/a Ljava/lang/String;
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/i Z
+  istore_1
+  iload_1
+  istore 17
+  iload_1
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore 35
+  aload 23
+  astore_1
+  aload 35
+  astore_2
+  aload_1
+  aload 8
+  aload_2
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  ldc "shown"
+  astore 10
+  ldc ""
+  astore 28
+  aload 28
+  astore_1
+  aload 10
+  aload_1
+  invokestatic com/wiyun/ad/c/a(Ljava/lang/String;Ljava/lang/String;)V
+  iconst_1
+  istore 4
+  iload 4
+  ireturn
+Label3:
+  ldc "com.wiyun.hsup.INSTALL_SHORTCUT"
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/k Ljava/lang/String;
+  astore 12
+  aload 8
+  aload 12
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifeq Label12
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 5
+  ldc "com.android.launcher.permission.INSTALL_SHORTCUT"
+  astore 10
+  aload 5
+  aload 10
+  invokevirtual android/content/Context/checkCallingOrSelfPermission(Ljava/lang/String;)I
+  istore 27
+  iload 27
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 27
+  ifeq Label2
+  iconst_0
+  istore 4
+  iload 4
+  ireturn
+Label12:
+  ldc "com.wiyun.hsup.DOWNLOAD_OR_FORWARD"
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/k Ljava/lang/String;
+  astore 12
+  aload 8
+  aload 12
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifeq Label13
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  astore 18
+  aload 18
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 18
+  ifnonnull Label2
+  iconst_0
+  istore 4
+  iload 4
+  ireturn
+Label13:
+  ldc "com.wiyun.hsup.SHOW_MINISITE"
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/k Ljava/lang/String;
+  astore 12
+  aload 8
+  aload 12
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifeq Label2
+  invokestatic com/wiyun/ad/ab/n()Landroid/app/Activity;
+  astore 36
+  aload 36
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 36
+  ifnonnull Label2
+  iconst_0
+  istore 4
+  iload 4
+  ireturn
+Label8:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  astore 18
+  aload 18
+  astore_1
+  aload_1
+  invokevirtual org/json/JSONObject/toString()Ljava/lang/String;
+  astore 12
+  goto Label14
+Label7:
+  ldc "com.wiyun.hsup.INSTALL_SHORTCUT"
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/k Ljava/lang/String;
+  astore 12
+  aload 8
+  aload 12
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifeq Label15
+  new android/content/Intent
+  astore 21
+  ldc "com.android.launcher.action.INSTALL_SHORTCUT"
+  astore 10
+  aload 21
+  astore_1
+  aload_1
+  aload 10
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/d Ljava/lang/String;
+  astore 7
+  ldc "android.intent.extra.shortcut.NAME"
+  astore 10
+  aload 21
+  astore_1
+  aload_1
+  aload 10
+  aload 7
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/j Landroid/graphics/Bitmap;
+  astore_1
+  aload_1
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 20
+  ifnull Label16
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/j Landroid/graphics/Bitmap;
+  astore_1
+  aload_1
+  astore 20
+  ldc "android.intent.extra.shortcut.ICON"
+  astore 10
+  aload 21
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload 10
+  aload_2
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+  pop
+Label16:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  astore 18
+  aload 18
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 18
+  ifnull Label17
+  new android/content/Intent
+  astore 37
+  aload 37
+  astore_1
+  aload_1
+  invokespecial android/content/Intent/<init>()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  astore 18
+  ldc "shortcut_action"
+  astore 10
+  aload 18
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label18
+  ldc "ACTION_"
+  astore 10
+  aload 8
+  aload 10
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifeq Label19
+  ldc android/content/Intent
+  astore 11
+  aload 11
+  aload 8
+  invokevirtual java/lang/Class/getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+  astore 13
+  aconst_null
+  astore 15
+  aload 13
+  aload 15
+  invokevirtual java/lang/reflect/Field/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 14
+  aload 14
+  astore 38
+  aload 38
+  checkcast java/lang/String
+  astore 38
+  aload 38
+  astore 8
+Label19:
+  aload 37
+  astore_1
+  aload_1
+  aload 8
+  invokevirtual android/content/Intent/setAction(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label18:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  astore 18
+  ldc "shortcut_category"
+  astore 10
+  aload 18
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label20
+  ldc "CATEGORY_"
+  astore 10
+  aload 8
+  aload 10
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifeq Label21
+  ldc android/content/Intent
+  astore 11
+  aload 11
+  aload 8
+  invokevirtual java/lang/Class/getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+  astore 13
+  aconst_null
+  astore 15
+  aload 13
+  aload 15
+  invokevirtual java/lang/reflect/Field/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 14
+  aload 14
+  astore 39
+  aload 39
+  checkcast java/lang/String
+  astore 39
+  aload 39
+  astore 8
+Label21:
+  aload 37
+  astore_1
+  aload_1
+  aload 8
+  invokevirtual android/content/Intent/addCategory(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label20:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  astore 18
+  ldc "shortcut_package"
+  astore 10
+  aload 18
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label22
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  astore 18
+  ldc "shortcut_class"
+  astore 10
+  aload 18
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label23
+  aload 37
+  astore_1
+  aload_1
+  aload 8
+  aload 7
+  invokevirtual android/content/Intent/setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label22:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  astore 18
+  ldc "shortcut_uri"
+  astore 10
+  aload 18
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label24
+  aload 8
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 40
+  aload 37
+  astore_1
+  aload 40
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Intent/setData(Landroid/net/Uri;)Landroid/content/Intent;
+  pop
+Label24:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  astore 18
+  ldc "shortcut_type"
+  astore 10
+  aload 18
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label25
+  aload 37
+  astore_1
+  aload_1
+  aload 8
+  invokevirtual android/content/Intent/setType(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label25:
+  ldc "android.intent.extra.shortcut.INTENT"
+  astore 10
+  aload 21
+  astore_1
+  aload 37
+  astore_2
+  aload_1
+  aload 10
+  aload_2
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+  pop
+Label17:
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 5
+  aload 21
+  astore_1
+  aload 5
+  aload_1
+  invokevirtual android/content/Context/sendBroadcast(Landroid/content/Intent;)V
+  ldc "installed"
+  astore 10
+  ldc ""
+  astore 28
+  aload 28
+  astore_1
+  aload 10
+  aload_1
+  invokestatic com/wiyun/ad/c/a(Ljava/lang/String;Ljava/lang/String;)V
+  iconst_1
+  istore 4
+  iload 4
+  ireturn
+Label23:
+  aload 37
+  astore_1
+  aload_1
+  aload 8
+  invokevirtual android/content/Intent/setPackage(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  goto Label22
+Label15:
+  new android/content/Intent
+  astore 37
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/k Ljava/lang/String;
+  astore 8
+  aload 37
+  astore_1
+  aload_1
+  aload 8
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/l Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label26
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/l Ljava/lang/String;
+  astore 8
+  aload 37
+  astore_1
+  aload_1
+  aload 8
+  invokevirtual android/content/Intent/addCategory(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label26:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/m Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifeq Label27
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/n Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label28
+Label27:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/m Ljava/lang/String;
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/n Ljava/lang/String;
+  astore 12
+  aload 37
+  astore_1
+  aload_1
+  aload 8
+  aload 12
+  invokevirtual android/content/Intent/setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label34:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  astore 18
+  aload 18
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 18
+  ifnull Label29
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  astore 18
+  aload 18
+  astore_1
+  aload_1
+  invokevirtual org/json/JSONObject/keys()Ljava/util/Iterator;
+  astore 25
+Label35:
+  aload 25
+  astore_1
+  aload_1
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label30
+Label29:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/p Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label31
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/p Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 40
+  aload 37
+  astore_1
+  aload 40
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Intent/setData(Landroid/net/Uri;)Landroid/content/Intent;
+  pop
+Label31:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/q Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label32
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/q Ljava/lang/String;
+  astore 8
+  aload 37
+  astore_1
+  aload_1
+  aload 8
+  invokevirtual android/content/Intent/setType(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label32:
+  aload 37
+  astore 21
+  goto Label33
+Label28:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/m Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label34
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/m Ljava/lang/String;
+  astore 8
+  aload 37
+  astore_1
+  aload_1
+  aload 8
+  invokevirtual android/content/Intent/setPackage(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  goto Label34
+Label30:
+  aload 25
+  astore_1
+  aload_1
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 14
+  aload 14
+  astore 41
+  aload 41
+  checkcast java/lang/String
+  astore 41
+  aload 41
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/o Lorg/json/JSONObject;
+  astore_1
+  aload_1
+  astore 18
+  aload 18
+  astore_1
+  aload_1
+  aload 8
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 12
+  aload 12
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label35
+  aload 37
+  astore_1
+  aload_1
+  aload 8
+  aload 12
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  goto Label35
+Label9:
+  aload 25
+  astore_1
+  aload_1
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 14
+  aload 14
+  astore 42
+  aload 42
+  checkcast java/lang/String
+  astore 42
+  aload 42
+  astore 8
+  getstatic com/wiyun/ad/c/c Ljava/util/Map;
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  aload 8
+  invokeinterface java/util/Map/get(Ljava/lang/Object;)Ljava/lang/Object; 2
+  astore 14
+  aload 14
+  astore 43
+  aload 43
+  checkcast java/lang/Boolean
+  astore 43
+  aload 43
+  astore 35
+  aload 35
+  astore_1
+  aload_1
+  invokevirtual java/lang/Boolean/booleanValue()Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifeq Label36
+  aload 8
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/String;)V
+  goto Label36
+Label41:
+  astore 44
+  ldc "icon"
+  astore 10
+  ldc "drawable"
+  astore 28
+  aload 28
+  astore_1
+  aload 6
+  aload 10
+  aload_1
+  aload 7
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 27
+  goto Label10
+Label40:
+  astore 45
+  ldc "icon"
+  astore 10
+  ldc "drawable"
+  astore 28
+  aload 28
+  astore_1
+  aload 6
+  aload 10
+  aload_1
+  aload 7
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aload 45
+  athrow
+Label11:
+  ldc "panel_download"
+  astore 10
+  ldc "id"
+  astore 28
+  aload 28
+  astore_1
+  aload 6
+  aload 10
+  aload_1
+  aload 7
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 27
+  bipush 8
+  istore 4
+  aload 32
+  astore_1
+  iload 27
+  istore_2
+  aload_1
+  iload_2
+  iload 4
+  invokevirtual android/widget/RemoteViews/setViewVisibility(II)V
+  ldc "panel_image"
+  astore 10
+  ldc "id"
+  astore 28
+  aload 28
+  astore_1
+  aload 6
+  aload 10
+  aload_1
+  aload 7
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 27
+  bipush 8
+  istore 4
+  aload 32
+  astore_1
+  iload 27
+  istore_2
+  aload_1
+  iload_2
+  iload 4
+  invokevirtual android/widget/RemoteViews/setViewVisibility(II)V
+  ldc "event_title"
+  astore 10
+  ldc "id"
+  astore 28
+  aload 28
+  astore_1
+  aload 6
+  aload 10
+  aload_1
+  aload 7
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 27
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/d Ljava/lang/String;
+  astore 8
+  aload 32
+  astore_1
+  iload 27
+  istore_2
+  aload_1
+  iload_2
+  aload 8
+  invokevirtual android/widget/RemoteViews/setTextViewText(ILjava/lang/CharSequence;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/e Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label37
+  ldc "event_info"
+  astore 10
+  ldc "id"
+  astore 28
+  aload 28
+  astore_1
+  aload 6
+  aload 10
+  aload_1
+  aload 7
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 27
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/e Ljava/lang/String;
+  astore 8
+  aload 32
+  astore_1
+  iload 27
+  istore_2
+  aload_1
+  iload_2
+  aload 8
+  invokevirtual android/widget/RemoteViews/setTextViewText(ILjava/lang/CharSequence;)V
+Label37:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/j Landroid/graphics/Bitmap;
+  astore_1
+  aload_1
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 20
+  ifnull Label38
+  ldc "image"
+  astore 10
+  ldc "id"
+  astore 28
+  aload 28
+  astore_1
+  aload 6
+  aload 10
+  aload_1
+  aload 7
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 27
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$b/j Landroid/graphics/Bitmap;
+  astore_1
+  aload_1
+  astore 20
+  aload 32
+  astore_1
+  iload 27
+  istore_2
+  aload 20
+  astore_3
+  aload_1
+  iload_2
+  aload_3
+  invokevirtual android/widget/RemoteViews/setImageViewBitmap(ILandroid/graphics/Bitmap;)V
+  goto Label39
+Label38:
+  ldc "image"
+  astore 10
+  ldc "id"
+  astore 28
+  aload 28
+  astore_1
+  aload 6
+  aload 10
+  aload_1
+  aload 7
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 27
+  ldc "icon"
+  astore 10
+  ldc "drawable"
+  astore 28
+  aload 28
+  astore_1
+  aload 6
+  aload 10
+  aload_1
+  aload 7
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore 46
+  aload 32
+  astore_1
+  iload 27
+  istore_2
+  iload 46
+  istore_3
+  aload_1
+  iload_2
+  iload_3
+  invokevirtual android/widget/RemoteViews/setImageViewResource(II)V
+  goto Label39
+  nop
+.end <method>
+
+.method static b(Lorg/apache/http/HttpEntity;)[B
+.limit locals 8
+.limit stack 200
+  .catch  java/lang/Exception <from> Label3 <to> Label4 <using> Label2
+  nop
+  iconst_0
+  istore_1
+  new java/io/ByteArrayOutputStream
+  astore_2
+Label3:
+  aload_2
+  invokespecial java/io/ByteArrayOutputStream/<init>()V
+  sipush 2048
+  istore 4
+  iload 4
+  newarray byte
+  astore_3
+  new java/lang/NoSuchMethodError
+  dup
+  invokespecial java/lang/NoSuchMethodError/<init>()V
+  athrow
+  nop
+Label1:
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 4
+  iload_1
+  iload 4
+  if_icmpne Label0
+  aload_2
+  invokevirtual java/io/ByteArrayOutputStream/toByteArray()[B
+  astore_3
+  aload_3
+  areturn
+Label0:
+  iconst_0
+  istore 4
+  aload_2
+  aload_3
+  iload 4
+  iload_1
+  invokevirtual java/io/ByteArrayOutputStream/write([BII)V
+  aload 5
+  aload_3
+  invokevirtual java/io/InputStream/read([B)I
+  istore_1
+Label4:
+  goto Label1
+Label2:
+  astore 6
+  aconst_null
+  astore 7
+  aload 7
+  areturn
+  nop
+.end <method>
+
+.method static c()Lorg/apache/http/impl/client/DefaultHttpClient;
+.limit locals 15
+.limit stack 200
+  nop
+  sipush 30000
+  istore_0
+  invokestatic com/wiyun/ad/c/d()Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_2
+  invokespecial org/apache/http/conn/scheme/SchemeRegistry/<init>()V
+  new org/apache/http/conn/scheme/Scheme
+  astore_3
+  invokestatic org/apache/http/conn/scheme/PlainSocketFactory/getSocketFactory()Lorg/apache/http/conn/scheme/PlainSocketFactory;
+  astore 4
+  ldc "http"
+  astore 5
+  bipush 80
+  istore 6
+  aload_3
+  aload 5
+  aload 4
+  iload 6
+  invokespecial org/apache/http/conn/scheme/Scheme/<init>(Ljava/lang/String;Lorg/apache/http/conn/scheme/SocketFactory;I)V
+  aload_2
+  aload_3
+  invokevirtual org/apache/http/conn/scheme/SchemeRegistry/register(Lorg/apache/http/conn/scheme/Scheme;)Lorg/apache/http/conn/scheme/Scheme;
+  pop
+  new org/apache/http/params/BasicHttpParams
+  astore 7
+  aload 7
+  invokespecial org/apache/http/params/BasicHttpParams/<init>()V
+  getstatic org/apache/http/HttpVersion/HTTP_1_1 Lorg/apache/http/HttpVersion;
+  astore 8
+  aload 7
+  aload 8
+  invokestatic org/apache/http/params/HttpProtocolParams/setVersion(Lorg/apache/http/params/HttpParams;Lorg/apache/http/ProtocolVersion;)V
+  ldc "UTF-8"
+  astore 5
+  aload 7
+  aload 5
+  invokestatic org/apache/http/params/HttpProtocolParams/setContentCharset(Lorg/apache/http/params/HttpParams;Ljava/lang/String;)V
+  iconst_0
+  istore 6
+  aload 7
+  iload 6
+  invokestatic org/apache/http/params/HttpProtocolParams/setUseExpectContinue(Lorg/apache/http/params/HttpParams;Z)V
+  ldc "compatibility"
+  astore 5
+  aload 7
+  aload 5
+  invokestatic org/apache/http/client/params/HttpClientParams/setCookiePolicy(Lorg/apache/http/params/HttpParams;Ljava/lang/String;)V
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label0
+  sipush 30000
+  istore 9
+Label3:
+  aload 7
+  iload 9
+  invokestatic org/apache/http/params/HttpConnectionParams/setConnectionTimeout(Lorg/apache/http/params/HttpParams;I)V
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label1
+Label4:
+  aload 7
+  iload_0
+  invokestatic org/apache/http/params/HttpConnectionParams/setSoTimeout(Lorg/apache/http/params/HttpParams;I)V
+  new org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager
+  astore 10
+  aload 10
+  aload 7
+  aload_2
+  invokespecial org/apache/http/impl/conn/tsccm/ThreadSafeClientConnManager/<init>(Lorg/apache/http/params/HttpParams;Lorg/apache/http/conn/scheme/SchemeRegistry;)V
+  new org/apache/http/impl/client/DefaultHttpClient
+  astore 11
+  aload 11
+  aload 10
+  aload 7
+  invokespecial org/apache/http/impl/client/DefaultHttpClient/<init>(Lorg/apache/http/conn/ClientConnectionManager;Lorg/apache/http/params/HttpParams;)V
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label2
+  invokestatic com/wiyun/ad/c/e()Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifeq Label2
+  invokestatic com/wiyun/ad/c/f()Lorg/apache/http/HttpHost;
+  astore 13
+  aload 13
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 13
+  ifnull Label2
+  aload 11
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/getParams()Lorg/apache/http/params/HttpParams;
+  astore 14
+  ldc "http.route.default-proxy"
+  astore 5
+  aload 14
+  aload 5
+  aload 13
+  invokeinterface org/apache/http/params/HttpParams/setParameter(Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/http/params/HttpParams; 3
+  pop
+Label2:
+  aload 11
+  areturn
+Label0:
+  ldc 90000
+  istore 9
+  goto Label3
+Label1:
+  ldc 90000
+  istore_0
+  goto Label4
+  nop
+.end <method>
+
+.method private static c(J)V
+.limit locals 8
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/c/l Ljava/io/File;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  new java/io/File
+  astore_3
+  invokestatic android/os/Environment/getExternalStorageDirectory()Ljava/io/File;
+  astore_2
+  new java/lang/StringBuilder
+  astore 4
+  ldc ".wiyun/winotice/"
+  astore 5
+  aload 4
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  getstatic com/wiyun/ad/c/h Ljava/lang/String;
+  astore 6
+  aload 4
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload_3
+  aload_2
+  aload 6
+  invokespecial java/io/File/<init>(Ljava/io/File;Ljava/lang/String;)V
+  aload_3
+  putstatic com/wiyun/ad/c/l Ljava/io/File;
+Label0:
+  getstatic com/wiyun/ad/c/l Ljava/io/File;
+  astore_3
+  lload_0
+  invokestatic java/lang/String/valueOf(J)Ljava/lang/String;
+  astore 6
+  aload 6
+  invokestatic com/wiyun/ad/x/a(Ljava/lang/String;)[B
+  astore 7
+  aload_3
+  aload 7
+  invokestatic com/wiyun/ad/x/a(Ljava/io/File;[B)Z
+  pop
+  return
+  nop
+.end <method>
+
+.method private static c(Landroid/content/Intent;)V
+.limit locals 14
+.limit stack 200
+  nop
+  invokestatic com/wiyun/ad/ab/n()Landroid/app/Activity;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+Label1:
+  return
+Label0:
+  ldc "window"
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual android/app/Activity/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore_2
+  aload_2
+  astore 5
+  aload 5
+  checkcast android/view/WindowManager
+  astore 5
+  aload 5
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label1
+Label3:
+  aload 4
+  aload_1
+  aload_0
+  invokestatic com/wiyun/ad/c/a(Landroid/view/WindowManager;Landroid/content/Context;Landroid/content/Intent;)Landroid/view/View;
+  astore 6
+  new android/view/WindowManager$LayoutParams
+  astore 7
+  iconst_m1
+  istore 8
+  iconst_m1
+  istore 9
+  iconst_2
+  istore 10
+  iconst_0
+  istore 11
+  bipush -3
+  istore 12
+  aload 7
+  iload 8
+  iload 9
+  iload 10
+  iload 11
+  iload 12
+  invokespecial android/view/WindowManager$LayoutParams/<init>(IIIII)V
+  aload 4
+  aload 6
+  aload 7
+  invokeinterface android/view/WindowManager/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V 3
+Label4:
+  goto Label1
+Label2:
+  astore 13
+  goto Label1
+  nop
+.end <method>
+
+.method static c(Ljava/lang/String;)Z
+.limit locals 15
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  ldc "android.intent.action.MAIN"
+  astore_2
+  aload_1
+  aload_2
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;)V
+  ldc "android.intent.category.LAUNCHER"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Intent/addCategory(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload_1
+  aload_0
+  invokevirtual android/content/Intent/setPackage(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore_3
+  aload_3
+  invokevirtual android/content/Context/getPackageManager()Landroid/content/pm/PackageManager;
+  astore 4
+  iconst_0
+  istore 6
+  iload 6
+  istore 5
+  aload 4
+  aload_1
+  iload 5
+  invokevirtual android/content/pm/PackageManager/queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
+  astore 7
+  aload 7
+  invokeinterface java/util/List/isEmpty()Z 1
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifne Label0
+Label2:
+  iconst_0
+  istore 6
+  aload 7
+  iload 6
+  invokeinterface java/util/List/get(I)Ljava/lang/Object; 2
+  astore 9
+  aload 9
+  astore 11
+  aload 11
+  checkcast android/content/pm/ResolveInfo
+  astore 11
+  aload 11
+  astore 10
+  new android/content/Intent
+  astore_1
+  ldc "android.intent.action.MAIN"
+  astore_2
+  aload_1
+  aload_2
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;)V
+  ldc "android.intent.category.LAUNCHER"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Intent/addCategory(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload 10
+  getfield android/content/pm/ResolveInfo/activityInfo Landroid/content/pm/ActivityInfo;
+  astore 12
+  aload 12
+  getfield android/content/pm/PackageItemInfo/name Ljava/lang/String;
+  astore 13
+  aload_1
+  aload_0
+  aload 13
+  invokevirtual android/content/Intent/setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  ldc 268435456
+  istore 6
+  aload_1
+  iload 6
+  invokevirtual android/content/Intent/addFlags(I)Landroid/content/Intent;
+  pop
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore_3
+  aload_3
+  aload_1
+  invokevirtual android/content/Context/startActivity(Landroid/content/Intent;)V
+Label3:
+  iconst_1
+  istore 6
+  iload 6
+  ireturn
+Label1:
+  astore 14
+Label0:
+  iconst_0
+  istore 6
+  iload 6
+  ireturn
+  nop
+.end <method>
+
+.method private static d(Landroid/content/Intent;)V
+.limit locals 10
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  ldc "com.wiyun.hsup.DOWNLOAD_APP"
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label0
+  aload_0
+  invokestatic com/wiyun/ad/c/g(Landroid/content/Intent;)V
+Label2:
+  ldc "clicked"
+  astore 4
+  ldc ""
+  astore 5
+  aload 4
+  aload 5
+  invokestatic com/wiyun/ad/c/a(Ljava/lang/String;Ljava/lang/String;)V
+  return
+Label0:
+  ldc "com.wiyun.hsup.FORWARD_INTENT"
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label1
+  aload_0
+  invokestatic com/wiyun/ad/c/f(Landroid/content/Intent;)V
+  goto Label2
+Label1:
+  ldc "com.wiyun.hsup.DOWNLOAD_OR_FORWARD"
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label3
+  aload_0
+  invokestatic com/wiyun/ad/c/e(Landroid/content/Intent;)V
+  goto Label2
+Label3:
+  ldc "com.wiyun.hsup.SHOW_MINISITE"
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label2
+  ldc "notice_id"
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual android/content/Intent/getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/String;)V
+  getstatic com/wiyun/ad/c/p Landroid/os/Handler;
+  astore 6
+  getstatic com/wiyun/ad/c/p Landroid/os/Handler;
+  astore 7
+  bipush 112
+  istore 9
+  aload 7
+  iload 9
+  aload_0
+  invokestatic android/os/Message/obtain(Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;
+  astore 8
+  aload 6
+  aload 8
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+  goto Label2
+  nop
+.end <method>
+
+.method private static d(Ljava/lang/String;)V
+.limit locals 7
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/c/m Ljava/io/File;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  new java/io/File
+  astore_2
+  invokestatic android/os/Environment/getExternalStorageDirectory()Ljava/io/File;
+  astore_1
+  new java/lang/StringBuilder
+  astore_3
+  ldc ".wiyun/winotice/"
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  getstatic com/wiyun/ad/c/i Ljava/lang/String;
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload_2
+  aload_1
+  aload 5
+  invokespecial java/io/File/<init>(Ljava/io/File;Ljava/lang/String;)V
+  aload_2
+  putstatic com/wiyun/ad/c/m Ljava/io/File;
+Label0:
+  getstatic com/wiyun/ad/c/m Ljava/io/File;
+  astore_2
+  aload_0
+  invokestatic com/wiyun/ad/x/a(Ljava/lang/String;)[B
+  astore 6
+  aload_2
+  aload 6
+  invokestatic com/wiyun/ad/x/a(Ljava/io/File;[B)Z
+  pop
+  return
+  nop
+.end <method>
+
+.method static d()Z
+.limit locals 9
+.limit stack 200
+  nop
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore_0
+  ldc "wifi"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_1
+  astore 4
+  aload 4
+  checkcast android/net/wifi/WifiManager
+  astore 4
+  aload 4
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  ifnull Label0
+  aload_3
+  invokevirtual android/net/wifi/WifiManager/getConnectionInfo()Landroid/net/wifi/WifiInfo;
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  ifnull Label1
+  aload 5
+  invokevirtual android/net/wifi/WifiInfo/getSupplicantState()Landroid/net/wifi/SupplicantState;
+  astore 6
+  getstatic android/net/wifi/SupplicantState/COMPLETED Landroid/net/wifi/SupplicantState;
+  astore 7
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  aload 7
+  if_acmpne Label1
+  iconst_1
+  istore 8
+  iload 8
+  ireturn
+Label1:
+  iconst_0
+  istore 8
+  iload 8
+  ireturn
+Label0:
+  iconst_0
+  istore 8
+  iload 8
+  ireturn
+  nop
+.end <method>
+
+.method private static e(Ljava/lang/String;)Lorg/json/JSONObject;
+.limit locals 7
+.limit stack 200
+  nop
+  ldc "["
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "{\"items\":"
+  astore_2
+  aload_3
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  aload_3
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  bipush 125
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  new org/json/JSONObject
+  astore 5
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload 5
+  aload 6
+  invokespecial org/json/JSONObject/<init>(Ljava/lang/String;)V
+  aload 5
+  areturn
+Label0:
+  new org/json/JSONObject
+  astore 5
+  aload 5
+  aload_0
+  invokespecial org/json/JSONObject/<init>(Ljava/lang/String;)V
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method private static e(Landroid/content/Intent;)V
+.limit locals 13
+.limit stack 200
+  nop
+  iconst_1
+  istore_1
+  ldc "app_pkg"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  ldc "app_version"
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual android/content/Intent/getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+  astore 4
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 5
+  aload 5
+  invokevirtual android/content/Context/getPackageManager()Landroid/content/pm/PackageManager;
+  astore 6
+Label8:
+  iconst_0
+  istore 8
+  aload 6
+  aload_2
+  iload 8
+  invokevirtual android/content/pm/PackageManager/getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+  astore 7
+Label9:
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label0
+  iconst_1
+  istore 9
+Label3:
+  aload 7
+  getfield android/content/pm/PackageInfo/versionName Ljava/lang/String;
+  astore_2
+Label11:
+  aload 4
+  aload_2
+  invokestatic com/wiyun/ad/x/b(Ljava/lang/String;Ljava/lang/String;)I
+  istore 10
+Label12:
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  ifle Label1
+Label4:
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label2
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label2
+  aload_0
+  invokestatic com/wiyun/ad/c/f(Landroid/content/Intent;)V
+Label5:
+  return
+Label0:
+  iconst_0
+  istore 9
+  goto Label3
+Label1:
+  iconst_0
+  istore_1
+  goto Label4
+Label7:
+  astore 11
+  iconst_0
+  istore 9
+Label6:
+  iconst_0
+  istore_1
+  goto Label4
+Label2:
+  aload_0
+  invokestatic com/wiyun/ad/c/g(Landroid/content/Intent;)V
+  goto Label5
+Label10:
+  astore 12
+  goto Label6
+  nop
+.end <method>
+
+.method static e()Z
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_0
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label0
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method static f()Lorg/apache/http/HttpHost;
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  invokestatic android/net/Proxy/getDefaultHost()Ljava/lang/String;
+  astore_1
+  invokestatic android/net/Proxy/getDefaultPort()I
+  istore_2
+  aload_0
+  aload_1
+  iload_2
+  invokespecial org/apache/http/HttpHost/<init>(Ljava/lang/String;I)V
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method private static f(Landroid/content/Intent;)V
+.limit locals 31
+.limit stack 200
+  nop
+  ldc "intent_action"
+  astore 4
+  aload_0
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  ldc "notice_id"
+  astore 4
+  aload_0
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual android/content/Intent/getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+  astore 5
+  ldc "intent_category"
+  astore 4
+  aload_0
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual android/content/Intent/getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+  astore 6
+  ldc "intent_package"
+  astore 4
+  aload_0
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual android/content/Intent/getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+  astore 7
+  ldc "intent_class"
+  astore 4
+  aload_0
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual android/content/Intent/getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+  astore 8
+  ldc "intent_extra"
+  astore 4
+  aload_0
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual android/content/Intent/getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+  astore 9
+  ldc "data_uri"
+  astore 4
+  aload_0
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual android/content/Intent/getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+  astore 10
+  ldc "data_type"
+  astore 4
+  aload_0
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual android/content/Intent/getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+  astore 11
+Label14:
+  ldc "ACTION_"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifeq Label0
+  ldc android/content/Intent
+  astore 13
+  aload 13
+  aload_3
+  invokevirtual java/lang/Class/getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+  astore 14
+  aconst_null
+  astore 16
+  aload 14
+  aload 16
+  invokevirtual java/lang/reflect/Field/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 15
+  aload 15
+  astore 17
+  aload 17
+  checkcast java/lang/String
+  astore 17
+  aload 17
+  astore_3
+Label0:
+  ldc "CATEGORY_"
+  astore 4
+  aload 6
+  aload 4
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifeq Label1
+  ldc android/content/Intent
+  astore 13
+  aload 13
+  aload 6
+  invokevirtual java/lang/Class/getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+  astore 14
+  aconst_null
+  astore 16
+  aload 14
+  aload 16
+  invokevirtual java/lang/reflect/Field/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 15
+  aload 15
+  astore 19
+  aload 19
+  checkcast java/lang/String
+  astore 19
+  aload 19
+  astore 18
+Label15:
+  aload_3
+  astore 6
+Label9:
+  new android/content/Intent
+  astore_0
+  aload_0
+  astore_1
+  aload_1
+  aload 6
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;)V
+  ldc 268435456
+  istore 20
+  aload_0
+  astore_1
+  iload 20
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual android/content/Intent/addFlags(I)Landroid/content/Intent;
+  pop
+  aload 18
+  astore_1
+  aload_1
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifne Label2
+  aload_0
+  astore_1
+  aload 18
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Intent/addCategory(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label2:
+  aload 7
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifeq Label3
+  aload 8
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifne Label4
+Label3:
+  aload_0
+  astore_1
+  aload_1
+  aload 7
+  aload 8
+  invokevirtual android/content/Intent/setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label10:
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label5
+  new org/json/JSONObject
+  astore 21
+Label17:
+  aload 21
+  astore_1
+  aload_1
+  aload 9
+  invokespecial org/json/JSONObject/<init>(Ljava/lang/String;)V
+  aload 21
+  astore_1
+  aload_1
+  invokevirtual org/json/JSONObject/keys()Ljava/util/Iterator;
+  astore 22
+Label11:
+  aload 22
+  astore_1
+  aload_1
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 12
+Label18:
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifne Label6
+Label5:
+  aload 10
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifne Label7
+  aload 10
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 23
+  aload_0
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Intent/setData(Landroid/net/Uri;)Landroid/content/Intent;
+  pop
+Label7:
+  aload 11
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifne Label8
+  aload_0
+  astore_1
+  aload_1
+  aload 11
+  invokevirtual android/content/Intent/setType(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label8:
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 24
+  aload 24
+  astore_1
+  aload_0
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Context/startActivity(Landroid/content/Intent;)V
+Label12:
+  aload 5
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/String;)V
+  return
+Label13:
+  astore 25
+  aload_3
+  astore 18
+  aload 6
+  astore_3
+  aload 18
+  astore 6
+  aload_3
+  astore 18
+  goto Label9
+Label4:
+  aload 7
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifne Label10
+  aload_0
+  astore_1
+  aload_1
+  aload 7
+  invokevirtual android/content/Intent/setPackage(Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  goto Label10
+Label6:
+  aload 22
+  astore_1
+  aload_1
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 15
+  aload 15
+  astore 26
+  aload 26
+  checkcast java/lang/String
+  astore 26
+  aload 26
+  astore 18
+  aload 21
+  astore_1
+  aload 18
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 9
+  aload 9
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifne Label11
+  aload_0
+  astore_1
+  aload 18
+  astore_2
+  aload_1
+  aload_2
+  aload 9
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+Label22:
+  goto Label11
+Label16:
+  astore 27
+  goto Label5
+Label21:
+  astore 28
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 24
+  aload 24
+  astore_1
+  aload_0
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Context/sendBroadcast(Landroid/content/Intent;)V
+  goto Label12
+Label19:
+  astore 29
+  goto Label12
+Label20:
+  astore 30
+  goto Label12
+Label1:
+  aload 6
+  astore 18
+  aload_3
+  astore 6
+  goto Label9
+  nop
+.end <method>
+
+.method static g()Ljava/util/List;
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/c/d Ljava/util/List;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method private static g(Landroid/content/Intent;)V
+.limit locals 64
+.limit stack 200
+  nop
+  iconst_0
+  istore 4
+  iconst_1
+  istore 5
+  iconst_0
+  istore 6
+  ldc "app_pkg"
+  astore 8
+  aload_0
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  ldc "app_name"
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  aload 8
+  invokevirtual android/content/Intent/getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+  astore 9
+  ldc "app_url"
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  aload 8
+  invokevirtual android/content/Intent/getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+  astore 10
+  ldc "app_version"
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  aload 8
+  invokevirtual android/content/Intent/getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+  astore 11
+  ldc "notice_id"
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  aload 8
+  invokevirtual android/content/Intent/getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+  astore 12
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 13
+  aload 13
+  invokevirtual android/content/Context/getPackageManager()Landroid/content/pm/PackageManager;
+  astore 14
+Label24:
+  iconst_0
+  istore 16
+  aload 14
+  aload 7
+  iload 16
+  invokevirtual android/content/pm/PackageManager/getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+  astore 15
+Label25:
+  aload 15
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 15
+  ifnull Label0
+  iconst_1
+  dstore 17
+Label3:
+  aload 15
+  getfield android/content/pm/PackageInfo/versionName Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 18
+Label27:
+  aload 18
+  astore_1
+  aload 11
+  aload_1
+  invokestatic com/wiyun/ad/x/b(Ljava/lang/String;Ljava/lang/String;)I
+  istore 19
+Label28:
+  iload 19
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 19
+  ifle Label1
+Label4:
+  dload 17
+  dstore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 17
+  ifeq Label2
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  ifne Label2
+  aload_0
+  astore_1
+  aload 7
+  aload_1
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/String;Landroid/content/Intent;)V
+Label11:
+  return
+Label0:
+  iconst_0
+  dstore 17
+  goto Label3
+Label1:
+  iconst_0
+  dstore 5
+  goto Label4
+Label23:
+  astore 20
+  iconst_0
+  dstore 19
+Label21:
+  dload 19
+  dstore 17
+  iconst_0
+  dstore 5
+  goto Label4
+Label2:
+  new com/wiyun/ad/c$a
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  invokespecial com/wiyun/ad/c$a/<init>()V
+  aload 21
+  astore_1
+  aload_1
+  aload 7
+  putfield com/wiyun/ad/c$a/a Ljava/lang/String;
+  aload_0
+  astore_1
+  aload 21
+  astore_2
+  aload_2
+  aload_1
+  putfield com/wiyun/ad/c$a/b Landroid/content/Intent;
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 22
+  lload 22
+  lstore_1
+  aload 21
+  astore_3
+  aload_3
+  lload_1
+  putfield com/wiyun/ad/c$a/c J
+  getstatic com/wiyun/ad/c/d Ljava/util/List;
+  astore 24
+  aload 24
+  astore_1
+  aload 21
+  astore_2
+  aload_1
+  aload_2
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  aload 10
+  invokestatic com/wiyun/ad/ae/c(Ljava/lang/String;)Ljava/lang/String;
+  astore 18
+  new java/io/File
+  astore 25
+  invokestatic android/os/Environment/getExternalStorageDirectory()Ljava/io/File;
+  astore 26
+  new java/lang/StringBuilder
+  astore 27
+  ldc ".wiyun/winotice/"
+  astore 8
+  aload 27
+  astore_1
+  aload_1
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 27
+  astore_1
+  aload 18
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 28
+  ldc ".apk"
+  astore 8
+  aload 28
+  astore_1
+  aload_1
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 28
+  aload 28
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 18
+  aload 25
+  astore_1
+  aload 26
+  astore_2
+  aload 18
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokespecial java/io/File/<init>(Ljava/io/File;Ljava/lang/String;)V
+Label31:
+  aload 25
+  astore_1
+  aload_1
+  invokevirtual java/io/File/exists()Z
+  istore 29
+  iload 29
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 29
+  ifne Label5
+  ldc 1000000
+  istore 16
+  iconst_0
+  istore 30
+  iload 30
+  istore_1
+  aload 12
+  aload 9
+  iload 16
+  iload_1
+  invokestatic com/wiyun/ad/c/a(Ljava/lang/String;Ljava/lang/String;II)V
+  invokestatic com/wiyun/ad/c/c()Lorg/apache/http/impl/client/DefaultHttpClient;
+  astore 31
+Label32:
+  aload 31
+  astore 32
+  new org/apache/http/client/methods/HttpGet
+  astore 33
+Label35:
+  aload 33
+  astore_1
+  aload_1
+  aload 10
+  invokespecial org/apache/http/client/methods/HttpGet/<init>(Ljava/lang/String;)V
+  aload 31
+  checkcast org/apache/http/impl/client/DefaultHttpClient
+  astore 31
+  aload 31
+  astore_1
+  aload 33
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
+  astore 34
+  aload 34
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/HttpResponse/getStatusLine()Lorg/apache/http/StatusLine; 1
+  astore 35
+  aload 35
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/StatusLine/getStatusCode()I 1
+  istore 17
+  iload 17
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 300
+  istore 16
+  iload 17
+  istore_1
+  iload_1
+  iload 16
+  if_icmpge Label6
+  ldc "Content-Length"
+  astore 8
+  aload 34
+  astore_1
+  aload_1
+  aload 8
+  invokeinterface org/apache/http/HttpResponse/getFirstHeader(Ljava/lang/String;)Lorg/apache/http/Header; 2
+  astore 36
+  aload 36
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 36
+  ifnull Label7
+  aload 36
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/Header/getValue()Ljava/lang/String; 1
+  astore 18
+  aload 18
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/x/d(Ljava/lang/String;)I
+  istore 19
+Label22:
+  sipush 4096
+  istore 16
+  iload 16
+  newarray byte
+  astore_1
+  aload_1
+  astore 37
+  aload 34
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/HttpResponse/getEntity()Lorg/apache/http/HttpEntity; 1
+  astore 38
+  aload 38
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/HttpEntity/getContent()Ljava/io/InputStream; 1
+  astore 39
+  new java/io/FileOutputStream
+  astore 40
+  aload 40
+  astore 41
+  aload 40
+  astore_1
+  aload 25
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/io/FileOutputStream/<init>(Ljava/io/File;)V
+Label36:
+  iconst_0
+  istore 17
+  iconst_0
+  istore 42
+Label13:
+  iload 17
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 16
+  iload 17
+  istore_1
+  iload_1
+  iload 16
+  if_icmpne Label8
+Label39:
+  aload 41
+  astore 43
+  aload 43
+  checkcast java/io/FileOutputStream
+  astore 43
+  aload 43
+  astore 40
+  aload 40
+  astore_1
+  aload_1
+  invokevirtual java/io/FileOutputStream/flush()V
+  ldc "downloaded"
+  astore 8
+  ldc ""
+  astore 44
+  aload 44
+  astore_1
+  aload 8
+  aload_1
+  invokestatic com/wiyun/ad/c/a(Ljava/lang/String;Ljava/lang/String;)V
+Label40:
+  aload 41
+  astore 4
+Label6:
+  aload 32
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 32
+  ifnull Label9
+  aload 32
+  astore 45
+  aload 45
+  checkcast org/apache/http/impl/client/DefaultHttpClient
+  astore 45
+  aload 45
+  astore 31
+  aload 31
+  astore_1
+  aload_1
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
+  astore 46
+  aload 46
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+Label9:
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label10
+  aload 4
+  astore 47
+  aload 47
+  checkcast java/io/FileOutputStream
+  astore 47
+  aload 47
+  astore 40
+Label42:
+  aload 40
+  astore_1
+  aload_1
+  invokevirtual java/io/FileOutputStream/close()V
+Label10:
+  aload 12
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/String;)V
+  getstatic com/wiyun/ad/c/b Ljava/util/Map;
+  astore 48
+  aload 48
+  astore_1
+  aload_1
+  aload 12
+  invokeinterface java/util/Map/remove(Ljava/lang/Object;)Ljava/lang/Object; 2
+  pop
+  aload 25
+  astore_1
+  aload_1
+  invokevirtual java/io/File/exists()Z
+  istore 29
+  iload 29
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 29
+  ifeq Label11
+  aload 25
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/c/a(Ljava/io/File;)V
+  goto Label11
+Label8:
+  aload 41
+  astore 49
+  aload 49
+  checkcast java/io/FileOutputStream
+  astore 49
+  aload 49
+  astore 40
+  iconst_0
+  istore 16
+  aload 40
+  astore_1
+  aload 37
+  astore_2
+  iload 17
+  istore_3
+  aload_1
+  aload_2
+  iload 16
+  iload_3
+  invokevirtual java/io/FileOutputStream/write([BII)V
+  iload 17
+  iload 42
+  iadd
+  istore 42
+  iload 42
+  iload 6
+  isub
+  istore 17
+  iload 17
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  ldc 100000
+  istore 16
+  iload 17
+  istore_1
+  iload_1
+  iload 16
+  if_icmple Label12
+  iload 19
+  istore_1
+  iload 42
+  istore_2
+  aload 12
+  aload 9
+  iload_1
+  iload_2
+  invokestatic com/wiyun/ad/c/a(Ljava/lang/String;Ljava/lang/String;II)V
+  iload 42
+  istore 6
+Label12:
+  aload 39
+  astore_1
+  aload 37
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/io/InputStream/read([B)I
+  istore 17
+Label43:
+  goto Label13
+Label30:
+  astore 50
+  aconst_null
+  astore 41
+Label20:
+  aload 25
+  astore_1
+  aload_1
+  invokevirtual java/io/File/delete()Z
+  pop
+Label45:
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label14
+  aload 4
+  astore 51
+  aload 51
+  checkcast org/apache/http/impl/client/DefaultHttpClient
+  astore 51
+  aload 51
+  astore 31
+  aload 31
+  astore_1
+  aload_1
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
+  astore 46
+  aload 46
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+Label14:
+  aload 41
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 41
+  ifnull Label15
+  aload 41
+  astore 52
+  aload 52
+  checkcast java/io/FileOutputStream
+  astore 52
+  aload 52
+  astore 40
+Label47:
+  aload 40
+  astore_1
+  aload_1
+  invokevirtual java/io/FileOutputStream/close()V
+Label15:
+  aload 12
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/String;)V
+  getstatic com/wiyun/ad/c/b Ljava/util/Map;
+  astore 48
+  aload 48
+  astore_1
+  aload_1
+  aload 12
+  invokeinterface java/util/Map/remove(Ljava/lang/Object;)Ljava/lang/Object; 2
+  pop
+  aload 25
+  astore_1
+  aload_1
+  invokevirtual java/io/File/exists()Z
+  istore 29
+  iload 29
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 29
+  ifeq Label11
+  aload 25
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/c/a(Ljava/io/File;)V
+  goto Label11
+Label29:
+  astore 53
+  aconst_null
+  astore 32
+Label19:
+  aload 32
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 32
+  ifnull Label16
+  aload 32
+  astore 54
+  aload 54
+  checkcast org/apache/http/impl/client/DefaultHttpClient
+  astore 54
+  aload 54
+  astore 31
+  aload 31
+  astore_1
+  aload_1
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
+  astore 46
+  aload 46
+  astore_1
+  aload_1
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+Label16:
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label17
+  aload 4
+  astore 55
+  aload 55
+  checkcast java/io/FileOutputStream
+  astore 55
+  aload 55
+  astore 40
+Label49:
+  aload 40
+  astore_1
+  aload_1
+  invokevirtual java/io/FileOutputStream/close()V
+Label17:
+  aload 12
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/String;)V
+  getstatic com/wiyun/ad/c/b Ljava/util/Map;
+  astore 48
+  aload 48
+  astore_1
+  aload_1
+  aload 12
+  invokeinterface java/util/Map/remove(Ljava/lang/Object;)Ljava/lang/Object; 2
+  pop
+  aload 25
+  astore_1
+  aload_1
+  invokevirtual java/io/File/exists()Z
+  istore 29
+  iload 29
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 29
+  ifeq Label18
+  aload 25
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/c/a(Ljava/io/File;)V
+Label18:
+  aload 53
+  athrow
+Label46:
+  astore 56
+  goto Label15
+Label48:
+  astore 57
+  goto Label17
+Label41:
+  astore 58
+  goto Label10
+Label33:
+  astore 53
+  goto Label19
+Label37:
+  astore 59
+  aload 41
+  astore 4
+  aload 59
+  astore 53
+  goto Label19
+Label44:
+  astore 60
+  aload 4
+  astore 32
+  aload 41
+  astore 4
+  aload 60
+  astore 53
+  goto Label19
+Label34:
+  astore 61
+  aconst_null
+  astore 41
+  aload 32
+  astore 4
+  goto Label20
+Label38:
+  astore 62
+  aload 32
+  astore 4
+  goto Label20
+Label26:
+  astore 63
+  dload 17
+  dstore 19
+  goto Label21
+Label7:
+  ldc 1000000
+  istore 19
+  goto Label22
+Label5:
+  aconst_null
+  astore 32
+  goto Label6
+  nop
+.end <method>
+
+.method static h()Z
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  invokestatic com/wiyun/ad/c/p()Z
+  istore_0
+  iload_0
+  ireturn
+  nop
+.end <method>
+
+.method static i()Ljava/util/List;
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  invokestatic com/wiyun/ad/c/o()Ljava/util/List;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method static j()Ljava/lang/String;
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/c/e Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method private static k()J
+.limit locals 11
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/c/j Ljava/io/File;
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  new java/io/File
+  astore_1
+  invokestatic android/os/Environment/getExternalStorageDirectory()Ljava/io/File;
+  astore_0
+  new java/lang/StringBuilder
+  astore_2
+  ldc ".wiyun/winotice/"
+  astore_3
+  aload_2
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  getstatic com/wiyun/ad/c/f Ljava/lang/String;
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload_1
+  aload_0
+  aload 4
+  invokespecial java/io/File/<init>(Ljava/io/File;Ljava/lang/String;)V
+  aload_1
+  putstatic com/wiyun/ad/c/j Ljava/io/File;
+Label0:
+  getstatic com/wiyun/ad/c/j Ljava/io/File;
+  astore_1
+  aload_1
+  invokevirtual java/io/File/exists()Z
+  istore 5
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 5
+  ifeq Label1
+  getstatic com/wiyun/ad/c/j Ljava/io/File;
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/x/b(Ljava/io/File;)[B
+  astore 6
+  aload 6
+  invokestatic com/wiyun/ad/x/b([B)Ljava/lang/String;
+  astore 4
+  aload 4
+  invokestatic com/wiyun/ad/x/f(Ljava/lang/String;)J
+  lstore 7
+  lload 7
+  lreturn
+Label1:
+  ldc2_w 0
+  lstore 9
+  lload 9
+  lreturn
+  nop
+.end <method>
+
+.method private static l()J
+.limit locals 11
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/c/k Ljava/io/File;
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  new java/io/File
+  astore_1
+  invokestatic android/os/Environment/getExternalStorageDirectory()Ljava/io/File;
+  astore_0
+  new java/lang/StringBuilder
+  astore_2
+  ldc ".wiyun/winotice/"
+  astore_3
+  aload_2
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  getstatic com/wiyun/ad/c/g Ljava/lang/String;
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload_1
+  aload_0
+  aload 4
+  invokespecial java/io/File/<init>(Ljava/io/File;Ljava/lang/String;)V
+  aload_1
+  putstatic com/wiyun/ad/c/k Ljava/io/File;
+Label0:
+  getstatic com/wiyun/ad/c/k Ljava/io/File;
+  astore_1
+  aload_1
+  invokevirtual java/io/File/exists()Z
+  istore 5
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 5
+  ifeq Label1
+  getstatic com/wiyun/ad/c/k Ljava/io/File;
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/x/b(Ljava/io/File;)[B
+  astore 6
+  aload 6
+  invokestatic com/wiyun/ad/x/b([B)Ljava/lang/String;
+  astore 4
+  aload 4
+  invokestatic com/wiyun/ad/x/f(Ljava/lang/String;)J
+  lstore 7
+  lload 7
+  lreturn
+Label1:
+  ldc2_w 0
+  lstore 9
+  lload 9
+  lreturn
+  nop
+.end <method>
+
+.method private static m()J
+.limit locals 11
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/c/l Ljava/io/File;
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  new java/io/File
+  astore_1
+  invokestatic android/os/Environment/getExternalStorageDirectory()Ljava/io/File;
+  astore_0
+  new java/lang/StringBuilder
+  astore_2
+  ldc ".wiyun/winotice/"
+  astore_3
+  aload_2
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  getstatic com/wiyun/ad/c/h Ljava/lang/String;
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload_1
+  aload_0
+  aload 4
+  invokespecial java/io/File/<init>(Ljava/io/File;Ljava/lang/String;)V
+  aload_1
+  putstatic com/wiyun/ad/c/l Ljava/io/File;
+Label0:
+  getstatic com/wiyun/ad/c/l Ljava/io/File;
+  astore_1
+  aload_1
+  invokevirtual java/io/File/exists()Z
+  istore 5
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 5
+  ifeq Label1
+  getstatic com/wiyun/ad/c/l Ljava/io/File;
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/x/b(Ljava/io/File;)[B
+  astore 6
+  aload 6
+  invokestatic com/wiyun/ad/x/b([B)Ljava/lang/String;
+  astore 4
+  aload 4
+  invokestatic com/wiyun/ad/x/f(Ljava/lang/String;)J
+  lstore 7
+  lload 7
+  lreturn
+Label1:
+  ldc2_w 600000
+  lstore 9
+  lload 9
+  lreturn
+  nop
+.end <method>
+
+.method private static n()Ljava/lang/String;
+.limit locals 15
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/c/m Ljava/io/File;
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  new java/io/File
+  astore_1
+Label3:
+  invokestatic android/os/Environment/getExternalStorageDirectory()Ljava/io/File;
+  astore_0
+  new java/lang/StringBuilder
+  astore_2
+  ldc ".wiyun/winotice/"
+  astore_3
+  aload_2
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  getstatic com/wiyun/ad/c/i Ljava/lang/String;
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload_1
+  aload_0
+  aload 4
+  invokespecial java/io/File/<init>(Ljava/io/File;Ljava/lang/String;)V
+  aload_1
+  putstatic com/wiyun/ad/c/m Ljava/io/File;
+Label0:
+  getstatic com/wiyun/ad/c/m Ljava/io/File;
+  astore_1
+  aload_1
+  invokevirtual java/io/File/exists()Z
+  istore 5
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 5
+  ifeq Label1
+  getstatic com/wiyun/ad/c/m Ljava/io/File;
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/x/b(Ljava/io/File;)[B
+  astore 6
+  aload 6
+  invokestatic com/wiyun/ad/x/b([B)Ljava/lang/String;
+  astore 4
+  aload 4
+  invokestatic com/wiyun/ad/c/e(Ljava/lang/String;)Lorg/json/JSONObject;
+  astore 7
+  ldc "items"
+  astore_3
+  aload 7
+  aload_3
+  invokevirtual org/json/JSONObject/optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+  astore 8
+  aload 8
+  invokevirtual org/json/JSONArray/length()I
+  istore 9
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 10
+  lload 10
+  l2i
+  istore 12
+  iload 12
+  iload 9
+  irem
+  istore 12
+  aload 8
+  iload 12
+  invokevirtual org/json/JSONArray/optString(I)Ljava/lang/String;
+  astore 4
+Label4:
+  aload 4
+  areturn
+Label2:
+  astore 13
+Label1:
+  aconst_null
+  astore 14
+  aload 14
+  areturn
+  nop
+.end <method>
+
+.method private static o()Ljava/util/List;
+  .signature_attr "()Ljava/util/List<Lorg/apache/http/NameValuePair;>;"
+.limit locals 9
+.limit stack 200
+  nop
+  new java/util/ArrayList
+  astore_0
+  aload_0
+  invokespecial java/util/ArrayList/<init>()V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  invokestatic com/wiyun/ad/ab/h()Ljava/lang/String;
+  astore_2
+  ldc "device_id"
+  astore_3
+  aload_1
+  aload_3
+  aload_2
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore_1
+  invokestatic com/wiyun/ad/ab/g()Ljava/lang/String;
+  astore 4
+  ldc "app_key"
+  astore_3
+  aload_1
+  aload_3
+  aload 4
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore_1
+  ldc "sdk_name"
+  astore_3
+  ldc "WiAd"
+  astore 5
+  aload_1
+  aload_3
+  aload 5
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore_1
+  ldc "os"
+  astore_3
+  ldc "Android"
+  astore 5
+  aload_1
+  aload_3
+  aload 5
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore_1
+  invokestatic com/wiyun/ad/ab/j()I
+  istore 6
+  iload 6
+  invokestatic java/lang/String/valueOf(I)Ljava/lang/String;
+  astore 4
+  ldc "os_version"
+  astore_3
+  aload_1
+  aload_3
+  aload 4
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore_1
+  invokestatic com/wiyun/ad/ab/o()D
+  dstore 7
+  dload 7
+  invokestatic java/lang/String/valueOf(D)Ljava/lang/String;
+  astore 4
+  ldc "lat"
+  astore_3
+  aload_1
+  aload_3
+  aload 4
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore_1
+  invokestatic com/wiyun/ad/ab/p()D
+  dstore 7
+  dload 7
+  invokestatic java/lang/String/valueOf(D)Ljava/lang/String;
+  astore 4
+  ldc "lon"
+  astore_3
+  aload_1
+  aload_3
+  aload 4
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore_1
+  invokestatic com/wiyun/ad/ab/d()Ljava/lang/String;
+  astore 4
+  ldc "brand"
+  astore_3
+  aload_1
+  aload_3
+  aload 4
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore_1
+  invokestatic com/wiyun/ad/ab/e()Ljava/lang/String;
+  astore 4
+  ldc "model"
+  astore_3
+  aload_1
+  aload_3
+  aload 4
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore_1
+  invokestatic com/wiyun/ad/ab/k()Ljava/lang/String;
+  astore 4
+  ldc "lan"
+  astore_3
+  aload_1
+  aload_3
+  aload 4
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore_1
+  invokestatic com/wiyun/ad/ab/l()Ljava/lang/String;
+  astore 4
+  ldc "country"
+  astore_3
+  aload_1
+  aload_3
+  aload 4
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore_1
+  invokestatic com/wiyun/ad/ab/f()I
+  istore 6
+  iload 6
+  invokestatic java/lang/String/valueOf(I)Ljava/lang/String;
+  astore 4
+  ldc "network"
+  astore_3
+  aload_1
+  aload_3
+  aload 4
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore_1
+  invokestatic com/wiyun/ad/ab/q()Ljava/lang/String;
+  astore 4
+  ldc "pkg"
+  astore_3
+  aload_1
+  aload_3
+  aload 4
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore_1
+  invokestatic com/wiyun/ad/ab/a()I
+  istore 6
+  iload 6
+  invokestatic java/lang/String/valueOf(I)Ljava/lang/String;
+  astore 4
+  ldc "screen_width"
+  astore_3
+  aload_1
+  aload_3
+  aload 4
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore_1
+  invokestatic com/wiyun/ad/ab/b()I
+  istore 6
+  iload 6
+  invokestatic java/lang/String/valueOf(I)Ljava/lang/String;
+  astore 4
+  ldc "screen_height"
+  astore_3
+  aload_1
+  aload_3
+  aload 4
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/message/BasicNameValuePair
+  astore_1
+  invokestatic com/wiyun/ad/ab/c()I
+  istore 6
+  iload 6
+  invokestatic java/lang/String/valueOf(I)Ljava/lang/String;
+  astore 4
+  ldc "screen_dpi"
+  astore_3
+  aload_1
+  aload_3
+  aload 4
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method private static p()Z
+.limit locals 40
+.limit stack 200
+  .catch  java/lang/Exception <from> Label16 <to> Label0 <using> Label15
+  .catch  org/json/JSONException <from> Label0 <to> Label18 <using> Label17
+  .catch  java/lang/Throwable <from> Label21 <to> Label22 <using> Label19
+  .catch  java/lang/Exception <from> Label21 <to> Label22 <using> Label20
+  .catch  java/lang/Throwable <from> Label23 <to> Label24 <using> Label19
+  .catch  java/lang/Exception <from> Label23 <to> Label24 <using> Label20
+  .catch  java/lang/Throwable <from> Label26 <to> Label27 <using> Label19
+  .catch  java/lang/Exception <from> Label26 <to> Label27 <using> Label20
+  .catch  java/lang/Throwable <from> Label27 <to> Label6 <using> Label19
+  .catch  java/lang/Throwable <from> Label6 <to> Label28 <using> Label19
+  .catch  java/lang/Exception <from> Label6 <to> Label28 <using> Label20
+  .catch  java/lang/Throwable <from> Label7 <to> Label29 <using> Label19
+  .catch  java/lang/Exception <from> Label7 <to> Label29 <using> Label20
+  nop
+  iconst_0
+  istore_3
+  invokestatic com/wiyun/ad/c/c()Lorg/apache/http/impl/client/DefaultHttpClient;
+  astore 4
+Label16:
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 5
+  invokestatic com/wiyun/ad/c/l()J
+  lstore 7
+  lload 5
+  lload 7
+  lsub
+  lstore 9
+  ldc2_w 604800000
+  lstore 12
+  lload 9
+  lload 12
+  lcmp
+  istore 11
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 11
+  ifle Label0
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "http://n.wiyun.com/hsup/spi"
+  astore 15
+  aload 14
+  aload 15
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  aload 14
+  invokestatic com/wiyun/ad/c/a(Ljava/lang/StringBuilder;)V
+  new org/apache/http/client/methods/HttpGet
+  astore 16
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 17
+  aload 16
+  astore_0
+  aload 17
+  astore_1
+  aload_0
+  aload_1
+  invokespecial org/apache/http/client/methods/HttpGet/<init>(Ljava/lang/String;)V
+  aload 16
+  astore_0
+  aload 4
+  aload_0
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
+  astore 18
+  aload 18
+  astore_0
+  aload_0
+  invokeinterface org/apache/http/HttpResponse/getStatusLine()Lorg/apache/http/StatusLine; 1
+  astore 19
+  aload 19
+  astore_0
+  aload_0
+  invokeinterface org/apache/http/StatusLine/getStatusCode()I 1
+  istore 20
+  iload 20
+  istore_0
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 300
+  istore 21
+  iload 20
+  istore_0
+  iload 21
+  istore_1
+  iload_0
+  iload_1
+  if_icmpge Label0
+  aload 18
+  astore_0
+  aload_0
+  invokeinterface org/apache/http/HttpResponse/getEntity()Lorg/apache/http/HttpEntity; 1
+  astore 22
+  aload 22
+  astore_0
+  aload_0
+  invokestatic com/wiyun/ad/c/a(Lorg/apache/http/HttpEntity;)Ljava/lang/String;
+  astore 17
+  aload 17
+  astore_0
+  aload_0
+  invokestatic com/wiyun/ad/c/d(Ljava/lang/String;)V
+  lload 5
+  invokestatic com/wiyun/ad/c/b(J)V
+Label0:
+  invokestatic com/wiyun/ad/c/n()Ljava/lang/String;
+  astore 17
+Label18:
+  aload 17
+  putstatic com/wiyun/ad/c/e Ljava/lang/String;
+Label14:
+  getstatic com/wiyun/ad/c/e Ljava/lang/String;
+  astore 17
+Label21:
+  aload 17
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+Label22:
+  iload 23
+  istore_0
+  iload_0
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 23
+  ifeq Label1
+  getstatic com/wiyun/ad/c/a Ljava/lang/String;
+  astore 17
+  aload 17
+  astore_0
+  aload_0
+  invokestatic com/wiyun/ad/ac/b(Ljava/lang/String;)V
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 4
+  ifeq Label2
+  aload 4
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
+  astore 24
+  aload 24
+  astore_0
+  aload_0
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+Label2:
+  iconst_0
+  istore 21
+  iload 21
+  ireturn
+Label1:
+  getstatic com/wiyun/ad/c/e Ljava/lang/String;
+  astore 17
+Label23:
+  ldc "http"
+  astore 15
+  aload 17
+  astore_0
+  aload_0
+  aload 15
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 23
+  iload 23
+  istore_0
+  iload_0
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 23
+  ifne Label3
+  new java/lang/StringBuilder
+  astore 14
+  ldc "http://"
+  astore 15
+  aload 14
+  aload 15
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  getstatic com/wiyun/ad/c/e Ljava/lang/String;
+  astore 25
+  aload 25
+  astore_0
+  aload 14
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 25
+  aload 25
+  putstatic com/wiyun/ad/c/e Ljava/lang/String;
+Label3:
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  getstatic com/wiyun/ad/c/e Ljava/lang/String;
+  astore 25
+  aload 25
+  astore_0
+  aload 14
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  aload 14
+  invokestatic com/wiyun/ad/c/a(Ljava/lang/StringBuilder;)V
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore 26
+  ldc "com.android.launcher.permission.INSTALL_SHORTCUT"
+  astore 15
+  aload 26
+  astore_0
+  aload_0
+  aload 15
+  invokevirtual android/content/Context/checkCallingOrSelfPermission(Ljava/lang/String;)I
+  istore 20
+  iload 20
+  istore_0
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 20
+  ifne Label4
+  ldc "true"
+  astore 25
+Label10:
+  ldc "support_shortcut"
+  astore 15
+  aload 25
+  astore_0
+  aload 14
+  aload 15
+  aload_0
+  invokestatic com/wiyun/ad/c/b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)V
+  new org/apache/http/client/methods/HttpGet
+  astore 16
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 25
+  aload 16
+  astore_0
+  aload 25
+  astore_1
+  aload_0
+  aload_1
+  invokespecial org/apache/http/client/methods/HttpGet/<init>(Ljava/lang/String;)V
+  aload 16
+  astore_0
+  aload 4
+  aload_0
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
+  astore 18
+  aload 18
+  astore_0
+  aload_0
+  invokeinterface org/apache/http/HttpResponse/getStatusLine()Lorg/apache/http/StatusLine; 1
+  astore 19
+  aload 19
+  astore_0
+  aload_0
+  invokeinterface org/apache/http/StatusLine/getStatusCode()I 1
+  istore 20
+  iload 20
+  istore_0
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 300
+  istore 21
+  iload 20
+  istore_0
+  iload 21
+  istore_1
+  iload_0
+  iload_1
+  if_icmpge Label5
+  aload 18
+  astore_0
+  aload_0
+  invokeinterface org/apache/http/HttpResponse/getEntity()Lorg/apache/http/HttpEntity; 1
+  astore 22
+  aload 22
+  astore_0
+  aload_0
+  invokestatic com/wiyun/ad/c/a(Lorg/apache/http/HttpEntity;)Ljava/lang/String;
+  astore 25
+  aload 25
+  astore_0
+  aload_0
+  invokestatic com/wiyun/ad/c/e(Ljava/lang/String;)Lorg/json/JSONObject;
+  astore 27
+  aload 27
+  astore_0
+  aload_0
+  invokestatic com/wiyun/ad/c$b/a(Lorg/json/JSONObject;)Lcom/wiyun/ad/c$b;
+  astore_3
+  aload_3
+  getfield com/wiyun/ad/c$b/c Ljava/lang/String;
+  astore_0
+  aload_0
+  astore 25
+  aload 25
+  astore_0
+  aload_0
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 23
+  iload 23
+  istore_0
+  iload_0
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 23
+  ifne Label6
+  new org/apache/http/client/methods/HttpGet
+  astore 16
+  aload_3
+  getfield com/wiyun/ad/c$b/c Ljava/lang/String;
+  astore_0
+  aload_0
+  astore 25
+  aload 16
+  astore_0
+  aload 25
+  astore_1
+  aload_0
+  aload_1
+  invokespecial org/apache/http/client/methods/HttpGet/<init>(Ljava/lang/String;)V
+  aload 16
+  astore_0
+  aload 4
+  aload_0
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
+  astore 18
+  aload 18
+  astore_0
+  aload_0
+  invokeinterface org/apache/http/HttpResponse/getStatusLine()Lorg/apache/http/StatusLine; 1
+  astore 19
+  aload 19
+  astore_0
+  aload_0
+  invokeinterface org/apache/http/StatusLine/getStatusCode()I 1
+  istore 20
+  iload 20
+  istore_0
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 300
+  istore 21
+  iload 20
+  istore_0
+  iload 21
+  istore_1
+  iload_0
+  iload_1
+  if_icmpge Label6
+  aload 18
+  astore_0
+  aload_0
+  invokeinterface org/apache/http/HttpResponse/getEntity()Lorg/apache/http/HttpEntity; 1
+  astore 22
+  aload 22
+  astore_0
+  aload_0
+  invokestatic com/wiyun/ad/c/b(Lorg/apache/http/HttpEntity;)[B
+  astore 28
+Label24:
+  aload 28
+  astore_0
+  aload_0
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 28
+  ifnull Label6
+Label26:
+  aload 28
+  astore_0
+  aload_0
+  arraylength
+  istore_0
+  iload_0
+  istore 20
+  iconst_0
+  istore 21
+  aload 28
+  astore_0
+  iload 21
+  istore_1
+  iload 20
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  invokestatic android/graphics/BitmapFactory/decodeByteArray([BII)Landroid/graphics/Bitmap;
+  astore 29
+  aload 29
+  astore_0
+  aload_3
+  aload_0
+  putfield com/wiyun/ad/c$b/j Landroid/graphics/Bitmap;
+  getstatic com/wiyun/ad/c/b Ljava/util/Map;
+  astore 30
+  aload_3
+  getfield com/wiyun/ad/c$b/a Ljava/lang/String;
+  astore_0
+  aload_0
+  astore 25
+  aload_3
+  getfield com/wiyun/ad/c$b/j Landroid/graphics/Bitmap;
+  astore_0
+  aload_0
+  astore 29
+  aload 30
+  astore_0
+  aload 25
+  astore_1
+  aload 29
+  astore_2
+  aload_0
+  aload_1
+  aload_2
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+Label27:
+  aconst_null
+  astore 31
+  aload 31
+  astore 32
+  aload 32
+  checkcast [B
+  astore 32
+  aload 32
+  astore 28
+Label6:
+  aload_3
+  getfield com/wiyun/ad/c$b/f I
+  istore_0
+  iload_0
+  istore 20
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 20
+  ifle Label7
+  getstatic com/wiyun/ad/c/p Landroid/os/Handler;
+  astore 33
+  bipush 111
+  istore 21
+  aload 33
+  astore_0
+  iload 21
+  istore_1
+  aload_0
+  iload_1
+  aload_3
+  invokestatic android/os/Message/obtain(Landroid/os/Handler;ILjava/lang/Object;)Landroid/os/Message;
+  astore 34
+  getstatic com/wiyun/ad/c/p Landroid/os/Handler;
+  astore 33
+  aload_3
+  getfield com/wiyun/ad/c$b/f I
+  istore_0
+  iload_0
+  istore 20
+  iload_0
+  i2l
+  lstore 9
+  aload 33
+  astore_0
+  aload 34
+  astore_1
+  aload_0
+  aload_1
+  lload 9
+  invokevirtual android/os/Handler/sendMessageDelayed(Landroid/os/Message;J)Z
+  pop
+Label28:
+  iconst_1
+  istore 23
+Label11:
+  getstatic com/wiyun/ad/c/a Ljava/lang/String;
+  astore 25
+  aload 25
+  astore_0
+  aload_0
+  invokestatic com/wiyun/ad/ac/b(Ljava/lang/String;)V
+  iload 23
+  istore_0
+  iload_0
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 23
+  ifeq Label8
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 9
+  lload 9
+  invokestatic com/wiyun/ad/c/a(J)V
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  ifnull Label8
+  aload_3
+  getfield com/wiyun/ad/c$b/g I
+  istore_0
+  iload_0
+  istore 20
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 20
+  ifle Label8
+  aload_3
+  getfield com/wiyun/ad/c$b/g I
+  istore_0
+  iload_0
+  istore 20
+  iload_0
+  i2l
+  lstore 9
+  lload 9
+  invokestatic com/wiyun/ad/c/c(J)V
+Label8:
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 4
+  ifeq Label9
+  aload 4
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
+  astore 24
+  aload 24
+  astore_0
+  aload_0
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+Label9:
+  iload 23
+  ireturn
+Label4:
+  ldc "false"
+  astore 25
+  goto Label10
+Label7:
+  aload_3
+  invokestatic com/wiyun/ad/c/b(Lcom/wiyun/ad/c$b;)Z
+  istore 23
+Label29:
+  goto Label11
+Label20:
+  astore 35
+  getstatic com/wiyun/ad/c/a Ljava/lang/String;
+  astore 25
+  aload 25
+  astore_0
+  aload_0
+  invokestatic com/wiyun/ad/ac/b(Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label12
+  aload 4
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
+  astore 24
+  aload 24
+  astore_0
+  aload_0
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+  iconst_0
+  istore 23
+  goto Label9
+Label19:
+  astore 36
+  getstatic com/wiyun/ad/c/a Ljava/lang/String;
+  astore 25
+  aload 25
+  astore_0
+  aload_0
+  invokestatic com/wiyun/ad/ac/b(Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label13
+  aload 4
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
+  astore 24
+  aload 24
+  astore_0
+  aload_0
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+Label13:
+  aload 36
+  athrow
+Label25:
+  astore 37
+  goto Label6
+Label17:
+  astore 38
+  goto Label14
+Label15:
+  astore 39
+  goto Label0
+Label12:
+  iconst_0
+  istore 23
+  goto Label9
+Label5:
+  iconst_0
+  istore 23
+  goto Label11
+  nop
+.end <method>
+

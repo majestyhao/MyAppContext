@@ -1,0 +1,590 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/kuguo/ad/o
+.super java/lang/Object
+.field "a" Landroid/view/View$OnClickListener;
+.field private "b" I
+.field private "c" Lcom/kuguo/ad/p;
+.field private "d" Lcom/kuguo/ad/l;
+.field private "e" Landroid/app/Activity;
+.field private "f" Lcom/kuguo/ad/c;
+.field private "g" Landroid/os/Handler;
+
+.method public <init>(Landroid/app/Activity;Lcom/kuguo/ad/p;Z)V
+.limit locals 22
+.limit stack 200
+  nop
+  aload_0
+  astore 4
+  aload 4
+  invokespecial java/lang/Object/<init>()V
+  iconst_0
+  istore 6
+  aload_0
+  astore 4
+  aload 4
+  iload 6
+  putfield com/kuguo/ad/o/b I
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  astore 4
+  aload 7
+  aload 4
+  invokespecial com/kuguo/ad/h/<init>(Lcom/kuguo/ad/o;)V
+  aload_0
+  astore 4
+  aload 4
+  aload 7
+  putfield com/kuguo/ad/o/g Landroid/os/Handler;
+  new com/kuguo/ad/g
+  astore 8
+  aload_0
+  astore 4
+  aload 8
+  aload 4
+  invokespecial com/kuguo/ad/g/<init>(Lcom/kuguo/ad/o;)V
+  aload_0
+  astore 4
+  aload 4
+  aload 8
+  putfield com/kuguo/ad/o/a Landroid/view/View$OnClickListener;
+  aload_1
+  astore 4
+  aload_0
+  astore 5
+  aload 5
+  aload 4
+  putfield com/kuguo/ad/o/e Landroid/app/Activity;
+  aload_2
+  astore 4
+  aload_0
+  astore 5
+  aload 5
+  aload 4
+  putfield com/kuguo/ad/o/c Lcom/kuguo/ad/p;
+  new com/kuguo/ad/c
+  astore 9
+  aload_0
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/o/g Landroid/os/Handler;
+  astore 10
+  aload_1
+  astore 4
+  aload_2
+  astore 5
+  aload 9
+  aload 4
+  aload 5
+  aload 10
+  invokespecial com/kuguo/ad/c/<init>(Landroid/content/Context;Lcom/kuguo/ad/p;Landroid/os/Handler;)V
+  aload_0
+  astore 4
+  aload 4
+  aload 9
+  putfield com/kuguo/ad/o/f Lcom/kuguo/ad/c;
+  new com/kuguo/a/f
+  astore 11
+  aload_2
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/p/o Ljava/lang/String;
+  astore 12
+  aload_2
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/p/h I
+  istore 13
+  ldc "icon.png"
+  astore 15
+  aload_1
+  astore 4
+  aload 4
+  aload 15
+  iload 13
+  invokestatic com/kuguo/ad/d/b(Landroid/content/Context;Ljava/lang/String;I)Ljava/io/File;
+  astore 14
+  iconst_0
+  istore 6
+  aload 11
+  aload 12
+  aload 14
+  iload 6
+  invokespecial com/kuguo/a/f/<init>(Ljava/lang/String;Ljava/io/File;I)V
+  iconst_m1
+  istore 6
+  iload 6
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 16
+  aload 11
+  aload 16
+  invokevirtual com/kuguo/a/f/a(Ljava/lang/Object;)V
+  aload_0
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/o/f Lcom/kuguo/ad/c;
+  astore 9
+  aload_1
+  astore 4
+  aload 4
+  aload 11
+  aload 9
+  invokestatic com/kuguo/ad/u/a(Landroid/content/Context;Lcom/kuguo/a/f;Lcom/kuguo/a/d;)V
+  aload_2
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/p/p Ljava/lang/String;
+  astore 12
+  ldc ";"
+  astore 15
+  aload 12
+  aload 15
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+  astore 17
+  aload 17
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 17
+  ifnull Label0
+  aload 17
+  arraylength
+  istore 13
+  aload_0
+  astore 4
+  aload 4
+  iload 13
+  putfield com/kuguo/ad/o/b I
+Label0:
+  aload_0
+  astore 4
+  iload_3
+  istore 5
+  aload 4
+  iload 5
+  invokespecial com/kuguo/ad/o/a(Z)V
+  iconst_0
+  dstore 13
+Label2:
+  aload_0
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/o/b I
+  istore 18
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 18
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  iload 18
+  if_icmpge Label1
+  new com/kuguo/a/f
+  astore 11
+  aload 17
+  iload 13
+  aaload
+  astore 12
+  new java/lang/StringBuilder
+  astore 19
+  aload 19
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 19
+  iload 13
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 19
+  ldc ".png"
+  astore 15
+  aload 19
+  aload 15
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 19
+  aload 19
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 20
+  aload_2
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/p/h I
+  istore 18
+  aload_1
+  astore 4
+  aload 20
+  astore 5
+  aload 4
+  aload 5
+  iload 18
+  invokestatic com/kuguo/ad/d/b(Landroid/content/Context;Ljava/lang/String;I)Ljava/io/File;
+  astore 14
+  iconst_0
+  istore 6
+  aload 11
+  aload 12
+  aload 14
+  iload 6
+  invokespecial com/kuguo/a/f/<init>(Ljava/lang/String;Ljava/io/File;I)V
+  iload 13
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 16
+  aload 11
+  aload 16
+  invokevirtual com/kuguo/a/f/a(Ljava/lang/Object;)V
+  aload_0
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/o/e Landroid/app/Activity;
+  astore 4
+  aload 4
+  astore 21
+  aload_0
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/o/f Lcom/kuguo/ad/c;
+  astore 9
+  aload 21
+  astore 4
+  aload 4
+  aload 11
+  aload 9
+  invokestatic com/kuguo/ad/u/a(Landroid/content/Context;Lcom/kuguo/a/f;Lcom/kuguo/a/d;)V
+  iload 13
+  iconst_1
+  iadd
+  istore 13
+  goto Label2
+Label1:
+  return
+  nop
+.end <method>
+
+.method static a(Lcom/kuguo/ad/o;)Landroid/app/Activity;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/ad/o/e Landroid/app/Activity;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private a(Ljava/lang/String;)Ljava/util/Map;
+.limit locals 11
+.limit stack 200
+  nop
+  new java/util/HashMap
+  astore_2
+  aload_2
+  invokespecial java/util/HashMap/<init>()V
+  ldc "|"
+  astore 4
+  aload_1
+  aload 4
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_3
+  arraylength
+  istore 5
+  iconst_0
+  dstore 6
+Label2:
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  iload 5
+  if_icmpge Label0
+  aload_3
+  iload 6
+  aaload
+  astore 7
+  ldc "="
+  astore 4
+  aload 7
+  aload 4
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label1
+  aload 8
+  arraylength
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 10
+  iload 9
+  iload 10
+  if_icmpne Label1
+  iconst_0
+  istore 10
+  aload 8
+  iload 10
+  aaload
+  astore 7
+  iconst_1
+  istore 10
+  aload 8
+  iload 10
+  aaload
+  astore_1
+  aload_2
+  aload 7
+  aload_1
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+Label1:
+  iload 6
+  iconst_1
+  iadd
+  istore 6
+  goto Label2
+Label0:
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method protected a()V
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_m1
+  istore_2
+  iconst_m1
+  istore_3
+  aload_1
+  iload_2
+  iload_3
+  invokespecial android/widget/LinearLayout$LayoutParams/<init>(II)V
+  aload_0
+  getfield com/kuguo/ad/o/e Landroid/app/Activity;
+  astore 4
+  aload_0
+  getfield com/kuguo/ad/o/d Lcom/kuguo/ad/l;
+  astore 5
+  aload 4
+  aload 5
+  aload_1
+  invokevirtual android/app/Activity/setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  return
+  nop
+.end <method>
+
+.method private a(Z)V
+.limit locals 11
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield com/kuguo/ad/o/e Landroid/app/Activity;
+  astore_3
+  aload_0
+  getfield com/kuguo/ad/o/c Lcom/kuguo/ad/p;
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/p/B I
+  istore 5
+  aload_2
+  aload_3
+  iload_1
+  iload 5
+  invokespecial com/kuguo/ad/l/<init>(Landroid/content/Context;ZI)V
+  aload_0
+  aload_2
+  putfield com/kuguo/ad/o/d Lcom/kuguo/ad/l;
+  aload_0
+  getfield com/kuguo/ad/o/d Lcom/kuguo/ad/l;
+  astore_2
+  aload_0
+  getfield com/kuguo/ad/o/b I
+  istore 5
+  aload_2
+  iload 5
+  invokevirtual com/kuguo/ad/l/a(I)V
+  aload_0
+  getfield com/kuguo/ad/o/d Lcom/kuguo/ad/l;
+  astore_2
+  aload_0
+  getfield com/kuguo/ad/o/c Lcom/kuguo/ad/p;
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/p/b Ljava/lang/String;
+  astore 6
+  aload_2
+  aload 6
+  invokevirtual com/kuguo/ad/l/d(Ljava/lang/String;)V
+  aload_0
+  getfield com/kuguo/ad/o/d Lcom/kuguo/ad/l;
+  astore_2
+  aload_0
+  getfield com/kuguo/ad/o/c Lcom/kuguo/ad/p;
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/p/l Ljava/lang/String;
+  astore 6
+  aload_2
+  aload 6
+  invokevirtual com/kuguo/ad/l/b(Ljava/lang/String;)V
+  aload_0
+  getfield com/kuguo/ad/o/d Lcom/kuguo/ad/l;
+  astore_2
+  aload_0
+  getfield com/kuguo/ad/o/c Lcom/kuguo/ad/p;
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/p/n Ljava/lang/String;
+  astore 6
+  aload_2
+  aload 6
+  invokevirtual com/kuguo/ad/l/c(Ljava/lang/String;)V
+  aload_0
+  getfield com/kuguo/ad/o/d Lcom/kuguo/ad/l;
+  astore_2
+  aload_0
+  getfield com/kuguo/ad/o/c Lcom/kuguo/ad/p;
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/p/m I
+  istore 5
+  iload 5
+  i2f
+  fstore 7
+  aload_2
+  fload 7
+  invokevirtual com/kuguo/ad/l/a(F)V
+  aload_0
+  getfield com/kuguo/ad/o/d Lcom/kuguo/ad/l;
+  astore_2
+  aload_0
+  getfield com/kuguo/ad/o/c Lcom/kuguo/ad/p;
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/p/k Ljava/lang/String;
+  astore 6
+  aload_2
+  aload 6
+  invokevirtual com/kuguo/ad/l/a(Ljava/lang/String;)V
+  aload_0
+  getfield com/kuguo/ad/o/d Lcom/kuguo/ad/l;
+  astore_2
+  aload_0
+  getfield com/kuguo/ad/o/c Lcom/kuguo/ad/p;
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/p/E Ljava/lang/String;
+  astore 6
+  aload_2
+  aload 6
+  invokevirtual com/kuguo/ad/l/e(Ljava/lang/String;)V
+  aload_0
+  getfield com/kuguo/ad/o/d Lcom/kuguo/ad/l;
+  astore_2
+  aload_0
+  getfield com/kuguo/ad/o/c Lcom/kuguo/ad/p;
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/p/v Ljava/lang/String;
+  astore 6
+  aload_0
+  aload 6
+  invokespecial com/kuguo/ad/o/a(Ljava/lang/String;)Ljava/util/Map;
+  astore 8
+  aload_2
+  aload 8
+  invokevirtual com/kuguo/ad/l/a(Ljava/util/Map;)V
+  aload_0
+  getfield com/kuguo/ad/o/d Lcom/kuguo/ad/l;
+  astore_2
+  aload_0
+  getfield com/kuguo/ad/o/a Landroid/view/View$OnClickListener;
+  astore 9
+  aload_2
+  aload 9
+  invokevirtual com/kuguo/ad/l/a(Landroid/view/View$OnClickListener;)V
+  aload_0
+  getfield com/kuguo/ad/o/c Lcom/kuguo/ad/p;
+  astore 4
+  aload 4
+  getfield com/kuguo/ad/p/e B
+  istore 10
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  lookupswitch
+  2 : Label1
+  3 : Label2
+  4 : Label1
+  default : Label0
+Label0:
+  goto Label2
+Label2:
+  return
+Label1:
+  aload_0
+  getfield com/kuguo/ad/o/d Lcom/kuguo/ad/l;
+  astore_2
+  aload_2
+  invokevirtual com/kuguo/ad/l/a()V
+  goto Label2
+  nop
+  nop
+  nop
+.end <method>
+
+.method static b(Lcom/kuguo/ad/o;)Lcom/kuguo/ad/l;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/ad/o/d Lcom/kuguo/ad/l;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static c(Lcom/kuguo/ad/o;)I
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/ad/o/b I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static d(Lcom/kuguo/ad/o;)Lcom/kuguo/ad/p;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/ad/o/c Lcom/kuguo/ad/p;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+

@@ -1,0 +1,859 @@
+.source SourceFile
+.class public abstract  com/mobisage/sns/tencent/MSTencentWeiboMessage
+.super com/mobisage/android/MobiSageReqMessage
+.field protected "consumer" Lcom/mobisage/sns/common/MSOAConsumer;
+.field protected "httpMethod" Ljava/lang/String;
+.field protected "paramMap" Ljava/util/HashMap;
+.field protected "token" Lcom/mobisage/sns/common/MSOAToken;
+.field protected "urlPath" Ljava/lang/String;
+
+.method public <init>(Lcom/mobisage/sns/common/MSOAToken;Lcom/mobisage/sns/common/MSOAConsumer;)V
+.limit locals 8
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/mobisage/android/MobiSageReqMessage/<init>()V
+  aload_0
+  aload_1
+  putfield com/mobisage/sns/tencent/MSTencentWeiboMessage/token Lcom/mobisage/sns/common/MSOAToken;
+  aload_0
+  aload_2
+  putfield com/mobisage/sns/tencent/MSTencentWeiboMessage/consumer Lcom/mobisage/sns/common/MSOAConsumer;
+  new java/util/HashMap
+  astore_3
+  aload_3
+  invokespecial java/util/HashMap/<init>()V
+  aload_0
+  aload_3
+  putfield com/mobisage/sns/tencent/MSTencentWeiboMessage/paramMap Ljava/util/HashMap;
+  aload_0
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/paramMap Ljava/util/HashMap;
+  astore_3
+  aload_2
+  getfield com/mobisage/sns/common/MSOAConsumer/key Ljava/lang/String;
+  astore 4
+  ldc "oauth_consumer_key"
+  astore 5
+  aload_3
+  aload 5
+  aload 4
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_0
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/paramMap Ljava/util/HashMap;
+  astore_3
+  ldc "oauth_signature_method"
+  astore 5
+  ldc "HMAC-SHA1"
+  astore 6
+  aload_3
+  aload 5
+  aload 6
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_0
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/paramMap Ljava/util/HashMap;
+  astore_3
+  ldc "oauth_version"
+  astore 5
+  ldc "1.0"
+  astore 6
+  aload_3
+  aload 5
+  aload 6
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_0
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/paramMap Ljava/util/HashMap;
+  astore_3
+  aload_1
+  getfield com/mobisage/sns/common/MSOAToken/key Ljava/lang/String;
+  astore 7
+  ldc "oauth_token"
+  astore 5
+  aload_3
+  aload 5
+  aload 7
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_1
+  getfield com/mobisage/sns/common/MSOAToken/pin Ljava/lang/String;
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnull Label0
+  aload_0
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/paramMap Ljava/util/HashMap;
+  astore_3
+  aload_1
+  getfield com/mobisage/sns/common/MSOAToken/pin Ljava/lang/String;
+  astore 7
+  ldc "oauth_verifier"
+  astore 5
+  aload_3
+  aload 5
+  aload 7
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+Label0:
+  return
+  nop
+.end <method>
+
+.method public addParam(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/paramMap Ljava/util/HashMap;
+  astore_3
+  aload_3
+  aload_1
+  aload_2
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  return
+  nop
+.end <method>
+
+.method public createHttpRequest()Lorg/apache/http/client/methods/HttpRequestBase;
+.limit locals 18
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/httpMethod Ljava/lang/String;
+  astore_2
+  aload_1
+  astore_0
+  ldc "GET"
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  new org/apache/http/client/methods/HttpGet
+  astore 5
+  new java/lang/StringBuilder
+  astore 6
+  aload 6
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/urlPath Ljava/lang/String;
+  astore 7
+  aload 6
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  ldc "?"
+  astore 4
+  aload 8
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual com/mobisage/sns/tencent/MSTencentWeiboMessage/generateOAuthParams()Ljava/lang/String;
+  astore 7
+  aload 8
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  aload 5
+  aload 7
+  invokespecial org/apache/http/client/methods/HttpGet/<init>(Ljava/lang/String;)V
+  aload 5
+  astore 10
+  aload 10
+  checkcast org/apache/http/client/methods/HttpRequestBase
+  astore 10
+  aload 10
+  astore 9
+  aload 9
+  areturn
+Label0:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/httpMethod Ljava/lang/String;
+  astore 7
+  ldc "POST"
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label1
+  new org/apache/http/client/methods/HttpPost
+  astore 11
+  aload 11
+  astore 12
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/urlPath Ljava/lang/String;
+  astore 7
+  aload 11
+  aload 7
+  invokespecial org/apache/http/client/methods/HttpPost/<init>(Ljava/lang/String;)V
+  aload 11
+  checkcast org/apache/http/client/methods/HttpPost
+  astore 11
+  ldc "Content-Type"
+  astore 4
+  ldc "application/x-www-form-urlencoded"
+  astore 13
+  aload 11
+  aload 4
+  aload 13
+  invokevirtual org/apache/http/client/methods/HttpPost/setHeader(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual com/mobisage/sns/tencent/MSTencentWeiboMessage/generateOAuthParams()Ljava/lang/String;
+  astore 7
+  new org/apache/http/entity/StringEntity
+  astore 14
+  aload 14
+  aload 7
+  invokespecial org/apache/http/entity/StringEntity/<init>(Ljava/lang/String;)V
+  aload 12
+  astore 15
+  aload 15
+  checkcast org/apache/http/client/methods/HttpPost
+  astore 15
+  aload 15
+  astore 11
+  aload 11
+  aload 14
+  invokevirtual org/apache/http/client/methods/HttpPost/setEntity(Lorg/apache/http/HttpEntity;)V
+  aload 12
+  astore 16
+  aload 16
+  checkcast org/apache/http/client/methods/HttpRequestBase
+  astore 16
+  aload 16
+  astore 9
+  aload 9
+  areturn
+Label1:
+  aconst_null
+  astore 17
+  aload 17
+  areturn
+  nop
+.end <method>
+
+.method protected generateClearText(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.limit locals 20
+.limit stack 200
+  nop
+  new java/util/LinkedList
+  astore 4
+  aload 4
+  invokespecial java/util/LinkedList/<init>()V
+  new java/lang/StringBuilder
+  astore 5
+  ldc "oauth_nonce="
+  astore 6
+  aload 5
+  aload 6
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_2
+  astore_3
+  aload 5
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual java/util/LinkedList/add(Ljava/lang/Object;)Z
+  pop
+  new java/lang/StringBuilder
+  astore 5
+  ldc "oauth_timestamp="
+  astore 6
+  aload 5
+  aload 6
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_1
+  astore_3
+  aload 5
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual java/util/LinkedList/add(Ljava/lang/Object;)Z
+  pop
+  aload_0
+  astore_3
+  aload_3
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/paramMap Ljava/util/HashMap;
+  astore 8
+  aload 8
+  invokevirtual java/util/HashMap/keySet()Ljava/util/Set;
+  astore 9
+  aload 9
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore 10
+Label1:
+  aload 10
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 11
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 11
+  ifeq Label0
+  aload 10
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 12
+  aload 12
+  astore 13
+  aload 13
+  checkcast java/lang/String
+  astore 13
+  aload 13
+  astore_2
+  new java/lang/StringBuilder
+  astore 5
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_2
+  astore_3
+  aload 5
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  ldc "="
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload_0
+  astore_3
+  aload_3
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/paramMap Ljava/util/HashMap;
+  astore 8
+  aload_2
+  astore_3
+  aload 8
+  aload_3
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 12
+  aload 12
+  astore 14
+  aload 14
+  checkcast java/lang/String
+  astore 14
+  aload 14
+  astore 7
+  aload 7
+  invokestatic java/net/URLEncoder/encode(Ljava/lang/String;)Ljava/lang/String;
+  astore 7
+  aload 5
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual java/util/LinkedList/add(Ljava/lang/Object;)Z
+  pop
+  goto Label1
+Label0:
+  aload 4
+  invokestatic java/util/Collections/sort(Ljava/util/List;)V
+  new java/lang/StringBuilder
+  astore 5
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>()V
+  iconst_0
+  istore 15
+Label4:
+  aload 4
+  invokevirtual java/util/LinkedList/size()I
+  istore 16
+  dload 15
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 15
+  iload 16
+  if_icmpge Label2
+  dload 15
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 15
+  ifeq Label3
+  new java/lang/StringBuilder
+  astore 17
+  ldc "&"
+  astore 6
+  aload 17
+  aload 6
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 4
+  iload 15
+  invokevirtual java/util/LinkedList/get(I)Ljava/lang/Object;
+  astore 12
+  aload 12
+  astore 18
+  aload 18
+  checkcast java/lang/String
+  astore 18
+  aload 18
+  astore 7
+  aload 17
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 17
+  aload 17
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  aload 5
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+Label5:
+  iload 15
+  iconst_1
+  iadd
+  istore 15
+  goto Label4
+Label3:
+  aload 4
+  iload 15
+  invokevirtual java/util/LinkedList/get(I)Ljava/lang/Object;
+  astore 12
+  aload 12
+  astore 19
+  aload 19
+  checkcast java/lang/String
+  astore 19
+  aload 19
+  astore 7
+  aload 5
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  goto Label5
+Label2:
+  new java/lang/StringBuilder
+  astore 17
+  aload 17
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_0
+  astore_3
+  aload_3
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/httpMethod Ljava/lang/String;
+  astore 7
+  aload 17
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  ldc "&"
+  astore 6
+  aload 17
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  astore_3
+  aload_3
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/urlPath Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic java/net/URLEncoder/encode(Ljava/lang/String;)Ljava/lang/String;
+  astore 7
+  aload 17
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  ldc "&"
+  astore 6
+  aload 17
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic java/net/URLEncoder/encode(Ljava/lang/String;)Ljava/lang/String;
+  astore 7
+  aload 17
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  aload 17
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  aload 7
+  areturn
+  nop
+.end <method>
+
+.method protected generateOAuthParams()Ljava/lang/String;
+.limit locals 22
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_2
+  invokespecial android/text/format/Time/<init>()V
+  aload_2
+  invokevirtual android/text/format/Time/setToNow()V
+  iconst_1
+  istore 5
+  aload_2
+  iload 5
+  invokevirtual android/text/format/Time/toMillis(Z)J
+  lstore_3
+  ldc2_w 1000
+  lstore 6
+  lload_3
+  lload 6
+  ldiv
+  lstore_3
+  lload_3
+  invokestatic java/lang/String/valueOf(J)Ljava/lang/String;
+  astore 8
+  invokestatic java/util/UUID/randomUUID()Ljava/util/UUID;
+  astore 9
+  aload 9
+  invokevirtual java/util/UUID/toString()Ljava/lang/String;
+  astore 10
+  ldc "-"
+  astore 12
+  ldc ""
+  astore 13
+  aload 10
+  aload 12
+  aload 13
+  invokevirtual java/lang/String/replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+  astore 11
+  aload_0
+  astore_1
+  aload_1
+  aload 8
+  aload 11
+  invokevirtual com/mobisage/sns/tencent/MSTencentWeiboMessage/generateSignature(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  astore 10
+  aload 10
+  invokevirtual java/lang/String/trim()Ljava/lang/String;
+  astore 10
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "oauth_timestamp="
+  astore 12
+  aload 14
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  aload 14
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  ldc "&"
+  astore 12
+  aload 14
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  ldc "oauth_nonce="
+  astore 12
+  aload 14
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  aload 14
+  aload 11
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  ldc "&"
+  astore 12
+  aload 14
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  ldc "oauth_signature="
+  astore 12
+  aload 14
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  aload 10
+  invokestatic java/net/URLEncoder/encode(Ljava/lang/String;)Ljava/lang/String;
+  astore 11
+  aload 14
+  aload 11
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/paramMap Ljava/util/HashMap;
+  astore 15
+  aload 15
+  invokevirtual java/util/HashMap/keySet()Ljava/util/Set;
+  astore 16
+  aload 16
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore 17
+Label1:
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 18
+  iload 18
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 18
+  ifeq Label0
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 19
+  aload 19
+  astore 20
+  aload 20
+  checkcast java/lang/String
+  astore 20
+  aload 20
+  astore 11
+  ldc "&"
+  astore 12
+  aload 14
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  aload 14
+  aload 11
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  ldc "="
+  astore 12
+  aload 14
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/paramMap Ljava/util/HashMap;
+  astore 15
+  aload 15
+  aload 11
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 19
+  aload 19
+  astore 21
+  aload 21
+  checkcast java/lang/String
+  astore 21
+  aload 21
+  astore 11
+  aload 11
+  invokestatic java/net/URLEncoder/encode(Ljava/lang/String;)Ljava/lang/String;
+  astore 11
+  aload 14
+  aload 11
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  goto Label1
+Label0:
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 11
+  aload 11
+  areturn
+  nop
+.end <method>
+
+.method protected generateSignature(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.limit locals 16
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  invokevirtual com/mobisage/sns/tencent/MSTencentWeiboMessage/generateClearText(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  astore_2
+  aload_0
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/token Lcom/mobisage/sns/common/MSOAToken;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_0
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/consumer Lcom/mobisage/sns/common/MSOAConsumer;
+  astore 5
+  aload 5
+  getfield com/mobisage/sns/common/MSOAConsumer/secret Ljava/lang/String;
+  astore_1
+  aload_1
+  invokestatic java/net/URLEncoder/encode(Ljava/lang/String;)Ljava/lang/String;
+  astore_1
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  ldc "&"
+  astore 7
+  aload 6
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  aload_0
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/token Lcom/mobisage/sns/common/MSOAToken;
+  astore_3
+  aload_3
+  getfield com/mobisage/sns/common/MSOAToken/secret Ljava/lang/String;
+  astore_1
+  aload_1
+  invokestatic java/net/URLEncoder/encode(Ljava/lang/String;)Ljava/lang/String;
+  astore_1
+  aload 6
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  aload 6
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_1
+Label1:
+  ldc "HmacSHA1"
+  astore 7
+  aload 7
+  invokestatic javax/crypto/Mac/getInstance(Ljava/lang/String;)Ljavax/crypto/Mac;
+  astore 8
+  new javax/crypto/spec/SecretKeySpec
+  astore 9
+  aload_1
+  invokevirtual java/lang/String/toString()Ljava/lang/String;
+  astore 10
+  aload 10
+  invokevirtual java/lang/String/getBytes()[B
+  astore 11
+  ldc "HmacSHA1"
+  astore 7
+  aload 9
+  aload 11
+  aload 7
+  invokespecial javax/crypto/spec/SecretKeySpec/<init>([BLjava/lang/String;)V
+  aload 9
+  astore 13
+  aload 13
+  checkcast java/security/Key
+  astore 13
+  aload 13
+  astore 12
+  aload 8
+  aload 12
+  invokevirtual javax/crypto/Mac/init(Ljava/security/Key;)V
+  aload_2
+  invokevirtual java/lang/String/getBytes()[B
+  astore 11
+  aload 8
+  aload 11
+  invokevirtual javax/crypto/Mac/doFinal([B)[B
+  astore 11
+  iconst_0
+  istore 14
+  aload 11
+  iload 14
+  invokestatic android/util/Base64/encode([BI)[B
+  astore 11
+  aload 11
+  arraylength
+  istore 15
+  iconst_0
+  istore 14
+  ldc "UTF-8"
+  astore 7
+  aload 11
+  iload 14
+  iload 15
+  aload 7
+  invokestatic org/apache/http/util/EncodingUtils/getString([BIILjava/lang/String;)Ljava/lang/String;
+  astore 10
+  aload 10
+  areturn
+Label0:
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_0
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/consumer Lcom/mobisage/sns/common/MSOAConsumer;
+  astore 5
+  aload 5
+  getfield com/mobisage/sns/common/MSOAConsumer/secret Ljava/lang/String;
+  astore 10
+  aload 10
+  invokestatic java/net/URLEncoder/encode(Ljava/lang/String;)Ljava/lang/String;
+  astore 10
+  aload 4
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  ldc "&"
+  astore 7
+  aload 6
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  aload 6
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_1
+  goto Label1
+  nop
+.end <method>
+

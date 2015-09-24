@@ -1,0 +1,489 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/wiyun/ad/y
+.super java/lang/Object
+.field private static final "a" [C
+.field private static final "b" [C
+.field private final "c" Ljava/lang/String;
+
+.method static <clinit>()V
+.limit locals 3
+.limit stack 200
+  nop
+  bipush 16
+  istore_1
+  iload_1
+  newarray char
+  astore_0
+  iconst_0
+  istore_1
+  bipush 48
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_1
+  istore_1
+  bipush 49
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_2
+  istore_1
+  bipush 50
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_3
+  istore_1
+  bipush 51
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_4
+  istore_1
+  bipush 52
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_5
+  istore_1
+  bipush 53
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 6
+  istore_1
+  bipush 54
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 7
+  istore_1
+  bipush 55
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 8
+  istore_1
+  bipush 56
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 9
+  istore_1
+  bipush 57
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 10
+  istore_1
+  bipush 97
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 11
+  istore_1
+  bipush 98
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 12
+  istore_1
+  bipush 99
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 13
+  istore_1
+  bipush 100
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 14
+  istore_1
+  bipush 101
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 15
+  istore_1
+  bipush 102
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  aload_0
+  putstatic com/wiyun/ad/y/a [C
+  bipush 16
+  istore_1
+  iload_1
+  newarray char
+  astore_0
+  iconst_0
+  istore_1
+  bipush 48
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_1
+  istore_1
+  bipush 49
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_2
+  istore_1
+  bipush 50
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_3
+  istore_1
+  bipush 51
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_4
+  istore_1
+  bipush 52
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_5
+  istore_1
+  bipush 53
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 6
+  istore_1
+  bipush 54
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 7
+  istore_1
+  bipush 55
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 8
+  istore_1
+  bipush 56
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 9
+  istore_1
+  bipush 57
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 10
+  istore_1
+  bipush 65
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 11
+  istore_1
+  bipush 66
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 12
+  istore_1
+  bipush 67
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 13
+  istore_1
+  bipush 68
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 14
+  istore_1
+  bipush 69
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 15
+  istore_1
+  bipush 70
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  aload_0
+  putstatic com/wiyun/ad/y/b [C
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc "UTF-8"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/wiyun/ad/y/c Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public static a([B)[C
+.limit locals 3
+.limit stack 200
+  nop
+  iconst_1
+  istore_2
+  aload_0
+  iload_2
+  invokestatic com/wiyun/ad/y/a([BZ)[C
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static a([BZ)[C
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  getstatic com/wiyun/ad/y/a [C
+  astore_2
+Label1:
+  aload_0
+  aload_2
+  invokestatic com/wiyun/ad/y/a([B[C)[C
+  astore_2
+  aload_2
+  areturn
+Label0:
+  getstatic com/wiyun/ad/y/b [C
+  astore_2
+  goto Label1
+  nop
+.end <method>
+
+.method protected static a([B[C)[C
+.limit locals 11
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  aload_0
+  arraylength
+  istore_3
+  iload_3
+  iconst_1
+  ishl
+  istore 4
+  iload 4
+  newarray char
+  astore 5
+  iconst_0
+  istore 6
+Label1:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  iload_3
+  if_icmplt Label0
+  aload 5
+  areturn
+Label0:
+  iload_2
+  iconst_1
+  iadd
+  istore 4
+  aload_0
+  iload 6
+  baload
+  istore 7
+  sipush 240
+  istore 9
+  iload 7
+  iload 9
+  iand
+  istore 8
+  iconst_4
+  istore 9
+  iload 8
+  iload 9
+  iushr
+  istore 8
+  aload_1
+  iload 8
+  caload
+  istore 10
+  aload 5
+  iload_2
+  iload 10
+  castore
+  iload 4
+  iconst_1
+  iadd
+  istore_2
+  aload_0
+  iload 6
+  baload
+  istore 7
+  bipush 15
+  istore 9
+  iload 7
+  iload 9
+  iand
+  istore 7
+  aload_1
+  iload 7
+  caload
+  istore 10
+  aload 5
+  iload 4
+  iload 10
+  castore
+  iload 6
+  iconst_1
+  iadd
+  istore 6
+  goto Label1
+  nop
+.end <method>
+
+.method public static b([B)Ljava/lang/String;
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/String
+  astore_1
+  aload_0
+  invokestatic com/wiyun/ad/y/a([B)[C
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/lang/String/<init>([C)V
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public toString()Ljava/lang/String;
+.limit locals 4
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore_1
+  aload_0
+  invokespecial java/lang/Object/toString()Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  ldc "[charsetName="
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_0
+  getfield com/wiyun/ad/y/c Ljava/lang/String;
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  ldc "]"
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+

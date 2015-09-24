@@ -1,0 +1,92 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public final  com/google/ads/util/c
+.super java/lang/Object
+
+.method private <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method private static a(Landroid/content/Context;FI)I
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_3
+  getfield android/content/pm/ApplicationInfo/flags I
+  istore 4
+  iload 4
+  sipush 8192
+  iadd
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifeq Label0
+  iload_2
+  i2f
+  fstore 5
+  fload 5
+  fload_1
+  fdiv
+  fstore 5
+  fload 5
+  f2i
+  istore_2
+Label0:
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public static a(Landroid/content/Context;Landroid/util/DisplayMetrics;)I
+.limit locals 4
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_1
+  getfield android/util/DisplayMetrics/heightPixels I
+  istore_3
+  aload_0
+  fload_2
+  iload_3
+  invokestatic com/google/ads/util/c/a(Landroid/content/Context;FI)I
+  istore_3
+  iload_3
+  ireturn
+  nop
+.end <method>
+
+.method public static b(Landroid/content/Context;Landroid/util/DisplayMetrics;)I
+.limit locals 4
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_1
+  getfield android/util/DisplayMetrics/widthPixels I
+  istore_3
+  aload_0
+  fload_2
+  iload_3
+  invokestatic com/google/ads/util/c/a(Landroid/content/Context;FI)I
+  istore_3
+  iload_3
+  ireturn
+  nop
+.end <method>
+

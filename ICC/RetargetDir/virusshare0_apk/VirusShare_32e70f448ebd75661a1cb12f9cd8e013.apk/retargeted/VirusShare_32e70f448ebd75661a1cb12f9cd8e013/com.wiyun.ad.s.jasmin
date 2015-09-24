@@ -1,0 +1,134 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/wiyun/ad/s
+.super java/lang/Object
+.field private static "a" Z =  0
+
+.method static <clinit>()V
+.limit locals 1
+.limit stack 200
+  nop
+  iconst_1
+  istore_0
+  iload_0
+  putstatic com/wiyun/ad/s/a Z
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/s/a Z
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  aload_0
+  aload_1
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label0:
+  return
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Exception;)V
+.limit locals 4
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/s/a Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifne Label0
+  aload_0
+  aload_1
+  aload_2
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+  pop
+Label0:
+  return
+  nop
+.end <method>
+
+.method public static b(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/s/a Z
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  aload_0
+  aload_1
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label0:
+  return
+  nop
+.end <method>
+
+.method public static b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Exception;)V
+.limit locals 4
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/s/a Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifne Label0
+  aload_0
+  aload_1
+  aload_2
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+  pop
+Label0:
+  return
+  nop
+.end <method>
+
+.method public static c(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/wiyun/ad/s/a Z
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  aload_0
+  aload_1
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label0:
+  return
+  nop
+.end <method>
+

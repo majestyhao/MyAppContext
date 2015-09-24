@@ -1,0 +1,490 @@
+.source AdMogoTargeting.java
+.class public  com/admogo/AdMogoTargeting
+.super java/lang/Object
+.field public static final "APad_BIG_BANNER_AD" I =  2
+.field public static final "APad_RECTANGLE_AD" I =  4
+.field public static final "APad_SKYSCRAPER_AD" I =  5
+.field public static final "APad_SMALL_BANNER_AD" I =  3
+.field public static final "FULLSCREEN_AD" I =  6
+.field public static final "PHONE_BANNER_AD" I =  1
+.field public static final "VIDEO_AD" I =  7
+.field private static "adchinaDefaultImage" I =  0
+.field private static "appName" Ljava/lang/String;
+.field private static "birthDate" Ljava/util/GregorianCalendar;
+.field private static "birthday" Ljava/lang/String;
+.field private static "companyName" Ljava/lang/String;
+.field public static "countryCode" Ljava/lang/String;
+.field private static "gender" Lcom/admogo/AdMogoTargeting$Gender;
+.field private static "keywordSet" Ljava/util/Set;
+.field private static "keywords" Ljava/lang/String;
+.field private static "postalCode" Ljava/lang/String;
+.field private static "telephoneNumber" Ljava/lang/String;
+
+.method static <clinit>()V
+.limit locals 1
+.limit stack 200
+  nop
+  ldc ""
+  astore_0
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/countryCode Ljava/lang/String;
+  invokestatic com/admogo/AdMogoTargeting/resetData()V
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static addKeyword(Ljava/lang/String;)V
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/admogo/AdMogoTargeting/keywordSet Ljava/util/Set;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  new java/util/HashSet
+  astore_2
+  aload_2
+  invokespecial java/util/HashSet/<init>()V
+  aload_2
+  putstatic com/admogo/AdMogoTargeting/keywordSet Ljava/util/Set;
+Label0:
+  getstatic com/admogo/AdMogoTargeting/keywordSet Ljava/util/Set;
+  astore_1
+  aload_1
+  aload_0
+  invokeinterface java/util/Set/add(Ljava/lang/Object;)Z 2
+  pop
+  return
+  nop
+.end <method>
+
+.method public static getAdchinaDefaultImage()I
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdMogoTargeting/adchinaDefaultImage I
+  istore_0
+  iload_0
+  ireturn
+  nop
+.end <method>
+
+.method public static getAge()I
+.limit locals 5
+.limit stack 200
+  nop
+  getstatic com/admogo/AdMogoTargeting/birthDate Ljava/util/GregorianCalendar;
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  invokestatic java/util/Calendar/getInstance()Ljava/util/Calendar;
+  astore_1
+  iconst_1
+  istore_3
+  aload_1
+  iload_3
+  invokevirtual java/util/Calendar/get(I)I
+  istore_2
+  getstatic com/admogo/AdMogoTargeting/birthDate Ljava/util/GregorianCalendar;
+  astore_0
+  iconst_1
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual java/util/GregorianCalendar/get(I)I
+  istore 4
+  iload_2
+  iload 4
+  isub
+  istore 4
+  iload 4
+  ireturn
+Label0:
+  iconst_m1
+  istore_3
+  iload_3
+  ireturn
+  nop
+.end <method>
+
+.method public static getAppName()Ljava/lang/String;
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdMogoTargeting/appName Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static getBirthDate()Ljava/util/GregorianCalendar;
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdMogoTargeting/birthDate Ljava/util/GregorianCalendar;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static getBirthday()Ljava/lang/String;
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdMogoTargeting/birthday Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static getCompanyName()Ljava/lang/String;
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdMogoTargeting/companyName Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static getGender()Lcom/admogo/AdMogoTargeting$Gender;
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdMogoTargeting/gender Lcom/admogo/AdMogoTargeting$Gender;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static getKeywordSet()Ljava/util/Set;
+  .signature_attr "()Ljava/util/Set<Ljava/lang/String;>;"
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdMogoTargeting/keywordSet Ljava/util/Set;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static getKeywords()Ljava/lang/String;
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdMogoTargeting/keywords Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static getPostalCode()Ljava/lang/String;
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdMogoTargeting/postalCode Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static getTelephoneNumber()Ljava/lang/String;
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/AdMogoTargeting/telephoneNumber Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static resetData()V
+.limit locals 2
+.limit stack 200
+  nop
+  aconst_null
+  astore_0
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/appName Ljava/lang/String;
+  aconst_null
+  astore_0
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/companyName Ljava/lang/String;
+  getstatic com/admogo/AdMogoTargeting$Gender/UNKNOWN Lcom/admogo/AdMogoTargeting$Gender;
+  astore_1
+  aload_1
+  putstatic com/admogo/AdMogoTargeting/gender Lcom/admogo/AdMogoTargeting$Gender;
+  aconst_null
+  astore_0
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/birthDate Ljava/util/GregorianCalendar;
+  aconst_null
+  astore_0
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/birthday Ljava/lang/String;
+  aconst_null
+  astore_0
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/postalCode Ljava/lang/String;
+  aconst_null
+  astore_0
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/keywords Ljava/lang/String;
+  aconst_null
+  astore_0
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/keywordSet Ljava/util/Set;
+  aconst_null
+  astore_0
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/telephoneNumber Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public static setAdchinaDefaultImage(I)V
+.limit locals 1
+.limit stack 200
+  nop
+  iload_0
+  putstatic com/admogo/AdMogoTargeting/adchinaDefaultImage I
+  return
+  nop
+.end <method>
+
+.method public static setAge(I)V
+.limit locals 6
+.limit stack 200
+  nop
+  new java/util/GregorianCalendar
+  astore_1
+  invokestatic java/util/Calendar/getInstance()Ljava/util/Calendar;
+  astore_2
+  iconst_1
+  istore 4
+  aload_2
+  iload 4
+  invokevirtual java/util/Calendar/get(I)I
+  istore_3
+  iload_3
+  iload_0
+  isub
+  istore_3
+  iconst_0
+  istore 4
+  iconst_1
+  istore 5
+  aload_1
+  iload_3
+  iload 4
+  iload 5
+  invokespecial java/util/GregorianCalendar/<init>(III)V
+  aload_1
+  putstatic com/admogo/AdMogoTargeting/birthDate Ljava/util/GregorianCalendar;
+  return
+  nop
+.end <method>
+
+.method public static setAppName(Ljava/lang/String;)V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/appName Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public static setBirthDate(Ljava/util/GregorianCalendar;)V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/birthDate Ljava/util/GregorianCalendar;
+  return
+  nop
+.end <method>
+
+.method public static setBirthday(Ljava/lang/String;)V
+.limit locals 8
+.limit stack 200
+  nop
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/birthday Ljava/lang/String;
+  iconst_0
+  istore_2
+  iconst_4
+  istore_3
+  aload_0
+  iload_2
+  iload_3
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore_1
+  aload_1
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 4
+  iconst_4
+  istore_2
+  bipush 6
+  istore_3
+  aload_0
+  iload_2
+  iload_3
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore_1
+  aload_1
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 5
+  bipush 6
+  istore_2
+  bipush 8
+  istore_3
+  aload_0
+  iload_2
+  iload_3
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore_1
+  aload_1
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 6
+  new java/util/GregorianCalendar
+  astore 7
+  aload 7
+  invokespecial java/util/GregorianCalendar/<init>()V
+  iconst_1
+  istore_2
+  aload 7
+  iload_2
+  iload 4
+  invokevirtual java/util/GregorianCalendar/set(II)V
+  iconst_2
+  istore_2
+  aload 7
+  iload_2
+  iload 5
+  invokevirtual java/util/GregorianCalendar/set(II)V
+  iconst_5
+  istore_2
+  aload 7
+  iload_2
+  iload 6
+  invokevirtual java/util/GregorianCalendar/set(II)V
+  aload 7
+  invokestatic com/admogo/AdMogoTargeting/setBirthDate(Ljava/util/GregorianCalendar;)V
+  return
+  nop
+.end <method>
+
+.method public static setCompanyName(Ljava/lang/String;)V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/companyName Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public static setGender(Lcom/admogo/AdMogoTargeting$Gender;)V
+.limit locals 1
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  getstatic com/admogo/AdMogoTargeting$Gender/UNKNOWN Lcom/admogo/AdMogoTargeting$Gender;
+  astore_0
+Label0:
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/gender Lcom/admogo/AdMogoTargeting$Gender;
+  return
+  nop
+.end <method>
+
+.method public static setKeywordSet(Ljava/util/Set;)V
+  .signature_attr "(Ljava/util/Set<Ljava/lang/String;>;)V"
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/keywordSet Ljava/util/Set;
+  return
+  nop
+.end <method>
+
+.method public static setKeywords(Ljava/lang/String;)V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/keywords Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public static setPostalCode(Ljava/lang/String;)V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/postalCode Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public static setTelephoneNumber(Ljava/lang/String;)V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  putstatic com/admogo/AdMogoTargeting/telephoneNumber Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public static setTestMode(Z)V
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_1
+  ldc "Please set testMode in Website"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,60 @@
+.source Params.java
+.class public  maxstrom/game/llk/Params
+.super java/lang/Object
+.field public static "blockHeight" I =  0
+.field public static "blockWidth" I =  0
+.field public static "imageCount" I =  0
+.field public static "isMusic" Ljava/lang/Boolean;
+.field public static "isSound" Ljava/lang/Boolean;
+.field public static "isVibrate" Ljava/lang/Boolean;
+.field public static "maxYSize" I =  0
+.field public static "span" I =  0
+.field public static "xSize" I =  0
+.field public static "ySize" I =  0
+
+.method static <clinit>()V
+.limit locals 1
+.limit stack 200
+  nop
+  bipush 35
+  istore_0
+  iload_0
+  putstatic maxstrom/game/llk/Params/imageCount I
+  bipush 31
+  istore_0
+  iload_0
+  putstatic maxstrom/game/llk/Params/blockWidth I
+  bipush 35
+  istore_0
+  iload_0
+  putstatic maxstrom/game/llk/Params/blockHeight I
+  bipush 10
+  istore_0
+  iload_0
+  putstatic maxstrom/game/llk/Params/xSize I
+  iconst_0
+  istore_0
+  iload_0
+  putstatic maxstrom/game/llk/Params/ySize I
+  bipush 10
+  istore_0
+  iload_0
+  putstatic maxstrom/game/llk/Params/maxYSize I
+  iconst_5
+  istore_0
+  iload_0
+  putstatic maxstrom/game/llk/Params/span I
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

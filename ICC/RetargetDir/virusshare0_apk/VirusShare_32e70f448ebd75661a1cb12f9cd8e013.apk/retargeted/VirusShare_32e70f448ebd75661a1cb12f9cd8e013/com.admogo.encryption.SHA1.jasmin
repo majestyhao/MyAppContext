@@ -1,0 +1,139 @@
+.source SHA1.java
+.class public  com/admogo/encryption/SHA1
+.super java/lang/Object
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static SHA(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 7
+.limit stack 200
+  .catch  java/lang/Exception <from> Label1 <to> Label2 <using> Label0
+  nop
+Label1:
+  ldc "sha-1"
+  astore_2
+  aload_2
+  invokestatic java/security/MessageDigest/getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+  astore_1
+  aload_0
+  invokevirtual java/lang/String/getBytes()[B
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/security/MessageDigest/update([B)V
+  aload_1
+  invokevirtual java/security/MessageDigest/digest()[B
+  astore_3
+  aload_3
+  invokestatic com/admogo/encryption/SHA1/bytes2Hex([B)Ljava/lang/String;
+  astore 4
+Label2:
+  aload 4
+  areturn
+Label0:
+  astore 5
+  aload 5
+  invokevirtual java/lang/Exception/printStackTrace()V
+  aconst_null
+  astore 6
+  aload 6
+  areturn
+  nop
+.end <method>
+
+.method private static bytes2Hex([B)Ljava/lang/String;
+.limit locals 11
+.limit stack 200
+  nop
+  ldc ""
+  astore_1
+  iconst_0
+  istore_2
+Label2:
+  aload_0
+  arraylength
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmplt Label0
+  aload_1
+  areturn
+Label0:
+  aload_0
+  iload_2
+  baload
+  istore 4
+  sipush 255
+  istore 6
+  iload 4
+  iload 6
+  iand
+  istore 5
+  iload 5
+  invokestatic java/lang/Integer/toHexString(I)Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/length()I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 6
+  iload 8
+  iload 6
+  if_icmpne Label1
+  new java/lang/StringBuilder
+  astore 9
+  aload_1
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore_1
+  aload 9
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  ldc "0"
+  astore 10
+  aload 9
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_1
+Label1:
+  new java/lang/StringBuilder
+  astore 9
+  aload_1
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore_1
+  aload 9
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 9
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_1
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+

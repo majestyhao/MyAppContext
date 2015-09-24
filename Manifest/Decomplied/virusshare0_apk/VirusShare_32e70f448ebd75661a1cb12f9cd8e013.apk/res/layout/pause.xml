@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:umadsdk="http://schemas.android.com/apk/res/maxstrom.game.llk">
+    <RelativeLayout android:gravity="top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/txtLevelFace" android:paddingRight="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0px" android:text="@string/txtPauseContext" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.admogo.AdMogoLayout android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/admogo_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

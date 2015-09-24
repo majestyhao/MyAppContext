@@ -1,0 +1,614 @@
+.source SourceFile
+.class public  cn/domob/android/ads/DomobJSInterface
+.super java/lang/Object
+.field private static final "g" Ljava/lang/String; =  "javascript:"
+.field private "a" Landroid/content/Context;
+.field private "b" Lcn/domob/android/ads/L;
+.field private "c" Landroid/hardware/SensorManager;
+.field private "d" Landroid/hardware/Sensor;
+.field private "e" Landroid/hardware/Sensor;
+.field private "f" Landroid/hardware/Sensor;
+.field private "h" Landroid/hardware/SensorEventListener;
+.field private "i" Landroid/hardware/SensorEventListener;
+.field private "j" Landroid/hardware/SensorEventListener;
+
+.method <init>(Landroid/content/Context;Lcn/domob/android/ads/L;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_3
+  aload_0
+  invokespecial cn/domob/android/ads/w/<init>(Lcn/domob/android/ads/DomobJSInterface;)V
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/DomobJSInterface/h Landroid/hardware/SensorEventListener;
+  new cn/domob/android/ads/x
+  astore 4
+  aload 4
+  aload_0
+  invokespecial cn/domob/android/ads/x/<init>(Lcn/domob/android/ads/DomobJSInterface;)V
+  aload_0
+  aload 4
+  putfield cn/domob/android/ads/DomobJSInterface/i Landroid/hardware/SensorEventListener;
+  new cn/domob/android/ads/y
+  astore 5
+  aload 5
+  aload_0
+  invokespecial cn/domob/android/ads/y/<init>(Lcn/domob/android/ads/DomobJSInterface;)V
+  aload_0
+  aload 5
+  putfield cn/domob/android/ads/DomobJSInterface/j Landroid/hardware/SensorEventListener;
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/DomobJSInterface/a Landroid/content/Context;
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/DomobJSInterface/b Lcn/domob/android/ads/L;
+  aload_0
+  invokespecial cn/domob/android/ads/DomobJSInterface/d()V
+  return
+  nop
+.end <method>
+
+.method static a(Lcn/domob/android/ads/DomobJSInterface;Ljava/lang/String;[F)Ljava/lang/String;
+  .synthetic
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  invokespecial cn/domob/android/ads/DomobJSInterface/a(Ljava/lang/String;[F)Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private a(Ljava/lang/String;[F)Ljava/lang/String;
+.limit locals 11
+.limit stack 200
+  nop
+  new org/json/JSONObject
+  astore_3
+  aload_3
+  invokespecial org/json/JSONObject/<init>()V
+  new org/json/JSONObject
+  astore 4
+  aload 4
+  invokespecial org/json/JSONObject/<init>()V
+  iconst_2
+  istore 6
+  aload_2
+  iload 6
+  faload
+  fstore 5
+  fload 5
+  f2d
+  dstore 7
+  ldc "z"
+  astore 9
+  aload 4
+  aload 9
+  dload 7
+  invokevirtual org/json/JSONObject/put(Ljava/lang/String;D)Lorg/json/JSONObject;
+  pop
+  iconst_1
+  istore 6
+  aload_2
+  iload 6
+  faload
+  fstore 5
+  fload 5
+  f2d
+  dstore 7
+  ldc "y"
+  astore 9
+  aload 4
+  aload 9
+  dload 7
+  invokevirtual org/json/JSONObject/put(Ljava/lang/String;D)Lorg/json/JSONObject;
+  pop
+  iconst_0
+  istore 6
+  aload_2
+  iload 6
+  faload
+  fstore 5
+  fload 5
+  f2d
+  dstore 7
+  ldc "x"
+  astore 9
+  aload 4
+  aload 9
+  dload 7
+  invokevirtual org/json/JSONObject/put(Ljava/lang/String;D)Lorg/json/JSONObject;
+  pop
+  aload_3
+  aload_1
+  aload 4
+  invokevirtual org/json/JSONObject/put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+  pop
+  aload_3
+  invokevirtual org/json/JSONObject/toString()Ljava/lang/String;
+  astore 10
+  aload 10
+  areturn
+  nop
+.end <method>
+
+.method protected a()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/b Lcn/domob/android/ads/L;
+  astore_1
+  ldc "javascript:onAdBannerClickCanceled()"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method protected a(II)V
+.limit locals 10
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/b Lcn/domob/android/ads/L;
+  astore_3
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "javascript:"
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  iconst_2
+  istore 7
+  iload 7
+  anewarray java/lang/Object
+  astore 6
+  iload_1
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 8
+  iconst_0
+  istore 7
+  aload 6
+  iload 7
+  aload 8
+  aastore
+  iload_2
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 8
+  iconst_1
+  istore 7
+  aload 6
+  iload 7
+  aload 8
+  aastore
+  ldc "onAdBannerClicked(\'%d\', \'%d\')"
+  astore 5
+  aload 5
+  aload 6
+  invokestatic java/lang/String/format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  astore 9
+  aload 4
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 9
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method private a(ILjava/lang/String;)V
+.limit locals 10
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/b Lcn/domob/android/ads/L;
+  astore_3
+  new java/lang/StringBuilder
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "javascript:"
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  iconst_2
+  istore 7
+  iload 7
+  anewarray java/lang/Object
+  astore 6
+  iload_1
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 8
+  iconst_0
+  istore 7
+  aload 6
+  iload 7
+  aload 8
+  aastore
+  iconst_1
+  istore 7
+  aload 6
+  iload 7
+  aload_2
+  aastore
+  ldc "onSensorEvent(%d, \'%s\')"
+  astore 5
+  aload 5
+  aload 6
+  invokestatic java/lang/String/format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  astore 9
+  aload 4
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 9
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method static a(Lcn/domob/android/ads/DomobJSInterface;ILjava/lang/String;)V
+  .synthetic
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  aload_2
+  invokespecial cn/domob/android/ads/DomobJSInterface/a(ILjava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public addSensorEventListener(I)V
+.limit locals 9
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore_2
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Register listener from js, sensor type="
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  iload_1
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  lookupswitch
+  1 : Label1
+  2 : Label2
+  3 : Label3
+  4 : Label4
+  default : Label0
+Label0:
+  goto Label2
+Label2:
+  new java/lang/StringBuilder
+  astore_2
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Can not register sensor type="
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  iload_1
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  ldc "MY"
+  astore_3
+  aload_3
+  aload 4
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label5:
+  return
+Label1:
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/c Landroid/hardware/SensorManager;
+  astore 5
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/h Landroid/hardware/SensorEventListener;
+  astore 6
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/d Landroid/hardware/Sensor;
+  astore 7
+  iconst_1
+  istore 8
+  aload 5
+  aload 6
+  aload 7
+  iload 8
+  invokevirtual android/hardware/SensorManager/registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z
+  pop
+  goto Label5
+Label4:
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/c Landroid/hardware/SensorManager;
+  astore 5
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/i Landroid/hardware/SensorEventListener;
+  astore 6
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/e Landroid/hardware/Sensor;
+  astore 7
+  iconst_1
+  istore 8
+  aload 5
+  aload 6
+  aload 7
+  iload 8
+  invokevirtual android/hardware/SensorManager/registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z
+  pop
+  goto Label5
+Label3:
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/c Landroid/hardware/SensorManager;
+  astore 5
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/j Landroid/hardware/SensorEventListener;
+  astore 6
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/f Landroid/hardware/Sensor;
+  astore 7
+  iconst_1
+  istore 8
+  aload 5
+  aload 6
+  aload 7
+  iload 8
+  invokevirtual android/hardware/SensorManager/registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z
+  pop
+  goto Label5
+  nop
+  nop
+  nop
+.end <method>
+
+.method protected b()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/b Lcn/domob/android/ads/L;
+  astore_1
+  ldc "javascript:onAdUserConfirmed()"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method protected c()V
+.limit locals 5
+.limit stack 200
+  nop
+  ldc "Unregister sensor listener."
+  astore_1
+  aload_0
+  aload_1
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/c Landroid/hardware/SensorManager;
+  astore_2
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/h Landroid/hardware/SensorEventListener;
+  astore_3
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/d Landroid/hardware/Sensor;
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/c Landroid/hardware/SensorManager;
+  astore_2
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/i Landroid/hardware/SensorEventListener;
+  astore_3
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/e Landroid/hardware/Sensor;
+  astore 4
+  aload_2
+  aload_3
+  aload 4
+  invokevirtual android/hardware/SensorManager/unregisterListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;)V
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/c Landroid/hardware/SensorManager;
+  astore_2
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/j Landroid/hardware/SensorEventListener;
+  astore_3
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/f Landroid/hardware/Sensor;
+  astore 4
+  aload_2
+  aload_3
+  aload 4
+  invokevirtual android/hardware/SensorManager/unregisterListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;)V
+  return
+  nop
+.end <method>
+
+.method private d()V
+.limit locals 8
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/a Landroid/content/Context;
+  astore_1
+  ldc "sensor"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  astore 5
+  aload 5
+  checkcast android/hardware/SensorManager
+  astore 5
+  aload 5
+  astore 4
+  aload_0
+  aload 4
+  putfield cn/domob/android/ads/DomobJSInterface/c Landroid/hardware/SensorManager;
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/c Landroid/hardware/SensorManager;
+  astore 4
+  iconst_1
+  istore 7
+  aload 4
+  iload 7
+  invokevirtual android/hardware/SensorManager/getDefaultSensor(I)Landroid/hardware/Sensor;
+  astore 6
+  aload_0
+  aload 6
+  putfield cn/domob/android/ads/DomobJSInterface/d Landroid/hardware/Sensor;
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/c Landroid/hardware/SensorManager;
+  astore 4
+  iconst_4
+  istore 7
+  aload 4
+  iload 7
+  invokevirtual android/hardware/SensorManager/getDefaultSensor(I)Landroid/hardware/Sensor;
+  astore 6
+  aload_0
+  aload 6
+  putfield cn/domob/android/ads/DomobJSInterface/e Landroid/hardware/Sensor;
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/c Landroid/hardware/SensorManager;
+  astore 4
+  iconst_3
+  istore 7
+  aload 4
+  iload 7
+  invokevirtual android/hardware/SensorManager/getDefaultSensor(I)Landroid/hardware/Sensor;
+  astore 6
+  aload_0
+  aload 6
+  putfield cn/domob/android/ads/DomobJSInterface/f Landroid/hardware/Sensor;
+  return
+  nop
+.end <method>
+
+.method public getScreenSize()Ljava/lang/String;
+.limit locals 9
+.limit stack 200
+  nop
+  ldc "Get screen size from js."
+  astore_1
+  aload_0
+  aload_1
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  iconst_2
+  istore_3
+  iload_3
+  anewarray java/lang/Object
+  astore_2
+  invokestatic cn/domob/android/ads/p/a()Lcn/domob/android/ads/p;
+  astore 4
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/a Landroid/content/Context;
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual cn/domob/android/ads/p/n(Landroid/content/Context;)I
+  istore 6
+  iload 6
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 7
+  iconst_0
+  istore_3
+  aload_2
+  iload_3
+  aload 7
+  aastore
+  invokestatic cn/domob/android/ads/p/a()Lcn/domob/android/ads/p;
+  astore 4
+  aload_0
+  getfield cn/domob/android/ads/DomobJSInterface/a Landroid/content/Context;
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual cn/domob/android/ads/p/o(Landroid/content/Context;)I
+  istore 6
+  iload 6
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 7
+  iconst_1
+  istore_3
+  aload_2
+  iload_3
+  aload 7
+  aastore
+  ldc "%d, %d"
+  astore_1
+  aload_1
+  aload_2
+  invokestatic java/lang/String/format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+  astore 8
+  aload 8
+  areturn
+  nop
+.end <method>
+

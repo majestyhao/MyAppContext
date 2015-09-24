@@ -1,0 +1,78 @@
+.source SourceFile
+.class public  com/mobisage/sns/sina/MSSinaAccessToken
+.super com/mobisage/sns/sina/MSSinaWeiboMessage
+
+.method public <init>(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial com/mobisage/sns/sina/MSSinaWeiboMessage/<init>(Ljava/lang/String;)V
+  ldc "https://api.weibo.com/oauth2/access_token"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/mobisage/sns/sina/MSSinaWeiboMessage/urlPath Ljava/lang/String;
+  ldc "POST"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/mobisage/sns/sina/MSSinaWeiboMessage/httpMethod Ljava/lang/String;
+  aload_0
+  getfield com/mobisage/sns/sina/MSSinaWeiboMessage/paramMap Ljava/util/HashMap;
+  astore 4
+  ldc "source"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/util/HashMap/remove(Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_0
+  getfield com/mobisage/sns/sina/MSSinaWeiboMessage/paramMap Ljava/util/HashMap;
+  astore 4
+  ldc "client_id"
+  astore_3
+  aload 4
+  aload_3
+  aload_1
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_0
+  getfield com/mobisage/sns/sina/MSSinaWeiboMessage/paramMap Ljava/util/HashMap;
+  astore 4
+  ldc "redirect_uri"
+  astore_3
+  ldc ""
+  astore 5
+  aload 4
+  aload_3
+  aload 5
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_0
+  getfield com/mobisage/sns/sina/MSSinaWeiboMessage/paramMap Ljava/util/HashMap;
+  astore 4
+  ldc "client_secret"
+  astore_3
+  aload 4
+  aload_3
+  aload_2
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_0
+  getfield com/mobisage/sns/sina/MSSinaWeiboMessage/paramMap Ljava/util/HashMap;
+  astore 4
+  ldc "grant_type"
+  astore_3
+  ldc "authorization_code"
+  astore 5
+  aload 4
+  aload_3
+  aload 5
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  return
+  nop
+.end <method>
+

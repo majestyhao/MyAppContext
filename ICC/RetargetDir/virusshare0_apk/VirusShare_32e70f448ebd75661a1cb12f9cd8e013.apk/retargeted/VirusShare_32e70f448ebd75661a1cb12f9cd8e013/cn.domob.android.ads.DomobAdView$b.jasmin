@@ -1,0 +1,67 @@
+.source SourceFile
+.class  cn/domob/android/ads/DomobAdView$b
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field "a" Lcn/domob/android/ads/DomobAdView;
+.field final "b" Lcn/domob/android/ads/DomobAdView;
+
+.method public <init>(Lcn/domob/android/ads/DomobAdView;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/DomobAdView$b/b Lcn/domob/android/ads/DomobAdView;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/DomobAdView$b/a Lcn/domob/android/ads/DomobAdView;
+  return
+  nop
+.end <method>
+
+.method public final run()V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$b/a Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+Label2:
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$b/a Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/DomobAdView/getAdListener()Lcn/domob/android/ads/DomobAdListener;
+  astore_2
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$b/a Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_2
+  aload_1
+  invokeinterface cn/domob/android/ads/DomobAdListener/onFailedToReceiveFreshAd(Lcn/domob/android/ads/DomobAdView;)V 2
+Label0:
+  return
+Label1:
+  astore_3
+  ldc "DomobSDK"
+  astore 4
+  ldc "Unhandled exception raised in onFailedToReceiveRefreshedAd."
+  astore 5
+  aload 4
+  aload 5
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aload_3
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label0
+  nop
+.end <method>
+

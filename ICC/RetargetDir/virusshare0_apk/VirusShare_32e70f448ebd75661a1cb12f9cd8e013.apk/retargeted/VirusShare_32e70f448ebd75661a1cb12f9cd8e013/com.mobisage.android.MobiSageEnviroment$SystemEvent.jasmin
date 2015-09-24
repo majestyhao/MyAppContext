@@ -1,0 +1,16 @@
+.source SourceFile
+.class public  com/mobisage/android/MobiSageEnviroment$SystemEvent
+.super java/lang/Object
+.field public static final "App_Launching" Ljava/lang/String; =  "In"
+.field public static final "App_Terminating" Ljava/lang/String; =  "Out"
+
+.method public <init>(Lcom/mobisage/android/MobiSageEnviroment;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

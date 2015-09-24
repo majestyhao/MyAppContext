@@ -1,0 +1,1806 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/tencent/mobwin/core/a/f
+.super java/lang/Object
+.field public static "A" Ljava/lang/String;
+.field private static final "B" Ljava/lang/String; =  "TargetData"
+.field private static "C" Landroid/location/Location;
+.field private static "D" J =  0
+.field private static final "E" J =  900000
+.field private static "F" Landroid/location/LocationListener;
+.field private static "G" Landroid/location/LocationManager;
+.field public static final "a" Ljava/lang/String; =  "sim"
+.field public static final "b" Ljava/lang/String; =  "tel"
+.field public static final "c" Ljava/lang/String; =  "tel_support"
+.field public static final "d" Ljava/lang/String; =  "wifi_support"
+.field public static final "e" Ljava/lang/String; =  "lwp_support"
+.field public static final "f" Ljava/lang/String; =  "imei"
+.field public static final "g" Ljava/lang/String; =  "meid"
+.field public static final "h" Ljava/lang/String; =  "imsi"
+.field public static final "i" Ljava/lang/String; =  "mcc"
+.field public static final "j" Ljava/lang/String; =  "mnc"
+.field public static final "k" Ljava/lang/String; =  "cid"
+.field public static final "l" Ljava/lang/String; =  "lac"
+.field public static final "m" Ljava/lang/String; =  "brand"
+.field public static final "n" Ljava/lang/String; =  "manufacturer"
+.field public static final "o" Ljava/lang/String; =  "model"
+.field public static final "p" Ljava/lang/String; =  "sdk"
+.field public static final "q" Ljava/lang/String; =  "release"
+.field public static final "r" Ljava/lang/String; =  "mac"
+.field public static final "s" Ljava/lang/String; =  "lang"
+.field public static final "t" Ljava/lang/String; =  "FEATURE_WIFI"
+.field public static final "u" Ljava/lang/String; =  "FEATURE_LIVE_WALLPAPER"
+.field public static final "v" Ljava/lang/String; =  "FEATURE_TELEPHONY"
+.field public static "w" I =  0
+.field public static "x" I =  0
+.field public static "y" I =  0
+.field public static "z" I =  0
+
+.method static <clinit>()V
+.limit locals 3
+.limit stack 200
+  nop
+  iconst_m1
+  istore_0
+  iload_0
+  putstatic com/tencent/mobwin/core/a/f/w I
+  iconst_m1
+  istore_0
+  iload_0
+  putstatic com/tencent/mobwin/core/a/f/x I
+  iconst_m1
+  istore_0
+  iload_0
+  putstatic com/tencent/mobwin/core/a/f/y I
+  iconst_m1
+  istore_0
+  iload_0
+  putstatic com/tencent/mobwin/core/a/f/z I
+  ldc "-"
+  astore_1
+  aload_1
+  putstatic com/tencent/mobwin/core/a/f/A Ljava/lang/String;
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_2
+  invokespecial com/tencent/mobwin/core/a/g/<init>()V
+  aload_2
+  putstatic com/tencent/mobwin/core/a/f/F Landroid/location/LocationListener;
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method private static a(Landroid/content/Context;Landroid/content/pm/PackageManager;Ljava/lang/String;)Ljava/lang/Object;
+.limit locals 19
+.limit stack 200
+  .catch  java/lang/Exception <from> Label2 <to> Label3 <using> Label1
+  nop
+  iconst_0
+  istore 4
+Label2:
+  aload_1
+  astore_3
+  aload_3
+  invokevirtual java/lang/Object/getClass()Ljava/lang/Class;
+  astore 5
+  iconst_1
+  istore 7
+  iload 7
+  anewarray java/lang/Class
+  astore 6
+  iconst_0
+  istore 7
+  ldc java/lang/String
+  astore 8
+  aload 6
+  iload 7
+  aload 8
+  aastore
+  ldc "hasSystemFeature"
+  astore 10
+  aload 5
+  aload 10
+  aload 6
+  invokevirtual java/lang/Class/getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  astore 9
+  aload_2
+  astore_3
+  aload 5
+  aload_3
+  invokevirtual java/lang/Class/getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+  astore 11
+  iconst_1
+  istore 7
+  aload 9
+  iload 7
+  invokevirtual java/lang/reflect/Method/setAccessible(Z)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 11
+  ifeq Label0
+  ldc java/lang/String
+  astore 8
+  aload 11
+  aload 8
+  invokevirtual java/lang/reflect/Field/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 12
+  new java/lang/StringBuilder
+  astore 13
+  ldc "localfield:"
+  astore 10
+  aload 13
+  aload 10
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 11
+  invokevirtual java/lang/reflect/Field/getName()Ljava/lang/String;
+  astore 14
+  aload 13
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  ldc "---"
+  astore 10
+  aload 13
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 11
+  invokevirtual java/lang/reflect/Field/toString()Ljava/lang/String;
+  astore 14
+  aload 13
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  ldc "---"
+  astore 10
+  aload 13
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 12
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 14
+  aload 13
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  ldc "IORY"
+  astore 10
+  aload 10
+  aload 14
+  invokestatic com/tencent/mobwin/core/o/b(Ljava/lang/String;Ljava/lang/String;)V
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  ifnull Label0
+  iconst_1
+  istore 7
+  iload 7
+  anewarray java/lang/Object
+  astore 15
+  aload 12
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 14
+  iconst_0
+  istore 7
+  aload 15
+  iload 7
+  aload 14
+  aastore
+  aload_1
+  astore_3
+  aload 9
+  aload_3
+  aload 15
+  invokevirtual java/lang/reflect/Method/invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+  astore 12
+Label3:
+  aload 12
+  astore 4
+Label0:
+  aload 4
+  areturn
+Label1:
+  astore 16
+  aload 16
+  invokevirtual java/lang/Exception/printStackTrace()V
+  ldc "reflect"
+  astore 10
+  ldc "can\'t get reflect method"
+  astore 17
+  aload 10
+  aload 17
+  invokestatic com/tencent/mobwin/core/o/b(Ljava/lang/String;Ljava/lang/String;)V
+  aconst_null
+  astore 18
+  aload 18
+  areturn
+  nop
+.end <method>
+
+.method public static a()Ljava/lang/String;
+.limit locals 11
+.limit stack 200
+  .catch  java/net/SocketException <from> Label4 <to> Label5 <using> Label3
+  nop
+  ldc "-"
+  astore_0
+Label4:
+  invokestatic java/net/NetworkInterface/getNetworkInterfaces()Ljava/util/Enumeration;
+  astore_1
+Label1:
+  aload_1
+  invokeinterface java/util/Enumeration/hasMoreElements()Z 1
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  aload_0
+  areturn
+Label0:
+  aload_1
+  invokeinterface java/util/Enumeration/nextElement()Ljava/lang/Object; 1
+  astore_3
+  aload_3
+  astore 5
+  aload 5
+  checkcast java/net/NetworkInterface
+  astore 5
+  aload 5
+  astore 4
+  aload 4
+  invokevirtual java/net/NetworkInterface/getInetAddresses()Ljava/util/Enumeration;
+  astore 6
+Label2:
+  aload 6
+  invokeinterface java/util/Enumeration/hasMoreElements()Z 1
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label1
+  aload 6
+  invokeinterface java/util/Enumeration/nextElement()Ljava/lang/Object; 1
+  astore_3
+  aload_3
+  astore 8
+  aload 8
+  checkcast java/net/InetAddress
+  astore 8
+  aload 8
+  astore 7
+  aload 7
+  invokevirtual java/net/InetAddress/isLoopbackAddress()Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifne Label2
+  aload 7
+  invokevirtual java/net/InetAddress/getHostAddress()Ljava/lang/String;
+  astore 9
+Label5:
+  aload 9
+  astore_0
+  goto Label2
+Label3:
+  astore 10
+  aload 10
+  invokevirtual java/net/SocketException/printStackTrace()V
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static a(Landroid/content/Context;)Ljava/util/Map;
+.limit locals 28
+.limit stack 200
+  nop
+  new java/util/HashMap
+  astore_2
+  aload_2
+  invokespecial java/util/HashMap/<init>()V
+  ldc "android.permission.READ_PHONE_STATE"
+  astore 4
+  aload_0
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 5
+  iload_3
+  iload 5
+  if_icmpeq Label0
+Label20:
+  ldc "phone"
+  astore 4
+  aload_0
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 6
+  aload 6
+  astore 8
+  aload 8
+  checkcast android/telephony/TelephonyManager
+  astore 8
+  aload 8
+  astore 7
+  aload 7
+  invokevirtual android/telephony/TelephonyManager/getPhoneType()I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 5
+  iload 9
+  iload 5
+  if_icmpne Label1
+  aload 7
+  invokevirtual android/telephony/TelephonyManager/getDeviceId()Ljava/lang/String;
+  astore 10
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnonnull Label2
+  ldc "-"
+  astore 10
+Label2:
+  ldc "imei"
+  astore 4
+  aload_2
+  aload 4
+  aload 10
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  ldc "meid"
+  astore 4
+  ldc "-"
+  astore 11
+  aload_2
+  aload 4
+  aload 11
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+Label14:
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual android/content/Context/getPackageManager()Landroid/content/pm/PackageManager;
+  astore 12
+  ldc "FEATURE_WIFI"
+  astore 4
+  aload_0
+  astore_1
+  aload_1
+  aload 12
+  aload 4
+  invokestatic com/tencent/mobwin/core/a/f/a(Landroid/content/Context;Landroid/content/pm/PackageManager;Ljava/lang/String;)Ljava/lang/Object;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label3
+  new java/lang/StringBuilder
+  astore 13
+  ldc "WIFI\u652f\u6301\uff1a"
+  astore 4
+  aload 13
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 6
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 10
+  aload 13
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 10
+  ldc "IORY"
+  astore 4
+  aload 4
+  aload 10
+  invokestatic com/tencent/mobwin/core/o/b(Ljava/lang/String;Ljava/lang/String;)V
+  aload 6
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 10
+  ldc "wifi_support"
+  astore 4
+  aload_2
+  aload 4
+  aload 10
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+Label15:
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual android/content/Context/getPackageManager()Landroid/content/pm/PackageManager;
+  astore 12
+  ldc "FEATURE_LIVE_WALLPAPER"
+  astore 4
+  aload_0
+  astore_1
+  aload_1
+  aload 12
+  aload 4
+  invokestatic com/tencent/mobwin/core/a/f/a(Landroid/content/Context;Landroid/content/pm/PackageManager;Ljava/lang/String;)Ljava/lang/Object;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label4
+  new java/lang/StringBuilder
+  astore 13
+  ldc "LWP\u652f\u6301\uff1a"
+  astore 4
+  aload 13
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 6
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 10
+  aload 13
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 10
+  ldc "IORY"
+  astore 4
+  aload 4
+  aload 10
+  invokestatic com/tencent/mobwin/core/o/b(Ljava/lang/String;Ljava/lang/String;)V
+  aload 6
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 10
+  ldc "lwp_support"
+  astore 4
+  aload_2
+  aload 4
+  aload 10
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+Label16:
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual android/content/Context/getPackageManager()Landroid/content/pm/PackageManager;
+  astore 12
+  ldc "FEATURE_TELEPHONY"
+  astore 4
+  aload_0
+  astore_1
+  aload_1
+  aload 12
+  aload 4
+  invokestatic com/tencent/mobwin/core/a/f/a(Landroid/content/Context;Landroid/content/pm/PackageManager;Ljava/lang/String;)Ljava/lang/Object;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label5
+  aload 6
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 10
+  ldc "tel_support"
+  astore 4
+  aload_2
+  aload 4
+  aload 10
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  new java/lang/StringBuilder
+  astore 13
+  ldc "TELEPHONE\u652f\u6301\uff1a"
+  astore 4
+  aload 13
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 6
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore 10
+  aload 13
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 10
+  ldc "IORY"
+  astore 4
+  aload 4
+  aload 10
+  invokestatic com/tencent/mobwin/core/o/b(Ljava/lang/String;Ljava/lang/String;)V
+Label17:
+  aload 7
+  invokevirtual android/telephony/TelephonyManager/getLine1Number()Ljava/lang/String;
+  astore 14
+  aload 14
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 14
+  ifnonnull Label6
+  ldc "-1"
+  astore 14
+Label6:
+  ldc "tel"
+  astore 4
+  aload_2
+  aload 4
+  aload 14
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  aload 7
+  invokevirtual android/telephony/TelephonyManager/getSimSerialNumber()Ljava/lang/String;
+  astore 14
+  aload 14
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 14
+  ifnonnull Label7
+  ldc "-"
+  astore 14
+Label7:
+  ldc "sim"
+  astore 4
+  aload_2
+  aload 4
+  aload 14
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  aload 7
+  invokevirtual android/telephony/TelephonyManager/getSubscriberId()Ljava/lang/String;
+  astore 14
+  aload 14
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 14
+  ifnonnull Label8
+  ldc "-"
+  astore 14
+Label8:
+  ldc "imsi"
+  astore 4
+  aload_2
+  aload 4
+  aload 14
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  ldc ""
+  astore 14
+  ldc ""
+  astore 10
+  aload 7
+  invokevirtual android/telephony/TelephonyManager/getSimState()I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_5
+  istore 5
+  iload_3
+  iload 5
+  if_icmpne Label9
+  aload 7
+  invokevirtual android/telephony/TelephonyManager/getSimOperator()Ljava/lang/String;
+  astore 10
+  iconst_0
+  istore 5
+  iconst_3
+  istore 15
+  aload 10
+  iload 5
+  iload 15
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 14
+  iconst_3
+  istore 5
+  aload 10
+  iload 5
+  invokevirtual java/lang/String/substring(I)Ljava/lang/String;
+  astore 10
+Label9:
+  ldc "mcc"
+  astore 4
+  aload_2
+  aload 4
+  aload 14
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  ldc "mnc"
+  astore 4
+  aload_2
+  aload 4
+  aload 10
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  aload 7
+  invokevirtual android/telephony/TelephonyManager/getCellLocation()Landroid/telephony/CellLocation;
+  astore 16
+  aload 16
+  astore 18
+  aload 18
+  checkcast android/telephony/gsm/GsmCellLocation
+  astore 18
+  aload 18
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 17
+  ifnull Label10
+  aload 17
+  astore_1
+  aload_1
+  invokevirtual android/telephony/gsm/GsmCellLocation/getCid()I
+  istore_3
+  iload_3
+  invokestatic java/lang/Integer/toString(I)Ljava/lang/String;
+  astore 19
+  aload 17
+  astore_1
+  aload_1
+  invokevirtual android/telephony/gsm/GsmCellLocation/getLac()I
+  istore_3
+  iload_3
+  invokestatic java/lang/Integer/toString(I)Ljava/lang/String;
+  astore 14
+Label18:
+  ldc "cid"
+  astore 4
+  aload 19
+  astore_1
+  aload_2
+  aload 4
+  aload_1
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  ldc "lac"
+  astore 4
+  aload_2
+  aload 4
+  aload 14
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+Label0:
+  ldc "android.permission.ACCESS_WIFI_STATE"
+  astore 4
+  aload_0
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual android/content/Context/checkCallingOrSelfPermission(Ljava/lang/String;)I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 5
+  iload_3
+  iload 5
+  if_icmpeq Label11
+Label22:
+  ldc "wifi"
+  astore 4
+  aload_0
+  astore_1
+  aload_1
+  aload 4
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 6
+  aload 6
+  astore 21
+  aload 21
+  checkcast android/net/wifi/WifiManager
+  astore 21
+  aload 21
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  invokevirtual android/net/wifi/WifiManager/getConnectionInfo()Landroid/net/wifi/WifiInfo;
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  invokevirtual android/net/wifi/WifiInfo/getMacAddress()Ljava/lang/String;
+  astore 19
+  new java/lang/StringBuilder
+  astore 13
+  ldc "mac:"
+  astore 4
+  aload 13
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 19
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 10
+  ldc "TargetData"
+  astore 4
+  aload 4
+  aload 10
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  ldc "mac"
+  astore 4
+  aload 19
+  astore_1
+  aload_2
+  aload 4
+  aload_1
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+Label11:
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual android/content/Context/getResources()Landroid/content/res/Resources;
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual android/content/res/Resources/getConfiguration()Landroid/content/res/Configuration;
+  astore 24
+  aload 24
+  astore_1
+  aload_1
+  getfield android/content/res/Configuration/locale Ljava/util/Locale;
+  astore_1
+  aload_1
+  astore 25
+  aload 25
+  astore_1
+  aload_1
+  invokevirtual java/util/Locale/getDisplayLanguage()Ljava/lang/String;
+  astore 19
+  ldc "lang"
+  astore 4
+  aload 19
+  astore_1
+  aload_2
+  aload 4
+  aload_1
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  aload_2
+  areturn
+Label1:
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 5
+  iload 9
+  iload 5
+  if_icmpne Label12
+Label23:
+  aload 7
+  invokevirtual android/telephony/TelephonyManager/getDeviceId()Ljava/lang/String;
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 19
+  ifnonnull Label13
+  ldc "-"
+  astore 19
+Label13:
+  ldc "meid"
+  astore 4
+  aload 19
+  astore_1
+  aload_2
+  aload 4
+  aload_1
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  ldc "imei"
+  astore 4
+  ldc "-"
+  astore 11
+  aload_2
+  aload 4
+  aload 11
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+Label24:
+  goto Label14
+Label19:
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label0
+Label12:
+  ldc "meid"
+  astore 4
+  ldc "-"
+  astore 11
+  aload_2
+  aload 4
+  aload 11
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  ldc "imei"
+  astore 4
+  ldc "-"
+  astore 11
+  aload_2
+  aload 4
+  aload 11
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  goto Label14
+Label3:
+  ldc "wifi_support"
+  astore 4
+  ldc "-"
+  astore 11
+  aload_2
+  aload 4
+  aload 11
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  goto Label15
+Label4:
+  ldc "lwp_support"
+  astore 4
+  ldc "-"
+  astore 11
+  aload_2
+  aload 4
+  aload 11
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  goto Label16
+Label5:
+  ldc "tel_support"
+  astore 4
+  ldc "-"
+  astore 11
+  aload_2
+  aload 4
+  aload 11
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+Label25:
+  goto Label17
+Label21:
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/printStackTrace()V
+  ldc "mac"
+  astore 4
+  ldc "-"
+  astore 11
+  aload_2
+  aload 4
+  aload 11
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  goto Label11
+Label10:
+  ldc ""
+  astore 14
+  ldc ""
+  astore 19
+  goto Label18
+  nop
+.end <method>
+
+.method static a(J)V
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  lload_0
+  putstatic com/tencent/mobwin/core/a/f/D J
+  return
+  nop
+.end <method>
+
+.method static a(Landroid/location/Location;)V
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  putstatic com/tencent/mobwin/core/a/f/C Landroid/location/Location;
+  return
+  nop
+.end <method>
+
+.method static a(Landroid/location/LocationManager;)V
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  putstatic com/tencent/mobwin/core/a/f/G Landroid/location/LocationManager;
+  return
+  nop
+.end <method>
+
+.method public static b(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 9
+.limit stack 200
+  nop
+  ldc "-"
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+Label1:
+  aload_0
+  invokevirtual android/content/Context/getPackageName()Ljava/lang/String;
+  astore_3
+  bipush 64
+  istore 5
+  aload_2
+  aload_3
+  iload 5
+  invokevirtual android/content/pm/PackageManager/getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+  astore 4
+  aload 4
+  getfield android/content/pm/PackageInfo/signatures [Landroid/content/pm/Signature;
+  astore 6
+  iconst_0
+  istore 5
+  aload 6
+  iload 5
+  aaload
+  astore 7
+  aload 7
+  invokevirtual android/content/pm/Signature/toCharsString()Ljava/lang/String;
+  astore_1
+  aload_1
+  invokestatic com/tencent/mobwin/utils/b/a(Ljava/lang/String;)Ljava/lang/String;
+  astore_3
+Label2:
+  aload_3
+  areturn
+Label0:
+  astore 8
+  aload 8
+  invokevirtual android/content/pm/PackageManager$NameNotFoundException/printStackTrace()V
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static b()Ljava/util/Map;
+.limit locals 6
+.limit stack 200
+  nop
+  new java/util/HashMap
+  astore_0
+  aload_0
+  invokespecial java/util/HashMap/<init>()V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  ldc "brand"
+  astore_2
+  aload_0
+  aload_2
+  aload_1
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  getstatic android/os/Build/MANUFACTURER Ljava/lang/String;
+  astore_3
+  ldc "manufacturer"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  getstatic android/os/Build/MODEL Ljava/lang/String;
+  astore_3
+  ldc "model"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  getstatic android/os/Build$VERSION/SDK Ljava/lang/String;
+  astore_3
+  ldc "sdk"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  getstatic android/os/Build$VERSION/RELEASE Ljava/lang/String;
+  astore_3
+  ldc "release"
+  astore_2
+  aload_0
+  aload_2
+  aload_3
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  getstatic android/os/Build/BRAND Ljava/lang/String;
+  astore_1
+  aload_1
+  invokevirtual java/lang/String/toLowerCase()Ljava/lang/String;
+  astore_1
+  ldc "generic"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/indexOf(Ljava/lang/String;)I
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 5
+  iload 4
+  iload 5
+  if_icmpeq Label0
+  getstatic android/os/Build/MODEL Ljava/lang/String;
+  astore_1
+  aload_1
+  invokevirtual java/lang/String/toLowerCase()Ljava/lang/String;
+  astore_1
+  ldc "sdk"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/indexOf(Ljava/lang/String;)I
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 5
+  iload 4
+  iload 5
+  if_icmpeq Label0
+Label0:
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method static c()Landroid/location/LocationManager;
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/tencent/mobwin/core/a/f/G Landroid/location/LocationManager;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static c(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 8
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+Label2:
+  aload_0
+  invokevirtual android/content/Context/getPackageName()Ljava/lang/String;
+  astore_2
+  iconst_1
+  istore 4
+  aload_1
+  aload_2
+  iload 4
+  invokevirtual android/content/pm/PackageManager/getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+  astore_3
+Label3:
+  aload_3
+  getfield android/content/pm/PackageInfo/versionName Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnonnull Label0
+  ldc "-"
+  astore_2
+Label0:
+  aload_2
+  areturn
+Label1:
+  astore 5
+  aload 5
+  astore 6
+  aload 6
+  invokevirtual android/content/pm/PackageManager$NameNotFoundException/printStackTrace()V
+  ldc "-"
+  astore 7
+  aload 7
+  areturn
+  nop
+.end <method>
+
+.method public static d(Landroid/content/Context;)Landroid/location/Location;
+.limit locals 35
+.limit stack 200
+  nop
+  iconst_0
+  istore 8
+  iconst_1
+  istore 9
+  aload_0
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  getstatic com/tencent/mobwin/core/a/f/C Landroid/location/Location;
+  astore 10
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnull Label1
+Label10:
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 11
+  getstatic com/tencent/mobwin/core/a/f/D J
+  lstore 13
+  ldc2_w 900000
+  lstore 15
+  lload 13
+  lload 15
+  ladd
+  lstore 13
+  lload 11
+  lload 13
+  lcmp
+  istore 17
+  iload 17
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 17
+  ifle Label0
+Label1:
+  aload_0
+  monitorenter
+Label11:
+  getstatic com/tencent/mobwin/core/a/f/C Landroid/location/Location;
+  astore 10
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnull Label2
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 11
+  getstatic com/tencent/mobwin/core/a/f/D J
+  lstore 13
+  ldc2_w 900000
+  lstore 15
+  lload 13
+  lload 15
+  ladd
+  lstore 18
+  lload 11
+  lload 18
+  lcmp
+  istore 17
+  iload 17
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 17
+  ifle Label3
+Label2:
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 11
+  lload 11
+  putstatic com/tencent/mobwin/core/a/f/D J
+  ldc "android.permission.ACCESS_COARSE_LOCATION"
+  astore 21
+  aload_0
+  astore_1
+  aload 21
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Context/checkCallingOrSelfPermission(Ljava/lang/String;)I
+  istore 20
+  iload 20
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 20
+  ifne Label4
+  ldc "location"
+  astore 21
+  aload_0
+  astore_1
+  aload 21
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 22
+  aload 22
+  astore 24
+  aload 24
+  checkcast android/location/LocationManager
+  astore 24
+  aload 24
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 23
+  ifnull Label5
+  new android/location/Criteria
+  astore 25
+  aload 25
+  astore_1
+  aload_1
+  invokespecial android/location/Criteria/<init>()V
+  iconst_2
+  istore 26
+  aload 25
+  astore_1
+  iload 26
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual android/location/Criteria/setAccuracy(I)V
+  iconst_0
+  istore 26
+  aload 25
+  astore_1
+  iload 26
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual android/location/Criteria/setCostAllowed(Z)V
+  iconst_1
+  istore 26
+  aload 23
+  astore_1
+  aload 25
+  astore_2
+  iload 26
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual android/location/LocationManager/getBestProvider(Landroid/location/Criteria;Z)Ljava/lang/String;
+  astore 27
+  iconst_1
+  istore 8
+Label8:
+  aload 27
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 27
+  ifnonnull Label6
+  ldc "android.permission.ACCESS_FINE_LOCATION"
+  astore 21
+  aload_0
+  astore_1
+  aload 21
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Context/checkCallingOrSelfPermission(Ljava/lang/String;)I
+  istore 20
+  iload 20
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 20
+  ifne Label6
+  ldc "location"
+  astore 21
+  aload_0
+  astore_1
+  aload 21
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 22
+  aload 22
+  astore 28
+  aload 28
+  checkcast android/location/LocationManager
+  astore 28
+  aload 28
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 23
+  ifnull Label7
+  new android/location/Criteria
+  astore 25
+  aload 25
+  astore_1
+  aload_1
+  invokespecial android/location/Criteria/<init>()V
+  iconst_1
+  istore 26
+  aload 25
+  astore_1
+  iload 26
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual android/location/Criteria/setAccuracy(I)V
+  iconst_0
+  istore 26
+  aload 25
+  astore_1
+  iload 26
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual android/location/Criteria/setCostAllowed(Z)V
+  iconst_1
+  istore 26
+  aload 23
+  astore_1
+  aload 25
+  astore_2
+  iload 26
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual android/location/LocationManager/getBestProvider(Landroid/location/Criteria;Z)Ljava/lang/String;
+  astore 27
+Label7:
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label3
+  aload 27
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 27
+  ifnull Label3
+  new com/tencent/mobwin/core/a/i
+  astore 29
+  aload 29
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokespecial com/tencent/mobwin/core/a/i/<init>(Landroid/location/LocationManager;)V
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual android/content/Context/getMainLooper()Landroid/os/Looper;
+  astore 30
+  ldc2_w 0
+  lstore 15
+  fconst_0
+  fstore 31
+  aload 23
+  astore_1
+  aload 27
+  astore_2
+  lload 15
+  lstore_3
+  fload 31
+  fstore 5
+  aload 29
+  astore 6
+  aload 30
+  astore 7
+  aload_1
+  aload_2
+  lload_3
+  fload 5
+  aload 6
+  aload 7
+  invokevirtual android/location/LocationManager/requestLocationUpdates(Ljava/lang/String;JFLandroid/location/LocationListener;Landroid/os/Looper;)V
+Label3:
+  aload_0
+  monitorexit
+Label0:
+  getstatic com/tencent/mobwin/core/a/f/C Landroid/location/Location;
+  astore 10
+  aload 10
+  areturn
+Label12:
+  astore 32
+Label13:
+  aload_0
+  monitorexit
+Label14:
+  aload 32
+  athrow
+Label9:
+  astore 33
+  aload 33
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/printStackTrace()V
+  aconst_null
+  astore 34
+  aload 34
+  areturn
+Label6:
+  iload 8
+  istore 9
+  goto Label7
+Label5:
+  aconst_null
+  astore 27
+  iconst_1
+  istore 8
+  goto Label8
+Label4:
+  aconst_null
+  astore 27
+  aconst_null
+  astore 23
+  goto Label8
+  nop
+.end <method>
+
+.method public static e(Landroid/content/Context;)V
+.limit locals 11
+.limit stack 200
+  .catch  java/lang/Exception <from> Label3 <to> Label4 <using> Label2
+  nop
+Label3:
+  aload_0
+  invokestatic com/tencent/mobwin/core/a/f/d(Landroid/content/Context;)Landroid/location/Location;
+  astore_1
+  aload_1
+  putstatic com/tencent/mobwin/core/a/f/C Landroid/location/Location;
+  getstatic com/tencent/mobwin/core/a/f/C Landroid/location/Location;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+Label1:
+  return
+Label0:
+  getstatic com/tencent/mobwin/core/a/f/C Landroid/location/Location;
+  astore_1
+  aload_1
+  invokevirtual android/location/Location/getLongitude()D
+  dstore_2
+  ldc2_w 1000000.000000000000000
+  dstore 4
+  dload_2
+  dload 4
+  dmul
+  dstore_2
+  dload_2
+  d2i
+  istore 6
+  iload 6
+  putstatic com/tencent/mobwin/core/a/f/w I
+  getstatic com/tencent/mobwin/core/a/f/C Landroid/location/Location;
+  astore_1
+  aload_1
+  invokevirtual android/location/Location/getLatitude()D
+  dstore_2
+  ldc2_w 1000000.000000000000000
+  dstore 4
+  dload_2
+  dload 4
+  dmul
+  dstore_2
+  dload_2
+  d2i
+  istore 6
+  iload 6
+  putstatic com/tencent/mobwin/core/a/f/x I
+  getstatic com/tencent/mobwin/core/a/f/C Landroid/location/Location;
+  astore_1
+  aload_1
+  invokevirtual android/location/Location/getAltitude()D
+  dstore_2
+  ldc2_w 1000000.000000000000000
+  dstore 4
+  dload_2
+  dload 4
+  dmul
+  dstore_2
+  dload_2
+  d2i
+  istore 6
+  iload 6
+  putstatic com/tencent/mobwin/core/a/f/y I
+  new java/lang/StringBuilder
+  astore 7
+  getstatic com/tencent/mobwin/core/a/f/C Landroid/location/Location;
+  astore_1
+  aload_1
+  invokevirtual android/location/Location/getLatitude()D
+  dstore_2
+  dload_2
+  invokestatic java/lang/String/valueOf(D)Ljava/lang/String;
+  astore 8
+  aload 7
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  ldc ","
+  astore 9
+  aload 7
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 7
+  getstatic com/tencent/mobwin/core/a/f/C Landroid/location/Location;
+  astore_1
+  aload_1
+  invokevirtual android/location/Location/getLongitude()D
+  dstore_2
+  aload 7
+  dload_2
+  invokevirtual java/lang/StringBuilder/append(D)Ljava/lang/StringBuilder;
+  astore 7
+  aload 7
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  pop
+Label4:
+  goto Label1
+Label2:
+  astore 10
+  aload 10
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label1
+  nop
+.end <method>
+
+.method public static f(Landroid/content/Context;)V
+.limit locals 10
+.limit stack 200
+  nop
+  ldc "android.permission.ACCESS_NETWORK_STATE"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore_3
+  iload_1
+  iload_3
+  if_icmpne Label0
+Label1:
+  return
+Label0:
+  ldc "connectivity"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 4
+  aload 4
+  astore 6
+  aload 6
+  checkcast android/net/ConnectivityManager
+  astore 6
+  aload 6
+  astore 5
+  aload 5
+  invokevirtual android/net/ConnectivityManager/getActiveNetworkInfo()Landroid/net/NetworkInfo;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label1
+  aload 7
+  invokevirtual android/net/NetworkInfo/getType()I
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore_3
+  iload_1
+  iload_3
+  if_icmpne Label2
+  iconst_1
+  istore_3
+  iload_3
+  putstatic com/tencent/mobwin/core/a/f/z I
+  goto Label1
+Label2:
+  aload 7
+  invokevirtual android/net/NetworkInfo/getExtraInfo()Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label1
+  aload 8
+  invokevirtual java/lang/String/toLowerCase()Ljava/lang/String;
+  astore 8
+  ldc "cmnet"
+  astore_2
+  aload 8
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label3
+  bipush 6
+  istore_3
+  iload_3
+  putstatic com/tencent/mobwin/core/a/f/z I
+  goto Label1
+Label3:
+  ldc "cmwap"
+  astore_2
+  aload 8
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label4
+  bipush 7
+  istore_3
+  iload_3
+  putstatic com/tencent/mobwin/core/a/f/z I
+  goto Label1
+Label4:
+  ldc "3gnet"
+  astore_2
+  aload 8
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label5
+  iconst_2
+  istore_3
+  iload_3
+  putstatic com/tencent/mobwin/core/a/f/z I
+  goto Label1
+Label5:
+  ldc "3gwap"
+  astore_2
+  aload 8
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label6
+  iconst_3
+  istore_3
+  iload_3
+  putstatic com/tencent/mobwin/core/a/f/z I
+  goto Label1
+Label6:
+  ldc "uninet"
+  astore_2
+  aload 8
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label7
+  iconst_4
+  istore_3
+  iload_3
+  putstatic com/tencent/mobwin/core/a/f/z I
+  goto Label1
+Label7:
+  ldc "uniwap"
+  astore_2
+  aload 8
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label8
+  iconst_5
+  istore_3
+  iload_3
+  putstatic com/tencent/mobwin/core/a/f/z I
+  goto Label1
+Label8:
+  ldc "ctnet"
+  astore_2
+  aload 8
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label9
+  bipush 8
+  istore_3
+  iload_3
+  putstatic com/tencent/mobwin/core/a/f/z I
+  goto Label1
+Label9:
+  ldc "ctwap"
+  astore_2
+  aload 8
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label10
+  bipush 9
+  istore_3
+  iload_3
+  putstatic com/tencent/mobwin/core/a/f/z I
+  goto Label1
+Label10:
+  iconst_0
+  istore_3
+  iload_3
+  putstatic com/tencent/mobwin/core/a/f/z I
+  goto Label1
+  nop
+.end <method>
+

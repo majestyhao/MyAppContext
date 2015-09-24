@@ -1,0 +1,183 @@
+.source CaseeAD.java
+.class public  com/admogo/obj/CaseeAD
+.super java/lang/Object
+.field private "adID" Ljava/lang/String;
+.field private "adName" Ljava/lang/String;
+.field private "adUrl" Ljava/lang/String;
+.field private "uLogo" Ljava/lang/String;
+.field private "uLogoDrawable" Landroid/graphics/drawable/Drawable;
+.field private "url" Ljava/lang/String;
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  aload_1
+  putfield com/admogo/obj/CaseeAD/adID Ljava/lang/String;
+  aload_0
+  aload_2
+  putfield com/admogo/obj/CaseeAD/adUrl Ljava/lang/String;
+  aload_0
+  aload_3
+  putfield com/admogo/obj/CaseeAD/adName Ljava/lang/String;
+  aload_0
+  aload 4
+  putfield com/admogo/obj/CaseeAD/url Ljava/lang/String;
+  aload_0
+  aload 5
+  putfield com/admogo/obj/CaseeAD/uLogo Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public getAdID()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/obj/CaseeAD/adID Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getAdName()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/obj/CaseeAD/adName Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getAdUrl()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/obj/CaseeAD/adUrl Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getUrl()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/obj/CaseeAD/url Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getuLogo()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/obj/CaseeAD/uLogo Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getuLogoDrawable()Landroid/graphics/drawable/Drawable;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/obj/CaseeAD/uLogoDrawable Landroid/graphics/drawable/Drawable;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public setAdID(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/obj/CaseeAD/adID Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setAdName(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/obj/CaseeAD/adName Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setAdUrl(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/obj/CaseeAD/adUrl Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setUrl(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/obj/CaseeAD/url Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setuLogo(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/obj/CaseeAD/uLogo Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setuLogoDrawable(Landroid/graphics/drawable/Drawable;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/obj/CaseeAD/uLogoDrawable Landroid/graphics/drawable/Drawable;
+  return
+  nop
+.end <method>
+

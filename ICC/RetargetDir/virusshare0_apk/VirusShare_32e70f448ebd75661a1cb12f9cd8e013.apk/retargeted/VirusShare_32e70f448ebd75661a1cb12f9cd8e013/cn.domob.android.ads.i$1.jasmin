@@ -1,0 +1,101 @@
+.source SourceFile
+.class  cn/domob/android/ads/i$1
+.super java/lang/Object
+  .synthetic
+.field static final "a" [I
+
+.method static <clinit>()V
+.limit locals 9
+.limit stack 200
+  .catch  java/lang/NoSuchFieldError <from> Label5 <to> Label6 <using> Label4
+  .catch  java/lang/NoSuchFieldError <from> Label3 <to> Label8 <using> Label7
+  .catch  java/lang/NoSuchFieldError <from> Label2 <to> Label10 <using> Label9
+  .catch  java/lang/NoSuchFieldError <from> Label1 <to> Label12 <using> Label11
+  nop
+  invokestatic cn/domob/android/ads/j$i/values()[Lcn/domob/android/ads/j$i;
+  astore_0
+  aload_0
+  arraylength
+  istore_1
+  iload_1
+  newarray int
+  astore_2
+  aload_2
+  putstatic cn/domob/android/ads/i$1/a [I
+Label5:
+  getstatic cn/domob/android/ads/i$1/a [I
+  astore_2
+  getstatic cn/domob/android/ads/j$i/b Lcn/domob/android/ads/j$i;
+  astore_3
+  aload_3
+  invokevirtual cn/domob/android/ads/j$i/ordinal()I
+  istore_1
+Label6:
+  iconst_1
+  istore 4
+  aload_2
+  iload_1
+  iload 4
+  iastore
+Label3:
+  getstatic cn/domob/android/ads/i$1/a [I
+  astore_2
+  getstatic cn/domob/android/ads/j$i/a Lcn/domob/android/ads/j$i;
+  astore_3
+  aload_3
+  invokevirtual cn/domob/android/ads/j$i/ordinal()I
+  istore_1
+Label8:
+  iconst_2
+  istore 4
+  aload_2
+  iload_1
+  iload 4
+  iastore
+Label2:
+  getstatic cn/domob/android/ads/i$1/a [I
+  astore_2
+  getstatic cn/domob/android/ads/j$i/c Lcn/domob/android/ads/j$i;
+  astore_3
+  aload_3
+  invokevirtual cn/domob/android/ads/j$i/ordinal()I
+  istore_1
+Label10:
+  iconst_3
+  istore 4
+  aload_2
+  iload_1
+  iload 4
+  iastore
+Label1:
+  getstatic cn/domob/android/ads/i$1/a [I
+  astore_2
+  getstatic cn/domob/android/ads/j$i/d Lcn/domob/android/ads/j$i;
+  astore_3
+  aload_3
+  invokevirtual cn/domob/android/ads/j$i/ordinal()I
+  istore_1
+Label12:
+  iconst_4
+  istore 4
+  aload_2
+  iload_1
+  iload 4
+  iastore
+Label0:
+  return
+Label11:
+  astore 5
+  goto Label0
+Label9:
+  astore 6
+  goto Label1
+Label7:
+  astore 7
+  goto Label2
+Label4:
+  astore 8
+  goto Label3
+  nop
+.end <method>
+

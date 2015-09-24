@@ -1,0 +1,7 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.interface public interface abstract  com/wiyun/ad/a$a
+.super java/lang/Object
+
+.method public abstract a()V
+.end <method>
+

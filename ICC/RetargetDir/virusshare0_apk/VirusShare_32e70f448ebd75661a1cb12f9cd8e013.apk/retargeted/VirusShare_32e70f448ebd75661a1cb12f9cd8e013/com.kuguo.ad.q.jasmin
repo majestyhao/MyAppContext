@@ -1,0 +1,46 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/kuguo/ad/q
+.super java/util/TimerTask
+.field final "a" Lcom/kuguo/ad/MainReceiver;
+
+.method <init>(Lcom/kuguo/ad/MainReceiver;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/kuguo/ad/q/a Lcom/kuguo/ad/MainReceiver;
+  aload_0
+  invokespecial java/util/TimerTask/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/ad/q/a Lcom/kuguo/ad/MainReceiver;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_0
+  getfield com/kuguo/ad/q/a Lcom/kuguo/ad/MainReceiver;
+  astore_1
+  aload_1
+  invokestatic com/kuguo/ad/MainReceiver/a(Lcom/kuguo/ad/MainReceiver;)Landroid/content/Context;
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/c(Landroid/content/Context;)I
+  istore 4
+  aload_2
+  iload 4
+  invokestatic com/kuguo/ad/MainService/a(Landroid/content/Context;I)V
+  return
+  nop
+.end <method>
+

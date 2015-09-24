@@ -1,0 +1,148 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/wiyun/ad/r
+.super java/lang/Object
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method private static a(Ljava/lang/String;Ljava/io/UnsupportedEncodingException;)Ljava/lang/IllegalStateException;
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/IllegalStateException
+  astore_2
+  new java/lang/StringBuilder
+  astore_3
+  aload_0
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore_0
+  aload_3
+  aload_0
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  ldc ": "
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_0
+  aload_2
+  aload_0
+  invokespecial java/lang/IllegalStateException/<init>(Ljava/lang/String;)V
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public static a([B)Ljava/lang/String;
+.limit locals 3
+.limit stack 200
+  nop
+  ldc "UTF-8"
+  astore_2
+  aload_0
+  aload_2
+  invokestatic com/wiyun/ad/r/a([BLjava/lang/String;)Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static a([BLjava/lang/String;)Ljava/lang/String;
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  aconst_null
+  astore_2
+  aload_2
+  areturn
+Label0:
+  new java/lang/String
+  astore_3
+Label2:
+  aload_3
+  aload_0
+  aload_1
+  invokespecial java/lang/String/<init>([BLjava/lang/String;)V
+Label3:
+  aload_3
+  areturn
+Label1:
+  astore 4
+  aload_1
+  aload 4
+  invokestatic com/wiyun/ad/r/a(Ljava/lang/String;Ljava/io/UnsupportedEncodingException;)Ljava/lang/IllegalStateException;
+  astore 5
+  aload 5
+  athrow
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;)[B
+.limit locals 3
+.limit stack 200
+  nop
+  ldc "UTF-8"
+  astore_2
+  aload_0
+  aload_2
+  invokestatic com/wiyun/ad/r/a(Ljava/lang/String;Ljava/lang/String;)[B
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;Ljava/lang/String;)[B
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  aconst_null
+  astore_2
+  aload_2
+  areturn
+Label0:
+  aload_0
+  aload_1
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore_3
+Label2:
+  aload_3
+  areturn
+Label1:
+  astore 4
+  aload_1
+  aload 4
+  invokestatic com/wiyun/ad/r/a(Ljava/lang/String;Ljava/io/UnsupportedEncodingException;)Ljava/lang/IllegalStateException;
+  astore 5
+  aload 5
+  athrow
+  nop
+.end <method>
+

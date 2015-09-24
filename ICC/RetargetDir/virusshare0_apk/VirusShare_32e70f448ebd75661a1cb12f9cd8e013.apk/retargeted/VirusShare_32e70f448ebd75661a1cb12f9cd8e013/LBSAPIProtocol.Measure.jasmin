@@ -1,0 +1,748 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public final  LBSAPIProtocol/Measure
+.super com/qq/taf/jce/JceStruct
+.field static final "$assertionsDisabled" Z =  0
+.field static "cache_stGps" LLBSAPIProtocol/GPS;
+.field static "cache_vCells" Ljava/util/ArrayList;
+.field static "cache_vMacs" Ljava/util/ArrayList;
+.field public "lTime" J
+.field public "stGps" LLBSAPIProtocol/GPS;
+.field public "strExtraInfo" Ljava/lang/String;
+.field public "vCells" Ljava/util/ArrayList;
+.field public "vMacs" Ljava/util/ArrayList;
+
+.method static <clinit>()V
+.limit locals 2
+.limit stack 200
+  nop
+  ldc LBSAPIProtocol/Measure
+  astore_0
+  aload_0
+  invokevirtual java/lang/Class/desiredAssertionStatus()Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  iconst_1
+  istore_1
+Label1:
+  iload_1
+  putstatic LBSAPIProtocol/Measure/$assertionsDisabled Z
+  return
+Label0:
+  iconst_0
+  istore_1
+  goto Label1
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 10
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  aconst_null
+  astore_1
+  aload_0
+  aload_1
+  putfield LBSAPIProtocol/Measure/stGps LLBSAPIProtocol/GPS;
+  aconst_null
+  astore_1
+  aload_0
+  aload_1
+  putfield LBSAPIProtocol/Measure/vMacs Ljava/util/ArrayList;
+  aconst_null
+  astore_1
+  aload_0
+  aload_1
+  putfield LBSAPIProtocol/Measure/vCells Ljava/util/ArrayList;
+  ldc2_w 0
+  lstore_2
+  aload_0
+  lload_2
+  putfield LBSAPIProtocol/Measure/lTime J
+  ldc ""
+  astore 4
+  aload_0
+  aload 4
+  putfield LBSAPIProtocol/Measure/strExtraInfo Ljava/lang/String;
+  aload_0
+  getfield LBSAPIProtocol/Measure/stGps LLBSAPIProtocol/GPS;
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual LBSAPIProtocol/Measure/setStGps(LLBSAPIProtocol/GPS;)V
+  aload_0
+  getfield LBSAPIProtocol/Measure/vMacs Ljava/util/ArrayList;
+  astore 6
+  aload_0
+  aload 6
+  invokevirtual LBSAPIProtocol/Measure/setVMacs(Ljava/util/ArrayList;)V
+  aload_0
+  getfield LBSAPIProtocol/Measure/vCells Ljava/util/ArrayList;
+  astore 6
+  aload_0
+  aload 6
+  invokevirtual LBSAPIProtocol/Measure/setVCells(Ljava/util/ArrayList;)V
+  aload_0
+  getfield LBSAPIProtocol/Measure/lTime J
+  lstore 7
+  aload_0
+  lload 7
+  invokevirtual LBSAPIProtocol/Measure/setLTime(J)V
+  aload_0
+  getfield LBSAPIProtocol/Measure/strExtraInfo Ljava/lang/String;
+  astore 9
+  aload_0
+  aload 9
+  invokevirtual LBSAPIProtocol/Measure/setStrExtraInfo(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public <init>(LLBSAPIProtocol/GPS;Ljava/util/ArrayList;Ljava/util/ArrayList;JLjava/lang/String;)V
+.limit locals 11
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  aconst_null
+  astore 7
+  aload_0
+  aload 7
+  putfield LBSAPIProtocol/Measure/stGps LLBSAPIProtocol/GPS;
+  aconst_null
+  astore 7
+  aload_0
+  aload 7
+  putfield LBSAPIProtocol/Measure/vMacs Ljava/util/ArrayList;
+  aconst_null
+  astore 7
+  aload_0
+  aload 7
+  putfield LBSAPIProtocol/Measure/vCells Ljava/util/ArrayList;
+  ldc2_w 0
+  lstore 8
+  aload_0
+  lload 8
+  putfield LBSAPIProtocol/Measure/lTime J
+  ldc ""
+  astore 10
+  aload_0
+  aload 10
+  putfield LBSAPIProtocol/Measure/strExtraInfo Ljava/lang/String;
+  aload_0
+  aload_1
+  invokevirtual LBSAPIProtocol/Measure/setStGps(LLBSAPIProtocol/GPS;)V
+  aload_0
+  aload_2
+  invokevirtual LBSAPIProtocol/Measure/setVMacs(Ljava/util/ArrayList;)V
+  aload_0
+  aload_3
+  invokevirtual LBSAPIProtocol/Measure/setVCells(Ljava/util/ArrayList;)V
+  aload_0
+  lload 4
+  invokevirtual LBSAPIProtocol/Measure/setLTime(J)V
+  aload_0
+  aload 6
+  invokevirtual LBSAPIProtocol/Measure/setStrExtraInfo(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public className()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  ldc "LBSAPIProtocol.Measure"
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public clone()Ljava/lang/Object;
+.limit locals 6
+.limit stack 200
+  .catch  java/lang/CloneNotSupportedException <from> Label2 <to> Label3 <using> Label1
+  nop
+  iconst_0
+  istore_1
+Label2:
+  aload_0
+  invokespecial java/lang/Object/clone()Ljava/lang/Object;
+  astore_2
+Label3:
+  aload_2
+  astore_1
+Label0:
+  aload_1
+  areturn
+Label1:
+  astore_3
+  getstatic LBSAPIProtocol/Measure/$assertionsDisabled Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifne Label0
+  new java/lang/AssertionError
+  astore 5
+  aload 5
+  invokespecial java/lang/AssertionError/<init>()V
+  aload 5
+  athrow
+  nop
+.end <method>
+
+.method public display(Ljava/lang/StringBuilder;I)V
+.limit locals 10
+.limit stack 200
+  nop
+  new com/qq/taf/jce/JceDisplayer
+  astore_3
+  aload_3
+  aload_1
+  iload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_0
+  getfield LBSAPIProtocol/Measure/stGps LLBSAPIProtocol/GPS;
+  astore 4
+  ldc "stGps"
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Lcom/qq/taf/jce/JceStruct;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield LBSAPIProtocol/Measure/vMacs Ljava/util/ArrayList;
+  astore 6
+  ldc "vMacs"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/util/Collection;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield LBSAPIProtocol/Measure/vCells Ljava/util/ArrayList;
+  astore 6
+  ldc "vCells"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/util/Collection;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield LBSAPIProtocol/Measure/lTime J
+  lstore 7
+  ldc "lTime"
+  astore 5
+  aload_3
+  lload 7
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(JLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield LBSAPIProtocol/Measure/strExtraInfo Ljava/lang/String;
+  astore 9
+  ldc "strExtraInfo"
+  astore 5
+  aload_3
+  aload 9
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  return
+  nop
+.end <method>
+
+.method public equals(Ljava/lang/Object;)Z
+.limit locals 16
+.limit stack 200
+  nop
+  aload_1
+  astore_3
+  aload_3
+  checkcast LBSAPIProtocol/Measure
+  astore_3
+  aload_3
+  astore_2
+  aload_0
+  getfield LBSAPIProtocol/Measure/stGps LLBSAPIProtocol/GPS;
+  astore 4
+  aload_2
+  getfield LBSAPIProtocol/Measure/stGps LLBSAPIProtocol/GPS;
+  astore 5
+  aload 4
+  aload 5
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield LBSAPIProtocol/Measure/vMacs Ljava/util/ArrayList;
+  astore 7
+  aload_2
+  getfield LBSAPIProtocol/Measure/vMacs Ljava/util/ArrayList;
+  astore 8
+  aload 7
+  aload 8
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield LBSAPIProtocol/Measure/vCells Ljava/util/ArrayList;
+  astore 8
+  aload_2
+  getfield LBSAPIProtocol/Measure/vCells Ljava/util/ArrayList;
+  astore 7
+  aload 8
+  aload 7
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield LBSAPIProtocol/Measure/lTime J
+  lstore 9
+  aload_2
+  getfield LBSAPIProtocol/Measure/lTime J
+  lstore 11
+  lload 9
+  lload 11
+  invokestatic com/qq/taf/jce/JceUtil/equals(JJ)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield LBSAPIProtocol/Measure/strExtraInfo Ljava/lang/String;
+  astore 13
+  aload_2
+  getfield LBSAPIProtocol/Measure/strExtraInfo Ljava/lang/String;
+  astore 14
+  aload 13
+  aload 14
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  iconst_1
+  istore 15
+  iload 15
+  ireturn
+Label0:
+  iconst_0
+  istore 15
+  iload 15
+  ireturn
+  nop
+.end <method>
+
+.method public getLTime()J
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield LBSAPIProtocol/Measure/lTime J
+  lstore_1
+  lload_1
+  lreturn
+  nop
+.end <method>
+
+.method public getStGps()LLBSAPIProtocol/GPS;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield LBSAPIProtocol/Measure/stGps LLBSAPIProtocol/GPS;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getStrExtraInfo()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield LBSAPIProtocol/Measure/strExtraInfo Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getVCells()Ljava/util/ArrayList;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield LBSAPIProtocol/Measure/vCells Ljava/util/ArrayList;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getVMacs()Ljava/util/ArrayList;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield LBSAPIProtocol/Measure/vMacs Ljava/util/ArrayList;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public readFrom(Lcom/qq/taf/jce/JceInputStream;)V
+.limit locals 24
+.limit stack 200
+  nop
+  getstatic LBSAPIProtocol/Measure/cache_stGps LLBSAPIProtocol/GPS;
+  astore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 7
+  ifne Label0
+  new LBSAPIProtocol/GPS
+  astore 7
+  aload 7
+  invokespecial LBSAPIProtocol/GPS/<init>()V
+  aload 7
+  putstatic LBSAPIProtocol/Measure/cache_stGps LLBSAPIProtocol/GPS;
+Label0:
+  getstatic LBSAPIProtocol/Measure/cache_stGps LLBSAPIProtocol/GPS;
+  astore 7
+  iconst_0
+  istore 9
+  iload 9
+  istore 8
+  iconst_1
+  istore 9
+  aload_1
+  astore_2
+  aload_2
+  aload 7
+  iload 8
+  iload 9
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Lcom/qq/taf/jce/JceStruct;IZ)Lcom/qq/taf/jce/JceStruct;
+  astore 10
+  aload 10
+  astore 11
+  aload 11
+  checkcast LBSAPIProtocol/GPS
+  astore 11
+  aload 11
+  astore 7
+  aload_0
+  astore_2
+  aload_2
+  aload 7
+  invokevirtual LBSAPIProtocol/Measure/setStGps(LLBSAPIProtocol/GPS;)V
+  getstatic LBSAPIProtocol/Measure/cache_vMacs Ljava/util/ArrayList;
+  astore 12
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  ifnonnull Label1
+  new java/util/ArrayList
+  astore 12
+  aload 12
+  invokespecial java/util/ArrayList/<init>()V
+  aload 12
+  putstatic LBSAPIProtocol/Measure/cache_vMacs Ljava/util/ArrayList;
+  ldc2_w 0
+  lstore 14
+  lload 14
+  invokestatic java/lang/Long/valueOf(J)Ljava/lang/Long;
+  astore 13
+  getstatic LBSAPIProtocol/Measure/cache_vMacs Ljava/util/ArrayList;
+  astore 12
+  aload 12
+  aload 13
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+Label1:
+  getstatic LBSAPIProtocol/Measure/cache_vMacs Ljava/util/ArrayList;
+  astore 12
+  iconst_1
+  istore 9
+  iload 9
+  istore 8
+  iconst_1
+  istore 9
+  aload_1
+  astore_2
+  aload_2
+  aload 12
+  iload 8
+  iload 9
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Ljava/lang/Object;IZ)Ljava/lang/Object;
+  astore 16
+  aload 16
+  astore 17
+  aload 17
+  checkcast java/util/ArrayList
+  astore 17
+  aload 17
+  astore 12
+  aload_0
+  astore_2
+  aload_2
+  aload 12
+  invokevirtual LBSAPIProtocol/Measure/setVMacs(Ljava/util/ArrayList;)V
+  getstatic LBSAPIProtocol/Measure/cache_vCells Ljava/util/ArrayList;
+  astore 12
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  ifnonnull Label2
+  new java/util/ArrayList
+  astore 12
+  aload 12
+  invokespecial java/util/ArrayList/<init>()V
+  aload 12
+  putstatic LBSAPIProtocol/Measure/cache_vCells Ljava/util/ArrayList;
+  new LBSAPIProtocol/Cell
+  astore 18
+  aload 18
+  astore_2
+  aload_2
+  invokespecial LBSAPIProtocol/Cell/<init>()V
+  getstatic LBSAPIProtocol/Measure/cache_vCells Ljava/util/ArrayList;
+  astore 12
+  aload 18
+  astore_2
+  aload 12
+  aload_2
+  invokevirtual java/util/ArrayList/add(Ljava/lang/Object;)Z
+  pop
+Label2:
+  getstatic LBSAPIProtocol/Measure/cache_vCells Ljava/util/ArrayList;
+  astore 12
+  iconst_2
+  istore 9
+  iconst_1
+  istore 19
+  aload_1
+  astore_2
+  iload 19
+  istore_3
+  aload_2
+  aload 12
+  iload 9
+  iload_3
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Ljava/lang/Object;IZ)Ljava/lang/Object;
+  astore 16
+  aload 16
+  astore 20
+  aload 20
+  checkcast java/util/ArrayList
+  astore 20
+  aload 20
+  astore 12
+  aload_0
+  astore_2
+  aload_2
+  aload 12
+  invokevirtual LBSAPIProtocol/Measure/setVCells(Ljava/util/ArrayList;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield LBSAPIProtocol/Measure/lTime J
+  lstore_2
+  lload_2
+  lstore 21
+  iconst_3
+  istore 9
+  iconst_1
+  istore 19
+  aload_1
+  astore_2
+  lload 21
+  lstore_3
+  iload 19
+  istore 5
+  aload_2
+  lload_3
+  iload 9
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/read(JIZ)J
+  lstore 21
+  aload_0
+  astore_2
+  lload 21
+  lstore_3
+  aload_2
+  lload_3
+  invokevirtual LBSAPIProtocol/Measure/setLTime(J)V
+  iconst_4
+  istore 9
+  iconst_0
+  istore 19
+  aload_1
+  astore_2
+  iload 19
+  istore_3
+  aload_2
+  iload 9
+  iload_3
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 23
+  aload_0
+  astore_2
+  aload 23
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual LBSAPIProtocol/Measure/setStrExtraInfo(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public setLTime(J)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  lload_1
+  putfield LBSAPIProtocol/Measure/lTime J
+  return
+  nop
+.end <method>
+
+.method public setStGps(LLBSAPIProtocol/GPS;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield LBSAPIProtocol/Measure/stGps LLBSAPIProtocol/GPS;
+  return
+  nop
+.end <method>
+
+.method public setStrExtraInfo(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield LBSAPIProtocol/Measure/strExtraInfo Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setVCells(Ljava/util/ArrayList;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield LBSAPIProtocol/Measure/vCells Ljava/util/ArrayList;
+  return
+  nop
+.end <method>
+
+.method public setVMacs(Ljava/util/ArrayList;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield LBSAPIProtocol/Measure/vMacs Ljava/util/ArrayList;
+  return
+  nop
+.end <method>
+
+.method public writeTo(Lcom/qq/taf/jce/JceOutputStream;)V
+.limit locals 8
+.limit stack 200
+  nop
+  aload_0
+  getfield LBSAPIProtocol/Measure/stGps LLBSAPIProtocol/GPS;
+  astore_2
+  iconst_0
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Lcom/qq/taf/jce/JceStruct;I)V
+  aload_0
+  getfield LBSAPIProtocol/Measure/vMacs Ljava/util/ArrayList;
+  astore 4
+  iconst_1
+  istore_3
+  aload_1
+  aload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/util/Collection;I)V
+  aload_0
+  getfield LBSAPIProtocol/Measure/vCells Ljava/util/ArrayList;
+  astore 4
+  iconst_2
+  istore_3
+  aload_1
+  aload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/util/Collection;I)V
+  aload_0
+  getfield LBSAPIProtocol/Measure/lTime J
+  lstore 5
+  iconst_3
+  istore_3
+  aload_1
+  lload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(JI)V
+  aload_0
+  getfield LBSAPIProtocol/Measure/strExtraInfo Ljava/lang/String;
+  astore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 7
+  ifeq Label0
+  aload_0
+  getfield LBSAPIProtocol/Measure/strExtraInfo Ljava/lang/String;
+  astore 7
+  iconst_4
+  istore_3
+  aload_1
+  aload 7
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+Label0:
+  return
+  nop
+.end <method>
+

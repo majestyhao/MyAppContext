@@ -1,0 +1,110 @@
+.source SuizongAPIAdapter.java
+.class  com/admogo/adapters/SuizongAPIAdapter$FetchSuizongADRunnable
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field private "ration" Lcom/admogo/obj/Ration;
+.field private "suizongADAdapter" Lcom/admogo/adapters/SuizongAPIAdapter;
+.field final "this$0" Lcom/admogo/adapters/SuizongAPIAdapter;
+
+.method public <init>(Lcom/admogo/adapters/SuizongAPIAdapter;Lcom/admogo/adapters/SuizongAPIAdapter;Lcom/admogo/obj/Ration;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/adapters/SuizongAPIAdapter$FetchSuizongADRunnable/this$0 Lcom/admogo/adapters/SuizongAPIAdapter;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  aload_2
+  putfield com/admogo/adapters/SuizongAPIAdapter$FetchSuizongADRunnable/suizongADAdapter Lcom/admogo/adapters/SuizongAPIAdapter;
+  aload_0
+  aload_3
+  putfield com/admogo/adapters/SuizongAPIAdapter$FetchSuizongADRunnable/ration Lcom/admogo/obj/Ration;
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 14
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/SuizongAPIAdapter$FetchSuizongADRunnable/suizongADAdapter Lcom/admogo/adapters/SuizongAPIAdapter;
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore_2
+  aload_2
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore_3
+  aload_3
+  astore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 5
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 4
+  ifne Label0
+Label1:
+  return
+Label0:
+  aload_0
+  getfield com/admogo/adapters/SuizongAPIAdapter$FetchSuizongADRunnable/this$0 Lcom/admogo/adapters/SuizongAPIAdapter;
+  astore 6
+  aload_0
+  getfield com/admogo/adapters/SuizongAPIAdapter$FetchSuizongADRunnable/ration Lcom/admogo/obj/Ration;
+  astore 7
+  aload 7
+  getfield com/admogo/obj/Ration/key Ljava/lang/String;
+  astore 8
+  aload 6
+  aload 4
+  aload 8
+  invokestatic com/admogo/adapters/SuizongAPIAdapter/access$0(Lcom/admogo/adapters/SuizongAPIAdapter;Lcom/admogo/AdMogoLayout;Ljava/lang/String;)V
+  aload_0
+  getfield com/admogo/adapters/SuizongAPIAdapter$FetchSuizongADRunnable/this$0 Lcom/admogo/adapters/SuizongAPIAdapter;
+  astore 6
+  aload 6
+  invokestatic com/admogo/adapters/SuizongAPIAdapter/access$1(Lcom/admogo/adapters/SuizongAPIAdapter;)Lcom/admogo/obj/SuizongAD;
+  astore 9
+  aload 9
+  getfield com/admogo/obj/SuizongAD/status Ljava/lang/String;
+  astore 8
+  ldc "1"
+  astore 11
+  aload 8
+  aload 11
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label1
+  aload 4
+  getfield com/admogo/AdMogoLayout/handler Landroid/os/Handler;
+  astore 12
+  new com/admogo/adapters/SuizongAPIAdapter$DisplaySuizongADRunnable
+  astore 13
+  aload_0
+  getfield com/admogo/adapters/SuizongAPIAdapter$FetchSuizongADRunnable/this$0 Lcom/admogo/adapters/SuizongAPIAdapter;
+  astore_1
+  aload_0
+  getfield com/admogo/adapters/SuizongAPIAdapter$FetchSuizongADRunnable/suizongADAdapter Lcom/admogo/adapters/SuizongAPIAdapter;
+  astore 6
+  aload 13
+  aload_1
+  aload 6
+  invokespecial com/admogo/adapters/SuizongAPIAdapter$DisplaySuizongADRunnable/<init>(Lcom/admogo/adapters/SuizongAPIAdapter;Lcom/admogo/adapters/SuizongAPIAdapter;)V
+  aload 12
+  aload 13
+  invokevirtual android/os/Handler/post(Ljava/lang/Runnable;)Z
+  pop
+  goto Label1
+  nop
+.end <method>
+

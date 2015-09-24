@@ -1,0 +1,223 @@
+.source SourceFile
+.class public  cn/domob/android/ads/DomobAdManager
+.super java/lang/Object
+.field public static final "ACTION_AUDIO" Ljava/lang/String; =  "audio"
+.field public static final "ACTION_CALL" Ljava/lang/String; =  "call"
+.field public static final "ACTION_IN_APP" Ljava/lang/String; =  "inapp"
+.field public static final "ACTION_LAUNCH_APP" Ljava/lang/String; =  "la"
+.field public static final "ACTION_MAIL" Ljava/lang/String; =  "mail"
+.field public static final "ACTION_MAP" Ljava/lang/String; =  "map"
+.field public static final "ACTION_MARKET" Ljava/lang/String; =  "market"
+.field public static final "ACTION_SMS" Ljava/lang/String; =  "sms"
+.field public static final "ACTION_URL" Ljava/lang/String; =  "url"
+.field public static final "ACTION_VIDEO" Ljava/lang/String; =  "video"
+.field public static final "GENDER_FEMALE" Ljava/lang/String; =  "f"
+.field public static final "GENDER_MALE" Ljava/lang/String; =  "m"
+.field public static final "TEST_EMULATOR" Ljava/lang/String; =  "emulator"
+.field public static final "VAL_SDK_VER" Ljava/lang/String; =  "20120312"
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static checkUpdate(Landroid/content/Context;)V
+.limit locals 2
+.limit stack 200
+  nop
+  new cn/domob/android/ads/I
+  astore_1
+  aload_1
+  aload_0
+  invokespecial cn/domob/android/ads/I/<init>(Landroid/content/Context;)V
+  aload_1
+  invokevirtual cn/domob/android/ads/I/a()V
+  return
+  nop
+.end <method>
+
+.method public static getBirthday()Ljava/util/GregorianCalendar;
+.limit locals 2
+.limit stack 200
+  nop
+  invokestatic cn/domob/android/ads/h/a()Lcn/domob/android/ads/h;
+  astore_0
+  aload_0
+  invokevirtual cn/domob/android/ads/h/i()Ljava/util/GregorianCalendar;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static getEndpoint()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  invokestatic cn/domob/android/ads/h/a()Lcn/domob/android/ads/h;
+  astore_0
+  aload_0
+  invokevirtual cn/domob/android/ads/h/b()Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static getGender()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  invokestatic cn/domob/android/ads/h/a()Lcn/domob/android/ads/h;
+  astore_0
+  aload_0
+  invokevirtual cn/domob/android/ads/h/g()Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static getPostalCode()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  invokestatic cn/domob/android/ads/h/a()Lcn/domob/android/ads/h;
+  astore_0
+  aload_0
+  invokevirtual cn/domob/android/ads/h/h()Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static getPublisherId(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 3
+.limit stack 200
+  nop
+  invokestatic cn/domob/android/ads/h/a()Lcn/domob/android/ads/h;
+  astore_1
+  aload_1
+  aload_0
+  invokevirtual cn/domob/android/ads/h/a(Landroid/content/Context;)Ljava/lang/String;
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public static setAllowUseOfLocation(Z)V
+.limit locals 2
+.limit stack 200
+  nop
+  invokestatic cn/domob/android/ads/h/a()Lcn/domob/android/ads/h;
+  astore_1
+  aload_1
+  iload_0
+  invokevirtual cn/domob/android/ads/h/b(Z)V
+  return
+  nop
+.end <method>
+
+.method public static setBirthday(III)V
+.limit locals 4
+.limit stack 200
+  nop
+  new java/util/GregorianCalendar
+  astore_3
+  aload_3
+  invokespecial java/util/GregorianCalendar/<init>()V
+  iload_1
+  iconst_m1
+  iadd
+  istore_1
+  aload_3
+  iload_0
+  iload_1
+  iload_2
+  invokevirtual java/util/GregorianCalendar/set(III)V
+  aload_3
+  invokestatic cn/domob/android/ads/DomobAdManager/setBirthday(Ljava/util/GregorianCalendar;)V
+  return
+  nop
+.end <method>
+
+.method public static setBirthday(Ljava/util/GregorianCalendar;)V
+.limit locals 2
+.limit stack 200
+  nop
+  invokestatic cn/domob/android/ads/h/a()Lcn/domob/android/ads/h;
+  astore_1
+  aload_1
+  aload_0
+  invokevirtual cn/domob/android/ads/h/a(Ljava/util/GregorianCalendar;)V
+  return
+  nop
+.end <method>
+
+.method public static setEndpoint(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  invokestatic cn/domob/android/ads/h/a()Lcn/domob/android/ads/h;
+  astore_1
+  aload_1
+  aload_0
+  invokevirtual cn/domob/android/ads/h/a(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public static setGender(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  invokestatic cn/domob/android/ads/h/a()Lcn/domob/android/ads/h;
+  astore_1
+  aload_1
+  aload_0
+  invokevirtual cn/domob/android/ads/h/d(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public static setIsTestMode(Z)V
+.limit locals 1
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+
+.method public static setPostalCode(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  invokestatic cn/domob/android/ads/h/a()Lcn/domob/android/ads/h;
+  astore_1
+  aload_1
+  aload_0
+  invokevirtual cn/domob/android/ads/h/e(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public static setPublisherId(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  invokestatic cn/domob/android/ads/h/a()Lcn/domob/android/ads/h;
+  astore_1
+  aload_1
+  aload_0
+  invokevirtual cn/domob/android/ads/h/b(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+

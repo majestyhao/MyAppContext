@@ -1,0 +1,674 @@
+.source SourceFile
+.class final  cn/domob/android/ads/e
+.super java/lang/Object
+
+.method <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method protected a(Lcn/domob/android/ads/d;Ljava/lang/String;[B)V
+.limit locals 20
+.limit stack 200
+  nop
+  iconst_0
+  istore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+Label8:
+  aload_1
+  astore 4
+  aload_2
+  astore 5
+  aload 4
+  aload 7
+  aload 5
+  invokevirtual cn/domob/android/ads/d/a(Landroid/net/Uri;Ljava/lang/String;)Landroid/database/Cursor;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label0
+  aload 6
+  invokeinterface android/database/Cursor/getCount()I 1
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  ifne Label1
+Label0:
+  getstatic cn/domob/android/ads/d/h Landroid/net/Uri;
+  astore 7
+  aload_1
+  astore 4
+  aload 4
+  aload 7
+  invokevirtual cn/domob/android/ads/d/a(Landroid/net/Uri;)I
+  pop
+  ldc "DomobSDK"
+  astore 10
+  iconst_3
+  istore 11
+  aload 10
+  iload 11
+  invokestatic android/util/Log/isLoggable(Ljava/lang/String;I)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label2
+  new java/lang/StringBuilder
+  astore 12
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "save image:"
+  astore 10
+  aload 12
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  aload_2
+  astore 4
+  aload 12
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  ldc " to cache!"
+  astore 10
+  aload 12
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  aload 12
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 13
+  ldc "DomobSDK"
+  astore 10
+  aload 10
+  aload 13
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label2:
+  new android/content/ContentValues
+  astore 14
+  aload 14
+  invokespecial android/content/ContentValues/<init>()V
+  ldc "_name"
+  astore 10
+  aload_2
+  astore 4
+  aload 14
+  aload 10
+  aload 4
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  ldc "_image"
+  astore 10
+  aload_3
+  astore 4
+  aload 14
+  aload 10
+  aload 4
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;[B)V
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 15
+  lload 15
+  invokestatic java/lang/Long/valueOf(J)Ljava/lang/Long;
+  astore 17
+  ldc "_date"
+  astore 10
+  aload 14
+  aload 10
+  aload 17
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/Long;)V
+  getstatic cn/domob/android/ads/d/h Landroid/net/Uri;
+  astore 7
+  aload_1
+  astore 4
+  aload 4
+  aload 7
+  aload 14
+  invokevirtual cn/domob/android/ads/d/a(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
+  pop
+Label4:
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label3
+  aload 6
+  invokeinterface android/database/Cursor/close()V 1
+Label3:
+  return
+Label1:
+  ldc "DomobSDK"
+  astore 10
+  iconst_3
+  istore 11
+  aload 10
+  iload 11
+  invokestatic android/util/Log/isLoggable(Ljava/lang/String;I)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label4
+  new java/lang/StringBuilder
+  astore 12
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_2
+  astore 4
+  aload 12
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  ldc " is already in cache."
+  astore 10
+  aload 12
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  aload 12
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 13
+  ldc "DomobSDK"
+  astore 10
+  aload 10
+  aload 13
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label9:
+  goto Label4
+Label7:
+  astore 18
+Label10:
+  aload 18
+  invokevirtual java/lang/Exception/printStackTrace()V
+Label11:
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label3
+  aload 6
+  invokeinterface android/database/Cursor/close()V 1
+  goto Label3
+Label6:
+  astore 19
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label5
+  aload 6
+  invokeinterface android/database/Cursor/close()V 1
+Label5:
+  aload 19
+  athrow
+  nop
+.end <method>
+
+.method protected a(Lcn/domob/android/ads/d;Ljava/lang/String;Ljava/lang/String;Ljava/util/Hashtable;)Z
+  .signature_attr "(Lcn/domob/android/ads/d;Ljava/lang/String;Ljava/lang/String;Ljava/util/Hashtable<Ljava/lang/String;[B>;)Z"
+.limit locals 18
+.limit stack 200
+  nop
+  iconst_0
+  istore 6
+  iconst_0
+  istore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+Label7:
+  aload_3
+  astore 5
+  aload_1
+  aload 8
+  aload 5
+  invokevirtual cn/domob/android/ads/d/a(Landroid/net/Uri;Ljava/lang/String;)Landroid/database/Cursor;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label0
+  aload 7
+  invokeinterface android/database/Cursor/getCount()I 1
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifle Label0
+  aload 7
+  invokeinterface android/database/Cursor/moveToFirst()Z 1
+  pop
+  ldc "_image"
+  astore 10
+  aload 7
+  aload 10
+  invokeinterface android/database/Cursor/getColumnIndexOrThrow(Ljava/lang/String;)I 2
+  istore 9
+  aload 7
+  iload 9
+  invokeinterface android/database/Cursor/getBlob(I)[B 2
+  astore 11
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  ifnull Label1
+  ldc "DomobSDK"
+  astore 10
+  iconst_3
+  istore 13
+  aload 10
+  iload 13
+  invokestatic android/util/Log/isLoggable(Ljava/lang/String;I)Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifeq Label2
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "load image from cache:"
+  astore 10
+  aload 14
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload_3
+  astore 5
+  aload 14
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 15
+  ldc "DomobSDK"
+  astore 10
+  aload 10
+  aload 15
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label2:
+  aload 4
+  astore 5
+  aload 5
+  aload_2
+  aload 11
+  invokevirtual java/util/Hashtable/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+Label8:
+  iconst_1
+  istore 6
+Label1:
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label3
+  aload 7
+  invokeinterface android/database/Cursor/close()V 1
+Label3:
+  iload 6
+  ireturn
+Label0:
+  ldc "DomobSDK"
+  astore 10
+  iconst_3
+  istore 13
+  aload 10
+  iload 13
+  invokestatic android/util/Log/isLoggable(Ljava/lang/String;I)Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifeq Label1
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "fail to load image:"
+  astore 10
+  aload 14
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload_3
+  astore 5
+  aload 14
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  ldc " from cache"
+  astore 10
+  aload 14
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 15
+  ldc "DomobSDK"
+  astore 10
+  aload 10
+  aload 15
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label9:
+  goto Label1
+Label6:
+  astore 16
+Label10:
+  aload 16
+  invokevirtual java/lang/Exception/printStackTrace()V
+Label11:
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label3
+  aload 7
+  invokeinterface android/database/Cursor/close()V 1
+  iconst_0
+  istore 13
+  iload 13
+  ireturn
+Label5:
+  astore 17
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label4
+  aload 7
+  invokeinterface android/database/Cursor/close()V 1
+Label4:
+  aload 17
+  athrow
+  nop
+.end <method>
+
+.method protected b(Lcn/domob/android/ads/d;Ljava/lang/String;Ljava/lang/String;Ljava/util/Hashtable;)Z
+  .signature_attr "(Lcn/domob/android/ads/d;Ljava/lang/String;Ljava/lang/String;Ljava/util/Hashtable<Ljava/lang/String;[B>;)Z"
+.limit locals 27
+.limit stack 200
+  nop
+  iconst_1
+  istore 7
+  iconst_0
+  istore 8
+  iconst_0
+  istore 9
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+Label11:
+  aload_1
+  astore 5
+  aload_3
+  astore 6
+  aload 5
+  aload 10
+  aload 6
+  invokevirtual cn/domob/android/ads/d/a(Landroid/net/Uri;Ljava/lang/String;)Landroid/database/Cursor;
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label0
+  aload 9
+  invokeinterface android/database/Cursor/getCount()I 1
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 11
+  ifle Label0
+  aload 9
+  invokeinterface android/database/Cursor/moveToFirst()Z 1
+  pop
+  ldc "_image"
+  astore 12
+  aload 9
+  aload 12
+  invokeinterface android/database/Cursor/getColumnIndexOrThrow(Ljava/lang/String;)I 2
+  istore 11
+  aload 9
+  iload 11
+  invokeinterface android/database/Cursor/getBlob(I)[B 2
+  astore 13
+  aload 13
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 13
+  ifnull Label1
+  ldc "DomobSDK"
+  astore 12
+  iconst_3
+  istore 15
+  aload 12
+  iload 15
+  invokestatic android/util/Log/isLoggable(Ljava/lang/String;I)Z
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label2
+  ldc "DomobSDK"
+  astore 12
+  ldc "success to load from resources DB."
+  astore 16
+  aload 12
+  aload 16
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label2:
+  aload 4
+  astore 5
+  aload_2
+  astore 6
+  aload 5
+  aload 6
+  aload 13
+  invokevirtual java/util/Hashtable/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+Label7:
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label3
+  aload 9
+  invokeinterface android/database/Cursor/close()V 1
+Label3:
+  iload 7
+  ireturn
+Label0:
+  aload_1
+  astore 5
+  aload 5
+  invokevirtual cn/domob/android/ads/d/a()Landroid/content/Context;
+  astore 17
+  aload 17
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 17
+  ifnull Label1
+  new java/io/ByteArrayOutputStream
+  astore 18
+  aload 18
+  invokespecial java/io/ByteArrayOutputStream/<init>()V
+  aload 17
+  invokevirtual android/content/Context/getAssets()Landroid/content/res/AssetManager;
+  astore 19
+  aload_3
+  astore 5
+  aload 19
+  aload 5
+  invokevirtual android/content/res/AssetManager/open(Ljava/lang/String;)Ljava/io/InputStream;
+  astore 20
+  aload 20
+  invokestatic android/graphics/BitmapFactory/decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
+  astore 21
+  getstatic android/graphics/Bitmap$CompressFormat/JPEG Landroid/graphics/Bitmap$CompressFormat;
+  astore 22
+  bipush 100
+  istore 15
+  aload 21
+  astore 5
+  aload 22
+  astore 6
+  aload 5
+  aload 6
+  iload 15
+  aload 18
+  invokevirtual android/graphics/Bitmap/compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
+  pop
+  aload 18
+  invokevirtual java/io/ByteArrayOutputStream/toByteArray()[B
+  astore 13
+  aload 13
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 13
+  ifnull Label4
+  ldc "DomobSDK"
+  astore 12
+  iconst_3
+  istore 15
+  aload 12
+  iload 15
+  invokestatic android/util/Log/isLoggable(Ljava/lang/String;I)Z
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label5
+  ldc "DomobSDK"
+  astore 12
+  ldc "success to load from preload resources."
+  astore 16
+  aload 12
+  aload 16
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label5:
+  aload 4
+  astore 5
+  aload_2
+  astore 6
+  aload 5
+  aload 6
+  aload 13
+  invokevirtual java/util/Hashtable/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  iconst_1
+  istore 8
+Label4:
+  aload 18
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 18
+  ifnull Label6
+  aload 18
+  invokevirtual java/io/ByteArrayOutputStream/close()V
+Label6:
+  aload 21
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 21
+  ifnull Label1
+  aload 21
+  astore 5
+  aload 5
+  invokevirtual android/graphics/Bitmap/isRecycled()Z
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifne Label1
+  aload 21
+  astore 5
+  aload 5
+  invokevirtual android/graphics/Bitmap/recycle()V
+Label1:
+  iload 8
+  istore 7
+  goto Label7
+Label10:
+  astore 23
+  iload 8
+  istore 7
+Label12:
+  new java/lang/StringBuilder
+  astore 24
+  aload 24
+  astore 5
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Cannot load ["
+  astore 12
+  aload 24
+  astore 5
+  aload 5
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 24
+  aload 24
+  astore 5
+  aload_3
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 24
+  ldc "] from res this time"
+  astore 12
+  aload 24
+  astore 5
+  aload 5
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 24
+  aload 24
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 25
+  aload_0
+  astore 5
+  aload 25
+  astore 6
+  aload 5
+  aload 6
+  invokestatic cn/domob/android/ads/J/b(Ljava/lang/Object;Ljava/lang/String;)V
+  aload 23
+  astore 5
+  aload 5
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Throwable;)V
+Label13:
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label3
+  aload 9
+  invokeinterface android/database/Cursor/close()V 1
+  iload 8
+  ireturn
+Label9:
+  astore 26
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label8
+  aload 9
+  invokeinterface android/database/Cursor/close()V 1
+Label8:
+  aload 26
+  athrow
+  nop
+.end <method>
+

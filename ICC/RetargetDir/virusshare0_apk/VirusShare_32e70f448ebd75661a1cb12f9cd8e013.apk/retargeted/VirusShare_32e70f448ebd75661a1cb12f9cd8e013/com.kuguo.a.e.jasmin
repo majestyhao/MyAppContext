@@ -1,0 +1,566 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/kuguo/a/e
+.super java/lang/Object
+.field private static "b" Lcom/kuguo/a/e;
+.field "a" Landroid/content/Context;
+.field private "c" Lcom/kuguo/b/b;
+.field private "d" Ljava/util/LinkedList;
+.field private "e" Lcom/kuguo/a/b;
+.field private "f" Z
+.field private "g" Z
+
+.method private <init>(Landroid/content/Context;)V
+.limit locals 20
+.limit stack 200
+  nop
+  aload_0
+  astore_2
+  aload_2
+  invokespecial java/lang/Object/<init>()V
+  ldc "DownloadManager\u5b9e\u4f8b\u5316"
+  astore 4
+  aload 4
+  invokestatic com/kuguo/c/a/a(Ljava/lang/Object;)V
+  aload_0
+  putstatic com/kuguo/a/e/b Lcom/kuguo/a/e;
+  aload_1
+  astore_2
+  aload_0
+  astore_3
+  aload_3
+  aload_2
+  putfield com/kuguo/a/e/a Landroid/content/Context;
+  new com/kuguo/b/b
+  astore 5
+  aload 5
+  invokespecial com/kuguo/b/b/<init>()V
+  aload_0
+  astore_2
+  aload_2
+  aload 5
+  putfield com/kuguo/a/e/c Lcom/kuguo/b/b;
+  new java/util/LinkedList
+  astore 6
+  aload 6
+  invokespecial java/util/LinkedList/<init>()V
+  aload_0
+  astore_2
+  aload_2
+  aload 6
+  putfield com/kuguo/a/e/d Ljava/util/LinkedList;
+  new com/kuguo/a/b
+  astore 7
+  aload_1
+  astore_2
+  aload 7
+  aload_2
+  invokespecial com/kuguo/a/b/<init>(Landroid/content/Context;)V
+  aload_0
+  astore_2
+  aload_2
+  aload 7
+  putfield com/kuguo/a/e/e Lcom/kuguo/a/b;
+  aload_0
+  astore_2
+  aload_2
+  getfield com/kuguo/a/e/e Lcom/kuguo/a/b;
+  astore 7
+  aload 7
+  invokevirtual com/kuguo/a/b/a()Ljava/util/List;
+  astore 8
+  aload 8
+  invokeinterface java/util/List/iterator()Ljava/util/Iterator; 1
+  astore 9
+Label1:
+  aload 9
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 10
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 10
+  ifeq Label0
+  aload 9
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 11
+  aload 11
+  astore 13
+  aload 13
+  checkcast com/kuguo/a/c
+  astore 13
+  aload 13
+  astore 12
+  new com/kuguo/a/f
+  astore 14
+  aload_1
+  astore_2
+  aload 14
+  aload_2
+  aload 12
+  invokespecial com/kuguo/a/f/<init>(Landroid/content/Context;Lcom/kuguo/a/c;)V
+  aload 14
+  invokevirtual com/kuguo/a/f/f()I
+  istore 15
+  dload 15
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_4
+  istore 16
+  iload 15
+  iload 16
+  if_icmpeq Label1
+  dload 15
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 15
+  lookupswitch
+  1 : Label3
+  2 : Label3
+  3 : Label3
+  default : Label2
+Label2:
+  goto Label4
+Label4:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/kuguo/a/e/d Ljava/util/LinkedList;
+  astore 6
+  aload 6
+  aload 14
+  invokevirtual java/util/LinkedList/add(Ljava/lang/Object;)Z
+  pop
+  goto Label1
+Label3:
+  iconst_5
+  istore 16
+  aload 14
+  iload 16
+  invokevirtual com/kuguo/a/f/b(I)V
+  goto Label4
+Label0:
+  new java/lang/StringBuilder
+  astore 17
+  aload 17
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "task size == "
+  astore 4
+  aload 17
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 17
+  aload_0
+  astore_2
+  aload_2
+  getfield com/kuguo/a/e/d Ljava/util/LinkedList;
+  astore 6
+  aload 6
+  invokevirtual java/util/LinkedList/size()I
+  istore 15
+  aload 17
+  iload 15
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 17
+  aload 17
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 18
+  aload 18
+  astore_2
+  aload_2
+  invokestatic com/kuguo/c/a/a(Ljava/lang/Object;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/kuguo/a/e/d Ljava/util/LinkedList;
+  astore 6
+  aload 6
+  invokevirtual java/util/LinkedList/iterator()Ljava/util/Iterator;
+  astore 9
+Label6:
+  aload 9
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label5
+  aload 9
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 11
+  aload 11
+  astore 19
+  aload 19
+  checkcast com/kuguo/a/f
+  astore 19
+  aload 19
+  astore 14
+  aload 14
+  invokevirtual com/kuguo/a/f/toString()Ljava/lang/String;
+  astore 18
+  aload 18
+  astore_2
+  aload_2
+  invokestatic com/kuguo/c/a/a(Ljava/lang/Object;)V
+  goto Label6
+Label5:
+  return
+  nop
+  nop
+  nop
+.end <method>
+
+.method public static a()Lcom/kuguo/a/e;
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/kuguo/a/e/b Lcom/kuguo/a/e;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static a(Landroid/content/Context;)Lcom/kuguo/a/e;
+.limit locals 2
+.limit stack 200
+  nop
+  getstatic com/kuguo/a/e/b Lcom/kuguo/a/e;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  invokevirtual android/content/Context/getApplicationContext()Landroid/content/Context;
+  astore_0
+  new com/kuguo/a/e
+  astore_1
+  aload_1
+  aload_0
+  invokespecial com/kuguo/a/e/<init>(Landroid/content/Context;)V
+  aload_1
+  putstatic com/kuguo/a/e/b Lcom/kuguo/a/e;
+Label0:
+  getstatic com/kuguo/a/e/b Lcom/kuguo/a/e;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public a(Lcom/kuguo/a/f;)Z
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/a/e/d Ljava/util/LinkedList;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/util/LinkedList/contains(Ljava/lang/Object;)Z
+  istore_3
+  iload_3
+  ireturn
+  nop
+.end <method>
+
+.method public b(Lcom/kuguo/a/f;)Lcom/kuguo/a/f;
+.limit locals 10
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+Label2:
+  aload_0
+  getfield com/kuguo/a/e/d Ljava/util/LinkedList;
+  astore_3
+  aload_3
+  invokevirtual java/util/LinkedList/size()I
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  aload_0
+  getfield com/kuguo/a/e/d Ljava/util/LinkedList;
+  astore_3
+  aload_3
+  iload_2
+  invokevirtual java/util/LinkedList/get(I)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 7
+  aload 7
+  checkcast com/kuguo/a/f
+  astore 7
+  aload 7
+  astore 6
+  aload 6
+  aload_1
+  invokevirtual com/kuguo/a/f/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label1
+  aload 6
+  areturn
+Label1:
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+Label0:
+  aconst_null
+  astore 9
+  aload 9
+  areturn
+  nop
+.end <method>
+
+.method public b()Z
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/a/e/f Z
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method c(Lcom/kuguo/a/f;)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/a/e/d Ljava/util/LinkedList;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/util/LinkedList/add(Ljava/lang/Object;)Z
+  pop
+  aload_0
+  getfield com/kuguo/a/e/e Lcom/kuguo/a/b;
+  astore_3
+  aload_0
+  aload_1
+  invokespecial com/kuguo/a/e/g(Lcom/kuguo/a/f;)Lcom/kuguo/a/c;
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual com/kuguo/a/b/a(Lcom/kuguo/a/c;)V
+  aload_0
+  getfield com/kuguo/a/e/c Lcom/kuguo/b/b;
+  astore 5
+  aload_1
+  invokevirtual com/kuguo/a/f/a()Lcom/kuguo/b/d;
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual com/kuguo/b/b/a(Lcom/kuguo/b/d;)V
+  return
+  nop
+.end <method>
+
+.method public c()Z
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/a/e/g Z
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public d()Ljava/util/List;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/a/e/d Ljava/util/LinkedList;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public d(Lcom/kuguo/a/f;)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/a/e/d Ljava/util/LinkedList;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/util/LinkedList/remove(Ljava/lang/Object;)Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_0
+  getfield com/kuguo/a/e/e Lcom/kuguo/a/b;
+  astore 4
+  aload_0
+  aload_1
+  invokespecial com/kuguo/a/e/g(Lcom/kuguo/a/f;)Lcom/kuguo/a/c;
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual com/kuguo/a/b/b(Lcom/kuguo/a/c;)V
+  aload_1
+  invokevirtual com/kuguo/a/f/a()Lcom/kuguo/b/d;
+  astore 6
+  aload 6
+  invokevirtual com/kuguo/b/d/b()V
+Label0:
+  return
+  nop
+.end <method>
+
+.method e(Lcom/kuguo/a/f;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/a/e/d Ljava/util/LinkedList;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/util/LinkedList/contains(Ljava/lang/Object;)Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_1
+  invokevirtual com/kuguo/a/f/a()Lcom/kuguo/b/d;
+  astore 4
+  aload 4
+  invokevirtual com/kuguo/b/d/e()V
+  aload_0
+  getfield com/kuguo/a/e/c Lcom/kuguo/b/b;
+  astore 5
+  aload_1
+  invokevirtual com/kuguo/a/f/a()Lcom/kuguo/b/d;
+  astore 4
+  aload 5
+  aload 4
+  invokevirtual com/kuguo/b/b/a(Lcom/kuguo/b/d;)V
+Label0:
+  return
+  nop
+.end <method>
+
+.method public f(Lcom/kuguo/a/f;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/a/e/d Ljava/util/LinkedList;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/util/LinkedList/contains(Ljava/lang/Object;)Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_0
+  getfield com/kuguo/a/e/e Lcom/kuguo/a/b;
+  astore 4
+  aload_0
+  aload_1
+  invokespecial com/kuguo/a/e/g(Lcom/kuguo/a/f;)Lcom/kuguo/a/c;
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual com/kuguo/a/b/c(Lcom/kuguo/a/c;)V
+Label0:
+  return
+  nop
+.end <method>
+
+.method private g(Lcom/kuguo/a/f;)Lcom/kuguo/a/c;
+.limit locals 6
+.limit stack 200
+  nop
+  new com/kuguo/a/c
+  astore_2
+  aload_2
+  invokespecial com/kuguo/a/c/<init>()V
+  aload_1
+  invokevirtual com/kuguo/a/f/l()Ljava/lang/String;
+  astore_3
+  aload_2
+  aload_3
+  putfield com/kuguo/a/c/a Ljava/lang/String;
+  aload_1
+  invokevirtual com/kuguo/a/f/b()Ljava/io/File;
+  astore 4
+  aload 4
+  invokevirtual java/io/File/toString()Ljava/lang/String;
+  astore_3
+  aload_2
+  aload_3
+  putfield com/kuguo/a/c/b Ljava/lang/String;
+  aload_1
+  invokevirtual com/kuguo/a/f/f()I
+  istore 5
+  aload_2
+  iload 5
+  putfield com/kuguo/a/c/e I
+  aload_1
+  invokevirtual com/kuguo/a/f/g()I
+  istore 5
+  aload_2
+  iload 5
+  putfield com/kuguo/a/c/d I
+  aload_1
+  invokevirtual com/kuguo/a/f/h()I
+  istore 5
+  aload_2
+  iload 5
+  putfield com/kuguo/a/c/c I
+  aload_1
+  invokevirtual com/kuguo/a/f/i()Ljava/lang/String;
+  astore_3
+  aload_2
+  aload_3
+  putfield com/kuguo/a/c/f Ljava/lang/String;
+  aload_1
+  invokevirtual com/kuguo/a/f/j()Ljava/lang/String;
+  astore_3
+  aload_2
+  aload_3
+  putfield com/kuguo/a/c/g Ljava/lang/String;
+  aload_1
+  invokevirtual com/kuguo/a/f/k()I
+  istore 5
+  aload_2
+  iload 5
+  putfield com/kuguo/a/c/h I
+  aload_2
+  areturn
+  nop
+.end <method>
+

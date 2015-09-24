@@ -1,0 +1,439 @@
+.source SourceFile
+.class public  com/mobisage/sns/tencent/MSTencentAddPic
+.super com/mobisage/sns/tencent/MSTencentWeiboMessage
+.field private "a" Ljava/lang/String;
+
+.method public <init>(Lcom/mobisage/sns/common/MSOAToken;Lcom/mobisage/sns/common/MSOAConsumer;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  invokespecial com/mobisage/sns/tencent/MSTencentWeiboMessage/<init>(Lcom/mobisage/sns/common/MSOAToken;Lcom/mobisage/sns/common/MSOAConsumer;)V
+  ldc "http://open.t.qq.com/api/t/add_pic"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/mobisage/sns/tencent/MSTencentWeiboMessage/urlPath Ljava/lang/String;
+  ldc "POST"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/mobisage/sns/tencent/MSTencentWeiboMessage/httpMethod Ljava/lang/String;
+  aload_0
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/paramMap Ljava/util/HashMap;
+  astore 4
+  ldc "format"
+  astore_3
+  ldc "json"
+  astore 5
+  aload 4
+  aload_3
+  aload 5
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  return
+  nop
+.end <method>
+
+.method public addParam(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 5
+.limit stack 200
+  nop
+  ldc "pic"
+  astore 4
+  aload_1
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_0
+  aload_2
+  putfield com/mobisage/sns/tencent/MSTencentAddPic/a Ljava/lang/String;
+Label1:
+  return
+Label0:
+  aload_0
+  aload_1
+  aload_2
+  invokespecial com/mobisage/sns/tencent/MSTencentWeiboMessage/addParam(Ljava/lang/String;Ljava/lang/String;)V
+  goto Label1
+  nop
+.end <method>
+
+.method public createHttpRequest()Lorg/apache/http/client/methods/HttpRequestBase;
+.limit locals 20
+.limit stack 200
+  nop
+  invokestatic java/util/UUID/randomUUID()Ljava/util/UUID;
+  astore_3
+  new java/io/ByteArrayOutputStream
+  astore 4
+  aload 4
+  invokespecial java/io/ByteArrayOutputStream/<init>()V
+  new java/lang/StringBuilder
+  astore 5
+  ldc "\r\n--"
+  astore 6
+  aload 5
+  aload 6
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_3
+  invokevirtual java/util/UUID/toString()Ljava/lang/String;
+  astore 7
+  aload 5
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  ldc "\r\n"
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 8
+  ldc "UTF-8"
+  astore 6
+  aload 8
+  aload 6
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 9
+  aload 9
+  arraylength
+  istore 10
+  iconst_0
+  istore 11
+  aload 4
+  aload 9
+  iload 11
+  iload 10
+  invokevirtual java/io/ByteArrayOutputStream/write([BII)V
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual com/mobisage/sns/tencent/MSTencentAddPic/generateOAuthParams()Ljava/lang/String;
+  astore 7
+  ldc "&"
+  astore 6
+  aload 7
+  aload 6
+  invokevirtual java/lang/String/split(Ljava/lang/String;)[Ljava/lang/String;
+  astore 12
+  iconst_0
+  istore 13
+Label1:
+  aload 12
+  arraylength
+  istore 10
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  iload 10
+  if_icmpge Label0
+  aload 12
+  iload 13
+  aaload
+  astore 14
+  ldc "="
+  astore 6
+  aload 14
+  aload 6
+  invokevirtual java/lang/String/split(Ljava/lang/String;)[Ljava/lang/String;
+  astore 15
+  new java/lang/StringBuilder
+  astore 5
+  ldc "Content-Disposition: form-data; name=\""
+  astore 6
+  aload 5
+  aload 6
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  iconst_0
+  istore 11
+  aload 15
+  iload 11
+  aaload
+  astore 14
+  aload 5
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  ldc "\"\r\n\r\n"
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  iconst_1
+  istore 11
+  aload 15
+  iload 11
+  aaload
+  astore 14
+  aload 14
+  invokestatic java/net/URLDecoder/decode(Ljava/lang/String;)Ljava/lang/String;
+  astore 14
+  aload 5
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  ldc "UTF-8"
+  astore 6
+  aload 14
+  aload 6
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 9
+  aload 9
+  arraylength
+  istore 10
+  iconst_0
+  istore 11
+  aload 4
+  aload 9
+  iload 11
+  iload 10
+  invokevirtual java/io/ByteArrayOutputStream/write([BII)V
+  ldc "UTF-8"
+  astore 6
+  aload 8
+  aload 6
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 9
+  aload 9
+  arraylength
+  istore 10
+  iconst_0
+  istore 11
+  aload 4
+  aload 9
+  iload 11
+  iload 10
+  invokevirtual java/io/ByteArrayOutputStream/write([BII)V
+  iload 13
+  iconst_1
+  iadd
+  istore 13
+  goto Label1
+Label0:
+  new java/lang/StringBuilder
+  astore 5
+  ldc "Content-Disposition: form-data; name=\"pic\"; filename=\""
+  astore 6
+  aload 5
+  aload 6
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/tencent/MSTencentAddPic/a Ljava/lang/String;
+  astore 14
+  aload 5
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  ldc "\"\r\n"
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  ldc "UTF-8"
+  astore 6
+  aload 14
+  aload 6
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 9
+  aload 9
+  arraylength
+  istore 13
+  iconst_0
+  istore 11
+  aload 4
+  aload 9
+  iload 11
+  iload 13
+  invokevirtual java/io/ByteArrayOutputStream/write([BII)V
+  ldc "Content-Type:application/octet-stream\r\n\r\n"
+  astore 14
+  ldc "UTF-8"
+  astore 6
+  aload 14
+  aload 6
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 9
+  aload 9
+  arraylength
+  istore 13
+  iconst_0
+  istore 11
+  aload 4
+  aload 9
+  iload 11
+  iload 13
+  invokevirtual java/io/ByteArrayOutputStream/write([BII)V
+  new java/io/File
+  astore 16
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/tencent/MSTencentAddPic/a Ljava/lang/String;
+  astore 14
+  aload 16
+  aload 14
+  invokespecial java/io/File/<init>(Ljava/lang/String;)V
+  new java/io/FileInputStream
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  aload 16
+  invokespecial java/io/FileInputStream/<init>(Ljava/io/File;)V
+  sipush 1024
+  istore 11
+  iload 11
+  newarray byte
+  astore 9
+Label3:
+  aload 17
+  astore_1
+  aload_1
+  aload 9
+  invokevirtual java/io/FileInputStream/read([B)I
+  istore 13
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 11
+  iload 13
+  iload 11
+  if_icmpeq Label2
+  iconst_0
+  istore 11
+  aload 4
+  aload 9
+  iload 11
+  iload 13
+  invokevirtual java/io/ByteArrayOutputStream/write([BII)V
+  goto Label3
+Label2:
+  aload 17
+  astore_1
+  aload_1
+  invokevirtual java/io/FileInputStream/close()V
+  new java/lang/StringBuilder
+  astore 5
+  ldc "\r\n--"
+  astore 6
+  aload 5
+  aload 6
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_3
+  invokevirtual java/util/UUID/toString()Ljava/lang/String;
+  astore 14
+  aload 5
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  ldc "--\r\n"
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  ldc "UTF-8"
+  astore 6
+  aload 14
+  aload 6
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 9
+  aload 9
+  arraylength
+  istore 13
+  iconst_0
+  istore 11
+  aload 4
+  aload 9
+  iload 11
+  iload 13
+  invokevirtual java/io/ByteArrayOutputStream/write([BII)V
+  aload 4
+  invokevirtual java/io/ByteArrayOutputStream/toByteArray()[B
+  astore 9
+  new org/apache/http/client/methods/HttpPost
+  astore 18
+  aload_0
+  astore_1
+  aload_1
+  getfield com/mobisage/sns/tencent/MSTencentWeiboMessage/urlPath Ljava/lang/String;
+  astore 14
+  aload 18
+  astore_1
+  aload_1
+  aload 14
+  invokespecial org/apache/http/client/methods/HttpPost/<init>(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore 5
+  ldc "multipart/form-data; boundary="
+  astore 6
+  aload 5
+  aload 6
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_3
+  invokevirtual java/util/UUID/toString()Ljava/lang/String;
+  astore 8
+  aload 5
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 8
+  ldc "Content-Type"
+  astore 6
+  aload 18
+  astore_1
+  aload_1
+  aload 6
+  aload 8
+  invokevirtual org/apache/http/client/methods/HttpPost/setHeader(Ljava/lang/String;Ljava/lang/String;)V
+  new org/apache/http/entity/ByteArrayEntity
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  aload 9
+  invokespecial org/apache/http/entity/ByteArrayEntity/<init>([B)V
+  aload 18
+  astore_1
+  aload 19
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual org/apache/http/client/methods/HttpPost/setEntity(Lorg/apache/http/HttpEntity;)V
+  aload 4
+  invokevirtual java/io/ByteArrayOutputStream/close()V
+  aload 18
+  areturn
+  nop
+.end <method>
+

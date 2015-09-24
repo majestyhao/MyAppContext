@@ -1,0 +1,271 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class final  com/wiyun/ad/AdView$a
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcom/wiyun/ad/AdView;
+.field private "b" Lcom/wiyun/ad/e;
+.field private "c" I
+
+.method public <init>(Lcom/wiyun/ad/AdView;Lcom/wiyun/ad/e;I)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/wiyun/ad/AdView$a/a Lcom/wiyun/ad/AdView;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  aload_2
+  putfield com/wiyun/ad/AdView$a/b Lcom/wiyun/ad/e;
+  aload_0
+  iload_3
+  putfield com/wiyun/ad/AdView$a/c I
+  return
+  nop
+.end <method>
+
+.method static a(Lcom/wiyun/ad/AdView$a;)Lcom/wiyun/ad/e;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/AdView$a/b Lcom/wiyun/ad/e;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static b(Lcom/wiyun/ad/AdView$a;)Lcom/wiyun/ad/AdView;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/AdView$a/a Lcom/wiyun/ad/AdView;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 25
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/AdView$a/a Lcom/wiyun/ad/AdView;
+  astore 9
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  bipush 8
+  istore 11
+  aload 10
+  iload 11
+  invokevirtual com/wiyun/ad/e/setVisibility(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/AdView$a/b Lcom/wiyun/ad/e;
+  astore 10
+  iconst_0
+  istore 11
+  iload 11
+  istore 12
+  aload 10
+  iload 12
+  invokevirtual com/wiyun/ad/e/setVisibility(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/AdView$a/a Lcom/wiyun/ad/AdView;
+  astore 9
+  aload 9
+  invokevirtual com/wiyun/ad/AdView/getWidth()I
+  istore 12
+  iload 12
+  i2f
+  fstore 13
+  fconst_2
+  fstore 15
+  fload 13
+  fload 15
+  fdiv
+  fstore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/AdView$a/a Lcom/wiyun/ad/AdView;
+  astore 9
+  aload 9
+  invokevirtual com/wiyun/ad/AdView/getHeight()I
+  istore 12
+  iload 12
+  i2f
+  fstore 13
+  fconst_2
+  fstore 15
+  fload 13
+  fload 15
+  fdiv
+  fstore 16
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/AdView$a/c I
+  istore 12
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 11
+  iload 12
+  iload 11
+  if_icmpne Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/AdView$a/a Lcom/wiyun/ad/AdView;
+  astore 9
+  aload 9
+  invokevirtual com/wiyun/ad/AdView/getHeight()I
+  istore 12
+Label2:
+  iload 12
+  i2f
+  fstore_1
+  fload_1
+  fstore 17
+  ldc -0.400000
+  fstore 15
+  fload 15
+  fload 17
+  fmul
+  fstore 13
+  new com/wiyun/ad/i
+  astore 18
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/AdView$a/c I
+  istore 12
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 11
+  iload 12
+  iload 11
+  if_icmpeq Label1
+  iconst_1
+  istore 19
+Label3:
+  ldc 90.000000
+  fstore 15
+  fconst_0
+  fstore 20
+  iconst_0
+  istore 11
+  aload 18
+  astore_1
+  fload 15
+  fstore_2
+  fload 20
+  fstore_3
+  fload 14
+  fstore 4
+  fload 16
+  fstore 5
+  fload 13
+  fstore 6
+  iload 11
+  istore 7
+  iload 19
+  istore 8
+  aload_1
+  fload_2
+  fload_3
+  fload 4
+  fload 5
+  fload 6
+  iload 7
+  iload 8
+  invokespecial com/wiyun/ad/i/<init>(FFFFFZZ)V
+  ldc2_w 700
+  lstore 21
+  aload 18
+  astore_1
+  lload 21
+  lstore_2
+  aload_1
+  lload_2
+  invokevirtual com/wiyun/ad/i/setDuration(J)V
+  iconst_1
+  istore 11
+  aload 18
+  astore_1
+  aload_1
+  iload 11
+  invokevirtual com/wiyun/ad/i/setFillAfter(Z)V
+  new android/view/animation/DecelerateInterpolator
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokespecial android/view/animation/DecelerateInterpolator/<init>()V
+  aload 18
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual com/wiyun/ad/i/setInterpolator(Landroid/view/animation/Interpolator;)V
+  new com/wiyun/ad/AdView$a$1
+  astore 24
+  aload 24
+  astore_1
+  aload_0
+  astore_2
+  aload_1
+  aload_2
+  invokespecial com/wiyun/ad/AdView$a$1/<init>(Lcom/wiyun/ad/AdView$a;)V
+  aload 18
+  astore_1
+  aload 24
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual com/wiyun/ad/i/setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/AdView$a/a Lcom/wiyun/ad/AdView;
+  astore 9
+  aload 18
+  astore_1
+  aload 9
+  aload_1
+  invokevirtual com/wiyun/ad/AdView/startAnimation(Landroid/view/animation/Animation;)V
+  return
+Label0:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/AdView$a/a Lcom/wiyun/ad/AdView;
+  astore 9
+  aload 9
+  invokevirtual com/wiyun/ad/AdView/getWidth()I
+  istore 12
+  goto Label2
+Label1:
+  iconst_0
+  istore 19
+  goto Label3
+  nop
+.end <method>
+

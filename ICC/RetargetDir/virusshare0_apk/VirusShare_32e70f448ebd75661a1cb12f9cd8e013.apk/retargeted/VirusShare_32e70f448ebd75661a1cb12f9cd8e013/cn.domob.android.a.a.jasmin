@@ -1,0 +1,1638 @@
+.source SourceFile
+.class public  cn/domob/android/a/a
+.super java/lang/Object
+.field private static "E" Z =  0
+.field public static "a" Ljava/util/Hashtable;
+.field public static "b" Ljava/util/Hashtable;
+.field public static final "c" Ljava/lang/String; =  "typeCancel"
+.field public static final "d" Ljava/lang/String; =  "typeInstall"
+.field public static final "e" Ljava/lang/String; =  "actType"
+.field public static final "f" Ljava/lang/String; =  "appName"
+.field public static final "g" Ljava/lang/String; =  "appId"
+.field public static final "h" Ljava/lang/String; =  "notifyId"
+.field public static final "i" Ljava/lang/String; =  "downloadPath"
+.field public static final "j" I =  512
+.field public static final "k" I =  513
+.field private static "l" Landroid/content/Context;
+.field private static final "s" I =  3
+.field private static "t" I =  0
+.field private static "u" Ljava/util/Hashtable;
+.field private static "v" Ljava/util/Vector;
+.field private static final "y" I =  5
+.field private static final "z" I =  100
+.field private "A" Ljava/lang/String;
+.field private "B" Ljava/lang/String;
+.field private "C" Ljava/lang/String;
+.field private "D" Ljava/lang/String;
+.field private "F" Landroid/app/PendingIntent;
+.field private "G" Landroid/os/Handler;
+.field private "H" Lcn/domob/android/a/f;
+.field private "m" Landroid/app/Notification;
+.field private "n" Landroid/app/NotificationManager;
+.field private "o" I
+.field private "p" I
+.field private "q" Lcn/domob/android/a/c;
+.field private "r" Ljava/lang/String;
+.field private final "w" I
+.field private "x" I
+
+.method static <clinit>()V
+.limit locals 4
+.limit stack 200
+  nop
+  aconst_null
+  astore_0
+  aload_0
+  putstatic cn/domob/android/a/a/l Landroid/content/Context;
+  iconst_0
+  istore_1
+  iload_1
+  putstatic cn/domob/android/a/a/t I
+  new java/util/Hashtable
+  astore_2
+  aload_2
+  invokespecial java/util/Hashtable/<init>()V
+  aload_2
+  putstatic cn/domob/android/a/a/a Ljava/util/Hashtable;
+  new java/util/Hashtable
+  astore_2
+  aload_2
+  invokespecial java/util/Hashtable/<init>()V
+  aload_2
+  putstatic cn/domob/android/a/a/u Ljava/util/Hashtable;
+  new java/util/Hashtable
+  astore_2
+  aload_2
+  invokespecial java/util/Hashtable/<init>()V
+  aload_2
+  putstatic cn/domob/android/a/a/b Ljava/util/Hashtable;
+  new java/util/Vector
+  astore_3
+  aload_3
+  invokespecial java/util/Vector/<init>()V
+  aload_3
+  putstatic cn/domob/android/a/a/v Ljava/util/Vector;
+  iconst_1
+  istore_1
+  iload_1
+  putstatic cn/domob/android/a/a/E Z
+  return
+  nop
+.end <method>
+
+.method private <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+.limit locals 24
+.limit stack 200
+  nop
+  aload_0
+  astore 7
+  aload 7
+  invokespecial java/lang/Object/<init>()V
+  aconst_null
+  astore 9
+  aload_0
+  astore 7
+  aload 7
+  aload 9
+  putfield cn/domob/android/a/a/m Landroid/app/Notification;
+  aconst_null
+  astore 9
+  aload_0
+  astore 7
+  aload 7
+  aload 9
+  putfield cn/domob/android/a/a/n Landroid/app/NotificationManager;
+  iconst_0
+  istore 10
+  aload_0
+  astore 7
+  aload 7
+  iload 10
+  putfield cn/domob/android/a/a/o I
+  iconst_0
+  istore 10
+  aload_0
+  astore 7
+  aload 7
+  iload 10
+  putfield cn/domob/android/a/a/p I
+  aconst_null
+  astore 9
+  aload_0
+  astore 7
+  aload 7
+  aload 9
+  putfield cn/domob/android/a/a/q Lcn/domob/android/a/c;
+  ldc ""
+  astore 11
+  aload_0
+  astore 7
+  aload 7
+  aload 11
+  putfield cn/domob/android/a/a/r Ljava/lang/String;
+  bipush 30
+  istore 10
+  aload_0
+  astore 7
+  aload 7
+  iload 10
+  putfield cn/domob/android/a/a/w I
+  iconst_0
+  istore 10
+  aload_0
+  astore 7
+  aload 7
+  iload 10
+  putfield cn/domob/android/a/a/x I
+  ldc ""
+  astore 11
+  aload_0
+  astore 7
+  aload 7
+  aload 11
+  putfield cn/domob/android/a/a/A Ljava/lang/String;
+  ldc ""
+  astore 11
+  aload_0
+  astore 7
+  aload 7
+  aload 11
+  putfield cn/domob/android/a/a/B Ljava/lang/String;
+  ldc ""
+  astore 11
+  aload_0
+  astore 7
+  aload 7
+  aload 11
+  putfield cn/domob/android/a/a/C Ljava/lang/String;
+  aconst_null
+  astore 9
+  aload_0
+  astore 7
+  aload 7
+  aload 9
+  putfield cn/domob/android/a/a/D Ljava/lang/String;
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  astore 7
+  aload 12
+  aload 7
+  invokespecial cn/domob/android/a/b/<init>(Lcn/domob/android/a/a;)V
+  aload_0
+  astore 7
+  aload 7
+  aload 12
+  putfield cn/domob/android/a/a/G Landroid/os/Handler;
+  aload 6
+  astore 7
+  aload 7
+  invokevirtual android/content/Context/getApplicationContext()Landroid/content/Context;
+  astore 6
+  aload 6
+  putstatic cn/domob/android/a/a/l Landroid/content/Context;
+  aload_1
+  astore 7
+  aload_0
+  astore 8
+  aload 8
+  aload 7
+  putfield cn/domob/android/a/a/A Ljava/lang/String;
+  aload_2
+  astore 7
+  aload_0
+  astore 8
+  aload 8
+  aload 7
+  putfield cn/domob/android/a/a/B Ljava/lang/String;
+  aload_3
+  astore 7
+  aload_0
+  astore 8
+  aload 8
+  aload 7
+  putfield cn/domob/android/a/a/C Ljava/lang/String;
+  aload 5
+  astore 7
+  aload_0
+  astore 8
+  aload 8
+  aload 7
+  putfield cn/domob/android/a/a/D Ljava/lang/String;
+  new java/lang/StringBuilder
+  astore 13
+  aload 13
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Start to download. appName: "
+  astore 11
+  aload 13
+  aload 11
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload_2
+  astore 7
+  aload 13
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  ldc " pkgName: "
+  astore 11
+  aload 13
+  aload 11
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 4
+  astore 7
+  aload 13
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  ldc " fileName: "
+  astore 11
+  aload 13
+  aload 11
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload_3
+  astore 7
+  aload 13
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  ldc cn/domob/android/a/a
+  astore 15
+  aload 15
+  aload 14
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  getstatic cn/domob/android/a/a/u Ljava/util/Hashtable;
+  astore 16
+  aload_3
+  astore 7
+  aload 16
+  aload 7
+  invokevirtual java/util/Hashtable/containsKey(Ljava/lang/Object;)Z
+  istore 17
+  iload 17
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label0
+  getstatic cn/domob/android/a/a/t I
+  istore 18
+  iload 18
+  iconst_1
+  iadd
+  istore 18
+  iload 18
+  putstatic cn/domob/android/a/a/t I
+  getstatic cn/domob/android/a/a/u Ljava/util/Hashtable;
+  astore 16
+  getstatic cn/domob/android/a/a/t I
+  istore 18
+  iload 18
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 19
+  aload_3
+  astore 7
+  aload 16
+  aload 7
+  aload 19
+  invokevirtual java/util/Hashtable/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  getstatic cn/domob/android/a/a/t I
+  istore 18
+  aload_0
+  astore 7
+  aload 7
+  iload 18
+  putfield cn/domob/android/a/a/o I
+Label2:
+  new java/lang/StringBuilder
+  astore 13
+  aload 13
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_2
+  astore 7
+  aload 13
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  ldc " notification_id is "
+  astore 11
+  aload 13
+  aload 11
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload_0
+  astore 7
+  aload 7
+  getfield cn/domob/android/a/a/o I
+  istore 18
+  aload 13
+  iload 18
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  ldc cn/domob/android/a/a
+  astore 15
+  aload 15
+  aload 14
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload 4
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 4
+  ifeq Label1
+  getstatic cn/domob/android/a/a/b Ljava/util/Hashtable;
+  astore 16
+  aload_0
+  astore 7
+  aload 7
+  getfield cn/domob/android/a/a/o I
+  istore 18
+  iload 18
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 19
+  aload 4
+  astore 7
+  aload 16
+  aload 7
+  aload 19
+  invokevirtual java/util/Hashtable/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  getstatic cn/domob/android/a/a/v Ljava/util/Vector;
+  astore 20
+  aload 4
+  astore 7
+  aload 20
+  aload 7
+  invokevirtual java/util/Vector/add(Ljava/lang/Object;)Z
+  pop
+  getstatic cn/domob/android/a/a/v Ljava/util/Vector;
+  astore 20
+  aload 20
+  invokevirtual java/util/Vector/size()I
+  istore 18
+  dload 18
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 30
+  istore 10
+  iload 18
+  iload 10
+  if_icmple Label1
+  new java/lang/StringBuilder
+  astore 13
+  aload 13
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Remove "
+  astore 11
+  aload 13
+  aload 11
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  getstatic cn/domob/android/a/a/v Ljava/util/Vector;
+  astore 20
+  iconst_0
+  istore 10
+  aload 20
+  iload 10
+  invokevirtual java/util/Vector/get(I)Ljava/lang/Object;
+  astore 21
+  aload 21
+  astore 22
+  aload 22
+  checkcast java/lang/String
+  astore 22
+  aload 22
+  astore 14
+  aload 13
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  ldc " from AppPkgMapping"
+  astore 11
+  aload 13
+  aload 11
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  ldc cn/domob/android/a/a
+  astore 15
+  aload 15
+  aload 14
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  getstatic cn/domob/android/a/a/b Ljava/util/Hashtable;
+  astore 16
+  getstatic cn/domob/android/a/a/v Ljava/util/Vector;
+  astore 20
+  iconst_0
+  istore 10
+  aload 20
+  iload 10
+  invokevirtual java/util/Vector/get(I)Ljava/lang/Object;
+  astore 21
+  aload 16
+  aload 21
+  invokevirtual java/util/Hashtable/remove(Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  getstatic cn/domob/android/a/a/v Ljava/util/Vector;
+  astore 20
+  iconst_0
+  istore 10
+  aload 20
+  iload 10
+  invokevirtual java/util/Vector/remove(I)Ljava/lang/Object;
+  pop
+Label1:
+  return
+Label0:
+  new java/lang/StringBuilder
+  astore 13
+  aload 13
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc " notification_id for "
+  astore 11
+  aload 13
+  aload 11
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload_3
+  astore 7
+  aload 13
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  ldc "already exists"
+  astore 11
+  aload 13
+  aload 11
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  ldc cn/domob/android/a/a
+  astore 15
+  aload 15
+  aload 14
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  getstatic cn/domob/android/a/a/u Ljava/util/Hashtable;
+  astore 16
+  aload_3
+  astore 7
+  aload 16
+  aload 7
+  invokevirtual java/util/Hashtable/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 21
+  aload 21
+  astore 23
+  aload 23
+  checkcast java/lang/Integer
+  astore 23
+  aload 23
+  astore 19
+  aload 19
+  invokevirtual java/lang/Integer/intValue()I
+  istore 18
+  aload_0
+  astore 7
+  aload 7
+  iload 18
+  putfield cn/domob/android/a/a/o I
+  goto Label2
+  nop
+.end <method>
+
+.method static a(Lcn/domob/android/a/a;)I
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/a/x I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static a(Lcn/domob/android/a/a;I)I
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield cn/domob/android/a/a/x I
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static a(Lcn/domob/android/a/a;Landroid/app/PendingIntent;)Landroid/app/PendingIntent;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/a/a/F Landroid/app/PendingIntent;
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+.limit locals 10
+.limit stack 200
+  nop
+  aload_1
+  invokestatic cn/domob/android/a/a/b(Ljava/lang/String;)Ljava/lang/String;
+  astore_3
+  new cn/domob/android/a/h
+  astore 4
+  aconst_null
+  astore 5
+  aload 4
+  aload_0
+  aload_3
+  aload_1
+  aload 5
+  invokespecial cn/domob/android/a/h/<init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcn/domob/android/a/i;)V
+  ldc cn/domob/android/a/a
+  astore 6
+  aload 6
+  invokevirtual java/lang/Class/getSimpleName()Ljava/lang/String;
+  astore_1
+  new java/lang/StringBuilder
+  astore 7
+  aload 7
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload 7
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 7
+  ldc "  exists"
+  astore 8
+  aload 7
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 7
+  aload 7
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload 4
+  invokevirtual cn/domob/android/a/h/a()Ljava/lang/String;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifne Label0
+  aconst_null
+  astore 5
+  aload 5
+  areturn
+Label0:
+  aload_3
+  invokestatic cn/domob/android/a/a/a(Ljava/lang/String;)Landroid/content/Intent;
+  astore 9
+  aload 9
+  areturn
+  nop
+.end <method>
+
+.method static a(Ljava/lang/String;)Landroid/content/Intent;
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  ldc "android.intent.action.VIEW"
+  astore_2
+  aload_1
+  aload_2
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "file://"
+  astore_2
+  aload_3
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload 4
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 5
+  ldc "application/vnd.android.package-archive"
+  astore_2
+  aload_1
+  aload 5
+  aload_2
+  invokevirtual android/content/Intent/setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public a()Lcn/domob/android/a/c;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/a/q Lcn/domob/android/a/c;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static a(Lcn/domob/android/a/a;Ljava/lang/String;)Ljava/lang/String;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/a/a/r Ljava/lang/String;
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static a(Lcn/domob/android/a/a;Ljava/lang/String;J)V
+  .synthetic
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  lload_2
+  invokespecial cn/domob/android/a/a/a(Ljava/lang/String;J)V
+  return
+  nop
+.end <method>
+
+.method private a(Lcn/domob/android/a/c;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/a/a/q Lcn/domob/android/a/c;
+  return
+  nop
+.end <method>
+
+.method private a(Ljava/lang/String;J)V
+.limit locals 21
+.limit stack 200
+  nop
+  ldc "DomobSDK"
+  astore 12
+  iconst_3
+  istore 13
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label0
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "begin download in "
+  astore 12
+  aload 14
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload_1
+  astore 4
+  aload 14
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 15
+  ldc "DomobSDK"
+  astore 12
+  aload 12
+  aload 15
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label0:
+  new cn/domob/android/a/f
+  astore 16
+  aload_0
+  astore 4
+  aload 4
+  getfield cn/domob/android/a/a/A Ljava/lang/String;
+  astore 17
+  new cn/domob/android/a/a$2
+  astore 18
+  aload_0
+  astore 4
+  aload 18
+  aload 4
+  invokespecial cn/domob/android/a/a$2/<init>(Lcn/domob/android/a/a;)V
+  getstatic cn/domob/android/a/a/l Landroid/content/Context;
+  astore 19
+  aload 16
+  astore 4
+  aload 17
+  astore 5
+  aload_1
+  astore 6
+  lload_2
+  lstore 7
+  aload 18
+  astore 9
+  aload 19
+  astore 10
+  aload 4
+  aload 5
+  aload 6
+  lload 7
+  aload 9
+  aload 10
+  invokespecial cn/domob/android/a/f/<init>(Ljava/lang/String;Ljava/lang/String;JLcn/domob/android/a/d;Landroid/content/Context;)V
+  aload_0
+  astore 4
+  aload 4
+  aload 16
+  putfield cn/domob/android/a/a/H Lcn/domob/android/a/f;
+  aload_0
+  astore 4
+  aload 4
+  getfield cn/domob/android/a/a/H Lcn/domob/android/a/f;
+  astore 16
+  aload 16
+  invokevirtual cn/domob/android/a/f/start()V
+  getstatic cn/domob/android/a/a/a Ljava/util/Hashtable;
+  astore 20
+  aload_0
+  astore 4
+  aload 4
+  getfield cn/domob/android/a/a/C Ljava/lang/String;
+  astore 17
+  aload 20
+  astore 4
+  aload_0
+  astore 5
+  aload 4
+  aload 17
+  aload 5
+  invokevirtual java/util/Hashtable/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  return
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Lcn/domob/android/a/c;)V
+.limit locals 14
+.limit stack 200
+  nop
+  getstatic cn/domob/android/a/a/E Z
+  istore 12
+  aconst_null
+  astore 13
+  aload_0
+  astore 5
+  aload_1
+  astore 6
+  aload_2
+  astore 7
+  aload_3
+  astore 8
+  aload 4
+  astore 9
+  aload 13
+  astore 10
+  iload 12
+  istore 11
+  aload 5
+  aload 6
+  aload 7
+  aload 8
+  aload 9
+  aload 10
+  iload 11
+  invokestatic cn/domob/android/a/a/a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Lcn/domob/android/a/c;Ljava/lang/String;Z)V
+  return
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Lcn/domob/android/a/c;Ljava/lang/String;Z)V
+.limit locals 22
+.limit stack 200
+  nop
+  aload_0
+  invokestatic cn/domob/android/a/a/b(Ljava/lang/String;)Ljava/lang/String;
+  astore 14
+  getstatic cn/domob/android/a/a/a Ljava/util/Hashtable;
+  astore 15
+  aload 15
+  aload 14
+  invokevirtual java/util/Hashtable/containsKey(Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  istore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifeq Label0
+  sipush 512
+  istore 16
+  ldc "\u5f53\u524d\u5e94\u7528\u5df2\u5728\u4e0b\u8f7d"
+  astore 17
+  aload 4
+  astore 7
+  aload 7
+  iload 16
+  aload 17
+  invokeinterface cn/domob/android/a/c/a(ILjava/lang/String;)V 3
+  new java/lang/StringBuilder
+  astore 18
+  aload 18
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "app"
+  astore 17
+  aload 18
+  aload 17
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 18
+  aload_1
+  astore 7
+  aload 18
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 18
+  ldc " is downloading"
+  astore 17
+  aload 18
+  aload 17
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 18
+  aload 18
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 14
+  ldc cn/domob/android/a/a
+  astore 19
+  aload 19
+  aload 14
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+Label2:
+  return
+Label0:
+  getstatic cn/domob/android/a/a/a Ljava/util/Hashtable;
+  astore 15
+  aload 15
+  invokevirtual java/util/Hashtable/size()I
+  istore 20
+  dload 20
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_3
+  istore 16
+  iload 20
+  iload 16
+  if_icmpne Label1
+  sipush 513
+  istore 16
+  ldc "\u6700\u5927\u4e0b\u8f7d\u6570\u4e3a3\u4e2a"
+  astore 17
+  aload 4
+  astore 7
+  aload 7
+  iload 16
+  aload 17
+  invokeinterface cn/domob/android/a/c/a(ILjava/lang/String;)V 3
+  ldc cn/domob/android/a/a
+  astore 19
+  ldc "max download is 3"
+  astore 17
+  aload 19
+  aload 17
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  goto Label2
+Label1:
+  new cn/domob/android/a/a
+  astore 21
+  aload 21
+  astore 7
+  aload_0
+  astore 8
+  aload_1
+  astore 9
+  aload 14
+  astore 10
+  aload_2
+  astore 11
+  aload 5
+  astore 12
+  aload_3
+  astore 13
+  aload 7
+  aload 8
+  aload 9
+  aload 10
+  aload 11
+  aload 12
+  aload 13
+  invokespecial cn/domob/android/a/a/<init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;)V
+  aload 4
+  astore 7
+  aload 21
+  aload 7
+  invokespecial cn/domob/android/a/a/a(Lcn/domob/android/a/c;)V
+  aload 21
+  invokespecial cn/domob/android/a/a/d()V
+  aload 21
+  invokespecial cn/domob/android/a/a/g()V
+  aload 4
+  astore 7
+  aload 7
+  invokeinterface cn/domob/android/a/c/a()V 1
+  goto Label2
+  nop
+.end <method>
+
+.method static b(Lcn/domob/android/a/a;I)I
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield cn/domob/android/a/a/p I
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method static b(Lcn/domob/android/a/a;)Ljava/lang/String;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/a/B Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private static b(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 7
+.limit stack 200
+  .catch  java/lang/Exception <from> Label1 <to> Label2 <using> Label0
+  nop
+  new java/net/URL
+  astore_1
+Label1:
+  aload_1
+  aload_0
+  invokespecial java/net/URL/<init>(Ljava/lang/String;)V
+  aload_1
+  invokevirtual java/net/URL/getPath()Ljava/lang/String;
+  astore_2
+  ldc "/"
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/String/lastIndexOf(Ljava/lang/String;)I
+  istore_3
+  ldc "."
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/String/lastIndexOf(Ljava/lang/String;)I
+  istore 5
+  aload_2
+  iload_3
+  iload 5
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore_2
+Label2:
+  aload_2
+  areturn
+Label0:
+  astore 6
+  ldc ""
+  astore 4
+  aload 4
+  areturn
+  nop
+.end <method>
+
+.method public b()V
+.limit locals 10
+.limit stack 200
+  nop
+  ldc cn/domob/android/a/a
+  astore_1
+  aload_1
+  invokevirtual java/lang/Class/getSimpleName()Ljava/lang/String;
+  astore_2
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "stop download  cancel notify "
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_0
+  getfield cn/domob/android/a/a/o I
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload_2
+  aload 6
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  getfield cn/domob/android/a/a/H Lcn/domob/android/a/f;
+  astore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 7
+  ifeq Label0
+  aload_0
+  getfield cn/domob/android/a/a/H Lcn/domob/android/a/f;
+  astore 7
+  aload 7
+  invokevirtual cn/domob/android/a/f/b()V
+Label0:
+  aload_0
+  getfield cn/domob/android/a/a/n Landroid/app/NotificationManager;
+  astore 8
+  aload_0
+  getfield cn/domob/android/a/a/o I
+  istore 5
+  aload 8
+  iload 5
+  invokevirtual android/app/NotificationManager/cancel(I)V
+  getstatic cn/domob/android/a/a/a Ljava/util/Hashtable;
+  astore 9
+  aload_0
+  getfield cn/domob/android/a/a/C Ljava/lang/String;
+  astore_2
+  aload 9
+  aload_2
+  invokevirtual java/util/Hashtable/remove(Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  return
+  nop
+.end <method>
+
+.method static b(Lcn/domob/android/a/a;Ljava/lang/String;)V
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial cn/domob/android/a/a/c(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method static c(Lcn/domob/android/a/a;)Landroid/app/PendingIntent;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/a/F Landroid/app/PendingIntent;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static c()Landroid/content/Context;
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic cn/domob/android/a/a/l Landroid/content/Context;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method private c(Ljava/lang/String;)V
+.limit locals 12
+.limit stack 200
+  nop
+  getstatic cn/domob/android/a/a/l Landroid/content/Context;
+  astore_2
+  aload_0
+  getfield cn/domob/android/a/a/o I
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 4
+  invokespecial android/content/Intent/<init>()V
+  ldc 134217728
+  istore 6
+  aload_2
+  iload_3
+  aload 4
+  iload 6
+  invokestatic android/app/PendingIntent/getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+  astore 5
+  aload_0
+  getfield cn/domob/android/a/a/m Landroid/app/Notification;
+  astore 7
+  ldc 17301624
+  istore 6
+  aload 7
+  iload 6
+  putfield android/app/Notification/icon I
+  aload_0
+  getfield cn/domob/android/a/a/m Landroid/app/Notification;
+  astore 7
+  new java/lang/StringBuilder
+  astore 8
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_0
+  getfield cn/domob/android/a/a/B Ljava/lang/String;
+  astore_1
+  aload 8
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  ldc "\u4e0b\u8f7d\u5931\u8d25"
+  astore 9
+  aload 8
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_1
+  aload 7
+  aload_1
+  putfield android/app/Notification/tickerText Ljava/lang/CharSequence;
+  aload_0
+  getfield cn/domob/android/a/a/m Landroid/app/Notification;
+  astore 7
+  getstatic cn/domob/android/a/a/l Landroid/content/Context;
+  astore_2
+  new java/lang/StringBuilder
+  astore 8
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_0
+  getfield cn/domob/android/a/a/B Ljava/lang/String;
+  astore_1
+  aload 8
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  ldc "\u4e0b\u8f7d\u5931\u8d25"
+  astore 9
+  aload 8
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_1
+  ldc ""
+  astore 9
+  aload 7
+  aload_2
+  aload_1
+  aload 9
+  aload 5
+  invokevirtual android/app/Notification/setLatestEventInfo(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V
+  aload_0
+  getfield cn/domob/android/a/a/m Landroid/app/Notification;
+  astore 7
+  bipush 16
+  istore 6
+  aload 7
+  iload 6
+  putfield android/app/Notification/flags I
+  aload_0
+  getfield cn/domob/android/a/a/n Landroid/app/NotificationManager;
+  astore 10
+  aload_0
+  getfield cn/domob/android/a/a/o I
+  istore 11
+  aload_0
+  getfield cn/domob/android/a/a/m Landroid/app/Notification;
+  astore 7
+  aload 10
+  iload 11
+  aload 7
+  invokevirtual android/app/NotificationManager/notify(ILandroid/app/Notification;)V
+  return
+  nop
+.end <method>
+
+.method static d(Lcn/domob/android/a/a;)Landroid/app/Notification;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/a/m Landroid/app/Notification;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private d()V
+.limit locals 13
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_1
+  invokespecial android/app/Notification/<init>()V
+  aload_0
+  aload_1
+  putfield cn/domob/android/a/a/m Landroid/app/Notification;
+  aload_0
+  getfield cn/domob/android/a/a/m Landroid/app/Notification;
+  astore_1
+  ldc 17301633
+  istore_2
+  aload_1
+  iload_2
+  putfield android/app/Notification/icon I
+  aload_0
+  getfield cn/domob/android/a/a/m Landroid/app/Notification;
+  astore_1
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_0
+  getfield cn/domob/android/a/a/B Ljava/lang/String;
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "\u6b63\u5728\u4e0b\u8f7d\uff0c\u8bf7\u7a0d\u5019..."
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload_1
+  aload 4
+  putfield android/app/Notification/tickerText Ljava/lang/CharSequence;
+  getstatic cn/domob/android/a/a/l Landroid/content/Context;
+  astore 6
+  aload_0
+  getfield cn/domob/android/a/a/o I
+  istore 7
+  aload_0
+  invokespecial cn/domob/android/a/a/f()Landroid/content/Intent;
+  astore 8
+  ldc 134217728
+  istore_2
+  aload 6
+  iload 7
+  aload 8
+  iload_2
+  invokestatic android/app/PendingIntent/getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+  astore 9
+  aload_0
+  aload 9
+  putfield cn/domob/android/a/a/F Landroid/app/PendingIntent;
+  aload_0
+  getfield cn/domob/android/a/a/m Landroid/app/Notification;
+  astore_1
+  getstatic cn/domob/android/a/a/l Landroid/content/Context;
+  astore 6
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_0
+  getfield cn/domob/android/a/a/B Ljava/lang/String;
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "\u6b63\u5728\u4e0b\u8f7d\uff0c\u8bf7\u7a0d\u5019..."
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload_0
+  getfield cn/domob/android/a/a/F Landroid/app/PendingIntent;
+  astore 9
+  ldc ""
+  astore 5
+  aload_1
+  aload 6
+  aload 4
+  aload 5
+  aload 9
+  invokevirtual android/app/Notification/setLatestEventInfo(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V
+  getstatic cn/domob/android/a/a/l Landroid/content/Context;
+  astore 6
+  ldc "notification"
+  astore 5
+  aload 6
+  aload 5
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 10
+  aload 10
+  astore 12
+  aload 12
+  checkcast android/app/NotificationManager
+  astore 12
+  aload 12
+  astore 11
+  aload_0
+  aload 11
+  putfield cn/domob/android/a/a/n Landroid/app/NotificationManager;
+  aload_0
+  invokespecial cn/domob/android/a/a/e()V
+  return
+  nop
+.end <method>
+
+.method static e(Lcn/domob/android/a/a;)I
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/a/o I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method private e()V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/a/n Landroid/app/NotificationManager;
+  astore_1
+  aload_0
+  getfield cn/domob/android/a/a/o I
+  istore_2
+  aload_0
+  getfield cn/domob/android/a/a/m Landroid/app/Notification;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method static f(Lcn/domob/android/a/a;)Landroid/app/NotificationManager;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/a/n Landroid/app/NotificationManager;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private f()Landroid/content/Intent;
+.limit locals 9
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_1
+  invokespecial android/content/Intent/<init>()V
+  getstatic cn/domob/android/a/a/l Landroid/content/Context;
+  astore_2
+  ldc cn/domob/android/ads/DomobActivity
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokevirtual android/content/Intent/setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
+  pop
+  aload_0
+  getfield cn/domob/android/a/a/B Ljava/lang/String;
+  astore 4
+  ldc "appName"
+  astore 5
+  aload_1
+  aload 5
+  aload 4
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload_0
+  getfield cn/domob/android/a/a/C Ljava/lang/String;
+  astore 6
+  ldc "appId"
+  astore 5
+  aload_1
+  aload 5
+  aload 6
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  ldc "actType"
+  astore 5
+  ldc "typeCancel"
+  astore 7
+  aload_1
+  aload 5
+  aload 7
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  ldc "DomobActivityType"
+  astore 5
+  iconst_2
+  istore 8
+  aload_1
+  aload 5
+  iload 8
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+  pop
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static g(Lcn/domob/android/a/a;)I
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/a/p I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method private g()V
+.limit locals 6
+.limit stack 200
+  nop
+  new cn/domob/android/a/h
+  astore_1
+  getstatic cn/domob/android/a/a/l Landroid/content/Context;
+  astore_2
+  aload_0
+  getfield cn/domob/android/a/a/C Ljava/lang/String;
+  astore_3
+  aload_0
+  getfield cn/domob/android/a/a/A Ljava/lang/String;
+  astore 4
+  new cn/domob/android/a/a$1
+  astore 5
+  aload 5
+  aload_0
+  invokespecial cn/domob/android/a/a$1/<init>(Lcn/domob/android/a/a;)V
+  aload_1
+  aload_2
+  aload_3
+  aload 4
+  aload 5
+  invokespecial cn/domob/android/a/h/<init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcn/domob/android/a/i;)V
+  aload_1
+  invokevirtual cn/domob/android/a/h/start()V
+  return
+  nop
+.end <method>
+
+.method static h(Lcn/domob/android/a/a;)Ljava/lang/String;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/a/r Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static i(Lcn/domob/android/a/a;)Ljava/lang/String;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/a/C Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static j(Lcn/domob/android/a/a;)Lcn/domob/android/a/c;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/a/q Lcn/domob/android/a/c;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static k(Lcn/domob/android/a/a;)Ljava/lang/String;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/a/D Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static l(Lcn/domob/android/a/a;)Landroid/os/Handler;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/a/G Landroid/os/Handler;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+

@@ -1,0 +1,53 @@
+.source SourceFile
+.class final  com/adwo/adsdk/K
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field private "a" Lcom/adwo/adsdk/I;
+.field private final "b" Ljava/lang/String;
+.field private final "c" Landroid/app/Activity;
+
+.method <init>(Lcom/adwo/adsdk/I;Ljava/lang/String;Landroid/app/Activity;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/adwo/adsdk/K/a Lcom/adwo/adsdk/I;
+  aload_0
+  aload_2
+  putfield com/adwo/adsdk/K/b Ljava/lang/String;
+  aload_0
+  aload_3
+  putfield com/adwo/adsdk/K/c Landroid/app/Activity;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public final run()V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield com/adwo/adsdk/K/a Lcom/adwo/adsdk/I;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_0
+  getfield com/adwo/adsdk/K/b Ljava/lang/String;
+  astore_3
+  aload_0
+  getfield com/adwo/adsdk/K/c Landroid/app/Activity;
+  astore 4
+  aload_2
+  aload_3
+  aload 4
+  invokestatic com/adwo/adsdk/q/a(Lcom/adwo/adsdk/q;Ljava/lang/String;Landroid/app/Activity;)V
+  return
+  nop
+.end <method>
+

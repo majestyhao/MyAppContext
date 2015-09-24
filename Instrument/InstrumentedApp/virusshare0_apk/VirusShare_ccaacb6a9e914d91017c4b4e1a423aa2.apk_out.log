@@ -1,0 +1,1040 @@
+Using '/home/bin2liu/sde/WeiYang/git/newappcontext/android-platforms-soot//android-7/android.jar' as android.jar
+/home/bin2liu/sde/WeiYang/git/newappcontext/android-platforms-soot//android-7/android.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/am.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/allshare.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/polyglot.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/asm-debug-all-5.0.3.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/access.control.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/com.quicinc.cne.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/org.codeaurora.Performance.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/CustFeature.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/input.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/content.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/framework_ext.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/monkey.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/dexlib2-2.0.3-dev.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/ime.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/util-2.0.3-dev.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/allsharelib.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/sechardware.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/com.android.nfc_extras.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/javax.obex.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/sec_platform_library.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/com.google.widevine.software.drm.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/seccamera.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/hamcrest-all-1.3.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/DummyClass.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/framework2.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/modemwarmup.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/slf4j-simple-1.7.5.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/libvtmanagerjar.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/slf4j-api-1.7.5.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/javax.btobex.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/bu.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/com.qualcomm.location.vzw_library.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/org.simalliance.openmobileapi.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/sec_feature.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/apache-xml.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/framework.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/android.policy.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/bouncycastle.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/services.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/twframework.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/com.samsung.device.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/bmgr.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/junit.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/org.hamcrest.core_1.3.0.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/pm.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/core.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/minimode.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/com.google.android.media.effects.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/GlobalConfig.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/cos.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/com.android.future.usb.accessory.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/core-junit.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/secmediarecorder.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/j2ee.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/java_cup.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/com.android.location.provider.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/axml-2.0.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/requestsync.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/kies_feature.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/svc.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/com.google.android.maps.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/ext.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/secface.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/uiautomator.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/sec_edm.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/android.test.runner.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/junit-4.11.jar:/media/sde/WeiYang/Workspace/CommandLine/AppContext/libs/AXMLPrinter2.jar::/home/bin2liu/sde/WeiYang/git/newappcontext/android-platforms-soot/:/media/sde/WeiYang/Workspace/CommandLine/AppContext/Instrument/IfInstrument.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib
+Using '/home/bin2liu/sde/WeiYang/git/newappcontext/android-platforms-soot//android-7/android.jar' as android.jar
+Warning: javax.crypto.Cipher is a phantom class!
+Warning: javax.crypto.spec.SecretKeySpec is a phantom class!
+Warning: org.bouncycastle.asn1.DERObjectIdentifier is a phantom class!
+Transforming ngjvnpslnp.iplhmk.rkqdm... 
+Transforming uuuijccjx.hebslx.ryjssy... 
+Transforming ngjvnpslnp.iplhmk.hbhut... 
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $r0
+Class: class soot.jimple.internal.JimpleLocal
+Value: null
+Class: class soot.jimple.NullConstant
+Value: $r6
+Class: class soot.jimple.internal.JimpleLocal
+Value: null
+Class: class soot.jimple.NullConstant
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i6
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $z1
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z1
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i6
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Transforming ngjvnpslnp.iplhmk.idfhn... 
+Value: $i4
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i4
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i5
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i4
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i6
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $b2
+Class: class soot.jimple.internal.JimpleLocal
+Type: byte
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming ngjvnpslnp.iplhmk.gjile... 
+Value: $i6
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i7
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming uuuijccjx.hebslx.usdwfe... 
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i2
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming ngjvnpslnp.iplhmk.legmknss... 
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i2
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i2
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming idfhn.qhedrsdgx... 
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i4
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Transforming ngjvnpslnp.iplhmk.jcdehfydu... 
+Transforming ngjvnpslnp.iplhmk.tispfpr... 
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i4
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i5
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming ngjvnpslnp.iplhmk.tcgbor... 
+Value: $i2
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i7
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i7
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming ngjvnpslnp.iplhmk.olikikudd... 
+Value: $z1
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z1
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming ngjvnpslnp.iplhmk.fluhbfw... 
+Transforming ngjvnpslnp.iplhmk.hrotlwub... 
+Transforming ngjvnpslnp.iplhmk.kedxraow... 
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming ngjvnpslnp.iplhmk.miqgvnls... 
+Value: $i2
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 3
+Class: class soot.jimple.IntConstant
+Transforming uuuijccjx.hebslx.fluhbfw... 
+Value: $c6
+Class: class soot.jimple.internal.JimpleLocal
+Type: char
+Value: 90
+Class: class soot.jimple.IntConstant
+Value: $c6
+Class: class soot.jimple.internal.JimpleLocal
+Type: char
+Value: 122
+Class: class soot.jimple.IntConstant
+Value: $c6
+Class: class soot.jimple.internal.JimpleLocal
+Type: char
+Value: 57
+Class: class soot.jimple.IntConstant
+Value: $i8
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i7
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 64
+Class: class soot.jimple.IntConstant
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $c5
+Class: class soot.jimple.internal.JimpleLocal
+Type: char
+Value: 61
+Class: class soot.jimple.IntConstant
+Value: $i6
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i6
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i9
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i16
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i9
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i7
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i8
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i7
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i5
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i13
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Transforming ngjvnpslnp.iplhmk.xqxbofdar... 
+Value: $i4
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i5
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming ngjvnpslnp.iplhmk.esqyb... 
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i4
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i4
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming idfhn.hrotlwub... 
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i5
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Transforming ngjvnpslnp.iplhmk.yqylsmjl... 
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $r0
+Class: class soot.jimple.internal.JimpleLocal
+Value: null
+Class: class soot.jimple.NullConstant
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i2
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming ngjvnpslnp.iplhmk.bahvvvxx... 
+Value: $i2
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: -1
+Class: class soot.jimple.IntConstant
+Value: $i5
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i2
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i6
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $s4
+Class: class soot.jimple.internal.JimpleLocal
+Type: short
+Transforming uuuijccjx.hebslx.qhedrsdgx... 
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $b0
+Class: class soot.jimple.internal.JimpleLocal
+Type: byte
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i4
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i6
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $b0
+Class: class soot.jimple.internal.JimpleLocal
+Type: byte
+Value: 1
+Class: class soot.jimple.IntConstant
+Value: $b0
+Class: class soot.jimple.internal.JimpleLocal
+Type: byte
+Value: 2
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $b0
+Class: class soot.jimple.internal.JimpleLocal
+Type: byte
+Value: 1
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $b0
+Class: class soot.jimple.internal.JimpleLocal
+Type: byte
+Value: 1
+Class: class soot.jimple.IntConstant
+Value: $b0
+Class: class soot.jimple.internal.JimpleLocal
+Type: byte
+Value: 2
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $b4
+Class: class soot.jimple.internal.JimpleLocal
+Type: byte
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Transforming ngjvnpslnp.iplhmk.usdwfe... 
+Value: $z2
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $r14
+Class: class soot.jimple.internal.JimpleLocal
+Value: null
+Class: class soot.jimple.NullConstant
+Value: $i2
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i2
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming ngjvnpslnp.iplhmk.tmnyuqie... 
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming uuuijccjx.hebslx.nrggfqqc... 
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming ngjvnpslnp.iplhmk.gsnuxoavi... 
+Transforming ngjvnpslnp.iplhmk.ryjssy... 
+Transforming ngjvnpslnp.iplhmk.yqniqkxgpoo... 
+Value: $z2
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z2
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z2
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z2
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 2131099650
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z1
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming ngjvnpslnp.iplhmk.mfgpaipm... 
+Value: $i5
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: -1
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i2
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: -1
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i2
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $z1
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z1
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i4
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i4
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 7
+Class: class soot.jimple.IntConstant
+Value: $i4
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 10
+Class: class soot.jimple.IntConstant
+Transforming uuuijccjx.hebslx.hrotlwub... 
+Value: $r4
+Class: class soot.jimple.internal.JimpleLocal
+Value: null
+Class: class soot.jimple.NullConstant
+Value: $r0
+Class: class soot.jimple.internal.JimpleLocal
+Value: null
+Class: class soot.jimple.NullConstant
+Value: $z2
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z2
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming ngjvnpslnp.idfhn.idfhn... 
+Transforming idfhn.idfhn... 
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i6
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i7
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $r7
+Class: class soot.jimple.internal.JimpleLocal
+Value: null
+Class: class soot.jimple.NullConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i0
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i5
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Transforming ngjvnpslnp.iplhmk.ltwxoiu... 
+Transforming ngjvnpslnp.iplhmk.qhedrsdgx... 
+Value: $i3
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i4
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Transforming uuuijccjx.hebslx.xpjsxwpvo... 
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i6
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i6
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i6
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i6
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming ngjvnpslnp.iplhmk.nmycxbb... 
+Transforming ngjvnpslnp.iplhmk.dqmsi... 
+Value: $r10
+Class: class soot.jimple.internal.JimpleLocal
+Value: null
+Class: class soot.jimple.NullConstant
+Transforming uuuijccjx.hebslx.yqylsmjl... 
+Transforming ngjvnpslnp.iplhmk.nossruuc... 
+Transforming uuuijccjx.hebslx.wlamdyyqa... 
+Value: $r16
+Class: class soot.jimple.internal.JimpleLocal
+Value: null
+Class: class soot.jimple.NullConstant
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i2
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $z1
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z1
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z1
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $r16
+Class: class soot.jimple.internal.JimpleLocal
+Value: null
+Class: class soot.jimple.NullConstant
+Value: $r16
+Class: class soot.jimple.internal.JimpleLocal
+Value: null
+Class: class soot.jimple.NullConstant
+Value: $z2
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i2
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $z2
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Value: $i2
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming uuuijccjx.hebslx.idfhn... 
+Value: $i4
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 7
+Class: class soot.jimple.IntConstant
+Value: $i4
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 10
+Class: class soot.jimple.IntConstant
+Transforming ngjvnpslnp.iplhmk.ydtyw... 
+Value: $z0
+Class: class soot.jimple.internal.JimpleLocal
+Type: boolean
+Value: 0
+Class: class soot.jimple.IntConstant
+Transforming ngjvnpslnp.iplhmk.jcofoq... 
+Value: $i7
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i7
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i8
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: $i1
+Class: class soot.jimple.internal.JimpleLocal
+Type: int
+Value: 0
+Class: class soot.jimple.IntConstant
+Writing APK to: /media/sde/WeiYang/Workspace/CommandLine/AppContext/Instrument/InstrumentedApp/virusshare0_apk/VirusShare_ccaacb6a9e914d91017c4b4e1a423aa2.apk
+do not forget to sign the .apk file with jarsigner and to align it with zipalign

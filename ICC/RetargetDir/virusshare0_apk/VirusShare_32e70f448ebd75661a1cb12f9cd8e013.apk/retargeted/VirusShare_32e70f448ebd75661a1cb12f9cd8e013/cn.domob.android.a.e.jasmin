@@ -1,0 +1,631 @@
+.source SourceFile
+.class public  cn/domob/android/a/e
+.super java/lang/Object
+.field private static final "a" Ljava/lang/String; =  "wifi"
+.field private static final "b" Ljava/lang/String; =  "ctwap"
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method protected static a(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 10
+.limit stack 200
+  nop
+  ldc "android.permission.ACCESS_NETWORK_STATE"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore_3
+  iload_1
+  iload_3
+  if_icmpne Label0
+  ldc "DomobSDK"
+  astore_2
+  ldc "Cannot access user\'s network type.  Permissions are not set."
+  astore 4
+  aload_2
+  aload 4
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  ldc ""
+  astore 5
+Label3:
+  aload 5
+  areturn
+Label0:
+  ldc "connectivity"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 6
+  aload 6
+  astore 8
+  aload 8
+  checkcast android/net/ConnectivityManager
+  astore 8
+  aload 8
+  astore 7
+  aload 7
+  invokevirtual android/net/ConnectivityManager/getActiveNetworkInfo()Landroid/net/NetworkInfo;
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label1
+  aload 9
+  invokevirtual android/net/NetworkInfo/getType()I
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  ifne Label2
+  aload 9
+  invokevirtual android/net/NetworkInfo/getSubtypeName()Ljava/lang/String;
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  ifnonnull Label3
+  ldc "GPRS"
+  astore_2
+  aload_2
+  areturn
+Label2:
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore_3
+  iload_1
+  iload_3
+  if_icmpne Label1
+  ldc "wifi"
+  astore_2
+  aload_2
+  areturn
+Label1:
+  ldc ""
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method protected static b(Landroid/content/Context;)Ljava/net/Proxy;
+.limit locals 34
+.limit stack 200
+  .catch  java/lang/Exception <from> Label11 <to> Label12 <using> Label10
+  nop
+  iconst_0
+  istore 4
+Label11:
+  aload_0
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/a/e/c(Landroid/content/Context;)Landroid/database/Cursor;
+  astore 5
+Label12:
+  aload 5
+  astore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+Label14:
+  aload 5
+  checkcast android/database/Cursor
+  astore 5
+  aload 5
+  invokeinterface android/database/Cursor/getCount()I 1
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  ifle Label0
+  aload 6
+  astore 8
+  aload 8
+  checkcast android/database/Cursor
+  astore 8
+  aload 8
+  astore 5
+  aload 5
+  invokeinterface android/database/Cursor/moveToFirst()Z 1
+  pop
+  aload 6
+  astore 9
+  aload 9
+  checkcast android/database/Cursor
+  astore 9
+  aload 9
+  astore 5
+  ldc "proxy"
+  astore 10
+  aload 5
+  aload 10
+  invokeinterface android/database/Cursor/getColumnIndexOrThrow(Ljava/lang/String;)I 2
+  istore 7
+  aload 6
+  astore 11
+  aload 11
+  checkcast android/database/Cursor
+  astore 11
+  aload 11
+  astore 5
+  aload 5
+  iload 7
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 12
+  aload 6
+  astore 13
+  aload 13
+  checkcast android/database/Cursor
+  astore 13
+  aload 13
+  astore 5
+  ldc "port"
+  astore 10
+  aload 5
+  aload 10
+  invokeinterface android/database/Cursor/getColumnIndexOrThrow(Ljava/lang/String;)I 2
+  istore 7
+  aload 6
+  astore 14
+  aload 14
+  checkcast android/database/Cursor
+  astore 14
+  aload 14
+  astore 5
+  aload 5
+  iload 7
+  invokeinterface android/database/Cursor/getInt(I)I 2
+  istore 7
+  aload 6
+  astore 15
+  aload 15
+  checkcast android/database/Cursor
+  astore 15
+  aload 15
+  astore 5
+  ldc "apn"
+  astore 10
+  aload 5
+  aload 10
+  invokeinterface android/database/Cursor/getColumnIndexOrThrow(Ljava/lang/String;)I 2
+  istore 16
+  aload 6
+  astore 17
+  aload 17
+  checkcast android/database/Cursor
+  astore 17
+  aload 17
+  astore 5
+  aload 5
+  iload 16
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 18
+  ldc cn/domob/android/a/e
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokevirtual java/lang/Class/getSimpleName()Ljava/lang/String;
+  astore 20
+  new java/lang/StringBuilder
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Proxy: "
+  astore 10
+  aload 21
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 22
+  ldc " port: "
+  astore 10
+  aload 22
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  iload 7
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 22
+  ldc " apnType: "
+  astore 10
+  aload 22
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 22
+  aload 22
+  astore_1
+  aload 18
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 23
+  aload 20
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  ifnull Label1
+  ldc ""
+  astore 10
+  aload 12
+  aload 10
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 24
+  iload 24
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 24
+  ifne Label1
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 7
+  ifeq Label1
+  ldc "ctwap"
+  astore 10
+  aload 18
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual java/lang/String/equalsIgnoreCase(Ljava/lang/String;)Z
+  istore 24
+  iload 24
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 24
+  ifne Label1
+  ldc "DomobSDK"
+  astore 10
+  iconst_3
+  istore 25
+  iload 25
+  istore_1
+  aload 10
+  iload_1
+  invokestatic android/util/Log/isLoggable(Ljava/lang/String;I)Z
+  istore 24
+  iload 24
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 24
+  ifeq Label2
+  new java/lang/StringBuilder
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "download use proxy "
+  astore 10
+  aload 21
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 22
+  ldc " port:"
+  astore 10
+  aload 22
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  iload 7
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 18
+  ldc "DomobSDK"
+  astore 10
+  aload 18
+  astore_1
+  aload 10
+  aload_1
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label2:
+  new java/net/Proxy
+  astore 26
+  aload 26
+  astore 27
+  getstatic java/net/Proxy$Type/HTTP Ljava/net/Proxy$Type;
+  astore 28
+  new java/net/InetSocketAddress
+  astore 29
+  aload 29
+  astore_1
+  aload_1
+  aload 12
+  iload 7
+  invokespecial java/net/InetSocketAddress/<init>(Ljava/lang/String;I)V
+  aload 26
+  astore_1
+  aload 28
+  astore_2
+  aload 29
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokespecial java/net/Proxy/<init>(Ljava/net/Proxy$Type;Ljava/net/SocketAddress;)V
+Label9:
+  aload 27
+  astore 4
+Label6:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifeq Label3
+  aload 6
+  astore 30
+  aload 30
+  checkcast android/database/Cursor
+  astore 30
+  aload 30
+  astore 5
+  aload 5
+  invokeinterface android/database/Cursor/close()V 1
+Label3:
+  ldc "DomobSDK"
+  astore 10
+  iconst_3
+  istore 25
+  iload 25
+  istore_1
+  aload 10
+  iload_1
+  invokestatic android/util/Log/isLoggable(Ljava/lang/String;I)Z
+  istore 24
+  iload 24
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 24
+  ifeq Label4
+  new java/lang/StringBuilder
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "download use proxy "
+  astore 10
+  aload 21
+  astore_1
+  aload_1
+  aload 10
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 22
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 4
+  ifeq Label5
+  iconst_1
+  istore 24
+Label7:
+  aload 22
+  astore_1
+  iload 24
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual java/lang/StringBuilder/append(Z)Ljava/lang/StringBuilder;
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 18
+  ldc "DomobSDK"
+  astore 10
+  aload 18
+  astore_1
+  aload 10
+  aload_1
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label4:
+  aload 4
+  areturn
+Label0:
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 6
+  ifeq Label4
+Label15:
+  aload 6
+  astore 31
+  aload 31
+  checkcast android/database/Cursor
+  astore 31
+  aload 31
+  astore 5
+  aload 5
+  invokeinterface android/database/Cursor/close()V 1
+Label16:
+  aconst_null
+  astore 32
+  aload 32
+  areturn
+Label13:
+  astore 33
+Label8:
+  aload 33
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Throwable;)V
+  goto Label6
+Label5:
+  iconst_0
+  istore 24
+  goto Label7
+Label10:
+  astore 33
+  iconst_0
+  istore 6
+  goto Label8
+Label1:
+  aconst_null
+  astore 27
+  goto Label9
+  nop
+.end <method>
+
+.method private static c(Landroid/content/Context;)Landroid/database/Cursor;
+.limit locals 19
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/a/e/a(Landroid/content/Context;)Ljava/lang/String;
+  astore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 7
+  ifeq Label0
+  ldc "wifi"
+  astore 9
+  aload 7
+  aload 9
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label0
+  ldc "DomobSDK"
+  astore 9
+  iconst_3
+  istore 10
+  aload 9
+  iload 10
+  invokestatic android/util/Log/isLoggable(Ljava/lang/String;I)Z
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label1
+  ldc "DomobSDK"
+  astore 9
+  ldc "download network is wifi, don\'t read apn."
+  astore 11
+  aload 9
+  aload 11
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label1:
+  aconst_null
+  astore 12
+  aload 12
+  areturn
+Label0:
+  ldc "content://telephony/carriers/preferapn"
+  astore 9
+  aload 9
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 13
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual android/content/Context/getContentResolver()Landroid/content/ContentResolver;
+  astore 14
+  aconst_null
+  astore 12
+  aconst_null
+  astore 16
+  aconst_null
+  astore 17
+  aconst_null
+  astore 18
+  aload 14
+  astore_1
+  aload 13
+  astore_2
+  aload 12
+  astore_3
+  aload 16
+  astore 4
+  aload 17
+  astore 5
+  aload 18
+  astore 6
+  aload_1
+  aload_2
+  aload_3
+  aload 4
+  aload 5
+  aload 6
+  invokevirtual android/content/ContentResolver/query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+  astore 15
+  aload 15
+  areturn
+  nop
+.end <method>
+

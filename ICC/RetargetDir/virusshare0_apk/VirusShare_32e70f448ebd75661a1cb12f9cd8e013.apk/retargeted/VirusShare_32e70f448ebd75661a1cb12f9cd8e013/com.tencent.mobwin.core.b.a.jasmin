@@ -1,0 +1,17 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.interface public interface abstract  com/tencent/mobwin/core/b/a
+.super java/lang/Object
+.field public static final "a" I =  520193
+.field public static final "b" I =  520194
+.field public static final "c" I =  520195
+.field public static final "d" I =  520196
+.field public static final "e" I =  520208
+.field public static final "f" I =  520224
+.field public static final "g" I =  520240
+
+.method public abstract a(ILcom/tencent/mobwin/core/b/b;)V
+.end <method>
+
+.method public abstract a(Lorg/apache/http/HttpResponse;Lcom/tencent/mobwin/core/b/b;)V
+.end <method>
+

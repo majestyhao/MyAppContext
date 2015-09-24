@@ -1,0 +1,1399 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public final  MobWin/ReqReportAdPlayInfo
+.super com/qq/taf/jce/JceStruct
+.field static "m" LMobWin/UserInfo;
+.field static "n" LMobWin/AppInfo;
+.field static "o" LMobWin/UserLocation;
+.field static "p" LMobWin/BannerInfo;
+.field static final "q" Z =  0
+.field public "a" LMobWin/UserInfo;
+.field public "b" LMobWin/AppInfo;
+.field public "c" I
+.field public "d" I
+.field public "e" I
+.field public "f" LMobWin/UserLocation;
+.field public "g" I
+.field public "h" I
+.field public "i" Ljava/lang/String;
+.field public "j" LMobWin/BannerInfo;
+.field public "k" Ljava/lang/String;
+.field public "l" Ljava/lang/String;
+
+.method static <clinit>()V
+.limit locals 2
+.limit stack 200
+  nop
+  ldc MobWin/ReqReportAdPlayInfo
+  astore_0
+  aload_0
+  invokevirtual java/lang/Class/desiredAssertionStatus()Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  iconst_1
+  istore_1
+Label1:
+  iload_1
+  putstatic MobWin/ReqReportAdPlayInfo/q Z
+  return
+Label0:
+  iconst_0
+  istore_1
+  goto Label1
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 10
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  aconst_null
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/ReqReportAdPlayInfo/a LMobWin/UserInfo;
+  aconst_null
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/ReqReportAdPlayInfo/b LMobWin/AppInfo;
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield MobWin/ReqReportAdPlayInfo/c I
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield MobWin/ReqReportAdPlayInfo/d I
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield MobWin/ReqReportAdPlayInfo/e I
+  aconst_null
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/ReqReportAdPlayInfo/f LMobWin/UserLocation;
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield MobWin/ReqReportAdPlayInfo/g I
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield MobWin/ReqReportAdPlayInfo/h I
+  ldc ""
+  astore_3
+  aload_0
+  aload_3
+  putfield MobWin/ReqReportAdPlayInfo/i Ljava/lang/String;
+  aconst_null
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/ReqReportAdPlayInfo/j LMobWin/BannerInfo;
+  ldc ""
+  astore_3
+  aload_0
+  aload_3
+  putfield MobWin/ReqReportAdPlayInfo/k Ljava/lang/String;
+  ldc ""
+  astore_3
+  aload_0
+  aload_3
+  putfield MobWin/ReqReportAdPlayInfo/l Ljava/lang/String;
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/a LMobWin/UserInfo;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(LMobWin/UserInfo;)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/b LMobWin/AppInfo;
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(LMobWin/AppInfo;)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/c I
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(I)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/d I
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual MobWin/ReqReportAdPlayInfo/b(I)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/e I
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual MobWin/ReqReportAdPlayInfo/c(I)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/f LMobWin/UserLocation;
+  astore 7
+  aload_0
+  aload 7
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(LMobWin/UserLocation;)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/g I
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual MobWin/ReqReportAdPlayInfo/d(I)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/h I
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual MobWin/ReqReportAdPlayInfo/e(I)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/i Ljava/lang/String;
+  astore 8
+  aload_0
+  aload 8
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/j LMobWin/BannerInfo;
+  astore 9
+  aload_0
+  aload 9
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(LMobWin/BannerInfo;)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/k Ljava/lang/String;
+  astore 8
+  aload_0
+  aload 8
+  invokevirtual MobWin/ReqReportAdPlayInfo/b(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/l Ljava/lang/String;
+  astore 8
+  aload_0
+  aload 8
+  invokevirtual MobWin/ReqReportAdPlayInfo/c(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public <init>(LMobWin/UserInfo;LMobWin/AppInfo;IIILMobWin/UserLocation;IILjava/lang/String;LMobWin/BannerInfo;Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 16
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  aconst_null
+  astore 13
+  aload_0
+  aload 13
+  putfield MobWin/ReqReportAdPlayInfo/a LMobWin/UserInfo;
+  aconst_null
+  astore 13
+  aload_0
+  aload 13
+  putfield MobWin/ReqReportAdPlayInfo/b LMobWin/AppInfo;
+  iconst_0
+  istore 14
+  aload_0
+  iload 14
+  putfield MobWin/ReqReportAdPlayInfo/c I
+  iconst_0
+  istore 14
+  aload_0
+  iload 14
+  putfield MobWin/ReqReportAdPlayInfo/d I
+  iconst_0
+  istore 14
+  aload_0
+  iload 14
+  putfield MobWin/ReqReportAdPlayInfo/e I
+  aconst_null
+  astore 13
+  aload_0
+  aload 13
+  putfield MobWin/ReqReportAdPlayInfo/f LMobWin/UserLocation;
+  iconst_0
+  istore 14
+  aload_0
+  iload 14
+  putfield MobWin/ReqReportAdPlayInfo/g I
+  iconst_0
+  istore 14
+  aload_0
+  iload 14
+  putfield MobWin/ReqReportAdPlayInfo/h I
+  ldc ""
+  astore 15
+  aload_0
+  aload 15
+  putfield MobWin/ReqReportAdPlayInfo/i Ljava/lang/String;
+  aconst_null
+  astore 13
+  aload_0
+  aload 13
+  putfield MobWin/ReqReportAdPlayInfo/j LMobWin/BannerInfo;
+  ldc ""
+  astore 15
+  aload_0
+  aload 15
+  putfield MobWin/ReqReportAdPlayInfo/k Ljava/lang/String;
+  ldc ""
+  astore 15
+  aload_0
+  aload 15
+  putfield MobWin/ReqReportAdPlayInfo/l Ljava/lang/String;
+  aload_0
+  aload_1
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(LMobWin/UserInfo;)V
+  aload_0
+  aload_2
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(LMobWin/AppInfo;)V
+  aload_0
+  iload_3
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(I)V
+  aload_0
+  iload 4
+  invokevirtual MobWin/ReqReportAdPlayInfo/b(I)V
+  aload_0
+  iload 5
+  invokevirtual MobWin/ReqReportAdPlayInfo/c(I)V
+  aload_0
+  aload 6
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(LMobWin/UserLocation;)V
+  aload_0
+  iload 7
+  invokevirtual MobWin/ReqReportAdPlayInfo/d(I)V
+  aload_0
+  iload 8
+  invokevirtual MobWin/ReqReportAdPlayInfo/e(I)V
+  aload_0
+  aload 9
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(Ljava/lang/String;)V
+  aload_0
+  aload 10
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(LMobWin/BannerInfo;)V
+  aload_0
+  aload 11
+  invokevirtual MobWin/ReqReportAdPlayInfo/b(Ljava/lang/String;)V
+  aload_0
+  aload 12
+  invokevirtual MobWin/ReqReportAdPlayInfo/c(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public a()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  ldc "MobWin.ReqReportAdPlayInfo"
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public a(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/ReqReportAdPlayInfo/c I
+  return
+  nop
+.end <method>
+
+.method public a(LMobWin/AppInfo;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ReqReportAdPlayInfo/b LMobWin/AppInfo;
+  return
+  nop
+.end <method>
+
+.method public a(LMobWin/BannerInfo;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ReqReportAdPlayInfo/j LMobWin/BannerInfo;
+  return
+  nop
+.end <method>
+
+.method public a(LMobWin/UserInfo;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ReqReportAdPlayInfo/a LMobWin/UserInfo;
+  return
+  nop
+.end <method>
+
+.method public a(LMobWin/UserLocation;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ReqReportAdPlayInfo/f LMobWin/UserLocation;
+  return
+  nop
+.end <method>
+
+.method public a(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ReqReportAdPlayInfo/i Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public b()LMobWin/UserInfo;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/a LMobWin/UserInfo;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public b(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/ReqReportAdPlayInfo/d I
+  return
+  nop
+.end <method>
+
+.method public b(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ReqReportAdPlayInfo/k Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public c()LMobWin/AppInfo;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/b LMobWin/AppInfo;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public c(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/ReqReportAdPlayInfo/e I
+  return
+  nop
+.end <method>
+
+.method public c(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/ReqReportAdPlayInfo/l Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public clone()Ljava/lang/Object;
+.limit locals 6
+.limit stack 200
+  .catch  java/lang/CloneNotSupportedException <from> Label2 <to> Label3 <using> Label1
+  nop
+  iconst_0
+  istore_1
+Label2:
+  aload_0
+  invokespecial java/lang/Object/clone()Ljava/lang/Object;
+  astore_2
+Label3:
+  aload_2
+  astore_1
+Label0:
+  aload_1
+  areturn
+Label1:
+  astore_3
+  getstatic MobWin/ReqReportAdPlayInfo/q Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifne Label0
+  new java/lang/AssertionError
+  astore 5
+  aload 5
+  invokespecial java/lang/AssertionError/<init>()V
+  aload 5
+  athrow
+  nop
+.end <method>
+
+.method public d()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/c I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public d(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/ReqReportAdPlayInfo/g I
+  return
+  nop
+.end <method>
+
+.method public display(Ljava/lang/StringBuilder;I)V
+.limit locals 11
+.limit stack 200
+  nop
+  new com/qq/taf/jce/JceDisplayer
+  astore_3
+  aload_3
+  aload_1
+  iload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/a LMobWin/UserInfo;
+  astore 4
+  ldc "user_info"
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Lcom/qq/taf/jce/JceStruct;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/b LMobWin/AppInfo;
+  astore 6
+  ldc "app_info"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Lcom/qq/taf/jce/JceStruct;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/c I
+  istore_2
+  ldc "pre_ad_id"
+  astore 5
+  aload_3
+  iload_2
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/d I
+  istore_2
+  ldc "cur_ad_id"
+  astore 5
+  aload_3
+  iload_2
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/e I
+  istore_2
+  ldc "playingSeconds"
+  astore 5
+  aload_3
+  iload_2
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/f LMobWin/UserLocation;
+  astore 7
+  ldc "loc"
+  astore 5
+  aload_3
+  aload 7
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Lcom/qq/taf/jce/JceStruct;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/g I
+  istore_2
+  ldc "costmillseconds"
+  astore 5
+  aload_3
+  iload_2
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/h I
+  istore_2
+  ldc "adPlayResultCode"
+  astore 5
+  aload_3
+  iload_2
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/i Ljava/lang/String;
+  astore 8
+  ldc "sdkTimeStamp"
+  astore 5
+  aload_3
+  aload 8
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/j LMobWin/BannerInfo;
+  astore 9
+  ldc "bannerInfo"
+  astore 5
+  aload_3
+  aload 9
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Lcom/qq/taf/jce/JceStruct;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/k Ljava/lang/String;
+  astore 10
+  ldc "sid"
+  astore 5
+  aload_3
+  aload 10
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/l Ljava/lang/String;
+  astore 10
+  ldc "pre_sid"
+  astore 5
+  aload_3
+  aload 10
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  return
+  nop
+.end <method>
+
+.method public e()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/d I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public e(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/ReqReportAdPlayInfo/h I
+  return
+  nop
+.end <method>
+
+.method public equals(Ljava/lang/Object;)Z
+.limit locals 19
+.limit stack 200
+  nop
+  aload_1
+  astore 4
+  aload 4
+  checkcast MobWin/ReqReportAdPlayInfo
+  astore 4
+  aload 4
+  astore_3
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/ReqReportAdPlayInfo/a LMobWin/UserInfo;
+  astore 5
+  aload_3
+  getfield MobWin/ReqReportAdPlayInfo/a LMobWin/UserInfo;
+  astore 6
+  aload 5
+  aload 6
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/ReqReportAdPlayInfo/b LMobWin/AppInfo;
+  astore 8
+  aload_3
+  getfield MobWin/ReqReportAdPlayInfo/b LMobWin/AppInfo;
+  astore 9
+  aload 8
+  aload 9
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/ReqReportAdPlayInfo/c I
+  istore 10
+  aload_3
+  getfield MobWin/ReqReportAdPlayInfo/c I
+  istore 11
+  iload 10
+  iload 11
+  invokestatic com/qq/taf/jce/JceUtil/equals(II)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/ReqReportAdPlayInfo/d I
+  istore 11
+  aload_3
+  getfield MobWin/ReqReportAdPlayInfo/d I
+  istore 10
+  iload 11
+  iload 10
+  invokestatic com/qq/taf/jce/JceUtil/equals(II)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/ReqReportAdPlayInfo/e I
+  istore 11
+  aload_3
+  getfield MobWin/ReqReportAdPlayInfo/e I
+  istore 10
+  iload 11
+  iload 10
+  invokestatic com/qq/taf/jce/JceUtil/equals(II)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/ReqReportAdPlayInfo/f LMobWin/UserLocation;
+  astore 12
+  aload_3
+  getfield MobWin/ReqReportAdPlayInfo/f LMobWin/UserLocation;
+  astore 13
+  aload 12
+  aload 13
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/ReqReportAdPlayInfo/g I
+  istore 11
+  aload_3
+  getfield MobWin/ReqReportAdPlayInfo/g I
+  istore 10
+  iload 11
+  iload 10
+  invokestatic com/qq/taf/jce/JceUtil/equals(II)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/ReqReportAdPlayInfo/h I
+  istore 11
+  aload_3
+  getfield MobWin/ReqReportAdPlayInfo/h I
+  istore 10
+  iload 11
+  iload 10
+  invokestatic com/qq/taf/jce/JceUtil/equals(II)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/ReqReportAdPlayInfo/i Ljava/lang/String;
+  astore 14
+  aload_3
+  getfield MobWin/ReqReportAdPlayInfo/i Ljava/lang/String;
+  astore 15
+  aload 14
+  aload 15
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/ReqReportAdPlayInfo/j LMobWin/BannerInfo;
+  astore 16
+  aload_3
+  getfield MobWin/ReqReportAdPlayInfo/j LMobWin/BannerInfo;
+  astore 17
+  aload 16
+  aload 17
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/ReqReportAdPlayInfo/k Ljava/lang/String;
+  astore 15
+  aload_3
+  getfield MobWin/ReqReportAdPlayInfo/k Ljava/lang/String;
+  astore 14
+  aload 15
+  aload 14
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield MobWin/ReqReportAdPlayInfo/l Ljava/lang/String;
+  astore 15
+  aload_3
+  getfield MobWin/ReqReportAdPlayInfo/l Ljava/lang/String;
+  astore 14
+  aload 15
+  aload 14
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label0
+  iconst_1
+  istore 18
+  iload 18
+  ireturn
+Label0:
+  iconst_0
+  istore 18
+  iload 18
+  ireturn
+  nop
+.end <method>
+
+.method public f()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/e I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public g()LMobWin/UserLocation;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/f LMobWin/UserLocation;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public h()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/g I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public i()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/h I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public j()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/i Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public k()LMobWin/BannerInfo;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/j LMobWin/BannerInfo;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public l()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/k Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public m()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/l Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public readFrom(Lcom/qq/taf/jce/JceInputStream;)V
+.limit locals 15
+.limit stack 200
+  nop
+  getstatic MobWin/ReqReportAdPlayInfo/m LMobWin/UserInfo;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  new MobWin/UserInfo
+  astore_2
+  aload_2
+  invokespecial MobWin/UserInfo/<init>()V
+  aload_2
+  putstatic MobWin/ReqReportAdPlayInfo/m LMobWin/UserInfo;
+Label0:
+  getstatic MobWin/ReqReportAdPlayInfo/m LMobWin/UserInfo;
+  astore_2
+  iconst_0
+  istore 4
+  iload 4
+  istore_3
+  iconst_1
+  istore 4
+  aload_1
+  aload_2
+  iload_3
+  iload 4
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Lcom/qq/taf/jce/JceStruct;IZ)Lcom/qq/taf/jce/JceStruct;
+  astore 5
+  aload 5
+  astore 6
+  aload 6
+  checkcast MobWin/UserInfo
+  astore 6
+  aload 6
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(LMobWin/UserInfo;)V
+  getstatic MobWin/ReqReportAdPlayInfo/n LMobWin/AppInfo;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnonnull Label1
+  new MobWin/AppInfo
+  astore 7
+  aload 7
+  invokespecial MobWin/AppInfo/<init>()V
+  aload 7
+  putstatic MobWin/ReqReportAdPlayInfo/n LMobWin/AppInfo;
+Label1:
+  getstatic MobWin/ReqReportAdPlayInfo/n LMobWin/AppInfo;
+  astore 7
+  iconst_1
+  istore 4
+  iload 4
+  istore_3
+  iconst_1
+  istore 4
+  aload_1
+  aload 7
+  iload_3
+  iload 4
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Lcom/qq/taf/jce/JceStruct;IZ)Lcom/qq/taf/jce/JceStruct;
+  astore 5
+  aload 5
+  astore 8
+  aload 8
+  checkcast MobWin/AppInfo
+  astore 8
+  aload 8
+  astore 7
+  aload_0
+  aload 7
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(LMobWin/AppInfo;)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/c I
+  istore_3
+  iconst_2
+  istore 4
+  iconst_1
+  istore 9
+  aload_1
+  iload_3
+  iload 4
+  iload 9
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(I)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/d I
+  istore_3
+  iconst_3
+  istore 4
+  iconst_1
+  istore 9
+  aload_1
+  iload_3
+  iload 4
+  iload 9
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual MobWin/ReqReportAdPlayInfo/b(I)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/e I
+  istore_3
+  iconst_4
+  istore 4
+  iconst_1
+  istore 9
+  aload_1
+  iload_3
+  iload 4
+  iload 9
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual MobWin/ReqReportAdPlayInfo/c(I)V
+  getstatic MobWin/ReqReportAdPlayInfo/o LMobWin/UserLocation;
+  astore 10
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnonnull Label2
+  new MobWin/UserLocation
+  astore 10
+  aload 10
+  invokespecial MobWin/UserLocation/<init>()V
+  aload 10
+  putstatic MobWin/ReqReportAdPlayInfo/o LMobWin/UserLocation;
+Label2:
+  getstatic MobWin/ReqReportAdPlayInfo/o LMobWin/UserLocation;
+  astore 10
+  iconst_5
+  istore 4
+  iconst_0
+  istore 9
+  aload_1
+  aload 10
+  iload 4
+  iload 9
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Lcom/qq/taf/jce/JceStruct;IZ)Lcom/qq/taf/jce/JceStruct;
+  astore 5
+  aload 5
+  astore 11
+  aload 11
+  checkcast MobWin/UserLocation
+  astore 11
+  aload 11
+  astore 10
+  aload_0
+  aload 10
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(LMobWin/UserLocation;)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/g I
+  istore_3
+  bipush 6
+  istore 4
+  iconst_0
+  istore 9
+  aload_1
+  iload_3
+  iload 4
+  iload 9
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual MobWin/ReqReportAdPlayInfo/d(I)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/h I
+  istore_3
+  bipush 7
+  istore 4
+  iconst_0
+  istore 9
+  aload_1
+  iload_3
+  iload 4
+  iload 9
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual MobWin/ReqReportAdPlayInfo/e(I)V
+  bipush 8
+  istore 4
+  iconst_0
+  istore 9
+  aload_1
+  iload 4
+  iload 9
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 12
+  aload_0
+  aload 12
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(Ljava/lang/String;)V
+  getstatic MobWin/ReqReportAdPlayInfo/p LMobWin/BannerInfo;
+  astore 13
+  aload 13
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 13
+  ifnonnull Label3
+  new MobWin/BannerInfo
+  astore 13
+  aload 13
+  invokespecial MobWin/BannerInfo/<init>()V
+  aload 13
+  putstatic MobWin/ReqReportAdPlayInfo/p LMobWin/BannerInfo;
+Label3:
+  getstatic MobWin/ReqReportAdPlayInfo/p LMobWin/BannerInfo;
+  astore 13
+  bipush 9
+  istore 4
+  iconst_0
+  istore 9
+  aload_1
+  aload 13
+  iload 4
+  iload 9
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Lcom/qq/taf/jce/JceStruct;IZ)Lcom/qq/taf/jce/JceStruct;
+  astore 5
+  aload 5
+  astore 14
+  aload 14
+  checkcast MobWin/BannerInfo
+  astore 14
+  aload 14
+  astore 13
+  aload_0
+  aload 13
+  invokevirtual MobWin/ReqReportAdPlayInfo/a(LMobWin/BannerInfo;)V
+  bipush 10
+  istore 4
+  iconst_0
+  istore 9
+  aload_1
+  iload 4
+  iload 9
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 12
+  aload_0
+  aload 12
+  invokevirtual MobWin/ReqReportAdPlayInfo/b(Ljava/lang/String;)V
+  bipush 11
+  istore 4
+  iconst_0
+  istore 9
+  aload_1
+  iload 4
+  iload 9
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 12
+  aload_0
+  aload 12
+  invokevirtual MobWin/ReqReportAdPlayInfo/c(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public writeTo(Lcom/qq/taf/jce/JceOutputStream;)V
+.limit locals 9
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/a LMobWin/UserInfo;
+  astore_2
+  iconst_0
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Lcom/qq/taf/jce/JceStruct;I)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/b LMobWin/AppInfo;
+  astore 4
+  iconst_1
+  istore_3
+  aload_1
+  aload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Lcom/qq/taf/jce/JceStruct;I)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/c I
+  istore 5
+  iconst_2
+  istore_3
+  aload_1
+  iload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/d I
+  istore 5
+  iconst_3
+  istore_3
+  aload_1
+  iload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/e I
+  istore 5
+  iconst_4
+  istore_3
+  aload_1
+  iload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/f LMobWin/UserLocation;
+  astore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/f LMobWin/UserLocation;
+  astore 6
+  iconst_5
+  istore_3
+  aload_1
+  aload 6
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Lcom/qq/taf/jce/JceStruct;I)V
+Label0:
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/g I
+  istore 5
+  bipush 6
+  istore_3
+  aload_1
+  iload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/h I
+  istore 5
+  bipush 7
+  istore_3
+  aload_1
+  iload 5
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/i Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label1
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/i Ljava/lang/String;
+  astore 7
+  bipush 8
+  istore_3
+  aload_1
+  aload 7
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+Label1:
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/j LMobWin/BannerInfo;
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label2
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/j LMobWin/BannerInfo;
+  astore 8
+  bipush 9
+  istore_3
+  aload_1
+  aload 8
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Lcom/qq/taf/jce/JceStruct;I)V
+Label2:
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/k Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label3
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/k Ljava/lang/String;
+  astore 7
+  bipush 10
+  istore_3
+  aload_1
+  aload 7
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+Label3:
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/l Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label4
+  aload_0
+  getfield MobWin/ReqReportAdPlayInfo/l Ljava/lang/String;
+  astore 7
+  bipush 11
+  istore_3
+  aload_1
+  aload 7
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+Label4:
+  return
+  nop
+.end <method>
+

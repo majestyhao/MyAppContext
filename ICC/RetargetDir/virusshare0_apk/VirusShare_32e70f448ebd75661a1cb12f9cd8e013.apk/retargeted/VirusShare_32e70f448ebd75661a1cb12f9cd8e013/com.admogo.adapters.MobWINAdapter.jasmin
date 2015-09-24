@@ -1,0 +1,483 @@
+.source MobWINAdapter.java
+.class public  com/admogo/adapters/MobWINAdapter
+.super com/admogo/adapters/AdMogoAdapter
+.implements  com/tencent/mobwin/AdListener
+.field private "activity" Landroid/app/Activity;
+.field private "adView" Lcom/tencent/mobwin/AdView;
+.field "handler" Landroid/os/Handler;
+.field private "task" Ljava/util/TimerTask;
+.field private final "timer" Ljava/util/Timer;
+
+.method public <init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+.limit locals 9
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  invokespecial com/admogo/adapters/AdMogoAdapter/<init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+  new java/util/Timer
+  astore_3
+  aload_3
+  invokespecial java/util/Timer/<init>()V
+  aload_0
+  aload_3
+  putfield com/admogo/adapters/MobWINAdapter/timer Ljava/util/Timer;
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 4
+  aload_0
+  invokespecial com/admogo/adapters/MobWINAdapter$1/<init>(Lcom/admogo/adapters/MobWINAdapter;)V
+  aload_0
+  aload 4
+  putfield com/admogo/adapters/MobWINAdapter/handler Landroid/os/Handler;
+  new com/admogo/adapters/MobWINAdapter$2
+  astore 5
+  aload 5
+  aload_0
+  invokespecial com/admogo/adapters/MobWINAdapter$2/<init>(Lcom/admogo/adapters/MobWINAdapter;)V
+  aload_0
+  aload 5
+  putfield com/admogo/adapters/MobWINAdapter/task Ljava/util/TimerTask;
+  aload_0
+  getfield com/admogo/adapters/MobWINAdapter/timer Ljava/util/Timer;
+  astore_3
+  aload_0
+  getfield com/admogo/adapters/MobWINAdapter/task Ljava/util/TimerTask;
+  astore 6
+  ldc2_w 12000
+  lstore 7
+  aload_3
+  aload 6
+  lload 7
+  invokevirtual java/util/Timer/schedule(Ljava/util/TimerTask;J)V
+  return
+  nop
+.end <method>
+
+.method static access$0(Lcom/admogo/adapters/MobWINAdapter;)Landroid/app/Activity;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/MobWINAdapter/activity Landroid/app/Activity;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public click()V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore_2
+  aload_2
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 4
+  astore_3
+  aload_3
+  invokevirtual com/admogo/AdMogoLayout/countClick()V
+  return
+  nop
+.end <method>
+
+.method public finish()V
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_1
+  ldc "MobWIN Finished"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method public handle()V
+.limit locals 22
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore 4
+  aload 4
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 7
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 6
+  ifne Label0
+Label1:
+  return
+Label0:
+  aload 6
+  getfield com/admogo/AdMogoLayout/activityReference Ljava/lang/ref/WeakReference;
+  astore 4
+  aload 4
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 9
+  aload 9
+  checkcast android/app/Activity
+  astore 9
+  aload 9
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  aload 8
+  putfield com/admogo/adapters/MobWINAdapter/activity Landroid/app/Activity;
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/MobWINAdapter/activity Landroid/app/Activity;
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label1
+  new com/tencent/mobwin/AdView
+  astore 10
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/MobWINAdapter/activity Landroid/app/Activity;
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/AdMogoAdapter/ration Lcom/admogo/obj/Ration;
+  astore 11
+  aload 11
+  getfield com/admogo/obj/Ration/key Ljava/lang/String;
+  astore 12
+  ldc "qq_center"
+  astore 13
+  ldc "ior0224ace"
+  astore 14
+  aload 10
+  aload 8
+  aload 12
+  aload 13
+  aload 14
+  invokespecial com/tencent/mobwin/AdView/<init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  aload 10
+  putfield com/admogo/adapters/MobWINAdapter/adView Lcom/tencent/mobwin/AdView;
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/MobWINAdapter/adView Lcom/tencent/mobwin/AdView;
+  astore 10
+  aload_0
+  astore_1
+  aload 10
+  aload_1
+  invokevirtual com/tencent/mobwin/AdView/setAdListener(Lcom/tencent/mobwin/AdListener;)V
+  aload 6
+  getfield com/admogo/AdMogoLayout/extra Lcom/admogo/obj/Extra;
+  astore 15
+  aload 15
+  getfield com/admogo/obj/Extra/bgRed I
+  istore 16
+  aload 15
+  getfield com/admogo/obj/Extra/bgGreen I
+  istore_1
+  iload_1
+  istore 17
+  aload 15
+  getfield com/admogo/obj/Extra/bgBlue I
+  istore_1
+  iload_1
+  istore 18
+  iload 17
+  istore_1
+  iload 18
+  istore_2
+  iload 16
+  iload_1
+  iload_2
+  invokestatic android/graphics/Color/rgb(III)I
+  istore 16
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/MobWINAdapter/adView Lcom/tencent/mobwin/AdView;
+  astore 10
+  aload 10
+  iload 16
+  invokevirtual com/tencent/mobwin/AdView/setBackgroundColor(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/MobWINAdapter/adView Lcom/tencent/mobwin/AdView;
+  astore 10
+  new android/view/ViewGroup$LayoutParams
+  astore 19
+  iconst_m1
+  istore 20
+  bipush -2
+  istore 21
+  aload 19
+  astore_1
+  iload 20
+  istore_2
+  iload 21
+  istore_3
+  aload_1
+  iload_2
+  iload_3
+  invokespecial android/view/ViewGroup$LayoutParams/<init>(II)V
+  aload 19
+  astore_1
+  aload 6
+  aload 10
+  aload_1
+  invokevirtual com/admogo/AdMogoLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  goto Label1
+  nop
+.end <method>
+
+.method public onAdClick()V
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_1
+  ldc "MobWIN onAdClick"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method public onReceiveAd()V
+.limit locals 16
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/MobWINAdapter/timer Ljava/util/Timer;
+  astore_1
+  aload_1
+  invokevirtual java/util/Timer/cancel()V
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_2
+  ldc "MobWIN success"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield com/admogo/adapters/MobWINAdapter/adView Lcom/tencent/mobwin/AdView;
+  astore 4
+  aconst_null
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual com/tencent/mobwin/AdView/setAdListener(Lcom/tencent/mobwin/AdListener;)V
+  aload_0
+  getfield com/admogo/adapters/MobWINAdapter/activity Landroid/app/Activity;
+  astore 6
+  aload 6
+  invokevirtual android/app/Activity/isFinishing()Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifne Label0
+  aload_0
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore 8
+  aload 8
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 9
+  aload 9
+  astore 11
+  aload 11
+  checkcast com/admogo/AdMogoLayout
+  astore 11
+  aload 11
+  astore 10
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnonnull Label1
+Label0:
+  return
+Label1:
+  aload 10
+  getfield com/admogo/AdMogoLayout/adMogoManager Lcom/admogo/AdMogoManager;
+  astore 12
+  aload 12
+  invokevirtual com/admogo/AdMogoManager/resetRollover()V
+  aload 10
+  getfield com/admogo/AdMogoLayout/handler Landroid/os/Handler;
+  astore 13
+  new com/admogo/AdMogoLayout$ViewAdRunnable
+  astore 14
+  aload_0
+  getfield com/admogo/adapters/MobWINAdapter/adView Lcom/tencent/mobwin/AdView;
+  astore 4
+  bipush 53
+  istore 15
+  aload 14
+  aload 10
+  aload 4
+  iload 15
+  invokespecial com/admogo/AdMogoLayout$ViewAdRunnable/<init>(Lcom/admogo/AdMogoLayout;Landroid/view/ViewGroup;I)V
+  aload 13
+  aload 14
+  invokevirtual android/os/Handler/post(Ljava/lang/Runnable;)Z
+  pop
+  aload 10
+  invokevirtual com/admogo/AdMogoLayout/rotateThreadedDelayed()V
+  goto Label0
+  nop
+.end <method>
+
+.method public onReceiveFailed(I)V
+.limit locals 16
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/MobWINAdapter/timer Ljava/util/Timer;
+  astore_2
+  aload_2
+  invokevirtual java/util/Timer/cancel()V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  lookupswitch
+  1 : Label1
+  10 : Label2
+  11 : Label3
+  12 : Label4
+  13 : Label5
+  default : Label0
+Label0:
+  goto Label6
+Label6:
+  ldc "\u672a\u77e5\u539f\u56e0,\u5e7f\u544a\u8bf7\u6c42\u5931\u8d25\uff01"
+  astore_3
+Label9:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 4
+  new java/lang/StringBuilder
+  astore 5
+  ldc "MobWIN failure, message is "
+  astore 6
+  aload 5
+  aload 6
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 5
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  aload 4
+  aload 7
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aload_0
+  getfield com/admogo/adapters/MobWINAdapter/adView Lcom/tencent/mobwin/AdView;
+  astore 8
+  aconst_null
+  astore 9
+  aload 8
+  aload 9
+  invokevirtual com/tencent/mobwin/AdView/setAdListener(Lcom/tencent/mobwin/AdListener;)V
+  aload_0
+  getfield com/admogo/adapters/MobWINAdapter/activity Landroid/app/Activity;
+  astore 10
+  aload 10
+  invokevirtual android/app/Activity/isFinishing()Z
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifne Label7
+  aload_0
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore 12
+  aload 12
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 13
+  aload 13
+  astore 15
+  aload 15
+  checkcast com/admogo/AdMogoLayout
+  astore 15
+  aload 15
+  astore 14
+  aload 14
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 14
+  ifnonnull Label8
+Label7:
+  return
+Label1:
+  ldc "\u7f51\u7edc\u539f\u56e0,\u5e7f\u544a\u8bf7\u6c42\u5931\u8d25\uff01"
+  astore_3
+  goto Label9
+Label4:
+  ldc "\u56fe\u7247\u62c9\u53d6\u9519\u8bef,\u5e7f\u544a\u8bf7\u6c42\u5931\u8d25\uff01"
+  astore_3
+  goto Label9
+Label2:
+  ldc "\u5e7f\u544a\u670d\u52a1\u4e0d\u53ef\u7528,\u5e7f\u544a\u8bf7\u6c42\u5931\u8d25\uff01"
+  astore_3
+  goto Label9
+Label3:
+  ldc "GIF\u52a8\u753b\u89e3\u7801\u5931\u8d25,\u5e7f\u544a\u8bf7\u6c42\u5931\u8d25\uff01"
+  astore_3
+  goto Label9
+Label5:
+  ldc "\u670d\u52a1\u5668\u6570\u636e\u5f02\u5e38,\u5e7f\u544a\u8bf7\u6c42\u5931\u8d25\uff01"
+  astore_3
+  goto Label9
+Label8:
+  aload 14
+  invokevirtual com/admogo/AdMogoLayout/rollover()V
+  goto Label7
+  nop
+  nop
+.end <method>
+

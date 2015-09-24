@@ -1,0 +1,15 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public final  com/google/ads/R$layout
+.super java/lang/Object
+.field public static final "admob_320_50_test" I =  2130837504
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

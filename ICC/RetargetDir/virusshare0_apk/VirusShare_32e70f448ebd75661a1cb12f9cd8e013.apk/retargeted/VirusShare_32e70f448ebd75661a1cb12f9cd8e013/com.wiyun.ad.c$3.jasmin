@@ -1,0 +1,30 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/c$3
+.super java/lang/Thread
+
+.method <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 2
+.limit stack 200
+  nop
+  bipush 19
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  invokestatic com/wiyun/ad/c/h()Z
+  pop
+  return
+  nop
+.end <method>
+

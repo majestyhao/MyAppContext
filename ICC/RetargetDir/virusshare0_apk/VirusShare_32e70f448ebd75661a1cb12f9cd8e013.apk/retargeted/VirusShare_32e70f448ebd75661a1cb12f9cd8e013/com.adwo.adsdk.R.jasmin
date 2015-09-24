@@ -1,0 +1,294 @@
+.source SourceFile
+.class final  com/adwo/adsdk/R
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field private "a" Lcom/adwo/adsdk/b;
+.field private "b" Lcom/adwo/adsdk/b;
+.field private "c" Lcom/adwo/adsdk/U;
+.field private "d" Lcom/adwo/adsdk/AdwoAdView;
+
+.method public <init>(Lcom/adwo/adsdk/AdwoAdView;Lcom/adwo/adsdk/b;Lcom/adwo/adsdk/U;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/adwo/adsdk/R/d Lcom/adwo/adsdk/AdwoAdView;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  aload_2
+  putfield com/adwo/adsdk/R/a Lcom/adwo/adsdk/b;
+  aload_0
+  aload_3
+  putfield com/adwo/adsdk/R/c Lcom/adwo/adsdk/U;
+  return
+  nop
+.end <method>
+
+.method static a(Lcom/adwo/adsdk/R;)Lcom/adwo/adsdk/b;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/adwo/adsdk/R/b Lcom/adwo/adsdk/b;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static a(Lcom/adwo/adsdk/R;Lcom/adwo/adsdk/b;)V
+  .synthetic
+.limit locals 3
+.limit stack 200
+  nop
+  aconst_null
+  astore_2
+  aload_0
+  aload_2
+  putfield com/adwo/adsdk/R/b Lcom/adwo/adsdk/b;
+  return
+  nop
+.end <method>
+
+.method static b(Lcom/adwo/adsdk/R;)Lcom/adwo/adsdk/b;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/adwo/adsdk/R/a Lcom/adwo/adsdk/b;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static c(Lcom/adwo/adsdk/R;)Lcom/adwo/adsdk/AdwoAdView;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/adwo/adsdk/R/d Lcom/adwo/adsdk/AdwoAdView;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public final run()V
+.limit locals 29
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/R/d Lcom/adwo/adsdk/AdwoAdView;
+  astore 11
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_0
+  astore_1
+  aload_1
+  aload 12
+  putfield com/adwo/adsdk/R/b Lcom/adwo/adsdk/b;
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/R/b Lcom/adwo/adsdk/b;
+  astore 12
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  ifnull Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/R/b Lcom/adwo/adsdk/b;
+  astore 12
+  bipush 8
+  istore 13
+  aload 12
+  iload 13
+  invokevirtual com/adwo/adsdk/b/setVisibility(I)V
+Label0:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/R/a Lcom/adwo/adsdk/b;
+  astore 12
+  iconst_0
+  istore 13
+  iload 13
+  istore 14
+  aload 12
+  iload 14
+  invokevirtual com/adwo/adsdk/b/setVisibility(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/R/d Lcom/adwo/adsdk/AdwoAdView;
+  astore 11
+  aload 11
+  invokevirtual com/adwo/adsdk/AdwoAdView/getWidth()I
+  istore 14
+  iload 14
+  i2f
+  fstore 15
+  fconst_2
+  fstore 17
+  fload 15
+  fload 17
+  fdiv
+  fstore 16
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/R/d Lcom/adwo/adsdk/AdwoAdView;
+  astore 11
+  aload 11
+  invokevirtual com/adwo/adsdk/AdwoAdView/getHeight()I
+  istore 14
+  iload 14
+  i2f
+  fstore 15
+  fconst_2
+  fstore 17
+  fload 15
+  fload 17
+  fdiv
+  fstore 18
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/R/d Lcom/adwo/adsdk/AdwoAdView;
+  astore 11
+  aload 11
+  invokevirtual com/adwo/adsdk/AdwoAdView/getWidth()I
+  istore 14
+  iload 14
+  i2f
+  fstore_1
+  fload_1
+  fstore 19
+  ldc -0.400000
+  fstore 17
+  fload 17
+  fload 19
+  fmul
+  fstore 15
+  new com/adwo/adsdk/ae
+  astore 20
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/R/c Lcom/adwo/adsdk/U;
+  astore_1
+  aload_1
+  astore 21
+  ldc 90.000000
+  fstore 17
+  fconst_0
+  fstore 22
+  fconst_0
+  fstore 23
+  fconst_0
+  fstore 24
+  iconst_0
+  istore 13
+  aload 20
+  astore_1
+  fload 17
+  fstore_2
+  fload 22
+  fstore_3
+  fload 16
+  fstore 4
+  fload 18
+  fstore 5
+  fload 23
+  fstore 6
+  fload 24
+  fstore 7
+  fload 15
+  fstore 8
+  iload 13
+  istore 9
+  aload 21
+  astore 10
+  aload_1
+  fload_2
+  fload_3
+  fload 4
+  fload 5
+  fload 6
+  fload 7
+  fload 8
+  iload 9
+  aload 10
+  invokespecial com/adwo/adsdk/ae/<init>(FFFFFFFZLcom/adwo/adsdk/U;)V
+  ldc2_w 500
+  lstore 25
+  aload 20
+  astore_1
+  lload 25
+  lstore_2
+  aload_1
+  lload_2
+  invokevirtual com/adwo/adsdk/ae/setDuration(J)V
+  iconst_1
+  istore 13
+  aload 20
+  astore_1
+  aload_1
+  iload 13
+  invokevirtual com/adwo/adsdk/ae/setFillAfter(Z)V
+  new android/view/animation/DecelerateInterpolator
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokespecial android/view/animation/DecelerateInterpolator/<init>()V
+  aload 20
+  astore_1
+  aload 27
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual com/adwo/adsdk/ae/setInterpolator(Landroid/view/animation/Interpolator;)V
+  new com/adwo/adsdk/S
+  astore 28
+  aload 28
+  astore_1
+  aload_0
+  astore_2
+  aload_1
+  aload_2
+  invokespecial com/adwo/adsdk/S/<init>(Lcom/adwo/adsdk/R;)V
+  aload 20
+  astore_1
+  aload 28
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual com/adwo/adsdk/ae/setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/adwo/adsdk/R/d Lcom/adwo/adsdk/AdwoAdView;
+  astore 11
+  aload 20
+  astore_1
+  aload 11
+  aload_1
+  invokevirtual com/adwo/adsdk/AdwoAdView/startAnimation(Landroid/view/animation/Animation;)V
+  return
+  nop
+.end <method>
+

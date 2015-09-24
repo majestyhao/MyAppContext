@@ -1,0 +1,276 @@
+.source ThemeManager.java
+.class public  maxstrom/game/llk/ThemeManager
+.super java/lang/Object
+.field public static final "NO_IMAGE" I =  0
+.field private static "currentTheme" Lmaxstrom/game/llk/ThemeManager$ImageTheme;
+.field public static final "qqPics" [Landroid/graphics/Bitmap;
+.field private static final "random" Ljava/util/Random;
+
+.method static <clinit>()V
+.limit locals 4
+.limit stack 200
+  nop
+  getstatic maxstrom/game/llk/ThemeManager$ImageTheme/qq Lmaxstrom/game/llk/ThemeManager$ImageTheme;
+  astore_0
+  aload_0
+  putstatic maxstrom/game/llk/ThemeManager/currentTheme Lmaxstrom/game/llk/ThemeManager$ImageTheme;
+  new java/util/Random
+  astore_1
+  aload_1
+  invokespecial java/util/Random/<init>()V
+  aload_1
+  putstatic maxstrom/game/llk/ThemeManager/random Ljava/util/Random;
+  getstatic maxstrom/game/llk/Params/imageCount I
+  istore_2
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_3
+  putstatic maxstrom/game/llk/ThemeManager/qqPics [Landroid/graphics/Bitmap;
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static changeTheme()V
+.limit locals 7
+.limit stack 200
+  nop
+  invokestatic maxstrom/game/llk/ThemeManager$ImageTheme/values()[Lmaxstrom/game/llk/ThemeManager$ImageTheme;
+  astore_0
+  iconst_m1
+  istore_1
+  iconst_0
+  istore_2
+Label5:
+  aload_0
+  arraylength
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmplt Label0
+Label4:
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 4
+  iload_1
+  iload 4
+  if_icmpeq Label1
+  aload_0
+  arraylength
+  istore_3
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload_3
+  if_icmpne Label2
+Label1:
+  iconst_0
+  istore_1
+Label2:
+  aload_0
+  iload_1
+  aaload
+  astore 5
+  aload 5
+  putstatic maxstrom/game/llk/ThemeManager/currentTheme Lmaxstrom/game/llk/ThemeManager$ImageTheme;
+  return
+Label0:
+  getstatic maxstrom/game/llk/ThemeManager/currentTheme Lmaxstrom/game/llk/ThemeManager$ImageTheme;
+  astore 6
+  aload_0
+  iload_2
+  aaload
+  astore 5
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  aload 5
+  if_acmpne Label3
+  iload_2
+  iconst_1
+  iadd
+  istore_1
+  goto Label4
+Label3:
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label5
+  nop
+.end <method>
+
+.method public static getCurrentTheme()Lmaxstrom/game/llk/ThemeManager$ImageTheme;
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic maxstrom/game/llk/ThemeManager/currentTheme Lmaxstrom/game/llk/ThemeManager$ImageTheme;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static getImage(I)Landroid/graphics/Bitmap;
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/VerifyError
+  dup
+  invokespecial java/lang/VerifyError/<init>()V
+  athrow
+  nop
+.end <method>
+
+.method public static getRandomColor(I)I
+.limit locals 2
+.limit stack 200
+  nop
+  getstatic maxstrom/game/llk/ThemeManager/random Ljava/util/Random;
+  astore_1
+  aload_1
+  iload_0
+  invokevirtual java/util/Random/nextInt(I)I
+  istore_0
+  iload_0
+  ireturn
+  nop
+.end <method>
+
+.method public static init(Landroid/content/Context;)V
+.limit locals 6
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+Label1:
+  getstatic maxstrom/game/llk/Params/imageCount I
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload_2
+  if_icmplt Label0
+  return
+Label0:
+  getstatic maxstrom/game/llk/ThemeManager$ImageTheme/qq Lmaxstrom/game/llk/ThemeManager$ImageTheme;
+  astore_3
+  iload_1
+  iconst_1
+  iadd
+  istore_2
+  ldc 2130837520
+  istore 5
+  iload 5
+  iload_1
+  iadd
+  istore 4
+  aload_3
+  iload_2
+  iload 4
+  aload_0
+  invokestatic maxstrom/game/llk/ThemeManager/loadBallView(Lmaxstrom/game/llk/ThemeManager$ImageTheme;IILandroid/content/Context;)V
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  goto Label1
+  nop
+.end <method>
+
+.method private static loadBallView(Lmaxstrom/game/llk/ThemeManager$ImageTheme;IILandroid/content/Context;)V
+.limit locals 14
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload 4
+  iload_2
+  invokevirtual android/content/res/Resources/getDrawable(I)Landroid/graphics/drawable/Drawable;
+  astore 5
+  getstatic maxstrom/game/llk/Params/blockWidth I
+  istore 6
+  getstatic maxstrom/game/llk/Params/blockHeight I
+  istore_2
+  getstatic android/graphics/Bitmap$Config/ARGB_8888 Landroid/graphics/Bitmap$Config;
+  astore 7
+  iload 6
+  iload_2
+  aload 7
+  invokestatic android/graphics/Bitmap/createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+  astore 8
+  new android/graphics/Canvas
+  astore 9
+  aload 9
+  aload 8
+  invokespecial android/graphics/Canvas/<init>(Landroid/graphics/Bitmap;)V
+  getstatic maxstrom/game/llk/Params/blockWidth I
+  istore 6
+  getstatic maxstrom/game/llk/Params/blockHeight I
+  istore_2
+  iconst_0
+  istore 10
+  iconst_0
+  istore 11
+  aload 5
+  iload 10
+  iload 11
+  iload 6
+  iload_2
+  invokevirtual android/graphics/drawable/Drawable/setBounds(IIII)V
+  aload 5
+  aload 9
+  invokevirtual android/graphics/drawable/Drawable/draw(Landroid/graphics/Canvas;)V
+  getstatic maxstrom/game/llk/ThemeManager$ImageTheme/qq Lmaxstrom/game/llk/ThemeManager$ImageTheme;
+  astore 12
+  aload_0
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_0
+  aload 12
+  if_acmpne Label0
+  getstatic maxstrom/game/llk/ThemeManager/qqPics [Landroid/graphics/Bitmap;
+  astore 13
+  aload 13
+  iload_1
+  aload 8
+  aastore
+Label0:
+  return
+  nop
+.end <method>
+

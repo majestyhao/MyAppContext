@@ -1,0 +1,82 @@
+.source SourceFile
+.class public  com/mobisage/sns/renren/MSRenrenToken
+.super com/mobisage/sns/renren/MSRenrenMessage
+
+.method public <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial com/mobisage/sns/renren/MSRenrenMessage/<init>(Ljava/lang/String;)V
+  aload_0
+  aload_2
+  putfield com/mobisage/sns/renren/MSRenrenMessage/secretKey Ljava/lang/String;
+  ldc "https://graph.renren.com/oauth/token"
+  astore 4
+  aload_0
+  aload 4
+  putfield com/mobisage/sns/renren/MSRenrenMessage/urlPath Ljava/lang/String;
+  ldc "GET"
+  astore 4
+  aload_0
+  aload 4
+  putfield com/mobisage/sns/renren/MSRenrenMessage/httpMethod Ljava/lang/String;
+  aload_0
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 5
+  ldc "client_id"
+  astore 4
+  aload 5
+  aload 4
+  aload_1
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_0
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 5
+  ldc "client_secret"
+  astore 4
+  aload 5
+  aload 4
+  aload_2
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_0
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 5
+  ldc "code"
+  astore 4
+  aload 5
+  aload 4
+  aload_3
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_0
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 5
+  ldc "grant_type"
+  astore 4
+  ldc "authorization_code"
+  astore 6
+  aload 5
+  aload 4
+  aload 6
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload_0
+  getfield com/mobisage/sns/renren/MSRenrenMessage/paramMap Ljava/util/HashMap;
+  astore 5
+  ldc "redirect_uri"
+  astore 4
+  ldc "http://graph.renren.com/oauth/login_success.html"
+  astore 6
+  aload 5
+  aload 4
+  aload 6
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  return
+  nop
+.end <method>
+

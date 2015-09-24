@@ -1,0 +1,267 @@
+.source SourceFile
+.class  cn/domob/android/ads/p$1
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Landroid/content/Context;
+.field final "b" Lcn/domob/android/ads/p;
+
+.method <init>(Lcn/domob/android/ads/p;Landroid/content/Context;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/p$1/b Lcn/domob/android/ads/p;
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/p$1/a Landroid/content/Context;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 29
+.limit stack 200
+  .catch  java/lang/Exception <from> Label4 <to> Label5 <using> Label3
+  nop
+  ldc cn/domob/android/ads/p
+  astore 5
+  aload 5
+  invokevirtual java/lang/Class/getSimpleName()Ljava/lang/String;
+  astore 6
+  ldc "getLocationBasedService"
+  astore 7
+  aload 6
+  aload 7
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+Label4:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/p$1/a Landroid/content/Context;
+  astore 8
+  ldc "phone"
+  astore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload 9
+  astore 11
+  aload 11
+  checkcast android/telephony/TelephonyManager
+  astore 11
+  aload 11
+  astore 10
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnull Label0
+  ldc cn/domob/android/ads/p
+  astore 5
+  aload 5
+  invokevirtual java/lang/Class/getSimpleName()Ljava/lang/String;
+  astore 6
+  ldc "tManager is not null"
+  astore 7
+  aload 6
+  aload 7
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  ldc cn/domob/android/ads/p
+  astore 5
+  aload 5
+  invokevirtual java/lang/Class/getSimpleName()Ljava/lang/String;
+  astore 6
+  new java/lang/StringBuilder
+  astore 12
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Network Operator: "
+  astore 7
+  aload 12
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  aload 10
+  invokevirtual android/telephony/TelephonyManager/getNetworkOperator()Ljava/lang/String;
+  astore 13
+  aload 12
+  aload 13
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 12
+  aload 12
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 13
+  aload 6
+  aload 13
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload 10
+  invokevirtual android/telephony/TelephonyManager/getNetworkOperator()Ljava/lang/String;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label0
+  aload 10
+  invokevirtual android/telephony/TelephonyManager/getNetworkOperator()Ljava/lang/String;
+  astore 6
+  aload 6
+  invokevirtual java/lang/String/length()I
+  istore 14
+  dload 14
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_5
+  istore 15
+  iload 14
+  iload 15
+  if_icmplt Label0
+  ldc cn/domob/android/ads/p
+  astore 5
+  aload 5
+  invokevirtual java/lang/Class/getSimpleName()Ljava/lang/String;
+  astore 6
+  ldc "\u83b7\u53d6\u57fa\u7ad9\u4fe1\u606f"
+  astore 7
+  aload 6
+  aload 7
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload 10
+  invokevirtual android/telephony/TelephonyManager/getPhoneType()I
+  istore 14
+  dload 14
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 14
+  lookupswitch
+  1 : Label2
+  default : Label1
+Label1:
+  goto Label0
+Label0:
+  return
+Label2:
+  aload 10
+  invokevirtual android/telephony/TelephonyManager/getCellLocation()Landroid/telephony/CellLocation;
+  astore 16
+  aload 16
+  astore 18
+  aload 18
+  checkcast android/telephony/gsm/GsmCellLocation
+  astore 18
+  aload 18
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 17
+  ifnull Label0
+  aload 17
+  astore 20
+  aload 20
+  checkcast android/telephony/gsm/GsmCellLocation
+  astore 20
+  aload 20
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokevirtual android/telephony/gsm/GsmCellLocation/getCid()I
+  istore 14
+  aload 17
+  checkcast android/telephony/gsm/GsmCellLocation
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokevirtual android/telephony/gsm/GsmCellLocation/getLac()I
+  istore 21
+  aload 10
+  invokevirtual android/telephony/TelephonyManager/getNetworkOperator()Ljava/lang/String;
+  astore 6
+  iconst_0
+  istore 15
+  iconst_3
+  istore 22
+  iload 22
+  istore_1
+  aload 6
+  iload 15
+  iload_1
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 6
+  aload 6
+  invokestatic java/lang/Integer/valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/Integer/intValue()I
+  istore 24
+  aload 10
+  invokevirtual android/telephony/TelephonyManager/getNetworkOperator()Ljava/lang/String;
+  astore 6
+  iconst_3
+  istore 15
+  iconst_5
+  istore 22
+  iload 22
+  istore_1
+  aload 6
+  iload 15
+  iload_1
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 6
+  aload 6
+  invokestatic java/lang/Integer/valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  invokevirtual java/lang/Integer/intValue()I
+  istore 25
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/p$1/b Lcn/domob/android/ads/p;
+  astore_1
+  aload_1
+  astore 26
+  aload 26
+  astore_1
+  iload 21
+  istore_2
+  iload 25
+  istore_3
+  iload 24
+  istore 4
+  aload_1
+  iload 14
+  iload_2
+  iload_3
+  iload 4
+  invokevirtual cn/domob/android/ads/p/a(IIII)V
+Label5:
+  goto Label0
+Label3:
+  astore 27
+  aload 27
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Throwable;)V
+  ldc "DomobDeviceInfo"
+  astore 7
+  ldc "\u57fa\u7ad9\u5b9a\u4f4d\u51fa\u73b0\u9519\u8bef\uff01"
+  astore 28
+  aload 28
+  astore_1
+  aload 7
+  aload_1
+  invokestatic cn/domob/android/ads/J/b(Ljava/lang/Object;Ljava/lang/String;)V
+  goto Label0
+  nop
+  nop
+.end <method>
+

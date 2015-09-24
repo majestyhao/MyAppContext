@@ -1,0 +1,91 @@
+.source PublicCustomAdapter.java
+.class  com/admogo/adapters/PublicCustomAdapter$WebViewTimeoutTask
+.super java/util/TimerTask
+.field "publicCustomAdapter" Lcom/admogo/adapters/PublicCustomAdapter;
+.field final "this$0" Lcom/admogo/adapters/PublicCustomAdapter;
+
+.method public <init>(Lcom/admogo/adapters/PublicCustomAdapter;Lcom/admogo/adapters/PublicCustomAdapter;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/adapters/PublicCustomAdapter$WebViewTimeoutTask/this$0 Lcom/admogo/adapters/PublicCustomAdapter;
+  aload_0
+  invokespecial java/util/TimerTask/<init>()V
+  aload_0
+  aload_2
+  putfield com/admogo/adapters/PublicCustomAdapter$WebViewTimeoutTask/publicCustomAdapter Lcom/admogo/adapters/PublicCustomAdapter;
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 9
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/PublicCustomAdapter$WebViewTimeoutTask/publicCustomAdapter Lcom/admogo/adapters/PublicCustomAdapter;
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore_2
+  aload_2
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore_3
+  aload_3
+  astore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 5
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 4
+  ifeq Label0
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 6
+  ldc "publiccustom webView load timeout"
+  astore 7
+  aload 6
+  aload 7
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aload_0
+  getfield com/admogo/adapters/PublicCustomAdapter$WebViewTimeoutTask/this$0 Lcom/admogo/adapters/PublicCustomAdapter;
+  astore_1
+  aload_1
+  invokestatic com/admogo/adapters/PublicCustomAdapter/access$3(Lcom/admogo/adapters/PublicCustomAdapter;)Landroid/webkit/WebView;
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label1
+  aload_0
+  getfield com/admogo/adapters/PublicCustomAdapter$WebViewTimeoutTask/this$0 Lcom/admogo/adapters/PublicCustomAdapter;
+  astore_1
+  aload_1
+  invokestatic com/admogo/adapters/PublicCustomAdapter/access$3(Lcom/admogo/adapters/PublicCustomAdapter;)Landroid/webkit/WebView;
+  astore 8
+  aload 8
+  invokevirtual android/webkit/WebView/stopLoading()V
+Label1:
+  aload 4
+  invokevirtual com/admogo/AdMogoLayout/rotateThreadedNow()V
+Label2:
+  return
+Label0:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 6
+  ldc "WebViewTimeoutTask AdMogoLayout reference fail AdMogo will sleep"
+  astore 7
+  aload 6
+  aload 7
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label2
+  nop
+.end <method>
+

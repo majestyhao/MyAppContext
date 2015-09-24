@@ -1,0 +1,383 @@
+.source UserLocation.java
+.class public final  MobWin/UserLocation
+.super com/qq/taf/jce/JceStruct
+.field static final "$assertionsDisabled" Z =  0
+.field static "cache_cell" LMobWin/Cell;
+.field static "cache_gps" LMobWin/GPS;
+.field public "cell" LMobWin/Cell;
+.field public "gps" LMobWin/GPS;
+
+.method static <clinit>()V
+.limit locals 2
+.limit stack 200
+  nop
+  ldc MobWin/UserLocation
+  astore_0
+  aload_0
+  invokevirtual java/lang/Class/desiredAssertionStatus()Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  iconst_1
+  istore_1
+Label1:
+  iload_1
+  putstatic MobWin/UserLocation/$assertionsDisabled Z
+  return
+Label0:
+  iconst_0
+  istore_1
+  goto Label1
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  aconst_null
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/UserLocation/gps LMobWin/GPS;
+  aconst_null
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/UserLocation/cell LMobWin/Cell;
+  aload_0
+  getfield MobWin/UserLocation/gps LMobWin/GPS;
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual MobWin/UserLocation/setGps(LMobWin/GPS;)V
+  aload_0
+  getfield MobWin/UserLocation/cell LMobWin/Cell;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual MobWin/UserLocation/setCell(LMobWin/Cell;)V
+  return
+  nop
+.end <method>
+
+.method public <init>(LMobWin/GPS;LMobWin/Cell;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield MobWin/UserLocation/gps LMobWin/GPS;
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield MobWin/UserLocation/cell LMobWin/Cell;
+  aload_0
+  aload_1
+  invokevirtual MobWin/UserLocation/setGps(LMobWin/GPS;)V
+  aload_0
+  aload_2
+  invokevirtual MobWin/UserLocation/setCell(LMobWin/Cell;)V
+  return
+  nop
+.end <method>
+
+.method public className()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  ldc "MobWin.UserLocation"
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public clone()Ljava/lang/Object;
+.limit locals 6
+.limit stack 200
+  .catch  java/lang/CloneNotSupportedException <from> Label2 <to> Label3 <using> Label1
+  nop
+  iconst_0
+  istore_1
+Label2:
+  aload_0
+  invokespecial java/lang/Object/clone()Ljava/lang/Object;
+  astore_2
+Label3:
+  aload_2
+  astore_1
+Label0:
+  aload_1
+  areturn
+Label1:
+  astore_3
+  getstatic MobWin/UserLocation/$assertionsDisabled Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifne Label0
+  new java/lang/AssertionError
+  astore 5
+  aload 5
+  invokespecial java/lang/AssertionError/<init>()V
+  aload 5
+  athrow
+  nop
+.end <method>
+
+.method public display(Ljava/lang/StringBuilder;I)V
+.limit locals 7
+.limit stack 200
+  nop
+  new com/qq/taf/jce/JceDisplayer
+  astore_3
+  aload_3
+  aload_1
+  iload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_0
+  getfield MobWin/UserLocation/gps LMobWin/GPS;
+  astore 4
+  ldc "gps"
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Lcom/qq/taf/jce/JceStruct;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/UserLocation/cell LMobWin/Cell;
+  astore 6
+  ldc "cell"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Lcom/qq/taf/jce/JceStruct;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  return
+  nop
+.end <method>
+
+.method public equals(Ljava/lang/Object;)Z
+.limit locals 10
+.limit stack 200
+  nop
+  aload_1
+  astore_3
+  aload_3
+  checkcast MobWin/UserLocation
+  astore_3
+  aload_3
+  astore_2
+  aload_0
+  getfield MobWin/UserLocation/gps LMobWin/GPS;
+  astore 4
+  aload_2
+  getfield MobWin/UserLocation/gps LMobWin/GPS;
+  astore 5
+  aload 4
+  aload 5
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/UserLocation/cell LMobWin/Cell;
+  astore 7
+  aload_2
+  getfield MobWin/UserLocation/cell LMobWin/Cell;
+  astore 8
+  aload 7
+  aload 8
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  iconst_1
+  istore 9
+  iload 9
+  ireturn
+Label0:
+  iconst_0
+  istore 9
+  iload 9
+  ireturn
+  nop
+.end <method>
+
+.method public getCell()LMobWin/Cell;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserLocation/cell LMobWin/Cell;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getGps()LMobWin/GPS;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserLocation/gps LMobWin/GPS;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public readFrom(Lcom/qq/taf/jce/JceInputStream;)V
+.limit locals 10
+.limit stack 200
+  nop
+  getstatic MobWin/UserLocation/cache_gps LMobWin/GPS;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  new MobWin/GPS
+  astore_2
+  aload_2
+  invokespecial MobWin/GPS/<init>()V
+  aload_2
+  putstatic MobWin/UserLocation/cache_gps LMobWin/GPS;
+Label0:
+  getstatic MobWin/UserLocation/cache_gps LMobWin/GPS;
+  astore_2
+  iconst_0
+  istore 4
+  iconst_1
+  istore 5
+  aload_1
+  aload_2
+  iload 4
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Lcom/qq/taf/jce/JceStruct;IZ)Lcom/qq/taf/jce/JceStruct;
+  astore_3
+  aload_3
+  astore 6
+  aload 6
+  checkcast MobWin/GPS
+  astore 6
+  aload 6
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual MobWin/UserLocation/setGps(LMobWin/GPS;)V
+  getstatic MobWin/UserLocation/cache_cell LMobWin/Cell;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnonnull Label1
+  new MobWin/Cell
+  astore 7
+  aload 7
+  invokespecial MobWin/Cell/<init>()V
+  aload 7
+  putstatic MobWin/UserLocation/cache_cell LMobWin/Cell;
+Label1:
+  getstatic MobWin/UserLocation/cache_cell LMobWin/Cell;
+  astore 7
+  iconst_1
+  istore 4
+  iload 4
+  istore 8
+  iconst_1
+  istore 4
+  aload_1
+  aload 7
+  iload 8
+  iload 4
+  invokevirtual com/qq/taf/jce/JceInputStream/read(Lcom/qq/taf/jce/JceStruct;IZ)Lcom/qq/taf/jce/JceStruct;
+  astore_3
+  aload_3
+  astore 9
+  aload 9
+  checkcast MobWin/Cell
+  astore 9
+  aload 9
+  astore 7
+  aload_0
+  aload 7
+  invokevirtual MobWin/UserLocation/setCell(LMobWin/Cell;)V
+  return
+  nop
+.end <method>
+
+.method public setCell(LMobWin/Cell;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/UserLocation/cell LMobWin/Cell;
+  return
+  nop
+.end <method>
+
+.method public setGps(LMobWin/GPS;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/UserLocation/gps LMobWin/GPS;
+  return
+  nop
+.end <method>
+
+.method public writeTo(Lcom/qq/taf/jce/JceOutputStream;)V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/UserLocation/gps LMobWin/GPS;
+  astore_2
+  iconst_0
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Lcom/qq/taf/jce/JceStruct;I)V
+  aload_0
+  getfield MobWin/UserLocation/cell LMobWin/Cell;
+  astore 4
+  iconst_1
+  istore_3
+  aload_1
+  aload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Lcom/qq/taf/jce/JceStruct;I)V
+  return
+  nop
+.end <method>
+

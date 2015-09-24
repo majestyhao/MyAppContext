@@ -1,0 +1,92 @@
+.source SourceFile
+.class final  com/mobisage/android/ae
+.super com/mobisage/android/P
+
+.method <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/mobisage/android/P/<init>()V
+  return
+  nop
+.end <method>
+
+.method public final a(I)Landroid/view/animation/Animation;
+.limit locals 9
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  invokestatic com/mobisage/android/MobiSageAdSize/c(I)I
+  istore_1
+  iload_1
+  i2f
+  fstore_3
+  ldc -1.000000
+  fstore 4
+  fload 4
+  fload_3
+  fmul
+  fstore_3
+  fconst_0
+  fstore 4
+  fconst_0
+  fstore 5
+  fconst_0
+  fstore 6
+  aload_2
+  fload 4
+  fload 5
+  fload_3
+  fload 6
+  invokespecial android/view/animation/TranslateAnimation/<init>(FFFF)V
+  ldc2_w 1000
+  lstore 7
+  aload_2
+  lload 7
+  invokevirtual android/view/animation/TranslateAnimation/setDuration(J)V
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public final b(I)Landroid/view/animation/Animation;
+.limit locals 9
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  invokestatic com/mobisage/android/MobiSageAdSize/c(I)I
+  istore_1
+  iload_1
+  i2f
+  fstore_3
+  fconst_0
+  fstore 4
+  fconst_0
+  fstore 5
+  fconst_0
+  fstore 6
+  aload_2
+  fload 4
+  fload 5
+  fload 6
+  fload_3
+  invokespecial android/view/animation/TranslateAnimation/<init>(FFFF)V
+  ldc2_w 1000
+  lstore 7
+  aload_2
+  lload 7
+  invokevirtual android/view/animation/TranslateAnimation/setDuration(J)V
+  aload_2
+  areturn
+  nop
+.end <method>
+

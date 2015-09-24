@@ -1,0 +1,431 @@
+.source SourceFile
+.class public  com/adwo/adsdk/V
+.super java/lang/Object
+.field protected final "a" Landroid/view/View;
+.field final "b" Landroid/widget/PopupWindow;
+.field "c" Landroid/view/View;
+.field private "d" Landroid/graphics/drawable/Drawable;
+.field private final "e" Landroid/view/WindowManager;
+
+.method public <init>(Landroid/view/View;)V
+.limit locals 10
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aconst_null
+  astore_2
+  aload_0
+  aload_2
+  putfield com/adwo/adsdk/V/d Landroid/graphics/drawable/Drawable;
+  aload_0
+  aload_1
+  putfield com/adwo/adsdk/V/a Landroid/view/View;
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_1
+  invokevirtual android/view/View/getContext()Landroid/content/Context;
+  astore 4
+  aload_3
+  aload 4
+  invokespecial android/widget/PopupWindow/<init>(Landroid/content/Context;)V
+  aload_0
+  aload_3
+  putfield com/adwo/adsdk/V/b Landroid/widget/PopupWindow;
+  aload_0
+  getfield com/adwo/adsdk/V/b Landroid/widget/PopupWindow;
+  astore_3
+  new com/adwo/adsdk/W
+  astore 5
+  aload 5
+  aload_0
+  invokespecial com/adwo/adsdk/W/<init>(Lcom/adwo/adsdk/V;)V
+  aload_3
+  aload 5
+  invokevirtual android/widget/PopupWindow/setTouchInterceptor(Landroid/view/View$OnTouchListener;)V
+  aload_0
+  getfield com/adwo/adsdk/V/a Landroid/view/View;
+  astore_1
+  aload_1
+  invokevirtual android/view/View/getContext()Landroid/content/Context;
+  astore 4
+  ldc "window"
+  astore 7
+  aload 4
+  aload 7
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 6
+  aload 6
+  astore 9
+  aload 9
+  checkcast android/view/WindowManager
+  astore 9
+  aload 9
+  astore 8
+  aload_0
+  aload 8
+  putfield com/adwo/adsdk/V/e Landroid/view/WindowManager;
+  aload_0
+  invokevirtual com/adwo/adsdk/V/b()V
+  return
+  nop
+.end <method>
+
+.method public final a(Z)V
+.limit locals 19
+.limit stack 200
+  nop
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/c Landroid/view/View;
+  astore_3
+  aload_2
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifne Label0
+  new java/lang/IllegalStateException
+  astore 4
+  ldc "setContentView was not called with a view to display."
+  astore 5
+  aload 4
+  aload 5
+  invokespecial java/lang/IllegalStateException/<init>(Ljava/lang/String;)V
+  aload 4
+  athrow
+Label0:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/b Landroid/widget/PopupWindow;
+  astore 6
+  new android/graphics/drawable/BitmapDrawable
+  astore 7
+  aload 7
+  invokespecial android/graphics/drawable/BitmapDrawable/<init>()V
+  aload 6
+  aload 7
+  invokevirtual android/widget/PopupWindow/setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/b Landroid/widget/PopupWindow;
+  astore 6
+  bipush -2
+  istore 8
+  aload 6
+  iload 8
+  invokevirtual android/widget/PopupWindow/setWidth(I)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/b Landroid/widget/PopupWindow;
+  astore 6
+  bipush -2
+  istore 8
+  aload 6
+  iload 8
+  invokevirtual android/widget/PopupWindow/setHeight(I)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/b Landroid/widget/PopupWindow;
+  astore 6
+  iconst_1
+  istore 8
+  aload 6
+  iload 8
+  invokevirtual android/widget/PopupWindow/setTouchable(Z)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/b Landroid/widget/PopupWindow;
+  astore 6
+  iconst_1
+  istore 8
+  aload 6
+  iload 8
+  invokevirtual android/widget/PopupWindow/setFocusable(Z)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/b Landroid/widget/PopupWindow;
+  astore 6
+  iconst_1
+  istore 8
+  aload 6
+  iload 8
+  invokevirtual android/widget/PopupWindow/setOutsideTouchable(Z)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/b Landroid/widget/PopupWindow;
+  astore 6
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/c Landroid/view/View;
+  astore_3
+  aload_2
+  astore_0
+  aload 6
+  aload_3
+  invokevirtual android/widget/PopupWindow/setContentView(Landroid/view/View;)V
+  iload_1
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label1
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/b Landroid/widget/PopupWindow;
+  astore 6
+  ldc 2131099650
+  istore 8
+  aload 6
+  iload 8
+  invokevirtual android/widget/PopupWindow/setAnimationStyle(I)V
+Label3:
+  iconst_2
+  istore 8
+  iload 8
+  newarray int
+  astore 9
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/a Landroid/view/View;
+  astore_3
+  aload_2
+  astore_0
+  aload_3
+  aload 9
+  invokevirtual android/view/View/getLocationOnScreen([I)V
+  new android/graphics/Rect
+  astore 10
+  iconst_0
+  istore 8
+  aload 9
+  iload 8
+  iaload
+  istore 11
+  iconst_1
+  istore 8
+  iload 8
+  istore 12
+  aload 9
+  iload 12
+  iaload
+  istore 13
+  iconst_0
+  istore 8
+  aload 9
+  iload 8
+  iaload
+  istore 14
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/a Landroid/view/View;
+  astore_3
+  aload_2
+  astore_0
+  aload_3
+  invokevirtual android/view/View/getWidth()I
+  istore 15
+  iload 14
+  iload 15
+  iadd
+  istore 15
+  iconst_1
+  istore 8
+  iload 8
+  istore 12
+  aload 9
+  iload 12
+  iaload
+  istore 14
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/a Landroid/view/View;
+  astore_3
+  aload_2
+  astore_0
+  aload_3
+  invokevirtual android/view/View/getHeight()I
+  istore 12
+  iload 14
+  iload 12
+  iadd
+  istore 12
+  aload 10
+  iload 11
+  iload 13
+  iload 15
+  iload 12
+  invokespecial android/graphics/Rect/<init>(IIII)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/c Landroid/view/View;
+  astore_3
+  aload_2
+  astore_0
+  bipush -2
+  istore 8
+  bipush -2
+  istore 16
+  aload_3
+  iload 8
+  iload 16
+  invokevirtual android/view/View/measure(II)V
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/c Landroid/view/View;
+  astore_3
+  aload_2
+  astore_0
+  aload_3
+  invokevirtual android/view/View/getMeasuredWidth()I
+  istore 12
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/c Landroid/view/View;
+  astore_3
+  aload_2
+  astore_0
+  aload_3
+  invokevirtual android/view/View/getMeasuredHeight()I
+  istore 15
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/e Landroid/view/WindowManager;
+  astore 17
+  aload 17
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 18
+  aload 18
+  astore_2
+  aload_2
+  invokevirtual android/view/Display/getWidth()I
+  istore 14
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/e Landroid/view/WindowManager;
+  astore 17
+  aload 17
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 18
+  aload 18
+  astore_2
+  aload_2
+  invokevirtual android/view/Display/getHeight()I
+  pop
+  iload 14
+  iload 12
+  isub
+  istore 12
+  iload 12
+  iconst_2
+  idiv
+  istore 12
+  iload 12
+  iconst_0
+  iadd
+  istore 12
+  aload 10
+  getfield android/graphics/Rect/top I
+  istore 14
+  iload 14
+  iload 15
+  isub
+  istore 14
+  iload 14
+  iconst_0
+  iadd
+  istore 14
+  aload 10
+  getfield android/graphics/Rect/top I
+  istore 13
+  dload 15
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 15
+  iload 13
+  if_icmple Label2
+  aload 10
+  getfield android/graphics/Rect/bottom I
+  istore 15
+  iload 15
+  iconst_0
+  iadd
+  istore 14
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/b Landroid/widget/PopupWindow;
+  astore 6
+  ldc 2131099650
+  istore 8
+  aload 6
+  iload 8
+  invokevirtual android/widget/PopupWindow/setAnimationStyle(I)V
+Label2:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/b Landroid/widget/PopupWindow;
+  astore 6
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/a Landroid/view/View;
+  astore_3
+  aload_2
+  astore_0
+  iconst_0
+  istore 8
+  aload 6
+  aload_3
+  iload 8
+  iload 12
+  iload 14
+  invokevirtual android/widget/PopupWindow/showAtLocation(Landroid/view/View;III)V
+  return
+Label1:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/adwo/adsdk/V/b Landroid/widget/PopupWindow;
+  astore 6
+  ldc 2131099649
+  istore 8
+  aload 6
+  iload 8
+  invokevirtual android/widget/PopupWindow/setAnimationStyle(I)V
+  goto Label3
+  nop
+.end <method>
+
+.method protected b()V
+.limit locals 1
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+

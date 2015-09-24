@@ -1,0 +1,51 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/AdView$3
+.super java/util/TimerTask
+.field final "a" Lcom/wiyun/ad/AdView;
+
+.method <init>(Lcom/wiyun/ad/AdView;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/wiyun/ad/AdView$3/a Lcom/wiyun/ad/AdView;
+  aload_0
+  invokespecial java/util/TimerTask/<init>()V
+  return
+  nop
+.end <method>
+
+.method static a(Lcom/wiyun/ad/AdView$3;)Lcom/wiyun/ad/AdView;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/AdView$3/a Lcom/wiyun/ad/AdView;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/AdView$3/a Lcom/wiyun/ad/AdView;
+  astore_1
+  new com/wiyun/ad/AdView$3$1
+  astore_2
+  aload_2
+  aload_0
+  invokespecial com/wiyun/ad/AdView$3$1/<init>(Lcom/wiyun/ad/AdView$3;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+

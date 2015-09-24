@@ -1,0 +1,65 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class final  com/kuguo/ad/f
+.super java/lang/Object
+.implements  com/kuguo/a/d
+.field final "a" Landroid/content/Context;
+.field final "b" Lcom/kuguo/ad/p;
+
+.method <init>(Landroid/content/Context;Lcom/kuguo/ad/p;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/kuguo/ad/f/a Landroid/content/Context;
+  aload_0
+  aload_2
+  putfield com/kuguo/ad/f/b Lcom/kuguo/ad/p;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public a(Lcom/kuguo/a/f;I)V
+.limit locals 8
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_4
+  istore_3
+  iload_2
+  iload_3
+  if_icmpne Label0
+  aload_0
+  getfield com/kuguo/ad/f/a Landroid/content/Context;
+  astore 4
+  aload_1
+  invokevirtual com/kuguo/a/f/b()Ljava/io/File;
+  astore 5
+  aload 5
+  invokevirtual java/io/File/getPath()Ljava/lang/String;
+  astore 6
+  aload_0
+  getfield com/kuguo/ad/f/b Lcom/kuguo/ad/p;
+  astore 7
+  aload 4
+  aload 6
+  aload 7
+  invokestatic com/kuguo/ad/MainActivity/a(Landroid/content/Context;Ljava/lang/String;Lcom/kuguo/ad/p;)V
+Label0:
+  return
+  nop
+.end <method>
+
+.method public a(Lcom/kuguo/a/f;J)V
+.limit locals 4
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+

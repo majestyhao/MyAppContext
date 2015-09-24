@@ -1,0 +1,1158 @@
+.source AppInfo.java
+.class public final  MobWin/AppInfo
+.super com/qq/taf/jce/JceStruct
+.field static final "$assertionsDisabled" Z =  0
+.field static "cache_app_mode" I =  0
+.field public "app_id" Ljava/lang/String;
+.field public "app_key" Ljava/lang/String;
+.field public "app_mode" I
+.field public "app_name" Ljava/lang/String;
+.field public "app_signature" Ljava/lang/String;
+.field public "app_version" Ljava/lang/String;
+.field public "app_version_code" Ljava/lang/String;
+.field public "aux_key" Ljava/lang/String;
+.field public "integrateId" Ljava/lang/String;
+.field public "release_channel" Ljava/lang/String;
+.field public "sdk_version" Ljava/lang/String;
+
+.method static <clinit>()V
+.limit locals 2
+.limit stack 200
+  nop
+  ldc MobWin/AppInfo
+  astore_0
+  aload_0
+  invokevirtual java/lang/Class/desiredAssertionStatus()Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  iconst_1
+  istore_1
+Label1:
+  iload_1
+  putstatic MobWin/AppInfo/$assertionsDisabled Z
+  return
+Label0:
+  iconst_0
+  istore_1
+  goto Label1
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/app_id Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/app_key Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/app_name Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/app_signature Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/app_version Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/aux_key Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/sdk_version Ljava/lang/String;
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield MobWin/AppInfo/app_mode I
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/app_version_code Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/release_channel Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/integrateId Ljava/lang/String;
+  aload_0
+  getfield MobWin/AppInfo/app_id Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual MobWin/AppInfo/setApp_id(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/AppInfo/app_key Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual MobWin/AppInfo/setApp_key(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/AppInfo/app_name Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual MobWin/AppInfo/setApp_name(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/AppInfo/app_signature Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual MobWin/AppInfo/setApp_signature(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/AppInfo/app_version Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual MobWin/AppInfo/setApp_version(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/AppInfo/aux_key Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual MobWin/AppInfo/setAux_key(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/AppInfo/sdk_version Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual MobWin/AppInfo/setSdk_version(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/AppInfo/app_mode I
+  istore 4
+  aload_0
+  iload 4
+  invokevirtual MobWin/AppInfo/setApp_mode(I)V
+  aload_0
+  getfield MobWin/AppInfo/app_version_code Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual MobWin/AppInfo/setApp_version_code(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/AppInfo/release_channel Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual MobWin/AppInfo/setRelease_channel(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/AppInfo/integrateId Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual MobWin/AppInfo/setIntegrateId(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 14
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/qq/taf/jce/JceStruct/<init>()V
+  ldc ""
+  astore 12
+  aload_0
+  aload 12
+  putfield MobWin/AppInfo/app_id Ljava/lang/String;
+  ldc ""
+  astore 12
+  aload_0
+  aload 12
+  putfield MobWin/AppInfo/app_key Ljava/lang/String;
+  ldc ""
+  astore 12
+  aload_0
+  aload 12
+  putfield MobWin/AppInfo/app_name Ljava/lang/String;
+  ldc ""
+  astore 12
+  aload_0
+  aload 12
+  putfield MobWin/AppInfo/app_signature Ljava/lang/String;
+  ldc ""
+  astore 12
+  aload_0
+  aload 12
+  putfield MobWin/AppInfo/app_version Ljava/lang/String;
+  ldc ""
+  astore 12
+  aload_0
+  aload 12
+  putfield MobWin/AppInfo/aux_key Ljava/lang/String;
+  ldc ""
+  astore 12
+  aload_0
+  aload 12
+  putfield MobWin/AppInfo/sdk_version Ljava/lang/String;
+  iconst_0
+  istore 13
+  aload_0
+  iload 13
+  putfield MobWin/AppInfo/app_mode I
+  ldc ""
+  astore 12
+  aload_0
+  aload 12
+  putfield MobWin/AppInfo/app_version_code Ljava/lang/String;
+  ldc ""
+  astore 12
+  aload_0
+  aload 12
+  putfield MobWin/AppInfo/release_channel Ljava/lang/String;
+  ldc ""
+  astore 12
+  aload_0
+  aload 12
+  putfield MobWin/AppInfo/integrateId Ljava/lang/String;
+  aload_0
+  aload_1
+  invokevirtual MobWin/AppInfo/setApp_id(Ljava/lang/String;)V
+  aload_0
+  aload_2
+  invokevirtual MobWin/AppInfo/setApp_key(Ljava/lang/String;)V
+  aload_0
+  aload_3
+  invokevirtual MobWin/AppInfo/setApp_name(Ljava/lang/String;)V
+  aload_0
+  aload 4
+  invokevirtual MobWin/AppInfo/setApp_signature(Ljava/lang/String;)V
+  aload_0
+  aload 5
+  invokevirtual MobWin/AppInfo/setApp_version(Ljava/lang/String;)V
+  aload_0
+  aload 6
+  invokevirtual MobWin/AppInfo/setAux_key(Ljava/lang/String;)V
+  aload_0
+  aload 7
+  invokevirtual MobWin/AppInfo/setSdk_version(Ljava/lang/String;)V
+  aload_0
+  iload 8
+  invokevirtual MobWin/AppInfo/setApp_mode(I)V
+  aload_0
+  aload 9
+  invokevirtual MobWin/AppInfo/setApp_version_code(Ljava/lang/String;)V
+  aload_0
+  aload 10
+  invokevirtual MobWin/AppInfo/setRelease_channel(Ljava/lang/String;)V
+  aload_0
+  aload 11
+  invokevirtual MobWin/AppInfo/setIntegrateId(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public className()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  ldc "MobWin.AppInfo"
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public clone()Ljava/lang/Object;
+.limit locals 6
+.limit stack 200
+  .catch  java/lang/CloneNotSupportedException <from> Label2 <to> Label3 <using> Label1
+  nop
+  iconst_0
+  istore_1
+Label2:
+  aload_0
+  invokespecial java/lang/Object/clone()Ljava/lang/Object;
+  astore_2
+Label3:
+  aload_2
+  astore_1
+Label0:
+  aload_1
+  areturn
+Label1:
+  astore_3
+  getstatic MobWin/AppInfo/$assertionsDisabled Z
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifne Label0
+  new java/lang/AssertionError
+  astore 5
+  aload 5
+  invokespecial java/lang/AssertionError/<init>()V
+  aload 5
+  athrow
+  nop
+.end <method>
+
+.method public display(Ljava/lang/StringBuilder;I)V
+.limit locals 7
+.limit stack 200
+  nop
+  new com/qq/taf/jce/JceDisplayer
+  astore_3
+  aload_3
+  aload_1
+  iload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_0
+  getfield MobWin/AppInfo/app_id Ljava/lang/String;
+  astore 4
+  ldc "app_id"
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/AppInfo/app_key Ljava/lang/String;
+  astore 6
+  ldc "app_key"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/AppInfo/app_name Ljava/lang/String;
+  astore 6
+  ldc "app_name"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/AppInfo/app_signature Ljava/lang/String;
+  astore 6
+  ldc "app_signature"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/AppInfo/app_version Ljava/lang/String;
+  astore 6
+  ldc "app_version"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/AppInfo/aux_key Ljava/lang/String;
+  astore 6
+  ldc "aux_key"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/AppInfo/sdk_version Ljava/lang/String;
+  astore 6
+  ldc "sdk_version"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/AppInfo/app_mode I
+  istore_2
+  ldc "app_mode"
+  astore 5
+  aload_3
+  iload_2
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/AppInfo/app_version_code Ljava/lang/String;
+  astore 6
+  ldc "app_version_code"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/AppInfo/release_channel Ljava/lang/String;
+  astore 6
+  ldc "release_channel"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  getfield MobWin/AppInfo/integrateId Ljava/lang/String;
+  astore 6
+  ldc "integrateId"
+  astore 5
+  aload_3
+  aload 6
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  return
+  nop
+.end <method>
+
+.method public equals(Ljava/lang/Object;)Z
+.limit locals 10
+.limit stack 200
+  nop
+  aload_1
+  astore_3
+  aload_3
+  checkcast MobWin/AppInfo
+  astore_3
+  aload_3
+  astore_2
+  aload_0
+  getfield MobWin/AppInfo/app_id Ljava/lang/String;
+  astore 4
+  aload_2
+  getfield MobWin/AppInfo/app_id Ljava/lang/String;
+  astore 5
+  aload 4
+  aload 5
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/AppInfo/app_key Ljava/lang/String;
+  astore 5
+  aload_2
+  getfield MobWin/AppInfo/app_key Ljava/lang/String;
+  astore 4
+  aload 5
+  aload 4
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/AppInfo/app_name Ljava/lang/String;
+  astore 5
+  aload_2
+  getfield MobWin/AppInfo/app_name Ljava/lang/String;
+  astore 4
+  aload 5
+  aload 4
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/AppInfo/app_signature Ljava/lang/String;
+  astore 5
+  aload_2
+  getfield MobWin/AppInfo/app_signature Ljava/lang/String;
+  astore 4
+  aload 5
+  aload 4
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/AppInfo/app_version Ljava/lang/String;
+  astore 5
+  aload_2
+  getfield MobWin/AppInfo/app_version Ljava/lang/String;
+  astore 4
+  aload 5
+  aload 4
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/AppInfo/aux_key Ljava/lang/String;
+  astore 5
+  aload_2
+  getfield MobWin/AppInfo/aux_key Ljava/lang/String;
+  astore 4
+  aload 5
+  aload 4
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/AppInfo/sdk_version Ljava/lang/String;
+  astore 5
+  aload_2
+  getfield MobWin/AppInfo/sdk_version Ljava/lang/String;
+  astore 4
+  aload 5
+  aload 4
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/AppInfo/app_mode I
+  istore 7
+  aload_2
+  getfield MobWin/AppInfo/app_mode I
+  istore 8
+  iload 7
+  iload 8
+  invokestatic com/qq/taf/jce/JceUtil/equals(II)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/AppInfo/app_version_code Ljava/lang/String;
+  astore 5
+  aload_2
+  getfield MobWin/AppInfo/app_version_code Ljava/lang/String;
+  astore 4
+  aload 5
+  aload 4
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/AppInfo/release_channel Ljava/lang/String;
+  astore 5
+  aload_2
+  getfield MobWin/AppInfo/release_channel Ljava/lang/String;
+  astore 4
+  aload 5
+  aload 4
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  getfield MobWin/AppInfo/integrateId Ljava/lang/String;
+  astore 5
+  aload_2
+  getfield MobWin/AppInfo/integrateId Ljava/lang/String;
+  astore 4
+  aload 5
+  aload 4
+  invokestatic com/qq/taf/jce/JceUtil/equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  iconst_1
+  istore 9
+  iload 9
+  ireturn
+Label0:
+  iconst_0
+  istore 9
+  iload 9
+  ireturn
+  nop
+.end <method>
+
+.method public getApp_id()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/AppInfo/app_id Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getApp_key()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/AppInfo/app_key Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getApp_mode()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/AppInfo/app_mode I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public getApp_name()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/AppInfo/app_name Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getApp_signature()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/AppInfo/app_signature Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getApp_version()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/AppInfo/app_version Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getApp_version_code()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/AppInfo/app_version_code Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getAux_key()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/AppInfo/aux_key Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getIntegrateId()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/AppInfo/integrateId Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getRelease_channel()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/AppInfo/release_channel Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getSdk_version()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/AppInfo/sdk_version Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public readFrom(Lcom/qq/taf/jce/JceInputStream;)V
+.limit locals 6
+.limit stack 200
+  nop
+  iconst_0
+  istore_3
+  iload_3
+  istore_2
+  iconst_1
+  istore_3
+  aload_1
+  iload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/AppInfo/setApp_id(Ljava/lang/String;)V
+  iconst_1
+  istore_3
+  iload_3
+  istore_2
+  iconst_1
+  istore_3
+  aload_1
+  iload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/AppInfo/setApp_key(Ljava/lang/String;)V
+  iconst_2
+  istore_3
+  iconst_1
+  istore 5
+  aload_1
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/AppInfo/setApp_name(Ljava/lang/String;)V
+  iconst_3
+  istore_3
+  iconst_1
+  istore 5
+  aload_1
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/AppInfo/setApp_signature(Ljava/lang/String;)V
+  iconst_4
+  istore_3
+  iconst_1
+  istore 5
+  aload_1
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/AppInfo/setApp_version(Ljava/lang/String;)V
+  iconst_5
+  istore_3
+  iconst_1
+  istore 5
+  aload_1
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/AppInfo/setAux_key(Ljava/lang/String;)V
+  bipush 6
+  istore_3
+  iconst_1
+  istore 5
+  aload_1
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/AppInfo/setSdk_version(Ljava/lang/String;)V
+  aload_0
+  getfield MobWin/AppInfo/app_mode I
+  istore_2
+  bipush 7
+  istore_3
+  iconst_1
+  istore 5
+  aload_1
+  iload_2
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/read(IIZ)I
+  istore_2
+  aload_0
+  iload_2
+  invokevirtual MobWin/AppInfo/setApp_mode(I)V
+  bipush 8
+  istore_3
+  iconst_0
+  istore 5
+  aload_1
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/AppInfo/setApp_version_code(Ljava/lang/String;)V
+  bipush 9
+  istore_3
+  iconst_0
+  istore 5
+  aload_1
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/AppInfo/setRelease_channel(Ljava/lang/String;)V
+  bipush 10
+  istore_3
+  iconst_0
+  istore 5
+  aload_1
+  iload_3
+  iload 5
+  invokevirtual com/qq/taf/jce/JceInputStream/readString(IZ)Ljava/lang/String;
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual MobWin/AppInfo/setIntegrateId(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public setApp_id(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/app_id Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setApp_key(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/app_key Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setApp_mode(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield MobWin/AppInfo/app_mode I
+  return
+  nop
+.end <method>
+
+.method public setApp_name(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/app_name Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setApp_signature(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/app_signature Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setApp_version(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/app_version Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setApp_version_code(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/app_version_code Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setAux_key(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/aux_key Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setIntegrateId(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/integrateId Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setRelease_channel(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/release_channel Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public setSdk_version(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield MobWin/AppInfo/sdk_version Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public writeTo(Lcom/qq/taf/jce/JceOutputStream;)V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield MobWin/AppInfo/app_id Ljava/lang/String;
+  astore_2
+  iconst_0
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+  aload_0
+  getfield MobWin/AppInfo/app_key Ljava/lang/String;
+  astore_2
+  iconst_1
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+  aload_0
+  getfield MobWin/AppInfo/app_name Ljava/lang/String;
+  astore_2
+  iconst_2
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+  aload_0
+  getfield MobWin/AppInfo/app_signature Ljava/lang/String;
+  astore_2
+  iconst_3
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+  aload_0
+  getfield MobWin/AppInfo/app_version Ljava/lang/String;
+  astore_2
+  iconst_4
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+  aload_0
+  getfield MobWin/AppInfo/aux_key Ljava/lang/String;
+  astore_2
+  iconst_5
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+  aload_0
+  getfield MobWin/AppInfo/sdk_version Ljava/lang/String;
+  astore_2
+  bipush 6
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+  aload_0
+  getfield MobWin/AppInfo/app_mode I
+  istore 4
+  bipush 7
+  istore_3
+  aload_1
+  iload 4
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(II)V
+  aload_0
+  getfield MobWin/AppInfo/app_version_code Ljava/lang/String;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_0
+  getfield MobWin/AppInfo/app_version_code Ljava/lang/String;
+  astore_2
+  bipush 8
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+Label0:
+  aload_0
+  getfield MobWin/AppInfo/release_channel Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label1
+  aload_0
+  getfield MobWin/AppInfo/release_channel Ljava/lang/String;
+  astore_2
+  bipush 9
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+Label1:
+  aload_0
+  getfield MobWin/AppInfo/integrateId Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label2
+  aload_0
+  getfield MobWin/AppInfo/integrateId Ljava/lang/String;
+  astore_2
+  bipush 10
+  istore_3
+  aload_1
+  aload_2
+  iload_3
+  invokevirtual com/qq/taf/jce/JceOutputStream/write(Ljava/lang/String;I)V
+Label2:
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,961 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/wiyun/ad/g
+.super java/lang/Object
+.field private static "a" Ljava/io/File;
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method static a()Landroid/database/sqlite/SQLiteDatabase;
+.limit locals 17
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label16 <to> Label17 <using> Label15
+  .catch  java/lang/Throwable <from> Label17 <to> Label19 <using> Label15
+  .catch  java/lang/Throwable <from> Label19 <to> Label20 <using> Label15
+  .catch  java/lang/Throwable <from> Label21 <to> Label22 <using> Label15
+  .catch  java/lang/Throwable <from> Label24 <to> Label25 <using> Label15
+  .catch  java/lang/Throwable <from> Label29 <to> Label15 <using> Label15
+  nop
+  iconst_0
+  istore_0
+  ldc com/wiyun/ad/g
+  astore_1
+  aload_1
+  monitorenter
+Label16:
+  getstatic com/wiyun/ad/g/a Ljava/io/File;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+Label17:
+  invokestatic com/wiyun/ad/x/a()Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label0
+  new java/io/File
+  astore 4
+  invokestatic android/os/Environment/getExternalStorageDirectory()Ljava/io/File;
+  astore_2
+  aload_2
+  invokevirtual java/io/File/getPath()Ljava/lang/String;
+  astore 5
+  ldc ".wiyun/winotice/winotice.db"
+  astore 6
+  aload 4
+  aload 5
+  aload 6
+  invokespecial java/io/File/<init>(Ljava/lang/String;Ljava/lang/String;)V
+Label19:
+  aload 4
+  putstatic com/wiyun/ad/g/a Ljava/io/File;
+Label0:
+  getstatic com/wiyun/ad/g/a Ljava/io/File;
+  astore 4
+Label20:
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnonnull Label1
+Label3:
+  ldc com/wiyun/ad/g
+  astore_1
+  aload_1
+  monitorexit
+  aload_0
+  areturn
+Label1:
+  getstatic com/wiyun/ad/g/a Ljava/io/File;
+  astore 4
+Label21:
+  aload 4
+  invokevirtual java/io/File/getParentFile()Ljava/io/File;
+  astore 4
+  aload 4
+  invokevirtual java/io/File/exists()Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifne Label2
+  getstatic com/wiyun/ad/g/a Ljava/io/File;
+  astore 4
+  aload 4
+  invokevirtual java/io/File/getParentFile()Ljava/io/File;
+  astore 4
+  aload 4
+  invokevirtual java/io/File/mkdirs()Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label3
+Label2:
+  getstatic com/wiyun/ad/g/a Ljava/io/File;
+  astore 4
+  aload 4
+  invokevirtual java/io/File/exists()Z
+  istore_3
+  getstatic com/wiyun/ad/g/a Ljava/io/File;
+  astore 4
+  aconst_null
+  astore 8
+  aload 4
+  aload 8
+  invokestatic android/database/sqlite/SQLiteDatabase/openOrCreateDatabase(Ljava/io/File;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;)Landroid/database/sqlite/SQLiteDatabase;
+  astore 7
+Label22:
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label3
+Label24:
+  iconst_1
+  istore 9
+  aload 7
+  iload 9
+  invokevirtual android/database/sqlite/SQLiteDatabase/setLockingEnabled(Z)V
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifne Label4
+  iconst_1
+  istore 9
+  aload 7
+  iload 9
+  invokevirtual android/database/sqlite/SQLiteDatabase/setVersion(I)V
+  aload 7
+  invokestatic com/wiyun/ad/k$b/a(Landroid/database/sqlite/SQLiteDatabase;)V
+Label8:
+  aload 7
+  astore_0
+  goto Label3
+Label4:
+  aload 7
+  invokevirtual android/database/sqlite/SQLiteDatabase/getVersion()I
+  istore 10
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 9
+  iload 9
+  iload 10
+  if_icmple Label5
+  iconst_1
+  dstore 11
+Label9:
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 9
+  iload 9
+  iload 10
+  if_icmpgt Label6
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 11
+  ifeq Label7
+  iconst_1
+  istore 9
+  aload 7
+  iload 9
+  invokevirtual android/database/sqlite/SQLiteDatabase/setVersion(I)V
+  goto Label8
+Label5:
+  iconst_0
+  dstore 11
+  goto Label9
+Label6:
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  lookupswitch
+  1 : Label11
+  default : Label10
+Label10:
+  goto Label12
+Label12:
+  iload 10
+  iconst_1
+  iadd
+  istore 10
+  goto Label9
+Label11:
+  invokestatic com/wiyun/ad/g/b()V
+Label25:
+  goto Label12
+Label23:
+  astore 12
+Label14:
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label13
+Label28:
+  aload 7
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+Label13:
+  aconst_null
+  astore 7
+  goto Label8
+Label27:
+  astore 13
+  aconst_null
+  astore 7
+  goto Label8
+Label26:
+  astore 14
+Label29:
+  aload 14
+  athrow
+Label15:
+  astore 15
+  ldc com/wiyun/ad/g
+  astore_1
+  aload_1
+  monitorexit
+  aload 15
+  athrow
+Label18:
+  astore 16
+  aconst_null
+  astore 7
+  goto Label14
+Label7:
+  goto Label8
+  nop
+  nop
+.end <method>
+
+.method static a(Ljava/lang/String;)V
+.limit locals 12
+.limit stack 200
+  nop
+  invokestatic com/wiyun/ad/g/a()Landroid/database/sqlite/SQLiteDatabase;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+Label1:
+  return
+Label0:
+  new android/content/ContentValues
+  astore_2
+Label5:
+  aload_2
+  invokespecial android/content/ContentValues/<init>()V
+  ldc "ap"
+  astore_3
+  aload_2
+  aload_3
+  aload_0
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  iconst_1
+  istore 5
+  iload 5
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 4
+  ldc "i"
+  astore_3
+  aload_2
+  aload_3
+  aload 4
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/Integer;)V
+  ldc "na"
+  astore_3
+  aconst_null
+  astore 6
+  aload_1
+  aload_3
+  aload 6
+  aload_2
+  invokevirtual android/database/sqlite/SQLiteDatabase/insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
+  pop2
+Label6:
+  aload_1
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+Label8:
+  goto Label1
+Label7:
+  astore 7
+  goto Label1
+Label4:
+  astore 8
+Label10:
+  aload_1
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+Label11:
+  goto Label1
+Label9:
+  astore 9
+  goto Label1
+Label3:
+  astore 10
+Label13:
+  aload_1
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+Label2:
+  aload 10
+  athrow
+Label12:
+  astore 11
+  goto Label2
+  nop
+.end <method>
+
+.method private static b()V
+.limit locals 0
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+
+.method static b(Ljava/lang/String;)Z
+.limit locals 36
+.limit stack 200
+  nop
+  iconst_0
+  istore 9
+  invokestatic com/wiyun/ad/g/a()Landroid/database/sqlite/SQLiteDatabase;
+  astore 10
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 10
+  ifne Label0
+  iconst_0
+  istore 11
+  iload 11
+  ireturn
+Label0:
+  new java/lang/StringBuilder
+  astore 12
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "ap"
+  astore 14
+  aload 12
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  ldc "=\'"
+  astore 14
+  aload 13
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload_0
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  ldc "\'"
+  astore 14
+  aload 13
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+Label14:
+  iconst_1
+  istore 11
+  iload 11
+  anewarray java/lang/String
+  astore 15
+  iconst_0
+  istore 11
+  ldc "i"
+  astore 14
+  aload 15
+  iload 11
+  aload 14
+  aastore
+  aload 12
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 16
+  ldc "na"
+  astore 14
+  aconst_null
+  astore 18
+  aconst_null
+  astore 19
+  aconst_null
+  astore 20
+  aconst_null
+  astore 21
+  aload 10
+  astore_1
+  aload 14
+  astore_2
+  aload 15
+  astore_3
+  aload 16
+  astore 4
+  aload 18
+  astore 5
+  aload 19
+  astore 6
+  aload 20
+  astore 7
+  aload 21
+  astore 8
+  aload_1
+  aload_2
+  aload_3
+  aload 4
+  aload 5
+  aload 6
+  aload 7
+  aload 8
+  invokevirtual android/database/sqlite/SQLiteDatabase/query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+  astore 17
+Label15:
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface android/database/Cursor/moveToFirst()Z 1
+  istore 22
+  iload 22
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 22
+  ifeq Label1
+  iconst_0
+  istore 11
+  aload 17
+  astore_1
+  aload_1
+  iload 11
+  invokeinterface android/database/Cursor/getInt(I)I 2
+  istore 23
+Label18:
+  iconst_1
+  istore 11
+  iload 11
+  istore 24
+  iload 23
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 24
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 23
+  istore_1
+  iload 24
+  istore_2
+  iload_1
+  iload_2
+  if_icmpne Label2
+  iconst_1
+  istore 22
+Label4:
+  aload 17
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 17
+  ifnull Label3
+Label20:
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface android/database/Cursor/close()V 1
+Label3:
+  aload 10
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+Label8:
+  iload 22
+  ireturn
+Label2:
+  iconst_0
+  istore 22
+  goto Label4
+Label1:
+  aload 17
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 17
+  ifnull Label5
+Label23:
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface android/database/Cursor/close()V 1
+Label5:
+  aload 10
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+Label25:
+  iconst_0
+  istore 11
+  iload 11
+  ireturn
+Label24:
+  astore 25
+  iconst_0
+  istore 11
+  iload 11
+  ireturn
+Label13:
+  astore 26
+  aconst_null
+  astore 17
+Label11:
+  aload 17
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 17
+  ifnull Label6
+Label27:
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface android/database/Cursor/close()V 1
+Label6:
+  aload 10
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+Label29:
+  iconst_0
+  istore 11
+  iload 11
+  ireturn
+Label28:
+  astore 27
+  iconst_0
+  istore 11
+  iload 11
+  ireturn
+Label12:
+  astore 28
+Label10:
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label7
+Label31:
+  aload 9
+  invokeinterface android/database/Cursor/close()V 1
+Label7:
+  aload 10
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+Label9:
+  aload 28
+  athrow
+Label19:
+  astore 29
+  goto Label3
+Label21:
+  astore 30
+  goto Label8
+Label22:
+  astore 31
+  goto Label5
+Label26:
+  astore 32
+  goto Label6
+Label30:
+  astore 33
+  goto Label7
+Label32:
+  astore 34
+  goto Label9
+Label16:
+  astore 28
+  aload 17
+  astore 9
+  goto Label10
+Label17:
+  astore 35
+  goto Label11
+  nop
+.end <method>
+
+.method static c(Ljava/lang/String;)V
+.limit locals 14
+.limit stack 200
+  nop
+  invokestatic com/wiyun/ad/g/a()Landroid/database/sqlite/SQLiteDatabase;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+Label1:
+  return
+Label0:
+  new java/lang/StringBuilder
+  astore_2
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "ap"
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "=\'"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "\'"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  new android/content/ContentValues
+  astore 5
+Label5:
+  aload 5
+  invokespecial android/content/ContentValues/<init>()V
+  iconst_1
+  istore 7
+  iload 7
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 6
+  ldc "n"
+  astore 4
+  aload 5
+  aload 4
+  aload 6
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/Integer;)V
+  aload_2
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_0
+  ldc "na"
+  astore 4
+  aconst_null
+  astore 8
+  aload_1
+  aload 4
+  aload 5
+  aload_0
+  aload 8
+  invokevirtual android/database/sqlite/SQLiteDatabase/update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+  pop
+Label6:
+  aload_1
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+Label8:
+  goto Label1
+Label7:
+  astore 9
+  goto Label1
+Label4:
+  astore 10
+Label10:
+  aload_1
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+Label11:
+  goto Label1
+Label9:
+  astore 11
+  goto Label1
+Label3:
+  astore 12
+Label13:
+  aload_1
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+Label2:
+  aload 12
+  athrow
+Label12:
+  astore 13
+  goto Label2
+  nop
+.end <method>
+
+.method static d(Ljava/lang/String;)Z
+.limit locals 36
+.limit stack 200
+  nop
+  iconst_0
+  istore 9
+  invokestatic com/wiyun/ad/g/a()Landroid/database/sqlite/SQLiteDatabase;
+  astore 10
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 10
+  ifne Label0
+  iconst_0
+  istore 11
+  iload 11
+  ireturn
+Label0:
+  new java/lang/StringBuilder
+  astore 12
+  aload 12
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "ap"
+  astore 14
+  aload 12
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  ldc "=\'"
+  astore 14
+  aload 13
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload_0
+  astore_1
+  aload 13
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  ldc "\'"
+  astore 14
+  aload 13
+  aload 14
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+Label14:
+  iconst_1
+  istore 11
+  iload 11
+  anewarray java/lang/String
+  astore 15
+  iconst_0
+  istore 11
+  ldc "n"
+  astore 14
+  aload 15
+  iload 11
+  aload 14
+  aastore
+  aload 12
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 16
+  ldc "na"
+  astore 14
+  aconst_null
+  astore 18
+  aconst_null
+  astore 19
+  aconst_null
+  astore 20
+  aconst_null
+  astore 21
+  aload 10
+  astore_1
+  aload 14
+  astore_2
+  aload 15
+  astore_3
+  aload 16
+  astore 4
+  aload 18
+  astore 5
+  aload 19
+  astore 6
+  aload 20
+  astore 7
+  aload 21
+  astore 8
+  aload_1
+  aload_2
+  aload_3
+  aload 4
+  aload 5
+  aload 6
+  aload 7
+  aload 8
+  invokevirtual android/database/sqlite/SQLiteDatabase/query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+  astore 17
+Label15:
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface android/database/Cursor/moveToFirst()Z 1
+  istore 22
+  iload 22
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 22
+  ifeq Label1
+  iconst_0
+  istore 11
+  aload 17
+  astore_1
+  aload_1
+  iload 11
+  invokeinterface android/database/Cursor/getInt(I)I 2
+  istore 23
+Label18:
+  iconst_1
+  dstore 11
+  dload 11
+  dstore 24
+  iload 23
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 24
+  dstore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 23
+  istore_1
+  iload 24
+  istore_2
+  iload_1
+  iload_2
+  if_icmpne Label2
+  iconst_1
+  istore 22
+Label4:
+  aload 17
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 17
+  ifnull Label3
+Label20:
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface android/database/Cursor/close()V 1
+Label3:
+  aload 10
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+Label8:
+  iload 22
+  ireturn
+Label2:
+  iconst_0
+  istore 22
+  goto Label4
+Label1:
+  aload 17
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 17
+  ifnull Label5
+Label23:
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface android/database/Cursor/close()V 1
+Label5:
+  aload 10
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+Label25:
+  iconst_0
+  istore 11
+  iload 11
+  ireturn
+Label24:
+  astore 25
+  iconst_0
+  istore 11
+  iload 11
+  ireturn
+Label13:
+  astore 26
+  aconst_null
+  astore 17
+Label11:
+  aload 17
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 17
+  ifnull Label6
+Label27:
+  aload 17
+  astore_1
+  aload_1
+  invokeinterface android/database/Cursor/close()V 1
+Label6:
+  aload 10
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+Label29:
+  iconst_0
+  istore 11
+  iload 11
+  ireturn
+Label28:
+  astore 27
+  iconst_0
+  istore 11
+  iload 11
+  ireturn
+Label12:
+  astore 28
+Label10:
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label7
+Label31:
+  aload 9
+  invokeinterface android/database/Cursor/close()V 1
+Label7:
+  aload 10
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+Label9:
+  aload 28
+  athrow
+Label19:
+  astore 29
+  goto Label3
+Label21:
+  astore 30
+  goto Label8
+Label22:
+  astore 31
+  goto Label5
+Label26:
+  astore 32
+  goto Label6
+Label30:
+  astore 33
+  goto Label7
+Label32:
+  astore 34
+  goto Label9
+Label16:
+  astore 28
+  aload 17
+  astore 9
+  goto Label10
+Label17:
+  astore 35
+  goto Label11
+  nop
+.end <method>
+

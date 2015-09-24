@@ -1,0 +1,125 @@
+.source SourceFile
+.class  cn/domob/android/ads/DomobAdView$c
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field "a" Z
+.field final "b" Lcn/domob/android/ads/DomobAdView;
+
+.method private <init>(Lcn/domob/android/ads/DomobAdView;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/DomobAdView$c/b Lcn/domob/android/ads/DomobAdView;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method <init>(Lcn/domob/android/ads/DomobAdView;Lcn/domob/android/ads/DomobAdView$1;)V
+  .synthetic
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial cn/domob/android/ads/DomobAdView$c/<init>(Lcn/domob/android/ads/DomobAdView;)V
+  return
+  nop
+.end <method>
+
+.method public final run()V
+.limit locals 13
+.limit stack 200
+  .catch  java/lang/Exception <from> Label2 <to> Label0 <using> Label1
+  nop
+Label2:
+  ldc "One refresh thread is created"
+  astore_1
+  aload_0
+  aload_1
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$c/b Lcn/domob/android/ads/DomobAdView;
+  astore_2
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$c/a Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifne Label0
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_2
+  ifeq Label0
+  invokestatic cn/domob/android/ads/h/a()Lcn/domob/android/ads/h;
+  astore 4
+  aload 4
+  invokevirtual cn/domob/android/ads/h/e()I
+  istore 5
+  new java/lang/StringBuilder
+  astore 6
+  aload 6
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Requesting a fresh ad because a request interval passed ("
+  astore_1
+  aload 6
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  aload 6
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 6
+  ldc " seconds)."
+  astore_1
+  aload 6
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  aload 6
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  aload_0
+  aload 7
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$c/b Lcn/domob/android/ads/DomobAdView;
+  astore_2
+  ldc2_w 0
+  lstore 8
+  aload_2
+  lload 8
+  invokestatic cn/domob/android/ads/DomobAdView/a(Lcn/domob/android/ads/DomobAdView;J)J
+  pop2
+  aload_0
+  getfield cn/domob/android/ads/DomobAdView$c/b Lcn/domob/android/ads/DomobAdView;
+  astore_2
+  aload_2
+  invokestatic cn/domob/android/ads/DomobAdView/c(Lcn/domob/android/ads/DomobAdView;)Lcn/domob/android/ads/g;
+  astore 10
+  aload 10
+  invokevirtual cn/domob/android/ads/g/g()V
+Label0:
+  return
+Label1:
+  astore 11
+  ldc "DomobSDK"
+  astore_1
+  ldc "exception caught in RefreshThread.run()!"
+  astore 12
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 11
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label0
+  nop
+.end <method>
+

@@ -1,0 +1,44 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/tencent/mobwin/core/u
+.super java/lang/Thread
+.field final "a" Lcom/tencent/mobwin/core/g;
+
+.method <init>(Lcom/tencent/mobwin/core/g;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/u/a Lcom/tencent/mobwin/core/g;
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/u/a Lcom/tencent/mobwin/core/g;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  invokevirtual com/tencent/mobwin/core/view/d/run()V
+  aload_0
+  getfield com/tencent/mobwin/core/u/a Lcom/tencent/mobwin/core/g;
+  astore_1
+  aload_1
+  invokestatic com/tencent/mobwin/core/g/a(Lcom/tencent/mobwin/core/g;)Lcom/tencent/mobwin/core/view/d;
+  astore_2
+  aload_2
+  invokevirtual com/tencent/mobwin/core/view/d/a()V
+  return
+  nop
+.end <method>
+

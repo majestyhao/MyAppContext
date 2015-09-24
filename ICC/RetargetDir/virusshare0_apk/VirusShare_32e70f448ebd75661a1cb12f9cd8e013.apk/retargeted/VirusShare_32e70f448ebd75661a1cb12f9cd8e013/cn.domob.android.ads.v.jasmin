@@ -1,0 +1,218 @@
+.source SourceFile
+.class public  cn/domob/android/ads/v
+.super java/lang/Object
+.field protected static final "a" I =  0
+.field protected static final "b" I =  1
+.field private "c" Landroid/widget/ImageView;
+.field private "d" Lcn/domob/android/ads/b/d;
+.field private "e" I
+.field private "f" Landroid/content/Context;
+
+.method public <init>(Landroid/content/Context;I)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/v/c Landroid/widget/ImageView;
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/v/d Lcn/domob/android/ads/b/d;
+  iconst_0
+  istore 4
+  aload_0
+  iload 4
+  putfield cn/domob/android/ads/v/e I
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/v/f Landroid/content/Context;
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/v/f Landroid/content/Context;
+  aload_0
+  iload_2
+  putfield cn/domob/android/ads/v/e I
+  aload_0
+  getfield cn/domob/android/ads/v/e I
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  lookupswitch
+  0 : Label1
+  1 : Label2
+  default : Label0
+Label0:
+  goto Label3
+Label3:
+  return
+Label1:
+  new android/widget/ImageView
+  astore 5
+  aload_0
+  getfield cn/domob/android/ads/v/f Landroid/content/Context;
+  astore_1
+  aload 5
+  aload_1
+  invokespecial android/widget/ImageView/<init>(Landroid/content/Context;)V
+  aload_0
+  aload 5
+  putfield cn/domob/android/ads/v/c Landroid/widget/ImageView;
+  goto Label3
+Label2:
+  invokestatic android/os/Looper/prepare()V
+  new cn/domob/android/ads/b/d
+  astore 6
+  aload_0
+  getfield cn/domob/android/ads/v/f Landroid/content/Context;
+  astore_1
+  aload 6
+  aload_1
+  invokespecial cn/domob/android/ads/b/d/<init>(Landroid/content/Context;)V
+  aload_0
+  aload 6
+  putfield cn/domob/android/ads/v/d Lcn/domob/android/ads/b/d;
+  aload_0
+  invokespecial cn/domob/android/ads/v/b()V
+  goto Label3
+  nop
+  nop
+  nop
+.end <method>
+
+.method public a()Landroid/view/View;
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/v/e I
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  lookupswitch
+  0 : Label1
+  1 : Label2
+  default : Label0
+Label0:
+  goto Label3
+Label3:
+  aconst_null
+  astore_2
+  aload_2
+  areturn
+Label1:
+  aload_0
+  getfield cn/domob/android/ads/v/c Landroid/widget/ImageView;
+  astore_3
+  aload_3
+  areturn
+Label2:
+  aload_0
+  getfield cn/domob/android/ads/v/d Lcn/domob/android/ads/b/d;
+  astore_3
+  aload_3
+  areturn
+  nop
+  nop
+  nop
+.end <method>
+
+.method public a(Landroid/graphics/Bitmap;[B)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/v/e I
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  lookupswitch
+  0 : Label1
+  1 : Label2
+  default : Label0
+Label0:
+  goto Label3
+Label3:
+  return
+Label1:
+  aload_0
+  getfield cn/domob/android/ads/v/c Landroid/widget/ImageView;
+  astore 4
+  aload 4
+  aload_1
+  invokevirtual android/widget/ImageView/setImageBitmap(Landroid/graphics/Bitmap;)V
+  goto Label3
+Label2:
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_2
+  ifeq Label3
+  aload_0
+  getfield cn/domob/android/ads/v/d Lcn/domob/android/ads/b/d;
+  astore 5
+  aload 5
+  aload_2
+  invokevirtual cn/domob/android/ads/b/d/a([B)V
+  goto Label3
+  nop
+  nop
+  nop
+.end <method>
+
+.method public a(Landroid/widget/ImageView$ScaleType;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/v/c Landroid/widget/ImageView;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_0
+  getfield cn/domob/android/ads/v/c Landroid/widget/ImageView;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual android/widget/ImageView/setScaleType(Landroid/widget/ImageView$ScaleType;)V
+Label0:
+  return
+  nop
+.end <method>
+
+.method private b()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/v/d Lcn/domob/android/ads/b/d;
+  astore_1
+  getstatic cn/domob/android/ads/b/d$b/a Lcn/domob/android/ads/b/d$b;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+

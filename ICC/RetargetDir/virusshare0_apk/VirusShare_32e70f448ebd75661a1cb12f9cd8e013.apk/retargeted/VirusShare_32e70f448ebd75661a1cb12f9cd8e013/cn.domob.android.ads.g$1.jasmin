@@ -1,0 +1,45 @@
+.source SourceFile
+.class  cn/domob/android/ads/g$1
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcn/domob/android/ads/j;
+.field final "b" Lcn/domob/android/ads/g;
+
+.method <init>(Lcn/domob/android/ads/g;Lcn/domob/android/ads/j;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/g$1/b Lcn/domob/android/ads/g;
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/g$1/a Lcn/domob/android/ads/j;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 4
+.limit stack 200
+  nop
+  new cn/domob/android/ads/F
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/F/<init>()V
+  aload_0
+  getfield cn/domob/android/ads/g$1/b Lcn/domob/android/ads/g;
+  astore_2
+  aload_0
+  getfield cn/domob/android/ads/g$1/a Lcn/domob/android/ads/j;
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokevirtual cn/domob/android/ads/F/a(Lcn/domob/android/ads/g;Lcn/domob/android/ads/j;)V
+  return
+  nop
+.end <method>
+

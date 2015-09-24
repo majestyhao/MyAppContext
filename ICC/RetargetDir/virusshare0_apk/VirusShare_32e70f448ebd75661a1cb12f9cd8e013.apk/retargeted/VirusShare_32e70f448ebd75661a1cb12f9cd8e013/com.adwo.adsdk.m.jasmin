@@ -1,0 +1,81 @@
+.source SourceFile
+.class final  com/adwo/adsdk/m
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field private final "a" Landroid/app/Activity;
+.field private final "b" Ljava/lang/String;
+
+.method <init>(Lcom/adwo/adsdk/k;Landroid/app/Activity;Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  putfield com/adwo/adsdk/m/a Landroid/app/Activity;
+  aload_0
+  aload_3
+  putfield com/adwo/adsdk/m/b Ljava/lang/String;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public final run()V
+.limit locals 8
+.limit stack 200
+  nop
+  aload_0
+  getfield com/adwo/adsdk/m/a Landroid/app/Activity;
+  astore_1
+  new java/lang/StringBuilder
+  astore_2
+  ldc "\u5f00\u59cb\u4e0b\u8f7d\n"
+  astore_3
+  aload_2
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  getfield com/adwo/adsdk/m/b Ljava/lang/String;
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_2
+  ldc "\n\u81f3\u76ee\u5f55"
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore_2
+  ldc "/adwo/"
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  iconst_1
+  istore 7
+  aload_1
+  aload 4
+  iload 7
+  invokestatic android/widget/Toast/makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+  astore 6
+  aload 6
+  invokevirtual android/widget/Toast/show()V
+  return
+  nop
+.end <method>
+

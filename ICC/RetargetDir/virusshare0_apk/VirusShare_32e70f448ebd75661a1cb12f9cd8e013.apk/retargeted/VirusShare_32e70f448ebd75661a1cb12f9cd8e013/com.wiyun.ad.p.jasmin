@@ -1,0 +1,265 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/p
+.super java/lang/Object
+.field private final "a" [Ljava/lang/String;
+.field private final "b" Ljava/util/Map;
+
+.method public <init>()V
+.limit locals 25
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  invokespecial java/lang/Object/<init>()V
+  sipush 3000
+  istore 4
+  iload 4
+  anewarray java/lang/String
+  astore_3
+  aload_0
+  astore_1
+  aload_1
+  aload_3
+  putfield com/wiyun/ad/p/a [Ljava/lang/String;
+  new java/util/HashMap
+  astore 5
+  sipush 252
+  istore 4
+  aload 5
+  iload 4
+  invokespecial java/util/HashMap/<init>(I)V
+  aload_0
+  astore_1
+  aload_1
+  aload 5
+  putfield com/wiyun/ad/p/b Ljava/util/Map;
+  new java/util/Properties
+  astore 6
+  aload 6
+  invokespecial java/util/Properties/<init>()V
+  ldc com/wiyun/ad/p
+  astore 7
+  ldc "HtmlCharacterEntityReferences.properties"
+  astore 9
+  aload 7
+  aload 9
+  invokevirtual java/lang/Class/getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream;
+  astore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 8
+  ifne Label0
+  new java/lang/IllegalStateException
+  astore 10
+  ldc "Cannot find reference definition file [HtmlCharacterEntityReferences.properties] as class path resource"
+  astore 9
+  aload 10
+  aload 9
+  invokespecial java/lang/IllegalStateException/<init>(Ljava/lang/String;)V
+  aload 10
+  athrow
+Label0:
+  aload 6
+  aload 8
+  invokevirtual java/util/Properties/load(Ljava/io/InputStream;)V
+Label6:
+  aload 8
+  invokevirtual java/io/InputStream/close()V
+Label8:
+  aload 6
+  invokevirtual java/util/Properties/propertyNames()Ljava/util/Enumeration;
+  astore 11
+Label3:
+  aload 11
+  invokeinterface java/util/Enumeration/hasMoreElements()Z 1
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifne Label1
+  return
+Label5:
+  astore 13
+Label9:
+  aload 8
+  invokevirtual java/io/InputStream/close()V
+  aload 13
+  athrow
+Label7:
+  astore 14
+  new java/lang/IllegalStateException
+  astore 10
+  new java/lang/StringBuilder
+  astore 15
+  ldc "Failed to parse reference definition file [HtmlCharacterEntityReferences.properties]: "
+  astore 9
+  aload 15
+  aload 9
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 14
+  invokevirtual java/io/IOException/getMessage()Ljava/lang/String;
+  astore 16
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 16
+  aload 10
+  aload 16
+  invokespecial java/lang/IllegalStateException/<init>(Ljava/lang/String;)V
+  aload 10
+  athrow
+Label1:
+  aload 11
+  invokeinterface java/util/Enumeration/nextElement()Ljava/lang/Object; 1
+  astore 17
+  aload 17
+  astore 18
+  aload 18
+  checkcast java/lang/String
+  astore 18
+  aload 18
+  astore 16
+  aload 16
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 19
+  iload 19
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 1000
+  istore 4
+  iload 19
+  istore_1
+  iload_1
+  iload 4
+  if_icmpge Label2
+  iload 19
+  istore 20
+Label4:
+  aload 6
+  aload 16
+  invokevirtual java/util/Properties/getProperty(Ljava/lang/String;)Ljava/lang/String;
+  astore 16
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/p/a [Ljava/lang/String;
+  astore_3
+  new java/lang/StringBuilder
+  astore 15
+  bipush 38
+  istore 4
+  iload 4
+  invokestatic java/lang/String/valueOf(C)Ljava/lang/String;
+  astore 21
+  aload 21
+  astore_1
+  aload 15
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 15
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 15
+  bipush 59
+  istore 4
+  aload 15
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  astore 15
+  aload 15
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 21
+  aload_3
+  iload 20
+  aload 21
+  aastore
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/p/b Ljava/util/Map;
+  astore_1
+  aload_1
+  astore 22
+  new java/lang/Character
+  astore 23
+  iload 19
+  istore_1
+  iload_1
+  i2c
+  istore_1
+  iload_1
+  istore 24
+  aload 23
+  astore_1
+  iload 24
+  istore_2
+  aload_1
+  iload_2
+  invokespecial java/lang/Character/<init>(C)V
+  aload 22
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload 16
+  aload_2
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+  goto Label3
+Label2:
+  iload 19
+  istore_1
+  iload_1
+  sipush -7000
+  iadd
+  istore_1
+  iload_1
+  istore 20
+  goto Label4
+  nop
+.end <method>
+
+.method public a(Ljava/lang/String;)C
+.limit locals 8
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/p/b Ljava/util/Map;
+  astore_2
+  aload_2
+  aload_1
+  invokeinterface java/util/Map/get(Ljava/lang/Object;)Ljava/lang/Object; 2
+  astore_3
+  aload_3
+  astore 5
+  aload 5
+  checkcast java/lang/Character
+  astore 5
+  aload 5
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  aload 4
+  invokevirtual java/lang/Character/charValue()C
+  istore 6
+  iload 6
+  ireturn
+Label0:
+  ldc 65535
+  istore 7
+  iload 7
+  ireturn
+  nop
+.end <method>
+

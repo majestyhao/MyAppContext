@@ -1,0 +1,44 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/e$11
+.super java/lang/Thread
+.field final "a" Lcom/wiyun/ad/e;
+.field private final "b" Landroid/content/Context;
+
+.method <init>(Lcom/wiyun/ad/e;Landroid/content/Context;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/wiyun/ad/e$11/a Lcom/wiyun/ad/e;
+  aload_0
+  aload_2
+  putfield com/wiyun/ad/e$11/b Landroid/content/Context;
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/e$11/b Landroid/content/Context;
+  astore_1
+  aload_0
+  getfield com/wiyun/ad/e$11/a Lcom/wiyun/ad/e;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_1
+  aload_3
+  invokestatic com/wiyun/ad/b/a(Landroid/content/Context;Lcom/wiyun/ad/j;)V
+  return
+  nop
+.end <method>
+

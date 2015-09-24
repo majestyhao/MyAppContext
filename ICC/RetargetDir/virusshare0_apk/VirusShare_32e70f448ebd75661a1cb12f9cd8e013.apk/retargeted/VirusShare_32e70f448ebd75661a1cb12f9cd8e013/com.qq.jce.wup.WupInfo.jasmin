@@ -1,0 +1,637 @@
+.source WupInfo.java
+.class public  com/qq/jce/wup/WupInfo
+.super java/lang/Object
+.field private static "clientBuilt" Ljava/lang/String;
+.field private static "clientInfo" Ljava/lang/String;
+.field private static "clientNumber" Ljava/lang/String;
+
+.method static <clinit>()V
+.limit locals 7
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label5 <to> Label3 <using> Label4
+  nop
+  aconst_null
+  astore_0
+  aload_0
+  putstatic com/qq/jce/wup/WupInfo/clientInfo Ljava/lang/String;
+  aconst_null
+  astore_0
+  aload_0
+  putstatic com/qq/jce/wup/WupInfo/clientBuilt Ljava/lang/String;
+  aconst_null
+  astore_0
+  aload_0
+  putstatic com/qq/jce/wup/WupInfo/clientNumber Ljava/lang/String;
+Label5:
+  ldc com/qq/jce/wup/WupInfo
+  astore_1
+  ldc "/com/qq/jce/wup/wup.properties"
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/Class/getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream;
+  astore_2
+  new java/util/Properties
+  astore 4
+  aload 4
+  invokespecial java/util/Properties/<init>()V
+  aload 4
+  aload_2
+  invokevirtual java/util/Properties/load(Ljava/io/InputStream;)V
+  aload_2
+  invokevirtual java/io/InputStream/close()V
+  ldc "client.info"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/util/Properties/getProperty(Ljava/lang/String;)Ljava/lang/String;
+  astore 5
+  aload 5
+  putstatic com/qq/jce/wup/WupInfo/clientInfo Ljava/lang/String;
+  ldc "client.built"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/util/Properties/getProperty(Ljava/lang/String;)Ljava/lang/String;
+  astore 5
+  aload 5
+  putstatic com/qq/jce/wup/WupInfo/clientBuilt Ljava/lang/String;
+  ldc "client.number"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/util/Properties/getProperty(Ljava/lang/String;)Ljava/lang/String;
+  astore 5
+  aload 5
+  putstatic com/qq/jce/wup/WupInfo/clientNumber Ljava/lang/String;
+Label3:
+  getstatic com/qq/jce/wup/WupInfo/clientInfo Ljava/lang/String;
+  astore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifne Label0
+  ldc "Tencent Taf"
+  astore_3
+  aload_3
+  putstatic com/qq/jce/wup/WupInfo/clientInfo Ljava/lang/String;
+Label0:
+  getstatic com/qq/jce/wup/WupInfo/clientBuilt Ljava/lang/String;
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  ifnonnull Label1
+  ldc "unknown"
+  astore_3
+  aload_3
+  putstatic com/qq/jce/wup/WupInfo/clientBuilt Ljava/lang/String;
+Label1:
+  getstatic com/qq/jce/wup/WupInfo/clientNumber Ljava/lang/String;
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  ifnonnull Label2
+  ldc "unknown"
+  astore_3
+  aload_3
+  putstatic com/qq/jce/wup/WupInfo/clientNumber Ljava/lang/String;
+Label2:
+  return
+Label4:
+  astore 6
+  goto Label3
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static getClientBuilt()Ljava/lang/String;
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/qq/jce/wup/WupInfo/clientBuilt Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static getClientInfo()Ljava/lang/String;
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/qq/jce/wup/WupInfo/clientInfo Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static getClientNumber()Ljava/lang/String;
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/qq/jce/wup/WupInfo/clientNumber Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static main([Ljava/lang/String;)V
+.limit locals 5
+.limit stack 200
+  nop
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore_1
+  invokestatic com/qq/jce/wup/WupInfo/showString()Ljava/lang/String;
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore_1
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Client version: "
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  invokestatic com/qq/jce/wup/WupInfo/getClientInfo()Ljava/lang/String;
+  astore_2
+  aload_3
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore_1
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Client built:   "
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  invokestatic com/qq/jce/wup/WupInfo/getClientBuilt()Ljava/lang/String;
+  astore_2
+  aload_3
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore_1
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Client number:  "
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  invokestatic com/qq/jce/wup/WupInfo/getClientNumber()Ljava/lang/String;
+  astore_2
+  aload_3
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore_1
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "OS Name:        "
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "os.name"
+  astore 4
+  aload 4
+  invokestatic java/lang/System/getProperty(Ljava/lang/String;)Ljava/lang/String;
+  astore_2
+  aload_3
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore_1
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "OS Version:     "
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "os.version"
+  astore 4
+  aload 4
+  invokestatic java/lang/System/getProperty(Ljava/lang/String;)Ljava/lang/String;
+  astore_2
+  aload_3
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore_1
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Architecture:   "
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "os.arch"
+  astore 4
+  aload 4
+  invokestatic java/lang/System/getProperty(Ljava/lang/String;)Ljava/lang/String;
+  astore_2
+  aload_3
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore_1
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "JVM Version:    "
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "java.runtime.version"
+  astore 4
+  aload 4
+  invokestatic java/lang/System/getProperty(Ljava/lang/String;)Ljava/lang/String;
+  astore_2
+  aload_3
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore_1
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "JVM Vendor:     "
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "java.vm.vendor"
+  astore 4
+  aload 4
+  invokestatic java/lang/System/getProperty(Ljava/lang/String;)Ljava/lang/String;
+  astore_2
+  aload_3
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public static showString()Ljava/lang/String;
+.limit locals 4
+.limit stack 200
+  nop
+  new java/lang/StringBuffer
+  astore_0
+  aload_0
+  invokespecial java/lang/StringBuffer/<init>()V
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Client version: "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  invokestatic com/qq/jce/wup/WupInfo/getClientInfo()Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  ldc "\n"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Client built:   "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  invokestatic com/qq/jce/wup/WupInfo/getClientBuilt()Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  ldc "\n"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Client number:  "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  invokestatic com/qq/jce/wup/WupInfo/getClientNumber()Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  ldc "\n"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "OS Name:        "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  ldc "os.name"
+  astore_2
+  aload_2
+  invokestatic java/lang/System/getProperty(Ljava/lang/String;)Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  ldc "\n"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "OS Version:     "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  ldc "os.version"
+  astore_2
+  aload_2
+  invokestatic java/lang/System/getProperty(Ljava/lang/String;)Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  ldc "\n"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Architecture:   "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  ldc "os.arch"
+  astore_2
+  aload_2
+  invokestatic java/lang/System/getProperty(Ljava/lang/String;)Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  ldc "\n"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "JVM Version:    "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  ldc "java.runtime.version"
+  astore_2
+  aload_2
+  invokestatic java/lang/System/getProperty(Ljava/lang/String;)Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  ldc "\n"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "JVM Vendor:     "
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  ldc "java.vm.vendor"
+  astore_2
+  aload_2
+  invokestatic java/lang/System/getProperty(Ljava/lang/String;)Ljava/lang/String;
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  ldc "\n"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  aload_0
+  invokevirtual java/lang/StringBuffer/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  areturn
+  nop
+.end <method>
+

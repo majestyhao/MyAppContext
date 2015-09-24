@@ -1,0 +1,123 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/AdView$8
+.super java/lang/Thread
+.field final "a" Lcom/wiyun/ad/AdView;
+
+.method <init>(Lcom/wiyun/ad/AdView;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/wiyun/ad/AdView$8/a Lcom/wiyun/ad/AdView;
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  return
+  nop
+.end <method>
+
+.method static a(Lcom/wiyun/ad/AdView$8;)Lcom/wiyun/ad/AdView;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/AdView$8/a Lcom/wiyun/ad/AdView;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 14
+.limit stack 200
+  .catch  java/lang/Exception <from> Label5 <to> Label1 <using> Label4
+  .catch  java/lang/Exception <from> Label8 <to> Label9 <using> Label4
+  nop
+Label5:
+  aload_0
+  getfield com/wiyun/ad/AdView$8/a Lcom/wiyun/ad/AdView;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_0
+  getfield com/wiyun/ad/AdView$8/a Lcom/wiyun/ad/AdView;
+  astore_1
+  aload_1
+  invokevirtual com/wiyun/ad/AdView/getHandler()Landroid/os/Handler;
+  astore_3
+Label1:
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  ifnull Label0
+Label7:
+  aload_0
+  getfield com/wiyun/ad/AdView$8/a Lcom/wiyun/ad/AdView;
+  astore 4
+  aload_0
+  getfield com/wiyun/ad/AdView$8/a Lcom/wiyun/ad/AdView;
+  astore_1
+  aload_2
+  aload_1
+  aload_3
+  invokestatic com/wiyun/ad/b/a(Landroid/content/Context;Lcom/wiyun/ad/AdView;Landroid/os/Handler;)Lcom/wiyun/ad/j;
+  astore 5
+  aload 4
+  aload 5
+  invokestatic com/wiyun/ad/AdView/a(Lcom/wiyun/ad/AdView;Lcom/wiyun/ad/j;)V
+Label2:
+  new com/wiyun/ad/AdView$8$1
+  astore 6
+Label8:
+  aload 6
+  aload_0
+  invokespecial com/wiyun/ad/AdView$8$1/<init>(Lcom/wiyun/ad/AdView$8;)V
+  aload_3
+  aload 6
+  invokevirtual android/os/Handler/post(Ljava/lang/Runnable;)Z
+  pop
+Label3:
+  return
+Label0:
+  ldc2_w 100
+  lstore 7
+  lload 7
+  invokestatic java/lang/Thread/sleep(J)V
+  aload_0
+  getfield com/wiyun/ad/AdView$8/a Lcom/wiyun/ad/AdView;
+  astore 4
+  aload 4
+  invokevirtual com/wiyun/ad/AdView/getHandler()Landroid/os/Handler;
+  astore_3
+  goto Label1
+Label6:
+  astore 9
+  aload 9
+  invokevirtual java/lang/Exception/toString()Ljava/lang/String;
+  astore 10
+  ldc "WiYun"
+  astore 11
+  aload 11
+  aload 10
+  invokestatic com/wiyun/ad/s/a(Ljava/lang/String;Ljava/lang/String;)V
+Label9:
+  goto Label2
+Label4:
+  astore 12
+  ldc "WiYun"
+  astore 11
+  ldc "Unhandled exception requesting a fresh ad."
+  astore 13
+  aload 11
+  aload 13
+  aload 12
+  invokestatic com/wiyun/ad/s/a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Exception;)V
+  goto Label3
+  nop
+.end <method>
+

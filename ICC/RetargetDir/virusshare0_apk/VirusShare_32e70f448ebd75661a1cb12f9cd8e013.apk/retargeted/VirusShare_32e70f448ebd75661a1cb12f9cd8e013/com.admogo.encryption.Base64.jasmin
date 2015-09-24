@@ -1,0 +1,4436 @@
+.source Base64.java
+.class public final  com/admogo/encryption/Base64
+.super java/lang/Object
+.field private static final "CA" [C
+.field private static final "IA" [I
+.field private static final "decodingTable" [B
+.field private static final "encodingTable" [B
+
+.method static <clinit>()V
+.limit locals 10
+.limit stack 200
+  nop
+  ldc "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+  astore_0
+  aload_0
+  invokevirtual java/lang/String/toCharArray()[C
+  astore_1
+  aload_1
+  putstatic com/admogo/encryption/Base64/CA [C
+  sipush 256
+  istore_3
+  iload_3
+  newarray int
+  astore_2
+  aload_2
+  putstatic com/admogo/encryption/Base64/IA [I
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore_2
+  iconst_m1
+  istore_3
+  aload_2
+  iload_3
+  invokestatic java/util/Arrays/fill([II)V
+  iconst_0
+  istore 4
+  getstatic com/admogo/encryption/Base64/CA [C
+  astore_1
+  aload_1
+  arraylength
+  istore 5
+Label5:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  iload 5
+  if_icmplt Label0
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore_2
+  bipush 61
+  istore_3
+  iconst_0
+  istore 6
+  aload_2
+  iload_3
+  iload 6
+  iastore
+  bipush 64
+  istore_3
+  iload_3
+  newarray byte
+  astore 7
+  iconst_0
+  istore_3
+  bipush 65
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  iconst_1
+  istore_3
+  bipush 66
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  iconst_2
+  istore_3
+  bipush 67
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  iconst_3
+  istore_3
+  bipush 68
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  iconst_4
+  istore_3
+  bipush 69
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  iconst_5
+  istore_3
+  bipush 70
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 6
+  istore_3
+  bipush 71
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 7
+  istore_3
+  bipush 72
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 8
+  istore_3
+  bipush 73
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 9
+  istore_3
+  bipush 74
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 10
+  istore_3
+  bipush 75
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 11
+  istore_3
+  bipush 76
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 12
+  istore_3
+  bipush 77
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 13
+  istore_3
+  bipush 78
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 14
+  istore_3
+  bipush 79
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 15
+  istore_3
+  bipush 80
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 16
+  istore_3
+  bipush 81
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 17
+  istore_3
+  bipush 82
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 18
+  istore_3
+  bipush 83
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 19
+  istore_3
+  bipush 84
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 20
+  istore_3
+  bipush 85
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 21
+  istore_3
+  bipush 86
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 22
+  istore_3
+  bipush 87
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 23
+  istore_3
+  bipush 88
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 24
+  istore_3
+  bipush 89
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 25
+  istore_3
+  bipush 90
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 26
+  istore_3
+  bipush 97
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 27
+  istore_3
+  bipush 98
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 28
+  istore_3
+  bipush 99
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 29
+  istore_3
+  bipush 100
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 30
+  istore_3
+  bipush 101
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 31
+  istore_3
+  bipush 102
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 32
+  istore_3
+  bipush 103
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 33
+  istore_3
+  bipush 104
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 34
+  istore_3
+  bipush 105
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 35
+  istore_3
+  bipush 106
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 36
+  istore_3
+  bipush 107
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 37
+  istore_3
+  bipush 108
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 38
+  istore_3
+  bipush 109
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 39
+  istore_3
+  bipush 110
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 40
+  istore_3
+  bipush 111
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 41
+  istore_3
+  bipush 112
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 42
+  istore_3
+  bipush 113
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 43
+  istore_3
+  bipush 114
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 44
+  istore_3
+  bipush 115
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 45
+  istore_3
+  bipush 116
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 46
+  istore_3
+  bipush 117
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 47
+  istore_3
+  bipush 118
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 48
+  istore_3
+  bipush 119
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 49
+  istore_3
+  bipush 120
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 50
+  istore_3
+  bipush 121
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 51
+  istore_3
+  bipush 122
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 52
+  istore_3
+  bipush 48
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 53
+  istore_3
+  bipush 49
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 54
+  istore_3
+  bipush 50
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 55
+  istore_3
+  bipush 51
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 56
+  istore_3
+  bipush 52
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 57
+  istore_3
+  bipush 53
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 58
+  istore_3
+  bipush 54
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 59
+  istore_3
+  bipush 55
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 60
+  istore_3
+  bipush 56
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 61
+  istore_3
+  bipush 57
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 62
+  istore_3
+  bipush 43
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  bipush 63
+  istore_3
+  bipush 47
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  aload 7
+  putstatic com/admogo/encryption/Base64/encodingTable [B
+  sipush 128
+  istore_3
+  iload_3
+  newarray byte
+  astore 7
+  aload 7
+  putstatic com/admogo/encryption/Base64/decodingTable [B
+  iconst_0
+  dstore 5
+Label6:
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 128
+  istore_3
+  iload 5
+  iload_3
+  if_icmplt Label1
+  bipush 65
+  dstore 5
+Label7:
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 90
+  istore_3
+  iload 5
+  iload_3
+  if_icmple Label2
+  bipush 97
+  dstore 5
+Label8:
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 122
+  istore_3
+  iload 5
+  iload_3
+  if_icmple Label3
+  bipush 48
+  dstore 5
+Label9:
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 57
+  istore_3
+  iload 5
+  iload_3
+  if_icmple Label4
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  bipush 43
+  istore_3
+  bipush 62
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  bipush 47
+  istore_3
+  bipush 63
+  istore 6
+  aload 7
+  iload_3
+  iload 6
+  bastore
+  return
+Label0:
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore_2
+  getstatic com/admogo/encryption/Base64/CA [C
+  astore_1
+  aload_1
+  iload 4
+  caload
+  istore 8
+  aload_2
+  iload 8
+  iload 4
+  iastore
+  iload 4
+  iconst_1
+  iadd
+  istore 4
+  goto Label5
+Label1:
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  iconst_m1
+  istore_3
+  aload 7
+  iload 5
+  iload_3
+  bastore
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  goto Label6
+Label2:
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  iload 5
+  bipush -65
+  iadd
+  istore 4
+  iload 4
+  i2b
+  istore 9
+  aload 7
+  iload 5
+  iload 9
+  bastore
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  goto Label7
+Label3:
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  iload 5
+  bipush -97
+  iadd
+  istore 4
+  iload 4
+  bipush 26
+  iadd
+  istore 4
+  iload 4
+  i2b
+  istore 9
+  aload 7
+  iload 5
+  iload 9
+  bastore
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  goto Label8
+Label4:
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  iload 5
+  bipush -48
+  iadd
+  istore 4
+  iload 4
+  bipush 52
+  iadd
+  istore 4
+  iload 4
+  i2b
+  istore 9
+  aload 7
+  iload 5
+  iload 9
+  bastore
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  goto Label9
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static final decode(Ljava/lang/String;)[B
+.limit locals 14
+.limit stack 200
+  nop
+  aload_0
+  invokestatic com/admogo/encryption/Base64/discardNonBase64Chars(Ljava/lang/String;)Ljava/lang/String;
+  astore_0
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore_1
+  iload_1
+  bipush -2
+  iadd
+  istore_1
+  aload_0
+  iload_1
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  bipush 61
+  istore_3
+  iload_2
+  iload_3
+  if_icmpne Label0
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore_1
+  iload_1
+  iconst_4
+  idiv
+  istore_1
+  iload_1
+  iconst_m1
+  iadd
+  istore_1
+  iload_1
+  iconst_3
+  imul
+  istore_1
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  iload_1
+  newarray byte
+  astore 4
+Label4:
+  iconst_0
+  dstore 5
+  iconst_0
+  istore_1
+Label5:
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore 6
+  iload 6
+  bipush -4
+  iadd
+  istore 6
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  iload 6
+  if_icmplt Label1
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore 6
+  iload 6
+  bipush -2
+  iadd
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 61
+  istore_3
+  iload_2
+  iload_3
+  if_icmpne Label2
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore_1
+  iload_1
+  bipush -4
+  iadd
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  aload 7
+  iload_2
+  baload
+  istore 8
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore 6
+  iload 6
+  bipush -3
+  iadd
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  aload 7
+  iload_2
+  baload
+  istore 9
+  aload 4
+  arraylength
+  istore 6
+  iload 6
+  iconst_m1
+  iadd
+  istore 6
+  iload 8
+  iconst_2
+  ishl
+  istore_1
+  iconst_4
+  istore_3
+  iload 9
+  iload_3
+  ishr
+  istore 9
+  iload_1
+  iload 9
+  ior
+  istore_1
+  iload_1
+  i2b
+  istore 10
+  aload 4
+  iload 6
+  iload 10
+  bastore
+  aload 4
+  areturn
+Label0:
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore 6
+  iload 6
+  iconst_m1
+  iadd
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 61
+  istore_3
+  iload_2
+  iload_3
+  if_icmpne Label3
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore 6
+  iload 6
+  iconst_4
+  idiv
+  istore 6
+  iload 6
+  iconst_m1
+  iadd
+  istore 6
+  iload 6
+  iconst_3
+  imul
+  istore 6
+  iload 6
+  iconst_2
+  iadd
+  istore 6
+  iload 6
+  newarray byte
+  astore 4
+  goto Label4
+Label3:
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore 6
+  iload 6
+  iconst_4
+  idiv
+  istore 6
+  iload 6
+  iconst_3
+  imul
+  istore 6
+  iload 6
+  newarray byte
+  astore 4
+  goto Label4
+Label1:
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  aload_0
+  iload 5
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  aload 7
+  iload_2
+  baload
+  istore 11
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  iload 5
+  iconst_1
+  iadd
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  aload 7
+  iload_2
+  baload
+  istore 12
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  iload 5
+  iconst_2
+  iadd
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  aload 7
+  iload_2
+  baload
+  istore 9
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  iload 5
+  iconst_3
+  iadd
+  istore 6
+  aload_0
+  iload 6
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  aload 7
+  iload_2
+  baload
+  istore 8
+  iload 11
+  iconst_2
+  ishl
+  istore 6
+  iconst_4
+  istore_3
+  iload 12
+  iload_3
+  ishr
+  istore 11
+  iload 6
+  iload 11
+  ior
+  istore 6
+  iload 6
+  i2b
+  istore 11
+  aload 4
+  iload_1
+  iload 11
+  bastore
+  iload_1
+  iconst_1
+  iadd
+  istore 6
+  iload 12
+  iconst_4
+  ishl
+  istore 13
+  iconst_2
+  istore_3
+  iload 9
+  iload_3
+  ishr
+  istore 12
+  iload 13
+  iload 12
+  ior
+  istore 13
+  iload 13
+  i2b
+  istore 12
+  aload 4
+  iload 6
+  iload 12
+  bastore
+  iload_1
+  iconst_2
+  iadd
+  istore 13
+  iload 9
+  bipush 6
+  ishl
+  istore 6
+  iload 6
+  iload 8
+  ior
+  istore 6
+  iload 6
+  i2b
+  istore 12
+  aload 4
+  iload 13
+  iload 12
+  bastore
+  iload 5
+  iconst_4
+  iadd
+  istore 5
+  iload_1
+  iconst_3
+  iadd
+  istore_1
+  goto Label5
+Label2:
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore 13
+  iload 13
+  iconst_m1
+  iadd
+  istore 13
+  aload_0
+  iload 13
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 61
+  istore_3
+  iload_2
+  iload_3
+  if_icmpne Label6
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore 13
+  iload 13
+  bipush -4
+  iadd
+  istore 13
+  aload_0
+  iload 13
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  aload 7
+  iload_2
+  baload
+  istore 12
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore 13
+  iload 13
+  bipush -3
+  iadd
+  istore 13
+  aload_0
+  iload 13
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  aload 7
+  iload_2
+  baload
+  istore 11
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore 13
+  iload 13
+  bipush -2
+  iadd
+  istore 13
+  aload_0
+  iload 13
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  aload 7
+  iload_2
+  baload
+  istore 10
+  aload 4
+  arraylength
+  istore 13
+  iload 13
+  bipush -2
+  iadd
+  istore 13
+  iload 12
+  iconst_2
+  ishl
+  istore 6
+  iconst_4
+  istore_3
+  iload 11
+  iload_3
+  ishr
+  istore 12
+  iload 6
+  iload 12
+  ior
+  istore 6
+  iload 6
+  i2b
+  istore 12
+  aload 4
+  iload 13
+  iload 12
+  bastore
+  aload 4
+  arraylength
+  istore 13
+  iload 13
+  iconst_m1
+  iadd
+  istore 13
+  iload 11
+  iconst_4
+  ishl
+  istore 6
+  iconst_2
+  istore_3
+  iload 10
+  iload_3
+  ishr
+  istore 12
+  iload 6
+  iload 12
+  ior
+  istore 6
+  iload 6
+  i2b
+  istore 12
+  aload 4
+  iload 13
+  iload 12
+  bastore
+  aload 4
+  areturn
+Label6:
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore 13
+  iload 13
+  bipush -4
+  iadd
+  istore 13
+  aload_0
+  iload 13
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  aload 7
+  iload_2
+  baload
+  istore 12
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore 13
+  iload 13
+  bipush -3
+  iadd
+  istore 13
+  aload_0
+  iload 13
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  aload 7
+  iload_2
+  baload
+  istore 11
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore 13
+  iload 13
+  bipush -2
+  iadd
+  istore 13
+  aload_0
+  iload 13
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  aload 7
+  iload_2
+  baload
+  istore 10
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore 7
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore 13
+  iload 13
+  iconst_m1
+  iadd
+  istore 13
+  aload_0
+  iload 13
+  invokevirtual java/lang/String/charAt(I)C
+  istore_2
+  aload 7
+  iload_2
+  baload
+  istore 9
+  aload 4
+  arraylength
+  istore 13
+  iload 13
+  bipush -3
+  iadd
+  istore 13
+  iload 12
+  iconst_2
+  ishl
+  istore 6
+  iconst_4
+  istore_3
+  iload 11
+  iload_3
+  ishr
+  istore 12
+  iload 6
+  iload 12
+  ior
+  istore 6
+  iload 6
+  i2b
+  istore 12
+  aload 4
+  iload 13
+  iload 12
+  bastore
+  aload 4
+  arraylength
+  istore 13
+  iload 13
+  bipush -2
+  iadd
+  istore 13
+  iload 11
+  iconst_4
+  ishl
+  istore 6
+  iconst_2
+  istore_3
+  iload 10
+  iload_3
+  ishr
+  istore 12
+  iload 6
+  iload 12
+  ior
+  istore 6
+  iload 6
+  i2b
+  istore 12
+  aload 4
+  iload 13
+  iload 12
+  bastore
+  aload 4
+  arraylength
+  istore 13
+  iload 13
+  iconst_m1
+  iadd
+  istore 13
+  iload 10
+  bipush 6
+  ishl
+  istore 6
+  iload 6
+  iload 9
+  ior
+  istore 6
+  iload 6
+  i2b
+  istore 12
+  aload 4
+  iload 13
+  iload 12
+  bastore
+  aload 4
+  areturn
+  nop
+.end <method>
+
+.method public static final decode([B)[B
+.limit locals 14
+.limit stack 200
+  nop
+  aload_0
+  arraylength
+  istore_1
+  iconst_0
+  istore_2
+  iconst_0
+  istore_3
+Label3:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload_1
+  if_icmplt Label0
+  iload_1
+  iload_2
+  isub
+  istore 4
+  iload 4
+  iconst_4
+  irem
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifeq Label1
+  aconst_null
+  astore 5
+Label6:
+  aload 5
+  areturn
+Label0:
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 6
+  aload_0
+  iload_3
+  baload
+  istore 7
+  sipush 255
+  istore 9
+  iload 7
+  iload 9
+  iand
+  istore 8
+  aload 6
+  iload 8
+  iaload
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifge Label2
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+Label2:
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label3
+Label1:
+  iconst_0
+  istore 4
+  iload_1
+  istore_3
+Label11:
+  aload_0
+  iload_3
+  baload
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 61
+  istore 9
+  iload 7
+  iload 9
+  if_icmpne Label4
+  iload 4
+  iconst_1
+  iadd
+  istore 4
+Label4:
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 9
+  iload_3
+  iload 9
+  if_icmpgt Label5
+Label12:
+  iload_1
+  iload_2
+  isub
+  istore_1
+  iload_1
+  bipush 6
+  imul
+  istore_1
+  iload_1
+  iconst_3
+  ishr
+  istore_1
+  iload_1
+  iload 4
+  isub
+  istore 4
+  iload 4
+  newarray byte
+  astore 5
+  iconst_0
+  istore_2
+  iconst_0
+  dstore_3
+Label10:
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 4
+  if_icmpge Label6
+  iconst_0
+  istore 10
+  iconst_0
+  dstore_1
+Label14:
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_4
+  istore 9
+  iload_1
+  iload 9
+  if_icmplt Label7
+  iload_3
+  iconst_1
+  iadd
+  istore_1
+  iload 10
+  bipush 16
+  ishr
+  istore 11
+  iload 11
+  i2b
+  istore 12
+  aload 5
+  iload_3
+  iload 12
+  bastore
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload 4
+  if_icmpge Label8
+  iload_1
+  iconst_1
+  iadd
+  istore_3
+  iload 10
+  bipush 8
+  ishr
+  istore 11
+  iload 11
+  i2b
+  istore 12
+  aload 5
+  iload_1
+  iload 12
+  bastore
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 4
+  if_icmpge Label9
+  iload_3
+  iconst_1
+  iadd
+  istore_1
+  iload 10
+  i2b
+  istore 12
+  aload 5
+  iload_3
+  iload 12
+  bastore
+Label8:
+  iload_1
+  istore_3
+  goto Label10
+Label5:
+  iload_3
+  iconst_m1
+  iadd
+  istore_3
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 6
+  aload_0
+  iload_3
+  baload
+  istore 12
+  sipush 255
+  istore 9
+  iload 12
+  iload 9
+  iand
+  istore 8
+  aload 6
+  iload 8
+  iaload
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 11
+  ifle Label11
+  goto Label12
+Label7:
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 6
+  iload_2
+  iconst_1
+  iadd
+  istore 11
+  aload_0
+  iload_2
+  baload
+  istore 12
+  sipush 255
+  istore 9
+  iload 12
+  iload 9
+  iand
+  istore 8
+  aload 6
+  iload 8
+  iaload
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iflt Label13
+  iload_1
+  bipush 6
+  imul
+  istore 13
+  bipush 18
+  istore 9
+  iload 9
+  iload 13
+  isub
+  istore 13
+  iload_2
+  iload 13
+  ishl
+  istore 13
+  iload 10
+  iload 13
+  ior
+  istore 10
+Label15:
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  iload 11
+  istore_2
+  goto Label14
+Label13:
+  iload_1
+  iconst_m1
+  iadd
+  istore_1
+  goto Label15
+Label9:
+  goto Label10
+  nop
+.end <method>
+
+.method public static final decode([C)[B
+.limit locals 14
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  aload_0
+  arraylength
+  istore_1
+Label2:
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  ifne Label1
+  iconst_0
+  istore_3
+  iload_3
+  newarray byte
+  astore_2
+Label9:
+  aload_2
+  areturn
+Label0:
+  iconst_0
+  istore_1
+  goto Label2
+Label1:
+  iconst_0
+  istore 4
+  iconst_0
+  dstore 5
+Label6:
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  iload_1
+  if_icmplt Label3
+  iload_1
+  iload 4
+  isub
+  istore 6
+  iload 6
+  iconst_4
+  irem
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifeq Label4
+  aconst_null
+  astore 7
+  aload 7
+  areturn
+Label3:
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 8
+  aload_0
+  iload 5
+  caload
+  istore 9
+  aload 8
+  iload 9
+  iaload
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifge Label5
+  iload 4
+  iconst_1
+  iadd
+  istore 4
+Label5:
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  goto Label6
+Label4:
+  iconst_0
+  istore 6
+  iload_1
+  istore 5
+Label14:
+  aload_0
+  iload 5
+  caload
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 61
+  istore_3
+  iload 9
+  iload_3
+  if_icmpne Label7
+  iload 6
+  iconst_1
+  iadd
+  istore 6
+Label7:
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore_3
+  iload 5
+  iload_3
+  if_icmpgt Label8
+Label15:
+  iload_1
+  iload 4
+  isub
+  istore_1
+  iload_1
+  bipush 6
+  imul
+  istore_1
+  iload_1
+  iconst_3
+  ishr
+  istore_1
+  iload_1
+  iload 6
+  isub
+  istore 6
+  iload 6
+  newarray byte
+  astore_2
+  iconst_0
+  istore 4
+  iconst_0
+  dstore 5
+Label13:
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  iload 6
+  if_icmpge Label9
+  iconst_0
+  istore 10
+  iconst_0
+  dstore_1
+Label17:
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_4
+  istore_3
+  iload_1
+  iload_3
+  if_icmplt Label10
+  iload 5
+  iconst_1
+  iadd
+  istore_1
+  iload 10
+  bipush 16
+  ishr
+  istore 11
+  iload 11
+  i2b
+  istore 12
+  aload_2
+  iload 5
+  iload 12
+  bastore
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload 6
+  if_icmpge Label11
+  iload_1
+  iconst_1
+  iadd
+  istore 5
+  iload 10
+  bipush 8
+  ishr
+  istore 11
+  iload 11
+  i2b
+  istore 12
+  aload_2
+  iload_1
+  iload 12
+  bastore
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  iload 6
+  if_icmpge Label12
+  iload 5
+  iconst_1
+  iadd
+  istore_1
+  iload 10
+  i2b
+  istore 12
+  aload_2
+  iload 5
+  iload 12
+  bastore
+Label11:
+  iload_1
+  istore 5
+  goto Label13
+Label8:
+  iload 5
+  iconst_m1
+  iadd
+  istore 5
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 8
+  aload_0
+  iload 5
+  caload
+  istore 9
+  aload 8
+  iload 9
+  iaload
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 11
+  ifle Label14
+  goto Label15
+Label10:
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 8
+  iload 4
+  iconst_1
+  iadd
+  istore 11
+  aload_0
+  iload 4
+  caload
+  istore 9
+  aload 8
+  iload 9
+  iaload
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  iflt Label16
+  iload_1
+  bipush 6
+  imul
+  istore 13
+  bipush 18
+  istore_3
+  iload_3
+  iload 13
+  isub
+  istore 13
+  iload 4
+  iload 13
+  ishl
+  istore 13
+  iload 10
+  iload 13
+  ior
+  istore 10
+Label18:
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  iload 11
+  istore 4
+  goto Label17
+Label16:
+  iload_1
+  iconst_m1
+  iadd
+  istore_1
+  goto Label18
+Label12:
+  goto Label13
+  nop
+.end <method>
+
+.method public static final decodeFast(Ljava/lang/String;)[B
+.limit locals 18
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual java/lang/String/length()I
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  iconst_0
+  istore 4
+  iload 4
+  newarray byte
+  astore_3
+  aload_3
+  areturn
+Label0:
+  iconst_0
+  istore 5
+  iload_2
+  iconst_m1
+  iadd
+  istore 6
+Label11:
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  iload 6
+  if_icmplt Label1
+Label12:
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifle Label2
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  aload_0
+  astore_1
+  aload_1
+  iload 6
+  invokevirtual java/lang/String/charAt(I)C
+  istore 8
+  sipush 255
+  istore 4
+  iload 8
+  iload 4
+  iand
+  istore 8
+  aload 7
+  iload 8
+  iaload
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  iflt Label3
+Label2:
+  aload_0
+  astore_1
+  aload_1
+  iload 6
+  invokevirtual java/lang/String/charAt(I)C
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 61
+  istore 4
+  iload 8
+  iload 4
+  if_icmpne Label4
+  iconst_1
+  istore 10
+Label14:
+  iload 6
+  iload 5
+  isub
+  istore 9
+  iload 9
+  iconst_1
+  iadd
+  istore 11
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 76
+  istore 4
+  iload_2
+  iload 4
+  if_icmple Label5
+  bipush 76
+  istore 4
+  aload_0
+  astore_1
+  aload_1
+  iload 4
+  invokevirtual java/lang/String/charAt(I)C
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 13
+  istore 4
+  iload 8
+  iload 4
+  if_icmpne Label6
+  iload 11
+  bipush 78
+  idiv
+  istore 9
+Label15:
+  iload 9
+  iconst_1
+  ishl
+  istore 9
+Label16:
+  iload 11
+  iload 9
+  isub
+  istore_2
+  iload_2
+  bipush 6
+  imul
+  istore_2
+  iload_2
+  iconst_3
+  ishr
+  istore_2
+  iload_2
+  iload 10
+  isub
+  istore_2
+  iload_2
+  newarray byte
+  astore_3
+  iconst_0
+  istore 11
+  iload_2
+  iconst_3
+  idiv
+  istore 12
+  iload 12
+  iconst_3
+  imul
+  istore 12
+  iconst_0
+  dstore 13
+Label18:
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  iload 12
+  if_icmplt Label7
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  iload_2
+  if_icmpge Label8
+  iconst_0
+  istore 12
+  iconst_0
+  istore 11
+Label20:
+  iload 6
+  iload 10
+  isub
+  istore 9
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  iload 9
+  if_icmple Label9
+  bipush 16
+  istore 6
+Label21:
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  iload_2
+  if_icmplt Label10
+Label8:
+  aload_3
+  areturn
+Label1:
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  aload_0
+  astore_1
+  aload_1
+  iload 5
+  invokevirtual java/lang/String/charAt(I)C
+  istore 8
+  sipush 255
+  istore 4
+  iload 8
+  iload 4
+  iand
+  istore 8
+  aload 7
+  iload 8
+  iaload
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  iflt Label11
+  goto Label12
+Label3:
+  iload 6
+  iconst_m1
+  iadd
+  istore 6
+  goto Label12
+Label4:
+  iload 6
+  iconst_m1
+  iadd
+  istore 9
+  aload_0
+  astore_1
+  aload_1
+  iload 9
+  invokevirtual java/lang/String/charAt(I)C
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 61
+  istore 4
+  iload 8
+  iload 4
+  if_icmpne Label13
+  iconst_2
+  istore 10
+  goto Label14
+Label13:
+  iconst_0
+  istore 10
+  goto Label14
+Label6:
+  iconst_0
+  istore 9
+  goto Label15
+Label5:
+  iconst_0
+  istore 9
+  goto Label16
+Label7:
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  iload 5
+  iconst_1
+  iadd
+  istore 14
+  aload_0
+  astore_1
+  aload_1
+  iload 5
+  invokevirtual java/lang/String/charAt(I)C
+  istore 8
+  aload 7
+  iload 8
+  iaload
+  istore 5
+  iload 5
+  bipush 18
+  ishl
+  istore 5
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  iload 14
+  iconst_1
+  iadd
+  istore 15
+  aload_0
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual java/lang/String/charAt(I)C
+  istore 8
+  aload 7
+  iload 8
+  iaload
+  istore 14
+  iload 14
+  bipush 12
+  ishl
+  istore 14
+  iload 5
+  iload 14
+  ior
+  istore 14
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  iload 15
+  iconst_1
+  iadd
+  istore 16
+  aload_0
+  astore_1
+  aload_1
+  iload 15
+  invokevirtual java/lang/String/charAt(I)C
+  istore 8
+  aload 7
+  iload 8
+  iaload
+  istore 15
+  iload 15
+  bipush 6
+  ishl
+  istore 15
+  iload 14
+  iload 15
+  ior
+  istore 15
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  iload 16
+  iconst_1
+  iadd
+  istore 5
+  aload_0
+  astore_1
+  aload_1
+  iload 16
+  invokevirtual java/lang/String/charAt(I)C
+  istore 8
+  aload 7
+  iload 8
+  iaload
+  istore 16
+  iload 15
+  iload 16
+  ior
+  istore 16
+  iload 13
+  iconst_1
+  iadd
+  istore 15
+  iload 16
+  bipush 16
+  ishr
+  istore 14
+  iload 14
+  i2b
+  istore_1
+  iload_1
+  istore 17
+  aload_3
+  iload 13
+  iload 17
+  bastore
+  iload 15
+  iconst_1
+  iadd
+  istore 14
+  iload 16
+  bipush 8
+  ishr
+  istore 13
+  iload 13
+  i2b
+  istore_1
+  iload_1
+  istore 17
+  aload_3
+  iload 15
+  iload 17
+  bastore
+  iload 14
+  iconst_1
+  iadd
+  istore 15
+  iload 16
+  i2b
+  istore_1
+  iload_1
+  istore 17
+  aload_3
+  iload 14
+  iload 17
+  bastore
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifgt Label17
+  iload 15
+  istore 13
+  goto Label18
+Label17:
+  iload 11
+  iconst_1
+  iadd
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 19
+  istore 4
+  iload 11
+  iload 4
+  if_icmpne Label19
+  iconst_0
+  istore 11
+  iload 15
+  istore 13
+  iload 5
+  iconst_2
+  iadd
+  istore 5
+  goto Label18
+Label9:
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  aload_0
+  astore_1
+  aload_1
+  iload 5
+  invokevirtual java/lang/String/charAt(I)C
+  istore 8
+  aload 7
+  iload 8
+  iaload
+  istore 15
+  iload 11
+  bipush 6
+  imul
+  istore 14
+  bipush 18
+  istore 4
+  iload 4
+  iload 14
+  isub
+  istore 14
+  iload 15
+  iload 14
+  ishl
+  istore 15
+  iload 12
+  iload 15
+  ior
+  istore 12
+  iload 11
+  iconst_1
+  iadd
+  istore 11
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  goto Label20
+Label10:
+  iload 12
+  iload 6
+  ishr
+  istore 15
+  iload 15
+  i2b
+  istore 10
+  aload_3
+  iload 13
+  iload 10
+  bastore
+  iload 6
+  bipush -8
+  iadd
+  istore 6
+  iload 13
+  iconst_1
+  iadd
+  istore 13
+  goto Label21
+Label19:
+  iload 15
+  istore 13
+  goto Label18
+  nop
+.end <method>
+
+.method public static final decodeFast([B)[B
+.limit locals 19
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  arraylength
+  istore_2
+  aload_1
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  iconst_0
+  istore 4
+  iload 4
+  newarray byte
+  astore_3
+  aload_3
+  areturn
+Label0:
+  iconst_0
+  istore 5
+  iload_2
+  iconst_m1
+  iadd
+  istore 6
+Label11:
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  iload 6
+  if_icmplt Label1
+Label12:
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifle Label2
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  aload_0
+  iload 6
+  baload
+  istore 8
+  sipush 255
+  istore 4
+  iload 8
+  iload 4
+  iand
+  istore 9
+  aload 7
+  iload 9
+  iaload
+  istore 10
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  iflt Label3
+Label2:
+  aload_0
+  iload 6
+  baload
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 61
+  istore 4
+  iload 8
+  iload 4
+  if_icmpne Label4
+  iconst_1
+  istore 8
+Label14:
+  iload 6
+  iload 5
+  isub
+  istore 10
+  iload 10
+  iconst_1
+  iadd
+  istore 11
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 76
+  istore 4
+  iload_2
+  iload 4
+  if_icmple Label5
+  bipush 76
+  istore 4
+  aload_0
+  iload 4
+  baload
+  istore 12
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 13
+  istore 4
+  iload 12
+  iload 4
+  if_icmpne Label6
+  iload 11
+  bipush 78
+  idiv
+  istore 10
+Label15:
+  iload 10
+  iconst_1
+  ishl
+  istore 10
+Label16:
+  iload 11
+  iload 10
+  isub
+  istore_2
+  iload_2
+  bipush 6
+  imul
+  istore_2
+  iload_2
+  iconst_3
+  ishr
+  istore_2
+  iload_2
+  iload 8
+  isub
+  istore_2
+  iload_2
+  newarray byte
+  astore_3
+  iconst_0
+  istore 11
+  iload_2
+  iconst_3
+  idiv
+  istore 13
+  iload 13
+  iconst_3
+  imul
+  istore 13
+  iconst_0
+  dstore 14
+Label18:
+  dload 14
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 14
+  iload 13
+  if_icmplt Label7
+  dload 14
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 14
+  iload_2
+  if_icmpge Label8
+  iconst_0
+  istore 13
+  iconst_0
+  istore 11
+Label20:
+  iload 6
+  iload 8
+  isub
+  istore 10
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  iload 10
+  if_icmple Label9
+  bipush 16
+  istore 6
+Label21:
+  dload 14
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 14
+  iload_2
+  if_icmplt Label10
+Label8:
+  aload_3
+  areturn
+Label1:
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  aload_0
+  iload 5
+  baload
+  istore 15
+  sipush 255
+  istore 4
+  iload 15
+  iload 4
+  iand
+  istore 9
+  aload 7
+  iload 9
+  iaload
+  istore 10
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  iflt Label11
+  goto Label12
+Label3:
+  iload 6
+  iconst_m1
+  iadd
+  istore 6
+  goto Label12
+Label4:
+  iload 6
+  iconst_m1
+  iadd
+  istore 10
+  aload_0
+  iload 10
+  baload
+  istore 15
+  dload 15
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 61
+  istore 4
+  iload 15
+  iload 4
+  if_icmpne Label13
+  iconst_2
+  istore 8
+  goto Label14
+Label13:
+  iconst_0
+  istore 8
+  goto Label14
+Label6:
+  iconst_0
+  istore 10
+  goto Label15
+Label5:
+  iconst_0
+  istore 10
+  goto Label16
+Label7:
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  iload 5
+  iconst_1
+  iadd
+  istore 16
+  aload_0
+  iload 5
+  baload
+  istore 15
+  aload 7
+  iload 15
+  iaload
+  istore 5
+  iload 5
+  bipush 18
+  ishl
+  istore 5
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  iload 16
+  iconst_1
+  iadd
+  istore 17
+  aload_0
+  iload 16
+  baload
+  istore 12
+  aload 7
+  iload 12
+  iaload
+  istore 16
+  iload 16
+  bipush 12
+  ishl
+  istore 16
+  iload 5
+  iload 16
+  ior
+  istore 16
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  iload 17
+  iconst_1
+  iadd
+  istore 18
+  aload_0
+  iload 17
+  baload
+  istore 15
+  aload 7
+  iload 15
+  iaload
+  istore 17
+  iload 17
+  bipush 6
+  ishl
+  istore 17
+  iload 16
+  iload 17
+  ior
+  istore 17
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  iload 18
+  iconst_1
+  iadd
+  istore 5
+  aload_0
+  iload 18
+  baload
+  istore 15
+  aload 7
+  iload 15
+  iaload
+  istore 18
+  iload 17
+  iload 18
+  ior
+  istore 18
+  iload 14
+  iconst_1
+  iadd
+  istore 17
+  iload 18
+  bipush 16
+  ishr
+  istore 16
+  iload 16
+  i2b
+  istore 15
+  aload_3
+  iload 14
+  iload 15
+  bastore
+  iload 17
+  iconst_1
+  iadd
+  istore 16
+  iload 18
+  bipush 8
+  ishr
+  istore 14
+  iload 14
+  i2b
+  istore 15
+  aload_3
+  iload 17
+  iload 15
+  bastore
+  iload 16
+  iconst_1
+  iadd
+  istore 17
+  iload 18
+  istore_1
+  iload_1
+  i2b
+  istore 15
+  aload_3
+  iload 16
+  iload 15
+  bastore
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  ifgt Label17
+  iload 17
+  istore 14
+  goto Label18
+Label17:
+  iload 11
+  iconst_1
+  iadd
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 19
+  istore 4
+  iload 11
+  iload 4
+  if_icmpne Label19
+  iconst_0
+  istore 11
+  iload 17
+  istore 14
+  iload 5
+  iconst_2
+  iadd
+  istore 5
+  goto Label18
+Label9:
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  aload_0
+  iload 5
+  baload
+  istore 15
+  aload 7
+  iload 15
+  iaload
+  istore 17
+  iload 11
+  bipush 6
+  imul
+  istore 16
+  bipush 18
+  istore 4
+  iload 4
+  iload 16
+  isub
+  istore 16
+  iload 17
+  istore_1
+  iload_1
+  iload 16
+  ishl
+  istore_1
+  iload_1
+  istore 17
+  iload 13
+  iload_1
+  ior
+  istore 13
+  iload 11
+  iconst_1
+  iadd
+  istore 11
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  goto Label20
+Label10:
+  iload 13
+  iload 6
+  ishr
+  istore 17
+  iload 17
+  istore_1
+  iload_1
+  i2b
+  istore 15
+  aload_3
+  iload 14
+  iload 15
+  bastore
+  iload 6
+  bipush -8
+  iadd
+  istore 6
+  iload 14
+  iconst_1
+  iadd
+  istore 14
+  goto Label21
+Label19:
+  iload 17
+  istore 14
+  goto Label18
+  nop
+.end <method>
+
+.method public static final decodeFast([C)[B
+.limit locals 18
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  arraylength
+  istore_2
+  aload_1
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  iconst_0
+  istore 4
+  iload 4
+  newarray byte
+  astore_3
+  aload_3
+  areturn
+Label0:
+  iconst_0
+  istore 5
+  iload_2
+  iconst_m1
+  iadd
+  istore 6
+Label11:
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  iload 6
+  if_icmplt Label1
+Label12:
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifle Label2
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  aload_0
+  iload 6
+  caload
+  istore 8
+  aload 7
+  iload 8
+  iaload
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  iflt Label3
+Label2:
+  aload_0
+  iload 6
+  caload
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 61
+  istore 4
+  iload 8
+  iload 4
+  if_icmpne Label4
+  iconst_1
+  istore 10
+Label14:
+  iload 6
+  iload 5
+  isub
+  istore 9
+  iload 9
+  iconst_1
+  iadd
+  istore 11
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 76
+  istore 4
+  iload_2
+  iload 4
+  if_icmple Label5
+  bipush 76
+  istore 4
+  aload_0
+  iload 4
+  caload
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 13
+  istore 4
+  iload 8
+  iload 4
+  if_icmpne Label6
+  iload 11
+  bipush 78
+  idiv
+  istore 9
+Label15:
+  iload 9
+  iconst_1
+  ishl
+  istore 9
+Label16:
+  iload 11
+  iload 9
+  isub
+  istore_2
+  iload_2
+  bipush 6
+  imul
+  istore_2
+  iload_2
+  iconst_3
+  ishr
+  istore_2
+  iload_2
+  iload 10
+  isub
+  istore_2
+  iload_2
+  newarray byte
+  astore_3
+  iconst_0
+  istore 11
+  iload_2
+  iconst_3
+  idiv
+  istore 12
+  iload 12
+  iconst_3
+  imul
+  istore 12
+  iconst_0
+  dstore 13
+Label18:
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  iload 12
+  if_icmplt Label7
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  iload_2
+  if_icmpge Label8
+  iconst_0
+  istore 12
+  iconst_0
+  istore 11
+Label20:
+  iload 6
+  iload 10
+  isub
+  istore 9
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  iload 9
+  if_icmple Label9
+  bipush 16
+  istore 6
+Label21:
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  iload_2
+  if_icmplt Label10
+Label8:
+  aload_3
+  areturn
+Label1:
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  aload_0
+  iload 5
+  caload
+  istore 8
+  aload 7
+  iload 8
+  iaload
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  iflt Label11
+  goto Label12
+Label3:
+  iload 6
+  iconst_m1
+  iadd
+  istore 6
+  goto Label12
+Label4:
+  iload 6
+  iconst_m1
+  iadd
+  istore 9
+  aload_0
+  iload 9
+  caload
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 61
+  istore 4
+  iload 8
+  iload 4
+  if_icmpne Label13
+  iconst_2
+  istore 10
+  goto Label14
+Label13:
+  iconst_0
+  istore 10
+  goto Label14
+Label6:
+  iconst_0
+  istore 9
+  goto Label15
+Label5:
+  iconst_0
+  istore 9
+  goto Label16
+Label7:
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  iload 5
+  iconst_1
+  iadd
+  istore 14
+  aload_0
+  iload 5
+  caload
+  istore 8
+  aload 7
+  iload 8
+  iaload
+  istore 5
+  iload 5
+  bipush 18
+  ishl
+  istore 5
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  iload 14
+  iconst_1
+  iadd
+  istore 15
+  aload_0
+  iload 14
+  caload
+  istore 8
+  aload 7
+  iload 8
+  iaload
+  istore 14
+  iload 14
+  bipush 12
+  ishl
+  istore 14
+  iload 5
+  iload 14
+  ior
+  istore 14
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  iload 15
+  iconst_1
+  iadd
+  istore 16
+  aload_0
+  iload 15
+  caload
+  istore 8
+  aload 7
+  iload 8
+  iaload
+  istore 15
+  iload 15
+  bipush 6
+  ishl
+  istore 15
+  iload 14
+  iload 15
+  ior
+  istore 15
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  iload 16
+  iconst_1
+  iadd
+  istore 5
+  aload_0
+  iload 16
+  caload
+  istore 8
+  aload 7
+  iload 8
+  iaload
+  istore 16
+  iload 15
+  iload 16
+  ior
+  istore 16
+  iload 13
+  iconst_1
+  iadd
+  istore 15
+  iload 16
+  bipush 16
+  ishr
+  istore 14
+  iload 14
+  i2b
+  istore_1
+  iload_1
+  istore 17
+  aload_3
+  iload 13
+  iload 17
+  bastore
+  iload 15
+  iconst_1
+  iadd
+  istore 14
+  iload 16
+  bipush 8
+  ishr
+  istore 13
+  iload 13
+  i2b
+  istore_1
+  iload_1
+  istore 17
+  aload_3
+  iload 15
+  iload 17
+  bastore
+  iload 14
+  iconst_1
+  iadd
+  istore 15
+  iload 16
+  i2b
+  istore_1
+  iload_1
+  istore 17
+  aload_3
+  iload 14
+  iload 17
+  bastore
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifgt Label17
+  iload 15
+  istore 13
+  goto Label18
+Label17:
+  iload 11
+  iconst_1
+  iadd
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 19
+  istore 4
+  iload 11
+  iload 4
+  if_icmpne Label19
+  iconst_0
+  istore 11
+  iload 15
+  istore 13
+  iload 5
+  iconst_2
+  iadd
+  istore 5
+  goto Label18
+Label9:
+  getstatic com/admogo/encryption/Base64/IA [I
+  astore 7
+  aload_0
+  iload 5
+  caload
+  istore 8
+  aload 7
+  iload 8
+  iaload
+  istore 15
+  iload 11
+  bipush 6
+  imul
+  istore 14
+  bipush 18
+  istore 4
+  iload 4
+  iload 14
+  isub
+  istore 14
+  iload 15
+  iload 14
+  ishl
+  istore 15
+  iload 12
+  iload 15
+  ior
+  istore 12
+  iload 11
+  iconst_1
+  iadd
+  istore 11
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  goto Label20
+Label10:
+  iload 12
+  iload 6
+  ishr
+  istore 15
+  iload 15
+  i2b
+  istore 10
+  aload_3
+  iload 13
+  iload 10
+  bastore
+  iload 6
+  bipush -8
+  iadd
+  istore 6
+  iload 13
+  iconst_1
+  iadd
+  istore 13
+  goto Label21
+Label19:
+  iload 15
+  istore 13
+  goto Label18
+  nop
+.end <method>
+
+.method private static discardNonBase64Chars(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 7
+.limit stack 200
+  nop
+  new java/lang/StringBuffer
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuffer/<init>()V
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore_2
+  iconst_0
+  istore_3
+Label2:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload_2
+  if_icmplt Label0
+  aload_1
+  invokevirtual java/lang/StringBuffer/toString()Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+Label0:
+  aload_0
+  iload_3
+  invokevirtual java/lang/String/charAt(I)C
+  istore 4
+  iload 4
+  i2b
+  istore 5
+  iload 5
+  invokestatic com/admogo/encryption/Base64/isValidBase64Byte(B)Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label1
+  aload_0
+  iload_3
+  invokevirtual java/lang/String/charAt(I)C
+  istore 4
+  aload_1
+  iload 4
+  invokevirtual java/lang/StringBuffer/append(C)Ljava/lang/StringBuffer;
+  pop
+Label1:
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label2
+  nop
+.end <method>
+
+.method public static final encodeToByte([BZ)[B
+.limit locals 18
+.limit stack 200
+  nop
+  aload_0
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  arraylength
+  istore_3
+  aload_2
+  astore_0
+Label2:
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  ifne Label1
+  iconst_0
+  istore 5
+  iload 5
+  newarray byte
+  astore 4
+Label5:
+  aload 4
+  areturn
+Label0:
+  iconst_0
+  istore_3
+  goto Label2
+Label1:
+  iload_3
+  iconst_3
+  idiv
+  istore 6
+  iload 6
+  iconst_3
+  imul
+  istore 7
+  iload_3
+  iconst_m1
+  iadd
+  istore 6
+  iload 6
+  iconst_3
+  idiv
+  istore 6
+  iload 6
+  iconst_1
+  iadd
+  istore 6
+  iload 6
+  iconst_2
+  ishl
+  istore 8
+  iload_1
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label3
+  iload 8
+  iconst_m1
+  iadd
+  istore 6
+  iload 6
+  bipush 76
+  idiv
+  istore 6
+  iload 6
+  iconst_1
+  ishl
+  istore 6
+Label8:
+  iload 8
+  iload 6
+  iadd
+  istore 9
+  iload 9
+  newarray byte
+  astore 4
+  iconst_0
+  istore 8
+  iconst_0
+  istore 10
+  iconst_0
+  dstore 6
+Label10:
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  iload 7
+  if_icmplt Label4
+  iload_3
+  iload 7
+  isub
+  istore 10
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  ifle Label5
+  aload_0
+  iload 7
+  baload
+  istore 11
+  sipush 255
+  istore 5
+  iload 11
+  iload 5
+  iand
+  istore 12
+  iload 12
+  bipush 10
+  ishl
+  istore 6
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 5
+  iload 10
+  iload 5
+  if_icmpne Label6
+  iload_3
+  iconst_m1
+  iadd
+  istore_3
+  aload_0
+  iload_3
+  baload
+  istore 11
+  sipush 255
+  istore 5
+  iload 11
+  iload 5
+  iand
+  istore 12
+  iload 12
+  iconst_2
+  ishl
+  istore_3
+Label12:
+  iload 6
+  iload_3
+  ior
+  istore 7
+  iload 9
+  bipush -4
+  iadd
+  istore 6
+  getstatic com/admogo/encryption/Base64/CA [C
+  astore 13
+  iload 7
+  bipush 12
+  ishr
+  istore_3
+  aload 13
+  iload_3
+  caload
+  istore 14
+  iload 14
+  i2b
+  istore 11
+  aload 4
+  iload 6
+  iload 11
+  bastore
+  iload 9
+  bipush -3
+  iadd
+  istore_3
+  getstatic com/admogo/encryption/Base64/CA [C
+  astore 13
+  iload 7
+  bipush 6
+  iushr
+  istore 6
+  iload 6
+  bipush 63
+  iand
+  istore 6
+  aload 13
+  iload 6
+  caload
+  istore 14
+  iload 14
+  i2b
+  istore 11
+  aload 4
+  iload_3
+  iload 11
+  bastore
+  iload 9
+  bipush -2
+  iadd
+  istore_3
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 5
+  iload 10
+  iload 5
+  if_icmpne Label7
+  getstatic com/admogo/encryption/Base64/CA [C
+  astore 13
+  iload 7
+  bipush 63
+  iand
+  istore 6
+  aload 13
+  iload 6
+  caload
+  istore 14
+  iload 14
+  i2b
+  istore 11
+Label13:
+  aload 4
+  iload_3
+  iload 11
+  bastore
+  iload 9
+  iconst_m1
+  iadd
+  istore_3
+  bipush 61
+  istore 5
+  aload 4
+  iload_3
+  iload 5
+  bastore
+  aload 4
+  areturn
+Label3:
+  iconst_0
+  istore 6
+  goto Label8
+Label4:
+  iload 6
+  iconst_1
+  iadd
+  istore 15
+  aload_0
+  iload 6
+  baload
+  istore 11
+  sipush 255
+  istore 5
+  iload 11
+  iload 5
+  iand
+  istore 12
+  iload 12
+  bipush 16
+  ishl
+  istore 6
+  iload 15
+  iconst_1
+  iadd
+  istore 16
+  aload_0
+  iload 15
+  baload
+  istore 11
+  sipush 255
+  istore 5
+  iload 11
+  iload 5
+  iand
+  istore 12
+  iload 12
+  bipush 8
+  ishl
+  istore 15
+  iload 6
+  iload 15
+  ior
+  istore 15
+  iload 16
+  iconst_1
+  iadd
+  istore 6
+  aload_0
+  iload 16
+  baload
+  istore 11
+  sipush 255
+  istore 5
+  iload 11
+  iload 5
+  iand
+  istore 12
+  iload 15
+  iload 12
+  ior
+  istore 16
+  iload 10
+  iconst_1
+  iadd
+  istore 15
+  getstatic com/admogo/encryption/Base64/CA [C
+  astore 13
+  iload 16
+  bipush 18
+  iushr
+  istore 17
+  iload 17
+  bipush 63
+  iand
+  istore 17
+  aload 13
+  iload 17
+  caload
+  istore 14
+  iload 14
+  i2b
+  istore 11
+  aload 4
+  iload 10
+  iload 11
+  bastore
+  iload 15
+  iconst_1
+  iadd
+  istore 17
+  getstatic com/admogo/encryption/Base64/CA [C
+  astore 13
+  iload 16
+  bipush 12
+  iushr
+  istore 10
+  iload 10
+  bipush 63
+  iand
+  istore 10
+  aload 13
+  iload 10
+  caload
+  istore 14
+  iload 14
+  i2b
+  istore 11
+  aload 4
+  iload 15
+  iload 11
+  bastore
+  iload 17
+  iconst_1
+  iadd
+  istore 15
+  getstatic com/admogo/encryption/Base64/CA [C
+  astore 13
+  iload 16
+  bipush 6
+  iushr
+  istore 10
+  iload 10
+  bipush 63
+  iand
+  istore 10
+  aload 13
+  iload 10
+  caload
+  istore 14
+  iload 14
+  i2b
+  istore 11
+  aload 4
+  iload 17
+  iload 11
+  bastore
+  iload 15
+  iconst_1
+  iadd
+  istore 10
+  getstatic com/admogo/encryption/Base64/CA [C
+  astore 13
+  iload 16
+  bipush 63
+  iand
+  istore 17
+  aload 13
+  iload 17
+  caload
+  istore 14
+  iload 14
+  i2b
+  istore 11
+  aload 4
+  iload 15
+  iload 11
+  bastore
+  iload_1
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label9
+  goto Label10
+Label9:
+  iload 8
+  iconst_1
+  iadd
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 19
+  istore 5
+  iload 8
+  iload 5
+  if_icmpne Label11
+  iload 9
+  bipush -2
+  iadd
+  istore 17
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 17
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  iload 17
+  if_icmpge Label11
+  iload 10
+  iconst_1
+  iadd
+  istore 17
+  bipush 13
+  istore 5
+  aload 4
+  iload 10
+  iload 5
+  bastore
+  iload 17
+  iconst_1
+  iadd
+  istore 10
+  bipush 10
+  istore 5
+  aload 4
+  iload 17
+  iload 5
+  bastore
+  iconst_0
+  istore 8
+  goto Label10
+Label6:
+  iconst_0
+  istore_3
+  goto Label12
+Label7:
+  bipush 61
+  istore 11
+  goto Label13
+Label11:
+  goto Label10
+  nop
+.end <method>
+
+.method public static final encodeToChar([BZ)[C
+.limit locals 18
+.limit stack 200
+  nop
+  aload_0
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  aload_0
+  astore_2
+  aload_2
+  arraylength
+  istore_3
+  aload_2
+  astore_0
+Label2:
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  ifne Label1
+  iconst_0
+  istore 5
+  iload 5
+  newarray char
+  astore 4
+Label5:
+  aload 4
+  areturn
+Label0:
+  iconst_0
+  istore_3
+  goto Label2
+Label1:
+  iload_3
+  iconst_3
+  idiv
+  istore 6
+  iload 6
+  iconst_3
+  imul
+  istore 7
+  iload_3
+  iconst_m1
+  iadd
+  istore 6
+  iload 6
+  iconst_3
+  idiv
+  istore 6
+  iload 6
+  iconst_1
+  iadd
+  istore 6
+  iload 6
+  iconst_2
+  ishl
+  istore 8
+  iload_1
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label3
+  iload 8
+  iconst_m1
+  iadd
+  istore 6
+  iload 6
+  bipush 76
+  idiv
+  istore 6
+  iload 6
+  iconst_1
+  ishl
+  istore 6
+Label8:
+  iload 8
+  iload 6
+  iadd
+  istore 9
+  iload 9
+  newarray char
+  astore 4
+  iconst_0
+  istore 8
+  iconst_0
+  istore 10
+  iconst_0
+  dstore 6
+Label10:
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  iload 7
+  if_icmplt Label4
+  iload_3
+  iload 7
+  isub
+  istore 10
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  ifle Label5
+  aload_0
+  iload 7
+  baload
+  istore 11
+  sipush 255
+  istore 5
+  iload 11
+  iload 5
+  iand
+  istore 12
+  iload 12
+  bipush 10
+  ishl
+  istore 6
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 5
+  iload 10
+  iload 5
+  if_icmpne Label6
+  iload_3
+  iconst_m1
+  iadd
+  istore_3
+  aload_0
+  iload_3
+  baload
+  istore 11
+  sipush 255
+  istore 5
+  iload 11
+  iload 5
+  iand
+  istore 12
+  iload 12
+  iconst_2
+  ishl
+  istore_3
+Label12:
+  iload 6
+  iload_3
+  ior
+  istore 7
+  iload 9
+  bipush -4
+  iadd
+  istore 6
+  getstatic com/admogo/encryption/Base64/CA [C
+  astore 13
+  iload 7
+  bipush 12
+  ishr
+  istore_3
+  aload 13
+  iload_3
+  caload
+  istore 14
+  aload 4
+  iload 6
+  iload 14
+  castore
+  iload 9
+  bipush -3
+  iadd
+  istore_3
+  getstatic com/admogo/encryption/Base64/CA [C
+  astore 13
+  iload 7
+  bipush 6
+  iushr
+  istore 6
+  iload 6
+  bipush 63
+  iand
+  istore 6
+  aload 13
+  iload 6
+  caload
+  istore 14
+  aload 4
+  iload_3
+  iload 14
+  castore
+  iload 9
+  bipush -2
+  iadd
+  istore_3
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 5
+  iload 10
+  iload 5
+  if_icmpne Label7
+  getstatic com/admogo/encryption/Base64/CA [C
+  astore 13
+  iload 7
+  bipush 63
+  iand
+  istore 6
+  aload 13
+  iload 6
+  caload
+  istore 14
+Label13:
+  aload 4
+  iload_3
+  iload 14
+  castore
+  iload 9
+  iconst_m1
+  iadd
+  istore_3
+  bipush 61
+  istore 5
+  aload 4
+  iload_3
+  iload 5
+  castore
+  aload 4
+  areturn
+Label3:
+  iconst_0
+  istore 6
+  goto Label8
+Label4:
+  iload 6
+  iconst_1
+  iadd
+  istore 15
+  aload_0
+  iload 6
+  baload
+  istore 11
+  sipush 255
+  istore 5
+  iload 11
+  iload 5
+  iand
+  istore 12
+  iload 12
+  bipush 16
+  ishl
+  istore 6
+  iload 15
+  iconst_1
+  iadd
+  istore 16
+  aload_0
+  iload 15
+  baload
+  istore 11
+  sipush 255
+  istore 5
+  iload 11
+  iload 5
+  iand
+  istore 12
+  iload 12
+  bipush 8
+  ishl
+  istore 15
+  iload 6
+  iload 15
+  ior
+  istore 15
+  iload 16
+  iconst_1
+  iadd
+  istore 6
+  aload_0
+  iload 16
+  baload
+  istore 11
+  sipush 255
+  istore 5
+  iload 11
+  iload 5
+  iand
+  istore 12
+  iload 15
+  iload 12
+  ior
+  istore 16
+  iload 10
+  iconst_1
+  iadd
+  istore 15
+  getstatic com/admogo/encryption/Base64/CA [C
+  astore 13
+  iload 16
+  bipush 18
+  iushr
+  istore 17
+  iload 17
+  bipush 63
+  iand
+  istore 17
+  aload 13
+  iload 17
+  caload
+  istore 14
+  aload 4
+  iload 10
+  iload 14
+  castore
+  iload 15
+  iconst_1
+  iadd
+  istore 17
+  getstatic com/admogo/encryption/Base64/CA [C
+  astore 13
+  iload 16
+  bipush 12
+  iushr
+  istore 10
+  iload 10
+  bipush 63
+  iand
+  istore 10
+  aload 13
+  iload 10
+  caload
+  istore 14
+  aload 4
+  iload 15
+  iload 14
+  castore
+  iload 17
+  iconst_1
+  iadd
+  istore 15
+  getstatic com/admogo/encryption/Base64/CA [C
+  astore 13
+  iload 16
+  bipush 6
+  iushr
+  istore 10
+  iload 10
+  bipush 63
+  iand
+  istore 10
+  aload 13
+  iload 10
+  caload
+  istore 14
+  aload 4
+  iload 17
+  iload 14
+  castore
+  iload 15
+  iconst_1
+  iadd
+  istore 10
+  getstatic com/admogo/encryption/Base64/CA [C
+  astore 13
+  iload 16
+  bipush 63
+  iand
+  istore 17
+  aload 13
+  iload 17
+  caload
+  istore 14
+  aload 4
+  iload 15
+  iload 14
+  castore
+  iload_1
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label9
+  goto Label10
+Label9:
+  iload 8
+  iconst_1
+  iadd
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 19
+  istore 5
+  iload 8
+  iload 5
+  if_icmpne Label11
+  iload 9
+  bipush -2
+  iadd
+  istore 17
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 17
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  iload 17
+  if_icmpge Label11
+  iload 10
+  iconst_1
+  iadd
+  istore 17
+  bipush 13
+  istore 5
+  aload 4
+  iload 10
+  iload 5
+  castore
+  iload 17
+  iconst_1
+  iadd
+  istore 10
+  bipush 10
+  istore 5
+  aload 4
+  iload 17
+  iload 5
+  castore
+  iconst_0
+  istore 8
+  goto Label10
+Label6:
+  iconst_0
+  istore_3
+  goto Label12
+Label7:
+  bipush 61
+  istore 14
+  goto Label13
+Label11:
+  goto Label10
+  nop
+.end <method>
+
+.method public static final encodeToString([BZ)Ljava/lang/String;
+.limit locals 4
+.limit stack 200
+  nop
+  new java/lang/String
+  astore_2
+  aload_0
+  iload_1
+  invokestatic com/admogo/encryption/Base64/encodeToChar([BZ)[C
+  astore_3
+  aload_2
+  aload_3
+  invokespecial java/lang/String/<init>([C)V
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method private static isValidBase64Byte(B)Z
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  bipush 61
+  istore_1
+  iload_0
+  iload_1
+  if_icmpne Label0
+Label3:
+  iconst_1
+  istore_1
+  iload_1
+  ireturn
+Label0:
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iflt Label1
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 128
+  istore_1
+  iload_0
+  iload_1
+  if_icmplt Label2
+Label1:
+  iconst_0
+  istore_1
+  iload_1
+  ireturn
+Label2:
+  getstatic com/admogo/encryption/Base64/decodingTable [B
+  astore_2
+  aload_2
+  iload_0
+  baload
+  istore_0
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore_1
+  iload_0
+  iload_1
+  if_icmpne Label3
+  iconst_0
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+

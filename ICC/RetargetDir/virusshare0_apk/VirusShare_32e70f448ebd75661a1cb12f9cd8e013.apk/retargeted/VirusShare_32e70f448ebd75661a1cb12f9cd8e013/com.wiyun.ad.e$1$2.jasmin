@@ -1,0 +1,84 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/e$1$2
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcom/wiyun/ad/e$1;
+
+.method <init>(Lcom/wiyun/ad/e$1;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/wiyun/ad/e$1$2/a Lcom/wiyun/ad/e$1;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/e$1$2/a Lcom/wiyun/ad/e$1;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  invokestatic com/wiyun/ad/e/a(Lcom/wiyun/ad/e;)Lcom/wiyun/ad/j;
+  astore_3
+  aload_3
+  getfield com/wiyun/ad/j/F I
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifeq Label0
+  aload_0
+  getfield com/wiyun/ad/e$1$2/a Lcom/wiyun/ad/e$1;
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/e$1/a(Lcom/wiyun/ad/e$1;)Lcom/wiyun/ad/e;
+  astore_2
+  aload_2
+  invokestatic com/wiyun/ad/e/a(Lcom/wiyun/ad/e;)Lcom/wiyun/ad/j;
+  astore_3
+  aload_3
+  getfield com/wiyun/ad/j/i I
+  istore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 6
+  iload 5
+  iload 6
+  if_icmpne Label1
+Label0:
+  aload_0
+  getfield com/wiyun/ad/e$1$2/a Lcom/wiyun/ad/e$1;
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/e$1/a(Lcom/wiyun/ad/e$1;)Lcom/wiyun/ad/e;
+  astore_2
+  aload_2
+  invokestatic com/wiyun/ad/e/f(Lcom/wiyun/ad/e;)V
+Label2:
+  return
+Label1:
+  aload_0
+  getfield com/wiyun/ad/e$1$2/a Lcom/wiyun/ad/e$1;
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/e$1/a(Lcom/wiyun/ad/e$1;)Lcom/wiyun/ad/e;
+  astore_2
+  aload_2
+  invokestatic com/wiyun/ad/e/g(Lcom/wiyun/ad/e;)V
+  goto Label2
+  nop
+.end <method>
+

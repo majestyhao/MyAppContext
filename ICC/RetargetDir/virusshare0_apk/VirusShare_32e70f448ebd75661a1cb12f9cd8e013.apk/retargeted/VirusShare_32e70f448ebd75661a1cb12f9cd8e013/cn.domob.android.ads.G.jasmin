@@ -1,0 +1,16 @@
+.source SourceFile
+.interface interface abstract  cn/domob/android/ads/G
+.super java/lang/Object
+
+.method public abstract a(Lcn/domob/android/ads/j;I)V
+.end <method>
+
+.method public abstract a(Lcn/domob/android/ads/o;)V
+.end <method>
+
+.method public abstract a(Ljava/lang/String;)V
+.end <method>
+
+.method public abstract b(Lcn/domob/android/ads/j;)V
+.end <method>
+

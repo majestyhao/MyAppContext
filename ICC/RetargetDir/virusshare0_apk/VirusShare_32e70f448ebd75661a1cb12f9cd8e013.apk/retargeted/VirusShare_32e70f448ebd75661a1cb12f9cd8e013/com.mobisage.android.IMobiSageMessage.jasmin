@@ -1,0 +1,10 @@
+.source SourceFile
+.interface public interface abstract  com/mobisage/android/IMobiSageMessage
+.super java/lang/Object
+
+.method public abstract createHttpRequest()Lorg/apache/http/client/methods/HttpRequestBase;
+.end <method>
+
+.method public abstract createMessageRunnable()Ljava/lang/Runnable;
+.end <method>
+

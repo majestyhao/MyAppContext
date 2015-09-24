@@ -1,0 +1,232 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/tencent/mobwin/core/c
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcom/tencent/mobwin/core/w;
+.field private "b" Landroid/view/animation/Animation;
+
+.method public <init>(Lcom/tencent/mobwin/core/w;Landroid/view/animation/Animation;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/c/a Lcom/tencent/mobwin/core/w;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  aload_2
+  putfield com/tencent/mobwin/core/c/b Landroid/view/animation/Animation;
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 18
+.limit stack 200
+  .catch  java/lang/Exception <from> Label5 <to> Label3 <using> Label4
+  nop
+  new java/lang/StringBuilder
+  astore_2
+  ldc "\u63cf\u7ed8\u524d"
+  astore_3
+  aload_2
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 4
+  aload_2
+  lload 4
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  ldc "IORY"
+  astore_3
+  aload_3
+  aload 6
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+Label5:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/c/a Lcom/tencent/mobwin/core/w;
+  astore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/c/a Lcom/tencent/mobwin/core/w;
+  astore 7
+  iconst_0
+  istore 8
+  aload 7
+  iload 8
+  invokestatic com/tencent/mobwin/core/w/b(Lcom/tencent/mobwin/core/w;Z)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/c/b Landroid/view/animation/Animation;
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/c/a Lcom/tencent/mobwin/core/w;
+  astore 7
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/c/b Landroid/view/animation/Animation;
+  astore 9
+  aload 7
+  aload 9
+  invokevirtual com/tencent/mobwin/core/w/startAnimation(Landroid/view/animation/Animation;)V
+Label0:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/c/a Lcom/tencent/mobwin/core/w;
+  astore 7
+  aload 7
+  invokestatic com/tencent/mobwin/core/w/t(Lcom/tencent/mobwin/core/w;)V
+  new java/lang/StringBuilder
+  astore_2
+  ldc "\u63cf\u7ed8\u540e"
+  astore_3
+  aload_2
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 4
+  aload_2
+  lload 4
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 10
+  ldc "IORY"
+  astore_3
+  aload_3
+  aload 10
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/c/a Lcom/tencent/mobwin/core/w;
+  astore 7
+  aload 7
+  invokestatic com/tencent/mobwin/core/w/c(Lcom/tencent/mobwin/core/w;)Lcom/tencent/mobwin/core/a/h;
+  astore 11
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  ifnull Label1
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/c/a Lcom/tencent/mobwin/core/w;
+  astore 7
+  aload 7
+  invokestatic com/tencent/mobwin/core/w/c(Lcom/tencent/mobwin/core/w;)Lcom/tencent/mobwin/core/a/h;
+  astore 11
+  aload 11
+  getfield com/tencent/mobwin/core/a/h/a LMobWin/ADInfo;
+  astore 12
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  ifnull Label1
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/c/a Lcom/tencent/mobwin/core/w;
+  astore 7
+  aload 7
+  invokestatic com/tencent/mobwin/core/w/c(Lcom/tencent/mobwin/core/w;)Lcom/tencent/mobwin/core/a/h;
+  astore 11
+  aload 11
+  getfield com/tencent/mobwin/core/a/h/d Z
+  istore 13
+  iload 13
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 13
+  ifne Label1
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/c/a Lcom/tencent/mobwin/core/w;
+  astore 7
+  aload 7
+  invokestatic com/tencent/mobwin/core/w/u(Lcom/tencent/mobwin/core/w;)V
+Label1:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/c/a Lcom/tencent/mobwin/core/w;
+  astore 7
+  aload 7
+  invokestatic com/tencent/mobwin/core/w/v(Lcom/tencent/mobwin/core/w;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/c/a Lcom/tencent/mobwin/core/w;
+  astore 7
+  aload 7
+  invokestatic com/tencent/mobwin/core/w/w(Lcom/tencent/mobwin/core/w;)Landroid/graphics/Bitmap;
+  astore 14
+  aload 14
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 14
+  ifnull Label2
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/c/a Lcom/tencent/mobwin/core/w;
+  astore 7
+  aload 7
+  invokestatic com/tencent/mobwin/core/w/w(Lcom/tencent/mobwin/core/w;)Landroid/graphics/Bitmap;
+  astore 14
+  aload 14
+  invokevirtual android/graphics/Bitmap/recycle()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/c/a Lcom/tencent/mobwin/core/w;
+  astore 7
+  aconst_null
+  astore 15
+  aload 7
+  aload 15
+  invokestatic com/tencent/mobwin/core/w/a(Lcom/tencent/mobwin/core/w;Landroid/graphics/Bitmap;)V
+Label2:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/tencent/mobwin/core/c/a Lcom/tencent/mobwin/core/w;
+  astore 7
+  aload 7
+  invokestatic com/tencent/mobwin/core/w/x(Lcom/tencent/mobwin/core/w;)Lcom/tencent/mobwin/AdView;
+  astore 16
+  aload 16
+  invokevirtual com/tencent/mobwin/AdView/requestLayout()V
+Label3:
+  return
+Label4:
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label3
+  nop
+.end <method>
+

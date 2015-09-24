@@ -1,0 +1,674 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/kuguo/ad/e
+.super java/lang/Object
+.field private static final "a" [C
+
+.method static <clinit>()V
+.limit locals 3
+.limit stack 200
+  nop
+  bipush 16
+  istore_1
+  iload_1
+  newarray char
+  astore_0
+  iconst_0
+  istore_1
+  bipush 48
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_1
+  istore_1
+  bipush 49
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_2
+  istore_1
+  bipush 50
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_3
+  istore_1
+  bipush 51
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_4
+  istore_1
+  bipush 52
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  iconst_5
+  istore_1
+  bipush 53
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 6
+  istore_1
+  bipush 54
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 7
+  istore_1
+  bipush 55
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 8
+  istore_1
+  bipush 56
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 9
+  istore_1
+  bipush 57
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 10
+  istore_1
+  bipush 65
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 11
+  istore_1
+  bipush 66
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 12
+  istore_1
+  bipush 67
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 13
+  istore_1
+  bipush 68
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 14
+  istore_1
+  bipush 69
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  bipush 15
+  istore_1
+  bipush 70
+  istore_2
+  aload_0
+  iload_1
+  iload_2
+  castore
+  aload_0
+  putstatic com/kuguo/ad/e/a [C
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method protected static a([B)J
+.limit locals 13
+.limit stack 200
+  nop
+  aload_0
+  arraylength
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  lookupswitch
+  1 : Label1
+  2 : Label2
+  3 : Label3
+  4 : Label4
+  5 : Label3
+  6 : Label3
+  7 : Label3
+  8 : Label5
+  default : Label0
+Label0:
+  goto Label3
+Label3:
+  ldc2_w 0
+  lstore_2
+  lload_2
+  lreturn
+Label5:
+  iconst_0
+  istore 5
+  aload_0
+  iload 5
+  baload
+  istore 4
+  iload 4
+  i2l
+  lstore 6
+  bipush 56
+  istore 5
+  lload 6
+  iload 5
+  lshl
+  lstore 6
+  ldc2_w -72057594037927936
+  lstore_2
+  lload 6
+  lload_2
+  land
+  lstore 8
+  iconst_1
+  istore 5
+  aload_0
+  iload 5
+  baload
+  istore 4
+  iload 4
+  i2l
+  lstore 6
+  bipush 48
+  istore 5
+  lload 6
+  iload 5
+  lshl
+  lstore 6
+  ldc2_w 71776119061217280
+  lstore_2
+  lload 6
+  lload_2
+  land
+  lstore 10
+  lload 8
+  lload 10
+  lor
+  lstore 10
+  iconst_2
+  istore 5
+  aload_0
+  iload 5
+  baload
+  istore 4
+  iload 4
+  i2l
+  lstore 8
+  bipush 40
+  istore 5
+  lload 8
+  iload 5
+  lshl
+  lstore 8
+  ldc2_w 280375465082880
+  lstore_2
+  lload 8
+  lload_2
+  land
+  lstore 8
+  lload 10
+  lload 8
+  lor
+  lstore 10
+  iconst_3
+  istore 5
+  aload_0
+  iload 5
+  baload
+  istore 4
+  iload 4
+  i2l
+  lstore 8
+  bipush 32
+  istore 5
+  lload 8
+  iload 5
+  lshl
+  lstore 8
+  ldc2_w 1095216660480
+  lstore_2
+  lload 8
+  lload_2
+  land
+  lstore 8
+  lload 10
+  lload 8
+  lor
+  lstore 10
+  iconst_4
+  istore 5
+  aload_0
+  iload 5
+  baload
+  istore 4
+  iload 4
+  i2l
+  lstore 8
+  bipush 24
+  istore 5
+  lload 8
+  iload 5
+  lshl
+  lstore 8
+  ldc2_w 4278190080
+  lstore_2
+  lload 8
+  lload_2
+  land
+  lstore 8
+  lload 10
+  lload 8
+  lor
+  lstore 10
+  iconst_5
+  istore 5
+  aload_0
+  iload 5
+  baload
+  istore 4
+  iload 4
+  i2l
+  lstore 8
+  bipush 16
+  istore 5
+  lload 8
+  iload 5
+  lshl
+  lstore 8
+  ldc2_w 16711680
+  lstore_2
+  lload 8
+  lload_2
+  land
+  lstore 8
+  lload 10
+  lload 8
+  lor
+  lstore 10
+  bipush 6
+  istore 5
+  aload_0
+  iload 5
+  baload
+  istore 4
+  iload 4
+  i2l
+  lstore 8
+  bipush 8
+  istore 5
+  lload 8
+  iload 5
+  lshl
+  lstore 8
+  ldc2_w 65280
+  lstore_2
+  lload 8
+  lload_2
+  land
+  lstore 8
+  lload 10
+  lload 8
+  lor
+  lstore 10
+  bipush 7
+  istore 5
+  aload_0
+  iload 5
+  baload
+  istore 4
+  iload 4
+  i2l
+  lstore 8
+  ldc2_w 255
+  lstore_2
+  lload 8
+  lload_2
+  land
+  lstore 8
+  lload 10
+  lload 8
+  lor
+  lstore 6
+  lload 6
+  lreturn
+Label4:
+  aload_0
+  invokestatic com/kuguo/ad/e/b([B)I
+  istore_1
+  iload_1
+  i2l
+  lstore 6
+  lload 6
+  lreturn
+Label2:
+  aload_0
+  invokestatic com/kuguo/ad/e/c([B)I
+  istore_1
+  iload_1
+  i2l
+  lstore 6
+  lload 6
+  lreturn
+Label1:
+  iconst_0
+  istore 5
+  aload_0
+  iload 5
+  baload
+  istore 4
+  sipush 255
+  istore 5
+  iload 4
+  iload 5
+  iand
+  istore 12
+  iload 12
+  i2l
+  lstore 6
+  lload 6
+  lreturn
+  nop
+  nop
+.end <method>
+
+.method protected static a(I)[B
+.limit locals 6
+.limit stack 200
+  nop
+  iconst_4
+  istore_2
+  iload_2
+  newarray byte
+  astore_1
+  ldc -16777216
+  istore_2
+  iload_2
+  iload_0
+  iand
+  istore_3
+  iload_3
+  bipush 24
+  ishr
+  istore_3
+  iload_3
+  i2b
+  istore 4
+  iconst_0
+  istore_2
+  aload_1
+  iload_2
+  iload 4
+  bastore
+  ldc 16711680
+  istore_2
+  iload_2
+  iload_0
+  iand
+  istore_3
+  iload_3
+  bipush 16
+  ishr
+  istore_3
+  iload_3
+  i2b
+  istore 5
+  iconst_1
+  istore_2
+  aload_1
+  iload_2
+  iload 5
+  bastore
+  ldc 65280
+  istore_2
+  iload_2
+  iload_0
+  iand
+  istore_3
+  iload_3
+  bipush 8
+  ishr
+  istore_3
+  iload_3
+  i2b
+  istore 5
+  iconst_2
+  istore_2
+  aload_1
+  iload_2
+  iload 5
+  bastore
+  iload_0
+  sipush 255
+  iadd
+  istore_3
+  iload_3
+  i2b
+  istore 5
+  iconst_3
+  istore_2
+  aload_1
+  iload_2
+  iload 5
+  bastore
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected static a(S)[B
+.limit locals 6
+.limit stack 200
+  nop
+  iconst_2
+  istore_2
+  iload_2
+  newarray byte
+  astore_1
+  ldc 65280
+  istore_2
+  iload_2
+  iload_0
+  iand
+  istore_3
+  iload_3
+  bipush 8
+  ishr
+  istore_3
+  iload_3
+  i2b
+  istore 4
+  iconst_0
+  istore_2
+  aload_1
+  iload_2
+  iload 4
+  bastore
+  sipush 255
+  istore_2
+  iload_0
+  iload_2
+  iand
+  istore_0
+  iload_0
+  i2b
+  istore 5
+  iconst_1
+  istore_2
+  aload_1
+  iload_2
+  iload 5
+  bastore
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method protected static b([B)I
+.limit locals 6
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  baload
+  istore_1
+  iload_1
+  bipush 24
+  ishl
+  istore_3
+  ldc -16777216
+  istore_2
+  iload_3
+  iload_2
+  iand
+  istore_3
+  iconst_1
+  istore_2
+  aload_0
+  iload_2
+  baload
+  istore_1
+  iload_1
+  bipush 16
+  ishl
+  istore 4
+  ldc 16711680
+  istore_2
+  iload 4
+  iload_2
+  iand
+  istore 4
+  iload_3
+  iload 4
+  ior
+  istore 4
+  iconst_2
+  istore_2
+  aload_0
+  iload_2
+  baload
+  istore_1
+  iload_1
+  bipush 8
+  ishl
+  istore_3
+  ldc 65280
+  istore_2
+  iload_3
+  iload_2
+  iand
+  istore_3
+  iload 4
+  iload_3
+  ior
+  istore 4
+  iconst_3
+  istore_2
+  aload_0
+  iload_2
+  baload
+  istore_1
+  sipush 255
+  istore_2
+  iload_1
+  iload_2
+  iand
+  istore 5
+  iload 4
+  iload 5
+  ior
+  istore 4
+  iload 4
+  ireturn
+  nop
+.end <method>
+
+.method protected static c([B)I
+.limit locals 5
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  baload
+  istore_1
+  iload_1
+  bipush 8
+  ishl
+  istore_3
+  ldc 65280
+  istore_2
+  iload_3
+  iload_2
+  iand
+  istore_3
+  iconst_1
+  istore_2
+  aload_0
+  iload_2
+  baload
+  istore_1
+  sipush 255
+  istore_2
+  iload_1
+  iload_2
+  iand
+  istore 4
+  iload_3
+  iload 4
+  ior
+  istore_3
+  iload_3
+  ireturn
+  nop
+.end <method>
+

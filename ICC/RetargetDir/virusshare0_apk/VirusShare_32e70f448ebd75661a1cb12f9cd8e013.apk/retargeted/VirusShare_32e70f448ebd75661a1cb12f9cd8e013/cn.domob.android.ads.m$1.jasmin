@@ -1,0 +1,163 @@
+.source SourceFile
+.class  cn/domob/android/ads/m$1
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lorg/json/JSONObject;
+.field final "b" Ljava/lang/String;
+.field final "c" Lcn/domob/android/ads/m;
+
+.method <init>(Lcn/domob/android/ads/m;Lorg/json/JSONObject;Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/m$1/c Lcn/domob/android/ads/m;
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/m$1/a Lorg/json/JSONObject;
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/m$1/b Ljava/lang/String;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 19
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/m$1/c Lcn/domob/android/ads/m;
+  astore 7
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/m$1/a Lorg/json/JSONObject;
+  astore 8
+  aload 7
+  aload 8
+  invokestatic cn/domob/android/ads/m/a(Lcn/domob/android/ads/m;Lorg/json/JSONObject;)Ljava/lang/String;
+  astore 9
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/m$1/c Lcn/domob/android/ads/m;
+  astore 7
+  new java/lang/StringBuilder
+  astore 10
+  aload 10
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "click report req:"
+  astore 11
+  aload 10
+  aload 11
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 10
+  aload 10
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 10
+  aload 10
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 12
+  aload 7
+  aload 12
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  new cn/domob/android/ads/m$1$1
+  astore 13
+  aload_0
+  astore_1
+  aload 13
+  aload_1
+  invokespecial cn/domob/android/ads/m$1$1/<init>(Lcn/domob/android/ads/m$1;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/m$1/b Ljava/lang/String;
+  astore 12
+  invokestatic cn/domob/android/ads/p/a()Lcn/domob/android/ads/p;
+  astore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/m$1/c Lcn/domob/android/ads/m;
+  astore 7
+  aload 7
+  invokestatic cn/domob/android/ads/m/a(Lcn/domob/android/ads/m;)Landroid/content/Context;
+  astore 15
+  aload 14
+  aload 15
+  invokevirtual cn/domob/android/ads/p/x(Landroid/content/Context;)Ljava/lang/String;
+  astore 16
+  invokestatic cn/domob/android/ads/p/a()Lcn/domob/android/ads/p;
+  astore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/m$1/c Lcn/domob/android/ads/m;
+  astore 7
+  aload 7
+  invokestatic cn/domob/android/ads/m/a(Lcn/domob/android/ads/m;)Landroid/content/Context;
+  astore 15
+  aload 14
+  aload 15
+  invokevirtual cn/domob/android/ads/p/d(Landroid/content/Context;)Ljava/lang/String;
+  astore 17
+  ldc "click_tracking"
+  astore 11
+  aload 12
+  astore_1
+  aload 11
+  astore_2
+  aload 16
+  astore_3
+  aload 17
+  astore 4
+  aload 13
+  astore 5
+  aload 9
+  astore 6
+  aload_1
+  aload_2
+  aload_3
+  aload 4
+  aload 5
+  aload 6
+  invokestatic cn/domob/android/ads/a/a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcn/domob/android/ads/b;Ljava/lang/String;)Lcn/domob/android/ads/n;
+  astore 18
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/m$1/c Lcn/domob/android/ads/m;
+  astore 7
+  aload 7
+  invokestatic cn/domob/android/ads/m/a(Lcn/domob/android/ads/m;)Landroid/content/Context;
+  astore 15
+  aload 18
+  astore_1
+  aload_1
+  aload 15
+  invokevirtual cn/domob/android/ads/n/a(Landroid/content/Context;)V
+  aload 18
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/n/c()V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/m$1/c Lcn/domob/android/ads/m;
+  astore 7
+  ldc "Finish to send click report."
+  astore 11
+  aload 7
+  aload 11
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+

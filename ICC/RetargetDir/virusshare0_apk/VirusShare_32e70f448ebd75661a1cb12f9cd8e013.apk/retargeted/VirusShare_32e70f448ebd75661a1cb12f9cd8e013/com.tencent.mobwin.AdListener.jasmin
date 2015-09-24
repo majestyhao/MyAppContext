@@ -1,0 +1,18 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.interface public interface abstract  com/tencent/mobwin/AdListener
+.super java/lang/Object
+.field public static final "ERROR_CONNECTION_FAILED" I =  1
+.field public static final "ERROR_GET_IMAGE_FAILED" I =  12
+.field public static final "ERROR_GIF_DECODE_FAILED" I =  11
+.field public static final "ERROR_NO_AVAILABLE_ADS" I =  10
+.field public static final "ERROR_SERVER_DATA_EXCEPTION" I =  13
+
+.method public abstract onAdClick()V
+.end <method>
+
+.method public abstract onReceiveAd()V
+.end <method>
+
+.method public abstract onReceiveFailed(I)V
+.end <method>
+

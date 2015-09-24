@@ -1,0 +1,1058 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/tencent/mobwin/core/A
+.super java/lang/Object
+.field public static final "a" I =  0
+.field public static final "b" I =  1
+.field public static final "c" [Ljava/lang/String;
+.field public static final "d" [Ljava/lang/String;
+.field private static final "e" Ljava/lang/String; =  "PictureManager"
+.field private static "j" Lcom/tencent/mobwin/core/A;
+.field private static "n" Ljava/lang/Object;
+.field private "f" Landroid/content/Context;
+.field private "g" Ljava/util/HashMap;
+.field private "h" Ljava/lang/String;
+.field private "i" Ljava/lang/String;
+.field private "k" I
+.field private "l" Lcom/tencent/mobwin/core/t;
+.field private "m" Landroid/os/Handler;
+
+.method static <clinit>()V
+.limit locals 5
+.limit stack 200
+  nop
+  bipush 19
+  istore_1
+  iload_1
+  anewarray java/lang/String
+  astore_0
+  iconst_0
+  istore_1
+  ldc "back.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_1
+  istore_1
+  ldc "back_disable.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_2
+  istore_1
+  ldc "back_pressed.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_3
+  istore_1
+  ldc "forward.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_4
+  istore_1
+  ldc "forward_disable.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_5
+  istore_1
+  ldc "forward_pressed.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 6
+  istore_1
+  ldc "jumpout.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 7
+  istore_1
+  ldc "jumpout_pressed.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 8
+  istore_1
+  ldc "quit.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 9
+  istore_1
+  ldc "quit_pressed.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 10
+  istore_1
+  ldc "refresh.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 11
+  istore_1
+  ldc "refresh_pressed.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 12
+  istore_1
+  ldc "close_album.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 13
+  istore_1
+  ldc "close_album_pressed.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 14
+  istore_1
+  ldc "toolbar_body.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 15
+  istore_1
+  ldc "toolbar_body_pressed.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 16
+  istore_1
+  ldc "toolbar_header.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 17
+  istore_1
+  ldc "divideline.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 18
+  istore_1
+  ldc "process_bar.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  aload_0
+  putstatic com/tencent/mobwin/core/A/c [Ljava/lang/String;
+  iconst_4
+  istore_1
+  iload_1
+  anewarray java/lang/String
+  astore_0
+  iconst_0
+  istore_1
+  ldc "banner_frame.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_1
+  istore_1
+  ldc "button.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_2
+  istore_1
+  ldc "button_pressed.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_3
+  istore_1
+  ldc "mobwinLogo.png"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  aload_0
+  putstatic com/tencent/mobwin/core/A/d [Ljava/lang/String;
+  aconst_null
+  astore_3
+  aload_3
+  putstatic com/tencent/mobwin/core/A/j Lcom/tencent/mobwin/core/A;
+  new java/lang/Object
+  astore 4
+  aload 4
+  invokespecial java/lang/Object/<init>()V
+  aload 4
+  putstatic com/tencent/mobwin/core/A/n Ljava/lang/Object;
+  return
+  nop
+.end <method>
+
+.method private <init>()V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  new java/util/HashMap
+  astore_1
+  aload_1
+  invokespecial java/util/HashMap/<init>()V
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/A/g Ljava/util/HashMap;
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield com/tencent/mobwin/core/A/k I
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield com/tencent/mobwin/core/A/l Lcom/tencent/mobwin/core/t;
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield com/tencent/mobwin/core/A/m Landroid/os/Handler;
+  return
+  nop
+.end <method>
+
+.method private a(Ljava/lang/String;)Landroid/graphics/Bitmap;
+.limit locals 12
+.limit stack 200
+  nop
+  aload_1
+  invokestatic com/tencent/mobwin/utils/b/b(Ljava/lang/String;)Ljava/lang/String;
+  astore_1
+  aload_0
+  getfield com/tencent/mobwin/core/A/f Landroid/content/Context;
+  astore_2
+  aload_1
+  aload_2
+  invokestatic com/tencent/mobwin/core/x/b(Ljava/lang/String;Landroid/content/Context;)[B
+  astore_3
+  new java/lang/StringBuilder
+  astore 4
+  ldc "getLocalImage"
+  astore 5
+  aload 4
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  ldc "PictureManager"
+  astore 5
+  aload 5
+  aload 6
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+Label3:
+  aload_3
+  arraylength
+  istore 7
+  iconst_0
+  istore 9
+  aload_3
+  iload 9
+  iload 7
+  invokestatic android/graphics/BitmapFactory/decodeByteArray([BII)Landroid/graphics/Bitmap;
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label1
+  iconst_0
+  istore 9
+  aload 8
+  iload 9
+  invokevirtual android/graphics/Bitmap/setDensity(I)V
+Label1:
+  aload 8
+  areturn
+Label2:
+  astore 10
+  aconst_null
+  astore 11
+  aload 11
+  areturn
+Label0:
+  aconst_null
+  astore 11
+  aload 11
+  areturn
+  nop
+.end <method>
+
+.method public a(Ljava/lang/String;I)Landroid/graphics/Bitmap;
+.limit locals 14
+.limit stack 200
+  nop
+  getstatic com/tencent/mobwin/core/A/j Lcom/tencent/mobwin/core/A;
+  astore_3
+  aload_3
+  getfield com/tencent/mobwin/core/A/g Ljava/util/HashMap;
+  astore 4
+  aload 4
+  aload_1
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 7
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 6
+  ifeq Label0
+  aload 6
+  areturn
+Label0:
+  aload_0
+  aload_1
+  iload_2
+  invokespecial com/tencent/mobwin/core/A/b(Ljava/lang/String;I)Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label1
+  ldc ""
+  astore 10
+  aload 8
+  aload 10
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label2
+Label1:
+  ldc "PictureManager"
+  astore 10
+  ldc "\u6ca1\u6709\u83b7\u53d6\u5230\u56fe\u7247\u5730\u5740"
+  astore 11
+  aload 10
+  aload 11
+  invokestatic com/tencent/mobwin/core/o/b(Ljava/lang/String;Ljava/lang/String;)V
+  aconst_null
+  astore 12
+  aload 12
+  areturn
+Label2:
+  aload_0
+  aload 8
+  invokespecial com/tencent/mobwin/core/A/a(Ljava/lang/String;)Landroid/graphics/Bitmap;
+  astore 13
+  aload 13
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 13
+  ifnonnull Label3
+  aload_0
+  aload 8
+  iload_2
+  invokespecial com/tencent/mobwin/core/A/c(Ljava/lang/String;I)V
+  aconst_null
+  astore 12
+  aload 12
+  areturn
+Label3:
+  getstatic com/tencent/mobwin/core/A/j Lcom/tencent/mobwin/core/A;
+  astore_3
+  aload_3
+  getfield com/tencent/mobwin/core/A/g Ljava/util/HashMap;
+  astore 4
+  aload 4
+  aload_1
+  aload 13
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  aload 13
+  areturn
+  nop
+.end <method>
+
+.method public static a()Lcom/tencent/mobwin/core/A;
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/tencent/mobwin/core/A/j Lcom/tencent/mobwin/core/A;
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifne Label0
+  getstatic com/tencent/mobwin/core/A/n Ljava/lang/Object;
+  astore_1
+  aload_1
+  monitorenter
+Label2:
+  new com/tencent/mobwin/core/A
+  astore_0
+  aload_0
+  invokespecial com/tencent/mobwin/core/A/<init>()V
+  aload_0
+  putstatic com/tencent/mobwin/core/A/j Lcom/tencent/mobwin/core/A;
+  aload_1
+  monitorexit
+Label0:
+  getstatic com/tencent/mobwin/core/A/j Lcom/tencent/mobwin/core/A;
+  astore_0
+  aload_0
+  areturn
+Label1:
+  astore_2
+Label3:
+  aload_1
+  monitorexit
+Label4:
+  aload_2
+  athrow
+  nop
+.end <method>
+
+.method public static a(Landroid/app/Activity;Landroid/os/Handler;)V
+.limit locals 3
+.limit stack 200
+  nop
+  invokestatic com/tencent/mobwin/core/A/a()Lcom/tencent/mobwin/core/A;
+  astore_2
+  aload_2
+  aload_0
+  aload_1
+  invokespecial com/tencent/mobwin/core/A/c(Landroid/app/Activity;Landroid/os/Handler;)V
+  invokestatic com/tencent/mobwin/core/A/a()Lcom/tencent/mobwin/core/A;
+  astore_2
+  aload_2
+  invokevirtual com/tencent/mobwin/core/A/d()V
+  return
+  nop
+.end <method>
+
+.method private b(Ljava/lang/String;I)Ljava/lang/String;
+.limit locals 10
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  invokestatic com/tencent/mobwin/core/a/d/j()Ljava/lang/String;
+  astore_3
+  aload_0
+  aload_3
+  putfield com/tencent/mobwin/core/A/h Ljava/lang/String;
+  new java/lang/StringBuilder
+  astore 4
+  aload_0
+  getfield com/tencent/mobwin/core/A/h Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore_3
+  aload 4
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_1
+  new java/lang/StringBuilder
+  astore 4
+  ldc "embedBrowserResUrl"
+  astore 5
+  aload 4
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  getfield com/tencent/mobwin/core/A/h Ljava/lang/String;
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  ldc "PictureManager"
+  astore 5
+  aload 5
+  aload_3
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload_1
+  areturn
+Label0:
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 6
+  iload_2
+  iload 6
+  if_icmpne Label1
+  invokestatic com/tencent/mobwin/core/a/d/k()Ljava/lang/String;
+  astore 7
+  aload_0
+  aload 7
+  putfield com/tencent/mobwin/core/A/i Ljava/lang/String;
+  new java/lang/StringBuilder
+  astore 4
+  aload_0
+  getfield com/tencent/mobwin/core/A/i Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 7
+  aload 4
+  aload 7
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  new java/lang/StringBuilder
+  astore 4
+  ldc "bannerResUrl"
+  astore 5
+  aload 4
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  getfield com/tencent/mobwin/core/A/i Ljava/lang/String;
+  astore_1
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_1
+  ldc "PictureManager"
+  astore 5
+  aload 5
+  aload_1
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload 7
+  areturn
+Label1:
+  ldc "PictureManager"
+  astore 5
+  ldc "\u56fe\u7247\u8d44\u6e90\u83b7\u53d6\u5730\u5740\u51fa\u9519\uff01"
+  astore 8
+  aload 5
+  aload 8
+  invokestatic com/tencent/mobwin/core/o/b(Ljava/lang/String;Ljava/lang/String;)V
+  aconst_null
+  astore 9
+  aload 9
+  areturn
+  nop
+.end <method>
+
+.method public b()V
+.limit locals 11
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+Label2:
+  getstatic com/tencent/mobwin/core/A/c [Ljava/lang/String;
+  astore_2
+  aload_2
+  arraylength
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload_3
+  if_icmplt Label0
+  return
+Label0:
+  getstatic com/tencent/mobwin/core/A/c [Ljava/lang/String;
+  astore_2
+  aload_2
+  iload_1
+  aaload
+  astore 4
+  iconst_0
+  istore 6
+  aload_0
+  aload 4
+  iload 6
+  invokespecial com/tencent/mobwin/core/A/b(Ljava/lang/String;I)Ljava/lang/String;
+  astore 5
+  new java/lang/StringBuilder
+  astore 7
+  ldc "initBrowserBitmaps: "
+  astore 8
+  aload 7
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 7
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 7
+  aload 7
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  ldc "PictureManager"
+  astore 8
+  aload 8
+  aload 4
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload 5
+  invokespecial com/tencent/mobwin/core/A/a(Ljava/lang/String;)Landroid/graphics/Bitmap;
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label1
+  aload_0
+  getfield com/tencent/mobwin/core/A/g Ljava/util/HashMap;
+  astore 10
+  getstatic com/tencent/mobwin/core/A/c [Ljava/lang/String;
+  astore_2
+  aload_2
+  iload_1
+  aaload
+  astore 5
+  aload 10
+  aload 5
+  aload 9
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+Label3:
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  goto Label2
+Label1:
+  iconst_0
+  istore 6
+  aload_0
+  aload 5
+  iload 6
+  invokespecial com/tencent/mobwin/core/A/c(Ljava/lang/String;I)V
+  goto Label3
+  nop
+.end <method>
+
+.method public static b(Landroid/app/Activity;Landroid/os/Handler;)V
+.limit locals 3
+.limit stack 200
+  nop
+  invokestatic com/tencent/mobwin/core/A/a()Lcom/tencent/mobwin/core/A;
+  astore_2
+  aload_2
+  aload_0
+  aload_1
+  invokespecial com/tencent/mobwin/core/A/c(Landroid/app/Activity;Landroid/os/Handler;)V
+  invokestatic com/tencent/mobwin/core/A/a()Lcom/tencent/mobwin/core/A;
+  astore_2
+  aload_2
+  invokevirtual com/tencent/mobwin/core/A/b()V
+  return
+  nop
+.end <method>
+
+.method public c()V
+.limit locals 11
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+Label2:
+  getstatic com/tencent/mobwin/core/A/d [Ljava/lang/String;
+  astore_2
+  aload_2
+  arraylength
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload_3
+  if_icmplt Label0
+  return
+Label0:
+  getstatic com/tencent/mobwin/core/A/d [Ljava/lang/String;
+  astore_2
+  aload_2
+  iload_1
+  aaload
+  astore 4
+  iconst_1
+  istore 6
+  aload_0
+  aload 4
+  iload 6
+  invokespecial com/tencent/mobwin/core/A/b(Ljava/lang/String;I)Ljava/lang/String;
+  astore 5
+  new java/lang/StringBuilder
+  astore 7
+  ldc "initBannerBitmaps: "
+  astore 8
+  aload 7
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 7
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 7
+  aload 7
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  ldc "PictureManager"
+  astore 8
+  aload 8
+  aload 4
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload 5
+  invokespecial com/tencent/mobwin/core/A/a(Ljava/lang/String;)Landroid/graphics/Bitmap;
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label1
+  aload_0
+  getfield com/tencent/mobwin/core/A/g Ljava/util/HashMap;
+  astore 10
+  getstatic com/tencent/mobwin/core/A/d [Ljava/lang/String;
+  astore_2
+  aload_2
+  iload_1
+  aaload
+  astore 5
+  aload 10
+  aload 5
+  aload 9
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+Label3:
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  goto Label2
+Label1:
+  iconst_1
+  istore 6
+  aload_0
+  aload 5
+  iload 6
+  invokespecial com/tencent/mobwin/core/A/c(Ljava/lang/String;I)V
+  goto Label3
+  nop
+.end <method>
+
+.method private c(Landroid/app/Activity;Landroid/os/Handler;)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/A/f Landroid/content/Context;
+  aload_0
+  aload_2
+  putfield com/tencent/mobwin/core/A/m Landroid/os/Handler;
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_3
+  invokespecial android/util/DisplayMetrics/<init>()V
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_1
+  ifeq Label0
+  aload_1
+  invokevirtual android/app/Activity/getWindowManager()Landroid/view/WindowManager;
+  astore 4
+  aload 4
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 5
+  aload 5
+  aload_3
+  invokevirtual android/view/Display/getMetrics(Landroid/util/DisplayMetrics;)V
+Label0:
+  aload_3
+  getfield android/util/DisplayMetrics/densityDpi I
+  istore 6
+  aload_0
+  iload 6
+  putfield com/tencent/mobwin/core/A/k I
+  return
+  nop
+.end <method>
+
+.method private c(Ljava/lang/String;I)V
+.limit locals 10
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore_3
+  ldc "downloadBitmap"
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_3
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  ldc "PictureManager"
+  astore 4
+  aload 4
+  aload 5
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  getfield com/tencent/mobwin/core/A/l Lcom/tencent/mobwin/core/t;
+  astore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  ifne Label0
+  new com/tencent/mobwin/core/t
+  astore 6
+  aload 6
+  invokespecial com/tencent/mobwin/core/t/<init>()V
+  aload_0
+  aload 6
+  putfield com/tencent/mobwin/core/A/l Lcom/tencent/mobwin/core/t;
+Label0:
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  ifne Label1
+  aload_0
+  getfield com/tencent/mobwin/core/A/l Lcom/tencent/mobwin/core/t;
+  astore 6
+  aload_0
+  getfield com/tencent/mobwin/core/A/f Landroid/content/Context;
+  astore 7
+  aload_0
+  getfield com/tencent/mobwin/core/A/m Landroid/os/Handler;
+  astore 8
+  iconst_2
+  istore 9
+  aload 6
+  aload 7
+  aload_1
+  aload 8
+  iload 9
+  invokevirtual com/tencent/mobwin/core/t/a(Landroid/content/Context;Ljava/lang/String;Landroid/os/Handler;I)V
+Label2:
+  return
+Label1:
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 9
+  iload_2
+  iload 9
+  if_icmpne Label2
+  aload_0
+  getfield com/tencent/mobwin/core/A/l Lcom/tencent/mobwin/core/t;
+  astore 6
+  aload_0
+  getfield com/tencent/mobwin/core/A/f Landroid/content/Context;
+  astore 7
+  aload_0
+  getfield com/tencent/mobwin/core/A/m Landroid/os/Handler;
+  astore 8
+  iconst_3
+  istore 9
+  aload 6
+  aload 7
+  aload_1
+  aload 8
+  iload 9
+  invokevirtual com/tencent/mobwin/core/t/a(Landroid/content/Context;Ljava/lang/String;Landroid/os/Handler;I)V
+  goto Label2
+  nop
+.end <method>
+
+.method public d()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokevirtual com/tencent/mobwin/core/A/b()V
+  aload_0
+  invokevirtual com/tencent/mobwin/core/A/c()V
+  return
+  nop
+.end <method>
+
+.method public e()Ljava/util/HashMap;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/A/g Ljava/util/HashMap;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  new java/util/HashMap
+  astore_1
+  aload_1
+  invokespecial java/util/HashMap/<init>()V
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/A/g Ljava/util/HashMap;
+Label0:
+  aload_0
+  getfield com/tencent/mobwin/core/A/g Ljava/util/HashMap;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static f()V
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/tencent/mobwin/core/A/j Lcom/tencent/mobwin/core/A;
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  getstatic com/tencent/mobwin/core/A/j Lcom/tencent/mobwin/core/A;
+  astore_0
+  aload_0
+  invokespecial com/tencent/mobwin/core/A/g()V
+Label0:
+  return
+  nop
+.end <method>
+
+.method private g()V
+.limit locals 4
+.limit stack 200
+  nop
+  aconst_null
+  astore_1
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/A/f Landroid/content/Context;
+  aload_0
+  getfield com/tencent/mobwin/core/A/g Ljava/util/HashMap;
+  astore_2
+  aload_2
+  invokevirtual java/util/HashMap/clear()V
+  aload_0
+  getfield com/tencent/mobwin/core/A/l Lcom/tencent/mobwin/core/t;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_0
+  getfield com/tencent/mobwin/core/A/l Lcom/tencent/mobwin/core/t;
+  astore_3
+  aload_3
+  invokevirtual com/tencent/mobwin/core/t/a()V
+Label0:
+  aconst_null
+  astore_1
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/A/l Lcom/tencent/mobwin/core/t;
+  return
+  nop
+.end <method>
+

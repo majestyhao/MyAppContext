@@ -1,0 +1,88 @@
+.source LinkLink.java
+.class  maxstrom/game/llk/LinkLink$2
+.super java/util/TimerTask
+.field final "this$0" Lmaxstrom/game/llk/LinkLink;
+
+.method <init>(Lmaxstrom/game/llk/LinkLink;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield maxstrom/game/llk/LinkLink$2/this$0 Lmaxstrom/game/llk/LinkLink;
+  aload_0
+  invokespecial java/util/TimerTask/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 9
+.limit stack 200
+  .catch  java/lang/Exception <from> Label2 <to> Label0 <using> Label1
+  nop
+Label2:
+  aload_0
+  getfield maxstrom/game/llk/LinkLink$2/this$0 Lmaxstrom/game/llk/LinkLink;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_2
+  invokevirtual java/lang/Boolean/booleanValue()Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifne Label0
+  aload_0
+  getfield maxstrom/game/llk/LinkLink$2/this$0 Lmaxstrom/game/llk/LinkLink;
+  astore_1
+  aload_1
+  invokestatic maxstrom/game/llk/LinkLink/access$2(Lmaxstrom/game/llk/LinkLink;)I
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  ifle Label0
+  aload_0
+  getfield maxstrom/game/llk/LinkLink$2/this$0 Lmaxstrom/game/llk/LinkLink;
+  astore_1
+  aload_1
+  invokestatic maxstrom/game/llk/LinkLink/access$2(Lmaxstrom/game/llk/LinkLink;)I
+  istore 4
+  iload 4
+  iconst_m1
+  iadd
+  istore 4
+  aload_1
+  iload 4
+  invokestatic maxstrom/game/llk/LinkLink/access$3(Lmaxstrom/game/llk/LinkLink;I)V
+  new android/os/Message
+  astore 5
+  aload 5
+  invokespecial android/os/Message/<init>()V
+  iconst_1
+  istore 6
+  aload 5
+  iload 6
+  putfield android/os/Message/what I
+  aload_0
+  getfield maxstrom/game/llk/LinkLink$2/this$0 Lmaxstrom/game/llk/LinkLink;
+  astore_1
+  aload_1
+  getfield maxstrom/game/llk/LinkLink/handler Landroid/os/Handler;
+  astore 7
+  aload 7
+  aload 5
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+Label0:
+  return
+Label1:
+  astore 8
+  goto Label0
+  nop
+.end <method>
+

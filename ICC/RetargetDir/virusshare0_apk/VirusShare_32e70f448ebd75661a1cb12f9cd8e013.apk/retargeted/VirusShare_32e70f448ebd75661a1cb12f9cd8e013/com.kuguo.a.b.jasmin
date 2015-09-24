@@ -1,0 +1,575 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/kuguo/a/b
+.super java/lang/Object
+.field private "a" Lcom/kuguo/a/a;
+
+.method public <init>(Landroid/content/Context;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_2
+  aload_1
+  invokespecial com/kuguo/a/a/<init>(Landroid/content/Context;)V
+  aload_0
+  aload_2
+  putfield com/kuguo/a/b/a Lcom/kuguo/a/a;
+  return
+  nop
+.end <method>
+
+.method public a()Ljava/util/List;
+.limit locals 24
+.limit stack 200
+  nop
+  new java/util/ArrayList
+  astore 9
+  aload 9
+  invokespecial java/util/ArrayList/<init>()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/kuguo/a/b/a Lcom/kuguo/a/a;
+  astore 10
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  ldc "downloads"
+  astore 13
+  aconst_null
+  astore 14
+  aconst_null
+  astore 15
+  aconst_null
+  astore 16
+  aconst_null
+  astore 17
+  aconst_null
+  astore 18
+  aconst_null
+  astore 19
+  aload 11
+  astore_1
+  aload 13
+  astore_2
+  aload 14
+  astore_3
+  aload 15
+  astore 4
+  aload 16
+  astore 5
+  aload 17
+  astore 6
+  aload 18
+  astore 7
+  aload 19
+  astore 8
+  aload_1
+  aload_2
+  aload_3
+  aload 4
+  aload 5
+  aload 6
+  aload 7
+  aload 8
+  invokevirtual android/database/sqlite/SQLiteDatabase/query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+  astore 12
+Label1:
+  aload 12
+  invokeinterface android/database/Cursor/moveToNext()Z 1
+  istore 20
+  iload 20
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 20
+  ifeq Label0
+  new com/kuguo/a/c
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  invokespecial com/kuguo/a/c/<init>()V
+  ldc "url"
+  astore 13
+  aload 12
+  aload 13
+  invokeinterface android/database/Cursor/getColumnIndex(Ljava/lang/String;)I 2
+  istore 22
+  iload 22
+  istore_1
+  aload 12
+  iload_1
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 23
+  aload 23
+  astore_1
+  aload 21
+  astore_2
+  aload_2
+  aload_1
+  putfield com/kuguo/a/c/a Ljava/lang/String;
+  ldc "file"
+  astore 13
+  aload 12
+  aload 13
+  invokeinterface android/database/Cursor/getColumnIndex(Ljava/lang/String;)I 2
+  istore 22
+  iload 22
+  istore_1
+  aload 12
+  iload_1
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 23
+  aload 23
+  astore_1
+  aload 21
+  astore_2
+  aload_2
+  aload_1
+  putfield com/kuguo/a/c/b Ljava/lang/String;
+  ldc "size"
+  astore 13
+  aload 12
+  aload 13
+  invokeinterface android/database/Cursor/getColumnIndex(Ljava/lang/String;)I 2
+  istore 22
+  iload 22
+  istore_1
+  aload 12
+  iload_1
+  invokeinterface android/database/Cursor/getInt(I)I 2
+  istore 22
+  iload 22
+  istore_1
+  aload 21
+  astore_2
+  aload_2
+  iload_1
+  putfield com/kuguo/a/c/c I
+  ldc "total_size"
+  astore 13
+  aload 12
+  aload 13
+  invokeinterface android/database/Cursor/getColumnIndex(Ljava/lang/String;)I 2
+  istore 22
+  iload 22
+  istore_1
+  aload 12
+  iload_1
+  invokeinterface android/database/Cursor/getInt(I)I 2
+  istore 22
+  iload 22
+  istore_1
+  aload 21
+  astore_2
+  aload_2
+  iload_1
+  putfield com/kuguo/a/c/d I
+  ldc "state"
+  astore 13
+  aload 12
+  aload 13
+  invokeinterface android/database/Cursor/getColumnIndex(Ljava/lang/String;)I 2
+  istore 22
+  iload 22
+  istore_1
+  aload 12
+  iload_1
+  invokeinterface android/database/Cursor/getInt(I)I 2
+  istore 22
+  iload 22
+  istore_1
+  aload 21
+  astore_2
+  aload_2
+  iload_1
+  putfield com/kuguo/a/c/e I
+  ldc "file_name"
+  astore 13
+  aload 12
+  aload 13
+  invokeinterface android/database/Cursor/getColumnIndex(Ljava/lang/String;)I 2
+  istore 22
+  iload 22
+  istore_1
+  aload 12
+  iload_1
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 23
+  aload 23
+  astore_1
+  aload 21
+  astore_2
+  aload_2
+  aload_1
+  putfield com/kuguo/a/c/f Ljava/lang/String;
+  ldc "network_info"
+  astore 13
+  aload 12
+  aload 13
+  invokeinterface android/database/Cursor/getColumnIndex(Ljava/lang/String;)I 2
+  istore 22
+  iload 22
+  istore_1
+  aload 12
+  iload_1
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 23
+  aload 23
+  astore_1
+  aload 21
+  astore_2
+  aload_2
+  aload_1
+  putfield com/kuguo/a/c/g Ljava/lang/String;
+  ldc "download_mode"
+  astore 13
+  aload 12
+  aload 13
+  invokeinterface android/database/Cursor/getColumnIndex(Ljava/lang/String;)I 2
+  istore 22
+  iload 22
+  istore_1
+  aload 12
+  iload_1
+  invokeinterface android/database/Cursor/getInt(I)I 2
+  istore 22
+  iload 22
+  istore_1
+  aload 21
+  astore_2
+  aload_2
+  iload_1
+  putfield com/kuguo/a/c/h I
+  aload 21
+  astore_1
+  aload 9
+  aload_1
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  goto Label1
+Label0:
+  aload 12
+  invokeinterface android/database/Cursor/close()V 1
+  aload 11
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+  aload 9
+  areturn
+  nop
+.end <method>
+
+.method public a(Lcom/kuguo/a/c;)V
+.limit locals 11
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/a/b/a Lcom/kuguo/a/a;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  new android/content/ContentValues
+  astore 4
+  aload 4
+  invokespecial android/content/ContentValues/<init>()V
+  aload_1
+  getfield com/kuguo/a/c/a Ljava/lang/String;
+  astore 5
+  ldc "url"
+  astore 6
+  aload 4
+  aload 6
+  aload 5
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_1
+  getfield com/kuguo/a/c/b Ljava/lang/String;
+  astore 7
+  ldc "file"
+  astore 6
+  aload 4
+  aload 6
+  aload 7
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_1
+  getfield com/kuguo/a/c/c I
+  istore 8
+  iload 8
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 9
+  ldc "size"
+  astore 6
+  aload 4
+  aload 6
+  aload 9
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/Integer;)V
+  aload_1
+  getfield com/kuguo/a/c/d I
+  istore 8
+  iload 8
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 9
+  ldc "total_size"
+  astore 6
+  aload 4
+  aload 6
+  aload 9
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/Integer;)V
+  aload_1
+  getfield com/kuguo/a/c/e I
+  istore 8
+  iload 8
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 9
+  ldc "state"
+  astore 6
+  aload 4
+  aload 6
+  aload 9
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/Integer;)V
+  aload_1
+  getfield com/kuguo/a/c/f Ljava/lang/String;
+  astore 7
+  ldc "file_name"
+  astore 6
+  aload 4
+  aload 6
+  aload 7
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_1
+  getfield com/kuguo/a/c/g Ljava/lang/String;
+  astore 7
+  ldc "network_info"
+  astore 6
+  aload 4
+  aload 6
+  aload 7
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_1
+  getfield com/kuguo/a/c/h I
+  istore 8
+  iload 8
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 9
+  ldc "download_mode"
+  astore 6
+  aload 4
+  aload 6
+  aload 9
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/Integer;)V
+  ldc "downloads"
+  astore 6
+  aconst_null
+  astore 10
+  aload_3
+  aload 6
+  aload 10
+  aload 4
+  invokevirtual android/database/sqlite/SQLiteDatabase/insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
+  pop2
+  aload_3
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+  return
+  nop
+.end <method>
+
+.method public b(Lcom/kuguo/a/c;)V
+.limit locals 9
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/a/b/a Lcom/kuguo/a/a;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iconst_2
+  istore 5
+  iload 5
+  anewarray java/lang/String
+  astore 4
+  aload_1
+  getfield com/kuguo/a/c/a Ljava/lang/String;
+  astore 6
+  iconst_0
+  istore 5
+  aload 4
+  iload 5
+  aload 6
+  aastore
+  aload_1
+  getfield com/kuguo/a/c/b Ljava/lang/String;
+  astore 6
+  iconst_1
+  istore 5
+  aload 4
+  iload 5
+  aload 6
+  aastore
+  ldc "downloads"
+  astore 7
+  ldc "url = ? and file = ?"
+  astore 8
+  aload_3
+  aload 7
+  aload 8
+  aload 4
+  invokevirtual android/database/sqlite/SQLiteDatabase/delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
+  pop
+  aload_3
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+  return
+  nop
+.end <method>
+
+.method public c(Lcom/kuguo/a/c;)V
+.limit locals 13
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/a/b/a Lcom/kuguo/a/a;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  new android/content/ContentValues
+  astore 4
+  aload 4
+  invokespecial android/content/ContentValues/<init>()V
+  aload_1
+  getfield com/kuguo/a/c/a Ljava/lang/String;
+  astore 5
+  ldc "url"
+  astore 6
+  aload 4
+  aload 6
+  aload 5
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_1
+  getfield com/kuguo/a/c/b Ljava/lang/String;
+  astore 7
+  ldc "file"
+  astore 6
+  aload 4
+  aload 6
+  aload 7
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_1
+  getfield com/kuguo/a/c/c I
+  istore 8
+  iload 8
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 9
+  ldc "size"
+  astore 6
+  aload 4
+  aload 6
+  aload 9
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/Integer;)V
+  aload_1
+  getfield com/kuguo/a/c/d I
+  istore 8
+  iload 8
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 9
+  ldc "total_size"
+  astore 6
+  aload 4
+  aload 6
+  aload 9
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/Integer;)V
+  aload_1
+  getfield com/kuguo/a/c/e I
+  istore 8
+  iload 8
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 9
+  ldc "state"
+  astore 6
+  aload 4
+  aload 6
+  aload 9
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/Integer;)V
+  aload_1
+  getfield com/kuguo/a/c/f Ljava/lang/String;
+  astore 7
+  ldc "file_name"
+  astore 6
+  aload 4
+  aload 6
+  aload 7
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_1
+  getfield com/kuguo/a/c/g Ljava/lang/String;
+  astore 7
+  ldc "network_info"
+  astore 6
+  aload 4
+  aload 6
+  aload 7
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/String;)V
+  aload_1
+  getfield com/kuguo/a/c/h I
+  istore 8
+  iload 8
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 9
+  ldc "download_mode"
+  astore 6
+  aload 4
+  aload 6
+  aload 9
+  invokevirtual android/content/ContentValues/put(Ljava/lang/String;Ljava/lang/Integer;)V
+  iconst_2
+  istore 11
+  iload 11
+  anewarray java/lang/String
+  astore 10
+  aload_1
+  getfield com/kuguo/a/c/a Ljava/lang/String;
+  astore 5
+  iconst_0
+  istore 11
+  aload 10
+  iload 11
+  aload 5
+  aastore
+  aload_1
+  getfield com/kuguo/a/c/b Ljava/lang/String;
+  astore 5
+  iconst_1
+  istore 11
+  aload 10
+  iload 11
+  aload 5
+  aastore
+  ldc "downloads"
+  astore 6
+  ldc "url = ? and file = ?"
+  astore 12
+  aload_3
+  aload 6
+  aload 4
+  aload 12
+  aload 10
+  invokevirtual android/database/sqlite/SQLiteDatabase/update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
+  pop
+  aload_3
+  invokevirtual android/database/sqlite/SQLiteDatabase/close()V
+  return
+  nop
+.end <method>
+

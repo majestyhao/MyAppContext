@@ -1,0 +1,211 @@
+.source SourceFile
+.class final  cn/domob/android/ads/r
+.super java/lang/Thread
+.field private "a" Lcn/domob/android/ads/g;
+
+.method public <init>(Lcn/domob/android/ads/g;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/r/a Lcn/domob/android/ads/g;
+  return
+  nop
+.end <method>
+
+.method public final run()V
+.limit locals 18
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/r/a Lcn/domob/android/ads/g;
+  astore_2
+  aload_1
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  ldc "GetAdThread exit because adview is null!"
+  astore_3
+  aload_0
+  astore_1
+  aload_1
+  aload_3
+  invokestatic cn/domob/android/ads/J/b(Ljava/lang/Object;Ljava/lang/String;)V
+Label2:
+  return
+Label0:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/r/a Lcn/domob/android/ads/g;
+  astore_2
+  aload_1
+  astore_0
+  aload_2
+  invokevirtual cn/domob/android/ads/g/i()Landroid/content/Context;
+  astore 4
+Label6:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/r/a Lcn/domob/android/ads/g;
+  astore_2
+  aload_1
+  astore_0
+  aload_2
+  invokevirtual cn/domob/android/ads/g/a()Lcn/domob/android/ads/k;
+  astore 5
+  aload 5
+  invokevirtual cn/domob/android/ads/k/e()Ljava/lang/String;
+  astore 6
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/r/a Lcn/domob/android/ads/g;
+  astore_2
+  aload_1
+  astore_0
+  aload_2
+  invokevirtual cn/domob/android/ads/g/a()Lcn/domob/android/ads/k;
+  astore 5
+  aload 5
+  invokevirtual cn/domob/android/ads/k/f()Ljava/lang/String;
+  astore 7
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/r/a Lcn/domob/android/ads/g;
+  astore_2
+  aload_1
+  astore_0
+  aload_2
+  invokevirtual cn/domob/android/ads/g/a()Lcn/domob/android/ads/k;
+  astore 5
+  aload 5
+  invokevirtual cn/domob/android/ads/k/g()Ljava/lang/String;
+  astore 8
+  new cn/domob/android/ads/E
+  astore 9
+  aload 9
+  invokespecial cn/domob/android/ads/E/<init>()V
+  aload 9
+  aload 4
+  aload 6
+  aload 7
+  aload 8
+  invokevirtual cn/domob/android/ads/E/a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcn/domob/android/ads/j;
+  astore 10
+  aload 9
+  invokevirtual cn/domob/android/ads/E/a()Lcn/domob/android/ads/n;
+  astore 11
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  ifnull Label1
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/r/a Lcn/domob/android/ads/g;
+  astore_2
+  aload_1
+  astore_0
+  aload 9
+  invokevirtual cn/domob/android/ads/E/a()Lcn/domob/android/ads/n;
+  astore 11
+  aload 11
+  invokevirtual cn/domob/android/ads/n/g()I
+  istore 12
+  aload_2
+  aload 10
+  iload 12
+  invokevirtual cn/domob/android/ads/g/a(Lcn/domob/android/ads/j;I)V
+Label7:
+  goto Label2
+Label5:
+  astore 13
+  invokestatic cn/domob/android/ads/h/a()Lcn/domob/android/ads/h;
+  astore 14
+  aload 14
+  aload 4
+  invokevirtual cn/domob/android/ads/h/a(Landroid/content/Context;)Ljava/lang/String;
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnonnull Label3
+  ldc "DomobSDK"
+  astore_3
+  ldc "Please set your publisher ID first!"
+  astore 15
+  aload_3
+  aload 15
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label4:
+  aload 13
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label2
+Label1:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/ads/r/a Lcn/domob/android/ads/g;
+  astore_2
+  aload_1
+  astore_0
+  iconst_m1
+  istore 16
+  aload_2
+  aload 10
+  iload 16
+  invokevirtual cn/domob/android/ads/g/a(Lcn/domob/android/ads/j;I)V
+Label8:
+  goto Label2
+Label3:
+  new java/lang/StringBuilder
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Unkown exception happened!"
+  astore_3
+  aload 17
+  astore_1
+  aload_1
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 17
+  aload 13
+  invokevirtual java/lang/Exception/getMessage()Ljava/lang/String;
+  astore 7
+  aload 17
+  astore_1
+  aload_1
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  ldc "DomobSDK"
+  astore_3
+  aload_3
+  aload 7
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label4
+  nop
+.end <method>
+

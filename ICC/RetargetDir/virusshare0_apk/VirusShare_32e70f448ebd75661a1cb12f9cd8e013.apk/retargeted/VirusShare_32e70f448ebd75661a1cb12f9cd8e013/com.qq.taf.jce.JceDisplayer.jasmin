@@ -1,0 +1,2525 @@
+.source JceDisplayer.java
+.class public final  com/qq/taf/jce/JceDisplayer
+.super java/lang/Object
+.field private "_level" I
+.field private "sb" Ljava/lang/StringBuilder;
+
+.method public <init>(Ljava/lang/StringBuilder;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield com/qq/taf/jce/JceDisplayer/_level I
+  aload_0
+  aload_1
+  putfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  return
+  nop
+.end <method>
+
+.method public <init>(Ljava/lang/StringBuilder;I)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  iconst_0
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/JceDisplayer/_level I
+  aload_0
+  aload_1
+  putfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  aload_0
+  iload_2
+  putfield com/qq/taf/jce/JceDisplayer/_level I
+  return
+  nop
+.end <method>
+
+.method public display(BLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  iload_1
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display(CLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  iload_1
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display(DLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  aload_3
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  dload_1
+  invokevirtual java/lang/StringBuilder/append(D)Ljava/lang/StringBuilder;
+  astore 4
+  bipush 10
+  istore 5
+  aload 4
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display(FLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  fload_1
+  invokevirtual java/lang/StringBuilder/append(F)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  iload_1
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display(JLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  aload_3
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  lload_1
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore 4
+  bipush 10
+  istore 5
+  aload 4
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display(Lcom/qq/taf/jce/JceStruct;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 8
+.limit stack 200
+  nop
+  bipush 123
+  istore_3
+  aload_0
+  iload_3
+  aload_2
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(CLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore 4
+  bipush 9
+  istore_3
+  aload 4
+  iload_3
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  astore 4
+  ldc "null"
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+Label1:
+  bipush 125
+  istore_3
+  aconst_null
+  astore 6
+  aload_0
+  iload_3
+  aload 6
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(CLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label0:
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore 4
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/_level I
+  istore 7
+  iload 7
+  iconst_1
+  iadd
+  istore 7
+  aload_1
+  aload 4
+  iload 7
+  invokevirtual com/qq/taf/jce/JceStruct/display(Ljava/lang/StringBuilder;I)V
+  goto Label1
+  nop
+.end <method>
+
+.method public display(Ljava/lang/Object;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  .signature_attr "<T:Ljava/lang/Object;>(TT;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;"
+.limit locals 60
+.limit stack 200
+  nop
+  aload_1
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  astore_3
+  aload_3
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore 8
+  ldc "null"
+  astore 9
+  aload 8
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  bipush 10
+  istore 10
+  aload 8
+  iload 10
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label0:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/lang/Byte
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label1
+  aload_1
+  astore 13
+  aload 13
+  checkcast java/lang/Byte
+  astore 13
+  aload 13
+  astore 12
+  aload 12
+  invokevirtual java/lang/Byte/byteValue()B
+  istore 14
+  aload_0
+  astore_3
+  aload_2
+  astore 4
+  aload_3
+  iload 14
+  aload 4
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(BLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label1:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/lang/Boolean
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label2
+  aload_1
+  astore 16
+  aload 16
+  checkcast java/lang/Boolean
+  astore 16
+  aload 16
+  astore 15
+  aload 15
+  invokevirtual java/lang/Boolean/booleanValue()Z
+  istore 11
+  aload_0
+  astore_3
+  aload_2
+  astore 4
+  aload_3
+  iload 11
+  aload 4
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ZLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label2:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/lang/Short
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label3
+  aload_1
+  astore 18
+  aload 18
+  checkcast java/lang/Short
+  astore 18
+  aload 18
+  astore 17
+  aload 17
+  invokevirtual java/lang/Short/shortValue()S
+  istore 19
+  aload_0
+  astore_3
+  iload 19
+  istore 4
+  aload_2
+  astore 5
+  aload_3
+  iload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(SLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label3:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/lang/Integer
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label4
+  aload_1
+  astore 21
+  aload 21
+  checkcast java/lang/Integer
+  astore 21
+  aload 21
+  astore 20
+  aload 20
+  astore_3
+  aload_3
+  invokevirtual java/lang/Integer/intValue()I
+  istore 22
+  aload_0
+  astore_3
+  iload 22
+  istore 4
+  aload_2
+  astore 5
+  aload_3
+  iload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label4:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/lang/Long
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label5
+  aload_1
+  astore 24
+  aload 24
+  checkcast java/lang/Long
+  astore 24
+  aload 24
+  astore 23
+  aload 23
+  astore_3
+  aload_3
+  invokevirtual java/lang/Long/longValue()J
+  lstore 25
+  aload_0
+  astore_3
+  lload 25
+  lstore 4
+  aload_2
+  astore 6
+  aload_3
+  lload 4
+  aload 6
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(JLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label5:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/lang/Float
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label6
+  aload_1
+  astore 28
+  aload 28
+  checkcast java/lang/Float
+  astore 28
+  aload 28
+  astore 27
+  aload 27
+  astore_3
+  aload_3
+  invokevirtual java/lang/Float/floatValue()F
+  fstore 29
+  aload_0
+  astore_3
+  fload 29
+  fstore 4
+  aload_2
+  astore 5
+  aload_3
+  fload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(FLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label6:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/lang/Double
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label7
+  aload_1
+  astore 31
+  aload 31
+  checkcast java/lang/Double
+  astore 31
+  aload 31
+  astore 30
+  aload 30
+  astore_3
+  aload_3
+  invokevirtual java/lang/Double/doubleValue()D
+  dstore 32
+  aload_0
+  astore_3
+  dload 32
+  dstore 4
+  aload_2
+  astore 6
+  aload_3
+  dload 4
+  aload 6
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(DLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label7:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/lang/String
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label8
+  aload_1
+  astore 35
+  aload 35
+  checkcast java/lang/String
+  astore 35
+  aload 35
+  astore 34
+  aload_0
+  astore_3
+  aload 34
+  astore 4
+  aload_2
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label8:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/util/Map
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label9
+  aload_1
+  astore 37
+  aload 37
+  checkcast java/util/Map
+  astore 37
+  aload 37
+  astore 36
+  aload_0
+  astore_3
+  aload 36
+  astore 4
+  aload_2
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/util/Map;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label9:
+  aload_1
+  astore_3
+  aload_3
+  instanceof java/util/List
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label10
+  aload_1
+  astore 39
+  aload 39
+  checkcast java/util/List
+  astore 39
+  aload 39
+  astore 38
+  aload_0
+  astore_3
+  aload 38
+  astore 4
+  aload_2
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/util/Collection;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label10:
+  aload_1
+  astore_3
+  aload_3
+  instanceof com/qq/taf/jce/JceStruct
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label11
+  aload_1
+  astore 41
+  aload 41
+  checkcast com/qq/taf/jce/JceStruct
+  astore 41
+  aload 41
+  astore 40
+  aload_0
+  astore_3
+  aload 40
+  astore 4
+  aload_2
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Lcom/qq/taf/jce/JceStruct;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label11:
+  aload_1
+  astore_3
+  aload_3
+  instanceof [B
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label12
+  aload_1
+  astore 43
+  aload 43
+  checkcast [B
+  astore 43
+  aload 43
+  astore 42
+  aload 42
+  checkcast [B
+  astore 42
+  aload_0
+  astore_3
+  aload 42
+  astore 4
+  aload_2
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display([BLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label12:
+  aload_1
+  astore_3
+  aload_3
+  instanceof [Z
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label13
+  aload_1
+  astore 45
+  aload 45
+  checkcast [Z
+  astore 45
+  aload 45
+  astore 44
+  aload 44
+  checkcast [Z
+  astore 44
+  aload_0
+  astore_3
+  aload 44
+  astore 4
+  aload_2
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/Object;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label13:
+  aload_1
+  astore_3
+  aload_3
+  instanceof [S
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label14
+  aload_1
+  astore 47
+  aload 47
+  checkcast [S
+  astore 47
+  aload 47
+  astore 46
+  aload 46
+  checkcast [S
+  astore 46
+  aload_0
+  astore_3
+  aload 46
+  astore 4
+  aload_2
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display([SLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label14:
+  aload_1
+  astore_3
+  aload_3
+  instanceof [I
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label15
+  aload_1
+  astore 49
+  aload 49
+  checkcast [I
+  astore 49
+  aload 49
+  astore 48
+  aload 48
+  checkcast [I
+  astore 48
+  aload_0
+  astore_3
+  aload 48
+  astore 4
+  aload_2
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display([ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label15:
+  aload_1
+  astore_3
+  aload_3
+  instanceof [J
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label16
+  aload_1
+  astore 51
+  aload 51
+  checkcast [J
+  astore 51
+  aload 51
+  astore 50
+  aload 50
+  checkcast [J
+  astore 50
+  aload_0
+  astore_3
+  aload 50
+  astore 4
+  aload_2
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display([JLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label16:
+  aload_1
+  astore_3
+  aload_3
+  instanceof [F
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label17
+  aload_1
+  astore 53
+  aload 53
+  checkcast [F
+  astore 53
+  aload 53
+  astore 52
+  aload 52
+  checkcast [F
+  astore 52
+  aload_0
+  astore_3
+  aload 52
+  astore 4
+  aload_2
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display([FLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label17:
+  aload_1
+  astore_3
+  aload_3
+  instanceof [D
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label18
+  aload_1
+  astore 55
+  aload 55
+  checkcast [D
+  astore 55
+  aload 55
+  astore 54
+  aload 54
+  checkcast [D
+  astore 54
+  aload_0
+  astore_3
+  aload 54
+  astore 4
+  aload_2
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display([DLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label18:
+  aload_1
+  astore_3
+  aload_3
+  invokevirtual java/lang/Object/getClass()Ljava/lang/Class;
+  astore 56
+  aload 56
+  astore_3
+  aload_3
+  invokevirtual java/lang/Class/isArray()Z
+  istore 11
+  iload 11
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 11
+  ifeq Label19
+  aload_1
+  astore 58
+  aload 58
+  checkcast [Ljava/lang/Object;
+  astore 58
+  aload 58
+  astore 57
+  aload 57
+  checkcast [Ljava/lang/Object;
+  astore 57
+  aload_0
+  astore_3
+  aload 57
+  astore 4
+  aload_2
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokevirtual com/qq/taf/jce/JceDisplayer/display([Ljava/lang/Object;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+Label19:
+  new com/qq/taf/jce/JceEncodeException
+  astore 59
+  ldc "write object error: unsupport type."
+  astore 9
+  aload 59
+  astore_3
+  aload_3
+  aload 9
+  invokespecial com/qq/taf/jce/JceEncodeException/<init>(Ljava/lang/String;)V
+  aload 59
+  athrow
+  nop
+.end <method>
+
+.method public display(Ljava/lang/String;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  ldc "null"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label0:
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display(Ljava/util/Collection;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  .signature_attr "<T:Ljava/lang/Object;>(Ljava/util/Collection<TT;>;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;"
+.limit locals 7
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  ldc "null"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 9
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label0:
+  aload_1
+  invokeinterface java/util/Collection/toArray()[Ljava/lang/Object; 1
+  astore 6
+  aload_0
+  aload 6
+  aload_2
+  invokevirtual com/qq/taf/jce/JceDisplayer/display([Ljava/lang/Object;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display(Ljava/util/Map;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  .signature_attr "<K:Ljava/lang/Object;V:Ljava/lang/Object;>(Ljava/util/Map<TK;TV;>;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;"
+.limit locals 16
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  ldc "null"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label0:
+  aload_1
+  invokeinterface java/util/Map/isEmpty()Z 1
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label1
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  invokeinterface java/util/Map/size()I 1
+  istore 7
+  aload_3
+  iload 7
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", {}"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label1:
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  invokeinterface java/util/Map/size()I 1
+  istore 7
+  aload_3
+  iload 7
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", {"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  new com/qq/taf/jce/JceDisplayer
+  astore 8
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/_level I
+  istore 7
+  iload 7
+  iconst_1
+  iadd
+  istore 7
+  aload 8
+  aload_3
+  iload 7
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  new com/qq/taf/jce/JceDisplayer
+  astore 9
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/_level I
+  istore 7
+  iload 7
+  iconst_2
+  iadd
+  istore 7
+  aload 9
+  aload_3
+  iload 7
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_1
+  invokeinterface java/util/Map/entrySet()Ljava/util/Set; 1
+  astore 10
+  aload 10
+  invokeinterface java/util/Set/iterator()Ljava/util/Iterator; 1
+  astore 11
+Label3:
+  aload 11
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label2
+  aload 11
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 12
+  aload 12
+  astore 14
+  aload 14
+  checkcast java/util/Map$Entry
+  astore 14
+  aload 14
+  astore 13
+  bipush 40
+  istore 5
+  aconst_null
+  astore 15
+  aload 8
+  iload 5
+  aload 15
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(CLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload 13
+  invokeinterface java/util/Map$Entry/getKey()Ljava/lang/Object; 1
+  astore 12
+  aconst_null
+  astore 15
+  aload 9
+  aload 12
+  aload 15
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/Object;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload 13
+  invokeinterface java/util/Map$Entry/getValue()Ljava/lang/Object; 1
+  astore 12
+  aconst_null
+  astore 15
+  aload 9
+  aload 12
+  aload 15
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/Object;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  bipush 41
+  istore 5
+  aconst_null
+  astore 15
+  aload 8
+  iload 5
+  aload 15
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(CLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  goto Label3
+Label2:
+  bipush 125
+  istore 5
+  aconst_null
+  astore 15
+  aload_0
+  iload 5
+  aload 15
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(CLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display(SLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  iload_1
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 4
+  aload_3
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display(ZLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  bipush 84
+  istore 4
+Label1:
+  aload_3
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label0:
+  bipush 70
+  istore 4
+  goto Label1
+  nop
+.end <method>
+
+.method public display([BLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 11
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  ldc "null"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label0:
+  aload_1
+  arraylength
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifne Label1
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  arraylength
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", []"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label1:
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  arraylength
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", ["
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  new com/qq/taf/jce/JceDisplayer
+  astore 7
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/_level I
+  istore 6
+  iload 6
+  iconst_1
+  iadd
+  istore 6
+  aload 7
+  aload_3
+  iload 6
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_1
+  arraylength
+  istore 6
+  iconst_0
+  dstore 8
+Label3:
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  iload 6
+  if_icmpge Label2
+  aload_1
+  iload 8
+  baload
+  istore 9
+  aconst_null
+  astore 10
+  aload 7
+  iload 9
+  aload 10
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(BLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  iload 8
+  iconst_1
+  iadd
+  istore 8
+  goto Label3
+Label2:
+  bipush 93
+  istore 5
+  aconst_null
+  astore 10
+  aload_0
+  iload 5
+  aload 10
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(CLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display([CLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 11
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  ldc "null"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label0:
+  aload_1
+  arraylength
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifne Label1
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  arraylength
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", []"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label1:
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  arraylength
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", ["
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  new com/qq/taf/jce/JceDisplayer
+  astore 7
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/_level I
+  istore 6
+  iload 6
+  iconst_1
+  iadd
+  istore 6
+  aload 7
+  aload_3
+  iload 6
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_1
+  arraylength
+  istore 6
+  iconst_0
+  dstore 8
+Label3:
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  iload 6
+  if_icmpge Label2
+  aload_1
+  iload 8
+  caload
+  istore 9
+  aconst_null
+  astore 10
+  aload 7
+  iload 9
+  aload 10
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(CLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  iload 8
+  iconst_1
+  iadd
+  istore 8
+  goto Label3
+Label2:
+  bipush 93
+  istore 5
+  aconst_null
+  astore 10
+  aload_0
+  iload 5
+  aload 10
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(CLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display([DLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 12
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  ldc "null"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label0:
+  aload_1
+  arraylength
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifne Label1
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  arraylength
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", []"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label1:
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  arraylength
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", ["
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  new com/qq/taf/jce/JceDisplayer
+  astore 7
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/_level I
+  istore 6
+  iload 6
+  iconst_1
+  iadd
+  istore 6
+  aload 7
+  aload_3
+  iload 6
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_1
+  arraylength
+  istore 6
+  iconst_0
+  dstore 8
+Label3:
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  iload 6
+  if_icmpge Label2
+  aload_1
+  iload 8
+  daload
+  dstore 9
+  aconst_null
+  astore 11
+  aload 7
+  dload 9
+  aload 11
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(DLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  iload 8
+  iconst_1
+  iadd
+  istore 8
+  goto Label3
+Label2:
+  bipush 93
+  istore 5
+  aconst_null
+  astore 11
+  aload_0
+  iload 5
+  aload 11
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(CLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display([FLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 11
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  ldc "null"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label0:
+  aload_1
+  arraylength
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifne Label1
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  arraylength
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", []"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label1:
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  arraylength
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", ["
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  new com/qq/taf/jce/JceDisplayer
+  astore 7
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/_level I
+  istore 6
+  iload 6
+  iconst_1
+  iadd
+  istore 6
+  aload 7
+  aload_3
+  iload 6
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_1
+  arraylength
+  istore 6
+  iconst_0
+  dstore 8
+Label3:
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  iload 6
+  if_icmpge Label2
+  aload_1
+  iload 8
+  faload
+  fstore 9
+  aconst_null
+  astore 10
+  aload 7
+  fload 9
+  aload 10
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(FLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  iload 8
+  iconst_1
+  iadd
+  istore 8
+  goto Label3
+Label2:
+  bipush 93
+  istore 5
+  aconst_null
+  astore 10
+  aload_0
+  iload 5
+  aload 10
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(CLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display([ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 11
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  ldc "null"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label0:
+  aload_1
+  arraylength
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifne Label1
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  arraylength
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", []"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label1:
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  arraylength
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", ["
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  new com/qq/taf/jce/JceDisplayer
+  astore 7
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/_level I
+  istore 6
+  iload 6
+  iconst_1
+  iadd
+  istore 6
+  aload 7
+  aload_3
+  iload 6
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_1
+  arraylength
+  istore 8
+  iconst_0
+  dstore 9
+Label3:
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  iload 8
+  if_icmpge Label2
+  aload_1
+  iload 9
+  iaload
+  istore 6
+  aconst_null
+  astore 10
+  aload 7
+  iload 6
+  aload 10
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(ILjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  iload 9
+  iconst_1
+  iadd
+  istore 9
+  goto Label3
+Label2:
+  bipush 93
+  istore 5
+  aconst_null
+  astore 10
+  aload_0
+  iload 5
+  aload 10
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(CLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display([JLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 12
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  ldc "null"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label0:
+  aload_1
+  arraylength
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifne Label1
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  arraylength
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", []"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label1:
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  arraylength
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", ["
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  new com/qq/taf/jce/JceDisplayer
+  astore 7
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/_level I
+  istore 6
+  iload 6
+  iconst_1
+  iadd
+  istore 6
+  aload 7
+  aload_3
+  iload 6
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_1
+  arraylength
+  istore 6
+  iconst_0
+  dstore 8
+Label3:
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  iload 6
+  if_icmpge Label2
+  aload_1
+  iload 8
+  laload
+  lstore 9
+  aconst_null
+  astore 11
+  aload 7
+  lload 9
+  aload 11
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(JLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  iload 8
+  iconst_1
+  iadd
+  istore 8
+  goto Label3
+Label2:
+  bipush 93
+  istore 5
+  aconst_null
+  astore 11
+  aload_0
+  iload 5
+  aload 11
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(CLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display([Ljava/lang/Object;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  .signature_attr "<T:Ljava/lang/Object;>([TT;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;"
+.limit locals 11
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  ldc "null"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label0:
+  aload_1
+  arraylength
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifne Label1
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  arraylength
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", []"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label1:
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  arraylength
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", ["
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  new com/qq/taf/jce/JceDisplayer
+  astore 7
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/_level I
+  istore 6
+  iload 6
+  iconst_1
+  iadd
+  istore 6
+  aload 7
+  aload_3
+  iload 6
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_1
+  arraylength
+  istore 6
+  iconst_0
+  dstore 8
+Label3:
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  iload 6
+  if_icmpge Label2
+  aload_1
+  iload 8
+  aaload
+  astore 9
+  aconst_null
+  astore 10
+  aload 7
+  aload 9
+  aload 10
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(Ljava/lang/Object;Ljava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  iload 8
+  iconst_1
+  iadd
+  istore 8
+  goto Label3
+Label2:
+  bipush 93
+  istore 5
+  aconst_null
+  astore 10
+  aload_0
+  iload 5
+  aload 10
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(CLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public display([SLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+.limit locals 11
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  invokespecial com/qq/taf/jce/JceDisplayer/ps(Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  ldc "null"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label0:
+  aload_1
+  arraylength
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifne Label1
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  arraylength
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", []"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  aload_0
+  areturn
+Label1:
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  arraylength
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ", ["
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  bipush 10
+  istore 5
+  aload_3
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  new com/qq/taf/jce/JceDisplayer
+  astore 7
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore_3
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/_level I
+  istore 6
+  iload 6
+  iconst_1
+  iadd
+  istore 6
+  aload 7
+  aload_3
+  iload 6
+  invokespecial com/qq/taf/jce/JceDisplayer/<init>(Ljava/lang/StringBuilder;I)V
+  aload_1
+  arraylength
+  istore 6
+  iconst_0
+  dstore 8
+Label3:
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  iload 6
+  if_icmpge Label2
+  aload_1
+  iload 8
+  saload
+  istore 9
+  aconst_null
+  astore 10
+  aload 7
+  iload 9
+  aload 10
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(SLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  iload 8
+  iconst_1
+  iadd
+  istore 8
+  goto Label3
+Label2:
+  bipush 93
+  istore 5
+  aconst_null
+  astore 10
+  aload_0
+  iload 5
+  aload 10
+  invokevirtual com/qq/taf/jce/JceDisplayer/display(CLjava/lang/String;)Lcom/qq/taf/jce/JceDisplayer;
+  pop
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static main([Ljava/lang/String;)V
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc2_w 1.200000000000000
+  dstore_2
+  aload_1
+  dload_2
+  invokevirtual java/lang/StringBuilder/append(D)Ljava/lang/StringBuilder;
+  pop
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method private ps(Ljava/lang/String;)V
+.limit locals 7
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+Label1:
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/_level I
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label0
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore 4
+  bipush 9
+  istore 5
+  aload 4
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(C)Ljava/lang/StringBuilder;
+  pop
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label1
+Label0:
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_1
+  ifeq Label2
+  aload_0
+  getfield com/qq/taf/jce/JceDisplayer/sb Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  ldc ": "
+  astore 6
+  aload 4
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+Label2:
+  return
+  nop
+.end <method>
+

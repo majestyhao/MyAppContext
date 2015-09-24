@@ -1,0 +1,20 @@
+.source SourceFile
+.class abstract  com/mobisage/android/P
+.super java/lang/Object
+
+.method <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public abstract a(I)Landroid/view/animation/Animation;
+.end <method>
+
+.method public abstract b(I)Landroid/view/animation/Animation;
+.end <method>
+

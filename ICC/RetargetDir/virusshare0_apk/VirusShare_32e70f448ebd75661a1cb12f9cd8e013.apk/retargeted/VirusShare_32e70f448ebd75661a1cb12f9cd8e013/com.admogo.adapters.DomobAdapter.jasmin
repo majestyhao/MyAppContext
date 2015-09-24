@@ -1,0 +1,552 @@
+.source DomobAdapter.java
+.class public  com/admogo/adapters/DomobAdapter
+.super com/admogo/adapters/AdMogoAdapter
+.implements  cn/domob/android/ads/DomobAdListener
+.field private "activity" Landroid/app/Activity;
+.field private "adView" Lcn/domob/android/ads/DomobAdView;
+
+.method public <init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  invokespecial com/admogo/adapters/AdMogoAdapter/<init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+  return
+  nop
+.end <method>
+
+.method public click()V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore_2
+  aload_2
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 4
+  astore_3
+  aload_3
+  invokevirtual com/admogo/AdMogoLayout/countClick()V
+  return
+  nop
+.end <method>
+
+.method public finish()V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/DomobAdapter/adView Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aconst_null
+  astore_2
+  aload_0
+  aload_2
+  putfield com/admogo/adapters/DomobAdapter/adView Lcn/domob/android/ads/DomobAdView;
+Label0:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_3
+  ldc "Domob Finished"
+  astore 4
+  aload_3
+  aload 4
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  return
+  nop
+.end <method>
+
+.method public handle()V
+.limit locals 27
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore 4
+  aload 4
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 7
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 6
+  ifne Label0
+Label1:
+  return
+Label0:
+  aload 6
+  getfield com/admogo/AdMogoLayout/activityReference Ljava/lang/ref/WeakReference;
+  astore 4
+  aload 4
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 9
+  aload 9
+  checkcast android/app/Activity
+  astore 9
+  aload 9
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  aload 8
+  putfield com/admogo/adapters/DomobAdapter/activity Landroid/app/Activity;
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/DomobAdapter/activity Landroid/app/Activity;
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label1
+  aload 6
+  getfield com/admogo/AdMogoLayout/extra Lcom/admogo/obj/Extra;
+  astore 10
+  aload 10
+  getfield com/admogo/obj/Extra/bgRed I
+  istore 11
+  aload 10
+  getfield com/admogo/obj/Extra/bgGreen I
+  istore 12
+  aload 10
+  getfield com/admogo/obj/Extra/bgBlue I
+  istore 13
+  iload 11
+  iload 12
+  iload 13
+  invokestatic android/graphics/Color/rgb(III)I
+  istore 13
+  aload 10
+  getfield com/admogo/obj/Extra/fgRed I
+  istore 11
+  aload 10
+  getfield com/admogo/obj/Extra/fgGreen I
+  istore 12
+  aload 10
+  getfield com/admogo/obj/Extra/fgBlue I
+  istore 14
+  iload 11
+  iload 12
+  iload 14
+  invokestatic android/graphics/Color/rgb(III)I
+  istore 12
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/AdMogoAdapter/ration Lcom/admogo/obj/Ration;
+  astore 15
+  aload 15
+  getfield com/admogo/obj/Ration/key Ljava/lang/String;
+  astore 16
+Label7:
+  aload 16
+  invokestatic cn/domob/android/ads/DomobAdManager/setPublisherId(Ljava/lang/String;)V
+  new cn/domob/android/ads/DomobAdView
+  astore 17
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/DomobAdapter/activity Landroid/app/Activity;
+  astore 8
+  aload 17
+  astore_1
+  aload_1
+  aload 8
+  invokespecial cn/domob/android/ads/DomobAdView/<init>(Landroid/app/Activity;)V
+Label8:
+  aload 17
+  astore_1
+  aload_0
+  astore_2
+  aload_2
+  aload_1
+  putfield com/admogo/adapters/DomobAdapter/adView Lcn/domob/android/ads/DomobAdView;
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/DomobAdapter/adView Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  astore 17
+  aload 17
+  astore_1
+  aload_0
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual cn/domob/android/ads/DomobAdView/setAdListener(Lcn/domob/android/ads/DomobAdListener;)V
+  invokestatic com/admogo/AdMogoTargeting/getGender()Lcom/admogo/AdMogoTargeting$Gender;
+  astore 18
+  getstatic com/admogo/AdMogoTargeting$Gender/FEMALE Lcom/admogo/AdMogoTargeting$Gender;
+  astore 19
+  aload 18
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 19
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 18
+  astore_1
+  aload 19
+  astore_2
+  aload_1
+  aload_2
+  if_acmpne Label2
+  ldc "female"
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/DomobAdManager/setGender(Ljava/lang/String;)V
+Label5:
+  invokestatic com/admogo/AdMogoTargeting/getBirthDate()Ljava/util/GregorianCalendar;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 21
+  ifnull Label3
+  aload 21
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/DomobAdManager/setBirthday(Ljava/util/GregorianCalendar;)V
+Label3:
+  invokestatic com/admogo/AdMogoTargeting/getPostalCode()Ljava/lang/String;
+  astore 16
+  aload 16
+  invokestatic android/text/TextUtils/isEmpty(Ljava/lang/CharSequence;)Z
+  istore 22
+  iload 22
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 22
+  ifne Label4
+  aload 16
+  invokestatic cn/domob/android/ads/DomobAdManager/setPostalCode(Ljava/lang/String;)V
+Label4:
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/DomobAdapter/adView Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  iload 13
+  invokevirtual cn/domob/android/ads/DomobAdView/setBackgroundColor(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/DomobAdapter/adView Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  iload 12
+  invokevirtual cn/domob/android/ads/DomobAdView/setPrimaryTextColor(I)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/DomobAdapter/adView Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  astore 17
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/AdMogoAdapter/ration Lcom/admogo/obj/Ration;
+  astore 15
+  aload 15
+  getfield com/admogo/obj/Ration/key2 Ljava/lang/String;
+  astore 16
+  aload 17
+  astore_1
+  aload_1
+  aload 16
+  invokevirtual cn/domob/android/ads/DomobAdView/setKeywords(Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/DomobAdapter/adView Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  astore 17
+  new android/view/ViewGroup$LayoutParams
+  astore 23
+  bipush -2
+  istore 24
+  bipush -2
+  istore 25
+  aload 23
+  astore_1
+  iload 24
+  istore_2
+  iload 25
+  istore_3
+  aload_1
+  iload_2
+  iload_3
+  invokespecial android/view/ViewGroup$LayoutParams/<init>(II)V
+  aload 17
+  astore_1
+  aload 23
+  astore_2
+  aload 6
+  aload_1
+  aload_2
+  invokevirtual com/admogo/AdMogoLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/DomobAdapter/adView Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  invokevirtual cn/domob/android/ads/DomobAdView/requestFreshAd()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/DomobAdapter/adView Lcn/domob/android/ads/DomobAdView;
+  astore_1
+  aload_1
+  astore 17
+  iconst_0
+  istore 24
+  aload 17
+  astore_1
+  iload 24
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual cn/domob/android/ads/DomobAdView/setRequestInterval(I)V
+  goto Label1
+Label6:
+  astore 26
+  aload 6
+  invokevirtual com/admogo/AdMogoLayout/rollover()V
+  goto Label1
+Label2:
+  getstatic com/admogo/AdMogoTargeting$Gender/MALE Lcom/admogo/AdMogoTargeting$Gender;
+  astore 19
+  aload 18
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 19
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 18
+  astore_1
+  aload 19
+  astore_2
+  aload_1
+  aload_2
+  if_acmpne Label5
+  ldc "male"
+  astore 20
+  aload 20
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/DomobAdManager/setGender(Ljava/lang/String;)V
+  goto Label5
+  nop
+.end <method>
+
+.method public onFailedToReceiveFreshAd(Lcn/domob/android/ads/DomobAdView;)V
+.limit locals 11
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_2
+  ldc "Domob Failed"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aconst_null
+  astore 4
+  aload_1
+  aload 4
+  invokevirtual cn/domob/android/ads/DomobAdView/setAdListener(Lcn/domob/android/ads/DomobAdListener;)V
+  aload_0
+  getfield com/admogo/adapters/DomobAdapter/activity Landroid/app/Activity;
+  astore 5
+  aload 5
+  invokevirtual android/app/Activity/isFinishing()Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifne Label0
+  aload_0
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore 7
+  aload 7
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 8
+  aload 8
+  astore 10
+  aload 10
+  checkcast com/admogo/AdMogoLayout
+  astore 10
+  aload 10
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnonnull Label1
+Label0:
+  return
+Label1:
+  aload 9
+  invokevirtual com/admogo/AdMogoLayout/rollover()V
+  goto Label0
+  nop
+.end <method>
+
+.method public onLandingPageClose()V
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_1
+  ldc "Domob LandingPageClose"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method public onLandingPageOpening()V
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_1
+  ldc "Domob LandingPageOpening"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method public onReceivedFreshAd(Lcn/domob/android/ads/DomobAdView;)V
+.limit locals 15
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_2
+  ldc "Domob Success"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aconst_null
+  astore 4
+  aload_1
+  aload 4
+  invokevirtual cn/domob/android/ads/DomobAdView/setAdListener(Lcn/domob/android/ads/DomobAdListener;)V
+  aload_0
+  getfield com/admogo/adapters/DomobAdapter/activity Landroid/app/Activity;
+  astore 5
+  aload 5
+  invokevirtual android/app/Activity/isFinishing()Z
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifne Label0
+  aload_0
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore 7
+  aload 7
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 8
+  aload 8
+  astore 10
+  aload 10
+  checkcast com/admogo/AdMogoLayout
+  astore 10
+  aload 10
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnonnull Label1
+Label0:
+  return
+Label1:
+  aload 9
+  getfield com/admogo/AdMogoLayout/adMogoManager Lcom/admogo/AdMogoManager;
+  astore 11
+  aload 11
+  invokevirtual com/admogo/AdMogoManager/resetRollover()V
+  aload 9
+  getfield com/admogo/AdMogoLayout/handler Landroid/os/Handler;
+  astore 12
+  new com/admogo/AdMogoLayout$ViewAdRunnable
+  astore 13
+  bipush 29
+  istore 14
+  aload 13
+  aload 9
+  aload_1
+  iload 14
+  invokespecial com/admogo/AdMogoLayout$ViewAdRunnable/<init>(Lcom/admogo/AdMogoLayout;Landroid/view/ViewGroup;I)V
+  aload 12
+  aload 13
+  invokevirtual android/os/Handler/post(Ljava/lang/Runnable;)Z
+  pop
+  aload 9
+  invokevirtual com/admogo/AdMogoLayout/rotateThreadedDelayed()V
+  goto Label0
+  nop
+.end <method>
+

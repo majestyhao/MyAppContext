@@ -1,0 +1,56 @@
+.source Update.java
+.class public  com/admogo/obj/Update
+.super java/lang/Object
+.field public "appName" Ljava/lang/String;
+.field public "date" Ljava/lang/String;
+.field public "description" Ljava/lang/String;
+.field public "download_url" Ljava/lang/String;
+.field public "packageName" Ljava/lang/String;
+.field public "version" Ljava/lang/String;
+.field public "versionCode" I
+
+.method public <init>()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/admogo/obj/Update/versionCode I
+  ldc ""
+  astore_2
+  aload_0
+  aload_2
+  putfield com/admogo/obj/Update/packageName Ljava/lang/String;
+  ldc ""
+  astore_2
+  aload_0
+  aload_2
+  putfield com/admogo/obj/Update/appName Ljava/lang/String;
+  ldc ""
+  astore_2
+  aload_0
+  aload_2
+  putfield com/admogo/obj/Update/version Ljava/lang/String;
+  ldc ""
+  astore_2
+  aload_0
+  aload_2
+  putfield com/admogo/obj/Update/date Ljava/lang/String;
+  ldc ""
+  astore_2
+  aload_0
+  aload_2
+  putfield com/admogo/obj/Update/description Ljava/lang/String;
+  ldc ""
+  astore_2
+  aload_0
+  aload_2
+  putfield com/admogo/obj/Update/download_url Ljava/lang/String;
+  return
+  nop
+.end <method>
+

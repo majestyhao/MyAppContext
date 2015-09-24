@@ -1,0 +1,145 @@
+.source SourceFile
+.class  cn/domob/android/ads/N$a
+.super java/lang/Thread
+.field private static final "c" I =  10
+.field final "a" Lcn/domob/android/ads/N;
+.field private "b" I
+
+.method <init>(Lcn/domob/android/ads/N;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/N$a/a Lcn/domob/android/ads/N;
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield cn/domob/android/ads/N$a/b I
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 12
+.limit stack 200
+  nop
+Label1:
+  aload_0
+  getfield cn/domob/android/ads/N$a/b I
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  bipush 10
+  istore_2
+  iload_1
+  iload_2
+  if_icmpge Label0
+  aload_0
+  getfield cn/domob/android/ads/N$a/a Lcn/domob/android/ads/N;
+  astore_3
+  aload_3
+  invokestatic cn/domob/android/ads/N/d(Lcn/domob/android/ads/N;)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label0
+Label4:
+  ldc2_w 1000
+  lstore 5
+  lload 5
+  invokestatic java/lang/Thread/sleep(J)V
+Label5:
+  aload_0
+  getfield cn/domob/android/ads/N$a/b I
+  istore_1
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/N$a/b I
+  goto Label1
+Label3:
+  astore 7
+  aload 7
+  invokevirtual java/lang/InterruptedException/printStackTrace()V
+  goto Label1
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/N$a/b I
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 10
+  istore_2
+  iload_1
+  iload_2
+  if_icmpne Label2
+  aload_0
+  getfield cn/domob/android/ads/N$a/a Lcn/domob/android/ads/N;
+  astore_3
+  aload_3
+  invokestatic cn/domob/android/ads/N/d(Lcn/domob/android/ads/N;)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label2
+  aload_0
+  getfield cn/domob/android/ads/N$a/a Lcn/domob/android/ads/N;
+  astore_3
+  aload_3
+  invokestatic cn/domob/android/ads/N/a(Lcn/domob/android/ads/N;)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label2
+  aload_0
+  getfield cn/domob/android/ads/N$a/a Lcn/domob/android/ads/N;
+  astore_3
+  iconst_1
+  istore_2
+  aload_3
+  iload_2
+  invokestatic cn/domob/android/ads/N/b(Lcn/domob/android/ads/N;Z)Z
+  pop
+  aload_0
+  getfield cn/domob/android/ads/N$a/a Lcn/domob/android/ads/N;
+  astore_3
+  aload_3
+  invokestatic cn/domob/android/ads/N/b(Lcn/domob/android/ads/N;)V
+  aload_0
+  getfield cn/domob/android/ads/N$a/a Lcn/domob/android/ads/N;
+  astore_3
+  aload_3
+  invokestatic cn/domob/android/ads/N/f(Lcn/domob/android/ads/N;)Landroid/content/Context;
+  astore 8
+  aload 8
+  astore 10
+  aload 10
+  checkcast android/app/Activity
+  astore 10
+  aload 10
+  astore 9
+  new cn/domob/android/ads/N$a$1
+  astore 11
+  aload 11
+  aload_0
+  invokespecial cn/domob/android/ads/N$a$1/<init>(Lcn/domob/android/ads/N$a;)V
+  aload 9
+  aload 11
+  invokevirtual android/app/Activity/runOnUiThread(Ljava/lang/Runnable;)V
+Label2:
+  return
+  nop
+.end <method>
+

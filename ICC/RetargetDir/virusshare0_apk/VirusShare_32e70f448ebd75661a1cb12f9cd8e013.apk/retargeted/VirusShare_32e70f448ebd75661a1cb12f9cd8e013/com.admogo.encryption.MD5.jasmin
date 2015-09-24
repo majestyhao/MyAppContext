@@ -1,0 +1,311 @@
+.source MD5.java
+.class public  com/admogo/encryption/MD5
+.super java/lang/Object
+.field private static final "hexDigits" [Ljava/lang/String;
+
+.method static <clinit>()V
+.limit locals 3
+.limit stack 200
+  nop
+  bipush 16
+  istore_1
+  iload_1
+  anewarray java/lang/String
+  astore_0
+  iconst_0
+  istore_1
+  ldc "0"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_1
+  istore_1
+  ldc "1"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_2
+  istore_1
+  ldc "2"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_3
+  istore_1
+  ldc "3"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_4
+  istore_1
+  ldc "4"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  iconst_5
+  istore_1
+  ldc "5"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 6
+  istore_1
+  ldc "6"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 7
+  istore_1
+  ldc "7"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 8
+  istore_1
+  ldc "8"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 9
+  istore_1
+  ldc "9"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 10
+  istore_1
+  ldc "a"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 11
+  istore_1
+  ldc "b"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 12
+  istore_1
+  ldc "c"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 13
+  istore_1
+  ldc "d"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 14
+  istore_1
+  ldc "e"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  bipush 15
+  istore_1
+  ldc "f"
+  astore_2
+  aload_0
+  iload_1
+  aload_2
+  aastore
+  aload_0
+  putstatic com/admogo/encryption/MD5/hexDigits [Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static MD5Encode(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 7
+.limit stack 200
+  .catch  java/lang/Exception <from> Label2 <to> Label3 <using> Label1
+  .catch  java/lang/Exception <from> Label3 <to> Label5 <using> Label4
+  nop
+  aconst_null
+  astore_1
+  new java/lang/String
+  astore_2
+Label2:
+  aload_2
+  aload_0
+  invokespecial java/lang/String/<init>(Ljava/lang/String;)V
+Label3:
+  ldc "MD5"
+  astore 4
+  aload 4
+  invokestatic java/security/MessageDigest/getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+  astore_3
+  aload_2
+  invokevirtual java/lang/String/getBytes()[B
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/security/MessageDigest/digest([B)[B
+  astore 5
+  aload 5
+  invokestatic com/admogo/encryption/MD5/byteArrayToHexString([B)Ljava/lang/String;
+  astore_1
+Label5:
+  aload_1
+  areturn
+Label1:
+  astore 6
+Label0:
+  aload 6
+  invokevirtual java/lang/Exception/printStackTrace()V
+  aload_1
+  areturn
+Label4:
+  astore 6
+  aload_2
+  astore_1
+  goto Label0
+  nop
+.end <method>
+
+.method public static byteArrayToHexString([B)Ljava/lang/String;
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/StringBuffer
+  astore_1
+  aload_1
+  invokespecial java/lang/StringBuffer/<init>()V
+  iconst_0
+  istore_2
+Label1:
+  aload_0
+  arraylength
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmplt Label0
+  aload_1
+  invokevirtual java/lang/StringBuffer/toString()Ljava/lang/String;
+  astore 4
+  aload 4
+  areturn
+Label0:
+  aload_0
+  iload_2
+  baload
+  istore 5
+  iload 5
+  invokestatic com/admogo/encryption/MD5/byteToHexString(B)Ljava/lang/String;
+  astore 4
+  aload_1
+  aload 4
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label1
+  nop
+.end <method>
+
+.method private static byteToHexString(B)Ljava/lang/String;
+.limit locals 6
+.limit stack 200
+  nop
+  iload_0
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifge Label0
+  iload_0
+  sipush 256
+  iadd
+  istore_1
+Label0:
+  iload_1
+  bipush 16
+  idiv
+  istore_2
+  iload_1
+  bipush 16
+  irem
+  istore_1
+  new java/lang/StringBuilder
+  astore_3
+  getstatic com/admogo/encryption/MD5/hexDigits [Ljava/lang/String;
+  astore 4
+  aload 4
+  iload_2
+  aaload
+  astore 5
+  aload 5
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 5
+  aload_3
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  getstatic com/admogo/encryption/MD5/hexDigits [Ljava/lang/String;
+  astore 4
+  aload 4
+  iload_1
+  aaload
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+

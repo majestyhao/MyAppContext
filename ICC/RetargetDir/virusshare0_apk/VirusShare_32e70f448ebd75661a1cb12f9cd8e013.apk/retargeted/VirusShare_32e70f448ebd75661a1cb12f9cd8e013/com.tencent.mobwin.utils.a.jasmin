@@ -1,0 +1,805 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/tencent/mobwin/utils/a
+.super java/lang/Object
+
+.method private <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static a(IIII)Landroid/graphics/Bitmap;
+.limit locals 28
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  istore 4
+  iload_1
+  istore 5
+  iload 4
+  iload 5
+  aload 12
+  invokestatic android/graphics/Bitmap/createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+  astore 13
+  new android/graphics/Canvas
+  astore 14
+  aload 14
+  invokespecial android/graphics/Canvas/<init>()V
+  aload 14
+  aload 13
+  invokevirtual android/graphics/Canvas/setBitmap(Landroid/graphics/Bitmap;)V
+  new android/graphics/Paint
+  astore 15
+  aload 15
+  invokespecial android/graphics/Paint/<init>()V
+  iload_2
+  istore 4
+  aload 15
+  iload 4
+  invokevirtual android/graphics/Paint/setColor(I)V
+  iload_3
+  istore 4
+  aload 15
+  iload 4
+  invokevirtual android/graphics/Paint/setAlpha(I)V
+  new android/graphics/Rect
+  astore 16
+  iconst_0
+  istore 17
+  iconst_0
+  istore 18
+  iload_0
+  istore 4
+  iload_1
+  istore 5
+  aload 16
+  iload 17
+  iload 18
+  iload 4
+  iload 5
+  invokespecial android/graphics/Rect/<init>(IIII)V
+  aload 14
+  aload 16
+  aload 15
+  invokevirtual android/graphics/Canvas/drawRect(Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+  aload 15
+  invokevirtual android/graphics/Paint/reset()V
+  iconst_3
+  istore 17
+  iload 17
+  newarray int
+  astore 19
+  iconst_0
+  istore 17
+  ldc 1442840575
+  istore 18
+  aload 19
+  iload 17
+  iload 18
+  iastore
+  iconst_1
+  istore 17
+  ldc 872415231
+  istore 18
+  aload 19
+  iload 17
+  iload 18
+  iastore
+  iconst_2
+  istore 17
+  ldc 16777215
+  istore 18
+  aload 19
+  iload 17
+  iload 18
+  iastore
+  iconst_3
+  istore 17
+  iload 17
+  newarray float
+  astore 4
+  aload 4
+  astore 20
+  iconst_0
+  istore 17
+  fconst_0
+  fstore 21
+  aload 20
+  iload 17
+  fload 21
+  fastore
+  ldc 1050253722
+  istore 17
+  iload 17
+  i2f
+  fstore 4
+  fload 4
+  fstore 22
+  iconst_1
+  istore 17
+  aload 20
+  iload 17
+  fload 22
+  fastore
+  ldc 1065353216
+  istore 17
+  iload 17
+  i2f
+  fstore 4
+  fload 4
+  fstore 22
+  iconst_2
+  istore 17
+  aload 20
+  iload 17
+  fload 22
+  fastore
+  new android/graphics/LinearGradient
+  astore 23
+  iload_1
+  istore 4
+  iload 4
+  i2f
+  fstore 4
+  fload 4
+  fstore 24
+  getstatic android/graphics/Shader$TileMode/CLAMP Landroid/graphics/Shader$TileMode;
+  astore 25
+  fconst_0
+  fstore 21
+  fconst_0
+  fstore 26
+  fconst_0
+  fstore 27
+  aload 23
+  astore 4
+  fload 21
+  fstore 5
+  fload 26
+  fstore 6
+  fload 27
+  fstore 7
+  fload 24
+  fstore 8
+  aload 19
+  astore 9
+  aload 20
+  astore 10
+  aload 25
+  astore 11
+  aload 4
+  fload 5
+  fload 6
+  fload 7
+  fload 8
+  aload 9
+  aload 10
+  aload 11
+  invokespecial android/graphics/LinearGradient/<init>(FFFF[I[FLandroid/graphics/Shader$TileMode;)V
+  aload 23
+  astore 4
+  aload 15
+  aload 4
+  invokevirtual android/graphics/Paint/setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
+  pop
+  new android/graphics/Rect
+  astore 16
+  iconst_0
+  istore 17
+  iconst_0
+  istore 18
+  iload_0
+  istore 4
+  iload_1
+  istore 5
+  aload 16
+  iload 17
+  iload 18
+  iload 4
+  iload 5
+  invokespecial android/graphics/Rect/<init>(IIII)V
+  aload 14
+  aload 16
+  aload 15
+  invokevirtual android/graphics/Canvas/drawRect(Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+  aload 13
+  areturn
+  nop
+.end <method>
+
+.method public static a(IIIILandroid/content/Context;)Landroid/graphics/Bitmap;
+.limit locals 18
+.limit stack 200
+  nop
+  aload 4
+  astore 5
+  iload_0
+  aload 5
+  invokestatic com/tencent/mobwin/utils/b/a(ILandroid/content/Context;)I
+  istore 6
+  aload 4
+  astore 5
+  iload_1
+  aload 5
+  invokestatic com/tencent/mobwin/utils/b/a(ILandroid/content/Context;)I
+  istore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 6
+  iload 7
+  aload 8
+  invokestatic android/graphics/Bitmap/createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+  astore 9
+  new android/graphics/Canvas
+  astore 10
+  aload 10
+  invokespecial android/graphics/Canvas/<init>()V
+  aload 10
+  aload 9
+  invokevirtual android/graphics/Canvas/setBitmap(Landroid/graphics/Bitmap;)V
+  iload_0
+  iload_2
+  idiv
+  istore 7
+  aload 4
+  astore 5
+  iload 7
+  aload 5
+  invokestatic com/tencent/mobwin/utils/b/a(ILandroid/content/Context;)I
+  istore 7
+  aload 4
+  astore 5
+  iload_1
+  aload 5
+  invokestatic com/tencent/mobwin/utils/b/a(ILandroid/content/Context;)I
+  istore 6
+  new android/graphics/Paint
+  astore 11
+  aload 11
+  invokespecial android/graphics/Paint/<init>()V
+  iconst_0
+  istore 12
+Label2:
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 12
+  iload_2
+  if_icmplt Label0
+  aload 9
+  areturn
+Label0:
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  dstore 5
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  istore 5
+  iload 12
+  iload 5
+  if_icmpne Label1
+  ldc 55551
+  istore 13
+  aload 11
+  iload 13
+  invokevirtual android/graphics/Paint/setColor(I)V
+Label3:
+  new android/graphics/Rect
+  astore 14
+  iload 7
+  iload 12
+  imul
+  istore_1
+  iload_1
+  iconst_1
+  iadd
+  istore 15
+  iload 7
+  bipush -2
+  iadd
+  istore_1
+  iload 7
+  iload 12
+  imul
+  istore_0
+  iload_1
+  iload_0
+  iadd
+  istore_1
+  iload 6
+  bipush -2
+  iadd
+  istore_0
+  iconst_1
+  istore 13
+  aload 14
+  iload 15
+  iload 13
+  iload_1
+  iload_0
+  invokespecial android/graphics/Rect/<init>(IIII)V
+  getstatic android/graphics/Paint$Style/FILL Landroid/graphics/Paint$Style;
+  astore 16
+  aload 11
+  aload 16
+  invokevirtual android/graphics/Paint/setStyle(Landroid/graphics/Paint$Style;)V
+  sipush 255
+  istore 13
+  aload 11
+  iload 13
+  invokevirtual android/graphics/Paint/setAlpha(I)V
+  aload 10
+  aload 14
+  aload 11
+  invokevirtual android/graphics/Canvas/drawRect(Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+  new android/graphics/Rect
+  astore 14
+  iload 7
+  iload 12
+  imul
+  istore 15
+  iload 15
+  iconst_0
+  iadd
+  istore 15
+  iload 7
+  iconst_m1
+  iadd
+  istore_1
+  iload 7
+  iload 12
+  imul
+  istore_0
+  iload_1
+  iload_0
+  iadd
+  istore_1
+  iload 6
+  iconst_m1
+  iadd
+  istore_0
+  iconst_0
+  istore 13
+  aload 14
+  iload 15
+  iload 13
+  iload_1
+  iload_0
+  invokespecial android/graphics/Rect/<init>(IIII)V
+  iconst_m1
+  istore 13
+  aload 11
+  iload 13
+  invokevirtual android/graphics/Paint/setColor(I)V
+  getstatic android/graphics/Paint$Style/STROKE Landroid/graphics/Paint$Style;
+  astore 16
+  aload 11
+  aload 16
+  invokevirtual android/graphics/Paint/setStyle(Landroid/graphics/Paint$Style;)V
+  fconst_0
+  fstore 17
+  aload 11
+  fload 17
+  invokevirtual android/graphics/Paint/setStrokeWidth(F)V
+  sipush 255
+  istore 13
+  aload 11
+  iload 13
+  invokevirtual android/graphics/Paint/setAlpha(I)V
+  aload 10
+  aload 14
+  aload 11
+  invokevirtual android/graphics/Canvas/drawRect(Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+  iload 12
+  iconst_1
+  iadd
+  istore 12
+  goto Label2
+Label1:
+  ldc 7237230
+  istore 13
+  aload 11
+  iload 13
+  invokevirtual android/graphics/Paint/setColor(I)V
+  goto Label3
+  nop
+.end <method>
+
+.method public static a(Landroid/graphics/Bitmap;F)Landroid/graphics/Bitmap;
+.limit locals 16
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_0
+  invokevirtual android/graphics/Bitmap/getHeight()I
+  istore_3
+  getstatic android/graphics/Bitmap$Config/ARGB_8888 Landroid/graphics/Bitmap$Config;
+  astore 4
+  iload_2
+  iload_3
+  aload 4
+  invokestatic android/graphics/Bitmap/createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+  astore 5
+  new android/graphics/Canvas
+  astore 6
+  aload 6
+  aload 5
+  invokespecial android/graphics/Canvas/<init>(Landroid/graphics/Bitmap;)V
+  new android/graphics/Paint
+  astore 7
+  aload 7
+  invokespecial android/graphics/Paint/<init>()V
+  new android/graphics/Rect
+  astore 8
+  aload_0
+  invokevirtual android/graphics/Bitmap/getWidth()I
+  istore_3
+  aload_0
+  invokevirtual android/graphics/Bitmap/getHeight()I
+  istore_2
+  iconst_0
+  istore 9
+  iconst_0
+  istore 10
+  aload 8
+  iload 9
+  iload 10
+  iload_3
+  iload_2
+  invokespecial android/graphics/Rect/<init>(IIII)V
+  new android/graphics/RectF
+  astore 11
+  aload 11
+  aload 8
+  invokespecial android/graphics/RectF/<init>(Landroid/graphics/Rect;)V
+  iconst_1
+  istore 9
+  aload 7
+  iload 9
+  invokevirtual android/graphics/Paint/setAntiAlias(Z)V
+  iconst_0
+  istore 9
+  iconst_0
+  istore 10
+  iconst_0
+  istore 12
+  iconst_0
+  istore 13
+  aload 6
+  iload 9
+  iload 10
+  iload 12
+  iload 13
+  invokevirtual android/graphics/Canvas/drawARGB(IIII)V
+  ldc -12434878
+  istore 9
+  aload 7
+  iload 9
+  invokevirtual android/graphics/Paint/setColor(I)V
+  aload 6
+  aload 11
+  fload_1
+  fload_1
+  aload 7
+  invokevirtual android/graphics/Canvas/drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
+  new android/graphics/PorterDuffXfermode
+  astore 14
+  getstatic android/graphics/PorterDuff$Mode/SRC_IN Landroid/graphics/PorterDuff$Mode;
+  astore 15
+  aload 14
+  aload 15
+  invokespecial android/graphics/PorterDuffXfermode/<init>(Landroid/graphics/PorterDuff$Mode;)V
+  aload 7
+  aload 14
+  invokevirtual android/graphics/Paint/setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
+  pop
+  aload 6
+  aload_0
+  aload 8
+  aload 8
+  aload 7
+  invokevirtual android/graphics/Canvas/drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method public static a(Landroid/graphics/Bitmap;I)Landroid/graphics/Bitmap;
+.limit locals 15
+.limit stack 200
+  nop
+  iload_1
+  iconst_2
+  iadd
+  istore_2
+  iload_1
+  iconst_3
+  iadd
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  iload_3
+  aload 4
+  invokestatic android/graphics/Bitmap/createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+  astore 5
+  new android/graphics/Canvas
+  astore 6
+  aload 6
+  invokespecial android/graphics/Canvas/<init>()V
+  aload 6
+  aload 5
+  invokevirtual android/graphics/Canvas/setBitmap(Landroid/graphics/Bitmap;)V
+  aload_0
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_0
+  ifne Label0
+  aload 5
+  areturn
+Label0:
+  new android/graphics/Canvas
+  astore 7
+  aload 7
+  invokespecial android/graphics/Canvas/<init>()V
+  getstatic android/graphics/Bitmap$Config/ARGB_8888 Landroid/graphics/Bitmap$Config;
+  astore 4
+  iload_1
+  iload_1
+  aload 4
+  invokestatic android/graphics/Bitmap/createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+  astore 8
+  aload 7
+  aload 8
+  invokevirtual android/graphics/Canvas/setBitmap(Landroid/graphics/Bitmap;)V
+  new android/graphics/Rect
+  astore 9
+  aload_0
+  invokevirtual android/graphics/Bitmap/getWidth()I
+  istore_3
+  aload_0
+  invokevirtual android/graphics/Bitmap/getHeight()I
+  istore_2
+  iconst_0
+  istore 10
+  iconst_0
+  istore 11
+  aload 9
+  iload 10
+  iload 11
+  iload_3
+  iload_2
+  invokespecial android/graphics/Rect/<init>(IIII)V
+  new android/graphics/Rect
+  astore 12
+  iconst_0
+  istore 10
+  iconst_0
+  istore 11
+  aload 12
+  iload 10
+  iload 11
+  iload_1
+  iload_1
+  invokespecial android/graphics/Rect/<init>(IIII)V
+  aconst_null
+  astore 13
+  aload 7
+  aload_0
+  aload 9
+  aload 12
+  aload 13
+  invokevirtual android/graphics/Canvas/drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+  ldc 9.000000
+  fstore 14
+  aload 8
+  fload 14
+  invokestatic com/tencent/mobwin/utils/a/a(Landroid/graphics/Bitmap;F)Landroid/graphics/Bitmap;
+  astore_0
+  new android/graphics/Rect
+  astore 12
+  aload_0
+  invokevirtual android/graphics/Bitmap/getWidth()I
+  istore_3
+  aload_0
+  invokevirtual android/graphics/Bitmap/getHeight()I
+  istore_2
+  iconst_0
+  istore 10
+  iconst_0
+  istore 11
+  aload 12
+  iload 10
+  iload 11
+  iload_3
+  iload_2
+  invokespecial android/graphics/Rect/<init>(IIII)V
+  new android/graphics/Rect
+  astore 9
+  iconst_1
+  istore 10
+  iconst_1
+  istore 11
+  aload 9
+  iload 10
+  iload 11
+  iload_1
+  iload_1
+  invokespecial android/graphics/Rect/<init>(IIII)V
+  aconst_null
+  astore 13
+  aload 6
+  aload_0
+  aload 12
+  aload 9
+  aload 13
+  invokevirtual android/graphics/Canvas/drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+  aload_0
+  invokevirtual android/graphics/Bitmap/recycle()V
+  aload 8
+  invokevirtual android/graphics/Bitmap/recycle()V
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method public static b(IIII)Landroid/graphics/Bitmap;
+.limit locals 12
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  iload_1
+  aload 4
+  invokestatic android/graphics/Bitmap/createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+  astore 5
+  new android/graphics/Canvas
+  astore 6
+  aload 6
+  invokespecial android/graphics/Canvas/<init>()V
+  aload 6
+  aload 5
+  invokevirtual android/graphics/Canvas/setBitmap(Landroid/graphics/Bitmap;)V
+  new android/graphics/Paint
+  astore 7
+  aload 7
+  invokespecial android/graphics/Paint/<init>()V
+  iconst_0
+  istore_0
+Label2:
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iload_2
+  if_icmplt Label0
+  aload 5
+  areturn
+Label0:
+  ldc -65536
+  istore 8
+  aload 7
+  iload 8
+  invokevirtual android/graphics/Paint/setColor(I)V
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iload_3
+  if_icmpne Label1
+  sipush 255
+  istore 8
+  aload 7
+  iload 8
+  invokevirtual android/graphics/Paint/setAlpha(I)V
+Label3:
+  iload_0
+  bipush 30
+  imul
+  istore_1
+  iload_1
+  bipush 10
+  iadd
+  istore_1
+  iload_1
+  i2f
+  fstore 9
+  ldc 20.000000
+  fstore 10
+  ldc 5.000000
+  fstore 11
+  aload 6
+  fload 9
+  fload 10
+  fload 11
+  aload 7
+  invokevirtual android/graphics/Canvas/drawCircle(FFFLandroid/graphics/Paint;)V
+  iload_0
+  iconst_1
+  iadd
+  istore_0
+  goto Label2
+Label1:
+  bipush 80
+  istore 8
+  aload 7
+  iload 8
+  invokevirtual android/graphics/Paint/setAlpha(I)V
+  goto Label3
+  nop
+.end <method>
+
+.method public static c(IIII)Landroid/graphics/Bitmap;
+.limit locals 11
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  iload_1
+  aload 4
+  invokestatic android/graphics/Bitmap/createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+  astore 5
+  new android/graphics/Canvas
+  astore 6
+  aload 6
+  invokespecial android/graphics/Canvas/<init>()V
+  aload 6
+  aload 5
+  invokevirtual android/graphics/Canvas/setBitmap(Landroid/graphics/Bitmap;)V
+  new android/graphics/Paint
+  astore 7
+  aload 7
+  invokespecial android/graphics/Paint/<init>()V
+  aload 7
+  iload_2
+  invokevirtual android/graphics/Paint/setColor(I)V
+  aload 7
+  iload_3
+  invokevirtual android/graphics/Paint/setAlpha(I)V
+  new android/graphics/Rect
+  astore 8
+  iconst_0
+  istore 9
+  iconst_0
+  istore 10
+  aload 8
+  iload 9
+  iload 10
+  iload_0
+  iload_1
+  invokespecial android/graphics/Rect/<init>(IIII)V
+  aload 6
+  aload 8
+  aload 7
+  invokevirtual android/graphics/Canvas/drawRect(Landroid/graphics/Rect;Landroid/graphics/Paint;)V
+  aload 5
+  areturn
+  nop
+.end <method>
+

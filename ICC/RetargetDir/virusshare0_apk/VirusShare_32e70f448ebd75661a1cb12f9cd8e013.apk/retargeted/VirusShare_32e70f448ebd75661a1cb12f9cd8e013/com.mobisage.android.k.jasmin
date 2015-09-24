@@ -1,0 +1,71 @@
+.source SourceFile
+.class final  com/mobisage/android/k
+.super com/mobisage/android/Q
+.field public "a" Landroid/os/Handler;
+
+.method <init>(Landroid/os/Handler;)V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/mobisage/android/Q/<init>()V
+  aload_0
+  aload_1
+  putfield com/mobisage/android/k/a Landroid/os/Handler;
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield com/mobisage/android/Q/d Z
+  ldc2_w 0
+  lstore_3
+  aload_0
+  lload_3
+  putfield com/mobisage/android/Q/e J
+  return
+  nop
+.end <method>
+
+.method protected final finalize()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/finalize()V
+  return
+  nop
+.end <method>
+
+.method public final run()V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/mobisage/android/k/a Landroid/os/Handler;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+Label1:
+  return
+Label0:
+  aload_0
+  getfield com/mobisage/android/k/a Landroid/os/Handler;
+  astore_1
+  aload_1
+  invokevirtual android/os/Handler/obtainMessage()Landroid/os/Message;
+  astore_2
+  sipush 1004
+  istore_3
+  aload_2
+  iload_3
+  putfield android/os/Message/what I
+  aload_2
+  invokevirtual android/os/Message/sendToTarget()V
+  goto Label1
+  nop
+.end <method>
+

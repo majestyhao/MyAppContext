@@ -1,0 +1,2269 @@
+.source PublicCustomAdapter.java
+.class public  com/admogo/adapters/PublicCustomAdapter
+.super com/admogo/adapters/AdMogoAdapter
+.field private static "publicCustom" Lcom/admogo/obj/PublicCustom;
+.field private final "TIME_WEBLOADOUT" I
+.field private "TimeOutConTimer" Ljava/util/Timer;
+.field private "ration" Lcom/admogo/obj/Ration;
+.field private "webViewParent" Landroid/webkit/WebView;
+
+.method public <init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  invokespecial com/admogo/adapters/AdMogoAdapter/<init>(Lcom/admogo/AdMogoLayout;Lcom/admogo/obj/Ration;)V
+  sipush 15000
+  istore_3
+  aload_0
+  iload_3
+  putfield com/admogo/adapters/PublicCustomAdapter/TIME_WEBLOADOUT I
+  aload_0
+  aload_2
+  putfield com/admogo/adapters/PublicCustomAdapter/ration Lcom/admogo/obj/Ration;
+  return
+  nop
+.end <method>
+
+.method static access$0(Lcom/admogo/adapters/PublicCustomAdapter;Ljava/util/Timer;)V
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/adapters/PublicCustomAdapter/TimeOutConTimer Ljava/util/Timer;
+  return
+  nop
+.end <method>
+
+.method static access$1(Lcom/admogo/adapters/PublicCustomAdapter;)Ljava/util/Timer;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/PublicCustomAdapter/TimeOutConTimer Ljava/util/Timer;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static access$2(Lcom/admogo/adapters/PublicCustomAdapter;)Lcom/admogo/obj/Ration;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/PublicCustomAdapter/ration Lcom/admogo/obj/Ration;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static access$3(Lcom/admogo/adapters/PublicCustomAdapter;)Landroid/webkit/WebView;
+  .synthetic
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/PublicCustomAdapter/webViewParent Landroid/webkit/WebView;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method static access$4(Lcom/admogo/obj/PublicCustom;)V
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  putstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  return
+  nop
+.end <method>
+
+.method static access$5()Lcom/admogo/obj/PublicCustom;
+  .synthetic
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public click()V
+.limit locals 43
+.limit stack 200
+  nop
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 12
+  ifeq Label0
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  aload 12
+  getfield com/admogo/obj/PublicCustom/link Ljava/lang/String;
+  astore 13
+  aload 13
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 13
+  ifnull Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore 14
+  aload 14
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 15
+  aload 15
+  astore 17
+  aload 17
+  checkcast com/admogo/AdMogoLayout
+  astore 17
+  aload 17
+  astore 16
+  aload 16
+  getfield com/admogo/AdMogoLayout/activityReference Ljava/lang/ref/WeakReference;
+  astore 14
+  aload 14
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 15
+  aload 15
+  astore 19
+  aload 19
+  checkcast android/content/Context
+  astore 19
+  aload 19
+  astore 18
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  aload 12
+  getfield com/admogo/obj/PublicCustom/linkType I
+  istore_1
+  iload_1
+  istore 20
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 21
+  iload 20
+  istore_1
+  iload 21
+  istore_2
+  iload_1
+  iload_2
+  if_icmpeq Label1
+  aload 16
+  getfield com/admogo/AdMogoLayout/adMogoListener Lcom/admogo/AdMogoListener;
+  astore_1
+  aload_1
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 22
+  ifnull Label2
+  aload 16
+  getfield com/admogo/AdMogoLayout/adMogoListener Lcom/admogo/AdMogoListener;
+  astore_1
+  aload_1
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  invokeinterface com/admogo/AdMogoListener/onClickAd()V 1
+Label2:
+  aload 16
+  getfield com/admogo/AdMogoLayout/activeRation Lcom/admogo/obj/Ration;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  getfield com/admogo/obj/Ration/type I
+  istore_1
+  iload_1
+  istore 24
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  aload 12
+  getfield com/admogo/obj/PublicCustom/cid Ljava/lang/String;
+  astore 13
+  iconst_1
+  istore 21
+  iconst_0
+  istore 25
+  iconst_0
+  istore 26
+  aload 16
+  astore_1
+  iload 24
+  istore_2
+  aload 13
+  astore_3
+  iload 21
+  istore 4
+  iload 25
+  istore 5
+  iload 26
+  istore 6
+  aload_1
+  iload_2
+  aload_3
+  iload 4
+  iload 5
+  iload 6
+  invokevirtual com/admogo/AdMogoLayout/countExClick(ILjava/lang/String;III)V
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  aload 12
+  getfield com/admogo/obj/PublicCustom/linkType I
+  istore_1
+  iload_1
+  istore 27
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 21
+  iload 27
+  istore_1
+  iload 21
+  istore_2
+  iload_1
+  iload_2
+  if_icmpne Label3
+  new android/content/Intent
+  astore 28
+  ldc com/admogo/AdMogoWebView
+  astore 29
+  aload 28
+  astore_1
+  aload 18
+  astore_2
+  aload 29
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokespecial android/content/Intent/<init>(Landroid/content/Context;Ljava/lang/Class;)V
+  new android/os/Bundle
+  astore 30
+  aload 30
+  astore_1
+  aload_1
+  invokespecial android/os/Bundle/<init>()V
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  aload 12
+  getfield com/admogo/obj/PublicCustom/link Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 31
+  ldc "link"
+  astore 32
+  aload 30
+  astore_1
+  aload 32
+  astore_2
+  aload 31
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokevirtual android/os/Bundle/putString(Ljava/lang/String;Ljava/lang/String;)V
+  aload 28
+  astore_1
+  aload 30
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Intent/putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
+  pop
+  aload 18
+  astore_1
+  aload 28
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Context/startActivity(Landroid/content/Intent;)V
+Label4:
+  return
+Label3:
+  new android/content/Intent
+  astore 33
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  aload 12
+  getfield com/admogo/obj/PublicCustom/link Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 31
+  aload 31
+  astore_1
+  aload_1
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 34
+  ldc "android.intent.action.VIEW"
+  astore 32
+  aload 33
+  astore_1
+  aload 32
+  astore_2
+  aload 34
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;Landroid/net/Uri;)V
+  ldc 268435456
+  istore 21
+  aload 33
+  astore_1
+  iload 21
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual android/content/Intent/addFlags(I)Landroid/content/Intent;
+  pop
+  aload 18
+  astore_1
+  aload 33
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Context/startActivity(Landroid/content/Intent;)V
+  goto Label4
+Label1:
+  aload 18
+  astore_1
+  aload_1
+  invokevirtual android/content/Context/getResources()Landroid/content/res/Resources;
+  astore 35
+  aload 35
+  astore_1
+  aload_1
+  invokevirtual android/content/res/Resources/getConfiguration()Landroid/content/res/Configuration;
+  astore 36
+  iconst_0
+  istore 37
+  aload 36
+  astore_1
+  aload_1
+  getfield android/content/res/Configuration/orientation I
+  istore_1
+  iload_1
+  istore 20
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 21
+  iload 20
+  istore_1
+  iload 21
+  istore_2
+  iload_1
+  iload_2
+  if_icmpne Label5
+  iconst_1
+  istore 37
+Label8:
+  aload 16
+  getfield com/admogo/AdMogoLayout/adMogoListener Lcom/admogo/AdMogoListener;
+  astore_1
+  aload_1
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 22
+  ifnull Label6
+  aload 16
+  getfield com/admogo/AdMogoLayout/adMogoListener Lcom/admogo/AdMogoListener;
+  astore_1
+  aload_1
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  invokeinterface com/admogo/AdMogoListener/onClickAd()V 1
+Label6:
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  aload 12
+  getfield com/admogo/obj/PublicCustom/launchType I
+  istore_1
+  iload_1
+  istore 27
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 21
+  iload 27
+  istore_1
+  iload 21
+  istore_2
+  iload_1
+  iload_2
+  if_icmpne Label7
+  aload 16
+  getfield com/admogo/AdMogoLayout/activeRation Lcom/admogo/obj/Ration;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  getfield com/admogo/obj/Ration/type I
+  istore_1
+  iload_1
+  istore 27
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  aload 12
+  getfield com/admogo/obj/PublicCustom/cid Ljava/lang/String;
+  astore 13
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  aload 12
+  getfield com/admogo/obj/PublicCustom/link Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 31
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  aload 12
+  getfield com/admogo/obj/PublicCustom/appName Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 38
+  iload 27
+  istore_1
+  aload 31
+  astore_2
+  aload 38
+  astore_3
+  aload 16
+  iload_1
+  aload 13
+  aload_2
+  aload_3
+  invokevirtual com/admogo/AdMogoLayout/downloadAPK(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/PublicCustomAdapter/ration Lcom/admogo/obj/Ration;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  getfield com/admogo/obj/Ration/type I
+  istore_1
+  iload_1
+  istore 27
+  aload_0
+  astore_1
+  iload 27
+  istore_2
+  aload_1
+  aload 16
+  iload_2
+  invokespecial com/admogo/adapters/PublicCustomAdapter/startService(Lcom/admogo/AdMogoLayout;I)V
+  goto Label4
+Label5:
+  iload 20
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 21
+  iload 20
+  istore_1
+  iload 21
+  istore_2
+  iload_1
+  iload_2
+  if_icmpne Label8
+  iconst_0
+  istore 37
+  goto Label8
+Label7:
+  new com/admogo/ShowInfoDialog
+  astore 39
+  aload 16
+  getfield com/admogo/AdMogoLayout/activeRation Lcom/admogo/obj/Ration;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  getfield com/admogo/obj/Ration/type I
+  istore_1
+  iload_1
+  istore 27
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  aload 12
+  getfield com/admogo/obj/PublicCustom/cid Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 40
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  aload 12
+  getfield com/admogo/obj/PublicCustom/appIcon Landroid/graphics/drawable/Drawable;
+  astore_1
+  aload_1
+  astore 41
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  aload 12
+  getfield com/admogo/obj/PublicCustom/appName Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 38
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  aload 12
+  getfield com/admogo/obj/PublicCustom/appDes Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 31
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  aload 12
+  getfield com/admogo/obj/PublicCustom/imageUrlList Ljava/util/List;
+  astore_1
+  aload_1
+  astore 42
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 12
+  aload 12
+  getfield com/admogo/obj/PublicCustom/link Ljava/lang/String;
+  astore 13
+  aload 39
+  astore_1
+  iload 27
+  istore_2
+  aload 40
+  astore_3
+  aload 16
+  astore 4
+  aload 18
+  astore 5
+  aload 41
+  astore 6
+  aload 38
+  astore 7
+  aload 31
+  astore 8
+  aload 42
+  astore 9
+  aload 13
+  astore 10
+  iload 37
+  istore 11
+  aload_1
+  iload_2
+  aload_3
+  aload 4
+  aload 5
+  aload 6
+  aload 7
+  aload 8
+  aload 9
+  aload 10
+  iload 11
+  invokespecial com/admogo/ShowInfoDialog/<init>(ILjava/lang/String;Lcom/admogo/AdMogoLayout;Landroid/content/Context;Landroid/graphics/drawable/Drawable;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Z)V
+  aload 39
+  astore_1
+  aload_1
+  invokevirtual com/admogo/ShowInfoDialog/show()V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/PublicCustomAdapter/ration Lcom/admogo/obj/Ration;
+  astore_1
+  aload_1
+  astore 23
+  aload 23
+  astore_1
+  aload_1
+  getfield com/admogo/obj/Ration/type I
+  istore_1
+  iload_1
+  istore 27
+  aload_0
+  astore_1
+  iload 27
+  istore_2
+  aload_1
+  aload 16
+  iload_2
+  invokespecial com/admogo/adapters/PublicCustomAdapter/startService(Lcom/admogo/AdMogoLayout;I)V
+  goto Label4
+Label0:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 40
+  ldc "In onInterceptTouchEvent(), but custom.link is null"
+  astore 32
+  aload 40
+  astore_1
+  aload 32
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label4
+  nop
+.end <method>
+
+.method public displayPublicCustom()V
+.limit locals 59
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore 5
+  aload 5
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 6
+  aload 6
+  astore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 8
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 7
+  ifne Label0
+Label1:
+  return
+Label0:
+  aload 7
+  getfield com/admogo/AdMogoLayout/activityReference Ljava/lang/ref/WeakReference;
+  astore 5
+  aload 5
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 6
+  aload 6
+  astore 10
+  aload 10
+  checkcast android/app/Activity
+  astore 10
+  aload 10
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnull Label1
+  getstatic com/admogo/util/AdMogoUtil/density D
+  dstore 11
+  bipush 50
+  istore 14
+  iload 14
+  dload 11
+  invokestatic com/admogo/util/AdMogoUtil/convertToScreenPixels(ID)I
+  istore 13
+  iload 13
+  i2d
+  dstore 15
+  bipush 42
+  istore 14
+  iload 14
+  dload 11
+  invokestatic com/admogo/util/AdMogoUtil/convertToScreenPixels(ID)I
+  istore 13
+  iload 13
+  i2d
+  dstore_1
+  dload_1
+  dstore 17
+  bipush 20
+  istore 14
+  iload 14
+  dload 11
+  invokestatic com/admogo/util/AdMogoUtil/convertToScreenPixels(ID)I
+  istore 13
+  iload 13
+  i2d
+  dstore_1
+  dload_1
+  dstore 19
+  iconst_4
+  istore 14
+  iload 14
+  dload 11
+  invokestatic com/admogo/util/AdMogoUtil/convertToScreenPixels(ID)I
+  istore 13
+  iload 13
+  i2d
+  dstore 11
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  getfield com/admogo/obj/PublicCustom/type I
+  istore 13
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  lookupswitch
+  1 : Label3
+  2 : Label4
+  3 : Label5
+  4 : Label6
+  5 : Label6
+  6 : Label7
+  7 : Label8
+  default : Label2
+Label2:
+  goto Label6
+Label6:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 22
+  ldc "Unknown custom type!"
+  astore 23
+  aload 22
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aload 7
+  invokevirtual com/admogo/AdMogoLayout/rotateThreadedNow()V
+  goto Label1
+Label3:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 22
+  ldc "Serving custom type: banner"
+  astore 23
+  aload 22
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  new android/widget/RelativeLayout
+  astore 24
+  aload 24
+  astore_1
+  aload_1
+  aload 9
+  invokespecial android/widget/RelativeLayout/<init>(Landroid/content/Context;)V
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  getfield com/admogo/obj/PublicCustom/image Landroid/graphics/drawable/Drawable;
+  astore_1
+  aload_1
+  astore 25
+  aload 25
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 25
+  ifnonnull Label9
+  aload 7
+  invokevirtual com/admogo/AdMogoLayout/rollover()V
+  goto Label1
+Label9:
+  new android/widget/ImageView
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  aload 9
+  invokespecial android/widget/ImageView/<init>(Landroid/content/Context;)V
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  getfield com/admogo/obj/PublicCustom/image Landroid/graphics/drawable/Drawable;
+  astore_1
+  aload_1
+  astore 25
+  aload 26
+  astore_1
+  aload 25
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/widget/ImageView/setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+  getstatic android/widget/ImageView$ScaleType/CENTER_CROP Landroid/widget/ImageView$ScaleType;
+  astore 27
+  aload 26
+  astore_1
+  aload 27
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/widget/ImageView/setScaleType(Landroid/widget/ImageView$ScaleType;)V
+  new android/widget/RelativeLayout$LayoutParams
+  astore 28
+  dload 15
+  d2i
+  istore 13
+  iconst_m1
+  istore 14
+  aload 28
+  astore_1
+  aload_1
+  iload 14
+  iload 13
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  bipush 13
+  istore 14
+  aload 28
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  aload 24
+  astore_1
+  aload 26
+  astore_2
+  aload 28
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/PublicCustomAdapter/ration Lcom/admogo/obj/Ration;
+  astore_1
+  aload_1
+  astore 29
+  aload 29
+  astore_1
+  aload_1
+  getfield com/admogo/obj/Ration/type I
+  istore 13
+  aload 24
+  astore_1
+  aload 7
+  aload_1
+  iload 13
+  invokevirtual com/admogo/AdMogoLayout/pushSubView(Landroid/view/ViewGroup;I)V
+Label12:
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+  aconst_null
+  astore 30
+  aload 30
+  astore_1
+  aload 21
+  astore_2
+  aload_2
+  aload_1
+  putfield com/admogo/obj/PublicCustom/image Landroid/graphics/drawable/Drawable;
+  aload 7
+  getfield com/admogo/AdMogoLayout/adMogoManager Lcom/admogo/AdMogoManager;
+  astore_1
+  aload_1
+  astore 31
+  aload 31
+  astore_1
+  aload_1
+  invokevirtual com/admogo/AdMogoManager/resetRollover()V
+  aload 7
+  invokevirtual com/admogo/AdMogoLayout/rotateThreadedDelayed()V
+  goto Label1
+Label4:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 22
+  ldc "Serving custom type: icon"
+  astore 23
+  aload 22
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  new android/widget/RelativeLayout
+  astore 24
+  aload 24
+  astore_1
+  aload_1
+  aload 9
+  invokespecial android/widget/RelativeLayout/<init>(Landroid/content/Context;)V
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  getfield com/admogo/obj/PublicCustom/image Landroid/graphics/drawable/Drawable;
+  astore_1
+  aload_1
+  astore 25
+  aload 25
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 25
+  ifnonnull Label10
+  aload 7
+  invokevirtual com/admogo/AdMogoLayout/rollover()V
+  goto Label1
+Label10:
+  new android/widget/FrameLayout$LayoutParams
+  astore 32
+  dload 15
+  d2i
+  istore 13
+  iconst_m1
+  istore 14
+  aload 32
+  astore_1
+  aload_1
+  iload 14
+  iload 13
+  invokespecial android/widget/FrameLayout$LayoutParams/<init>(II)V
+  aload 24
+  astore_1
+  aload 32
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/widget/RelativeLayout/setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  new android/widget/ImageView
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  aload 9
+  invokespecial android/widget/ImageView/<init>(Landroid/content/Context;)V
+  aload 7
+  getfield com/admogo/AdMogoLayout/extra Lcom/admogo/obj/Extra;
+  astore_1
+  aload_1
+  astore 33
+  aload 33
+  astore_1
+  aload_1
+  getfield com/admogo/obj/Extra/bgRed I
+  istore 13
+  aload 7
+  getfield com/admogo/AdMogoLayout/extra Lcom/admogo/obj/Extra;
+  astore_1
+  aload_1
+  astore 33
+  aload 33
+  astore_1
+  aload_1
+  getfield com/admogo/obj/Extra/bgGreen I
+  istore_1
+  iload_1
+  istore 34
+  aload 7
+  getfield com/admogo/AdMogoLayout/extra Lcom/admogo/obj/Extra;
+  astore_1
+  aload_1
+  astore 33
+  aload 33
+  astore_1
+  aload_1
+  getfield com/admogo/obj/Extra/bgBlue I
+  istore_1
+  iload_1
+  istore 35
+  iload 34
+  istore_1
+  iload 35
+  istore_2
+  iload 13
+  iload_1
+  iload_2
+  invokestatic android/graphics/Color/rgb(III)I
+  istore 13
+  new android/graphics/drawable/GradientDrawable
+  astore 36
+  getstatic android/graphics/drawable/GradientDrawable$Orientation/TOP_BOTTOM Landroid/graphics/drawable/GradientDrawable$Orientation;
+  astore 37
+  iconst_2
+  istore 14
+  iload 14
+  newarray int
+  astore_1
+  aload_1
+  astore 38
+  bipush 100
+  istore 14
+  sipush 255
+  istore 39
+  sipush 255
+  istore 40
+  sipush 255
+  istore 41
+  iload 39
+  istore_1
+  iload 40
+  istore_2
+  iload 41
+  istore_3
+  iload 14
+  iload_1
+  iload_2
+  iload_3
+  invokestatic android/graphics/Color/argb(IIII)I
+  istore 35
+  iconst_0
+  istore 14
+  aload 38
+  iload 14
+  iload 35
+  iastore
+  iconst_0
+  istore 14
+  sipush 255
+  istore 39
+  sipush 255
+  istore 40
+  sipush 255
+  istore 41
+  iload 39
+  istore_1
+  iload 40
+  istore_2
+  iload 41
+  istore_3
+  iload 14
+  iload_1
+  iload_2
+  iload_3
+  invokestatic android/graphics/Color/argb(IIII)I
+  istore 35
+  iconst_1
+  istore 14
+  aload 38
+  iload 14
+  iload 35
+  iastore
+  aload 36
+  astore_1
+  aload 37
+  astore_2
+  aload 38
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokespecial android/graphics/drawable/GradientDrawable/<init>(Landroid/graphics/drawable/GradientDrawable$Orientation;[I)V
+  aload 26
+  astore_1
+  aload 36
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/widget/ImageView/setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+  new android/widget/RelativeLayout$LayoutParams
+  astore 28
+  dload 19
+  dstore_1
+  dload_1
+  d2i
+  istore_1
+  iload_1
+  istore 35
+  iconst_m1
+  istore 14
+  aload 28
+  astore_1
+  iload 35
+  istore_2
+  aload_1
+  iload 14
+  iload_2
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  aload 26
+  astore_1
+  aload 36
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/widget/ImageView/setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+  aload 24
+  astore_1
+  aload 26
+  astore_2
+  aload 28
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  aload 24
+  astore_1
+  aload_1
+  iload 13
+  invokevirtual android/widget/RelativeLayout/setBackgroundColor(I)V
+  new android/widget/ImageView
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  aload 9
+  invokespecial android/widget/ImageView/<init>(Landroid/content/Context;)V
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  getfield com/admogo/obj/PublicCustom/image Landroid/graphics/drawable/Drawable;
+  astore_1
+  aload_1
+  astore 25
+  aload 26
+  astore_1
+  aload 25
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/widget/ImageView/setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+  bipush 10
+  istore 14
+  aload 26
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/widget/ImageView/setId(I)V
+  new android/widget/RelativeLayout$LayoutParams
+  astore 28
+  dload 17
+  dstore_1
+  dload_1
+  d2i
+  istore_1
+  iload_1
+  istore 35
+  dload 17
+  dstore_1
+  dload_1
+  d2i
+  istore_1
+  iload_1
+  istore 34
+  aload 28
+  astore_1
+  iload 35
+  istore_2
+  iload 34
+  istore_3
+  aload_1
+  iload_2
+  iload_3
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  dload 11
+  d2i
+  istore_1
+  iload_1
+  istore 35
+  dload 11
+  d2i
+  istore_1
+  iload_1
+  istore 42
+  dload 11
+  d2i
+  istore_1
+  iload_1
+  istore 34
+  dload 11
+  d2i
+  istore 13
+  aload 28
+  astore_1
+  iload 35
+  istore_2
+  iload 42
+  istore_3
+  iload 34
+  istore 4
+  aload_1
+  iload_2
+  iload_3
+  iload 4
+  iload 13
+  invokevirtual android/widget/RelativeLayout$LayoutParams/setMargins(IIII)V
+  aload 24
+  astore_1
+  aload 26
+  astore_2
+  aload 28
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  new android/widget/TextView
+  astore 43
+  aload 43
+  astore_1
+  aload_1
+  aload 9
+  invokespecial android/widget/TextView/<init>(Landroid/content/Context;)V
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+Label19:
+  aload 21
+  astore_1
+  aload_1
+  getfield com/admogo/obj/PublicCustom/adText Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 22
+  ifnonnull Label11
+  aload 7
+  invokevirtual com/admogo/AdMogoLayout/rotateThreadedNow()V
+Label11:
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  getfield com/admogo/obj/PublicCustom/adText Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 22
+  aload 43
+  astore_1
+  aload 22
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/widget/TextView/setText(Ljava/lang/CharSequence;)V
+  getstatic android/graphics/Typeface/DEFAULT_BOLD Landroid/graphics/Typeface;
+  astore 44
+  iconst_1
+  istore 14
+  aload 43
+  astore_1
+  aload 44
+  astore_2
+  aload_1
+  aload_2
+  iload 14
+  invokevirtual android/widget/TextView/setTypeface(Landroid/graphics/Typeface;I)V
+  aload 7
+  getfield com/admogo/AdMogoLayout/extra Lcom/admogo/obj/Extra;
+  astore_1
+  aload_1
+  astore 33
+  aload 33
+  astore_1
+  aload_1
+  getfield com/admogo/obj/Extra/fgRed I
+  istore_1
+  iload_1
+  istore 42
+  aload 7
+  getfield com/admogo/AdMogoLayout/extra Lcom/admogo/obj/Extra;
+  astore_1
+  aload_1
+  astore 33
+  aload 33
+  astore_1
+  aload_1
+  getfield com/admogo/obj/Extra/fgGreen I
+  istore_1
+  iload_1
+  istore 45
+  aload 7
+  getfield com/admogo/AdMogoLayout/extra Lcom/admogo/obj/Extra;
+  astore_1
+  aload_1
+  astore 33
+  aload 33
+  astore_1
+  aload_1
+  getfield com/admogo/obj/Extra/fgBlue I
+  istore_1
+  iload_1
+  istore 35
+  iload 42
+  istore_1
+  iload 45
+  istore_2
+  iload 35
+  istore_3
+  iload_1
+  iload_2
+  iload_3
+  invokestatic android/graphics/Color/rgb(III)I
+  istore 42
+  aload 43
+  astore_1
+  iload 42
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual android/widget/TextView/setTextColor(I)V
+  iconst_2
+  istore 14
+  aload 43
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/widget/TextView/setMaxLines(I)V
+  ldc 16.000000
+  fstore 46
+  aload 43
+  astore_1
+  fload 46
+  fstore_2
+  aload_1
+  fload_2
+  invokevirtual android/widget/TextView/setTextSize(F)V
+  new android/widget/RelativeLayout$LayoutParams
+  astore 28
+  iconst_m1
+  istore 14
+  iconst_m1
+  istore 39
+  aload 28
+  astore_1
+  iload 39
+  istore_2
+  aload_1
+  iload 14
+  iload_2
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  aload 26
+  astore_1
+  aload_1
+  invokevirtual android/widget/ImageView/getId()I
+  istore 42
+  iconst_1
+  istore 14
+  aload 28
+  astore_1
+  iload 42
+  istore_2
+  aload_1
+  iload 14
+  iload_2
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(II)V
+  bipush 10
+  istore 14
+  aload 28
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  bipush 12
+  istore 14
+  aload 28
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  bipush 15
+  istore 14
+  aload 28
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  bipush 13
+  istore 14
+  aload 28
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  bipush 16
+  istore 14
+  aload 43
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/widget/TextView/setGravity(I)V
+  aload 24
+  astore_1
+  aload 43
+  astore_2
+  aload 28
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/PublicCustomAdapter/ration Lcom/admogo/obj/Ration;
+  astore_1
+  aload_1
+  astore 29
+  aload 29
+  astore_1
+  aload_1
+  getfield com/admogo/obj/Ration/type I
+  istore_1
+  iload_1
+  istore 42
+  aload 24
+  astore_1
+  iload 42
+  istore_2
+  aload 7
+  aload_1
+  iload_2
+  invokevirtual com/admogo/AdMogoLayout/pushSubView(Landroid/view/ViewGroup;I)V
+  goto Label12
+Label18:
+  astore 47
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+  ldc "Haven\'t description!"
+  astore 23
+  aload 23
+  astore_1
+  aload 21
+  astore_2
+  aload_2
+  aload_1
+  putfield com/admogo/obj/PublicCustom/adText Ljava/lang/String;
+  goto Label11
+Label5:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 22
+  ldc "Serving custom type: full"
+  astore 23
+  aload 22
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  new android/widget/RelativeLayout
+  astore 24
+  aload 24
+  astore_1
+  aload_1
+  aload 9
+  invokespecial android/widget/RelativeLayout/<init>(Landroid/content/Context;)V
+  ldc -16777216
+  istore 14
+  aload 24
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/widget/RelativeLayout/setBackgroundColor(I)V
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  getfield com/admogo/obj/PublicCustom/image Landroid/graphics/drawable/Drawable;
+  astore_1
+  aload_1
+  astore 25
+  aload 25
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 25
+  ifnonnull Label13
+  aload 7
+  invokevirtual com/admogo/AdMogoLayout/rotateThreadedNow()V
+  goto Label1
+Label13:
+  new android/widget/ImageView
+  astore 26
+  aload 26
+  astore_1
+  aload_1
+  aload 9
+  invokespecial android/widget/ImageView/<init>(Landroid/content/Context;)V
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  getfield com/admogo/obj/PublicCustom/image Landroid/graphics/drawable/Drawable;
+  astore_1
+  aload_1
+  astore 25
+  aload 26
+  astore_1
+  aload 25
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/widget/ImageView/setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+  new android/widget/RelativeLayout$LayoutParams
+  astore 28
+  iconst_m1
+  istore 14
+  bipush -2
+  istore 39
+  aload 28
+  astore_1
+  iload 39
+  istore_2
+  aload_1
+  iload 14
+  iload_2
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  bipush 13
+  istore 14
+  aload 28
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  new android/widget/ImageButton
+  astore 48
+  aload 48
+  astore_1
+  aload_1
+  aload 9
+  invokespecial android/widget/ImageButton/<init>(Landroid/content/Context;)V
+  ldc 17301533
+  istore 14
+  aload 48
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/widget/ImageButton/setBackgroundResource(I)V
+  aload 24
+  astore_1
+  aload 26
+  astore_2
+  aload 28
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  aload 24
+  astore_1
+  aload 48
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;)V
+  new com/admogo/adapters/PublicCustomAdapter$1
+  astore 49
+  aload 49
+  astore_1
+  aload_0
+  astore_2
+  aload 24
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokespecial com/admogo/adapters/PublicCustomAdapter$1/<init>(Lcom/admogo/adapters/PublicCustomAdapter;Landroid/widget/RelativeLayout;)V
+  aload 48
+  astore_1
+  aload 49
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/widget/ImageButton/setOnClickListener(Landroid/view/View$OnClickListener;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/PublicCustomAdapter/ration Lcom/admogo/obj/Ration;
+  astore_1
+  aload_1
+  astore 29
+  aload 29
+  astore_1
+  aload_1
+  getfield com/admogo/obj/Ration/type I
+  istore_1
+  iload_1
+  istore 42
+  aload 24
+  astore_1
+  iload 42
+  istore_2
+  aload 7
+  aload_1
+  iload_2
+  invokevirtual com/admogo/AdMogoLayout/pushSubView(Landroid/view/ViewGroup;I)V
+  goto Label12
+Label7:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 22
+  ldc "Serving custom type: html"
+  astore 23
+  aload 22
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  getfield com/admogo/obj/PublicCustom/adText Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 22
+  aload 22
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 22
+  ifnull Label14
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  getfield com/admogo/obj/PublicCustom/adText Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 22
+  ldc ""
+  astore 23
+  aload 22
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 50
+  iload 50
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 50
+  ifeq Label15
+Label14:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 22
+  ldc "html content is null or length is 0"
+  astore 23
+  aload 22
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label1
+Label15:
+  new android/webkit/WebView
+  astore 51
+  aload 51
+  astore_1
+  aload_1
+  aload 9
+  invokespecial android/webkit/WebView/<init>(Landroid/content/Context;)V
+  aload 51
+  astore_1
+  aload_0
+  astore_2
+  aload_2
+  aload_1
+  putfield com/admogo/adapters/PublicCustomAdapter/webViewParent Landroid/webkit/WebView;
+  aload 51
+  astore_1
+  aload_1
+  invokevirtual android/webkit/WebView/getSettings()Landroid/webkit/WebSettings;
+  astore 52
+  iconst_1
+  istore 14
+  aload 52
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/webkit/WebSettings/setJavaScriptCanOpenWindowsAutomatically(Z)V
+  aload 51
+  astore_1
+  aload_1
+  invokevirtual android/webkit/WebView/getSettings()Landroid/webkit/WebSettings;
+  astore 52
+  iconst_1
+  istore 14
+  aload 52
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/webkit/WebSettings/setJavaScriptEnabled(Z)V
+  iconst_0
+  istore 14
+  aload 51
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/webkit/WebView/setVerticalScrollBarEnabled(Z)V
+  iconst_0
+  istore 14
+  aload 51
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/webkit/WebView/setHorizontalScrollbarOverlay(Z)V
+  new com/admogo/adapters/PublicCustomAdapter$MyWebViewClient
+  astore 53
+  aload 53
+  astore_1
+  aload_0
+  astore_2
+  aload_0
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokespecial com/admogo/adapters/PublicCustomAdapter$MyWebViewClient/<init>(Lcom/admogo/adapters/PublicCustomAdapter;Lcom/admogo/adapters/PublicCustomAdapter;)V
+  aload 51
+  astore_1
+  aload 53
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/webkit/WebView/setWebViewClient(Landroid/webkit/WebViewClient;)V
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  getfield com/admogo/obj/PublicCustom/adText Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 22
+  ldc "text/html"
+  astore 23
+  ldc "UTF-8"
+  astore 54
+  aload 51
+  astore_1
+  aload 22
+  astore_2
+  aload 23
+  astore_3
+  aload 54
+  astore 4
+  aload_1
+  aload_2
+  aload_3
+  aload 4
+  invokevirtual android/webkit/WebView/loadData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+  goto Label1
+Label8:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 55
+  ldc "Serving custom type: gif"
+  astore 23
+  aload 55
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  getfield com/admogo/obj/PublicCustom/imageLink Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 55
+  aload 55
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 55
+  ifnull Label16
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  getfield com/admogo/obj/PublicCustom/imageLink Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 55
+  ldc ""
+  astore 23
+  aload 55
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 50
+  iload 50
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 50
+  ifeq Label17
+Label16:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 55
+  ldc "gif image link is null or length is 0"
+  astore 23
+  aload 55
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  goto Label1
+Label17:
+  new android/webkit/WebView
+  astore 51
+  aload 51
+  astore_1
+  aload_1
+  aload 9
+  invokespecial android/webkit/WebView/<init>(Landroid/content/Context;)V
+  aload 51
+  astore_1
+  aload_0
+  astore_2
+  aload_2
+  aload_1
+  putfield com/admogo/adapters/PublicCustomAdapter/webViewParent Landroid/webkit/WebView;
+  iconst_0
+  istore 14
+  aload 51
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/webkit/WebView/setVerticalScrollBarEnabled(Z)V
+  iconst_0
+  istore 14
+  aload 51
+  astore_1
+  aload_1
+  iload 14
+  invokevirtual android/webkit/WebView/setHorizontalScrollbarOverlay(Z)V
+  new com/admogo/adapters/PublicCustomAdapter$MyWebViewClient
+  astore 56
+  aload 56
+  astore_1
+  aload_0
+  astore_2
+  aload_0
+  astore_3
+  aload_1
+  aload_2
+  aload_3
+  invokespecial com/admogo/adapters/PublicCustomAdapter$MyWebViewClient/<init>(Lcom/admogo/adapters/PublicCustomAdapter;Lcom/admogo/adapters/PublicCustomAdapter;)V
+  aload 51
+  astore_1
+  aload 56
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/webkit/WebView/setWebViewClient(Landroid/webkit/WebViewClient;)V
+  new java/lang/StringBuilder
+  astore 57
+  ldc "<body style=\"padding:0; margin:0\"><img src=\""
+  astore 23
+  aload 57
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 21
+  aload 21
+  astore_1
+  aload_1
+  getfield com/admogo/obj/PublicCustom/imageLink Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 55
+  aload 57
+  astore_1
+  aload 55
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 57
+  ldc "\" width=320 height=50 border=0 align=\"middle\" /></body>"
+  astore 23
+  aload 57
+  astore_1
+  aload 23
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 57
+  aload 57
+  astore_1
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 58
+  ldc "text/html"
+  astore 23
+  ldc "UTF-8"
+  astore 54
+  aload 51
+  astore_1
+  aload 58
+  astore_2
+  aload 23
+  astore_3
+  aload 54
+  astore 4
+  aload_1
+  aload_2
+  aload_3
+  aload 4
+  invokevirtual android/webkit/WebView/loadData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+  goto Label1
+  nop
+  nop
+.end <method>
+
+.method public finish()V
+.limit locals 3
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore_1
+  ldc "Ad Finished"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method public handle()V
+.limit locals 12
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore_2
+  aload_2
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 4
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_3
+  ifne Label0
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 5
+  ldc "handle AdMogoLayout reference fail AdMogo will sleep"
+  astore 6
+  aload 5
+  aload 6
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label1:
+  return
+Label0:
+  aload_3
+  getfield com/admogo/AdMogoLayout/scheduler Ljava/util/concurrent/ScheduledExecutorService;
+  astore 7
+  new com/admogo/adapters/PublicCustomAdapter$FetchPublicRunnable
+  astore 8
+  aload 8
+  aload_0
+  invokespecial com/admogo/adapters/PublicCustomAdapter$FetchPublicRunnable/<init>(Lcom/admogo/adapters/PublicCustomAdapter;)V
+  getstatic java/util/concurrent/TimeUnit/SECONDS Ljava/util/concurrent/TimeUnit;
+  astore 9
+  ldc2_w 0
+  lstore 10
+  aload 7
+  aload 8
+  lload 10
+  aload 9
+  invokeinterface java/util/concurrent/ScheduledExecutorService/schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture; 5
+  pop
+  goto Label1
+  nop
+.end <method>
+
+.method private startService(Lcom/admogo/AdMogoLayout;I)V
+.limit locals 22
+.limit stack 200
+  nop
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 4
+  aload 4
+  getfield com/admogo/obj/PublicCustom/al I
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_1
+  istore 6
+  iload 5
+  iload 6
+  if_icmpne Label0
+  dload_2
+  dstore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 45
+  istore 6
+  iload_2
+  istore_3
+  iload_3
+  iload 6
+  if_icmpeq Label0
+  dload_2
+  dstore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 9
+  istore 6
+  iload_2
+  istore_3
+  iload_3
+  iload 6
+  if_icmpeq Label0
+  aload_1
+  astore_3
+  aload_3
+  getfield com/admogo/AdMogoLayout/activityReference Ljava/lang/ref/WeakReference;
+  astore 7
+  aload 7
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 8
+  aload 8
+  astore 10
+  aload 10
+  checkcast android/app/Activity
+  astore 10
+  aload 10
+  astore 9
+  new android/content/Intent
+  astore 11
+  ldc com/admogo/CountService
+  astore 12
+  aload 11
+  aload 9
+  aload 12
+  invokespecial android/content/Intent/<init>(Landroid/content/Context;Ljava/lang/Class;)V
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 4
+  aload 4
+  getfield com/admogo/obj/PublicCustom/pn Ljava/lang/String;
+  astore 13
+  ldc "package_name"
+  astore 14
+  aload 11
+  aload 14
+  aload 13
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 15
+  ldc "package_time"
+  astore 14
+  aload 11
+  aload 14
+  lload 15
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;J)Landroid/content/Intent;
+  pop
+  aload_1
+  astore_3
+  aload_3
+  getfield com/admogo/AdMogoLayout/adMogoManager Lcom/admogo/AdMogoManager;
+  astore 17
+  aload 17
+  getfield com/admogo/AdMogoManager/keyAdMogo Ljava/lang/String;
+  astore 18
+  ldc "appid"
+  astore 14
+  aload 11
+  aload 14
+  aload 18
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 4
+  aload 4
+  getfield com/admogo/obj/PublicCustom/cid Ljava/lang/String;
+  astore 18
+  ldc "cid"
+  astore 14
+  aload 11
+  aload 14
+  aload 18
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload_1
+  astore_3
+  aload_3
+  getfield com/admogo/AdMogoLayout/adMogoManager Lcom/admogo/AdMogoManager;
+  astore 17
+  aload 17
+  getfield com/admogo/AdMogoManager/deviceIDHash Ljava/lang/String;
+  astore 18
+  ldc "uuid"
+  astore 14
+  aload 11
+  aload 14
+  aload 18
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload_1
+  astore_3
+  aload_3
+  invokevirtual com/admogo/AdMogoLayout/getCountryCode()Ljava/lang/String;
+  astore 18
+  ldc "country"
+  astore 14
+  aload 11
+  aload 14
+  aload 18
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  new java/lang/StringBuilder
+  astore 19
+  getstatic com/admogo/adapters/PublicCustomAdapter/publicCustom Lcom/admogo/obj/PublicCustom;
+  astore 4
+  aload 4
+  getfield com/admogo/obj/PublicCustom/type I
+  istore 5
+  iload 5
+  invokestatic java/lang/String/valueOf(I)Ljava/lang/String;
+  astore 18
+  aload 19
+  astore_3
+  aload_3
+  aload 18
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 19
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 18
+  ldc "adtype"
+  astore 14
+  aload 11
+  aload 14
+  aload 18
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  new java/lang/StringBuilder
+  astore 19
+  aload_0
+  astore_3
+  aload_3
+  getfield com/admogo/adapters/PublicCustomAdapter/ration Lcom/admogo/obj/Ration;
+  astore_3
+  aload_3
+  astore 20
+  aload 20
+  astore_3
+  aload_3
+  getfield com/admogo/obj/Ration/type I
+  istore 5
+  iload 5
+  invokestatic java/lang/String/valueOf(I)Ljava/lang/String;
+  astore 18
+  aload 19
+  astore_3
+  aload_3
+  aload 18
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 19
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 18
+  ldc "type"
+  astore 14
+  aload 11
+  aload 14
+  aload 18
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  ldc "actype"
+  astore 14
+  ldc "3"
+  astore 21
+  aload 21
+  astore_3
+  aload 11
+  aload 14
+  aload_3
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+  pop
+  aload 9
+  aload 11
+  invokevirtual android/app/Activity/startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+  pop
+Label0:
+  return
+  nop
+.end <method>
+

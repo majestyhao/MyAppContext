@@ -1,0 +1,5 @@
+.source RESPONSE_KEY.java
+.interface public interface abstract  MobWin/cnst/RESPONSE_KEY
+.super java/lang/Object
+.field public static final "value" Ljava/lang/String; =  "res"
+

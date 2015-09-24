@@ -1,0 +1,522 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/kuguo/ad/u
+.super java/lang/Object
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method protected static a(Landroid/content/Context;)Lorg/apache/http/client/HttpClient;
+.limit locals 9
+.limit stack 200
+  nop
+  aload_0
+  invokestatic com/kuguo/ad/u/d(Landroid/content/Context;)Ljava/lang/String;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aconst_null
+  astore_2
+  aload_2
+  areturn
+Label0:
+  aload_0
+  invokestatic com/kuguo/ad/u/b(Landroid/content/Context;)Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label1
+  new org/apache/http/params/BasicHttpParams
+  astore 4
+  aload 4
+  invokespecial org/apache/http/params/BasicHttpParams/<init>()V
+  sipush 30000
+  istore 5
+  aload 4
+  iload 5
+  invokestatic org/apache/http/params/HttpConnectionParams/setConnectionTimeout(Lorg/apache/http/params/HttpParams;I)V
+  sipush 30000
+  istore 5
+  aload 4
+  iload 5
+  invokestatic org/apache/http/params/HttpConnectionParams/setSoTimeout(Lorg/apache/http/params/HttpParams;I)V
+  ldc 204800
+  istore 5
+  aload 4
+  iload 5
+  invokestatic org/apache/http/params/HttpConnectionParams/setSocketBufferSize(Lorg/apache/http/params/HttpParams;I)V
+  iconst_1
+  istore 5
+  aload 4
+  iload 5
+  invokestatic org/apache/http/client/params/HttpClientParams/setRedirecting(Lorg/apache/http/params/HttpParams;Z)V
+  new org/apache/http/HttpHost
+  astore 6
+  ldc "10.0.0.172"
+  astore 7
+  bipush 80
+  istore 5
+  aload 6
+  aload 7
+  iload 5
+  invokespecial org/apache/http/HttpHost/<init>(Ljava/lang/String;I)V
+  ldc "http.route.default-proxy"
+  astore 7
+  aload 4
+  aload 7
+  aload 6
+  invokeinterface org/apache/http/params/HttpParams/setParameter(Ljava/lang/String;Ljava/lang/Object;)Lorg/apache/http/params/HttpParams; 3
+  pop
+  new org/apache/http/impl/client/DefaultHttpClient
+  astore 8
+  aload 8
+  aload 4
+  invokespecial org/apache/http/impl/client/DefaultHttpClient/<init>(Lorg/apache/http/params/HttpParams;)V
+  aload 8
+  areturn
+Label1:
+  new org/apache/http/impl/client/DefaultHttpClient
+  astore 8
+  aload 8
+  invokespecial org/apache/http/impl/client/DefaultHttpClient/<init>()V
+  aload 8
+  areturn
+  nop
+.end <method>
+
+.method protected static a(Landroid/content/Context;ILjava/lang/String;IILandroid/content/Intent;Ljava/lang/String;I)V
+.limit locals 21
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 10
+  ldc ""
+  astore 12
+  aload 9
+  iload_1
+  aload 12
+  lload 10
+  invokespecial android/app/Notification/<init>(ILjava/lang/CharSequence;J)V
+  iconst_0
+  istore 14
+  ldc 134217728
+  istore 15
+  aload 5
+  astore 8
+  aload_0
+  iload 14
+  aload 8
+  iload 15
+  invokestatic android/app/PendingIntent/getActivity(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+  astore 13
+  iload 4
+  istore 8
+  aload 9
+  iload 8
+  putfield android/app/Notification/flags I
+  new java/lang/StringBuffer
+  astore 16
+  aload 16
+  invokespecial java/lang/StringBuffer/<init>()V
+  dload 7
+  dstore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 14
+  iload 7
+  istore 8
+  iload 8
+  iload 14
+  if_icmple Label0
+  dload 7
+  dstore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 100
+  istore 14
+  iload 7
+  istore 8
+  iload 8
+  iload 14
+  if_icmpgt Label0
+  iload 7
+  istore 8
+  aload 16
+  iload 8
+  invokevirtual java/lang/StringBuffer/append(I)Ljava/lang/StringBuffer;
+  pop
+  ldc "%    "
+  astore 12
+  aload 16
+  aload 12
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+Label0:
+  aload 6
+  astore 8
+  aload 16
+  aload 8
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  aload 16
+  invokevirtual java/lang/StringBuffer/toString()Ljava/lang/String;
+  astore 17
+  aload 9
+  aload_0
+  aload_2
+  aload 17
+  aload 13
+  invokevirtual android/app/Notification/setLatestEventInfo(Landroid/content/Context;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Landroid/app/PendingIntent;)V
+  ldc "notification"
+  astore 12
+  aload_0
+  aload 12
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 18
+  aload 18
+  astore 20
+  aload 20
+  checkcast android/app/NotificationManager
+  astore 20
+  aload 20
+  astore 19
+  iload_3
+  istore 8
+  iload 8
+  sipush 10000
+  iadd
+  istore 8
+  iload 8
+  istore 7
+  aload 19
+  iload 8
+  aload 9
+  invokevirtual android/app/NotificationManager/notify(ILandroid/app/Notification;)V
+  return
+  nop
+.end <method>
+
+.method protected static a(Landroid/content/Context;Lcom/kuguo/a/f;Lcom/kuguo/a/d;)V
+.limit locals 12
+.limit stack 200
+  nop
+  ldc "NetworkImpl.java downloadProxy() "
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  aload_1
+  invokevirtual com/kuguo/a/f/l()Ljava/lang/String;
+  astore 4
+  ldc ".apk"
+  astore_3
+  aload 4
+  aload_3
+  invokevirtual java/lang/String/endsWith(Ljava/lang/String;)Z
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+  iconst_0
+  istore 6
+  aload_1
+  iload 6
+  invokevirtual com/kuguo/a/f/a(I)V
+Label0:
+  invokestatic com/kuguo/a/e/a()Lcom/kuguo/a/e;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnonnull Label1
+  aload_0
+  invokestatic com/kuguo/a/e/a(Landroid/content/Context;)Lcom/kuguo/a/e;
+  astore 7
+Label1:
+  aload 7
+  aload_1
+  invokevirtual com/kuguo/a/e/b(Lcom/kuguo/a/f;)Lcom/kuguo/a/f;
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label2
+  aload 8
+  invokevirtual com/kuguo/a/f/f()I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_5
+  istore 6
+  iload 9
+  iload 6
+  if_icmpeq Label2
+  aload 8
+  invokevirtual com/kuguo/a/f/f()I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_4
+  istore 6
+  iload 9
+  iload 6
+  if_icmpeq Label2
+  new java/lang/StringBuilder
+  astore 10
+  aload 10
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "dt != null  = "
+  astore_3
+  aload 10
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 10
+  aload 8
+  invokevirtual com/kuguo/a/f/f()I
+  istore 9
+  aload 10
+  iload 9
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 10
+  aload 10
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload 4
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  aload_1
+  invokevirtual com/kuguo/a/f/m()Ljava/lang/Object;
+  astore 11
+  aload 8
+  aload 11
+  invokevirtual com/kuguo/a/f/a(Ljava/lang/Object;)V
+  aload 8
+  aload_2
+  invokevirtual com/kuguo/a/f/a(Lcom/kuguo/a/d;)V
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_2
+  ifeq Label3
+  aload 8
+  invokevirtual com/kuguo/a/f/f()I
+  istore 9
+  aload_2
+  aload 8
+  iload 9
+  invokeinterface com/kuguo/a/d/a(Lcom/kuguo/a/f;I)V 3
+Label3:
+  return
+Label2:
+  ldc "dt == null "
+  astore_3
+  aload_3
+  invokestatic com/kuguo/ad/d/a(Ljava/lang/String;)V
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_2
+  ifeq Label4
+  aload_1
+  aload_2
+  invokevirtual com/kuguo/a/f/a(Lcom/kuguo/a/d;)V
+Label4:
+  aload_1
+  invokevirtual com/kuguo/a/f/c()V
+  goto Label3
+  nop
+.end <method>
+
+.method protected static a(Landroid/content/Context;Ljava/lang/String;)V
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_1
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore_3
+  ldc "android.intent.action.VIEW"
+  astore 4
+  aload_2
+  aload 4
+  aload_3
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;Landroid/net/Uri;)V
+  aload_0
+  aload_2
+  invokevirtual android/content/Context/startActivity(Landroid/content/Intent;)V
+  return
+  nop
+.end <method>
+
+.method protected static b(Landroid/content/Context;)Z
+.limit locals 5
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  aload_0
+  invokestatic com/kuguo/ad/u/c(Landroid/content/Context;)Ljava/lang/String;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  ldc "cmwap"
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/String/compareTo(Ljava/lang/String;)I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  ifeq Label1
+  ldc "3gwap"
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/String/compareTo(Ljava/lang/String;)I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  ifeq Label1
+  ldc "uniwap"
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/String/compareTo(Ljava/lang/String;)I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  ifne Label0
+Label1:
+  iconst_1
+  istore_1
+Label0:
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method protected static c(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 8
+.limit stack 200
+  nop
+  ldc "connectivity"
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_1
+  astore 4
+  aload 4
+  checkcast android/net/ConnectivityManager
+  astore 4
+  aload 4
+  astore_3
+  aload_3
+  invokevirtual android/net/ConnectivityManager/getActiveNetworkInfo()Landroid/net/NetworkInfo;
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  ifnonnull Label0
+  aconst_null
+  astore 6
+  aload 6
+  areturn
+Label0:
+  aload 5
+  invokevirtual android/net/NetworkInfo/getExtraInfo()Ljava/lang/String;
+  astore 7
+  aload 7
+  areturn
+  nop
+.end <method>
+
+.method protected static d(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 11
+.limit stack 200
+  nop
+  aload_0
+  invokestatic com/kuguo/ad/u/c(Landroid/content/Context;)Ljava/lang/String;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  ldc ""
+  astore_2
+  aload_1
+  invokevirtual java/lang/String/trim()Ljava/lang/String;
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label0
+  aload_1
+  areturn
+Label0:
+  ldc "connectivity"
+  astore 6
+  aload_0
+  aload 6
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 8
+  aload 8
+  checkcast android/net/ConnectivityManager
+  astore 8
+  aload 8
+  astore 7
+  aload 7
+  invokevirtual android/net/ConnectivityManager/getActiveNetworkInfo()Landroid/net/NetworkInfo;
+  astore 9
+  aload 9
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 9
+  ifnonnull Label1
+  aconst_null
+  astore 10
+  aload 10
+  areturn
+Label1:
+  aload 9
+  invokevirtual android/net/NetworkInfo/getTypeName()Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+

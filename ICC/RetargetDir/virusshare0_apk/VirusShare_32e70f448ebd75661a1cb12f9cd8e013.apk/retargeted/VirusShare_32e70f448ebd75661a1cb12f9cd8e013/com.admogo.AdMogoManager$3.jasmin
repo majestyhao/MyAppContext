@@ -1,0 +1,65 @@
+.source AdMogoManager.java
+.class  com/admogo/AdMogoManager$3
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "this$0" Lcom/admogo/AdMogoManager;
+
+.method <init>(Lcom/admogo/AdMogoManager;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/AdMogoManager$3/this$0 Lcom/admogo/AdMogoManager;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 6
+.limit stack 200
+  nop
+  invokestatic com/admogo/AdMogoManager/access$1()I
+  istore_1
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  iload_1
+  invokestatic com/admogo/AdMogoManager/access$2(I)V
+  invokestatic com/admogo/AdMogoManager/access$1()I
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_4
+  istore_2
+  iload_1
+  iload_2
+  if_icmpge Label0
+  getstatic com/admogo/AdMogoManager/testMode I
+  istore_3
+  invokestatic com/admogo/AdMogoManager/access$3()[I
+  astore 4
+  invokestatic com/admogo/AdMogoManager/access$1()I
+  istore_1
+  aload 4
+  iload_1
+  iaload
+  istore_1
+  iload_3
+  iload_1
+  invokestatic com/admogo/util/AdMogoUtil/changeURL(II)V
+  aload_0
+  getfield com/admogo/AdMogoManager$3/this$0 Lcom/admogo/AdMogoManager;
+  astore 5
+  aload 5
+  invokevirtual com/admogo/AdMogoManager/fetchConfig()V
+Label0:
+  return
+  nop
+.end <method>
+

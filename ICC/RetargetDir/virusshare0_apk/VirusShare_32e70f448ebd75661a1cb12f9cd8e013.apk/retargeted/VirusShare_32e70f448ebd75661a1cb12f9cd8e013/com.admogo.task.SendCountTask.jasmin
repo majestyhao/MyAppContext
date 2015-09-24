@@ -1,0 +1,99 @@
+.source SendCountTask.java
+.class public  com/admogo/task/SendCountTask
+.super java/util/TimerTask
+.field public static final "ACTION_COUNT_CLICK" I =  17
+.field public static final "ACTION_COUNT_IMP" I =  1
+.field private "actionCode" I
+.field "isValid" Z
+.field private "url" Ljava/lang/String;
+
+.method public <init>(Ljava/lang/String;IZ)V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/util/TimerTask/<init>()V
+  iconst_m1
+  istore 4
+  aload_0
+  iload 4
+  putfield com/admogo/task/SendCountTask/actionCode I
+  aload_0
+  aload_1
+  putfield com/admogo/task/SendCountTask/url Ljava/lang/String;
+  aload_0
+  iload_2
+  putfield com/admogo/task/SendCountTask/actionCode I
+  aload_0
+  iload_3
+  putfield com/admogo/task/SendCountTask/isValid Z
+  return
+  nop
+.end <method>
+
+.method public getActionCode()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/task/SendCountTask/actionCode I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 7
+.limit stack 200
+  nop
+  getstatic java/lang/System/out Ljava/io/PrintStream;
+  astore_1
+  new java/lang/StringBuilder
+  astore_2
+  ldc "This effect is "
+  astore_3
+  aload_2
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  getfield com/admogo/task/SendCountTask/isValid Z
+  istore 4
+  aload_2
+  iload 4
+  invokevirtual java/lang/StringBuilder/append(Z)Ljava/lang/StringBuilder;
+  astore_2
+  ldc " and action is --> "
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_2
+  aload_0
+  getfield com/admogo/task/SendCountTask/actionCode I
+  istore 5
+  aload_2
+  iload 5
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 6
+  aload_1
+  aload 6
+  invokevirtual java/io/PrintStream/println(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public setValid(Z)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield com/admogo/task/SendCountTask/isValid Z
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,338 @@
+.source SourceFile
+.class public final  com/mobisage/android/MobiSageAdSize
+.super java/lang/Object
+.field public static final "Poster_320X320" I =  22
+.field public static final "Poster_480X480" I =  21
+.field public static final "Poster_480X800" I =  20
+.field public static final "Size_320X270" I =  2
+.field public static final "Size_320X48" I =  3
+.field public static final "Size_480X40" I =  1
+.field public static final "Size_480X64" I =  7
+.field public static final "Size_480X72" I =  9
+.field public static final "Size_48X48" I =  15
+.field public static final "Size_540X80" I =  8
+.field public static final "Size_748X110" I =  4
+.field public static final "Size_No_Banner" I =  25
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method static a()I
+.limit locals 4
+.limit stack 200
+  nop
+  getstatic com/mobisage/android/y/b I
+  istore_0
+  iload_0
+  sipush -320
+  iadd
+  istore_1
+  iconst_3
+  istore_2
+  iload_0
+  sipush -480
+  iadd
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  iflt Label0
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload_3
+  if_icmple Label0
+  bipush 9
+  istore_2
+Label4:
+  iload_0
+  sipush -540
+  iadd
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iflt Label1
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload_1
+  if_icmple Label1
+  bipush 8
+  istore_2
+Label3:
+  iload_0
+  sipush -748
+  iadd
+  istore_0
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iflt Label2
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_0
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload_0
+  if_icmple Label2
+  iconst_4
+  istore_2
+Label2:
+  iload_2
+  ireturn
+Label1:
+  dload_3
+  dstore_1
+  goto Label3
+Label0:
+  dload_1
+  dstore_3
+  goto Label4
+  nop
+.end <method>
+
+.method static final a(I)I
+.limit locals 2
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  lookupswitch
+  20 : Label1
+  21 : Label2
+  22 : Label3
+  default : Label0
+Label0:
+  goto Label3
+Label3:
+  bipush 22
+  istore_1
+  iload_1
+  ireturn
+Label2:
+  bipush 21
+  istore_1
+  iload_1
+  ireturn
+Label1:
+  bipush 20
+  istore_1
+  iload_1
+  ireturn
+  nop
+  nop
+.end <method>
+
+.method static final b(I)I
+.limit locals 3
+.limit stack 200
+  nop
+  sipush 320
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  lookupswitch
+  1 : Label1
+  2 : Label2
+  3 : Label2
+  4 : Label3
+  5 : Label4
+  6 : Label4
+  7 : Label5
+  8 : Label6
+  9 : Label7
+  10 : Label4
+  11 : Label4
+  12 : Label4
+  13 : Label4
+  14 : Label4
+  15 : Label8
+  16 : Label4
+  17 : Label4
+  18 : Label4
+  19 : Label4
+  20 : Label9
+  21 : Label10
+  22 : Label2
+  23 : Label4
+  24 : Label4
+  25 : Label11
+  default : Label0
+Label0:
+  goto Label4
+Label4:
+  iconst_0
+  istore_1
+Label2:
+  iload_1
+  ireturn
+Label1:
+  sipush 480
+  istore_2
+  iload_2
+  ireturn
+Label5:
+  sipush 480
+  istore_2
+  iload_2
+  ireturn
+Label7:
+  sipush 480
+  istore_2
+  iload_2
+  ireturn
+Label6:
+  sipush 540
+  istore_2
+  iload_2
+  ireturn
+Label8:
+  bipush 48
+  istore_2
+  iload_2
+  ireturn
+Label3:
+  sipush 748
+  istore_2
+  iload_2
+  ireturn
+Label11:
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+Label10:
+  sipush 480
+  istore_2
+  iload_2
+  ireturn
+Label9:
+  sipush 480
+  istore_2
+  iload_2
+  ireturn
+  nop
+  nop
+  nop
+.end <method>
+
+.method static final c(I)I
+.limit locals 3
+.limit stack 200
+  nop
+  bipush 48
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  lookupswitch
+  1 : Label1
+  2 : Label2
+  3 : Label3
+  4 : Label4
+  5 : Label5
+  6 : Label5
+  7 : Label6
+  8 : Label7
+  9 : Label8
+  10 : Label5
+  11 : Label5
+  12 : Label5
+  13 : Label5
+  14 : Label5
+  15 : Label3
+  16 : Label5
+  17 : Label5
+  18 : Label5
+  19 : Label5
+  20 : Label9
+  21 : Label10
+  22 : Label11
+  23 : Label5
+  24 : Label5
+  25 : Label12
+  default : Label0
+Label0:
+  goto Label5
+Label5:
+  iconst_0
+  istore_1
+Label3:
+  iload_1
+  ireturn
+Label2:
+  sipush 270
+  istore_2
+  iload_2
+  ireturn
+Label1:
+  bipush 40
+  istore_2
+  iload_2
+  ireturn
+Label6:
+  bipush 64
+  istore_2
+  iload_2
+  ireturn
+Label8:
+  bipush 72
+  istore_2
+  iload_2
+  ireturn
+Label7:
+  bipush 80
+  istore_2
+  iload_2
+  ireturn
+Label4:
+  bipush 110
+  istore_2
+  iload_2
+  ireturn
+Label12:
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+Label11:
+  sipush 320
+  istore_2
+  iload_2
+  ireturn
+Label10:
+  sipush 480
+  istore_2
+  iload_2
+  ireturn
+Label9:
+  sipush 800
+  istore_2
+  iload_2
+  ireturn
+  nop
+  nop
+.end <method>
+

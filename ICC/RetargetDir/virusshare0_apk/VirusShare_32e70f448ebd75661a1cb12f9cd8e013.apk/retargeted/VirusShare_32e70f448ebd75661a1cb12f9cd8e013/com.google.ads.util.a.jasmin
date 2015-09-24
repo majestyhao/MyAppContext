@@ -1,0 +1,262 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public final  com/google/ads/util/a
+.super java/lang/Object
+
+.method private <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  ldc "Ads"
+  astore_2
+  iconst_3
+  istore_3
+  aload_2
+  iload_3
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;I)Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  ldc "Ads"
+  astore_2
+  aload_2
+  aload_0
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label0:
+  return
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;Ljava/lang/Throwable;)V
+.limit locals 5
+.limit stack 200
+  nop
+  ldc "Ads"
+  astore_3
+  bipush 6
+  istore 4
+  aload_3
+  iload 4
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;I)Z
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  ldc "Ads"
+  astore_3
+  aload_3
+  aload_0
+  aload_1
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+  pop
+Label0:
+  return
+  nop
+.end <method>
+
+.method private static a(Ljava/lang/String;I)Z
+.limit locals 5
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_5
+  istore_3
+  iload_1
+  iload_3
+  if_icmplt Label0
+  iconst_1
+  istore 4
+Label3:
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifne Label1
+  aload_0
+  iload_1
+  invokestatic android/util/Log/isLoggable(Ljava/lang/String;I)Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label2
+Label1:
+  iconst_1
+  istore_2
+Label2:
+  iload_2
+  ireturn
+Label0:
+  iconst_0
+  istore 4
+  goto Label3
+  nop
+.end <method>
+
+.method public static b(Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  ldc "Ads"
+  astore_2
+  bipush 6
+  istore_3
+  aload_2
+  iload_3
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;I)Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  ldc "Ads"
+  astore_2
+  aload_2
+  aload_0
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label0:
+  return
+  nop
+.end <method>
+
+.method public static b(Ljava/lang/String;Ljava/lang/Throwable;)V
+.limit locals 5
+.limit stack 200
+  nop
+  ldc "Ads"
+  astore_3
+  iconst_5
+  istore 4
+  aload_3
+  iload 4
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;I)Z
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  ldc "Ads"
+  astore_3
+  aload_3
+  aload_0
+  aload_1
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+  pop
+Label0:
+  return
+  nop
+.end <method>
+
+.method public static c(Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  ldc "Ads"
+  astore_2
+  iconst_4
+  istore_3
+  aload_2
+  iload_3
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;I)Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  ldc "Ads"
+  astore_2
+  aload_2
+  aload_0
+  invokestatic android/util/Log/i(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label0:
+  return
+  nop
+.end <method>
+
+.method public static d(Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  ldc "Ads"
+  astore_2
+  iconst_2
+  istore_3
+  aload_2
+  iload_3
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;I)Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  ldc "Ads"
+  astore_2
+  aload_2
+  aload_0
+  invokestatic android/util/Log/v(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label0:
+  return
+  nop
+.end <method>
+
+.method public static e(Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  ldc "Ads"
+  astore_2
+  iconst_5
+  istore_3
+  aload_2
+  iload_3
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;I)Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  ldc "Ads"
+  astore_2
+  aload_2
+  aload_0
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label0:
+  return
+  nop
+.end <method>
+

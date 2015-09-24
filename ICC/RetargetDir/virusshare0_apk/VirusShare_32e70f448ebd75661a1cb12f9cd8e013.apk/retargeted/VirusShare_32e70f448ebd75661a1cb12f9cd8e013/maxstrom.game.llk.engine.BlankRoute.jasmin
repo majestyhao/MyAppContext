@@ -1,0 +1,611 @@
+.source BlankRoute.java
+.class public  maxstrom/game/llk/engine/BlankRoute
+.super java/lang/Object
+.field public static final "MAX_TRUN_COUNT" I =  2
+.field public final "end" Lmaxstrom/game/llk/engine/Tile;
+.field private final "routes" Ljava/util/LinkedList;
+.field public final "start" Lmaxstrom/game/llk/engine/Tile;
+
+.method public <init>(Lmaxstrom/game/llk/engine/Tile;Lmaxstrom/game/llk/engine/Tile;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  new java/util/LinkedList
+  astore_3
+  aload_3
+  invokespecial java/util/LinkedList/<init>()V
+  aload_0
+  aload_3
+  putfield maxstrom/game/llk/engine/BlankRoute/routes Ljava/util/LinkedList;
+  aload_0
+  aload_1
+  putfield maxstrom/game/llk/engine/BlankRoute/start Lmaxstrom/game/llk/engine/Tile;
+  aload_0
+  aload_2
+  putfield maxstrom/game/llk/engine/BlankRoute/end Lmaxstrom/game/llk/engine/Tile;
+  return
+  nop
+.end <method>
+
+.method public addRouteTile(Lmaxstrom/game/llk/engine/Tile;)Z
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/routes Ljava/util/LinkedList;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/util/LinkedList/add(Ljava/lang/Object;)Z
+  pop
+  aload_0
+  invokespecial maxstrom/game/llk/engine/BlankRoute/calTurnCount()I
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_2
+  istore 4
+  iload_3
+  iload 4
+  if_icmple Label0
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/routes Ljava/util/LinkedList;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/util/LinkedList/remove(Ljava/lang/Object;)Z
+  pop
+  iconst_0
+  istore 4
+  iload 4
+  ireturn
+Label0:
+  iconst_1
+  istore 4
+  iload 4
+  ireturn
+  nop
+.end <method>
+
+.method private calTurnCount()I
+.limit locals 12
+.limit stack 200
+  nop
+  iconst_m1
+  istore_1
+  iconst_0
+  istore_2
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/start Lmaxstrom/game/llk/engine/Tile;
+  astore_3
+  iconst_1
+  istore 4
+Label4:
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/routes Ljava/util/LinkedList;
+  astore 5
+  aload 5
+  invokevirtual java/util/LinkedList/size()I
+  istore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  iload 6
+  if_icmplt Label0
+  iload_1
+  ireturn
+Label0:
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/routes Ljava/util/LinkedList;
+  astore 5
+  aload 5
+  iload 4
+  invokevirtual java/util/LinkedList/get(I)Ljava/lang/Object;
+  astore 7
+  aload 7
+  astore 9
+  aload 9
+  checkcast maxstrom/game/llk/engine/Tile
+  astore 9
+  aload 9
+  astore 8
+  aload_3
+  getfield maxstrom/game/llk/engine/Tile/x I
+  istore 10
+  aload 8
+  getfield maxstrom/game/llk/engine/Tile/x I
+  istore 6
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  iload 6
+  if_icmpne Label1
+  aload_3
+  getfield maxstrom/game/llk/engine/Tile/y I
+  istore 10
+  aload 8
+  getfield maxstrom/game/llk/engine/Tile/y I
+  istore 6
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  iload 6
+  if_icmple Label2
+  getstatic maxstrom/game/llk/engine/Direction/north Lmaxstrom/game/llk/engine/Direction;
+  astore 11
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  aload 11
+  if_acmpeq Label3
+  getstatic maxstrom/game/llk/engine/Direction/north Lmaxstrom/game/llk/engine/Direction;
+  astore_2
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+Label3:
+  aload 8
+  astore_3
+  iload 4
+  iconst_1
+  iadd
+  istore 4
+  goto Label4
+Label2:
+  getstatic maxstrom/game/llk/engine/Direction/south Lmaxstrom/game/llk/engine/Direction;
+  astore 11
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  aload 11
+  if_acmpeq Label3
+  getstatic maxstrom/game/llk/engine/Direction/south Lmaxstrom/game/llk/engine/Direction;
+  astore_2
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  goto Label3
+Label1:
+  aload_3
+  getfield maxstrom/game/llk/engine/Tile/x I
+  istore 10
+  aload 8
+  getfield maxstrom/game/llk/engine/Tile/x I
+  istore 6
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 10
+  iload 6
+  if_icmple Label5
+  getstatic maxstrom/game/llk/engine/Direction/west Lmaxstrom/game/llk/engine/Direction;
+  astore 11
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  aload 11
+  if_acmpeq Label3
+  getstatic maxstrom/game/llk/engine/Direction/west Lmaxstrom/game/llk/engine/Direction;
+  astore_2
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  goto Label3
+Label5:
+  getstatic maxstrom/game/llk/engine/Direction/east Lmaxstrom/game/llk/engine/Direction;
+  astore 11
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 11
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  aload 11
+  if_acmpeq Label3
+  getstatic maxstrom/game/llk/engine/Direction/east Lmaxstrom/game/llk/engine/Direction;
+  astore_2
+  iload_1
+  iconst_1
+  iadd
+  istore_1
+  goto Label3
+  nop
+.end <method>
+
+.method public dismissing()Lmaxstrom/game/llk/engine/BlankRoute;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/start Lmaxstrom/game/llk/engine/Tile;
+  astore_1
+  aload_1
+  invokevirtual maxstrom/game/llk/engine/Tile/dismissing()V
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/end Lmaxstrom/game/llk/engine/Tile;
+  astore_1
+  aload_1
+  invokevirtual maxstrom/game/llk/engine/Tile/dismissing()V
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public getDirection()Lmaxstrom/game/llk/engine/Direction;
+.limit locals 12
+.limit stack 200
+  nop
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/routes Ljava/util/LinkedList;
+  astore_1
+  aload_1
+  invokevirtual java/util/LinkedList/size()I
+  istore_2
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/routes Ljava/util/LinkedList;
+  astore_1
+  aload_1
+  invokevirtual java/util/LinkedList/size()I
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iconst_2
+  istore 4
+  iload_3
+  iload 4
+  if_icmplt Label0
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/routes Ljava/util/LinkedList;
+  astore_1
+  aload_1
+  invokevirtual java/util/LinkedList/getLast()Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 7
+  aload 7
+  checkcast maxstrom/game/llk/engine/Tile
+  astore 7
+  aload 7
+  astore 6
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/routes Ljava/util/LinkedList;
+  astore_1
+  iload_2
+  bipush -2
+  iadd
+  istore_3
+  aload_1
+  iload_3
+  invokevirtual java/util/LinkedList/get(I)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 9
+  aload 9
+  checkcast maxstrom/game/llk/engine/Tile
+  astore 9
+  aload 9
+  astore 8
+  aload 6
+  getfield maxstrom/game/llk/engine/Tile/x I
+  istore_3
+  aload 8
+  getfield maxstrom/game/llk/engine/Tile/x I
+  istore_2
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload_2
+  if_icmpne Label1
+  aload 6
+  getfield maxstrom/game/llk/engine/Tile/y I
+  istore_3
+  aload 8
+  getfield maxstrom/game/llk/engine/Tile/y I
+  istore_2
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload_2
+  if_icmple Label2
+  getstatic maxstrom/game/llk/engine/Direction/south Lmaxstrom/game/llk/engine/Direction;
+  astore 10
+  aload 10
+  areturn
+Label2:
+  getstatic maxstrom/game/llk/engine/Direction/north Lmaxstrom/game/llk/engine/Direction;
+  astore 10
+  aload 10
+  areturn
+Label1:
+  aload 6
+  getfield maxstrom/game/llk/engine/Tile/x I
+  istore_3
+  aload 8
+  getfield maxstrom/game/llk/engine/Tile/x I
+  istore_2
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload_2
+  if_icmple Label3
+  getstatic maxstrom/game/llk/engine/Direction/east Lmaxstrom/game/llk/engine/Direction;
+  astore 10
+  aload 10
+  areturn
+Label3:
+  getstatic maxstrom/game/llk/engine/Direction/west Lmaxstrom/game/llk/engine/Direction;
+  astore 10
+  aload 10
+  areturn
+Label0:
+  aconst_null
+  astore 11
+  aload 11
+  areturn
+  nop
+.end <method>
+
+.method public getpath()[Lmaxstrom/game/llk/engine/DirectionPath;
+.limit locals 14
+.limit stack 200
+  nop
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/routes Ljava/util/LinkedList;
+  astore_1
+  aload_1
+  invokevirtual java/util/LinkedList/size()I
+  istore_2
+  iload_2
+  bipush -2
+  iadd
+  istore_3
+  iload_3
+  anewarray maxstrom/game/llk/engine/DirectionPath
+  astore 4
+  iconst_0
+  istore 5
+Label1:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  iload_3
+  if_icmplt Label0
+  aload 4
+  areturn
+Label0:
+  new maxstrom/game/llk/engine/DirectionPath
+  astore 6
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/routes Ljava/util/LinkedList;
+  astore_1
+  aload_1
+  iload 5
+  invokevirtual java/util/LinkedList/get(I)Ljava/lang/Object;
+  astore 7
+  aload 7
+  astore 9
+  aload 9
+  checkcast maxstrom/game/llk/engine/Tile
+  astore 9
+  aload 9
+  astore 8
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/routes Ljava/util/LinkedList;
+  astore_1
+  iload 5
+  iconst_1
+  iadd
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual java/util/LinkedList/get(I)Ljava/lang/Object;
+  astore 7
+  aload 7
+  astore 11
+  aload 11
+  checkcast maxstrom/game/llk/engine/Tile
+  astore 11
+  aload 11
+  astore 10
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/routes Ljava/util/LinkedList;
+  astore_1
+  iload 5
+  iconst_2
+  iadd
+  istore_2
+  aload_1
+  iload_2
+  invokevirtual java/util/LinkedList/get(I)Ljava/lang/Object;
+  astore 7
+  aload 7
+  astore 13
+  aload 13
+  checkcast maxstrom/game/llk/engine/Tile
+  astore 13
+  aload 13
+  astore 12
+  aload 6
+  aload 8
+  aload 10
+  aload 12
+  invokespecial maxstrom/game/llk/engine/DirectionPath/<init>(Lmaxstrom/game/llk/engine/Tile;Lmaxstrom/game/llk/engine/Tile;Lmaxstrom/game/llk/engine/Tile;)V
+  aload 4
+  iload 5
+  aload 6
+  aastore
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  goto Label1
+  nop
+.end <method>
+
+.method public isInAxis(Lmaxstrom/game/llk/engine/Tile;)Z
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/start Lmaxstrom/game/llk/engine/Tile;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_1
+  iload_2
+  if_icmpeq Label0
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/end Lmaxstrom/game/llk/engine/Tile;
+  astore_2
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_1
+  aload_2
+  if_acmpeq Label0
+  aload_1
+  getfield maxstrom/game/llk/engine/Tile/x I
+  istore_3
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/start Lmaxstrom/game/llk/engine/Tile;
+  astore_2
+  aload_2
+  getfield maxstrom/game/llk/engine/Tile/x I
+  istore 4
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 4
+  if_icmpeq Label0
+  aload_1
+  getfield maxstrom/game/llk/engine/Tile/y I
+  istore 4
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/start Lmaxstrom/game/llk/engine/Tile;
+  astore_2
+  aload_2
+  getfield maxstrom/game/llk/engine/Tile/y I
+  istore_3
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  iload_3
+  if_icmpeq Label0
+  aload_1
+  getfield maxstrom/game/llk/engine/Tile/x I
+  istore 4
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/end Lmaxstrom/game/llk/engine/Tile;
+  astore_2
+  aload_2
+  getfield maxstrom/game/llk/engine/Tile/x I
+  istore_3
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  iload_3
+  if_icmpeq Label0
+  aload_1
+  getfield maxstrom/game/llk/engine/Tile/y I
+  istore 4
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/end Lmaxstrom/game/llk/engine/Tile;
+  astore_2
+  aload_2
+  getfield maxstrom/game/llk/engine/Tile/y I
+  istore_3
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  iload_3
+  if_icmpeq Label0
+  iconst_0
+  istore 5
+  iload 5
+  ireturn
+Label0:
+  iconst_1
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method public isInPath(Lmaxstrom/game/llk/engine/Tile;)Z
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/routes Ljava/util/LinkedList;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/util/LinkedList/contains(Ljava/lang/Object;)Z
+  istore_3
+  iload_3
+  ireturn
+  nop
+.end <method>
+
+.method public removeTile(Lmaxstrom/game/llk/engine/Tile;)Z
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield maxstrom/game/llk/engine/BlankRoute/routes Ljava/util/LinkedList;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/util/LinkedList/remove(Ljava/lang/Object;)Z
+  istore_3
+  iload_3
+  ireturn
+  nop
+.end <method>
+

@@ -1,0 +1,13 @@
+.source SourceFile
+.interface public interface abstract  com/mobisage/android/IMobiSageAdViewListener
+.super java/lang/Object
+
+.method public abstract onMobiSageAdViewHide(Ljava/lang/Object;)V
+.end <method>
+
+.method public abstract onMobiSageAdViewShow(Ljava/lang/Object;)V
+.end <method>
+
+.method public abstract onMobiSageAdViewUpdate(Ljava/lang/Object;)V
+.end <method>
+

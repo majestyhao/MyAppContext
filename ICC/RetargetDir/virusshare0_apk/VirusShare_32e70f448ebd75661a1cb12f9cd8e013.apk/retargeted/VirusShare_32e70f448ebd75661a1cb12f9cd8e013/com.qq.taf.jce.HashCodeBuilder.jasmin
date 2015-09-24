@@ -1,0 +1,1157 @@
+.source HashCodeBuilder.java
+.class public  com/qq/taf/jce/HashCodeBuilder
+.super java/lang/Object
+.field private final "iConstant" I
+.field private "iTotal" I
+
+.method public <init>()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  bipush 37
+  istore_1
+  aload_0
+  iload_1
+  putfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  bipush 17
+  istore_1
+  aload_0
+  iload_1
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  return
+  nop
+.end <method>
+
+.method public append(B)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_2
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore_3
+  iload_2
+  iload_3
+  imul
+  istore_3
+  iload_3
+  iload_1
+  iadd
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public append(C)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_2
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore_3
+  iload_2
+  iload_3
+  imul
+  istore_3
+  iload_3
+  iload_1
+  iadd
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public append(D)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 5
+.limit stack 200
+  nop
+  dload_1
+  invokestatic java/lang/Double/doubleToLongBits(D)J
+  lstore_3
+  aload_0
+  lload_3
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append(J)Lcom/qq/taf/jce/HashCodeBuilder;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public append(F)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_2
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore_3
+  iload_2
+  iload_3
+  imul
+  istore_2
+  fload_1
+  invokestatic java/lang/Float/floatToIntBits(F)I
+  istore_3
+  iload_2
+  iload_3
+  iadd
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public append(I)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_2
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore_3
+  iload_2
+  iload_3
+  imul
+  istore_3
+  iload_3
+  iload_1
+  iadd
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public append(J)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 8
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_3
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore 4
+  iload_3
+  iload 4
+  imul
+  istore 4
+  bipush 32
+  istore 7
+  lload_1
+  iload 7
+  lshr
+  lstore 5
+  lload 5
+  lload_1
+  lxor
+  lstore 5
+  lload 5
+  l2i
+  istore_3
+  iload 4
+  iload_3
+  iadd
+  istore 4
+  aload_0
+  iload 4
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public append(Ljava/lang/Object;)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 26
+.limit stack 200
+  nop
+  aload_1
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  astore_2
+  aload_2
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore 4
+  aload_0
+  astore_2
+  aload_2
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore 5
+  iload 4
+  iload 5
+  imul
+  istore 5
+  aload_0
+  astore_2
+  aload_2
+  iload 5
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  aload_0
+  areturn
+Label0:
+  aload_1
+  astore_2
+  aload_2
+  invokevirtual java/lang/Object/getClass()Ljava/lang/Class;
+  astore 6
+  aload 6
+  invokevirtual java/lang/Class/isArray()Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label1
+  aload_1
+  astore_2
+  aload_2
+  instanceof [J
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label2
+  aload_1
+  astore 9
+  aload 9
+  checkcast [J
+  astore 9
+  aload 9
+  astore 8
+  aload 8
+  checkcast [J
+  astore 8
+  aload_0
+  astore_2
+  aload_2
+  aload 8
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append([J)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  aload_0
+  areturn
+Label2:
+  aload_1
+  astore_2
+  aload_2
+  instanceof [I
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label3
+  aload_1
+  astore 11
+  aload 11
+  checkcast [I
+  astore 11
+  aload 11
+  astore 10
+  aload 10
+  checkcast [I
+  astore 10
+  aload_0
+  astore_2
+  aload_2
+  aload 10
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append([I)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  aload_0
+  areturn
+Label3:
+  aload_1
+  astore_2
+  aload_2
+  instanceof [S
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label4
+  aload_1
+  astore 13
+  aload 13
+  checkcast [S
+  astore 13
+  aload 13
+  astore 12
+  aload 12
+  checkcast [S
+  astore 12
+  aload_0
+  astore_2
+  aload_2
+  aload 12
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append([S)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  aload_0
+  areturn
+Label4:
+  aload_1
+  astore_2
+  aload_2
+  instanceof [C
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label5
+  aload_1
+  astore 15
+  aload 15
+  checkcast [C
+  astore 15
+  aload 15
+  astore 14
+  aload 14
+  checkcast [C
+  astore 14
+  aload_0
+  astore_2
+  aload_2
+  aload 14
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append([C)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  aload_0
+  areturn
+Label5:
+  aload_1
+  astore_2
+  aload_2
+  instanceof [B
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label6
+  aload_1
+  astore 17
+  aload 17
+  checkcast [B
+  astore 17
+  aload 17
+  astore 16
+  aload 16
+  checkcast [B
+  astore 16
+  aload_0
+  astore_2
+  aload_2
+  aload 16
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append([B)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  aload_0
+  areturn
+Label6:
+  aload_1
+  astore_2
+  aload_2
+  instanceof [D
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label7
+  aload_1
+  astore 19
+  aload 19
+  checkcast [D
+  astore 19
+  aload 19
+  astore 18
+  aload 18
+  checkcast [D
+  astore 18
+  aload_0
+  astore_2
+  aload 18
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append([D)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  aload_0
+  areturn
+Label7:
+  aload_1
+  astore_2
+  aload_2
+  instanceof [F
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label8
+  aload_1
+  astore 21
+  aload 21
+  checkcast [F
+  astore 21
+  aload 21
+  astore 20
+  aload 20
+  checkcast [F
+  astore 20
+  aload_0
+  astore_2
+  aload 20
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append([F)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  aload_0
+  areturn
+Label8:
+  aload_1
+  astore_2
+  aload_2
+  instanceof [Z
+  istore 7
+  iload 7
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 7
+  ifeq Label9
+  aload_1
+  astore 23
+  aload 23
+  checkcast [Z
+  astore 23
+  aload 23
+  astore 22
+  aload 22
+  checkcast [Z
+  astore 22
+  aload_0
+  astore_2
+  aload 22
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append([Z)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  aload_0
+  areturn
+Label9:
+  aload_1
+  astore 25
+  aload 25
+  checkcast [Ljava/lang/Object;
+  astore 25
+  aload 25
+  astore 24
+  aload 24
+  checkcast [Ljava/lang/Object;
+  astore 24
+  aload_0
+  astore_2
+  aload 24
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append([Ljava/lang/Object;)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  aload_0
+  areturn
+Label1:
+  aload_0
+  astore_2
+  aload_2
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore 5
+  aload_0
+  astore_2
+  aload_2
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore 4
+  iload 5
+  iload 4
+  imul
+  istore 5
+  aload_1
+  astore_2
+  aload_2
+  invokevirtual java/lang/Object/hashCode()I
+  istore 4
+  iload 5
+  iload 4
+  iadd
+  istore 5
+  aload_0
+  astore_2
+  aload_2
+  iload 5
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public append(S)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_2
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore_3
+  iload_2
+  iload_3
+  imul
+  istore_3
+  iload_3
+  iload_1
+  iadd
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public append(Z)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_2
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore_3
+  iload_3
+  iload_2
+  imul
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  iconst_0
+  istore 4
+Label1:
+  iload 4
+  iload_3
+  iadd
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  aload_0
+  areturn
+Label0:
+  iconst_1
+  istore 4
+  goto Label1
+  nop
+.end <method>
+
+.method public append([B)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_2
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore_3
+  iload_2
+  iload_3
+  imul
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+Label1:
+  aload_0
+  areturn
+Label0:
+  iconst_0
+  dstore_2
+Label2:
+  aload_1
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  aload_1
+  iload_2
+  baload
+  istore 4
+  aload_0
+  iload 4
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append(B)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public append([C)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_2
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore_3
+  iload_2
+  iload_3
+  imul
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+Label1:
+  aload_0
+  areturn
+Label0:
+  iconst_0
+  dstore_2
+Label2:
+  aload_1
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  aload_1
+  iload_2
+  caload
+  istore 4
+  aload_0
+  iload 4
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append(C)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public append([D)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_2
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore_3
+  iload_2
+  iload_3
+  imul
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+Label1:
+  aload_0
+  areturn
+Label0:
+  iconst_0
+  dstore_2
+Label2:
+  aload_1
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  aload_1
+  iload_2
+  daload
+  dstore 4
+  aload_0
+  dload 4
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append(D)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public append([F)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_2
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore_3
+  iload_2
+  iload_3
+  imul
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+Label1:
+  aload_0
+  areturn
+Label0:
+  iconst_0
+  dstore_2
+Label2:
+  aload_1
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  aload_1
+  iload_2
+  faload
+  fstore 4
+  aload_0
+  fload 4
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append(F)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public append([I)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 4
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_2
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore_3
+  iload_2
+  iload_3
+  imul
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+Label1:
+  aload_0
+  areturn
+Label0:
+  iconst_0
+  dstore_2
+Label2:
+  aload_1
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  aload_1
+  iload_2
+  iaload
+  istore_3
+  aload_0
+  iload_3
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append(I)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public append([J)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_2
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore_3
+  iload_2
+  iload_3
+  imul
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+Label1:
+  aload_0
+  areturn
+Label0:
+  iconst_0
+  dstore_2
+Label2:
+  aload_1
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  aload_1
+  iload_2
+  laload
+  lstore 4
+  aload_0
+  lload 4
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append(J)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public append([Ljava/lang/Object;)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_2
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore_3
+  iload_2
+  iload_3
+  imul
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+Label1:
+  aload_0
+  areturn
+Label0:
+  iconst_0
+  dstore_2
+Label2:
+  aload_1
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  aload_1
+  iload_2
+  aaload
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append(Ljava/lang/Object;)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public append([S)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_2
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore_3
+  iload_2
+  iload_3
+  imul
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+Label1:
+  aload_0
+  areturn
+Label0:
+  iconst_0
+  dstore_2
+Label2:
+  aload_1
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  aload_1
+  iload_2
+  saload
+  istore 4
+  aload_0
+  iload 4
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append(S)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public append([Z)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_2
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore_3
+  iload_2
+  iload_3
+  imul
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+Label1:
+  aload_0
+  areturn
+Label0:
+  iconst_0
+  dstore_2
+Label2:
+  aload_1
+  arraylength
+  istore_3
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload_3
+  if_icmpge Label1
+  aload_1
+  iload_2
+  baload
+  istore 4
+  aload_0
+  iload 4
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/append(Z)Lcom/qq/taf/jce/HashCodeBuilder;
+  pop
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label2
+  nop
+.end <method>
+
+.method public appendSuper(I)Lcom/qq/taf/jce/HashCodeBuilder;
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_2
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iConstant I
+  istore_3
+  iload_2
+  iload_3
+  imul
+  istore_3
+  iload_3
+  iload_1
+  iadd
+  istore_3
+  aload_0
+  iload_3
+  putfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public build()Ljava/lang/Integer;
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/toHashCode()I
+  istore_1
+  iload_1
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public hashCode()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokevirtual com/qq/taf/jce/HashCodeBuilder/toHashCode()I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public toHashCode()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/qq/taf/jce/HashCodeBuilder/iTotal I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+

@@ -1,0 +1,126 @@
+.source SourceFile
+.class  cn/domob/android/a/a$2
+.super java/lang/Object
+.implements  cn/domob/android/a/d
+.field final "a" Lcn/domob/android/a/a;
+
+.method <init>(Lcn/domob/android/a/a;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/a/a$2/a Lcn/domob/android/a/a;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public a(I)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/a$2/a Lcn/domob/android/a/a;
+  astore_2
+  aload_2
+  invokestatic cn/domob/android/a/a/l(Lcn/domob/android/a/a;)Landroid/os/Handler;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method public a(Ljava/lang/String;)V
+.limit locals 9
+.limit stack 200
+  nop
+  ldc "DomobSDK"
+  astore_3
+  iconst_3
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label0
+  new java/lang/StringBuilder
+  astore 5
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_0
+  getfield cn/domob/android/a/a$2/a Lcn/domob/android/a/a;
+  astore 6
+  aload 6
+  invokestatic cn/domob/android/a/a/b(Lcn/domob/android/a/a;)Ljava/lang/String;
+  astore 7
+  aload 5
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  ldc "\u4e0b\u8f7d\u7ebf\u7a0b\u51fa\u9519\uff0c\u9519\u8bef\u539f\u56e0\uff1a"
+  astore_3
+  aload 5
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  ldc "DomobSDK"
+  astore_3
+  aload_3
+  aload 7
+  invokestatic android/util/Log/i(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+Label0:
+  aload_0
+  getfield cn/domob/android/a/a$2/a Lcn/domob/android/a/a;
+  astore 6
+  aload 6
+  invokevirtual cn/domob/android/a/a/b()V
+  aload_0
+  getfield cn/domob/android/a/a$2/a Lcn/domob/android/a/a;
+  astore 6
+  aload 6
+  aload_1
+  invokestatic cn/domob/android/a/a/b(Lcn/domob/android/a/a;Ljava/lang/String;)V
+  aload_0
+  getfield cn/domob/android/a/a$2/a Lcn/domob/android/a/a;
+  astore 6
+  aload 6
+  invokestatic cn/domob/android/a/a/j(Lcn/domob/android/a/a;)Lcn/domob/android/a/c;
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label1
+  aload_0
+  getfield cn/domob/android/a/a$2/a Lcn/domob/android/a/a;
+  astore 6
+  aload 6
+  invokestatic cn/domob/android/a/a/j(Lcn/domob/android/a/a;)Lcn/domob/android/a/c;
+  astore 8
+  bipush 6
+  istore 4
+  aload 8
+  iload 4
+  aload_1
+  invokeinterface cn/domob/android/a/c/a(ILjava/lang/String;)V 3
+Label1:
+  return
+  nop
+.end <method>
+

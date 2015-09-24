@@ -1,0 +1,16 @@
+.source SourceFile
+.interface public interface abstract  com/adwo/adsdk/AdListener
+.super java/lang/Object
+
+.method public abstract onFailedToReceiveAd(Lcom/adwo/adsdk/AdwoAdView;)V
+.end <method>
+
+.method public abstract onFailedToReceiveAd(Lcom/adwo/adsdk/AdwoAdView;Lcom/adwo/adsdk/ErrorCode;)V
+.end <method>
+
+.method public abstract onFailedToReceiveRefreshedAd(Lcom/adwo/adsdk/AdwoAdView;)V
+.end <method>
+
+.method public abstract onReceiveAd(Lcom/adwo/adsdk/AdwoAdView;)V
+.end <method>
+

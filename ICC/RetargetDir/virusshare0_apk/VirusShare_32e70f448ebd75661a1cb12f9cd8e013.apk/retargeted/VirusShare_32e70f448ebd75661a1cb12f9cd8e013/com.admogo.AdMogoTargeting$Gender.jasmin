@@ -1,0 +1,145 @@
+.source AdMogoTargeting.java
+.class public final enum  com/admogo/AdMogoTargeting$Gender
+.super java/lang/Enum
+  .signature_attr "Ljava/lang/Enum<Lcom/admogo/AdMogoTargeting$Gender;>;"
+.field private static final "ENUM$VALUES" [Lcom/admogo/AdMogoTargeting$Gender;
+.field public static final enum "FEMALE" Lcom/admogo/AdMogoTargeting$Gender;
+.field public static final enum "MALE" Lcom/admogo/AdMogoTargeting$Gender;
+.field public static final enum "UNKNOWN" Lcom/admogo/AdMogoTargeting$Gender;
+
+.method static <clinit>()V
+.limit locals 4
+.limit stack 200
+  nop
+  new com/admogo/AdMogoTargeting$Gender
+  astore_0
+  ldc "UNKNOWN"
+  astore_1
+  iconst_0
+  istore_2
+  aload_0
+  aload_1
+  iload_2
+  invokespecial com/admogo/AdMogoTargeting$Gender/<init>(Ljava/lang/String;I)V
+  aload_0
+  putstatic com/admogo/AdMogoTargeting$Gender/UNKNOWN Lcom/admogo/AdMogoTargeting$Gender;
+  new com/admogo/AdMogoTargeting$Gender
+  astore_0
+  ldc "MALE"
+  astore_1
+  iconst_1
+  istore_2
+  aload_0
+  aload_1
+  iload_2
+  invokespecial com/admogo/AdMogoTargeting$Gender/<init>(Ljava/lang/String;I)V
+  aload_0
+  putstatic com/admogo/AdMogoTargeting$Gender/MALE Lcom/admogo/AdMogoTargeting$Gender;
+  new com/admogo/AdMogoTargeting$Gender
+  astore_0
+  ldc "FEMALE"
+  astore_1
+  iconst_2
+  istore_2
+  aload_0
+  aload_1
+  iload_2
+  invokespecial com/admogo/AdMogoTargeting$Gender/<init>(Ljava/lang/String;I)V
+  aload_0
+  putstatic com/admogo/AdMogoTargeting$Gender/FEMALE Lcom/admogo/AdMogoTargeting$Gender;
+  iconst_3
+  istore_2
+  iload_2
+  anewarray com/admogo/AdMogoTargeting$Gender
+  astore_3
+  getstatic com/admogo/AdMogoTargeting$Gender/UNKNOWN Lcom/admogo/AdMogoTargeting$Gender;
+  astore_0
+  iconst_0
+  istore_2
+  aload_3
+  iload_2
+  aload_0
+  aastore
+  getstatic com/admogo/AdMogoTargeting$Gender/MALE Lcom/admogo/AdMogoTargeting$Gender;
+  astore_0
+  iconst_1
+  istore_2
+  aload_3
+  iload_2
+  aload_0
+  aastore
+  getstatic com/admogo/AdMogoTargeting$Gender/FEMALE Lcom/admogo/AdMogoTargeting$Gender;
+  astore_0
+  iconst_2
+  istore_2
+  aload_3
+  iload_2
+  aload_0
+  aastore
+  aload_3
+  putstatic com/admogo/AdMogoTargeting$Gender/ENUM$VALUES [Lcom/admogo/AdMogoTargeting$Gender;
+  return
+  nop
+.end <method>
+
+.method private <init>(Ljava/lang/String;I)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  iload_2
+  invokespecial java/lang/Enum/<init>(Ljava/lang/String;I)V
+  return
+  nop
+.end <method>
+
+.method public static valueOf(Ljava/lang/String;)Lcom/admogo/AdMogoTargeting$Gender;
+.limit locals 5
+.limit stack 200
+  nop
+  ldc com/admogo/AdMogoTargeting$Gender
+  astore_2
+  aload_2
+  aload_0
+  invokestatic java/lang/Enum/valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+  astore_1
+  aload_1
+  astore 4
+  aload 4
+  checkcast com/admogo/AdMogoTargeting$Gender
+  astore 4
+  aload 4
+  astore_3
+  aload_3
+  areturn
+  nop
+.end <method>
+
+.method public static values()[Lcom/admogo/AdMogoTargeting$Gender;
+.limit locals 5
+.limit stack 200
+  nop
+  getstatic com/admogo/AdMogoTargeting$Gender/ENUM$VALUES [Lcom/admogo/AdMogoTargeting$Gender;
+  astore_0
+  aload_0
+  arraylength
+  istore_1
+  iload_1
+  anewarray com/admogo/AdMogoTargeting$Gender
+  astore_2
+  iconst_0
+  istore_3
+  iconst_0
+  istore 4
+  aload_0
+  iload_3
+  aload_2
+  iload 4
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload_2
+  areturn
+  nop
+.end <method>
+

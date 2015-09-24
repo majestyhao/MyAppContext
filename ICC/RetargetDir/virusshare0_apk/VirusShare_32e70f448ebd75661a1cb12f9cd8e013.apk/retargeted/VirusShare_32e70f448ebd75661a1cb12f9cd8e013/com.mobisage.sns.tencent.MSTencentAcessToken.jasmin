@@ -1,0 +1,26 @@
+.source SourceFile
+.class public  com/mobisage/sns/tencent/MSTencentAcessToken
+.super com/mobisage/sns/tencent/MSTencentWeiboMessage
+
+.method public <init>(Lcom/mobisage/sns/common/MSOAToken;Lcom/mobisage/sns/common/MSOAConsumer;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  aload_2
+  invokespecial com/mobisage/sns/tencent/MSTencentWeiboMessage/<init>(Lcom/mobisage/sns/common/MSOAToken;Lcom/mobisage/sns/common/MSOAConsumer;)V
+  ldc "https://open.t.qq.com/cgi-bin/access_token"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/mobisage/sns/tencent/MSTencentWeiboMessage/urlPath Ljava/lang/String;
+  ldc "GET"
+  astore_3
+  aload_0
+  aload_3
+  putfield com/mobisage/sns/tencent/MSTencentWeiboMessage/httpMethod Ljava/lang/String;
+  return
+  nop
+.end <method>
+

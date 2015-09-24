@@ -1,0 +1,154 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/c$5
+.super java/lang/Thread
+.field private final "a" Ljava/lang/String;
+.field private final "b" Ljava/lang/String;
+
+.method <init>(Ljava/lang/String;Ljava/lang/String;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/wiyun/ad/c$5/a Ljava/lang/String;
+  aload_0
+  aload_2
+  putfield com/wiyun/ad/c$5/b Ljava/lang/String;
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 18
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label5 <to> Label0 <using> Label3
+  .catch  java/lang/Exception <from> Label5 <to> Label0 <using> Label4
+  nop
+  invokestatic com/wiyun/ad/c/c()Lorg/apache/http/impl/client/DefaultHttpClient;
+  astore_2
+Label5:
+  invokestatic com/wiyun/ad/c/i()Ljava/util/List;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$5/a Ljava/lang/String;
+  astore 5
+  ldc "event"
+  astore 6
+  aload 4
+  aload 6
+  aload 5
+  invokespecial org/apache/http/message/BasicNameValuePair/<init>(Ljava/lang/String;Ljava/lang/String;)V
+  aload_3
+  aload 4
+  invokeinterface java/util/List/add(Ljava/lang/Object;)Z 2
+  pop
+  new org/apache/http/client/methods/HttpPost
+  astore 7
+  invokestatic com/wiyun/ad/c/j()Ljava/lang/String;
+  astore 5
+  aload 7
+  aload 5
+  invokespecial org/apache/http/client/methods/HttpPost/<init>(Ljava/lang/String;)V
+  new org/apache/http/client/entity/UrlEncodedFormEntity
+  astore 8
+  ldc "utf-8"
+  astore 6
+  aload 8
+  aload_3
+  aload 6
+  invokespecial org/apache/http/client/entity/UrlEncodedFormEntity/<init>(Ljava/util/List;Ljava/lang/String;)V
+  aload 7
+  aload 8
+  invokevirtual org/apache/http/client/methods/HttpPost/setEntity(Lorg/apache/http/HttpEntity;)V
+  aload_2
+  aload 7
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
+  astore 9
+  aload 9
+  invokeinterface org/apache/http/HttpResponse/getStatusLine()Lorg/apache/http/StatusLine; 1
+  astore 10
+  aload 10
+  invokeinterface org/apache/http/StatusLine/getStatusCode()I 1
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 300
+  istore 12
+  iload 11
+  iload 12
+  if_icmpge Label0
+  ldc "launched"
+  astore 5
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$5/a Ljava/lang/String;
+  astore 13
+  aload 5
+  aload 13
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 14
+  iload 14
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 14
+  ifeq Label0
+  aload_0
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/c$5/b Ljava/lang/String;
+  astore 5
+  aload 5
+  invokestatic com/wiyun/ad/g/c(Ljava/lang/String;)V
+Label0:
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_2
+  ifeq Label1
+  aload_2
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
+  astore 15
+  aload 15
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+Label1:
+  return
+Label4:
+  astore 16
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label1
+  aload_2
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
+  astore 15
+  aload 15
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+  goto Label1
+Label3:
+  astore 17
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label2
+  aload_2
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/getConnectionManager()Lorg/apache/http/conn/ClientConnectionManager;
+  astore 15
+  aload 15
+  invokeinterface org/apache/http/conn/ClientConnectionManager/shutdown()V 1
+Label2:
+  aload 17
+  athrow
+  nop
+.end <method>
+

@@ -1,0 +1,48 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public final  l
+.super java/lang/Object
+.implements  i
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public final a(Ld;Ljava/util/HashMap;Landroid/webkit/WebView;)V
+  .signature_attr "(Ld;Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;Landroid/webkit/WebView;)V"
+.limit locals 8
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label0
+  aload_3
+  astore 6
+  aload 6
+  checkcast g
+  astore 6
+  aload 6
+  astore 5
+  aload 5
+  invokevirtual g/a()V
+Label1:
+  return
+Label0:
+  ldc "Trying to close WebView that isn\'t an AdWebView"
+  astore 7
+  aload 7
+  invokestatic com/google/ads/util/a/b(Ljava/lang/String;)V
+  goto Label1
+  nop
+.end <method>
+

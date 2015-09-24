@@ -1,0 +1,236 @@
+.source SourceFile
+.class final  com/mobisage/android/t
+.super com/mobisage/android/Q
+
+.method protected <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial com/mobisage/android/Q/<init>()V
+  return
+  nop
+.end <method>
+
+.method private static a(Ljava/io/File;J)V
+.limit locals 14
+.limit stack 200
+  nop
+  aload_0
+  invokevirtual java/io/File/exists()Z
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifne Label0
+Label1:
+  return
+Label0:
+  aload_0
+  invokevirtual java/io/File/listFiles()[Ljava/io/File;
+  astore 4
+  iconst_0
+  dstore 5
+Label3:
+  aload 4
+  arraylength
+  istore 6
+  dload 5
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 5
+  iload 6
+  if_icmpge Label1
+  aload 4
+  iload 5
+  aaload
+  astore_0
+  aload_0
+  invokevirtual java/io/File/lastModified()J
+  lstore 7
+  ldc2_w 604800000
+  lstore 11
+  lload 7
+  lload 11
+  ladd
+  lstore 9
+  lload 9
+  lload_1
+  lcmp
+  istore 13
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  ifge Label2
+  aload_0
+  invokevirtual java/io/File/delete()Z
+  pop
+Label2:
+  iload 5
+  iconst_1
+  iadd
+  istore 5
+  goto Label3
+  nop
+.end <method>
+
+.method public final run()V
+.limit locals 7
+.limit stack 200
+  nop
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore_1
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  getstatic com/mobisage/android/r/e Ljava/lang/String;
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "/Temp"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "/"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  new java/io/File
+  astore 6
+  aload 6
+  aload 4
+  invokespecial java/io/File/<init>(Ljava/lang/String;)V
+  aload 6
+  lload_1
+  invokestatic com/mobisage/android/t/a(Ljava/io/File;J)V
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  getstatic com/mobisage/android/r/e Ljava/lang/String;
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "/Cache"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "/"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  new java/io/File
+  astore 6
+  aload 6
+  aload 4
+  invokespecial java/io/File/<init>(Ljava/lang/String;)V
+  aload 6
+  lload_1
+  invokestatic com/mobisage/android/t/a(Ljava/io/File;J)V
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_3
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "/MobiSage"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "/Temp"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "/"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  new java/io/File
+  astore 6
+  aload 6
+  aload 4
+  invokespecial java/io/File/<init>(Ljava/lang/String;)V
+  aload 6
+  lload_1
+  invokestatic com/mobisage/android/t/a(Ljava/io/File;J)V
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  invokestatic android/os/Environment/getExternalStorageDirectory()Ljava/io/File;
+  astore 6
+  aload_3
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "/MobiSage"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "/Cache"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "/"
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  new java/io/File
+  astore 6
+  aload 6
+  aload 4
+  invokespecial java/io/File/<init>(Ljava/lang/String;)V
+  aload 6
+  lload_1
+  invokestatic com/mobisage/android/t/a(Ljava/io/File;J)V
+  return
+  nop
+.end <method>
+

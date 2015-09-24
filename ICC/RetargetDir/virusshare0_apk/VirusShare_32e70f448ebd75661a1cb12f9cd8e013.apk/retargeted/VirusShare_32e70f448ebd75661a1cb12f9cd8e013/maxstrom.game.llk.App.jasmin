@@ -1,0 +1,124 @@
+.source App.java
+.class public  maxstrom/game/llk/App
+.super java/lang/Object
+.field public "appCfg" Lmaxstrom/game/llk/AppConfig;
+
+.method public <init>(Landroid/content/Context;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  new maxstrom/game/llk/AppConfig
+  astore_2
+  aload_2
+  aload_1
+  invokespecial maxstrom/game/llk/AppConfig/<init>(Landroid/content/Context;)V
+  aload_0
+  aload_2
+  putfield maxstrom/game/llk/App/appCfg Lmaxstrom/game/llk/AppConfig;
+  aload_0
+  aload_1
+  invokevirtual maxstrom/game/llk/App/loadConfig(Landroid/content/Context;)V
+  return
+  nop
+.end <method>
+
+.method public loadConfig(Landroid/content/Context;)V
+.limit locals 8
+.limit stack 200
+  nop
+  aload_0
+  getfield maxstrom/game/llk/App/appCfg Lmaxstrom/game/llk/AppConfig;
+  astore_2
+  aload_2
+  getfield maxstrom/game/llk/AppConfig/sp Landroid/content/SharedPreferences;
+  astore_3
+  ldc 2131165185
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iconst_1
+  istore 5
+  aload_3
+  aload 4
+  iload 5
+  invokeinterface android/content/SharedPreferences/getBoolean(Ljava/lang/String;Z)Z 3
+  istore 6
+  iload 6
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore 7
+  aload 7
+  putstatic maxstrom/game/llk/Params/isMusic Ljava/lang/Boolean;
+  aload_0
+  getfield maxstrom/game/llk/App/appCfg Lmaxstrom/game/llk/AppConfig;
+  astore_2
+  aload_2
+  getfield maxstrom/game/llk/AppConfig/sp Landroid/content/SharedPreferences;
+  astore_3
+  ldc 2131165186
+  istore 5
+  aload_1
+  iload 5
+  invokevirtual android/content/Context/getString(I)Ljava/lang/String;
+  astore 4
+  iconst_1
+  istore 5
+  aload_3
+  aload 4
+  iload 5
+  invokeinterface android/content/SharedPreferences/getBoolean(Ljava/lang/String;Z)Z 3
+  istore 6
+  iload 6
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore 7
+  aload 7
+  putstatic maxstrom/game/llk/Params/isSound Ljava/lang/Boolean;
+  return
+  nop
+.end <method>
+
+.method public saveGameParam(Landroid/content/Context;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  getfield maxstrom/game/llk/App/appCfg Lmaxstrom/game/llk/AppConfig;
+  astore_2
+  ldc 2131165185
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  getstatic maxstrom/game/llk/Params/isMusic Ljava/lang/Boolean;
+  astore 5
+  aload_2
+  aload_3
+  aload 5
+  invokevirtual maxstrom/game/llk/AppConfig/saveConfig(Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+  pop
+  aload_0
+  getfield maxstrom/game/llk/App/appCfg Lmaxstrom/game/llk/AppConfig;
+  astore_2
+  ldc 2131165186
+  istore 4
+  aload_1
+  iload 4
+  invokevirtual android/content/Context/getString(I)Ljava/lang/String;
+  astore_3
+  getstatic maxstrom/game/llk/Params/isSound Ljava/lang/Boolean;
+  astore 5
+  aload_2
+  aload_3
+  aload 5
+  invokevirtual maxstrom/game/llk/AppConfig/saveConfig(Ljava/lang/String;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+  pop
+  return
+  nop
+.end <method>
+

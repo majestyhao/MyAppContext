@@ -1,0 +1,621 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/tencent/mobwin/core/s
+.super java/lang/Object
+.implements  com/tencent/mobwin/core/b/a
+.field final "h" Lcom/tencent/mobwin/core/t;
+
+.method <init>(Lcom/tencent/mobwin/core/t;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/s/h Lcom/tencent/mobwin/core/t;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public a(ILcom/tencent/mobwin/core/b/b;)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_2
+  getfield com/tencent/mobwin/core/b/b/h Landroid/os/Handler;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifne Label0
+Label8:
+  return
+Label0:
+  aload_2
+  getfield com/tencent/mobwin/core/b/b/g I
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  lookupswitch
+  1 : Label2
+  2 : Label3
+  3 : Label4
+  4 : Label5
+  5 : Label6
+  6 : Label7
+  default : Label1
+Label1:
+  goto Label6
+Label6:
+  goto Label8
+Label2:
+  iconst_4
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual android/os/Handler/obtainMessage(I)Landroid/os/Message;
+  astore 5
+  aload 5
+  iload_1
+  putfield android/os/Message/arg1 I
+  aload_3
+  aload 5
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+  goto Label8
+Label7:
+  iconst_2
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual android/os/Handler/obtainMessage(I)Landroid/os/Message;
+  astore 5
+  aload 5
+  iload_1
+  putfield android/os/Message/arg1 I
+  aload_3
+  aload 5
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+  goto Label8
+Label3:
+  bipush 6
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual android/os/Handler/obtainMessage(I)Landroid/os/Message;
+  astore 5
+  aload 5
+  iload_1
+  putfield android/os/Message/arg1 I
+  aload_3
+  aload 5
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+  goto Label8
+Label4:
+  bipush 12
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual android/os/Handler/obtainMessage(I)Landroid/os/Message;
+  astore 5
+  aload 5
+  iload_1
+  putfield android/os/Message/arg1 I
+  aload_3
+  aload 5
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+  goto Label8
+Label5:
+  bipush 10
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual android/os/Handler/sendEmptyMessage(I)Z
+  pop
+  goto Label8
+  nop
+  nop
+  nop
+.end <method>
+
+.method public a(Lorg/apache/http/HttpResponse;Lcom/tencent/mobwin/core/b/b;)V
+.limit locals 37
+.limit stack 200
+  .catch  java/lang/Exception <from> Label13 <to> Label14 <using> Label12
+  .catch  java/lang/Exception <from> Label9 <to> Label15 <using> Label12
+  .catch  java/lang/Exception <from> Label18 <to> Label10 <using> Label12
+  .catch  java/lang/Exception <from> Label23 <to> Label11 <using> Label12
+  .catch  java/lang/Exception <from> Label27 <to> Label5 <using> Label12
+  .catch  java/lang/Exception <from> Label30 <to> Label31 <using> Label12
+  nop
+Label13:
+  aload_2
+  astore_3
+  aload_3
+  getfield com/tencent/mobwin/core/b/b/h Landroid/os/Handler;
+  astore 7
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 7
+  ifne Label0
+Label8:
+  return
+Label0:
+  aload_1
+  astore_3
+  aload_3
+  invokeinterface org/apache/http/HttpResponse/getEntity()Lorg/apache/http/HttpEntity; 1
+  astore 8
+  aload 8
+  invokeinterface org/apache/http/HttpEntity/getContent()Ljava/io/InputStream; 1
+  astore 9
+  aload 9
+  invokestatic com/tencent/mobwin/core/t/a(Ljava/io/InputStream;)[B
+  astore 10
+  aload_2
+  astore_3
+  aload_3
+  getfield com/tencent/mobwin/core/b/b/g I
+  istore 11
+  dload 11
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 11
+  lookupswitch
+  1 : Label2
+  2 : Label3
+  3 : Label4
+  4 : Label5
+  5 : Label6
+  6 : Label7
+  default : Label1
+Label1:
+  goto Label6
+Label6:
+  goto Label8
+Label2:
+  iconst_1
+  istore 13
+  aload 10
+  iload 13
+  invokestatic com/tencent/mobwin/core/t/a([BI)Lcom/qq/taf/jce/JceStruct;
+  astore 12
+  aload 12
+  astore 15
+  aload 15
+  checkcast MobWin/ResAppLaunch
+  astore 15
+  aload 15
+  astore 14
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 7
+  ifeq Label8
+  aload 14
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 14
+  ifnull Label9
+  aload 14
+  getfield MobWin/ResAppLaunch/a B
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 16
+  ifne Label9
+  iconst_3
+  istore 13
+  aload 7
+  iload 13
+  invokevirtual android/os/Handler/obtainMessage(I)Landroid/os/Message;
+  astore 17
+  aload 14
+  getfield MobWin/ResAppLaunch/a B
+  istore 16
+  aload 17
+  iload 16
+  putfield android/os/Message/arg1 I
+  aload 17
+  aload 14
+  putfield android/os/Message/obj Ljava/lang/Object;
+  aload 7
+  aload 17
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+Label14:
+  goto Label8
+Label12:
+  astore 18
+  new com/tencent/mobwin/core/z
+  astore 19
+  aload 19
+  astore_3
+  aload_3
+  invokespecial com/tencent/mobwin/core/z/<init>()V
+  aload 19
+  athrow
+Label9:
+  iconst_4
+  istore 13
+  aload 7
+  iload 13
+  invokevirtual android/os/Handler/obtainMessage(I)Landroid/os/Message;
+  astore 17
+  aload 14
+  getfield MobWin/ResAppLaunch/a B
+  istore 16
+  aload 17
+  iload 16
+  putfield android/os/Message/arg1 I
+  aload 7
+  aload 17
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+Label15:
+  goto Label8
+Label7:
+  bipush 6
+  istore 13
+  aload 10
+  iload 13
+  invokestatic com/tencent/mobwin/core/t/a([BI)Lcom/qq/taf/jce/JceStruct;
+  astore 12
+  aload 12
+  astore 21
+  aload 21
+  checkcast MobWin/ResActivateApp
+  astore 21
+  aload 21
+  astore 20
+  aload 20
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 20
+  ifnull Label10
+  aload 20
+  astore_3
+  aload_3
+  getfield MobWin/ResActivateApp/code B
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 16
+  ifne Label10
+  iconst_1
+  istore 13
+  aload 7
+  iload 13
+  invokevirtual android/os/Handler/sendEmptyMessage(I)Z
+  pop
+Label17:
+  goto Label8
+Label16:
+  astore 22
+  new com/tencent/mobwin/core/z
+  astore 19
+Label18:
+  aload 19
+  astore_3
+  aload_3
+  invokespecial com/tencent/mobwin/core/z/<init>()V
+  aload 19
+  athrow
+Label10:
+  iconst_2
+  istore 13
+  aload 7
+  iload 13
+  invokevirtual android/os/Handler/obtainMessage(I)Landroid/os/Message;
+  astore 17
+  aload 20
+  astore_3
+  aload_3
+  getfield MobWin/ResActivateApp/code B
+  istore 16
+  aload 17
+  iload 16
+  putfield android/os/Message/arg1 I
+  aload 7
+  aload 17
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+Label19:
+  goto Label8
+Label3:
+  new java/lang/StringBuilder
+  astore 23
+Label21:
+  ldc "\u5f00\u59cb\u89e3\u7801\u65f6\u95f4\uff1a"
+  astore 24
+  aload 23
+  astore_3
+  aload 24
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 25
+  aload 23
+  astore_3
+  lload 25
+  lstore 4
+  aload_3
+  lload 4
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore 23
+  aload 23
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 27
+  ldc "IORY"
+  astore 24
+  aload 24
+  astore_3
+  aload 27
+  astore 4
+  aload_3
+  aload 4
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  iconst_2
+  istore 13
+  aload 10
+  iload 13
+  invokestatic com/tencent/mobwin/core/t/a([BI)Lcom/qq/taf/jce/JceStruct;
+  astore 12
+  aload 12
+  astore 29
+  aload 29
+  checkcast MobWin/ResGetAD
+  astore 29
+  aload 29
+  astore 28
+  new java/lang/StringBuilder
+  astore 23
+  ldc "\u89e3\u7801\u7ed3\u675f\u65f6\u95f4\uff1a"
+  astore 24
+  aload 23
+  astore_3
+  aload 24
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 25
+  aload 23
+  astore_3
+  lload 25
+  lstore 4
+  aload_3
+  lload 4
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore 23
+  aload 23
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 27
+  ldc "IORY"
+  astore 24
+  aload 24
+  astore_3
+  aload 27
+  astore 4
+  aload_3
+  aload 4
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore 23
+  ldc "get ad:"
+  astore 24
+  aload 23
+  astore_3
+  aload 24
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 23
+  astore_3
+  aload 28
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore 23
+  aload 23
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 27
+  ldc "LinkData"
+  astore 24
+  aload 24
+  astore_3
+  aload 27
+  astore 4
+  aload_3
+  aload 4
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload 28
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 28
+  ifnull Label11
+  aload 28
+  astore_3
+  aload_3
+  getfield MobWin/ResGetAD/a B
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 16
+  ifne Label11
+  iconst_5
+  istore 13
+  aload 7
+  iload 13
+  invokevirtual android/os/Handler/obtainMessage(I)Landroid/os/Message;
+  astore 17
+  aload 28
+  astore_3
+  aload_3
+  getfield MobWin/ResGetAD/a B
+  istore 16
+  aload 17
+  iload 16
+  putfield android/os/Message/arg1 I
+  aload 28
+  astore_3
+  aload 17
+  aload_3
+  putfield android/os/Message/obj Ljava/lang/Object;
+  aload 7
+  aload 17
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+Label22:
+  goto Label8
+Label20:
+  astore 30
+  new com/tencent/mobwin/core/z
+  astore 19
+Label23:
+  aload 19
+  astore_3
+  aload_3
+  invokespecial com/tencent/mobwin/core/z/<init>()V
+  aload 19
+  athrow
+Label11:
+  bipush 6
+  istore 13
+  aload 7
+  iload 13
+  invokevirtual android/os/Handler/obtainMessage(I)Landroid/os/Message;
+  astore 17
+  aload 28
+  astore_3
+  aload_3
+  getfield MobWin/ResGetAD/a B
+  istore 16
+  aload 17
+  iload 16
+  putfield android/os/Message/arg1 I
+  aload 7
+  aload 17
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+Label24:
+  goto Label8
+Label4:
+  iconst_3
+  istore 13
+  aload 10
+  iload 13
+  invokestatic com/tencent/mobwin/core/t/a([BI)Lcom/qq/taf/jce/JceStruct;
+  astore 12
+  aload 12
+  astore 32
+  aload 32
+  checkcast MobWin/ResReportAdPlayInfo
+  astore 32
+  aload 32
+  astore 31
+  aload 31
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 31
+  ifnull Label8
+  aload 31
+  astore_3
+  aload_3
+  getfield MobWin/ResReportAdPlayInfo/a B
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 16
+  ifne Label8
+  bipush 11
+  istore 13
+  aload 7
+  iload 13
+  invokevirtual android/os/Handler/sendEmptyMessage(I)Z
+  pop
+Label26:
+  goto Label8
+Label25:
+  astore 33
+  new com/tencent/mobwin/core/z
+  astore 19
+Label27:
+  aload 19
+  astore_3
+  aload_3
+  invokespecial com/tencent/mobwin/core/z/<init>()V
+  aload 19
+  athrow
+Label5:
+  iconst_4
+  istore 13
+  aload 10
+  iload 13
+  invokestatic com/tencent/mobwin/core/t/a([BI)Lcom/qq/taf/jce/JceStruct;
+  astore 12
+  aload 12
+  astore 35
+  aload 35
+  checkcast MobWin/ResClickAD
+  astore 35
+  aload 35
+  astore 34
+  aload 34
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 34
+  ifnull Label8
+  aload 34
+  astore_3
+  aload_3
+  invokevirtual MobWin/ResClickAD/b()B
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 16
+  ifne Label8
+  bipush 9
+  istore 13
+  aload 7
+  iload 13
+  invokevirtual android/os/Handler/sendEmptyMessage(I)Z
+  pop
+Label29:
+  goto Label8
+Label28:
+  astore 36
+  new com/tencent/mobwin/core/z
+  astore 19
+Label30:
+  aload 19
+  astore_3
+  aload_3
+  invokespecial com/tencent/mobwin/core/z/<init>()V
+Label31:
+  aload 19
+  athrow
+  nop
+  nop
+.end <method>
+

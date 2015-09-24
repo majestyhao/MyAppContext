@@ -1,0 +1,26 @@
+.source WinsAD.java
+.class public  com/admogo/obj/WinsAD
+.super java/lang/Object
+.field public "adid" Ljava/lang/String;
+.field public "appkey" Ljava/lang/String;
+.field public "clickType" I
+.field public "height" I
+.field public "image" Landroid/graphics/drawable/Drawable;
+.field public "imageLink" Ljava/lang/String;
+.field public "pushString" Ljava/lang/String;
+.field public "refreshTime" I
+.field public "showType" I
+.field public "typeValue" Ljava/util/List;
+.field public "url" Ljava/lang/String;
+.field public "width" I
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,64 @@
+.source SourceFile
+.class final  com/mobisage/android/aa$a
+.super java/lang/Object
+.implements  com/mobisage/android/IMobiSageMessageCallback
+.field private "a" Lcom/mobisage/android/aa;
+
+.method private <init>(Lcom/mobisage/android/aa;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/mobisage/android/aa$a/a Lcom/mobisage/android/aa;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method <init>(Lcom/mobisage/android/aa;B)V
+  .synthetic
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial com/mobisage/android/aa$a/<init>(Lcom/mobisage/android/aa;)V
+  return
+  nop
+.end <method>
+
+.method public final onMobiSageMessageFinish(Lcom/mobisage/android/MobiSageMessage;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  getfield com/mobisage/android/aa$a/a Lcom/mobisage/android/aa;
+  astore_2
+  aload_2
+  getfield com/mobisage/android/O/a Landroid/os/Handler;
+  astore_3
+  aload_0
+  getfield com/mobisage/android/aa$a/a Lcom/mobisage/android/aa;
+  astore_2
+  aload_2
+  invokestatic com/mobisage/android/aa/a(Lcom/mobisage/android/aa;)Lcom/mobisage/android/aa;
+  astore_2
+  aload_2
+  getfield com/mobisage/android/O/c I
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload 5
+  aload_1
+  putfield android/os/Message/obj Ljava/lang/Object;
+  aload 5
+  invokevirtual android/os/Message/sendToTarget()V
+  return
+  nop
+.end <method>
+

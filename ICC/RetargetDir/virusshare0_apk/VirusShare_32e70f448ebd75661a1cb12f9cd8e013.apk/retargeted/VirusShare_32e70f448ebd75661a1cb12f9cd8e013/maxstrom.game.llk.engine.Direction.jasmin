@@ -1,0 +1,293 @@
+.source Direction.java
+.class public final enum  maxstrom/game/llk/engine/Direction
+.super java/lang/Enum
+  .signature_attr "Ljava/lang/Enum<Lmaxstrom/game/llk/engine/Direction;>;"
+.field private static final "ENUM$VALUES" [Lmaxstrom/game/llk/engine/Direction;
+.field public static final enum "east" Lmaxstrom/game/llk/engine/Direction;
+.field public static final enum "north" Lmaxstrom/game/llk/engine/Direction;
+.field public static final enum "south" Lmaxstrom/game/llk/engine/Direction;
+.field public static final enum "west" Lmaxstrom/game/llk/engine/Direction;
+
+.method static <clinit>()V
+.limit locals 4
+.limit stack 200
+  nop
+  new maxstrom/game/llk/engine/Direction
+  astore_0
+  ldc "north"
+  astore_1
+  iconst_0
+  istore_2
+  aload_0
+  aload_1
+  iload_2
+  invokespecial maxstrom/game/llk/engine/Direction/<init>(Ljava/lang/String;I)V
+  aload_0
+  putstatic maxstrom/game/llk/engine/Direction/north Lmaxstrom/game/llk/engine/Direction;
+  new maxstrom/game/llk/engine/Direction
+  astore_0
+  ldc "east"
+  astore_1
+  iconst_1
+  istore_2
+  aload_0
+  aload_1
+  iload_2
+  invokespecial maxstrom/game/llk/engine/Direction/<init>(Ljava/lang/String;I)V
+  aload_0
+  putstatic maxstrom/game/llk/engine/Direction/east Lmaxstrom/game/llk/engine/Direction;
+  new maxstrom/game/llk/engine/Direction
+  astore_0
+  ldc "south"
+  astore_1
+  iconst_2
+  istore_2
+  aload_0
+  aload_1
+  iload_2
+  invokespecial maxstrom/game/llk/engine/Direction/<init>(Ljava/lang/String;I)V
+  aload_0
+  putstatic maxstrom/game/llk/engine/Direction/south Lmaxstrom/game/llk/engine/Direction;
+  new maxstrom/game/llk/engine/Direction
+  astore_0
+  ldc "west"
+  astore_1
+  iconst_3
+  istore_2
+  aload_0
+  aload_1
+  iload_2
+  invokespecial maxstrom/game/llk/engine/Direction/<init>(Ljava/lang/String;I)V
+  aload_0
+  putstatic maxstrom/game/llk/engine/Direction/west Lmaxstrom/game/llk/engine/Direction;
+  iconst_4
+  istore_2
+  iload_2
+  anewarray maxstrom/game/llk/engine/Direction
+  astore_3
+  getstatic maxstrom/game/llk/engine/Direction/north Lmaxstrom/game/llk/engine/Direction;
+  astore_0
+  iconst_0
+  istore_2
+  aload_3
+  iload_2
+  aload_0
+  aastore
+  getstatic maxstrom/game/llk/engine/Direction/east Lmaxstrom/game/llk/engine/Direction;
+  astore_0
+  iconst_1
+  istore_2
+  aload_3
+  iload_2
+  aload_0
+  aastore
+  getstatic maxstrom/game/llk/engine/Direction/south Lmaxstrom/game/llk/engine/Direction;
+  astore_0
+  iconst_2
+  istore_2
+  aload_3
+  iload_2
+  aload_0
+  aastore
+  getstatic maxstrom/game/llk/engine/Direction/west Lmaxstrom/game/llk/engine/Direction;
+  astore_0
+  iconst_3
+  istore_2
+  aload_3
+  iload_2
+  aload_0
+  aastore
+  aload_3
+  putstatic maxstrom/game/llk/engine/Direction/ENUM$VALUES [Lmaxstrom/game/llk/engine/Direction;
+  return
+  nop
+.end <method>
+
+.method private <init>(Ljava/lang/String;I)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  iload_2
+  invokespecial java/lang/Enum/<init>(Ljava/lang/String;I)V
+  return
+  nop
+.end <method>
+
+.method public padding(ZI)I
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  getstatic maxstrom/game/llk/engine/Direction/north Lmaxstrom/game/llk/engine/Direction;
+  astore_3
+  aload_0
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_0
+  aload_3
+  if_acmpne Label1
+Label2:
+  iconst_0
+  istore 4
+  iload 4
+  ireturn
+Label1:
+  getstatic maxstrom/game/llk/engine/Direction/south Lmaxstrom/game/llk/engine/Direction;
+  astore_3
+  aload_0
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_0
+  aload_3
+  if_acmpeq Label2
+  getstatic maxstrom/game/llk/engine/Direction/east Lmaxstrom/game/llk/engine/Direction;
+  astore_3
+  aload_0
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_0
+  aload_3
+  if_acmpne Label3
+  iload_2
+  iconst_2
+  idiv
+  istore_2
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  iload_2
+  ireturn
+Label3:
+  iload_2
+  ineg
+  istore_2
+  iload_2
+  iconst_2
+  idiv
+  istore_2
+  iload_2
+  iconst_m1
+  iadd
+  istore_2
+  iload_2
+  ireturn
+Label0:
+  getstatic maxstrom/game/llk/engine/Direction/north Lmaxstrom/game/llk/engine/Direction;
+  astore_3
+  aload_0
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_0
+  aload_3
+  if_acmpne Label4
+  iload_2
+  ineg
+  istore_2
+  iload_2
+  iconst_2
+  idiv
+  istore_2
+  iload_2
+  iconst_m1
+  iadd
+  istore_2
+  iload_2
+  ireturn
+Label4:
+  getstatic maxstrom/game/llk/engine/Direction/south Lmaxstrom/game/llk/engine/Direction;
+  astore_3
+  aload_0
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_0
+  aload_3
+  if_acmpne Label5
+  iload_2
+  iconst_2
+  idiv
+  istore_2
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  iload_2
+  ireturn
+Label5:
+  getstatic maxstrom/game/llk/engine/Direction/east Lmaxstrom/game/llk/engine/Direction;
+  astore_3
+  aload_0
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_0
+  aload_3
+  if_acmpne Label2
+  iconst_0
+  istore 4
+  iload 4
+  ireturn
+  nop
+.end <method>
+
+.method public static valueOf(Ljava/lang/String;)Lmaxstrom/game/llk/engine/Direction;
+.limit locals 5
+.limit stack 200
+  nop
+  ldc maxstrom/game/llk/engine/Direction
+  astore_2
+  aload_2
+  aload_0
+  invokestatic java/lang/Enum/valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+  astore_1
+  aload_1
+  astore 4
+  aload 4
+  checkcast maxstrom/game/llk/engine/Direction
+  astore 4
+  aload 4
+  astore_3
+  aload_3
+  areturn
+  nop
+.end <method>
+
+.method public static values()[Lmaxstrom/game/llk/engine/Direction;
+.limit locals 5
+.limit stack 200
+  nop
+  getstatic maxstrom/game/llk/engine/Direction/ENUM$VALUES [Lmaxstrom/game/llk/engine/Direction;
+  astore_0
+  aload_0
+  arraylength
+  istore_1
+  iload_1
+  anewarray maxstrom/game/llk/engine/Direction
+  astore_2
+  iconst_0
+  istore_3
+  iconst_0
+  istore 4
+  aload_0
+  iload_3
+  aload_2
+  iload 4
+  iload_1
+  invokestatic java/lang/System/arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+  aload_2
+  areturn
+  nop
+.end <method>
+

@@ -1,0 +1,52 @@
+.source ShowInfoDialog.java
+.class  com/admogo/ShowInfoDialog$7
+.super java/lang/Object
+.implements  com/admogo/AsyncImageLoader$ImageCallback
+.field final "this$0" Lcom/admogo/ShowInfoDialog;
+.field private final "val$id" I
+
+.method <init>(Lcom/admogo/ShowInfoDialog;I)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/ShowInfoDialog$7/this$0 Lcom/admogo/ShowInfoDialog;
+  aload_0
+  iload_2
+  putfield com/admogo/ShowInfoDialog$7/val$id I
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public imageLoaded(Landroid/graphics/drawable/Drawable;)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/ShowInfoDialog$7/this$0 Lcom/admogo/ShowInfoDialog;
+  astore_2
+  aload_0
+  getfield com/admogo/ShowInfoDialog$7/val$id I
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload 4
+  astore 6
+  aload 6
+  checkcast android/widget/ImageView
+  astore 6
+  aload 6
+  astore 5
+  aload 5
+  aload_1
+  invokevirtual android/widget/ImageView/setImageDrawable(Landroid/graphics/drawable/Drawable;)V
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,213 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/j
+.super java/lang/Object
+.field "A" Ljava/lang/String;
+.field "B" Landroid/graphics/Bitmap;
+.field "C" Landroid/graphics/Bitmap;
+.field "D" Ljava/lang/String;
+.field "E" Landroid/graphics/Bitmap;
+.field "F" I
+.field "G" I
+.field "H" Z
+.field "a" Ljava/lang/String;
+.field "b" I
+.field "c" I
+.field "d" Ljava/lang/String;
+.field "e" Ljava/lang/String;
+.field "f" Ljava/lang/String;
+.field "g" I
+.field "h" I
+.field "i" I
+.field "j" Ljava/lang/String;
+.field "k" Landroid/graphics/Bitmap;
+.field "l" Ljava/lang/String;
+.field "m" Ljava/lang/String;
+.field "n" Ljava/lang/String;
+.field "o" Ljava/lang/String;
+.field "p" Ljava/lang/String;
+.field "q" Ljava/lang/String;
+.field "r" I
+.field "s" I
+.field "t" F
+.field "u" Ljava/lang/String;
+.field "v" Ljava/lang/String;
+.field "w" Ljava/lang/String;
+.field "x" Ljava/lang/String;
+.field "y" Ljava/lang/String;
+.field "z" I
+
+.method <init>()V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc 13.000000
+  fstore_1
+  aload_0
+  fload_1
+  putfield com/wiyun/ad/j/t F
+  iconst_0
+  istore_2
+  aload_0
+  iload_2
+  putfield com/wiyun/ad/j/H Z
+  return
+  nop
+.end <method>
+
+.method public a()V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/j/C Landroid/graphics/Bitmap;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_0
+  getfield com/wiyun/ad/j/C Landroid/graphics/Bitmap;
+  astore_1
+  aload_1
+  invokevirtual android/graphics/Bitmap/isRecycled()Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifne Label0
+  aload_0
+  getfield com/wiyun/ad/j/C Landroid/graphics/Bitmap;
+  astore_1
+  aload_1
+  invokevirtual android/graphics/Bitmap/recycle()V
+Label0:
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield com/wiyun/ad/j/C Landroid/graphics/Bitmap;
+  aload_0
+  getfield com/wiyun/ad/j/B Landroid/graphics/Bitmap;
+  astore_1
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_1
+  ifnull Label1
+  aload_0
+  getfield com/wiyun/ad/j/B Landroid/graphics/Bitmap;
+  astore_1
+  aload_1
+  invokevirtual android/graphics/Bitmap/isRecycled()Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifne Label1
+  aload_0
+  getfield com/wiyun/ad/j/B Landroid/graphics/Bitmap;
+  astore_1
+  aload_1
+  invokevirtual android/graphics/Bitmap/recycle()V
+Label1:
+  aconst_null
+  astore_3
+  aload_0
+  aload_3
+  putfield com/wiyun/ad/j/B Landroid/graphics/Bitmap;
+  return
+  nop
+.end <method>
+
+.method public equals(Ljava/lang/Object;)Z
+.limit locals 9
+.limit stack 200
+  nop
+  aload_1
+  instanceof com/wiyun/ad/j
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_1
+  astore 4
+  aload 4
+  checkcast com/wiyun/ad/j
+  astore 4
+  aload 4
+  astore_3
+  aload_3
+  getfield com/wiyun/ad/j/p Ljava/lang/String;
+  astore 5
+  aload_0
+  getfield com/wiyun/ad/j/p Ljava/lang/String;
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label1
+  aload_1
+  astore 7
+  aload 7
+  checkcast com/wiyun/ad/j
+  astore 7
+  aload 7
+  astore_3
+  aload_3
+  getfield com/wiyun/ad/j/q Ljava/lang/String;
+  astore 5
+  aload_0
+  getfield com/wiyun/ad/j/q Ljava/lang/String;
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label1
+  iconst_1
+  istore 8
+  iload 8
+  ireturn
+Label1:
+  iconst_0
+  istore 8
+  iload 8
+  ireturn
+Label0:
+  aload_0
+  aload_1
+  invokespecial java/lang/Object/equals(Ljava/lang/Object;)Z
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public hashCode()I
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/j/p Ljava/lang/String;
+  astore_1
+  aload_1
+  invokevirtual java/lang/String/hashCode()I
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+

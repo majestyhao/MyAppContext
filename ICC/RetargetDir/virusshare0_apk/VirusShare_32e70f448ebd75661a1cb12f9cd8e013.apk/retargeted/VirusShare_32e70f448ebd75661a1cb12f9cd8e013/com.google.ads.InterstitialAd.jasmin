@@ -1,0 +1,160 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/google/ads/InterstitialAd
+.super java/lang/Object
+.implements  com/google/ads/Ad
+.field private "a" Ld;
+
+.method public <init>(Landroid/app/Activity;Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  iconst_0
+  istore_3
+  aload_0
+  aload_1
+  aload_2
+  iload_3
+  invokespecial com/google/ads/InterstitialAd/<init>(Landroid/app/Activity;Ljava/lang/String;Z)V
+  return
+  nop
+.end <method>
+
+.method public <init>(Landroid/app/Activity;Ljava/lang/String;Z)V
+.limit locals 12
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  new d
+  astore 10
+  aconst_null
+  astore 11
+  aload 10
+  astore 4
+  aload_1
+  astore 5
+  aload_0
+  astore 6
+  aload 11
+  astore 7
+  aload_2
+  astore 8
+  iload_3
+  istore 9
+  aload 4
+  aload 5
+  aload 6
+  aload 7
+  aload 8
+  iload 9
+  invokespecial d/<init>(Landroid/app/Activity;Lcom/google/ads/Ad;Lcom/google/ads/AdSize;Ljava/lang/String;Z)V
+  aload_0
+  aload 10
+  putfield com/google/ads/InterstitialAd/a Ld;
+  return
+  nop
+.end <method>
+
+.method public isReady()Z
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/google/ads/InterstitialAd/a Ld;
+  astore_1
+  aload_1
+  invokevirtual d/o()Z
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public loadAd(Lcom/google/ads/AdRequest;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/google/ads/InterstitialAd/a Ld;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual d/a(Lcom/google/ads/AdRequest;)V
+  return
+  nop
+.end <method>
+
+.method public setAdListener(Lcom/google/ads/AdListener;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/google/ads/InterstitialAd/a Ld;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual d/a(Lcom/google/ads/AdListener;)V
+  return
+  nop
+.end <method>
+
+.method public show()V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  invokevirtual com/google/ads/InterstitialAd/isReady()Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_0
+  getfield com/google/ads/InterstitialAd/a Ld;
+  astore_2
+  aload_2
+  invokevirtual d/y()V
+  aload_0
+  getfield com/google/ads/InterstitialAd/a Ld;
+  astore_2
+  aload_2
+  invokevirtual d/v()V
+  aload_0
+  getfield com/google/ads/InterstitialAd/a Ld;
+  astore_2
+  new e
+  astore_3
+  ldc "interstitial"
+  astore 4
+  aload_3
+  aload 4
+  invokespecial e/<init>(Ljava/lang/String;)V
+  aload_2
+  aload_3
+  invokestatic com/google/ads/AdActivity/launchAdActivity(Ld;Le;)V
+Label1:
+  return
+Label0:
+  ldc "Cannot show interstitial because it is not loaded and ready."
+  astore 4
+  aload 4
+  invokestatic com/google/ads/util/a/c(Ljava/lang/String;)V
+  goto Label1
+  nop
+.end <method>
+
+.method public stopLoading()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/google/ads/InterstitialAd/a Ld;
+  astore_1
+  aload_1
+  invokevirtual d/z()V
+  return
+  nop
+.end <method>
+

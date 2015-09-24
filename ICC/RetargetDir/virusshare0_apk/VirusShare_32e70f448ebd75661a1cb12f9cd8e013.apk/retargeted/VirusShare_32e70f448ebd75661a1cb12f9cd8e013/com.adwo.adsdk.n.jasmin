@@ -1,0 +1,63 @@
+.source SourceFile
+.class final  com/adwo/adsdk/n
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field private final "a" Landroid/app/Activity;
+.field private final "b" Ljava/lang/String;
+
+.method <init>(Lcom/adwo/adsdk/k;Landroid/app/Activity;Ljava/lang/String;)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_2
+  putfield com/adwo/adsdk/n/a Landroid/app/Activity;
+  aload_0
+  aload_3
+  putfield com/adwo/adsdk/n/b Ljava/lang/String;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public final run()V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  getfield com/adwo/adsdk/n/a Landroid/app/Activity;
+  astore_1
+  new java/lang/StringBuilder
+  astore_2
+  aload_0
+  getfield com/adwo/adsdk/n/b Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore_3
+  aload_2
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  ldc "\u4e0b\u8f7d\u5b8c\u6210,\u8bf7\u5b89\u88c5\u4f7f\u7528"
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_3
+  iconst_1
+  istore 6
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload 5
+  invokevirtual android/widget/Toast/show()V
+  return
+  nop
+.end <method>
+

@@ -1,0 +1,175 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/kuguo/ad/m
+.super java/util/TimerTask
+.field final "a" Ljava/lang/String;
+.field final "b" Lcom/kuguo/ad/MainReceiver;
+
+.method <init>(Lcom/kuguo/ad/MainReceiver;Ljava/lang/String;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/kuguo/ad/m/b Lcom/kuguo/ad/MainReceiver;
+  aload_0
+  aload_2
+  putfield com/kuguo/ad/m/a Ljava/lang/String;
+  aload_0
+  invokespecial java/util/TimerTask/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 21
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/kuguo/ad/m/b Lcom/kuguo/ad/MainReceiver;
+  astore 9
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/kuguo/ad/m/a Ljava/lang/String;
+  astore 11
+  aload 10
+  aload 11
+  invokestatic com/kuguo/ad/d/a(Landroid/content/Context;Ljava/lang/String;)Lcom/kuguo/ad/p;
+  astore 12
+  aload 12
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 12
+  ifnull Label0
+  new android/content/Intent
+  astore 13
+  aload 13
+  invokespecial android/content/Intent/<init>()V
+  ldc "requestMode"
+  astore 14
+  bipush 10
+  istore 15
+  aload 13
+  aload 14
+  iload 15
+  invokevirtual android/content/Intent/putExtra(Ljava/lang/String;I)Landroid/content/Intent;
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/kuguo/ad/m/b Lcom/kuguo/ad/MainReceiver;
+  astore 9
+  aload 9
+  invokestatic com/kuguo/ad/MainReceiver/a(Lcom/kuguo/ad/MainReceiver;)Landroid/content/Context;
+  astore 10
+  aload 10
+  aload 13
+  invokestatic com/kuguo/ad/MainReceiver/a(Landroid/content/Context;Landroid/content/Intent;)V
+  iconst_3
+  istore 15
+  iload 15
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 16
+  aload 12
+  aload 16
+  putfield com/kuguo/ad/p/j Ljava/lang/Integer;
+  aload_0
+  astore_1
+  aload_1
+  getfield com/kuguo/ad/m/b Lcom/kuguo/ad/MainReceiver;
+  astore 9
+  aload 9
+  invokestatic com/kuguo/ad/MainReceiver/a(Lcom/kuguo/ad/MainReceiver;)Landroid/content/Context;
+  astore 10
+  aload 10
+  aload 12
+  invokestatic com/kuguo/ad/d/b(Landroid/content/Context;Lcom/kuguo/ad/p;)Z
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/kuguo/ad/m/b Lcom/kuguo/ad/MainReceiver;
+  astore 9
+  aload 9
+  invokestatic com/kuguo/ad/MainReceiver/a(Lcom/kuguo/ad/MainReceiver;)Landroid/content/Context;
+  astore 10
+  aload_0
+  astore_1
+  aload_1
+  getfield com/kuguo/ad/m/a Ljava/lang/String;
+  astore 11
+  aload 10
+  aload 11
+  invokestatic com/kuguo/ad/d/e(Landroid/content/Context;Ljava/lang/String;)Landroid/content/Intent;
+  astore 13
+  aload_0
+  astore_1
+  aload_1
+  getfield com/kuguo/ad/m/b Lcom/kuguo/ad/MainReceiver;
+  astore 9
+  aload 9
+  invokestatic com/kuguo/ad/MainReceiver/a(Lcom/kuguo/ad/MainReceiver;)Landroid/content/Context;
+  astore 10
+  aload 12
+  getfield com/kuguo/ad/p/h I
+  istore_1
+  iload_1
+  istore 17
+  aload 13
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 13
+  ifnonnull Label1
+  new android/content/Intent
+  astore 13
+  aload 13
+  invokespecial android/content/Intent/<init>()V
+Label1:
+  aload 12
+  getfield com/kuguo/ad/p/g Ljava/lang/String;
+  astore_1
+  aload_1
+  astore 18
+  ldc 17301556
+  istore 15
+  ldc "\u5b89\u88c5\u5b8c\u6210"
+  astore 14
+  bipush 16
+  istore 19
+  iconst_m1
+  istore 20
+  aload 10
+  astore_1
+  iload 15
+  istore_2
+  aload 14
+  astore_3
+  iload 17
+  istore 4
+  iload 19
+  istore 5
+  aload 13
+  astore 6
+  aload 18
+  astore 7
+  iload 20
+  istore 8
+  aload_1
+  iload_2
+  aload_3
+  iload 4
+  iload 5
+  aload 6
+  aload 7
+  iload 8
+  invokestatic com/kuguo/ad/u/a(Landroid/content/Context;ILjava/lang/String;IILandroid/content/Intent;Ljava/lang/String;I)V
+Label0:
+  return
+  nop
+.end <method>
+

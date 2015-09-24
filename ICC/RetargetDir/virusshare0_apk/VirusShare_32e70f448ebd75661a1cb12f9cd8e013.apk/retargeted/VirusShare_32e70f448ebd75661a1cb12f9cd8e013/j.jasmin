@@ -1,0 +1,193 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public final  j
+.super java/lang/Object
+.implements  i
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public final a(Ld;Ljava/util/HashMap;Landroid/webkit/WebView;)V
+  .signature_attr "(Ld;Ljava/util/HashMap<Ljava/lang/String;Ljava/lang/String;>;Landroid/webkit/WebView;)V"
+.limit locals 25
+.limit stack 200
+  nop
+  ldc "urls"
+  astore 7
+  aload_2
+  astore 4
+  aload 4
+  aload 7
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 6
+  aload 6
+  astore 9
+  aload 9
+  checkcast java/lang/String
+  astore 9
+  aload 9
+  astore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 8
+  ifne Label0
+  ldc "Could not get the urls param from canOpenURLs gmsg."
+  astore 7
+  aload 7
+  invokestatic com/google/ads/util/a/e(Ljava/lang/String;)V
+Label7:
+  return
+Label0:
+  ldc ","
+  astore 7
+  aload 8
+  aload 7
+  invokevirtual java/lang/String/split(Ljava/lang/String;)[Ljava/lang/String;
+  astore 10
+  new java/util/HashMap
+  astore_2
+  aload_2
+  astore 4
+  aload 4
+  invokespecial java/util/HashMap/<init>()V
+  aload_3
+  astore 4
+  aload 4
+  invokevirtual android/webkit/WebView/getContext()Landroid/content/Context;
+  astore 11
+  aload 11
+  invokevirtual android/content/Context/getPackageManager()Landroid/content/pm/PackageManager;
+  astore 12
+  aload 10
+  arraylength
+  istore 13
+  iconst_0
+  dstore 15
+  dload 15
+  dstore 14
+Label4:
+  dload 14
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 14
+  iload 13
+  if_icmpge Label1
+  aload 10
+  iload 14
+  aaload
+  astore 16
+  ldc ";"
+  astore 7
+  iconst_2
+  istore 15
+  aload 16
+  aload 7
+  iload 15
+  invokevirtual java/lang/String/split(Ljava/lang/String;I)[Ljava/lang/String;
+  astore 17
+  iconst_0
+  istore 15
+  iload 15
+  istore 18
+  aload 17
+  iload 18
+  aaload
+  astore 8
+  aload 17
+  arraylength
+  istore 18
+  dload 18
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 15
+  iload 18
+  iload 15
+  if_icmplt Label2
+  iconst_1
+  istore 15
+  iload 15
+  istore 18
+  aload 17
+  iload 18
+  aaload
+  astore 19
+Label5:
+  aload 8
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 20
+  new android/content/Intent
+  astore 21
+  aload 21
+  astore 4
+  aload 20
+  astore 5
+  aload 4
+  aload 19
+  aload 5
+  invokespecial android/content/Intent/<init>(Ljava/lang/String;Landroid/net/Uri;)V
+  ldc 65536
+  istore 15
+  aload 21
+  astore 4
+  aload 12
+  aload 4
+  iload 15
+  invokevirtual android/content/pm/PackageManager/resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
+  astore 22
+  aload 22
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 22
+  ifnull Label3
+  iconst_1
+  istore 23
+Label6:
+  iload 23
+  istore 4
+  iload 4
+  invokestatic java/lang/Boolean/valueOf(Z)Ljava/lang/Boolean;
+  astore 24
+  aload_2
+  astore 4
+  aload 24
+  astore 5
+  aload 4
+  aload 16
+  aload 5
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  iload 14
+  iconst_1
+  iadd
+  istore 14
+  goto Label4
+Label2:
+  ldc "android.intent.action.VIEW"
+  astore 19
+  goto Label5
+Label3:
+  iconst_0
+  istore 23
+  goto Label6
+Label1:
+  aload_3
+  astore 4
+  aload_2
+  astore 5
+  aload 4
+  aload 5
+  invokestatic a/a(Landroid/webkit/WebView;Ljava/util/Map;)V
+  goto Label7
+  nop
+.end <method>
+

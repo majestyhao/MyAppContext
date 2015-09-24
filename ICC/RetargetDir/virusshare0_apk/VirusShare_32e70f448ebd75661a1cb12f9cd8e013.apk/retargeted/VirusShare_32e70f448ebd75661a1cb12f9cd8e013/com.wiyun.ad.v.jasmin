@@ -1,0 +1,188 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/wiyun/ad/v
+.super java/lang/Object
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;)I
+.limit locals 5
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  invokestatic com/wiyun/ad/v/a()Ljava/lang/String;
+  astore_2
+  invokestatic com/wiyun/ad/v/b()Landroid/content/res/Resources;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  ldc "drawable"
+  astore 4
+  aload_3
+  aload_0
+  aload 4
+  aload_2
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore_1
+Label0:
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method private static a()Ljava/lang/String;
+.limit locals 3
+.limit stack 200
+  nop
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore_0
+  aload_0
+  invokevirtual android/content/Context/getPackageName()Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+Label0:
+  ldc ""
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public static b(Ljava/lang/String;)I
+.limit locals 5
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  invokestatic com/wiyun/ad/v/a()Ljava/lang/String;
+  astore_2
+  invokestatic com/wiyun/ad/v/b()Landroid/content/res/Resources;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  ldc "id"
+  astore 4
+  aload_3
+  aload_0
+  aload 4
+  aload_2
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore_1
+Label0:
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method private static b()Landroid/content/res/Resources;
+.limit locals 3
+.limit stack 200
+  nop
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore_0
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  invokestatic com/wiyun/ad/ab/m()Landroid/content/Context;
+  astore_0
+  aload_0
+  invokevirtual android/content/Context/getResources()Landroid/content/res/Resources;
+  astore_1
+  aload_1
+  areturn
+Label0:
+  aconst_null
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public static c(Ljava/lang/String;)I
+.limit locals 5
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  invokestatic com/wiyun/ad/v/a()Ljava/lang/String;
+  astore_2
+  invokestatic com/wiyun/ad/v/b()Landroid/content/res/Resources;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  ldc "layout"
+  astore 4
+  aload_3
+  aload_0
+  aload 4
+  aload_2
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore_1
+Label0:
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public static d(Ljava/lang/String;)I
+.limit locals 5
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  invokestatic com/wiyun/ad/v/a()Ljava/lang/String;
+  astore_2
+  invokestatic com/wiyun/ad/v/b()Landroid/content/res/Resources;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  ldc "string"
+  astore 4
+  aload_3
+  aload_0
+  aload 4
+  aload_2
+  invokevirtual android/content/res/Resources/getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+  istore_1
+Label0:
+  iload_1
+  ireturn
+  nop
+.end <method>
+

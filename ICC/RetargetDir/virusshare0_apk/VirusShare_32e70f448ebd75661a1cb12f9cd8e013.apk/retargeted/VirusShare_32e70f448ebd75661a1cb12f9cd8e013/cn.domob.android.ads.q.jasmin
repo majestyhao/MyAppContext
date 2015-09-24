@@ -1,0 +1,751 @@
+.source SourceFile
+.class public  cn/domob/android/ads/q
+.super java/lang/Object
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method private static a(I[B)B
+.limit locals 5
+.limit stack 200
+  nop
+  aload_1
+  arraylength
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_0
+  iload_2
+  if_icmplt Label0
+  iconst_0
+  istore_3
+  iload_3
+  ireturn
+Label0:
+  aload_1
+  iload_0
+  baload
+  istore 4
+  iload 4
+  ireturn
+  nop
+.end <method>
+
+.method public static a([B)J
+.limit locals 9
+.limit stack 200
+  nop
+  ldc2_w 0.000000000000000
+  dstore_1
+  iconst_0
+  istore_3
+Label1:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  bipush 8
+  istore 4
+  iload_3
+  iload 4
+  if_icmpge Label0
+  bipush 8
+  istore 4
+  lload_1
+  iload 4
+  lshl
+  lstore_1
+  aload_0
+  iload_3
+  baload
+  istore 5
+  sipush 255
+  istore 4
+  iload 5
+  iload 4
+  iand
+  istore 6
+  iload 6
+  i2l
+  lstore 7
+  lload_1
+  lload 7
+  lor
+  lstore_1
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label1
+Label0:
+  lload_1
+  lreturn
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.limit locals 30
+.limit stack 200
+  .catch  java/io/UnsupportedEncodingException <from> Label5 <to> Label6 <using> Label4
+  nop
+Label5:
+  ldc "UTF-8"
+  astore 6
+  aload_0
+  astore_3
+  aload_3
+  aload 6
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 5
+  ldc "UTF-8"
+  astore 6
+  aload_1
+  astore_3
+  aload_3
+  aload 6
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 7
+  ldc "UTF-8"
+  astore 6
+  aload_2
+  astore_3
+  aload_3
+  aload 6
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 8
+  bipush 10
+  istore 10
+  iload 10
+  newarray byte
+  astore 9
+  iconst_3
+  istore 11
+  aload 5
+  arraylength
+  istore 12
+  iload 12
+  iconst_m1
+  iadd
+  istore 13
+Label1:
+  aload 5
+  arraylength
+  istore 12
+  iload 12
+  bipush -4
+  iadd
+  istore 12
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  iload 12
+  if_icmplt Label0
+  aload 5
+  iload 13
+  baload
+  istore 14
+  aload 9
+  iload 11
+  iload 14
+  bastore
+  iload 11
+  iconst_m1
+  iadd
+  istore 11
+  iload 13
+  iconst_m1
+  iadd
+  istore 13
+  goto Label1
+Label0:
+  aload 7
+  arraylength
+  istore 13
+  ldc 65280
+  istore 10
+  iload 10
+  iload 13
+  iand
+  istore 12
+  iload 12
+  bipush 8
+  ishr
+  istore 12
+  iload 12
+  i2b
+  istore 15
+  iconst_4
+  istore 10
+  aload 9
+  iload 10
+  iload 15
+  bastore
+  iload 13
+  sipush 255
+  iadd
+  istore 13
+  iload 13
+  i2b
+  istore 14
+  iconst_5
+  istore 10
+  aload 9
+  iload 10
+  iload 14
+  bastore
+  aload 8
+  aload 9
+  invokestatic cn/domob/android/ads/q/a([B[B)[B
+  astore 9
+  new java/lang/String
+  astore 16
+  aload 16
+  aload 9
+  invokespecial java/lang/String/<init>([B)V
+  aload 16
+  invokestatic cn/domob/android/ads/q/a(Ljava/lang/String;)[B
+  astore 9
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 17
+  ldc2_w 1000
+  lstore 21
+  lload 17
+  lload 21
+  ldiv
+  lstore 19
+  bipush 8
+  istore 10
+  lload 19
+  lstore_3
+  lload_3
+  iload 10
+  lshl
+  lstore_3
+  lload_3
+  lstore 19
+  lload 19
+  lstore_3
+  lload_3
+  l2i
+  istore 13
+  invokestatic java/lang/Math/random()D
+  dstore 23
+  ldc2_w 100.000000000000000
+  dstore 27
+  dload 23
+  dload 27
+  dmul
+  dstore 25
+  dload 25
+  dstore_3
+  dload_3
+  d2i
+  istore 12
+  iload 13
+  iload 12
+  ior
+  istore 13
+  iload 13
+  invokestatic cn/domob/android/ads/q/a(I)[B
+  astore 8
+  iconst_0
+  dstore 13
+Label3:
+  aload 8
+  arraylength
+  istore 12
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  iload 12
+  if_icmpge Label2
+  aload 8
+  iload 13
+  baload
+  istore 15
+  aload 9
+  iload 13
+  iload 15
+  bastore
+  iload 13
+  iconst_1
+  iadd
+  istore 13
+  goto Label3
+Label2:
+  aload 9
+  invokestatic cn/domob/android/ads/q/b([B)[B
+  astore 9
+  aload 9
+  invokestatic cn/domob/android/ads/q/c([B)Ljava/lang/String;
+  astore 16
+Label6:
+  aload 16
+  areturn
+Label4:
+  astore 29
+  aload 29
+  astore_3
+  aload_3
+  invokevirtual java/io/UnsupportedEncodingException/printStackTrace()V
+  ldc ""
+  astore 6
+  aload 6
+  areturn
+  nop
+.end <method>
+
+.method private static a(I)[B
+.limit locals 6
+.limit stack 200
+  nop
+  iconst_4
+  istore_2
+  iload_2
+  newarray byte
+  astore_1
+  iload_0
+  sipush 255
+  iadd
+  istore_3
+  iload_3
+  i2b
+  istore 4
+  iconst_0
+  istore_2
+  aload_1
+  iload_2
+  iload 4
+  bastore
+  ldc 65280
+  istore_2
+  iload_2
+  iload_0
+  iand
+  istore_3
+  iload_3
+  bipush 8
+  ishr
+  istore_3
+  iload_3
+  i2b
+  istore 5
+  iconst_1
+  istore_2
+  aload_1
+  iload_2
+  iload 5
+  bastore
+  ldc 16711680
+  istore_2
+  iload_2
+  iload_0
+  iand
+  istore_3
+  iload_3
+  bipush 16
+  ishr
+  istore_3
+  iload_3
+  i2b
+  istore 5
+  iconst_2
+  istore_2
+  aload_1
+  iload_2
+  iload 5
+  bastore
+  ldc -16777216
+  istore_2
+  iload_2
+  iload_0
+  iand
+  istore_3
+  iload_3
+  bipush 24
+  ishr
+  istore_3
+  iload_3
+  i2b
+  istore 5
+  iconst_3
+  istore_2
+  aload_1
+  iload_2
+  iload 5
+  bastore
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public static a(Ljava/lang/String;)[B
+.limit locals 7
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  ifne Label1
+Label0:
+  aconst_null
+  astore_2
+  aload_2
+  areturn
+Label1:
+  ldc "MD5"
+  astore 4
+  aload 4
+  invokestatic java/security/MessageDigest/getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+  astore_3
+  aload_3
+  invokevirtual java/security/MessageDigest/reset()V
+  ldc "UTF-8"
+  astore 4
+  aload_0
+  aload 4
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore 5
+  aload_3
+  aload 5
+  invokevirtual java/security/MessageDigest/update([B)V
+  aload_3
+  invokevirtual java/security/MessageDigest/digest()[B
+  astore 5
+Label3:
+  aload 5
+  areturn
+Label2:
+  astore 6
+  aconst_null
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method private static a([B[B)[B
+.limit locals 9
+.limit stack 200
+  nop
+  iconst_3
+  istore_2
+Label5:
+  aload_0
+  arraylength
+  istore_3
+  iload_3
+  iconst_3
+  iadd
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label0
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_4
+  istore 5
+  iload_2
+  iload 5
+  if_icmpge Label1
+  iconst_3
+  dstore 6
+Label3:
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  iflt Label2
+  bipush 9
+  istore 5
+  iload 5
+  iload 6
+  isub
+  istore_3
+  iload_2
+  iload 6
+  isub
+  istore 4
+  iload 4
+  aload_0
+  invokestatic cn/domob/android/ads/q/a(I[B)B
+  istore 7
+  aload_1
+  iload_3
+  iload 7
+  bastore
+  iload 6
+  iconst_m1
+  iadd
+  istore 6
+  goto Label3
+Label1:
+  iconst_3
+  dstore 6
+Label4:
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  iflt Label2
+  bipush 9
+  istore 5
+  iload 5
+  iload 6
+  isub
+  istore_3
+  bipush 9
+  istore 5
+  iload 5
+  iload 6
+  isub
+  istore 4
+  aload_1
+  iload 4
+  baload
+  istore 7
+  iload_2
+  iload 6
+  isub
+  istore 4
+  iload 4
+  aload_0
+  invokestatic cn/domob/android/ads/q/a(I[B)B
+  istore 8
+  iload 7
+  iload 8
+  ixor
+  istore 8
+  iload 8
+  i2b
+  istore 8
+  aload_1
+  iload_3
+  iload 8
+  bastore
+  iload 6
+  iconst_m1
+  iadd
+  istore 6
+  goto Label4
+Label2:
+  iload_2
+  iconst_4
+  iadd
+  istore_2
+  goto Label5
+Label0:
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method private static b([B)[B
+.limit locals 8
+.limit stack 200
+  nop
+  iconst_4
+  istore_1
+Label3:
+  aload_0
+  arraylength
+  istore_2
+  iload_2
+  bipush -4
+  iadd
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload_2
+  if_icmpgt Label0
+  iconst_3
+  dstore_3
+Label2:
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iflt Label1
+  iload_1
+  iconst_3
+  iadd
+  istore_2
+  iload_2
+  iload_3
+  isub
+  istore 4
+  iconst_3
+  istore 5
+  iload 5
+  iload_3
+  isub
+  istore_2
+  aload_0
+  iload_2
+  baload
+  istore 6
+  iload_1
+  iconst_3
+  iadd
+  istore_2
+  iload_2
+  iload_3
+  isub
+  istore_2
+  iload_2
+  aload_0
+  invokestatic cn/domob/android/ads/q/a(I[B)B
+  istore 7
+  iload 6
+  iload 7
+  ixor
+  istore 6
+  iload 6
+  i2b
+  istore 6
+  aload_0
+  iload 4
+  iload 6
+  bastore
+  iload_3
+  iconst_m1
+  iadd
+  istore_3
+  goto Label2
+Label1:
+  iload_1
+  iconst_4
+  iadd
+  istore_1
+  goto Label3
+Label0:
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method private static c([B)Ljava/lang/String;
+.limit locals 12
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore_1
+  ldc ""
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  iconst_0
+  istore_3
+Label2:
+  aload_0
+  arraylength
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 4
+  if_icmpge Label0
+  aload_0
+  iload_3
+  baload
+  istore 5
+  sipush 255
+  istore 7
+  iload 5
+  iload 7
+  iand
+  istore 6
+  iload 6
+  invokestatic java/lang/Integer/toHexString(I)Ljava/lang/String;
+  astore 8
+  aload 8
+  invokevirtual java/lang/String/length()I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 7
+  iload 9
+  iload 7
+  if_icmpne Label1
+  new java/lang/StringBuilder
+  astore 10
+  aload 10
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "0"
+  astore_2
+  aload 10
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 10
+  aload 10
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 10
+  aload 10
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 8
+Label1:
+  aload_1
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  pop
+  iload_3
+  iconst_1
+  iadd
+  istore_3
+  goto Label2
+Label0:
+  aload_1
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 11
+  aload 11
+  invokevirtual java/lang/String/toUpperCase()Ljava/lang/String;
+  astore 11
+  aload 11
+  invokevirtual java/lang/String/trim()Ljava/lang/String;
+  astore 11
+  aload 11
+  areturn
+  nop
+.end <method>
+

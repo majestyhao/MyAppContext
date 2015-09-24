@@ -1,0 +1,2098 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/tencent/mobwin/core/a/d
+.super java/lang/Object
+.field private static "A" Ljava/lang/String;
+.field private static "B" Ljava/lang/String;
+.field public static final "a" Ljava/lang/String; =  "res_embed_browser"
+.field public static final "b" Ljava/lang/String; =  "res_banner"
+.field private static "v" I =  0
+.field private static "y" J =  0
+.field private final "c" Ljava/lang/String;
+.field private final "d" Ljava/lang/String;
+.field private final "e" Ljava/lang/String;
+.field private final "f" Ljava/lang/String;
+.field private final "g" Ljava/lang/String;
+.field private final "h" Ljava/lang/String;
+.field private final "i" Ljava/lang/String;
+.field private final "j" Ljava/lang/String;
+.field private final "k" Ljava/lang/String;
+.field private final "l" Ljava/lang/String;
+.field private final "m" Ljava/lang/String;
+.field private "n" LMobWin/AppRefreshSetting;
+.field private "o" Ljava/lang/String;
+.field private "p" LMobWin/AppModeSetting;
+.field private "q" I
+.field private "r" I
+.field private "s" F
+.field private "t" LMobWin/AppColorsSetting;
+.field private "u" J
+.field private "w" J
+.field private "x" J
+.field private "z" Ljava/util/HashMap;
+
+.method static <clinit>()V
+.limit locals 3
+.limit stack 200
+  nop
+  iconst_0
+  istore_0
+  iload_0
+  putstatic com/tencent/mobwin/core/a/d/v I
+  ldc2_w 86400000
+  lstore_1
+  lload_1
+  putstatic com/tencent/mobwin/core/a/d/y J
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc "http://softfile.3g.qq.com:8080/mobwin/ce_icons/320_1_2/album.png"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/a/d/c Ljava/lang/String;
+  ldc "http://softfile.3g.qq.com:8080/mobwin/ce_icons/320_1_2/download.png"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/a/d/d Ljava/lang/String;
+  ldc "http://softfile.3g.qq.com:8080/mobwin/ce_icons/320_1_2/location.png"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/a/d/e Ljava/lang/String;
+  ldc "http://softfile.3g.qq.com:8080/mobwin/ce_icons/320_1_2/message.png"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/a/d/f Ljava/lang/String;
+  ldc "http://softfile.3g.qq.com:8080/mobwin/ce_icons/320_1_2/phone.png"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/a/d/g Ljava/lang/String;
+  ldc "http://softfile.3g.qq.com:8080/mobwin/ce_icons/320_1_2/web.png"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/a/d/h Ljava/lang/String;
+  ldc "http://softfile.3g.qq.com:8080/mobwin/sdk_res/320_1_2"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/a/d/i Ljava/lang/String;
+  ldc "http://softfile.3g.qq.com:8080/mobwin/sdk_res/320_1_2/"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/a/d/j Ljava/lang/String;
+  ldc "http://softfile.3g.qq.com:8080/mobwin/sdk_res/320_1_2/"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/a/d/k Ljava/lang/String;
+  ldc "http://softfile.3g.qq.com:8080/mobwin/sdk_res/320_1_2/"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/a/d/l Ljava/lang/String;
+  ldc "http://120.196.211.8/mobwin/embed_browser/mobWIN_pic/320_1_2"
+  astore_1
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/a/d/m Ljava/lang/String;
+  ldc ""
+  astore_1
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/a/d/o Ljava/lang/String;
+  iconst_1
+  istore_2
+  aload_0
+  iload_2
+  putfield com/tencent/mobwin/core/a/d/r I
+  ldc 0.800000
+  fstore_3
+  aload_0
+  fload_3
+  putfield com/tencent/mobwin/core/a/d/s F
+  ldc2_w 0
+  lstore 4
+  aload_0
+  lload 4
+  putfield com/tencent/mobwin/core/a/d/u J
+  ldc2_w 0
+  lstore 4
+  aload_0
+  lload 4
+  putfield com/tencent/mobwin/core/a/d/w J
+  ldc2_w 2592000000
+  lstore 4
+  aload_0
+  lload 4
+  putfield com/tencent/mobwin/core/a/d/x J
+  return
+  nop
+.end <method>
+
+.method public static a()I
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/tencent/mobwin/core/a/d/v I
+  istore_0
+  iload_0
+  ireturn
+  nop
+.end <method>
+
+.method public a(I)Ljava/lang/String;
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/a/d/z Ljava/util/HashMap;
+  astore_2
+  iload_1
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 4
+  aload 4
+  astore 6
+  aload 6
+  checkcast java/lang/String
+  astore 6
+  aload 6
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method public a(Landroid/content/Context;)V
+.limit locals 24
+.limit stack 200
+  nop
+  ldc "mobwin"
+  astore 5
+  iconst_0
+  istore 6
+  aload_1
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  ldc "appTimeStamp"
+  astore 5
+  ldc2_w 0
+  lstore 9
+  aload 4
+  aload 5
+  lload 9
+  invokeinterface android/content/SharedPreferences/getLong(Ljava/lang/String;J)J 4
+  lstore 7
+  aload_0
+  astore_2
+  aload_2
+  lload 7
+  putfield com/tencent/mobwin/core/a/d/u J
+  ldc "sysTimeStamp"
+  astore 5
+  ldc2_w 0
+  lstore 9
+  aload 4
+  aload 5
+  lload 9
+  invokeinterface android/content/SharedPreferences/getLong(Ljava/lang/String;J)J 4
+  lstore 7
+  aload_0
+  astore_2
+  aload_2
+  lload 7
+  putfield com/tencent/mobwin/core/a/d/w J
+  ldc "minDisplayRatio"
+  astore 5
+  ldc 0.800000
+  fstore 12
+  aload 4
+  aload 5
+  fload 12
+  invokeinterface android/content/SharedPreferences/getFloat(Ljava/lang/String;F)F 3
+  fstore 11
+  aload_0
+  astore_2
+  aload_2
+  fload 11
+  putfield com/tencent/mobwin/core/a/d/s F
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/r I
+  istore 13
+  ldc "maxAdViews"
+  astore 5
+  aload 4
+  aload 5
+  iload 13
+  invokeinterface android/content/SharedPreferences/getInt(Ljava/lang/String;I)I 3
+  istore 13
+  aload_0
+  astore_2
+  aload_2
+  iload 13
+  putfield com/tencent/mobwin/core/a/d/r I
+  ldc "sdkVersion"
+  astore 5
+  ldc ""
+  astore 15
+  aload 4
+  aload 5
+  aload 15
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 14
+  aload_0
+  astore_2
+  aload_2
+  aload 14
+  putfield com/tencent/mobwin/core/a/d/o Ljava/lang/String;
+  ldc "safeLevel"
+  astore 5
+  iconst_0
+  istore 6
+  aload 4
+  aload 5
+  iload 6
+  invokeinterface android/content/SharedPreferences/getInt(Ljava/lang/String;I)I 3
+  istore 13
+  iload 13
+  putstatic com/tencent/mobwin/core/a/d/v I
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/o Ljava/lang/String;
+  astore 14
+  invokestatic com/tencent/mobwin/core/w/h()Ljava/lang/String;
+  astore 16
+  aload 14
+  aload 16
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 17
+  iload 17
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 17
+  ifne Label0
+  ldc2_w 0
+  lstore 9
+  aload_0
+  astore_2
+  aload_2
+  lload 9
+  putfield com/tencent/mobwin/core/a/d/w J
+Label0:
+  ldc "timeFileDeletePeriodic"
+  astore 5
+  ldc2_w 2592000000
+  lstore 9
+  aload 4
+  aload 5
+  lload 9
+  invokeinterface android/content/SharedPreferences/getLong(Ljava/lang/String;J)J 4
+  lstore 7
+  aload_0
+  astore_2
+  aload_2
+  lload 7
+  putfield com/tencent/mobwin/core/a/d/x J
+  new MobWin/AppRefreshSetting
+  astore 18
+  aload 18
+  astore_2
+  aload_2
+  invokespecial MobWin/AppRefreshSetting/<init>()V
+  aload 18
+  astore_2
+  aload_0
+  astore_3
+  aload_3
+  aload_2
+  putfield com/tencent/mobwin/core/a/d/n LMobWin/AppRefreshSetting;
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/n LMobWin/AppRefreshSetting;
+  astore_2
+  aload_2
+  astore 18
+  ldc "AppRefreshSetting.isUseSDKDefault"
+  astore 5
+  iconst_1
+  istore 6
+  aload 4
+  aload 5
+  iload 6
+  invokeinterface android/content/SharedPreferences/getBoolean(Ljava/lang/String;Z)Z 3
+  istore 17
+  aload 18
+  astore_2
+  aload_2
+  iload 17
+  putfield MobWin/AppRefreshSetting/a Z
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/n LMobWin/AppRefreshSetting;
+  astore_2
+  aload_2
+  astore 18
+  ldc "AppRefreshSetting.refreshInterval"
+  astore 5
+  bipush 30
+  istore 6
+  aload 4
+  aload 5
+  iload 6
+  invokeinterface android/content/SharedPreferences/getInt(Ljava/lang/String;I)I 3
+  istore 13
+  aload 18
+  astore_2
+  aload_2
+  iload 13
+  putfield MobWin/AppRefreshSetting/b I
+  new MobWin/AppModeSetting
+  astore 19
+  aload 19
+  astore_2
+  aload_2
+  invokespecial MobWin/AppModeSetting/<init>()V
+  aload 19
+  astore_2
+  aload_0
+  astore_3
+  aload_3
+  aload_2
+  putfield com/tencent/mobwin/core/a/d/p LMobWin/AppModeSetting;
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/p LMobWin/AppModeSetting;
+  astore_2
+  aload_2
+  astore 19
+  ldc "AppModeSetting.isUseSDKDefault"
+  astore 5
+  iconst_1
+  istore 6
+  aload 4
+  aload 5
+  iload 6
+  invokeinterface android/content/SharedPreferences/getBoolean(Ljava/lang/String;Z)Z 3
+  istore 17
+  aload 19
+  astore_2
+  aload_2
+  iload 17
+  putfield MobWin/AppModeSetting/isUseSDKDefault Z
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/p LMobWin/AppModeSetting;
+  astore_2
+  aload_2
+  astore 19
+  iconst_1
+  istore 6
+  iload 6
+  istore 13
+  ldc "AppModeSetting.appMode"
+  astore 5
+  aload 4
+  aload 5
+  iload 13
+  invokeinterface android/content/SharedPreferences/getInt(Ljava/lang/String;I)I 3
+  istore 13
+  aload 19
+  astore_2
+  aload_2
+  iload 13
+  putfield MobWin/AppModeSetting/appMode I
+  ldc "APP_PLAY_STATUS_OPTION"
+  astore 5
+  iconst_2
+  istore 6
+  aload 4
+  aload 5
+  iload 6
+  invokeinterface android/content/SharedPreferences/getInt(Ljava/lang/String;I)I 3
+  istore 13
+  aload_0
+  astore_2
+  aload_2
+  iload 13
+  putfield com/tencent/mobwin/core/a/d/q I
+  new MobWin/AppColorsSetting
+  astore 20
+  aload 20
+  astore_2
+  aload_2
+  invokespecial MobWin/AppColorsSetting/<init>()V
+  aload 20
+  astore_2
+  aload_0
+  astore_3
+  aload_3
+  aload_2
+  putfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  astore_2
+  aload_2
+  astore 20
+  ldc "AppColorsSetting.isUseSDKDefault"
+  astore 5
+  iconst_1
+  istore 6
+  aload 4
+  aload 5
+  iload 6
+  invokeinterface android/content/SharedPreferences/getBoolean(Ljava/lang/String;Z)Z 3
+  istore 17
+  aload 20
+  astore_2
+  aload_2
+  iload 17
+  putfield MobWin/AppColorsSetting/a Z
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  astore_2
+  aload_2
+  astore 20
+  ldc "AppColorsSetting.bannerBgColor"
+  astore 5
+  ldc ""
+  astore 15
+  aload 4
+  aload 5
+  aload 15
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 14
+  aload 20
+  astore_2
+  aload_2
+  aload 14
+  putfield MobWin/AppColorsSetting/d Ljava/lang/String;
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  astore_2
+  aload_2
+  astore 20
+  ldc "AppColorSetting.bannerBgOpacity"
+  astore 5
+  ldc ""
+  astore 15
+  aload 4
+  aload 5
+  aload 15
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 14
+  aload 20
+  astore_2
+  aload_2
+  aload 14
+  putfield MobWin/AppColorsSetting/e Ljava/lang/String;
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  astore_2
+  aload_2
+  astore 20
+  ldc "AppColorSetting.titleColor"
+  astore 5
+  ldc ""
+  astore 15
+  aload 4
+  aload 5
+  aload 15
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 14
+  aload 20
+  astore_2
+  aload_2
+  aload 14
+  putfield MobWin/AppColorsSetting/b Ljava/lang/String;
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  astore_2
+  aload_2
+  astore 20
+  ldc "AppColorSetting.wordsColor"
+  astore 5
+  ldc ""
+  astore 15
+  aload 4
+  aload 5
+  aload 15
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 14
+  aload 20
+  astore_2
+  aload_2
+  aload 14
+  putfield MobWin/AppColorsSetting/c Ljava/lang/String;
+  new java/util/HashMap
+  astore 21
+  aload 21
+  astore_2
+  aload_2
+  invokespecial java/util/HashMap/<init>()V
+  aload 21
+  astore_2
+  aload_0
+  astore_3
+  aload_3
+  aload_2
+  putfield com/tencent/mobwin/core/a/d/z Ljava/util/HashMap;
+  ldc "WWW"
+  astore 5
+  ldc "http://softfile.3g.qq.com:8080/mobwin/ce_icons/320_1_2/web.png"
+  astore 15
+  aload 4
+  aload 5
+  aload 15
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 14
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/z Ljava/util/HashMap;
+  astore_2
+  aload_2
+  astore 21
+  iconst_0
+  istore 6
+  iload 6
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 22
+  aload 21
+  astore_2
+  aload 22
+  astore_3
+  aload_2
+  aload_3
+  aload 14
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  ldc "DOWNLOAD"
+  astore 5
+  ldc "http://softfile.3g.qq.com:8080/mobwin/ce_icons/320_1_2/download.png"
+  astore 15
+  aload 4
+  aload 5
+  aload 15
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 14
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/z Ljava/util/HashMap;
+  astore_2
+  aload_2
+  astore 21
+  iconst_1
+  istore 6
+  iload 6
+  istore 23
+  iload 23
+  istore_2
+  iload_2
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 22
+  aload 21
+  astore_2
+  aload 22
+  astore_3
+  aload_2
+  aload_3
+  aload 14
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  ldc "PHONE"
+  astore 5
+  ldc "http://softfile.3g.qq.com:8080/mobwin/ce_icons/320_1_2/phone.png"
+  astore 15
+  aload 4
+  aload 5
+  aload 15
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 14
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/z Ljava/util/HashMap;
+  astore_2
+  aload_2
+  astore 21
+  iconst_2
+  istore 6
+  iload 6
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 22
+  aload 21
+  astore_2
+  aload 22
+  astore_3
+  aload_2
+  aload_3
+  aload 14
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  ldc "SMS"
+  astore 5
+  ldc "http://softfile.3g.qq.com:8080/mobwin/ce_icons/320_1_2/message.png"
+  astore 15
+  aload 4
+  aload 5
+  aload 15
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 14
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/z Ljava/util/HashMap;
+  astore_2
+  aload_2
+  astore 21
+  iconst_3
+  istore 6
+  iload 6
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 22
+  aload 21
+  astore_2
+  aload 22
+  astore_3
+  aload_2
+  aload_3
+  aload 14
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  ldc "LOCATION"
+  astore 5
+  ldc "http://softfile.3g.qq.com:8080/mobwin/ce_icons/320_1_2/location.png"
+  astore 15
+  aload 4
+  aload 5
+  aload 15
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 14
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/z Ljava/util/HashMap;
+  astore_2
+  aload_2
+  astore 21
+  iconst_4
+  istore 6
+  iload 6
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 22
+  aload 21
+  astore_2
+  aload 22
+  astore_3
+  aload_2
+  aload_3
+  aload 14
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  ldc "ALBUM"
+  astore 5
+  ldc "http://softfile.3g.qq.com:8080/mobwin/ce_icons/320_1_2/album.png"
+  astore 15
+  aload 4
+  aload 5
+  aload 15
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 14
+  aload_0
+  astore_2
+  aload_2
+  getfield com/tencent/mobwin/core/a/d/z Ljava/util/HashMap;
+  astore_2
+  aload_2
+  astore 21
+  iconst_5
+  istore 6
+  iload 6
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 22
+  aload 21
+  astore_2
+  aload 22
+  astore_3
+  aload_2
+  aload_3
+  aload 14
+  invokevirtual java/util/HashMap/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+  pop
+  ldc "EMBEDBROWSERRESOURSE"
+  astore 5
+  ldc "http://120.196.211.8/mobwin/embed_browser/mobWIN_pic/320_1_2"
+  astore 15
+  aload 4
+  aload 5
+  aload 15
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 14
+  aload 14
+  putstatic com/tencent/mobwin/core/a/d/A Ljava/lang/String;
+  ldc "BANNERRESOURSE"
+  astore 5
+  ldc "http://softfile.3g.qq.com:8080/mobwin/sdk_res/320_1_2"
+  astore 15
+  aload 4
+  aload 5
+  aload 15
+  invokeinterface android/content/SharedPreferences/getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; 3
+  astore 14
+  aload 14
+  putstatic com/tencent/mobwin/core/a/d/B Ljava/lang/String;
+  return
+  nop
+.end <method>
+
+.method public a(Landroid/content/Context;LMobWin/AppSettings;LMobWin/SysSettings;)V
+.limit locals 44
+.limit stack 200
+  nop
+  ldc "mobwin"
+  astore 8
+  iconst_0
+  istore 9
+  aload_1
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload 7
+  invokeinterface android/content/SharedPreferences/edit()Landroid/content/SharedPreferences$Editor; 1
+  astore 10
+  invokestatic com/tencent/mobwin/core/w/h()Ljava/lang/String;
+  astore 11
+  ldc "sdkVersion"
+  astore 8
+  aload 10
+  aload 8
+  aload 11
+  invokeinterface android/content/SharedPreferences$Editor/putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  new java/lang/StringBuilder
+  astore 12
+  ldc "appSetting"
+  astore 8
+  aload 12
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_2
+  astore 4
+  aload 12
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore 12
+  aload 12
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 11
+  ldc "SDK"
+  astore 8
+  aload 8
+  aload 11
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore 12
+  ldc "sysSettings"
+  astore 8
+  aload 12
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_3
+  astore 4
+  aload 12
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore 12
+  aload 12
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 11
+  ldc "SDK"
+  astore 8
+  aload 8
+  aload 11
+  invokestatic com/tencent/mobwin/core/o/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload_2
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_2
+  ifeq Label0
+  aload_2
+  astore 4
+  aload 4
+  getfield MobWin/AppSettings/a Z
+  istore 13
+  iload 13
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 13
+  ifeq Label0
+  aload_2
+  astore 4
+  aload 4
+  getfield MobWin/AppSettings/b J
+  lstore 14
+  aload_0
+  astore 4
+  aload 4
+  lload 14
+  putfield com/tencent/mobwin/core/a/d/u J
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/u J
+  lstore 14
+  ldc "appTimeStamp"
+  astore 8
+  aload 10
+  aload 8
+  lload 14
+  invokeinterface android/content/SharedPreferences$Editor/putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor; 4
+  pop
+  aload_2
+  astore 4
+  aload 4
+  getfield MobWin/AppSettings/c I
+  istore 16
+  aload_0
+  astore 4
+  aload 4
+  iload 16
+  putfield com/tencent/mobwin/core/a/d/q I
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/q I
+  istore 16
+  ldc "APP_PLAY_STATUS_OPTION"
+  astore 8
+  aload 10
+  aload 8
+  iload 16
+  invokeinterface android/content/SharedPreferences$Editor/putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload_2
+  astore 4
+  aload 4
+  getfield MobWin/AppSettings/d LMobWin/AppRefreshSetting;
+  astore 17
+  aload 17
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 17
+  ifnull Label1
+  aload_2
+  astore 4
+  aload 4
+  getfield MobWin/AppSettings/d LMobWin/AppRefreshSetting;
+  astore 17
+  aload_0
+  astore 4
+  aload 4
+  aload 17
+  putfield com/tencent/mobwin/core/a/d/n LMobWin/AppRefreshSetting;
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/n LMobWin/AppRefreshSetting;
+  astore 17
+  aload 17
+  getfield MobWin/AppRefreshSetting/b I
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 16
+  ifeq Label2
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/n LMobWin/AppRefreshSetting;
+  astore 17
+  aload 17
+  getfield MobWin/AppRefreshSetting/b I
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 20
+  istore 9
+  iload 16
+  iload 9
+  if_icmpge Label2
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/n LMobWin/AppRefreshSetting;
+  astore 17
+  bipush 20
+  istore 9
+  aload 17
+  iload 9
+  putfield MobWin/AppRefreshSetting/b I
+Label11:
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/n LMobWin/AppRefreshSetting;
+  astore 17
+  aload 17
+  getfield MobWin/AppRefreshSetting/a Z
+  istore 13
+  ldc "AppRefreshSetting.isUseSDKDefault"
+  astore 8
+  aload 10
+  aload 8
+  iload 13
+  invokeinterface android/content/SharedPreferences$Editor/putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/n LMobWin/AppRefreshSetting;
+  astore 17
+  aload 17
+  getfield MobWin/AppRefreshSetting/b I
+  istore 16
+  ldc "AppRefreshSetting.refreshInterval"
+  astore 8
+  aload 10
+  aload 8
+  iload 16
+  invokeinterface android/content/SharedPreferences$Editor/putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor; 3
+  pop
+Label1:
+  aload_2
+  astore 4
+  aload 4
+  getfield MobWin/AppSettings/e LMobWin/AppModeSetting;
+  astore 18
+  aload 18
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 18
+  ifnull Label3
+  aload_2
+  astore 4
+  aload 4
+  getfield MobWin/AppSettings/e LMobWin/AppModeSetting;
+  astore 18
+  aload_0
+  astore 4
+  aload 4
+  aload 18
+  putfield com/tencent/mobwin/core/a/d/p LMobWin/AppModeSetting;
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/p LMobWin/AppModeSetting;
+  astore 18
+  aload 18
+  getfield MobWin/AppModeSetting/isUseSDKDefault Z
+  istore 13
+  ldc "AppModeSetting.isUseSDKDefault"
+  astore 8
+  aload 10
+  aload 8
+  iload 13
+  invokeinterface android/content/SharedPreferences$Editor/putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/p LMobWin/AppModeSetting;
+  astore 18
+  aload 18
+  getfield MobWin/AppModeSetting/appMode I
+  istore 16
+  ldc "AppModeSetting.appMode"
+  astore 8
+  aload 10
+  aload 8
+  iload 16
+  invokeinterface android/content/SharedPreferences$Editor/putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor; 3
+  pop
+Label3:
+  aload_2
+  astore 4
+  aload 4
+  getfield MobWin/AppSettings/f LMobWin/AppColorsSetting;
+  astore 19
+  aload 19
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 19
+  ifnull Label0
+  aload_2
+  astore 4
+  aload 4
+  getfield MobWin/AppSettings/f LMobWin/AppColorsSetting;
+  astore 19
+  aload_0
+  astore 4
+  aload 4
+  aload 19
+  putfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  astore 19
+  aload 19
+  getfield MobWin/AppColorsSetting/a Z
+  istore 13
+  ldc "AppColorsSetting.isUseSDKDefault"
+  astore 8
+  aload 10
+  aload 8
+  iload 13
+  invokeinterface android/content/SharedPreferences$Editor/putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  astore 19
+  aload 19
+  getfield MobWin/AppColorsSetting/d Ljava/lang/String;
+  astore 11
+  ldc "AppColorsSetting.bannerBgColor"
+  astore 8
+  aload 10
+  aload 8
+  aload 11
+  invokeinterface android/content/SharedPreferences$Editor/putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  astore 19
+  aload 19
+  getfield MobWin/AppColorsSetting/e Ljava/lang/String;
+  astore 11
+  ldc "AppColorSetting.bannerBgOpacity"
+  astore 8
+  aload 10
+  aload 8
+  aload 11
+  invokeinterface android/content/SharedPreferences$Editor/putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  astore 19
+  aload 19
+  getfield MobWin/AppColorsSetting/b Ljava/lang/String;
+  astore 11
+  ldc "AppColorSetting.titleColor"
+  astore 8
+  aload 10
+  aload 8
+  aload 11
+  invokeinterface android/content/SharedPreferences$Editor/putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  astore 19
+  aload 19
+  getfield MobWin/AppColorsSetting/c Ljava/lang/String;
+  astore 11
+  ldc "AppColorSetting.wordsColor"
+  astore 8
+  aload 10
+  aload 8
+  aload 11
+  invokeinterface android/content/SharedPreferences$Editor/putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor; 3
+  pop
+Label0:
+  aload_3
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_3
+  ifeq Label4
+  aload_3
+  astore 4
+  aload 4
+  getfield MobWin/SysSettings/a Z
+  istore 13
+  iload 13
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 13
+  ifeq Label4
+  aload_3
+  astore 4
+  aload 4
+  getfield MobWin/SysSettings/e I
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 16
+  ifle Label5
+  aload_3
+  astore 4
+  aload 4
+  getfield MobWin/SysSettings/e I
+  istore 16
+  aload_0
+  astore 4
+  aload 4
+  iload 16
+  putfield com/tencent/mobwin/core/a/d/r I
+Label5:
+  aload_3
+  astore 4
+  aload 4
+  invokevirtual MobWin/SysSettings/g()I
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 16
+  ifle Label6
+  aload_3
+  astore 4
+  aload 4
+  invokevirtual MobWin/SysSettings/g()I
+  istore 16
+  iload 16
+  i2l
+  lstore 14
+  getstatic com/tencent/mobwin/core/a/d/y J
+  lstore 20
+  lload 14
+  lload 20
+  lmul
+  lstore 20
+  lload 20
+  lstore 4
+  aload_0
+  astore 6
+  aload 6
+  lload 4
+  putfield com/tencent/mobwin/core/a/d/x J
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/x J
+  lstore 4
+  lload 4
+  lstore 20
+  ldc "timeFileDeletePeriodic"
+  astore 8
+  lload 20
+  lstore 4
+  aload 10
+  aload 8
+  lload 4
+  invokeinterface android/content/SharedPreferences$Editor/putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor; 4
+  pop
+Label6:
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/r I
+  istore 16
+  ldc "maxAdViews"
+  astore 8
+  aload 10
+  aload 8
+  iload 16
+  invokeinterface android/content/SharedPreferences$Editor/putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload_3
+  astore 4
+  aload 4
+  getfield MobWin/SysSettings/h F
+  fstore 4
+  fload 4
+  fstore 22
+  fconst_0
+  fstore 24
+  fload 22
+  fload 24
+  fcmpl
+  istore 23
+  iload 23
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 23
+  ifle Label7
+  aload_3
+  astore 4
+  aload 4
+  getfield MobWin/SysSettings/h F
+  fstore 4
+  fload 4
+  fstore 25
+  aload_0
+  astore 5
+  aload 5
+  fload 4
+  putfield com/tencent/mobwin/core/a/d/s F
+Label7:
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/s F
+  fstore 4
+  fload 4
+  fstore 25
+  ldc "minDisplayRatio"
+  astore 8
+  fload 25
+  fstore 4
+  aload 10
+  aload 8
+  fload 4
+  invokeinterface android/content/SharedPreferences$Editor/putFloat(Ljava/lang/String;F)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload_3
+  astore 4
+  aload 4
+  getfield MobWin/SysSettings/b J
+  lstore 4
+  lload 4
+  lstore 20
+  lload 20
+  lstore 4
+  aload_0
+  astore 6
+  aload 6
+  lload 4
+  putfield com/tencent/mobwin/core/a/d/w J
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/w J
+  lstore 4
+  lload 4
+  lstore 20
+  ldc "sysTimeStamp"
+  astore 8
+  lload 20
+  lstore 4
+  aload 10
+  aload 8
+  lload 4
+  invokeinterface android/content/SharedPreferences$Editor/putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor; 4
+  pop
+  aload_3
+  astore 4
+  aload 4
+  getfield MobWin/SysSettings/g I
+  istore 16
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 16
+  iflt Label8
+  getstatic com/tencent/mobwin/core/a/d/v I
+  istore 16
+  aload_3
+  astore 4
+  aload 4
+  getfield MobWin/SysSettings/g I
+  istore 4
+  iload 4
+  istore 26
+  dload 16
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 26
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 26
+  istore 4
+  iload 16
+  iload 4
+  if_icmpeq Label9
+  ldc2_w 0
+  lstore 27
+  lload 27
+  lstore 4
+  aload_0
+  astore 6
+  aload 6
+  lload 4
+  putfield com/tencent/mobwin/core/a/d/w J
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/w J
+  lstore 4
+  lload 4
+  lstore 20
+  ldc "sysTimeStamp"
+  astore 8
+  lload 20
+  lstore 4
+  aload 10
+  aload 8
+  lload 4
+  invokeinterface android/content/SharedPreferences$Editor/putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor; 4
+  pop
+Label9:
+  aload_3
+  astore 4
+  aload 4
+  getfield MobWin/SysSettings/g I
+  istore 4
+  iload 4
+  istore 26
+  iload 26
+  putstatic com/tencent/mobwin/core/a/d/v I
+  getstatic com/tencent/mobwin/core/a/d/v I
+  istore 26
+  ldc "safeLevel"
+  astore 8
+  iload 26
+  istore 4
+  aload 10
+  aload 8
+  iload 4
+  invokeinterface android/content/SharedPreferences$Editor/putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor; 3
+  pop
+Label8:
+  aload_3
+  astore 4
+  aload 4
+  getfield MobWin/SysSettings/c Ljava/util/Map;
+  astore 4
+  aload 4
+  astore 29
+  aload 29
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 29
+  ifnull Label10
+  aload_3
+  astore 4
+  aload 4
+  getfield MobWin/SysSettings/c Ljava/util/Map;
+  astore 4
+  aload 4
+  astore 29
+  aload 29
+  astore 31
+  aload 31
+  checkcast java/util/HashMap
+  astore 31
+  aload 31
+  astore 30
+  aload 30
+  astore 4
+  aload_0
+  astore 5
+  aload 5
+  aload 4
+  putfield com/tencent/mobwin/core/a/d/z Ljava/util/HashMap;
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/z Ljava/util/HashMap;
+  astore 4
+  aload 4
+  astore 30
+  iconst_0
+  istore 9
+  iload 9
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 32
+  aload 30
+  astore 4
+  aload 32
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 33
+  aload 33
+  astore 35
+  aload 35
+  checkcast java/lang/String
+  astore 35
+  aload 35
+  astore 34
+  ldc "WWW"
+  astore 8
+  aload 34
+  astore 4
+  aload 10
+  aload 8
+  aload 4
+  invokeinterface android/content/SharedPreferences$Editor/putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/z Ljava/util/HashMap;
+  astore 4
+  aload 4
+  astore 30
+  iconst_1
+  istore 9
+  iload 9
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 32
+  aload 30
+  astore 4
+  aload 32
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 33
+  aload 33
+  astore 36
+  aload 36
+  checkcast java/lang/String
+  astore 36
+  aload 36
+  astore 34
+  ldc "DOWNLOAD"
+  astore 8
+  aload 34
+  astore 4
+  aload 10
+  aload 8
+  aload 4
+  invokeinterface android/content/SharedPreferences$Editor/putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/z Ljava/util/HashMap;
+  astore 4
+  aload 4
+  astore 30
+  iconst_2
+  istore 9
+  iload 9
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 32
+  aload 30
+  astore 4
+  aload 32
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 33
+  aload 33
+  astore 37
+  aload 37
+  checkcast java/lang/String
+  astore 37
+  aload 37
+  astore 34
+  ldc "PHONE"
+  astore 8
+  aload 34
+  astore 4
+  aload 10
+  aload 8
+  aload 4
+  invokeinterface android/content/SharedPreferences$Editor/putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/z Ljava/util/HashMap;
+  astore 4
+  aload 4
+  astore 30
+  iconst_3
+  istore 9
+  iload 9
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 32
+  aload 30
+  astore 4
+  aload 32
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 33
+  aload 33
+  astore 38
+  aload 38
+  checkcast java/lang/String
+  astore 38
+  aload 38
+  astore 34
+  ldc "SMS"
+  astore 8
+  aload 34
+  astore 4
+  aload 10
+  aload 8
+  aload 4
+  invokeinterface android/content/SharedPreferences$Editor/putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/z Ljava/util/HashMap;
+  astore 4
+  aload 4
+  astore 30
+  iconst_4
+  istore 9
+  iload 9
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 32
+  aload 30
+  astore 4
+  aload 32
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 33
+  aload 33
+  astore 39
+  aload 39
+  checkcast java/lang/String
+  astore 39
+  aload 39
+  astore 34
+  ldc "LOCATION"
+  astore 8
+  aload 34
+  astore 4
+  aload 10
+  aload 8
+  aload 4
+  invokeinterface android/content/SharedPreferences$Editor/putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/z Ljava/util/HashMap;
+  astore 4
+  aload 4
+  astore 30
+  iconst_5
+  istore 9
+  iload 9
+  invokestatic java/lang/Integer/valueOf(I)Ljava/lang/Integer;
+  astore 32
+  aload 30
+  astore 4
+  aload 32
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 33
+  aload 33
+  astore 40
+  aload 40
+  checkcast java/lang/String
+  astore 40
+  aload 40
+  astore 34
+  ldc "ALBUM"
+  astore 8
+  aload 34
+  astore 4
+  aload 10
+  aload 8
+  aload 4
+  invokeinterface android/content/SharedPreferences$Editor/putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor; 3
+  pop
+Label10:
+  aload_3
+  astore 4
+  aload 4
+  getfield MobWin/SysSettings/i Ljava/util/Map;
+  astore 4
+  aload 4
+  astore 29
+  aload 29
+  astore 4
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 29
+  ifnull Label4
+  aload_3
+  astore 4
+  aload 4
+  getfield MobWin/SysSettings/i Ljava/util/Map;
+  astore 4
+  aload 4
+  astore 29
+  aload 29
+  astore 41
+  aload 41
+  checkcast java/util/HashMap
+  astore 41
+  aload 41
+  astore 30
+  ldc "res_embed_browser"
+  astore 8
+  aload 30
+  astore 4
+  aload 4
+  aload 8
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 33
+  aload 33
+  astore 42
+  aload 42
+  checkcast java/lang/String
+  astore 42
+  aload 42
+  astore 34
+  aload 34
+  putstatic com/tencent/mobwin/core/a/d/A Ljava/lang/String;
+  getstatic com/tencent/mobwin/core/a/d/A Ljava/lang/String;
+  astore 11
+  ldc "EMBEDBROWSERRESOURSE"
+  astore 8
+  aload 10
+  aload 8
+  aload 11
+  invokeinterface android/content/SharedPreferences$Editor/putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor; 3
+  pop
+  ldc "res_banner"
+  astore 8
+  aload 30
+  astore 4
+  aload 4
+  aload 8
+  invokevirtual java/util/HashMap/get(Ljava/lang/Object;)Ljava/lang/Object;
+  astore 33
+  aload 33
+  astore 43
+  aload 43
+  checkcast java/lang/String
+  astore 43
+  aload 43
+  astore 34
+  aload 34
+  putstatic com/tencent/mobwin/core/a/d/B Ljava/lang/String;
+  getstatic com/tencent/mobwin/core/a/d/B Ljava/lang/String;
+  astore 11
+  ldc "BANNERRESOURSE"
+  astore 8
+  aload 10
+  aload 8
+  aload 11
+  invokeinterface android/content/SharedPreferences$Editor/putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor; 3
+  pop
+Label4:
+  aload 10
+  invokeinterface android/content/SharedPreferences$Editor/commit()Z 1
+  pop
+  return
+Label2:
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/n LMobWin/AppRefreshSetting;
+  astore 17
+  aload 17
+  getfield MobWin/AppRefreshSetting/b I
+  istore 4
+  iload 4
+  istore 26
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 180
+  istore 9
+  iload 26
+  istore 4
+  iload 4
+  iload 9
+  if_icmple Label11
+  aload_0
+  astore 4
+  aload 4
+  getfield com/tencent/mobwin/core/a/d/n LMobWin/AppRefreshSetting;
+  astore 17
+  sipush 180
+  istore 9
+  aload 17
+  iload 9
+  putfield MobWin/AppRefreshSetting/b I
+  goto Label11
+  nop
+.end <method>
+
+.method public b()J
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/a/d/u J
+  lstore_1
+  lload_1
+  lreturn
+  nop
+.end <method>
+
+.method public c()J
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/a/d/w J
+  lstore_1
+  lload_1
+  lreturn
+  nop
+.end <method>
+
+.method public d()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/a/d/r I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public e()F
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/a/d/s F
+  fstore_1
+  fload_1
+  freturn
+  nop
+.end <method>
+
+.method public f()LMobWin/AppRefreshSetting;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/a/d/n LMobWin/AppRefreshSetting;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public g()LMobWin/AppModeSetting;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/a/d/p LMobWin/AppModeSetting;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public h()J
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/a/d/x J
+  lstore_1
+  lload_1
+  lreturn
+  nop
+.end <method>
+
+.method public i()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/a/d/q I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public static j()Ljava/lang/String;
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/tencent/mobwin/core/a/d/A Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public static k()Ljava/lang/String;
+.limit locals 1
+.limit stack 200
+  nop
+  getstatic com/tencent/mobwin/core/a/d/B Ljava/lang/String;
+  astore_0
+  aload_0
+  areturn
+  nop
+.end <method>
+
+.method public l()I
+.limit locals 8
+.limit stack 200
+  .catch  java/lang/Exception <from> Label2 <to> Label3 <using> Label1
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  astore_1
+  aload_1
+  getfield MobWin/AppColorsSetting/b Ljava/lang/String;
+  astore_2
+Label2:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifne Label0
+  new java/lang/StringBuilder
+  astore 4
+  ldc "#FF"
+  astore 5
+  aload 4
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 4
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic android/graphics/Color/parseColor(Ljava/lang/String;)I
+  istore 6
+Label3:
+  iload 6
+  ireturn
+Label1:
+  astore 7
+  aload 7
+  invokevirtual java/lang/Exception/printStackTrace()V
+Label0:
+  getstatic com/tencent/mobwin/core/a/a/d I
+  istore 6
+  iload 6
+  ireturn
+  nop
+.end <method>
+
+.method public m()I
+.limit locals 8
+.limit stack 200
+  .catch  java/lang/Exception <from> Label2 <to> Label3 <using> Label1
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  astore_1
+  aload_1
+  getfield MobWin/AppColorsSetting/c Ljava/lang/String;
+  astore_2
+Label2:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifne Label0
+  new java/lang/StringBuilder
+  astore 4
+  ldc "#FF"
+  astore 5
+  aload 4
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 4
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic android/graphics/Color/parseColor(Ljava/lang/String;)I
+  istore 6
+Label3:
+  iload 6
+  ireturn
+Label1:
+  astore 7
+  aload 7
+  invokevirtual java/lang/Exception/printStackTrace()V
+Label0:
+  getstatic com/tencent/mobwin/core/a/a/f I
+  istore 6
+  iload 6
+  ireturn
+  nop
+.end <method>
+
+.method public n()I
+.limit locals 8
+.limit stack 200
+  .catch  java/lang/Exception <from> Label2 <to> Label3 <using> Label1
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  astore_1
+  aload_1
+  getfield MobWin/AppColorsSetting/d Ljava/lang/String;
+  astore_2
+Label2:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifne Label0
+  new java/lang/StringBuilder
+  astore 4
+  ldc "#FF"
+  astore 5
+  aload 4
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload 4
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 4
+  aload 4
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic android/graphics/Color/parseColor(Ljava/lang/String;)I
+  istore 6
+Label3:
+  iload 6
+  ireturn
+Label1:
+  astore 7
+  aload 7
+  invokevirtual java/lang/Exception/printStackTrace()V
+Label0:
+  getstatic com/tencent/mobwin/core/a/a/b I
+  istore 6
+  iload 6
+  ireturn
+  nop
+.end <method>
+
+.method public o()Z
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  astore_1
+  aload_1
+  getfield MobWin/AppColorsSetting/a Z
+  istore_2
+  iload_2
+  ireturn
+  nop
+.end <method>
+
+.method public p()I
+.limit locals 6
+.limit stack 200
+  .catch  java/lang/Exception <from> Label2 <to> Label3 <using> Label1
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/a/d/t LMobWin/AppColorsSetting;
+  astore_1
+  aload_1
+  getfield MobWin/AppColorsSetting/e Ljava/lang/String;
+  astore_2
+Label2:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifne Label0
+  aload_2
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 4
+Label3:
+  iload 4
+  sipush 255
+  imul
+  istore 4
+  iload 4
+  bipush 100
+  idiv
+  istore 4
+  iload 4
+  ireturn
+Label1:
+  astore 5
+Label0:
+  getstatic com/tencent/mobwin/core/a/a/h I
+  istore 4
+  iload 4
+  ireturn
+  nop
+.end <method>
+

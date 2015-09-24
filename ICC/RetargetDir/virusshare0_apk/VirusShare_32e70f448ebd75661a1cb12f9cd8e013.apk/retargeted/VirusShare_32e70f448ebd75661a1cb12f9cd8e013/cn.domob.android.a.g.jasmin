@@ -1,0 +1,1059 @@
+.source SourceFile
+.class public  cn/domob/android/a/g
+.super java/lang/Thread
+.field private static final "a" I =  10240
+.field private static final "k" I =  40000
+.field private static final "l" I =  60000
+.field private static final "m" I =  30
+.field private "b" Ljava/net/URL;
+.field private "c" Ljava/io/File;
+.field private "d" J
+.field private "e" J
+.field private "f" J
+.field private "g" Z
+.field private "h" J
+.field private "i" Lcn/domob/android/a/f$a;
+.field private "j" Lcn/domob/android/a/d;
+.field private "n" Landroid/content/Context;
+
+.method <init>(Ljava/net/URL;Ljava/io/File;JJLcn/domob/android/a/f$a;Lcn/domob/android/a/d;Landroid/content/Context;)V
+.limit locals 19
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Thread/<init>()V
+  iconst_0
+  istore 11
+  aload_0
+  iload 11
+  putfield cn/domob/android/a/g/g Z
+  ldc2_w 0
+  lstore 12
+  aload_0
+  lload 12
+  putfield cn/domob/android/a/g/h J
+  aconst_null
+  astore 14
+  aload_0
+  aload 14
+  putfield cn/domob/android/a/g/n Landroid/content/Context;
+  aload_0
+  aload_1
+  putfield cn/domob/android/a/g/b Ljava/net/URL;
+  aload_0
+  aload_2
+  putfield cn/domob/android/a/g/c Ljava/io/File;
+  aload_0
+  lload_3
+  putfield cn/domob/android/a/g/d J
+  aload_0
+  lload_3
+  putfield cn/domob/android/a/g/f J
+  aload_0
+  lload 5
+  putfield cn/domob/android/a/g/e J
+  aload 7
+  astore 10
+  aload_0
+  aload 10
+  putfield cn/domob/android/a/g/i Lcn/domob/android/a/f$a;
+  aload 8
+  astore 10
+  aload_0
+  aload 10
+  putfield cn/domob/android/a/g/j Lcn/domob/android/a/d;
+  aload_0
+  lload_3
+  putfield cn/domob/android/a/g/h J
+  aload 9
+  astore 10
+  aload_0
+  aload 10
+  putfield cn/domob/android/a/g/n Landroid/content/Context;
+  lload_3
+  lload 5
+  lcmp
+  istore 15
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 15
+  ifle Label0
+  ldc2_w 0
+  lstore 12
+  lload 5
+  lload 12
+  lcmp
+  istore 15
+  dload 15
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 15
+  ifle Label0
+  ldc "Start postition is larger than end position, set finished to true"
+  astore 16
+  aload_0
+  aload 16
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  iconst_1
+  istore 11
+  aload_0
+  iload 11
+  putfield cn/domob/android/a/g/g Z
+Label0:
+  new java/lang/StringBuilder
+  astore 17
+  aload 17
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "download st:"
+  astore 16
+  aload 17
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 17
+  aload 17
+  lload_3
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore 17
+  ldc " ed:"
+  astore 16
+  aload 17
+  aload 16
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 17
+  aload 17
+  lload 5
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore 17
+  aload 17
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 18
+  aload_0
+  aload 18
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+
+.method public a()Z
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/g/g Z
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public b()J
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/a/g/h J
+  lstore_1
+  lload_1
+  lreturn
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 43
+.limit stack 200
+  .catch  java/lang/Exception <from> Label14 <to> Label15 <using> Label13
+  .catch  java/lang/Exception <from> Label15 <to> Label18 <using> Label13
+  .catch  java/io/IOException <from> Label15 <to> Label18 <using> Label16
+  .catch  java/net/SocketTimeoutException <from> Label15 <to> Label18 <using> Label17
+  .catch  java/lang/Exception <from> Label18 <to> Label19 <using> Label13
+  .catch  java/lang/Exception <from> Label4 <to> Label20 <using> Label13
+  .catch  java/io/IOException <from> Label4 <to> Label20 <using> Label16
+  .catch  java/net/SocketTimeoutException <from> Label4 <to> Label20 <using> Label17
+  .catch  java/lang/Exception <from> Label9 <to> Label21 <using> Label13
+  .catch  java/io/IOException <from> Label9 <to> Label21 <using> Label16
+  .catch  java/net/SocketTimeoutException <from> Label9 <to> Label21 <using> Label17
+  .catch  java/lang/Exception <from> Label21 <to> Label23 <using> Label13
+  .catch  java/io/IOException <from> Label21 <to> Label23 <using> Label16
+  .catch  java/net/SocketTimeoutException <from> Label21 <to> Label23 <using> Label17
+  .catch  java/lang/Exception <from> Label24 <to> Label25 <using> Label13
+  .catch  java/io/IOException <from> Label24 <to> Label25 <using> Label16
+  .catch  java/net/SocketTimeoutException <from> Label24 <to> Label25 <using> Label17
+  .catch  java/lang/Exception <from> Label10 <to> Label26 <using> Label13
+  nop
+  sipush 10240
+  istore 6
+  iload 6
+  newarray byte
+  astore 5
+Label14:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/n Landroid/content/Context;
+  astore 7
+Label15:
+  aload 7
+  invokestatic cn/domob/android/a/e/b(Landroid/content/Context;)Ljava/net/Proxy;
+  astore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 8
+  ifeq Label0
+  ldc "Proxy exists"
+  astore 9
+  aload_0
+  astore_1
+  aload_1
+  aload 9
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/b Ljava/net/URL;
+  astore 10
+  aload 10
+  aload 8
+  invokevirtual java/net/URL/openConnection(Ljava/net/Proxy;)Ljava/net/URLConnection;
+  astore 11
+  aload 11
+  astore 13
+  aload 13
+  checkcast java/net/HttpURLConnection
+  astore 13
+  aload 13
+  astore 12
+Label5:
+  ldc 40000
+  istore 6
+  aload 12
+  iload 6
+  invokevirtual java/net/HttpURLConnection/setConnectTimeout(I)V
+  ldc 60000
+  istore 6
+  aload 12
+  iload 6
+  invokevirtual java/net/HttpURLConnection/setReadTimeout(I)V
+  iconst_1
+  istore 6
+  aload 12
+  iload 6
+  invokevirtual java/net/HttpURLConnection/setAllowUserInteraction(Z)V
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "bytes="
+  astore 9
+  aload 14
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/d J
+  lstore 15
+  aload 14
+  lload 15
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore 14
+  ldc "-"
+  astore 9
+  aload 14
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/e J
+  lstore 15
+  aload 14
+  lload 15
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 17
+  ldc "Range"
+  astore 9
+  aload 17
+  astore_1
+  aload 12
+  aload 9
+  aload_1
+  invokevirtual java/net/HttpURLConnection/setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
+  new java/io/RandomAccessFile
+  astore 18
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/c Ljava/io/File;
+  astore_1
+  aload_1
+  astore 19
+  ldc "rw"
+  astore 9
+  aload 18
+  astore_1
+  aload 19
+  astore_2
+  aload_1
+  aload_2
+  aload 9
+  invokespecial java/io/RandomAccessFile/<init>(Ljava/io/File;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/c Ljava/io/File;
+  astore_1
+  aload_1
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokevirtual java/io/File/getAbsoluteFile()Ljava/io/File;
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokevirtual java/io/File/toString()Ljava/lang/String;
+  astore 20
+  ldc "/data/data/"
+  astore 9
+  aload 20
+  astore_1
+  aload_1
+  aload 9
+  invokevirtual java/lang/String/startsWith(Ljava/lang/String;)Z
+  istore 21
+  iload 21
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 21
+  ifeq Label1
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "download in rom change chmod "
+  astore 9
+  aload 14
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/c Ljava/io/File;
+  astore_1
+  aload_1
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokevirtual java/io/File/getAbsolutePath()Ljava/lang/String;
+  astore 20
+  aload 20
+  astore_1
+  aload 14
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 20
+  aload_0
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "chmod 777 "
+  astore 9
+  aload 14
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/c Ljava/io/File;
+  astore_1
+  aload_1
+  astore 19
+  aload 19
+  astore_1
+  aload_1
+  invokevirtual java/io/File/getAbsolutePath()Ljava/lang/String;
+  astore 20
+  aload 20
+  astore_1
+  aload 14
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 20
+  invokestatic java/lang/Runtime/getRuntime()Ljava/lang/Runtime;
+  astore 22
+  aload 22
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual java/lang/Runtime/exec(Ljava/lang/String;)Ljava/lang/Process;
+  pop
+Label1:
+  aload 12
+  invokevirtual java/net/HttpURLConnection/getResponseCode()I
+  istore 23
+  iload 23
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  sipush 206
+  istore 6
+  iload 23
+  istore_1
+  iload_1
+  iload 6
+  if_icmpne Label2
+  ldc "support range parameter,continue to download"
+  astore 9
+  aload_0
+  astore_1
+  aload_1
+  aload 9
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/d J
+  lstore 15
+  aload 18
+  astore_1
+  aload_1
+  lload 15
+  invokevirtual java/io/RandomAccessFile/seek(J)V
+Label7:
+  new java/io/BufferedInputStream
+  astore 24
+  aload 12
+  invokevirtual java/net/HttpURLConnection/getInputStream()Ljava/io/InputStream;
+  astore 25
+  aload 24
+  astore_1
+  aload 25
+  astore_2
+  aload_1
+  aload_2
+  invokespecial java/io/BufferedInputStream/<init>(Ljava/io/InputStream;)V
+Label11:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/f J
+  lstore 15
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/e J
+  lstore_1
+  lload_1
+  lstore 26
+  lload 15
+  lload 26
+  lcmp
+  istore 28
+  iload 28
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 28
+  ifge Label3
+  ldc "downloading"
+  astore 9
+  aload_0
+  astore_1
+  aload_1
+  aload 9
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/i Lcn/domob/android/a/f$a;
+  astore_1
+  aload_1
+  astore 29
+  aload 29
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/f$a/a Z
+  istore_1
+  iload_1
+  istore 21
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 21
+  ifeq Label4
+Label8:
+  return
+Label0:
+  ldc "Proxy is null"
+  astore 9
+  aload_0
+  astore_1
+  aload_1
+  aload 9
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/b Ljava/net/URL;
+  astore 10
+  aload 10
+  invokevirtual java/net/URL/openConnection()Ljava/net/URLConnection;
+  astore 11
+  aload 11
+  astore 30
+  aload 30
+  checkcast java/net/HttpURLConnection
+  astore 30
+  aload 30
+  astore 12
+  goto Label5
+Label2:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/d J
+  lstore 15
+  ldc2_w 0
+  lstore 31
+  lload 15
+  lload 31
+  lcmp
+  istore 28
+  iload 28
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 28
+  ifle Label6
+  ldc "don\'t support range parameter,download from beginning"
+  astore 9
+  aload_0
+  astore_1
+  aload_1
+  aload 9
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+Label6:
+  ldc2_w 0
+  lstore 31
+  aload 18
+  astore_1
+  lload 31
+  lstore_2
+  aload_1
+  lload_2
+  invokevirtual java/io/RandomAccessFile/seek(J)V
+Label18:
+  ldc2_w 0
+  lstore 31
+  lload 31
+  lstore_1
+  aload_0
+  astore_3
+  aload_3
+  lload_1
+  putfield cn/domob/android/a/g/h J
+  ldc2_w 0
+  lstore 31
+  lload 31
+  lstore_1
+  aload_0
+  astore_3
+  aload_3
+  lload_1
+  putfield cn/domob/android/a/g/f J
+Label19:
+  goto Label7
+Label17:
+  astore 33
+  ldc "download SocketTimeoutException "
+  astore 9
+  aload_0
+  astore_1
+  aload_1
+  aload 9
+  invokestatic cn/domob/android/ads/J/b(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/j Lcn/domob/android/a/d;
+  astore_1
+  aload_1
+  astore 34
+  ldc "\u4e0b\u8f7d\u8fc7\u7a0b\u4e2d\u7f51\u7edc\u51fa\u73b0\u5f02\u5e38"
+  astore 9
+  aload 34
+  astore_1
+  aload_1
+  aload 9
+  invokeinterface cn/domob/android/a/d/a(Ljava/lang/String;)V 2
+  goto Label8
+Label4:
+  iconst_0
+  istore 6
+  sipush 10240
+  istore 35
+  aload 24
+  astore_1
+  iload 35
+  istore_2
+  aload_1
+  aload 5
+  iload 6
+  iload_2
+  invokevirtual java/io/BufferedInputStream/read([BII)I
+  istore 23
+  iload 23
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 6
+  iload 23
+  istore_1
+  iload_1
+  iload 6
+  if_icmpne Label9
+Label3:
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Total downloadsize: "
+  astore 9
+  aload 14
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/h J
+  lstore 15
+  aload 14
+  lload 15
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 20
+  aload_0
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  iconst_1
+  istore 6
+  aload_0
+  astore_1
+  aload_1
+  iload 6
+  putfield cn/domob/android/a/g/g Z
+  aload 24
+  astore_1
+  aload_1
+  invokevirtual java/io/BufferedInputStream/close()V
+  aload 18
+  astore_1
+  aload_1
+  invokevirtual java/io/RandomAccessFile/close()V
+Label20:
+  goto Label8
+Label16:
+  astore 36
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "download IOException "
+  astore 9
+  aload 14
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 36
+  astore_1
+  aload_1
+  invokevirtual java/io/IOException/getMessage()Ljava/lang/String;
+  astore 20
+  aload 20
+  astore_1
+  aload 14
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 20
+  aload_0
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokestatic cn/domob/android/ads/J/b(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/j Lcn/domob/android/a/d;
+  astore_1
+  aload_1
+  astore 34
+  ldc "\u4e0b\u8f7d\u8fc7\u7a0b\u4e2d\u51fa\u73b0\u5f02\u5e38"
+  astore 9
+  aload 34
+  astore_1
+  aload_1
+  aload 9
+  invokeinterface cn/domob/android/a/d/a(Ljava/lang/String;)V 2
+  goto Label8
+Label9:
+  iconst_0
+  istore 6
+  aload 18
+  astore_1
+  iload 23
+  istore_2
+  aload_1
+  aload 5
+  iload 6
+  iload_2
+  invokevirtual java/io/RandomAccessFile/write([BII)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/f J
+  lstore 15
+  iload 23
+  istore_1
+  iload_1
+  i2l
+  lstore_1
+  lload_1
+  lstore 26
+  lload 26
+  lstore_1
+  lload 15
+  lload_1
+  ladd
+  lstore 15
+  aload_0
+  astore_1
+  aload_1
+  lload 15
+  putfield cn/domob/android/a/g/f J
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/f J
+  lstore 15
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/e J
+  lstore_1
+  lload_1
+  lstore 26
+  lload 15
+  lload 26
+  lcmp
+  istore 28
+  iload 28
+  istore_1
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 28
+  ifle Label10
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/h J
+  lstore_1
+  lload_1
+  lstore 37
+  iload 23
+  istore_1
+  iload_1
+  i2l
+  lstore_1
+  lload_1
+  lstore 39
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/f J
+  lstore_1
+  lload_1
+  lstore 26
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/e J
+  lstore 15
+  lload 26
+  lload 15
+  lsub
+  lstore 15
+  lload 39
+  lstore_1
+  lload_1
+  lload 15
+  lsub
+  lstore_1
+  lload_1
+  lstore 39
+  ldc2_w 1
+  lstore 31
+  lload 39
+  lstore_1
+  lload 31
+  lstore_3
+  lload_1
+  lload_3
+  ladd
+  lstore_1
+  lload_1
+  lstore 39
+  lload 37
+  lload 39
+  ladd
+  lstore 39
+  lload 39
+  lstore_1
+  aload_0
+  astore_3
+  aload_3
+  lload_1
+  putfield cn/domob/android/a/g/h J
+Label12:
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Download  length="
+  astore 9
+  aload 14
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/h J
+  lstore_1
+  lload_1
+  lstore 39
+  lload 39
+  lstore_1
+  aload 14
+  lload_1
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore 14
+  ldc ",fileSize="
+  astore 9
+  aload 14
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 18
+  astore_1
+  aload_1
+  invokevirtual java/io/RandomAccessFile/length()J
+  lstore 39
+  lload 39
+  lstore_1
+  aload 14
+  lload_1
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 20
+  aload_0
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+Label21:
+  ldc2_w 30
+  lstore 31
+  lload 31
+  lstore_1
+  lload_1
+  invokestatic java/lang/Thread/sleep(J)V
+Label23:
+  goto Label11
+Label22:
+  astore 41
+Label24:
+  aload 41
+  astore_1
+  aload_1
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Throwable;)V
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "download Interrupt error:"
+  astore 9
+  aload 14
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 41
+  astore_1
+  aload_1
+  invokevirtual java/lang/InterruptedException/getMessage()Ljava/lang/String;
+  astore 17
+  aload 17
+  astore_1
+  aload 14
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 17
+  ldc "DomobSDK"
+  astore 9
+  aload 17
+  astore_1
+  aload 9
+  aload_1
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/j Lcn/domob/android/a/d;
+  astore_1
+  aload_1
+  astore 34
+  ldc "\u4e0b\u8f7d\u8fc7\u7a0b\u4e2d\u51fa\u73b0\u5f02\u5e38"
+  astore 9
+  aload 34
+  astore_1
+  aload_1
+  aload 9
+  invokeinterface cn/domob/android/a/d/a(Ljava/lang/String;)V 2
+Label25:
+  goto Label11
+Label13:
+  astore 42
+  new java/lang/StringBuilder
+  astore 14
+  aload 14
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "download error "
+  astore 9
+  aload 14
+  aload 9
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 42
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/getMessage()Ljava/lang/String;
+  astore 20
+  aload 20
+  astore_1
+  aload 14
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 14
+  aload 14
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 20
+  aload_0
+  astore_1
+  aload 20
+  astore_2
+  aload_1
+  aload_2
+  invokestatic cn/domob/android/ads/J/b(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/j Lcn/domob/android/a/d;
+  astore_1
+  aload_1
+  astore 34
+  ldc "\u4e0b\u8f7d\u8fc7\u7a0b\u4e2d\u51fa\u73b0\u5f02\u5e38"
+  astore 9
+  aload 34
+  astore_1
+  aload_1
+  aload 9
+  invokeinterface cn/domob/android/a/d/a(Ljava/lang/String;)V 2
+  aload 42
+  astore_1
+  aload_1
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label8
+Label10:
+  aload_0
+  astore_1
+  aload_1
+  getfield cn/domob/android/a/g/h J
+  lstore_1
+  lload_1
+  lstore 39
+  iload 23
+  istore_1
+  iload_1
+  i2l
+  lstore_1
+  lload_1
+  lstore 37
+  lload 39
+  lstore_1
+  lload 37
+  lstore_3
+  lload_1
+  lload_3
+  ladd
+  lstore_1
+  lload_1
+  lstore 39
+  lload 39
+  lstore_1
+  aload_0
+  astore_3
+  aload_3
+  lload_1
+  putfield cn/domob/android/a/g/h J
+Label26:
+  goto Label12
+  nop
+.end <method>
+

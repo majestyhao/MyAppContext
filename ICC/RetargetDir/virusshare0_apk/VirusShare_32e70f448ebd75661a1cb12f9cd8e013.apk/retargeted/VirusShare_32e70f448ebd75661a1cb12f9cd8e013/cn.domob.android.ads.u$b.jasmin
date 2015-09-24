@@ -1,0 +1,46 @@
+.source SourceFile
+.class  cn/domob/android/ads/u$b
+.super java/lang/Object
+.implements  javax/net/ssl/X509TrustManager
+.field final "a" Lcn/domob/android/ads/u;
+
+.method <init>(Lcn/domob/android/ads/u;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/u$b/a Lcn/domob/android/ads/u;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public checkClientTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
+.limit locals 3
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+
+.method public checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
+.limit locals 3
+.limit stack 200
+  nop
+  return
+  nop
+.end <method>
+
+.method public getAcceptedIssuers()[Ljava/security/cert/X509Certificate;
+.limit locals 2
+.limit stack 200
+  nop
+  aconst_null
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+

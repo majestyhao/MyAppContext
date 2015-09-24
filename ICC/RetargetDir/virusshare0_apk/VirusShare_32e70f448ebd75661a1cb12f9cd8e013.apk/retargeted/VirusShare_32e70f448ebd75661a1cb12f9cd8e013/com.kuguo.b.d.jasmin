@@ -1,0 +1,403 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public abstract  com/kuguo/b/d
+.super java/lang/Object
+.field protected "a" Landroid/content/Context;
+.field private "b" Lcom/kuguo/b/g;
+.field private "c" Ljava/lang/Exception;
+.field private "d" I
+.field private "e" Ljava/util/Map;
+.field private "f" Lcom/kuguo/b/h;
+.field private "g" F
+.field private "h" Lcom/kuguo/b/c;
+.field private "i" Ljava/io/InputStream;
+
+.method public <init>(Landroid/content/Context;Lcom/kuguo/b/g;)V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  aload_1
+  putfield com/kuguo/b/d/a Landroid/content/Context;
+  aload_0
+  aload_2
+  putfield com/kuguo/b/d/b Lcom/kuguo/b/g;
+  iconst_m1
+  istore_3
+  aload_0
+  iload_3
+  putfield com/kuguo/b/d/d I
+  ldc 30.000000
+  fstore 4
+  aload_0
+  fload 4
+  putfield com/kuguo/b/d/g F
+  return
+  nop
+.end <method>
+
+.method public abstract a()V
+.end <method>
+
+.method protected a(I)V
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/b/d/d I
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  iload_2
+  if_icmpeq Label0
+  aload_0
+  iload_1
+  putfield com/kuguo/b/d/d I
+  aload_0
+  getfield com/kuguo/b/d/f Lcom/kuguo/b/h;
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_3
+  ifnull Label0
+  aload_0
+  getfield com/kuguo/b/d/f Lcom/kuguo/b/h;
+  astore_3
+  aload_3
+  aload_0
+  iload_1
+  invokeinterface com/kuguo/b/h/a(Lcom/kuguo/b/d;I)V 3
+Label0:
+  return
+  nop
+.end <method>
+
+.method public a(Lcom/kuguo/b/h;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/kuguo/b/d/f Lcom/kuguo/b/h;
+  return
+  nop
+.end <method>
+
+.method protected a(Ljava/io/InputStream;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/kuguo/b/d/i Ljava/io/InputStream;
+  return
+  nop
+.end <method>
+
+.method protected a(Ljava/lang/Exception;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/kuguo/b/d/c Ljava/lang/Exception;
+  return
+  nop
+.end <method>
+
+.method protected a(Ljava/util/Map;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/kuguo/b/d/e Ljava/util/Map;
+  return
+  nop
+.end <method>
+
+.method public abstract b()V
+.end <method>
+
+.method public c()Z
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/b/d/d I
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  lookupswitch
+  -4 : Label1
+  -3 : Label1
+  -2 : Label2
+  -1 : Label1
+  default : Label0
+Label0:
+  goto Label2
+Label2:
+  iconst_0
+  istore_2
+  iload_2
+  ireturn
+Label1:
+  iconst_1
+  istore_2
+  iload_2
+  ireturn
+  nop
+  nop
+  nop
+.end <method>
+
+.method public d()Lcom/kuguo/b/g;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/b/d/b Lcom/kuguo/b/g;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public e()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokevirtual com/kuguo/b/d/b()V
+  iconst_m1
+  istore_1
+  aload_0
+  iload_1
+  putfield com/kuguo/b/d/d I
+  return
+  nop
+.end <method>
+
+.method public f()Ljava/io/InputStream;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/b/d/i Ljava/io/InputStream;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public g()Ljava/util/Map;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/b/d/e Ljava/util/Map;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public h()I
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/b/d/d I
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+
+.method public i()Ljava/lang/Exception;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/b/d/c Ljava/lang/Exception;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public j()F
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/b/d/g F
+  fstore_1
+  fload_1
+  freturn
+  nop
+.end <method>
+
+.method public k()Lcom/kuguo/b/c;
+.limit locals 13
+.limit stack 200
+  nop
+  aload_0
+  getfield com/kuguo/b/d/h Lcom/kuguo/b/c;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+Label3:
+  aload_0
+  getfield com/kuguo/b/d/a Landroid/content/Context;
+  astore_2
+  ldc "connectivity"
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore_3
+  aload_3
+  astore 6
+  aload 6
+  checkcast android/net/ConnectivityManager
+  astore 6
+  aload 6
+  astore 5
+  aload 5
+  invokevirtual android/net/ConnectivityManager/getActiveNetworkInfo()Landroid/net/NetworkInfo;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label0
+  aload 7
+  invokevirtual android/net/NetworkInfo/getExtraInfo()Ljava/lang/String;
+  astore 8
+  ldc "cmwap"
+  astore 9
+  aload 9
+  aload 8
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifne Label1
+  ldc "uniwap"
+  astore 9
+  aload 9
+  aload 8
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifne Label1
+  ldc "cmwap"
+  astore 9
+  aload 9
+  aload 8
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifne Label1
+  ldc "ctwap:cdma"
+  astore 9
+  aload 9
+  aload 8
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 10
+  iload 10
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 10
+  ifeq Label0
+Label1:
+  new com/kuguo/b/c
+  astore_1
+  ldc "10.0.0.172"
+  astore 4
+  bipush 80
+  istore 11
+  aload_1
+  aload 4
+  iload 11
+  invokespecial com/kuguo/b/c/<init>(Ljava/lang/String;I)V
+Label4:
+  aload_1
+  areturn
+Label2:
+  astore 12
+Label0:
+  aload_0
+  getfield com/kuguo/b/d/h Lcom/kuguo/b/c;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public l()Z
+.limit locals 9
+.limit stack 200
+  .catch  java/lang/Exception <from> Label2 <to> Label3 <using> Label1
+  nop
+Label2:
+  aload_0
+  getfield com/kuguo/b/d/a Landroid/content/Context;
+  astore_1
+  ldc "connectivity"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  astore 5
+  aload 5
+  checkcast android/net/ConnectivityManager
+  astore 5
+  aload 5
+  astore 4
+  aload 4
+  invokevirtual android/net/ConnectivityManager/getActiveNetworkInfo()Landroid/net/NetworkInfo;
+  astore 6
+Label3:
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label0
+  iconst_1
+  istore 7
+  iload 7
+  ireturn
+Label0:
+  iconst_0
+  istore 7
+  iload 7
+  ireturn
+Label1:
+  astore 8
+  iconst_1
+  istore 7
+  iload 7
+  ireturn
+  nop
+.end <method>
+

@@ -1,0 +1,2033 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public final  d
+.super java/lang/Object
+.field private static final "a" Ljava/lang/Object;
+.field private "b" Ljava/lang/ref/WeakReference;
+.field private "c" Lcom/google/ads/Ad;
+.field private "d" Lcom/google/ads/AdListener;
+.field private "e" Lc;
+.field private "f" Lcom/google/ads/AdRequest;
+.field private "g" Lcom/google/ads/AdSize;
+.field private "h" Lf;
+.field private "i" Ljava/lang/String;
+.field private "j" Lg;
+.field private "k" Lh;
+.field private "l" Landroid/os/Handler;
+.field private "m" J
+.field private "n" Z
+.field private "o" Z
+.field private "p" Landroid/content/SharedPreferences;
+.field private "q" J
+.field private "r" Lx;
+.field private "s" Z
+.field private "t" Ljava/util/LinkedList;
+.field private "u" Ljava/util/LinkedList;
+.field private "v" I
+
+.method static <clinit>()V
+.limit locals 1
+.limit stack 200
+  nop
+  new java/lang/Object
+  astore_0
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  putstatic d/a Ljava/lang/Object;
+  return
+  nop
+.end <method>
+
+.method public <init>(Landroid/app/Activity;Lcom/google/ads/Ad;Lcom/google/ads/AdSize;Ljava/lang/String;Z)V
+.limit locals 28
+.limit stack 200
+  nop
+  aload_0
+  astore 6
+  aload 6
+  invokespecial java/lang/Object/<init>()V
+  new java/lang/ref/WeakReference
+  astore 9
+  aload_1
+  astore 6
+  aload 9
+  aload 6
+  invokespecial java/lang/ref/WeakReference/<init>(Ljava/lang/Object;)V
+  aload_0
+  astore 6
+  aload 6
+  aload 9
+  putfield d/b Ljava/lang/ref/WeakReference;
+  aload_2
+  astore 6
+  aload_0
+  astore 7
+  aload 7
+  aload 6
+  putfield d/c Lcom/google/ads/Ad;
+  aload_3
+  astore 6
+  aload_0
+  astore 7
+  aload 7
+  aload 6
+  putfield d/g Lcom/google/ads/AdSize;
+  aload 4
+  astore 6
+  aload_0
+  astore 7
+  aload 7
+  aload 6
+  putfield d/i Ljava/lang/String;
+  iload 5
+  istore 6
+  aload_0
+  astore 7
+  aload 7
+  iload 6
+  putfield d/s Z
+  new f
+  astore 10
+  aload 10
+  invokespecial f/<init>()V
+  aload_0
+  astore 6
+  aload 6
+  aload 10
+  putfield d/h Lf;
+  aconst_null
+  astore 11
+  aload_0
+  astore 6
+  aload 6
+  aload 11
+  putfield d/d Lcom/google/ads/AdListener;
+  aconst_null
+  astore 11
+  aload_0
+  astore 6
+  aload 6
+  aload 11
+  putfield d/e Lc;
+  aconst_null
+  astore 11
+  aload_0
+  astore 6
+  aload 6
+  aload 11
+  putfield d/f Lcom/google/ads/AdRequest;
+  iconst_0
+  istore 12
+  aload_0
+  astore 6
+  aload 6
+  iload 12
+  putfield d/n Z
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 13
+  invokespecial android/os/Handler/<init>()V
+  aload_0
+  astore 6
+  aload 6
+  aload 13
+  putfield d/l Landroid/os/Handler;
+  ldc2_w 0
+  lstore 14
+  aload_0
+  astore 6
+  aload 6
+  lload 14
+  putfield d/q J
+  iconst_0
+  istore 12
+  aload_0
+  astore 6
+  aload 6
+  iload 12
+  putfield d/o Z
+  getstatic d/a Ljava/lang/Object;
+  astore 16
+  aload 16
+  monitorenter
+Label4:
+  aload_1
+  astore 6
+  aload 6
+  invokevirtual android/app/Activity/getApplicationContext()Landroid/content/Context;
+  astore 17
+  ldc "GoogleAdMobAdsPrefs"
+  astore 19
+  iconst_0
+  istore 12
+  aload 17
+  aload 19
+  iload 12
+  invokevirtual android/content/Context/getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+  astore 18
+  aload_0
+  astore 6
+  aload 6
+  aload 18
+  putfield d/p Landroid/content/SharedPreferences;
+  iload 5
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 5
+  ifeq Label0
+  aload_0
+  astore 6
+  aload 6
+  getfield d/p Landroid/content/SharedPreferences;
+  astore 18
+  new java/lang/StringBuilder
+  astore 20
+  aload 20
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Timeout"
+  astore 19
+  aload 20
+  aload 19
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 20
+  aload 4
+  astore 6
+  aload 20
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 20
+  aload 20
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 21
+  ldc2_w 4294967295
+  lstore 14
+  aload 18
+  aload 21
+  lload 14
+  invokeinterface android/content/SharedPreferences/getLong(Ljava/lang/String;J)J 4
+  lstore 22
+  ldc2_w 0
+  lstore 14
+  lload 22
+  lload 14
+  lcmp
+  istore 24
+  iload 24
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 24
+  ifge Label1
+  ldc2_w 5000
+  lstore 14
+  aload_0
+  astore 6
+  aload 6
+  lload 14
+  putfield d/m J
+Label2:
+  aload 16
+  monitorexit
+Label5:
+  new x
+  astore 25
+  aload 25
+  astore 6
+  aload_0
+  astore 7
+  aload 6
+  aload 7
+  invokespecial x/<init>(Ld;)V
+  aload 25
+  astore 6
+  aload_0
+  astore 7
+  aload 7
+  aload 6
+  putfield d/r Lx;
+  new java/util/LinkedList
+  astore 26
+  aload 26
+  astore 6
+  aload 6
+  invokespecial java/util/LinkedList/<init>()V
+  aload 26
+  astore 6
+  aload_0
+  astore 7
+  aload 7
+  aload 6
+  putfield d/t Ljava/util/LinkedList;
+  new java/util/LinkedList
+  astore 26
+  aload 26
+  astore 6
+  aload 6
+  invokespecial java/util/LinkedList/<init>()V
+  aload 26
+  astore 6
+  aload_0
+  astore 7
+  aload 7
+  aload 6
+  putfield d/u Ljava/util/LinkedList;
+  aload_0
+  astore 6
+  aload 6
+  invokevirtual d/a()V
+  aload_1
+  astore 6
+  aload 6
+  invokevirtual android/app/Activity/getApplicationContext()Landroid/content/Context;
+  astore 17
+  aload 17
+  invokestatic com/google/ads/util/AdUtil/g(Landroid/content/Context;)V
+  return
+Label1:
+  lload 22
+  lstore 6
+  aload_0
+  astore 8
+  aload 8
+  lload 6
+  putfield d/m J
+Label6:
+  goto Label2
+Label3:
+  astore 27
+  aload 16
+  monitorexit
+  aload 27
+  athrow
+Label0:
+  ldc2_w 60000
+  lstore 14
+  aload_0
+  astore 6
+  aload 6
+  lload 14
+  putfield d/m J
+Label7:
+  goto Label2
+  nop
+.end <method>
+
+.method private A()Z
+.limit locals 4
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label3 <to> Label4 <using> Label2
+  nop
+  aload_0
+  monitorenter
+Label3:
+  aload_0
+  getfield d/e Lc;
+  astore_1
+Label4:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  iconst_1
+  istore_2
+Label1:
+  aload_0
+  monitorexit
+  iload_2
+  ireturn
+Label0:
+  iconst_0
+  istore_2
+  goto Label1
+Label2:
+  astore_3
+  aload_0
+  monitorexit
+  aload_3
+  athrow
+  nop
+.end <method>
+
+.method private B()V
+.limit locals 15
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label4 <to> Label1 <using> Label3
+  .catch  java/lang/Throwable <from> Label0 <to> Label5 <using> Label3
+  nop
+  aload_0
+  monitorenter
+Label4:
+  aload_0
+  getfield d/b Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore_2
+  aload_2
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 4
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_3
+  ifne Label0
+  ldc "activity was null while trying to ping click tracking URLs."
+  astore 5
+  aload 5
+  invokestatic com/google/ads/util/a/e(Ljava/lang/String;)V
+Label1:
+  aload_0
+  monitorexit
+  return
+Label0:
+  aload_0
+  getfield d/u Ljava/util/LinkedList;
+  astore 6
+  aload 6
+  invokevirtual java/util/LinkedList/iterator()Ljava/util/Iterator;
+  astore 7
+Label2:
+  aload 7
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label1
+  aload 7
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore_2
+  aload_2
+  astore 10
+  aload 10
+  checkcast java/lang/String
+  astore 10
+  aload 10
+  astore 9
+  new java/lang/Thread
+  astore 11
+  new w
+  astore 12
+  aload_3
+  invokevirtual android/app/Activity/getApplicationContext()Landroid/content/Context;
+  astore 13
+  aload 12
+  aload 9
+  aload 13
+  invokespecial w/<init>(Ljava/lang/String;Landroid/content/Context;)V
+  aload 11
+  aload 12
+  invokespecial java/lang/Thread/<init>(Ljava/lang/Runnable;)V
+  aload 11
+  invokevirtual java/lang/Thread/start()V
+Label5:
+  goto Label2
+Label3:
+  astore 14
+  aload_0
+  monitorexit
+  aload 14
+  athrow
+  nop
+.end <method>
+
+.method public final a()V
+.limit locals 13
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label5 <to> Label2 <using> Label4
+  .catch  java/lang/Throwable <from> Label0 <to> Label6 <using> Label4
+  .catch  java/lang/Throwable <from> Label1 <to> Label7 <using> Label4
+  nop
+  aload_0
+  monitorenter
+Label5:
+  aload_0
+  invokevirtual d/e()Landroid/app/Activity;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  ldc "activity was null while trying to create an AdWebView."
+  astore_2
+  aload_2
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;)V
+Label2:
+  aload_0
+  monitorexit
+  return
+Label0:
+  new g
+  astore_3
+  aload_1
+  invokevirtual android/app/Activity/getApplicationContext()Landroid/content/Context;
+  astore 4
+  aload_0
+  getfield d/g Lcom/google/ads/AdSize;
+  astore 5
+  aload_3
+  aload 4
+  aload 5
+  invokespecial g/<init>(Landroid/content/Context;Lcom/google/ads/AdSize;)V
+  aload_0
+  aload_3
+  putfield d/j Lg;
+  aload_0
+  getfield d/j Lg;
+  astore_3
+  bipush 8
+  istore 6
+  aload_3
+  iload 6
+  invokevirtual g/setVisibility(I)V
+  aload_0
+  getfield d/c Lcom/google/ads/Ad;
+  astore 7
+  aload 7
+  instanceof com/google/ads/AdView
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label1
+  new h
+  astore 9
+  getstatic a/b Ljava/util/Map;
+  astore 10
+  iconst_1
+  istore 6
+  iconst_0
+  istore 11
+  aload 9
+  aload_0
+  aload 10
+  iload 6
+  iload 11
+  invokespecial h/<init>(Ld;Ljava/util/Map;ZZ)V
+  aload_0
+  aload 9
+  putfield d/k Lh;
+Label3:
+  aload_0
+  getfield d/j Lg;
+  astore_3
+  aload_0
+  getfield d/k Lh;
+  astore 9
+  aload_3
+  aload 9
+  invokevirtual g/setWebViewClient(Landroid/webkit/WebViewClient;)V
+Label6:
+  goto Label2
+Label4:
+  astore 12
+  aload_0
+  monitorexit
+  aload 12
+  athrow
+Label1:
+  new h
+  astore 9
+  getstatic a/b Ljava/util/Map;
+  astore 10
+  iconst_1
+  istore 6
+  iconst_1
+  istore 11
+  aload 9
+  aload_0
+  aload 10
+  iload 6
+  iload 11
+  invokespecial h/<init>(Ld;Ljava/util/Map;ZZ)V
+  aload_0
+  aload 9
+  putfield d/k Lh;
+Label7:
+  goto Label3
+  nop
+.end <method>
+
+.method public final a(F)V
+.limit locals 7
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label1 <to> Label2 <using> Label0
+  nop
+  aload_0
+  monitorenter
+  ldc 1000.000000
+  fstore_3
+  fload_3
+  fload_1
+  fmul
+  fstore_2
+  fload_2
+  f2l
+  lstore 4
+Label1:
+  aload_0
+  lload 4
+  putfield d/q J
+Label2:
+  aload_0
+  monitorexit
+  return
+Label0:
+  astore 6
+  aload_0
+  monitorexit
+  aload 6
+  athrow
+  nop
+.end <method>
+
+.method public final a(I)V
+.limit locals 3
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label1 <to> Label2 <using> Label0
+  nop
+  aload_0
+  monitorenter
+Label1:
+  aload_0
+  iload_1
+  putfield d/v I
+Label2:
+  aload_0
+  monitorexit
+  return
+Label0:
+  astore_2
+  aload_0
+  monitorexit
+  aload_2
+  athrow
+  nop
+.end <method>
+
+.method public final a(J)V
+.limit locals 11
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label2 <to> Label3 <using> Label1
+  nop
+  getstatic d/a Ljava/lang/Object;
+  astore_3
+  aload_3
+  monitorenter
+Label2:
+  aload_0
+  getfield d/p Landroid/content/SharedPreferences;
+  astore 4
+  new java/lang/NoSuchMethodError
+  dup
+  invokespecial java/lang/NoSuchMethodError/<init>()V
+  athrow
+  nop
+  new java/lang/StringBuilder
+  astore 6
+  aload 6
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Timeout"
+  astore 7
+  aload 6
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  aload_0
+  getfield d/i Ljava/lang/String;
+  astore 8
+  aload 6
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 6
+  aload 6
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 8
+  aload 5
+  aload 8
+  lload_1
+  invokeinterface android/content/SharedPreferences$Editor/putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor; 4
+  pop
+  aload 5
+  invokeinterface android/content/SharedPreferences$Editor/commit()Z 1
+  pop
+  aload_0
+  getfield d/s Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label0
+  aload_0
+  lload_1
+  putfield d/m J
+Label0:
+  aload_3
+  monitorexit
+Label3:
+  return
+Label1:
+  astore 10
+  aload_3
+  monitorexit
+  aload 10
+  athrow
+  nop
+.end <method>
+
+.method public final a(Lcom/google/ads/AdListener;)V
+.limit locals 3
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label1 <to> Label2 <using> Label0
+  nop
+  aload_0
+  monitorenter
+Label1:
+  aload_0
+  aload_1
+  putfield d/d Lcom/google/ads/AdListener;
+Label2:
+  aload_0
+  monitorexit
+  return
+Label0:
+  astore_2
+  aload_0
+  monitorexit
+  aload_2
+  athrow
+  nop
+.end <method>
+
+.method public final a(Lcom/google/ads/AdRequest$ErrorCode;)V
+.limit locals 12
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label4 <to> Label2 <using> Label3
+  .catch  java/lang/Throwable <from> Label1 <to> Label5 <using> Label3
+  nop
+  aload_0
+  monitorenter
+Label4:
+  aconst_null
+  astore_2
+  aload_0
+  aload_2
+  putfield d/e Lc;
+  aload_0
+  getfield d/c Lcom/google/ads/Ad;
+  astore_3
+  aload_3
+  instanceof com/google/ads/InterstitialAd
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifeq Label0
+  getstatic com/google/ads/AdRequest$ErrorCode/NO_FILL Lcom/google/ads/AdRequest$ErrorCode;
+  astore 5
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_1
+  aload 5
+  if_acmpne Label1
+  aload_0
+  getfield d/h Lf;
+  astore 6
+  aload 6
+  invokevirtual f/n()V
+Label0:
+  new java/lang/StringBuilder
+  astore 7
+  aload 7
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "onFailedToReceiveAd("
+  astore 8
+  aload 7
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 7
+  aload 7
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  astore 7
+  ldc ")"
+  astore 8
+  aload 7
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 7
+  aload 7
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 9
+  aload 9
+  invokestatic com/google/ads/util/a/c(Ljava/lang/String;)V
+  aload_0
+  getfield d/d Lcom/google/ads/AdListener;
+  astore 10
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnull Label2
+  aload_0
+  getfield d/d Lcom/google/ads/AdListener;
+  astore 10
+  aload_0
+  getfield d/c Lcom/google/ads/Ad;
+  astore_3
+  aload 10
+  aload_3
+  aload_1
+  invokeinterface com/google/ads/AdListener/onFailedToReceiveAd(Lcom/google/ads/Ad;Lcom/google/ads/AdRequest$ErrorCode;)V 3
+Label2:
+  aload_0
+  monitorexit
+  return
+Label1:
+  getstatic com/google/ads/AdRequest$ErrorCode/NETWORK_ERROR Lcom/google/ads/AdRequest$ErrorCode;
+  astore 5
+  aload_1
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_1
+  aload 5
+  if_acmpne Label0
+  aload_0
+  getfield d/h Lf;
+  astore 6
+  aload 6
+  invokevirtual f/l()V
+Label5:
+  goto Label0
+Label3:
+  astore 11
+  aload_0
+  monitorexit
+  aload 11
+  athrow
+  nop
+.end <method>
+
+.method public final a(Lcom/google/ads/AdRequest;)V
+.limit locals 10
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label5 <to> Label2 <using> Label4
+  .catch  java/lang/Throwable <from> Label0 <to> Label6 <using> Label4
+  .catch  java/lang/Throwable <from> Label1 <to> Label7 <using> Label4
+  nop
+  aload_0
+  monitorenter
+Label5:
+  aload_0
+  invokespecial d/A()Z
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  ldc "loadAd called while the ad is already loading, so aborting."
+  astore_3
+  aload_3
+  invokestatic com/google/ads/util/a/e(Ljava/lang/String;)V
+Label2:
+  aload_0
+  monitorexit
+  return
+Label0:
+  invokestatic com/google/ads/AdActivity/isShowing()Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label1
+  ldc "loadAd called while an interstitial or landing page is displayed, so aborting"
+  astore_3
+  aload_3
+  invokestatic com/google/ads/util/a/e(Ljava/lang/String;)V
+Label6:
+  goto Label2
+Label4:
+  astore 4
+  aload_0
+  monitorexit
+  aload 4
+  athrow
+Label1:
+  aload_0
+  invokevirtual d/e()Landroid/app/Activity;
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  ifnonnull Label3
+  ldc "activity is null while trying to load an ad."
+  astore_3
+  aload_3
+  invokestatic com/google/ads/util/a/e(Ljava/lang/String;)V
+  goto Label2
+Label3:
+  aload 5
+  invokevirtual android/app/Activity/getApplicationContext()Landroid/content/Context;
+  astore 6
+  aload 6
+  invokestatic com/google/ads/util/AdUtil/c(Landroid/content/Context;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label2
+  aload 5
+  invokevirtual android/app/Activity/getApplicationContext()Landroid/content/Context;
+  astore 6
+  aload 6
+  invokestatic com/google/ads/util/AdUtil/b(Landroid/content/Context;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label2
+  iconst_0
+  istore 7
+  aload_0
+  iload 7
+  putfield d/n Z
+  aload_0
+  getfield d/t Ljava/util/LinkedList;
+  astore 8
+  aload 8
+  invokevirtual java/util/LinkedList/clear()V
+  aload_0
+  aload_1
+  putfield d/f Lcom/google/ads/AdRequest;
+  new c
+  astore 9
+  aload 9
+  aload_0
+  invokespecial c/<init>(Ld;)V
+  aload_0
+  aload 9
+  putfield d/e Lc;
+  aload_0
+  getfield d/e Lc;
+  astore 9
+  aload 9
+  aload_1
+  invokevirtual c/a(Lcom/google/ads/AdRequest;)V
+Label7:
+  goto Label2
+  nop
+.end <method>
+
+.method final a(Ljava/lang/Runnable;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield d/l Landroid/os/Handler;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  return
+  nop
+.end <method>
+
+.method final a(Ljava/lang/String;)V
+.limit locals 7
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label1 <to> Label2 <using> Label0
+  nop
+  aload_0
+  monitorenter
+Label1:
+  new java/lang/StringBuilder
+  astore_2
+  aload_2
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Adding a tracking URL: "
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  aload_1
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_2
+  aload_2
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload 4
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;)V
+  aload_0
+  getfield d/t Ljava/util/LinkedList;
+  astore 5
+  aload 5
+  aload_1
+  invokevirtual java/util/LinkedList/add(Ljava/lang/Object;)Z
+  pop
+Label2:
+  aload_0
+  monitorexit
+  return
+Label0:
+  astore 6
+  aload_0
+  monitorexit
+  aload 6
+  athrow
+  nop
+.end <method>
+
+.method final a(Ljava/util/LinkedList;)V
+  .signature_attr "(Ljava/util/LinkedList<Ljava/lang/String;>;)V"
+.limit locals 10
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label3 <to> Label4 <using> Label2
+  .catch  java/lang/Throwable <from> Label0 <to> Label5 <using> Label2
+  nop
+  aload_0
+  monitorenter
+Label3:
+  aload_1
+  invokevirtual java/util/LinkedList/iterator()Ljava/util/Iterator;
+  astore_2
+Label1:
+  aload_2
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_2
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore 4
+  aload 4
+  astore 6
+  aload 6
+  checkcast java/lang/String
+  astore 6
+  aload 6
+  astore 5
+  new java/lang/StringBuilder
+  astore 7
+  aload 7
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Adding a click tracking URL: "
+  astore 8
+  aload 7
+  aload 8
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 7
+  aload 7
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 7
+  aload 7
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;)V
+Label4:
+  goto Label1
+Label2:
+  astore 9
+  aload_0
+  monitorexit
+  aload 9
+  athrow
+Label0:
+  aload_0
+  aload_1
+  putfield d/u Ljava/util/LinkedList;
+Label5:
+  aload_0
+  monitorexit
+  return
+  nop
+.end <method>
+
+.method public final b()V
+.limit locals 4
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label1 <to> Label2 <using> Label0
+  nop
+  aload_0
+  monitorenter
+Label1:
+  aconst_null
+  astore_1
+  aload_0
+  aload_1
+  invokevirtual d/a(Lcom/google/ads/AdListener;)V
+  aload_0
+  invokevirtual d/z()V
+  aload_0
+  getfield d/j Lg;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+Label2:
+  aload_0
+  monitorexit
+  return
+Label0:
+  astore_3
+  aload_0
+  monitorexit
+  aload_3
+  athrow
+  nop
+.end <method>
+
+.method public final c()V
+.limit locals 7
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label3 <to> Label1 <using> Label2
+  .catch  java/lang/Throwable <from> Label0 <to> Label4 <using> Label2
+  nop
+  aload_0
+  monitorenter
+Label3:
+  aload_0
+  getfield d/o Z
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  ldc "Disabling refreshing."
+  astore_2
+  aload_2
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;)V
+  aload_0
+  getfield d/l Landroid/os/Handler;
+  astore_3
+  aload_0
+  getfield d/r Lx;
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual android/os/Handler/removeCallbacks(Ljava/lang/Runnable;)V
+  iconst_0
+  istore 5
+  aload_0
+  iload 5
+  putfield d/o Z
+Label1:
+  aload_0
+  monitorexit
+  return
+Label0:
+  ldc "Refreshing is already disabled."
+  astore_2
+  aload_2
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;)V
+Label4:
+  goto Label1
+Label2:
+  astore 6
+  aload_0
+  monitorexit
+  aload 6
+  athrow
+  nop
+.end <method>
+
+.method public final d()V
+.limit locals 12
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label4 <to> Label2 <using> Label3
+  .catch  java/lang/Throwable <from> Label1 <to> Label5 <using> Label3
+  .catch  java/lang/Throwable <from> Label0 <to> Label6 <using> Label3
+  nop
+  aload_0
+  monitorenter
+Label4:
+  aload_0
+  getfield d/c Lcom/google/ads/Ad;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label0
+  aload_0
+  getfield d/o Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifne Label1
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Enabling refreshing every "
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_0
+  getfield d/q J
+  lstore 5
+  aload_3
+  lload 5
+  invokevirtual java/lang/StringBuilder/append(J)Ljava/lang/StringBuilder;
+  astore_3
+  ldc " milliseconds."
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;)V
+  aload_0
+  getfield d/l Landroid/os/Handler;
+  astore 8
+  aload_0
+  getfield d/r Lx;
+  astore 9
+  aload_0
+  getfield d/q J
+  lstore 5
+  aload 8
+  aload 9
+  lload 5
+  invokevirtual android/os/Handler/postDelayed(Ljava/lang/Runnable;J)Z
+  pop
+  iconst_1
+  istore 10
+  aload_0
+  iload 10
+  putfield d/o Z
+Label2:
+  aload_0
+  monitorexit
+  return
+Label1:
+  ldc "Refreshing is already enabled."
+  astore 4
+  aload 4
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;)V
+Label5:
+  goto Label2
+Label3:
+  astore 11
+  aload_0
+  monitorexit
+  aload 11
+  athrow
+Label0:
+  ldc "Tried to enable refreshing on something other than an AdView."
+  astore 4
+  aload 4
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;)V
+Label6:
+  goto Label2
+  nop
+.end <method>
+
+.method public final e()Landroid/app/Activity;
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield d/b Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore_2
+  aload_2
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 4
+  astore_3
+  aload_3
+  areturn
+  nop
+.end <method>
+
+.method public final f()Lcom/google/ads/Ad;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield d/c Lcom/google/ads/Ad;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public final g()Lc;
+.limit locals 3
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label1 <to> Label2 <using> Label0
+  nop
+  aload_0
+  monitorenter
+Label1:
+  aload_0
+  getfield d/e Lc;
+  astore_1
+Label2:
+  aload_0
+  monitorexit
+  aload_1
+  areturn
+Label0:
+  astore_2
+  aload_0
+  monitorexit
+  aload_2
+  athrow
+  nop
+.end <method>
+
+.method final h()Ljava/lang/String;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield d/i Ljava/lang/String;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public final i()Lg;
+.limit locals 3
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label1 <to> Label2 <using> Label0
+  nop
+  aload_0
+  monitorenter
+Label1:
+  aload_0
+  getfield d/j Lg;
+  astore_1
+Label2:
+  aload_0
+  monitorexit
+  aload_1
+  areturn
+Label0:
+  astore_2
+  aload_0
+  monitorexit
+  aload_2
+  athrow
+  nop
+.end <method>
+
+.method final j()Lh;
+.limit locals 3
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label1 <to> Label2 <using> Label0
+  nop
+  aload_0
+  monitorenter
+Label1:
+  aload_0
+  getfield d/k Lh;
+  astore_1
+Label2:
+  aload_0
+  monitorexit
+  aload_1
+  areturn
+Label0:
+  astore_2
+  aload_0
+  monitorexit
+  aload_2
+  athrow
+  nop
+.end <method>
+
+.method public final k()Lcom/google/ads/AdSize;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield d/g Lcom/google/ads/AdSize;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public final l()Lf;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield d/h Lf;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public final m()I
+.limit locals 3
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label1 <to> Label2 <using> Label0
+  nop
+  aload_0
+  monitorenter
+Label1:
+  aload_0
+  getfield d/v I
+  istore_1
+Label2:
+  aload_0
+  monitorexit
+  iload_1
+  ireturn
+Label0:
+  astore_2
+  aload_0
+  monitorexit
+  aload_2
+  athrow
+  nop
+.end <method>
+
+.method public final n()J
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield d/m J
+  lstore_1
+  lload_1
+  lreturn
+  nop
+.end <method>
+
+.method public final o()Z
+.limit locals 3
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label1 <to> Label2 <using> Label0
+  nop
+  aload_0
+  monitorenter
+Label1:
+  aload_0
+  getfield d/n Z
+  istore_1
+Label2:
+  aload_0
+  monitorexit
+  iload_1
+  ireturn
+Label0:
+  astore_2
+  aload_0
+  monitorexit
+  aload_2
+  athrow
+  nop
+.end <method>
+
+.method public final p()Z
+.limit locals 3
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label1 <to> Label2 <using> Label0
+  nop
+  aload_0
+  monitorenter
+Label1:
+  aload_0
+  getfield d/o Z
+  istore_1
+Label2:
+  aload_0
+  monitorexit
+  iload_1
+  ireturn
+Label0:
+  astore_2
+  aload_0
+  monitorexit
+  aload_2
+  athrow
+  nop
+.end <method>
+
+.method final q()V
+.limit locals 10
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label3 <to> Label1 <using> Label2
+  nop
+  aload_0
+  monitorenter
+Label3:
+  aconst_null
+  astore_1
+  aload_0
+  aload_1
+  putfield d/e Lc;
+  iconst_1
+  istore_2
+  aload_0
+  iload_2
+  putfield d/n Z
+  aload_0
+  getfield d/j Lg;
+  astore_3
+  iconst_0
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield d/h Lf;
+  astore 4
+  aload 4
+  invokevirtual f/c()V
+  aload_0
+  getfield d/c Lcom/google/ads/Ad;
+  astore 5
+  aload 5
+  instanceof com/google/ads/AdView
+  istore 6
+  iload 6
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 6
+  ifeq Label0
+  aload_0
+  invokevirtual d/v()V
+Label0:
+  ldc "onReceiveAd()"
+  astore 7
+  aload 7
+  invokestatic com/google/ads/util/a/c(Ljava/lang/String;)V
+  aload_0
+  getfield d/d Lcom/google/ads/AdListener;
+  astore 8
+  aload 8
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 8
+  ifnull Label1
+  aload_0
+  getfield d/d Lcom/google/ads/AdListener;
+  astore 8
+  aload_0
+  getfield d/c Lcom/google/ads/Ad;
+  astore 5
+  aload 8
+  aload 5
+  invokeinterface com/google/ads/AdListener/onReceiveAd(Lcom/google/ads/Ad;)V 2
+Label1:
+  aload_0
+  monitorexit
+  return
+Label2:
+  astore 9
+  aload_0
+  monitorexit
+  aload 9
+  athrow
+  nop
+.end <method>
+
+.method public final r()V
+.limit locals 6
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label2 <to> Label0 <using> Label1
+  nop
+  aload_0
+  monitorenter
+Label2:
+  aload_0
+  getfield d/h Lf;
+  astore_1
+  aload_1
+  invokevirtual f/o()V
+  ldc "onDismissScreen()"
+  astore_2
+  aload_2
+  invokestatic com/google/ads/util/a/c(Ljava/lang/String;)V
+  aload_0
+  getfield d/d Lcom/google/ads/AdListener;
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  aload_0
+  getfield d/d Lcom/google/ads/AdListener;
+  astore_3
+  aload_0
+  getfield d/c Lcom/google/ads/Ad;
+  astore 4
+  aload_3
+  aload 4
+  invokeinterface com/google/ads/AdListener/onDismissScreen(Lcom/google/ads/Ad;)V 2
+Label0:
+  aload_0
+  monitorexit
+  return
+Label1:
+  astore 5
+  aload_0
+  monitorexit
+  aload 5
+  athrow
+  nop
+.end <method>
+
+.method public final s()V
+.limit locals 5
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label2 <to> Label0 <using> Label1
+  nop
+  aload_0
+  monitorenter
+Label2:
+  ldc "onPresentScreen()"
+  astore_1
+  aload_1
+  invokestatic com/google/ads/util/a/c(Ljava/lang/String;)V
+  aload_0
+  getfield d/d Lcom/google/ads/AdListener;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_0
+  getfield d/d Lcom/google/ads/AdListener;
+  astore_2
+  aload_0
+  getfield d/c Lcom/google/ads/Ad;
+  astore_3
+  aload_2
+  aload_3
+  invokeinterface com/google/ads/AdListener/onPresentScreen(Lcom/google/ads/Ad;)V 2
+Label0:
+  aload_0
+  monitorexit
+  return
+Label1:
+  astore 4
+  aload_0
+  monitorexit
+  aload 4
+  athrow
+  nop
+.end <method>
+
+.method public final t()V
+.limit locals 5
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label2 <to> Label0 <using> Label1
+  nop
+  aload_0
+  monitorenter
+Label2:
+  ldc "onLeaveApplication()"
+  astore_1
+  aload_1
+  invokestatic com/google/ads/util/a/c(Ljava/lang/String;)V
+  aload_0
+  getfield d/d Lcom/google/ads/AdListener;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_0
+  getfield d/d Lcom/google/ads/AdListener;
+  astore_2
+  aload_0
+  getfield d/c Lcom/google/ads/Ad;
+  astore_3
+  aload_2
+  aload_3
+  invokeinterface com/google/ads/AdListener/onLeaveApplication(Lcom/google/ads/Ad;)V 2
+Label0:
+  aload_0
+  monitorexit
+  return
+Label1:
+  astore 4
+  aload_0
+  monitorexit
+  aload 4
+  athrow
+  nop
+.end <method>
+
+.method public final u()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield d/h Lf;
+  astore_1
+  aload_1
+  invokevirtual f/b()V
+  aload_0
+  invokespecial d/B()V
+  return
+  nop
+.end <method>
+
+.method public final v()V
+.limit locals 15
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label4 <to> Label1 <using> Label3
+  .catch  java/lang/Throwable <from> Label0 <to> Label5 <using> Label3
+  nop
+  aload_0
+  monitorenter
+Label4:
+  aload_0
+  getfield d/b Ljava/lang/ref/WeakReference;
+  astore_1
+  aload_1
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore_2
+  aload_2
+  astore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 4
+  astore_3
+  aload_3
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_3
+  ifne Label0
+  ldc "activity was null while trying to ping tracking URLs."
+  astore 5
+  aload 5
+  invokestatic com/google/ads/util/a/e(Ljava/lang/String;)V
+Label1:
+  aload_0
+  monitorexit
+  return
+Label0:
+  aload_0
+  getfield d/t Ljava/util/LinkedList;
+  astore 6
+  aload 6
+  invokevirtual java/util/LinkedList/iterator()Ljava/util/Iterator;
+  astore 7
+Label2:
+  aload 7
+  invokeinterface java/util/Iterator/hasNext()Z 1
+  istore 8
+  iload 8
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 8
+  ifeq Label1
+  aload 7
+  invokeinterface java/util/Iterator/next()Ljava/lang/Object; 1
+  astore_2
+  aload_2
+  astore 10
+  aload 10
+  checkcast java/lang/String
+  astore 10
+  aload 10
+  astore 9
+  new java/lang/Thread
+  astore 11
+  new w
+  astore 12
+  aload_3
+  invokevirtual android/app/Activity/getApplicationContext()Landroid/content/Context;
+  astore 13
+  aload 12
+  aload 9
+  aload 13
+  invokespecial w/<init>(Ljava/lang/String;Landroid/content/Context;)V
+  aload 11
+  aload 12
+  invokespecial java/lang/Thread/<init>(Ljava/lang/Runnable;)V
+  aload 11
+  invokevirtual java/lang/Thread/start()V
+Label5:
+  goto Label2
+Label3:
+  astore 14
+  aload_0
+  monitorexit
+  aload 14
+  athrow
+  nop
+.end <method>
+
+.method final w()Z
+.limit locals 4
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label3 <to> Label4 <using> Label2
+  nop
+  aload_0
+  monitorenter
+Label3:
+  aload_0
+  getfield d/u Ljava/util/LinkedList;
+  astore_1
+  aload_1
+  invokevirtual java/util/LinkedList/isEmpty()Z
+  istore_2
+Label4:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  iconst_1
+  istore_2
+Label1:
+  aload_0
+  monitorexit
+  iload_2
+  ireturn
+Label0:
+  iconst_0
+  istore_2
+  goto Label1
+Label2:
+  astore_3
+  aload_0
+  monitorexit
+  aload_3
+  athrow
+  nop
+.end <method>
+
+.method public final x()V
+.limit locals 12
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label6 <to> Label4 <using> Label5
+  .catch  java/lang/Throwable <from> Label2 <to> Label7 <using> Label5
+  .catch  java/lang/Throwable <from> Label1 <to> Label8 <using> Label5
+  nop
+  aload_0
+  monitorenter
+Label6:
+  aload_0
+  getfield d/f Lcom/google/ads/AdRequest;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_0
+  getfield d/c Lcom/google/ads/Ad;
+  astore_2
+  aload_2
+  instanceof com/google/ads/AdView
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label1
+  aload_0
+  getfield d/c Lcom/google/ads/Ad;
+  astore_2
+  aload_2
+  astore 5
+  aload 5
+  checkcast com/google/ads/AdView
+  astore 5
+  aload 5
+  astore 4
+  aload 4
+  invokevirtual com/google/ads/AdView/isShown()Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label2
+  invokestatic com/google/ads/util/AdUtil/d()Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label2
+  ldc "Refreshing ad."
+  astore 6
+  aload 6
+  invokestatic com/google/ads/util/a/c(Ljava/lang/String;)V
+  aload_0
+  getfield d/f Lcom/google/ads/AdRequest;
+  astore_1
+  aload_0
+  aload_1
+  invokevirtual d/a(Lcom/google/ads/AdRequest;)V
+Label3:
+  aload_0
+  getfield d/l Landroid/os/Handler;
+  astore 7
+  aload_0
+  getfield d/r Lx;
+  astore 8
+  aload_0
+  getfield d/q J
+  lstore 9
+  aload 7
+  aload 8
+  lload 9
+  invokevirtual android/os/Handler/postDelayed(Ljava/lang/Runnable;J)Z
+  pop
+Label4:
+  aload_0
+  monitorexit
+  return
+Label2:
+  ldc "Not refreshing because the ad is not visible."
+  astore 6
+  aload 6
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;)V
+Label7:
+  goto Label3
+Label5:
+  astore 11
+  aload_0
+  monitorexit
+  aload 11
+  athrow
+Label1:
+  ldc "Tried to refresh an ad that wasn\'t an AdView."
+  astore 6
+  aload 6
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;)V
+  goto Label4
+Label0:
+  ldc "Tried to refresh before calling loadAd()."
+  astore 6
+  aload 6
+  invokestatic com/google/ads/util/a/a(Ljava/lang/String;)V
+Label8:
+  goto Label4
+  nop
+.end <method>
+
+.method public final y()V
+.limit locals 3
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label1 <to> Label2 <using> Label0
+  nop
+  aload_0
+  monitorenter
+Label1:
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield d/n Z
+Label2:
+  aload_0
+  monitorexit
+  return
+Label0:
+  astore_2
+  aload_0
+  monitorexit
+  aload_2
+  athrow
+  nop
+.end <method>
+
+.method public final z()V
+.limit locals 5
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label2 <to> Label3 <using> Label1
+  nop
+  aload_0
+  monitorenter
+Label2:
+  aload_0
+  getfield d/e Lc;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  aload_0
+  getfield d/e Lc;
+  astore_1
+  aload_1
+  invokevirtual c/a()V
+  aconst_null
+  astore_2
+  aload_0
+  aload_2
+  putfield d/e Lc;
+Label0:
+  aload_0
+  getfield d/j Lg;
+  astore_3
+  aload_3
+  invokevirtual g/stopLoading()V
+Label3:
+  aload_0
+  monitorexit
+  return
+Label1:
+  astore 4
+  aload_0
+  monitorexit
+  aload 4
+  athrow
+  nop
+.end <method>
+

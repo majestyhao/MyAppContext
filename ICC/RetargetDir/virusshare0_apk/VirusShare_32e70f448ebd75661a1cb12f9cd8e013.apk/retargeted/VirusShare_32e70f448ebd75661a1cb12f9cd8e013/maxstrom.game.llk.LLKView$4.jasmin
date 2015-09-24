@@ -1,0 +1,59 @@
+.source LLKView.java
+.class  maxstrom/game/llk/LLKView$4
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "this$0" Lmaxstrom/game/llk/LLKView;
+.field private final "val$hint" [Lmaxstrom/game/llk/engine/Tile;
+
+.method <init>(Lmaxstrom/game/llk/LLKView;[Lmaxstrom/game/llk/engine/Tile;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield maxstrom/game/llk/LLKView$4/this$0 Lmaxstrom/game/llk/LLKView;
+  aload_0
+  aload_2
+  putfield maxstrom/game/llk/LLKView$4/val$hint [Lmaxstrom/game/llk/engine/Tile;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  getfield maxstrom/game/llk/LLKView$4/val$hint [Lmaxstrom/game/llk/engine/Tile;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield maxstrom/game/llk/LLKView$4/this$0 Lmaxstrom/game/llk/LLKView;
+  astore_2
+  aload_0
+  getfield maxstrom/game/llk/LLKView$4/this$0 Lmaxstrom/game/llk/LLKView;
+  astore_3
+  aload_3
+  getfield maxstrom/game/llk/LLKView/hintRunable Ljava/lang/Runnable;
+  astore 4
+  ldc2_w 1000
+  lstore 5
+  aload_2
+  aload 4
+  lload 5
+  invokevirtual maxstrom/game/llk/LLKView/postDelayed(Ljava/lang/Runnable;J)Z
+  pop
+  aload_0
+  getfield maxstrom/game/llk/LLKView$4/this$0 Lmaxstrom/game/llk/LLKView;
+  astore_2
+  aload_2
+  invokevirtual maxstrom/game/llk/LLKView/invalidate()V
+  return
+  nop
+.end <method>
+

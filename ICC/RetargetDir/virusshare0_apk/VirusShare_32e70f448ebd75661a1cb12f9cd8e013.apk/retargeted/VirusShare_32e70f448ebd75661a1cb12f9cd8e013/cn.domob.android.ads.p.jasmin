@@ -1,0 +1,2821 @@
+.source SourceFile
+.class public  cn/domob/android/ads/p
+.super java/lang/Object
+.field private static "a" Lcn/domob/android/ads/p;
+.field private static final "m" J =  600000
+.field private static final "n" Ljava/lang/String; =  "sdk"
+.field private "b" Ljava/lang/String;
+.field private "c" I
+.field private "d" Ljava/lang/String;
+.field private "e" Ljava/lang/String;
+.field private "f" Ljava/lang/String;
+.field private "g" Ljava/lang/String;
+.field private "h" F
+.field private "i" Landroid/location/Location;
+.field private "j" I
+.field private "k" I
+.field private "l" J
+
+.method public <init>()V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  ldc -1.000000
+  fstore_1
+  aload_0
+  fload_1
+  putfield cn/domob/android/ads/p/h F
+  iconst_m1
+  istore_2
+  aload_0
+  iload_2
+  putfield cn/domob/android/ads/p/j I
+  iconst_m1
+  istore_2
+  aload_0
+  iload_2
+  putfield cn/domob/android/ads/p/k I
+  ldc2_w 0
+  lstore_3
+  aload_0
+  lload_3
+  putfield cn/domob/android/ads/p/l J
+  return
+  nop
+.end <method>
+
+.method protected static a()Lcn/domob/android/ads/p;
+.limit locals 3
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label2 <to> Label3 <using> Label1
+  nop
+  ldc cn/domob/android/ads/p
+  astore_0
+  aload_0
+  monitorenter
+Label2:
+  getstatic cn/domob/android/ads/p/a Lcn/domob/android/ads/p;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifne Label0
+  new cn/domob/android/ads/p
+  astore_1
+  aload_1
+  invokespecial cn/domob/android/ads/p/<init>()V
+  aload_1
+  putstatic cn/domob/android/ads/p/a Lcn/domob/android/ads/p;
+Label0:
+  getstatic cn/domob/android/ads/p/a Lcn/domob/android/ads/p;
+  astore_1
+Label3:
+  ldc cn/domob/android/ads/p
+  astore_0
+  aload_0
+  monitorexit
+  aload_1
+  areturn
+Label1:
+  astore_2
+  ldc cn/domob/android/ads/p
+  astore_0
+  aload_0
+  monitorexit
+  aload_2
+  athrow
+  nop
+.end <method>
+
+.method protected a(Landroid/location/Location;)Ljava/lang/String;
+.limit locals 8
+.limit stack 200
+  nop
+  iconst_0
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  ifeq Label0
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  aload_1
+  invokevirtual android/location/Location/getLatitude()D
+  dstore 4
+  aload_3
+  dload 4
+  invokevirtual java/lang/StringBuilder/append(D)Ljava/lang/StringBuilder;
+  astore_3
+  ldc ","
+  astore 6
+  aload_3
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_1
+  invokevirtual android/location/Location/getLongitude()D
+  dstore 4
+  aload_3
+  dload 4
+  invokevirtual java/lang/StringBuilder/append(D)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore_2
+  new java/lang/StringBuilder
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "User coordinates are "
+  astore 6
+  aload_3
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  ldc "DomobDeviceInfo"
+  astore 6
+  aload 6
+  aload 7
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+Label0:
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method protected a(I)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  iload_1
+  putfield cn/domob/android/ads/p/k I
+  return
+  nop
+.end <method>
+
+.method protected a(IIII)V
+.limit locals 37
+.limit stack 200
+  nop
+  new org/json/JSONObject
+  astore 11
+  aload 11
+  invokespecial org/json/JSONObject/<init>()V
+  ldc "version"
+  astore 12
+  ldc "1.1.0"
+  astore 13
+  aload 11
+  aload 12
+  aload 13
+  invokevirtual org/json/JSONObject/put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+  pop
+  ldc "host"
+  astore 12
+  ldc "maps.google.com"
+  astore 13
+  aload 11
+  aload 12
+  aload 13
+  invokevirtual org/json/JSONObject/put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+  pop
+  ldc "request_address"
+  astore 12
+  iconst_1
+  istore 14
+  aload 11
+  aload 12
+  iload 14
+  invokevirtual org/json/JSONObject/put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+  pop
+  new org/json/JSONArray
+  astore 15
+  aload 15
+  invokespecial org/json/JSONArray/<init>()V
+  new org/json/JSONObject
+  astore 16
+  aload 16
+  invokespecial org/json/JSONObject/<init>()V
+  ldc "cell_id"
+  astore 12
+  iload_1
+  istore 5
+  aload 16
+  aload 12
+  iload 5
+  invokevirtual org/json/JSONObject/put(Ljava/lang/String;I)Lorg/json/JSONObject;
+  pop
+  ldc "location_area_code"
+  astore 12
+  iload_2
+  istore 5
+  aload 16
+  aload 12
+  iload 5
+  invokevirtual org/json/JSONObject/put(Ljava/lang/String;I)Lorg/json/JSONObject;
+  pop
+  ldc "mobile_country_code"
+  astore 12
+  iload 4
+  istore 5
+  aload 16
+  aload 12
+  iload 5
+  invokevirtual org/json/JSONObject/put(Ljava/lang/String;I)Lorg/json/JSONObject;
+  pop
+  ldc "mobile_network_code"
+  astore 12
+  iload_3
+  istore 5
+  aload 16
+  aload 12
+  iload 5
+  invokevirtual org/json/JSONObject/put(Ljava/lang/String;I)Lorg/json/JSONObject;
+  pop
+  aload 15
+  aload 16
+  invokevirtual org/json/JSONArray/put(Ljava/lang/Object;)Lorg/json/JSONArray;
+  pop
+  ldc "cell_towers"
+  astore 12
+  aload 11
+  aload 12
+  aload 15
+  invokevirtual org/json/JSONObject/put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+  pop
+  new java/lang/StringBuilder
+  astore 17
+  aload 17
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Location send:"
+  astore 12
+  aload 17
+  aload 12
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 17
+  aload 11
+  invokevirtual org/json/JSONObject/toString()Ljava/lang/String;
+  astore 18
+  aload 17
+  aload 18
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 17
+  aload 17
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 18
+  ldc "DomobDeviceInfo"
+  astore 12
+  aload 12
+  aload 18
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 19
+  invokespecial org/apache/http/impl/client/DefaultHttpClient/<init>()V
+  new org/apache/http/client/methods/HttpPost
+  astore 20
+  ldc "http://www.google.com/loc/json"
+  astore 12
+  aload 20
+  aload 12
+  invokespecial org/apache/http/client/methods/HttpPost/<init>(Ljava/lang/String;)V
+  new org/apache/http/entity/StringEntity
+  astore 21
+  aload 11
+  invokevirtual org/json/JSONObject/toString()Ljava/lang/String;
+  astore 22
+  aload 21
+  astore 5
+  aload 22
+  astore 6
+  aload 5
+  aload 6
+  invokespecial org/apache/http/entity/StringEntity/<init>(Ljava/lang/String;)V
+  aload 21
+  astore 5
+  aload 20
+  aload 5
+  invokevirtual org/apache/http/client/methods/HttpPost/setEntity(Lorg/apache/http/HttpEntity;)V
+  aload 19
+  aload 20
+  invokevirtual org/apache/http/impl/client/DefaultHttpClient/execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
+  astore 23
+  aload 23
+  astore 5
+  aload 5
+  invokeinterface org/apache/http/HttpResponse/getEntity()Lorg/apache/http/HttpEntity; 1
+  astore 24
+  aload 24
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 24
+  ifnull Label0
+  new java/io/BufferedReader
+  astore 25
+  new java/io/InputStreamReader
+  astore 26
+  aload 24
+  astore 5
+  aload 5
+  invokeinterface org/apache/http/HttpEntity/getContent()Ljava/io/InputStream; 1
+  astore 27
+  aload 26
+  astore 5
+  aload 27
+  astore 6
+  aload 5
+  aload 6
+  invokespecial java/io/InputStreamReader/<init>(Ljava/io/InputStream;)V
+  aload 25
+  astore 5
+  aload 26
+  astore 6
+  aload 5
+  aload 6
+  invokespecial java/io/BufferedReader/<init>(Ljava/io/Reader;)V
+  new java/lang/StringBuffer
+  astore 28
+  aload 28
+  astore 5
+  aload 5
+  invokespecial java/lang/StringBuffer/<init>()V
+  aload 25
+  astore 5
+  aload 5
+  invokevirtual java/io/BufferedReader/readLine()Ljava/lang/String;
+  astore 22
+Label2:
+  aload 22
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 22
+  ifnull Label1
+  aload 28
+  astore 5
+  aload 22
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  aload 25
+  astore 5
+  aload 5
+  invokevirtual java/io/BufferedReader/readLine()Ljava/lang/String;
+  astore 22
+  goto Label2
+Label1:
+  aload 28
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 28
+  ifnull Label0
+  new org/json/JSONObject
+  astore 16
+  new org/json/JSONTokener
+  astore 29
+  aload 28
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuffer/toString()Ljava/lang/String;
+  astore 22
+  aload 29
+  astore 5
+  aload 22
+  astore 6
+  aload 5
+  aload 6
+  invokespecial org/json/JSONTokener/<init>(Ljava/lang/String;)V
+  aload 29
+  astore 5
+  aload 16
+  aload 5
+  invokespecial org/json/JSONObject/<init>(Lorg/json/JSONTokener;)V
+  aload 16
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 16
+  ifnull Label0
+  ldc "location"
+  astore 12
+  aload 16
+  aload 12
+  invokevirtual org/json/JSONObject/has(Ljava/lang/String;)Z
+  istore 30
+  iload 30
+  istore 5
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 30
+  ifeq Label0
+  ldc "location"
+  astore 12
+  aload 16
+  aload 12
+  invokevirtual org/json/JSONObject/optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+  astore 11
+  ldc "longitude"
+  astore 12
+  aload 11
+  aload 12
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 18
+  ldc "location"
+  astore 12
+  aload 16
+  aload 12
+  invokevirtual org/json/JSONObject/optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+  astore 16
+  ldc "latitude"
+  astore 12
+  aload 16
+  aload 12
+  invokevirtual org/json/JSONObject/optString(Ljava/lang/String;)Ljava/lang/String;
+  astore 31
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 32
+  new android/location/Location
+  astore 34
+  ldc "jizhan"
+  astore 12
+  aload 34
+  astore 5
+  aload 5
+  aload 12
+  invokespecial android/location/Location/<init>(Ljava/lang/String;)V
+  aload 18
+  invokestatic java/lang/Double/parseDouble(Ljava/lang/String;)D
+  dstore 35
+  aload 34
+  astore 5
+  dload 35
+  dstore 6
+  aload 5
+  dload 6
+  invokevirtual android/location/Location/setLongitude(D)V
+  aload 31
+  astore 5
+  aload 5
+  invokestatic java/lang/Double/parseDouble(Ljava/lang/String;)D
+  dstore 35
+  aload 34
+  astore 5
+  dload 35
+  dstore 6
+  aload 5
+  dload 6
+  invokevirtual android/location/Location/setLatitude(D)V
+  aload 34
+  astore 5
+  lload 32
+  lstore 6
+  aload 5
+  lload 6
+  invokevirtual android/location/Location/setTime(J)V
+  iconst_1
+  istore 14
+  iload 14
+  istore 4
+  aload_0
+  astore 5
+  aload 34
+  astore 6
+  lload 32
+  lstore 7
+  iload 4
+  istore 9
+  aload 5
+  aload 6
+  lload 7
+  iload 9
+  invokevirtual cn/domob/android/ads/p/a(Landroid/location/Location;JI)V
+Label0:
+  return
+  nop
+.end <method>
+
+.method protected a(Landroid/location/Location;JI)V
+.limit locals 8
+.limit stack 200
+  nop
+  new java/lang/StringBuilder
+  astore 5
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "\u5730\u7406\u4f4d\u7f6e\u4fe1\u606f\u53d8\u66f4\uff0c\u7ecf\u7eac\u5ea6\u4e3a: "
+  astore 6
+  aload 5
+  aload 6
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/a(Landroid/location/Location;)Ljava/lang/String;
+  astore 7
+  aload 5
+  aload 7
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 5
+  aload 5
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 7
+  ldc "DomobDeviceInfo"
+  astore 6
+  aload 6
+  aload 7
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  putfield cn/domob/android/ads/p/i Landroid/location/Location;
+  aload_0
+  iload 4
+  putfield cn/domob/android/ads/p/j I
+  aload_0
+  lload_2
+  putfield cn/domob/android/ads/p/l J
+  return
+  nop
+.end <method>
+
+.method protected a(IZ)Z
+.limit locals 6
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  getstatic android/os/Build$VERSION/SDK Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic cn/domob/android/ads/J/e(Ljava/lang/String;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label1
+  getstatic android/os/Build$VERSION/SDK Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  iload_1
+  if_icmplt Label1
+Label3:
+  iconst_1
+  istore 5
+  iload 5
+  ireturn
+Label1:
+  iconst_0
+  istore 5
+  iload 5
+  ireturn
+Label0:
+  getstatic android/os/Build$VERSION/SDK Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic cn/domob/android/ads/J/e(Ljava/lang/String;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label2
+  getstatic android/os/Build$VERSION/SDK Ljava/lang/String;
+  astore_3
+  aload_3
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore 4
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  iload_1
+  if_icmpgt Label3
+Label2:
+  iconst_0
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method protected a(Landroid/content/Context;)Z
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/p/f Ljava/lang/String;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/f(Landroid/content/Context;)Ljava/lang/String;
+  astore_2
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/p/f Ljava/lang/String;
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/p/f Ljava/lang/String;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnonnull Label1
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/c(Landroid/content/Context;)Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label1
+  ldc "sdk"
+  astore 4
+  getstatic android/os/Build/MODEL Ljava/lang/String;
+  astore_2
+  aload 4
+  aload_2
+  invokevirtual java/lang/String/equalsIgnoreCase(Ljava/lang/String;)Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifeq Label1
+  iconst_1
+  istore 5
+  iload 5
+  ireturn
+Label1:
+  iconst_0
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method protected a(Landroid/content/Context;Ljava/lang/String;)Z
+.limit locals 11
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  ldc ""
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_3
+  iload_3
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_3
+  ifne Label0
+Label2:
+  aload_1
+  invokevirtual android/content/Context/getPackageManager()Landroid/content/pm/PackageManager;
+  astore 5
+  iconst_1
+  istore 7
+  aload 5
+  aload_2
+  iload 7
+  invokevirtual android/content/pm/PackageManager/getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label0
+  new java/lang/StringBuilder
+  astore 8
+  aload 8
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Already insalled pkgName="
+  astore 4
+  aload 8
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 8
+  aload 8
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 9
+  aload_0
+  aload 9
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Object;Ljava/lang/String;)V
+Label3:
+  iconst_1
+  istore 7
+  iload 7
+  ireturn
+Label1:
+  astore 10
+Label0:
+  iconst_0
+  istore 7
+  iload 7
+  ireturn
+  nop
+.end <method>
+
+.method protected b()I
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/p/j I
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  lookupswitch
+  0 : Label1
+  1 : Label2
+  2 : Label3
+  default : Label0
+Label0:
+  goto Label4
+Label4:
+  ldc "DomobDeviceInfo"
+  astore_2
+  ldc "\u672a\u77e5\u7cbe\u5ea6"
+  astore_3
+  aload_2
+  aload_3
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+Label5:
+  aload_0
+  getfield cn/domob/android/ads/p/j I
+  istore_1
+  iload_1
+  ireturn
+Label1:
+  ldc "DomobDeviceInfo"
+  astore_2
+  ldc "\u8fd4\u56delocation\u7684\u7cbe\u5ea6\u4e3a\uff1aGPS"
+  astore_3
+  aload_2
+  aload_3
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  goto Label5
+Label2:
+  ldc "DomobDeviceInfo"
+  astore_2
+  ldc "\u8fd4\u56delocation\u7684\u7cbe\u5ea6\u4e3a\uff1a\u57fa\u7ad9"
+  astore_3
+  aload_2
+  aload_3
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  goto Label5
+Label3:
+  ldc "DomobDeviceInfo"
+  astore_2
+  ldc "\u8fd4\u56delocation\u7684\u7cbe\u5ea6\u4e3a\uff1awifi"
+  astore_3
+  aload_2
+  aload_3
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  goto Label5
+  nop
+  nop
+  nop
+.end <method>
+
+.method protected b(Landroid/content/Context;)Z
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/c(Landroid/content/Context;)Z
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  ldc "sdk"
+  astore_3
+  getstatic android/os/Build/MODEL Ljava/lang/String;
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/String/equalsIgnoreCase(Ljava/lang/String;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label0
+  iconst_1
+  istore 5
+  iload 5
+  ireturn
+Label0:
+  iconst_0
+  istore 5
+  iload 5
+  ireturn
+  nop
+.end <method>
+
+.method protected c()I
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/p/k I
+  istore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_1
+  lookupswitch
+  0 : Label1
+  1 : Label2
+  2 : Label3
+  default : Label0
+Label0:
+  goto Label4
+Label4:
+  ldc "DomobDeviceInfo"
+  astore_2
+  ldc "\u672a\u77e5\u539f\u56e0"
+  astore_3
+  aload_2
+  aload_3
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+Label5:
+  aload_0
+  getfield cn/domob/android/ads/p/k I
+  istore_1
+  iload_1
+  ireturn
+Label1:
+  ldc "DomobDeviceInfo"
+  astore_2
+  ldc "\u7528\u6237\u672a\u6253\u5f00\u5b9a\u4f4d\u529f\u80fd"
+  astore_3
+  aload_2
+  aload_3
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  goto Label5
+Label2:
+  ldc "DomobDeviceInfo"
+  astore_2
+  ldc "\u5f00\u53d1\u8005\u672a\u6dfb\u52a0\u4f4d\u7f6e\u6743\u9650"
+  astore_3
+  aload_2
+  aload_3
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  goto Label5
+Label3:
+  ldc "DomobDeviceInfo"
+  astore_2
+  ldc "\u6761\u4ef6\u90fd\u5177\u5907\uff0c\u4f46\u6ca1\u6709\u83b7\u53d6\u5230"
+  astore_3
+  aload_2
+  aload_3
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  goto Label5
+  nop
+  nop
+  nop
+.end <method>
+
+.method protected c(Landroid/content/Context;)Z
+.limit locals 8
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/g(Landroid/content/Context;)Ljava/lang/String;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  iconst_1
+  istore_3
+  iload_3
+  ireturn
+Label0:
+  ldc "0"
+  astore 5
+  ldc ""
+  astore 6
+  aload_2
+  aload 5
+  aload 6
+  invokevirtual java/lang/String/replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  astore 4
+  ldc ""
+  astore 5
+  aload 4
+  aload 5
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 7
+  iload 7
+  ireturn
+  nop
+.end <method>
+
+.method protected d()Ljava/lang/String;
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/p/l J
+  lstore_1
+  lload_1
+  invokestatic java/lang/String/valueOf(J)Ljava/lang/String;
+  astore_3
+  aload_3
+  areturn
+  nop
+.end <method>
+
+.method protected d(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/p/e Ljava/lang/String;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  ldc "DomobDeviceInfo"
+  astore_3
+  ldc "Device Id is null"
+  astore 4
+  aload_3
+  aload 4
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/a(Landroid/content/Context;)Z
+  istore 5
+  iload 5
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 5
+  ifeq Label1
+  ldc "DomobDeviceInfo"
+  astore_3
+  ldc "Use emulator id"
+  astore 4
+  aload_3
+  aload 4
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  ldc "-1,-1,emulator"
+  astore_3
+  aload_0
+  aload_3
+  putfield cn/domob/android/ads/p/e Ljava/lang/String;
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/p/e Ljava/lang/String;
+  astore 6
+  aload 6
+  areturn
+Label1:
+  ldc "DomobDeviceInfo"
+  astore_3
+  ldc "Generate device id"
+  astore 4
+  aload_3
+  aload 4
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/h(Landroid/content/Context;)Ljava/lang/String;
+  astore 6
+  aload_0
+  aload 6
+  putfield cn/domob/android/ads/p/e Ljava/lang/String;
+  goto Label0
+  nop
+.end <method>
+
+.method protected e(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 11
+.limit stack 200
+  nop
+  ldc "android.permission.ACCESS_NETWORK_STATE"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_m1
+  istore 4
+  iload_2
+  iload 4
+  if_icmpne Label0
+  ldc "DomobSDK"
+  astore_3
+  ldc "Cannot access user\'s network type.  Permissions are not set."
+  astore 5
+  aload_3
+  aload 5
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  ldc "unknown"
+  astore 6
+Label3:
+  aload 6
+  areturn
+Label0:
+  ldc "connectivity"
+  astore_3
+  aload_1
+  aload_3
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 7
+  aload 7
+  astore 9
+  aload 9
+  checkcast android/net/ConnectivityManager
+  astore 9
+  aload 9
+  astore 8
+  aload 8
+  invokevirtual android/net/ConnectivityManager/getActiveNetworkInfo()Landroid/net/NetworkInfo;
+  astore 10
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnull Label1
+  aload 10
+  invokevirtual android/net/NetworkInfo/getType()I
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  ifne Label2
+  aload 10
+  invokevirtual android/net/NetworkInfo/getSubtypeName()Ljava/lang/String;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnonnull Label3
+  ldc "gprs"
+  astore_3
+  aload_3
+  areturn
+Label2:
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 4
+  iload_2
+  iload 4
+  if_icmpne Label1
+  ldc "wifi"
+  astore_3
+  aload_3
+  areturn
+Label1:
+  ldc "unknown"
+  astore_3
+  aload_3
+  areturn
+  nop
+.end <method>
+
+.method protected e()Z
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_1
+  invokestatic cn/domob/android/ads/J/e(Ljava/lang/String;)Z
+  istore_2
+  iload_2
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_2
+  ifeq Label0
+  getstatic android/os/Build$VERSION/SDK Ljava/lang/String;
+  astore_1
+  aload_1
+  invokestatic java/lang/Integer/parseInt(Ljava/lang/String;)I
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_3
+  istore 4
+  iload_3
+  iload 4
+  if_icmpne Label0
+  iconst_1
+  istore 4
+  iload 4
+  ireturn
+Label0:
+  iconst_0
+  istore 4
+  iload 4
+  ireturn
+  nop
+.end <method>
+
+.method protected f(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/p/f Ljava/lang/String;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  aload_1
+  invokevirtual android/content/Context/getContentResolver()Landroid/content/ContentResolver;
+  astore_3
+  ldc "android_id"
+  astore 4
+  aload_3
+  aload 4
+  invokestatic android/provider/Settings$Secure/getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+  astore_2
+  aload_0
+  aload_2
+  putfield cn/domob/android/ads/p/f Ljava/lang/String;
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/p/f Ljava/lang/String;
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method protected g(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 7
+.limit stack 200
+  nop
+  ldc "phone"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  astore 5
+  aload 5
+  checkcast android/telephony/TelephonyManager
+  astore 5
+  aload 5
+  astore 4
+  aload 4
+  invokevirtual android/telephony/TelephonyManager/getDeviceId()Ljava/lang/String;
+  astore 6
+  aload 6
+  areturn
+  nop
+.end <method>
+
+.method protected h(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 13
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label11 <to> Label12 <using> Label8
+  .catch  java/lang/Exception <from> Label11 <to> Label12 <using> Label9
+  .catch  java/lang/SecurityException <from> Label11 <to> Label12 <using> Label10
+  .catch  java/lang/Throwable <from> Label0 <to> Label13 <using> Label8
+  .catch  java/lang/Exception <from> Label0 <to> Label13 <using> Label9
+  .catch  java/lang/SecurityException <from> Label0 <to> Label13 <using> Label10
+  .catch  java/lang/Throwable <from> Label14 <to> Label15 <using> Label8
+  .catch  java/lang/Throwable <from> Label1 <to> Label16 <using> Label8
+  .catch  java/lang/Exception <from> Label1 <to> Label16 <using> Label9
+  .catch  java/lang/SecurityException <from> Label1 <to> Label16 <using> Label10
+  .catch  java/lang/Throwable <from> Label17 <to> Label18 <using> Label8
+  nop
+  ldc "DomobDeviceInfo"
+  astore_2
+  ldc "Start to generate device id"
+  astore_3
+  aload_2
+  aload_3
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  new java/lang/StringBuffer
+  astore 4
+  aload 4
+  invokespecial java/lang/StringBuffer/<init>()V
+Label11:
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/g(Landroid/content/Context;)Ljava/lang/String;
+  astore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label0
+  aload 4
+  aload 5
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+Label4:
+  ldc ","
+  astore_2
+  aload 4
+  aload_2
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  ldc "phone"
+  astore_2
+  aload_1
+  aload_2
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 6
+  aload 6
+  astore 8
+  aload 8
+  checkcast android/telephony/TelephonyManager
+  astore 8
+  aload 8
+  astore 7
+  aload 7
+  invokevirtual android/telephony/TelephonyManager/getSubscriberId()Ljava/lang/String;
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 5
+  ifnull Label1
+  aload 4
+  aload 5
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+Label5:
+  ldc ","
+  astore_2
+  aload 4
+  aload_2
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+Label12:
+  goto Label2
+Label2:
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/f(Landroid/content/Context;)Ljava/lang/String;
+  astore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifeq Label3
+  aload 4
+  aload 5
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+Label7:
+  new java/lang/StringBuilder
+  astore 9
+  aload 9
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "Generated device id: "
+  astore_2
+  aload 9
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 4
+  invokevirtual java/lang/StringBuffer/toString()Ljava/lang/String;
+  astore 5
+  aload 9
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 9
+  aload 9
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  ldc "DomobDeviceInfo"
+  astore_2
+  aload_2
+  aload 5
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload 4
+  invokevirtual java/lang/StringBuffer/toString()Ljava/lang/String;
+  astore 5
+  aload 5
+  areturn
+Label0:
+  ldc "-1"
+  astore_2
+  aload 4
+  aload_2
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+Label13:
+  goto Label4
+Label10:
+  astore 10
+Label14:
+  aload 10
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Throwable;)V
+  ldc "DomobSDK"
+  astore_2
+  ldc "you must set READ_PHONE_STATE permisson in AndroidManifest.xml"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+Label15:
+  goto Label2
+Label1:
+  ldc "-1"
+  astore_2
+  aload 4
+  aload_2
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+Label16:
+  goto Label5
+Label9:
+  astore 11
+Label17:
+  aload 11
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Throwable;)V
+Label18:
+  goto Label2
+Label8:
+  astore 12
+  goto Label6
+Label6:
+  aload 12
+  athrow
+Label3:
+  ldc "DomobDeviceInfo"
+  astore_2
+  ldc "Android ID is null, use -1 instead"
+  astore_3
+  aload_2
+  aload_3
+  invokestatic cn/domob/android/ads/J/d(Ljava/lang/Object;Ljava/lang/String;)V
+  ldc "-1"
+  astore_2
+  aload 4
+  aload_2
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  goto Label7
+  nop
+.end <method>
+
+.method protected i(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 10
+.limit stack 200
+  nop
+  ldc "window"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  astore 5
+  aload 5
+  checkcast android/view/WindowManager
+  astore 5
+  aload 5
+  astore 4
+  aload 4
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 6
+  aload 6
+  invokevirtual android/view/Display/getOrientation()I
+  istore 7
+  dload 7
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 8
+  iload 7
+  iload 8
+  if_icmpeq Label0
+  aload 6
+  invokevirtual android/view/Display/getOrientation()I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_3
+  istore 8
+  iload 9
+  iload 8
+  if_icmpne Label1
+Label0:
+  ldc "h"
+  astore_3
+  aload_3
+  areturn
+Label1:
+  ldc "v"
+  astore_3
+  aload_3
+  areturn
+  nop
+.end <method>
+
+.method protected j(Landroid/content/Context;)F
+.limit locals 14
+.limit stack 200
+  .catch  java/lang/Throwable <from> Label3 <to> Label0 <using> Label1
+  .catch  java/lang/Exception <from> Label3 <to> Label0 <using> Label2
+  .catch  java/lang/Throwable <from> Label4 <to> Label5 <using> Label1
+  nop
+Label3:
+  aload_0
+  getfield cn/domob/android/ads/p/h F
+  fstore_2
+  ldc -1.000000
+  fstore 4
+  fload_2
+  fload 4
+  fcmpl
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifne Label0
+  ldc "window"
+  astore 6
+  aload_1
+  aload 6
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 5
+  aload 5
+  astore 8
+  aload 8
+  checkcast android/view/WindowManager
+  astore 8
+  aload 8
+  astore 7
+  aload 7
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 9
+  new android/util/DisplayMetrics
+  astore 10
+  aload 10
+  invokespecial android/util/DisplayMetrics/<init>()V
+  aload 9
+  aload 10
+  invokevirtual android/view/Display/getMetrics(Landroid/util/DisplayMetrics;)V
+  aload 10
+  getfield android/util/DisplayMetrics/density F
+  fstore 11
+  aload_0
+  fload 11
+  putfield cn/domob/android/ads/p/h F
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/p/h F
+  fstore 11
+  fload 11
+  freturn
+Label2:
+  astore 12
+Label4:
+  aload 12
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/Throwable;)V
+Label5:
+  aload_0
+  getfield cn/domob/android/ads/p/h F
+  fstore 11
+  fload 11
+  freturn
+Label1:
+  astore 13
+  aload_0
+  getfield cn/domob/android/ads/p/h F
+  fstore 11
+  fload 11
+  freturn
+  nop
+.end <method>
+
+.method protected k(Landroid/content/Context;)F
+.limit locals 5
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  invokevirtual android/content/res/Resources/getDisplayMetrics()Landroid/util/DisplayMetrics;
+  astore_3
+  aload_3
+  getfield android/util/DisplayMetrics/density F
+  fstore 4
+  fload 4
+  freturn
+  nop
+.end <method>
+
+.method protected l(Landroid/content/Context;)I
+.limit locals 11
+.limit stack 200
+  nop
+  ldc "window"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  astore 5
+  aload 5
+  checkcast android/view/WindowManager
+  astore 5
+  aload 5
+  astore 4
+  aload 4
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 6
+  iconst_0
+  istore 7
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label0
+  aload 6
+  invokevirtual android/view/Display/getWidth()I
+  istore 7
+Label0:
+  iload 7
+  i2f
+  fstore 8
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/j(Landroid/content/Context;)F
+  fstore 9
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/k(Landroid/content/Context;)F
+  fstore 10
+  fload 9
+  fload 10
+  fdiv
+  fstore 9
+  fload 8
+  fload 9
+  fmul
+  fstore 9
+  fload 9
+  invokestatic java/lang/Math/round(F)I
+  istore 7
+  iload 7
+  ireturn
+  nop
+.end <method>
+
+.method protected m(Landroid/content/Context;)I
+.limit locals 11
+.limit stack 200
+  nop
+  ldc "window"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  astore 5
+  aload 5
+  checkcast android/view/WindowManager
+  astore 5
+  aload 5
+  astore 4
+  aload 4
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 6
+  iconst_0
+  istore 7
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label0
+  aload 6
+  invokevirtual android/view/Display/getHeight()I
+  istore 7
+Label0:
+  iload 7
+  i2f
+  fstore 8
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/j(Landroid/content/Context;)F
+  fstore 9
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/k(Landroid/content/Context;)F
+  fstore 10
+  fload 9
+  fload 10
+  fdiv
+  fstore 9
+  fload 8
+  fload 9
+  fmul
+  fstore 9
+  fload 9
+  invokestatic java/lang/Math/round(F)I
+  istore 7
+  iload 7
+  ireturn
+  nop
+.end <method>
+
+.method protected n(Landroid/content/Context;)I
+.limit locals 8
+.limit stack 200
+  nop
+  ldc "window"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  astore 5
+  aload 5
+  checkcast android/view/WindowManager
+  astore 5
+  aload 5
+  astore 4
+  aload 4
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 6
+  iconst_0
+  istore 7
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label0
+  aload 6
+  invokevirtual android/view/Display/getWidth()I
+  istore 7
+Label0:
+  iload 7
+  ireturn
+  nop
+.end <method>
+
+.method protected o(Landroid/content/Context;)I
+.limit locals 8
+.limit stack 200
+  nop
+  ldc "window"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  astore 5
+  aload 5
+  checkcast android/view/WindowManager
+  astore 5
+  aload 5
+  astore 4
+  aload 4
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 6
+  iconst_0
+  istore 7
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label0
+  aload 6
+  invokevirtual android/view/Display/getHeight()I
+  istore 7
+Label0:
+  iload 7
+  ireturn
+  nop
+.end <method>
+
+.method protected p(Landroid/content/Context;)Landroid/location/Location;
+.limit locals 36
+.limit stack 200
+  .catch  java/lang/Exception <from> Label13 <to> Label14 <using> Label12
+  .catch  java/lang/Exception <from> Label16 <to> Label17 <using> Label12
+  .catch  java/lang/Exception <from> Label19 <to> Label12 <using> Label12
+  .catch  java/lang/Exception <from> Label6 <to> Label20 <using> Label12
+  nop
+Label13:
+  aload_0
+  astore_2
+  aload_1
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual cn/domob/android/ads/p/a(Landroid/content/Context;)Z
+  istore 9
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 9
+  ifne Label0
+  invokestatic cn/domob/android/ads/h/a()Lcn/domob/android/ads/h;
+  astore 10
+  aload 10
+  invokevirtual cn/domob/android/ads/h/f()Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifne Label1
+Label0:
+  ldc "DomobSDK"
+  astore 11
+  ldc "Location information is not used for ad requests."
+  astore 12
+  aload 11
+  aload 12
+  invokestatic android/util/Log/i(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aconst_null
+  astore 13
+  aload 13
+  areturn
+Label1:
+  ldc "location"
+  astore 11
+  aload_1
+  astore_2
+  aload_2
+  aload 11
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 14
+  aload 14
+  astore 16
+  aload 16
+  checkcast android/location/LocationManager
+  astore 16
+  aload 16
+  astore 15
+  aload 15
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 15
+  ifnull Label2
+  ldc "android.permission.ACCESS_FINE_LOCATION"
+  astore 11
+  aload_1
+  astore_2
+  aload_2
+  aload 11
+  invokevirtual android/content/Context/checkCallingOrSelfPermission(Ljava/lang/String;)I
+  istore 17
+  dload 17
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 17
+  ifne Label3
+  ldc "gps"
+  astore 11
+  aload 15
+  aload 11
+  invokevirtual android/location/LocationManager/getLastKnownLocation(Ljava/lang/String;)Landroid/location/Location;
+  astore 18
+Label11:
+  aload 18
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 18
+  ifnonnull Label4
+  ldc "DomobDeviceInfo"
+  astore 11
+  ldc "\u4eceGPS\u83b7\u53d6lastKnownLocation\u5931\u8d25\uff0c\u5c1d\u8bd5\u4ece\u7f51\u7edc\u83b7\u53d6"
+  astore 12
+  aload 11
+  aload 12
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  ldc "network"
+  astore 11
+  aload 15
+  aload 11
+  invokevirtual android/location/LocationManager/getLastKnownLocation(Ljava/lang/String;)Landroid/location/Location;
+  astore 18
+  aload 18
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 18
+  ifnull Label5
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 19
+  aload 18
+  astore_2
+  aload_2
+  invokevirtual android/location/Location/getTime()J
+  lstore 21
+  lload 19
+  lstore_2
+  lload 21
+  lstore 4
+  lload_2
+  lload 4
+  lsub
+  lstore_2
+  lload_2
+  lstore 19
+  ldc2_w 600000
+  lstore 24
+  lload 19
+  lload 24
+  lcmp
+  istore 23
+  iload 23
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 23
+  ifge Label5
+  ldc "DomobDeviceInfo"
+  astore 11
+  ldc "\u4ecewifi\u53d6\u5230\u7684LastKnownLocation\u4e3a\u5341\u5206\u949f\u5185\u6570\u636e\uff0c\u6709\u6548"
+  astore 12
+  aload 11
+  aload 12
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  iconst_2
+  istore 26
+  iload 26
+  istore_2
+  aload_0
+  astore_3
+  aload_3
+  iload_2
+  putfield cn/domob/android/ads/p/j I
+  aload 18
+  astore_2
+  aload_0
+  astore_3
+  aload_3
+  aload_2
+  putfield cn/domob/android/ads/p/i Landroid/location/Location;
+  aload 18
+  areturn
+Label4:
+  ldc "DomobDeviceInfo"
+  astore 11
+  ldc "\u4eceGPS\u83b7\u53d6\u5230lastKnownLocation\uff0c\u68c0\u9a8c\u662f\u5426\u6709\u6548"
+  astore 12
+  aload 11
+  aload 12
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 19
+  aload 18
+  astore_2
+  aload_2
+  invokevirtual android/location/Location/getTime()J
+  lstore 21
+  lload 19
+  lstore_2
+  lload 21
+  lstore 4
+  lload_2
+  lload 4
+  lsub
+  lstore_2
+  lload_2
+  lstore 19
+  ldc2_w 600000
+  lstore 24
+  lload 19
+  lload 24
+  lcmp
+  istore 23
+  iload 23
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 23
+  ifge Label5
+  ldc "DomobDeviceInfo"
+  astore 11
+  ldc "\u4ece GPS\u53d6\u5230\u7684LastKnownLocation\u4e3a\u5341\u5206\u949f\u5185\u6570\u636e\uff0c\u6709\u6548"
+  astore 12
+  aload 11
+  aload 12
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  iconst_0
+  istore 26
+  iload 26
+  istore_2
+  aload_0
+  astore_3
+  aload_3
+  iload_2
+  putfield cn/domob/android/ads/p/j I
+  aload 18
+  astore_2
+  aload_0
+  astore_3
+  aload_3
+  aload_2
+  putfield cn/domob/android/ads/p/i Landroid/location/Location;
+  aload 18
+  areturn
+Label5:
+  aload_1
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload_1
+  ifeq Label6
+  aload_0
+  astore_2
+  aload_2
+  getfield cn/domob/android/ads/p/i Landroid/location/Location;
+  astore_2
+  aload_2
+  astore 18
+  aload 18
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 18
+  ifnull Label7
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 19
+  aload_0
+  astore_2
+  aload_2
+  getfield cn/domob/android/ads/p/i Landroid/location/Location;
+  astore_2
+  aload_2
+  astore 18
+  aload 18
+  astore_2
+  aload_2
+  invokevirtual android/location/Location/getTime()J
+  lstore 21
+  ldc2_w 600000
+  lstore 24
+  lload 21
+  lload 24
+  ladd
+  lstore 27
+  lload 19
+  lload 27
+  lcmp
+  istore 23
+  iload 23
+  istore_2
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 23
+  ifle Label6
+Label7:
+  aload_1
+  monitorenter
+Label14:
+  invokestatic java/lang/System/currentTimeMillis()J
+  lstore 19
+  lload 19
+  lstore_2
+  aload_0
+  astore 4
+  aload 4
+  lload_2
+  putfield cn/domob/android/ads/p/l J
+  ldc "android.permission.ACCESS_COARSE_LOCATION"
+  astore 11
+  aload_1
+  astore_2
+  aload_2
+  aload 11
+  invokevirtual android/content/Context/checkCallingOrSelfPermission(Ljava/lang/String;)I
+  istore 17
+  dload 17
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 17
+  ifne Label8
+  ldc "DomobDeviceInfo"
+  astore 11
+  ldc "Trying to get locations from the network."
+  astore 12
+  aload 11
+  aload 12
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  new android/location/Criteria
+  astore 29
+  aload 29
+  astore_2
+  aload_2
+  invokespecial android/location/Criteria/<init>()V
+  iconst_2
+  istore 26
+  aload 29
+  astore_2
+  iload 26
+  istore_3
+  aload_2
+  iload_3
+  invokevirtual android/location/Criteria/setAccuracy(I)V
+  iconst_0
+  istore 26
+  aload 29
+  astore_2
+  iload 26
+  istore_3
+  aload_2
+  iload_3
+  invokevirtual android/location/Criteria/setCostAllowed(Z)V
+  iconst_1
+  istore 26
+  aload 29
+  astore_2
+  iload 26
+  istore_3
+  aload 15
+  aload_2
+  iload_3
+  invokevirtual android/location/LocationManager/getBestProvider(Landroid/location/Criteria;Z)Ljava/lang/String;
+  astore 30
+Label10:
+  aload 30
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 30
+  ifnonnull Label9
+  ldc "DomobDeviceInfo"
+  astore 11
+  ldc "No location providers are available.  Ads will not be geotargeted."
+  astore 12
+  aload 11
+  aload 12
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  iconst_0
+  istore 26
+  iload 26
+  istore_2
+  aload_0
+  astore_3
+  aload_3
+  iload_2
+  putfield cn/domob/android/ads/p/k I
+  aload_1
+  monitorexit
+  aconst_null
+  astore 13
+  aload 13
+  areturn
+Label9:
+  ldc "DomobDeviceInfo"
+  astore 11
+  ldc "Location provider setup successfully."
+  astore 12
+  aload 11
+  aload 12
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  new cn/domob/android/ads/p$b
+  astore 31
+  aload 31
+  astore_2
+  aload_0
+  astore_3
+  aload_2
+  aload_3
+  aload 15
+  invokespecial cn/domob/android/ads/p$b/<init>(Lcn/domob/android/ads/p;Landroid/location/LocationManager;)V
+  aload_1
+  astore_2
+  aload_2
+  invokevirtual android/content/Context/getMainLooper()Landroid/os/Looper;
+  astore 32
+  ldc2_w 0
+  lstore 24
+  fconst_0
+  fstore 33
+  aload 15
+  astore_2
+  aload 30
+  astore_3
+  lload 24
+  lstore 4
+  fload 33
+  fstore 6
+  aload 31
+  astore 7
+  aload 32
+  astore 8
+  aload_2
+  aload_3
+  lload 4
+  fload 6
+  aload 7
+  aload 8
+  invokevirtual android/location/LocationManager/requestLocationUpdates(Ljava/lang/String;JFLandroid/location/LocationListener;Landroid/os/Looper;)V
+  aload_1
+  monitorexit
+Label16:
+  aload_0
+  astore_2
+  aload_1
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual cn/domob/android/ads/p/q(Landroid/content/Context;)V
+Label2:
+  iconst_2
+  istore 26
+  iload 26
+  istore_2
+  aload_0
+  astore_3
+  aload_3
+  iload_2
+  putfield cn/domob/android/ads/p/k I
+Label17:
+  aconst_null
+  astore 13
+  aload 13
+  areturn
+Label15:
+  astore 34
+Label18:
+  aload_1
+  monitorexit
+Label19:
+  aload 34
+  athrow
+Label12:
+  astore 35
+  ldc "DomobDeviceInfo"
+  astore 11
+  ldc "location \u83b7\u53d6\u5f02\u5e38\uff01"
+  astore 12
+  aload 11
+  aload 12
+  invokestatic cn/domob/android/ads/J/b(Ljava/lang/Object;Ljava/lang/String;)V
+  aconst_null
+  astore 13
+  aload 13
+  areturn
+Label6:
+  aload_0
+  astore_2
+  aload_2
+  getfield cn/domob/android/ads/p/i Landroid/location/Location;
+  astore_2
+  aload_2
+  astore 18
+Label20:
+  aload 18
+  areturn
+Label8:
+  aconst_null
+  astore 30
+  goto Label10
+Label3:
+  aconst_null
+  astore 18
+  goto Label11
+  nop
+.end <method>
+
+.method protected q(Landroid/content/Context;)V
+.limit locals 4
+.limit stack 200
+  nop
+  new java/lang/Thread
+  astore_2
+  new cn/domob/android/ads/p$1
+  astore_3
+  aload_3
+  aload_0
+  aload_1
+  invokespecial cn/domob/android/ads/p$1/<init>(Lcn/domob/android/ads/p;Landroid/content/Context;)V
+  aload_2
+  aload_3
+  invokespecial java/lang/Thread/<init>(Ljava/lang/Runnable;)V
+  aload_2
+  invokevirtual java/lang/Thread/start()V
+  return
+  nop
+.end <method>
+
+.method protected r(Landroid/content/Context;)V
+.limit locals 10
+.limit stack 200
+  .catch  java/lang/Exception <from> Label2 <to> Label0 <using> Label1
+  nop
+  ldc "DomobDeviceInfo"
+  astore_2
+  ldc "Start get Application Info."
+  astore_3
+  aload_2
+  aload_3
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+Label2:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  iload 4
+  ifeq Label0
+  aload_1
+  invokevirtual android/content/Context/getPackageName()Ljava/lang/String;
+  astore 5
+  iconst_0
+  istore 7
+  aload 4
+  aload 5
+  iload 7
+  invokevirtual android/content/pm/PackageManager/getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+  astore 6
+  aload 6
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 6
+  ifnull Label0
+  aload 6
+  getfield android/content/pm/PackageInfo/packageName Ljava/lang/String;
+  astore 5
+  aload_0
+  aload 5
+  putfield cn/domob/android/ads/p/b Ljava/lang/String;
+  aload 6
+  getfield android/content/pm/PackageInfo/versionCode I
+  istore 8
+  aload_0
+  iload 8
+  putfield cn/domob/android/ads/p/c I
+Label0:
+  return
+Label1:
+  astore 9
+  ldc "DomobSDK"
+  astore_2
+  ldc "DomobDeviceInfo::failed to init DomobDeviceInfo!"
+  astore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 9
+  invokevirtual java/lang/Exception/printStackTrace()V
+  goto Label0
+  nop
+.end <method>
+
+.method protected s(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/p/b Ljava/lang/String;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/r(Landroid/content/Context;)V
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/p/b Ljava/lang/String;
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method protected t(Landroid/content/Context;)I
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/p/b Ljava/lang/String;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/r(Landroid/content/Context;)V
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/p/c I
+  istore_3
+  iload_3
+  ireturn
+  nop
+.end <method>
+
+.method protected u(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/p/b Ljava/lang/String;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/r(Landroid/content/Context;)V
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/p/d Ljava/lang/String;
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method protected v(Landroid/content/Context;)Landroid/database/Cursor;
+.limit locals 19
+.limit stack 200
+  nop
+  aload_0
+  astore_2
+  aload_1
+  astore_3
+  aload_2
+  aload_3
+  invokevirtual cn/domob/android/ads/p/e(Landroid/content/Context;)Ljava/lang/String;
+  astore 8
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 8
+  ifeq Label0
+  ldc "wifi"
+  astore 10
+  aload 8
+  aload 10
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label0
+  ldc "DomobDeviceInfo"
+  astore 10
+  ldc "network is wifi, don\'t read apn."
+  astore 11
+  aload 10
+  aload 11
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+  aconst_null
+  astore 12
+  aload 12
+  areturn
+Label0:
+  ldc "content://telephony/carriers/preferapn"
+  astore 10
+  aload 10
+  invokestatic android/net/Uri/parse(Ljava/lang/String;)Landroid/net/Uri;
+  astore 13
+  aload_1
+  astore_2
+  aload_2
+  invokevirtual android/content/Context/getContentResolver()Landroid/content/ContentResolver;
+  astore 14
+  aconst_null
+  astore 12
+  aconst_null
+  astore 16
+  aconst_null
+  astore 17
+  aconst_null
+  astore 18
+  aload 14
+  astore_2
+  aload 13
+  astore_3
+  aload 12
+  astore 4
+  aload 16
+  astore 5
+  aload 17
+  astore 6
+  aload 18
+  astore 7
+  aload_2
+  aload_3
+  aload 4
+  aload 5
+  aload 6
+  aload 7
+  invokevirtual android/content/ContentResolver/query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+  astore 15
+  aload 15
+  areturn
+  nop
+.end <method>
+
+.method protected w(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokevirtual cn/domob/android/ads/p/v(Landroid/content/Context;)Landroid/database/Cursor;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifeq Label0
+  aload_2
+  invokeinterface android/database/Cursor/getCount()I 1
+  istore_3
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  ifle Label0
+  aload_2
+  invokeinterface android/database/Cursor/moveToFirst()Z 1
+  pop
+  ldc "apn"
+  astore 4
+  aload_2
+  aload 4
+  invokeinterface android/database/Cursor/getColumnIndexOrThrow(Ljava/lang/String;)I 2
+  istore_3
+  aload_2
+  iload_3
+  invokeinterface android/database/Cursor/getString(I)Ljava/lang/String; 2
+  astore 5
+  aload_2
+  invokeinterface android/database/Cursor/close()V 1
+  aload 5
+  areturn
+Label0:
+  ldc ""
+  astore 4
+  aload 4
+  areturn
+  nop
+.end <method>
+
+.method protected x(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 14
+.limit stack 200
+  nop
+  aload_0
+  getfield cn/domob/android/ads/p/g Ljava/lang/String;
+  astore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  new java/lang/StringBuffer
+  astore_3
+  aload_3
+  invokespecial java/lang/StringBuffer/<init>()V
+  ldc "android"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  ldc ","
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  ldc ","
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  getstatic android/os/Build$VERSION/RELEASE Ljava/lang/String;
+  astore 5
+  aload 5
+  invokevirtual java/lang/String/length()I
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifle Label1
+  getstatic android/os/Build$VERSION/RELEASE Ljava/lang/String;
+  astore 7
+  ldc ","
+  astore 4
+  ldc "_"
+  astore 8
+  aload 7
+  aload 4
+  aload 8
+  invokevirtual java/lang/String/replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  astore 7
+  aload_3
+  aload 7
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+Label4:
+  ldc ","
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  ldc ","
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  getstatic android/os/Build/MODEL Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/length()I
+  istore 6
+  dload 6
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 6
+  ifle Label2
+  ldc ","
+  astore 4
+  ldc "_"
+  astore 8
+  aload 7
+  aload 4
+  aload 8
+  invokevirtual java/lang/String/replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  astore 7
+  aload_3
+  aload 7
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+Label2:
+  ldc ","
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  ldc "phone"
+  astore 4
+  aload_1
+  aload 4
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 9
+  aload 9
+  astore 11
+  aload 11
+  checkcast android/telephony/TelephonyManager
+  astore 11
+  aload 11
+  astore 10
+  aload 10
+  invokevirtual android/telephony/TelephonyManager/getNetworkOperatorName()Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 7
+  ifnull Label3
+  ldc ","
+  astore 4
+  ldc "_"
+  astore 8
+  aload 7
+  aload 4
+  aload 8
+  invokevirtual java/lang/String/replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  astore 7
+  aload_3
+  aload 7
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+Label3:
+  ldc ","
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  ldc ","
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  ldc ","
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  aload_3
+  invokevirtual java/lang/StringBuffer/toString()Ljava/lang/String;
+  astore 7
+  aload_0
+  aload 7
+  putfield cn/domob/android/ads/p/g Ljava/lang/String;
+  ldc cn/domob/android/ads/J
+  astore 12
+  aload 12
+  invokevirtual java/lang/Class/getSimpleName()Ljava/lang/String;
+  astore 7
+  new java/lang/StringBuilder
+  astore 13
+  aload 13
+  invokespecial java/lang/StringBuilder/<init>()V
+  ldc "getUserAgent:"
+  astore 4
+  aload 13
+  aload 4
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload_0
+  getfield cn/domob/android/ads/p/g Ljava/lang/String;
+  astore 5
+  aload 13
+  aload 5
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore 13
+  aload 13
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 5
+  aload 7
+  aload 5
+  invokestatic cn/domob/android/ads/J/a(Ljava/lang/String;Ljava/lang/String;)V
+Label0:
+  aload_0
+  getfield cn/domob/android/ads/p/g Ljava/lang/String;
+  astore 7
+  aload 7
+  areturn
+Label1:
+  ldc "1.5"
+  astore 4
+  aload_3
+  aload 4
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+  goto Label4
+  nop
+.end <method>
+
+.method protected y(Landroid/content/Context;)Ljava/lang/String;
+.limit locals 12
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+Label5:
+  aload_1
+  invokevirtual android/content/Context/getPackageName()Ljava/lang/String;
+  astore_3
+  sipush 128
+  istore 5
+  aload_2
+  aload_3
+  iload 5
+  invokevirtual android/content/pm/PackageManager/getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
+  astore 4
+Label6:
+  aload 4
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 4
+  ifnonnull Label0
+  ldc "SDKGetAppNameError"
+  astore 6
+  aload 6
+  areturn
+Label4:
+  astore 7
+  ldc "SDKGetAppNameError"
+  astore 6
+  aload 6
+  areturn
+Label0:
+  aload 4
+  getfield android/content/pm/PackageItemInfo/labelRes I
+  istore 8
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  ifeq Label1
+  aload_1
+  invokevirtual android/content/Context/getResources()Landroid/content/res/Resources;
+  astore 9
+  aload 9
+  iload 8
+  invokevirtual android/content/res/Resources/getString(I)Ljava/lang/String;
+  astore 10
+Label3:
+  aload 10
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload 10
+  ifnull Label2
+  aload 10
+  invokevirtual java/lang/Object/toString()Ljava/lang/String;
+  astore_3
+  aload_3
+  areturn
+Label1:
+  aload 4
+  getfield android/content/pm/PackageItemInfo/nonLocalizedLabel Ljava/lang/CharSequence;
+  astore 10
+  goto Label3
+Label2:
+  aconst_null
+  astore 11
+  aload 11
+  areturn
+  nop
+.end <method>
+

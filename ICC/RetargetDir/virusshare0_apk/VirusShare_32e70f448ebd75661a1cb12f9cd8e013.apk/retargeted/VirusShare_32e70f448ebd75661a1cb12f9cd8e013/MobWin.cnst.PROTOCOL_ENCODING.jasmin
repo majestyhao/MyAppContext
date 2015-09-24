@@ -1,0 +1,5 @@
+.source PROTOCOL_ENCODING.java
+.interface public interface abstract  MobWin/cnst/PROTOCOL_ENCODING
+.super java/lang/Object
+.field public static final "value" Ljava/lang/String; =  "UTF-8"
+

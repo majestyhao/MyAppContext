@@ -1,0 +1,176 @@
+.source BaiduJsonAdapter.java
+.class  com/admogo/adapters/BaiduJsonAdapter$FetchBaiduRunnable
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field private "baiduAdapter" Lcom/admogo/adapters/BaiduJsonAdapter;
+
+.method public <init>(Lcom/admogo/adapters/BaiduJsonAdapter;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  aload_1
+  putfield com/admogo/adapters/BaiduJsonAdapter$FetchBaiduRunnable/baiduAdapter Lcom/admogo/adapters/BaiduJsonAdapter;
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 24
+.limit stack 200
+  nop
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/BaiduJsonAdapter$FetchBaiduRunnable/baiduAdapter Lcom/admogo/adapters/BaiduJsonAdapter;
+  astore 6
+  aload 6
+  getfield com/admogo/adapters/AdMogoAdapter/adMogoLayoutReference Ljava/lang/ref/WeakReference;
+  astore 7
+  aload 7
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 8
+  aload 8
+  astore 10
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 10
+  astore 9
+  aload 9
+  getfield com/admogo/AdMogoLayout/activityReference Ljava/lang/ref/WeakReference;
+  astore 7
+  aload 7
+  invokevirtual java/lang/ref/WeakReference/get()Ljava/lang/Object;
+  astore 8
+  aload 8
+  astore 12
+  aload 12
+  checkcast android/app/Activity
+  astore 12
+  aload 12
+  astore 11
+  getstatic com/admogo/adapters/BaiduJsonAdapter/AD_TYPE I
+  istore 13
+  dload 13
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 13
+  lookupswitch
+  1 : Label1
+  2 : Label2
+  default : Label0
+Label0:
+  goto Label3
+Label3:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 14
+  ldc "Unknown baidu type!"
+  astore 15
+  aload 14
+  aload 15
+  invokestatic android/util/Log/w(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aload 9
+  invokevirtual com/admogo/AdMogoLayout/rotateThreadedNow()V
+Label4:
+  return
+Label1:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 14
+  ldc "Serving baidu type: image"
+  astore 15
+  aload 14
+  aload 15
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aload 11
+  invokevirtual android/app/Activity/getApplicationContext()Landroid/content/Context;
+  astore 16
+  getstatic com/baidu/AdType/IMAGE Lcom/baidu/AdType;
+  astore 17
+  getstatic com/admogo/adapters/BaiduJsonAdapter/APP_ID Ljava/lang/String;
+  astore 18
+  getstatic com/admogo/adapters/BaiduJsonAdapter/APP_SEC Ljava/lang/String;
+  astore 14
+  aload 17
+  astore_1
+  aload 18
+  astore_2
+  aload 16
+  aload_1
+  aload_2
+  aload 14
+  invokestatic com/baidu/AdRequest/getAds(Landroid/content/Context;Lcom/baidu/AdType;Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
+  astore 19
+  aload 19
+  putstatic com/admogo/adapters/BaiduJsonAdapter/imageAdList Ljava/util/List;
+Label5:
+  aload 9
+  getfield com/admogo/AdMogoLayout/handler Landroid/os/Handler;
+  astore_1
+  aload_1
+  astore 20
+  new com/admogo/adapters/BaiduJsonAdapter$DisplayBaiduRunnable
+  astore 21
+  aload_0
+  astore_1
+  aload_1
+  getfield com/admogo/adapters/BaiduJsonAdapter$FetchBaiduRunnable/baiduAdapter Lcom/admogo/adapters/BaiduJsonAdapter;
+  astore 6
+  aload 21
+  astore_1
+  aload_1
+  aload 6
+  invokespecial com/admogo/adapters/BaiduJsonAdapter$DisplayBaiduRunnable/<init>(Lcom/admogo/adapters/BaiduJsonAdapter;)V
+  ldc2_w 3000
+  lstore 22
+  aload 20
+  astore_1
+  aload 21
+  astore_2
+  lload 22
+  lstore_3
+  aload_1
+  aload_2
+  lload_3
+  invokevirtual android/os/Handler/postDelayed(Ljava/lang/Runnable;J)Z
+  pop
+  goto Label4
+Label2:
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 14
+  ldc "Serving baidu type: text"
+  astore 15
+  aload 14
+  aload 15
+  invokestatic android/util/Log/d(Ljava/lang/String;Ljava/lang/String;)I
+  pop
+  aload 11
+  invokevirtual android/app/Activity/getApplicationContext()Landroid/content/Context;
+  astore 16
+  getstatic com/baidu/AdType/TEXT Lcom/baidu/AdType;
+  astore 17
+  getstatic com/admogo/adapters/BaiduJsonAdapter/APP_ID Ljava/lang/String;
+  astore 14
+  getstatic com/admogo/adapters/BaiduJsonAdapter/APP_SEC Ljava/lang/String;
+  astore 18
+  aload 17
+  astore_1
+  aload 18
+  astore_2
+  aload 16
+  aload_1
+  aload 14
+  aload_2
+  invokestatic com/baidu/AdRequest/getAds(Landroid/content/Context;Lcom/baidu/AdType;Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;
+  astore 19
+  aload 19
+  putstatic com/admogo/adapters/BaiduJsonAdapter/textAdList Ljava/util/List;
+  goto Label5
+  nop
+  nop
+.end <method>
+

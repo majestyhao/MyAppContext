@@ -1,0 +1,254 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/tencent/mobwin/core/r
+.super java/lang/Object
+.implements  com/tencent/mobwin/core/b/a
+.field final "h" Lcom/tencent/mobwin/core/t;
+.field private final "i" Landroid/content/Context;
+.field private final "j" I
+.field private final "k" Landroid/os/Handler;
+
+.method <init>(Lcom/tencent/mobwin/core/t;Landroid/content/Context;ILandroid/os/Handler;)V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/tencent/mobwin/core/r/h Lcom/tencent/mobwin/core/t;
+  aload_0
+  aload_2
+  putfield com/tencent/mobwin/core/r/i Landroid/content/Context;
+  aload_0
+  iload_3
+  putfield com/tencent/mobwin/core/r/j I
+  aload_0
+  aload 4
+  putfield com/tencent/mobwin/core/r/k Landroid/os/Handler;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public a(ILcom/tencent/mobwin/core/b/b;)V
+.limit locals 6
+.limit stack 200
+  nop
+  aload_0
+  getfield com/tencent/mobwin/core/r/k Landroid/os/Handler;
+  astore_3
+  bipush 8
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload 4
+  iload_1
+  putfield android/os/Message/arg1 I
+  aload_0
+  getfield com/tencent/mobwin/core/r/k Landroid/os/Handler;
+  astore_3
+  aload_3
+  aload 4
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+  return
+  nop
+.end <method>
+
+.method public a(Lorg/apache/http/HttpResponse;Lcom/tencent/mobwin/core/b/b;)V
+.limit locals 20
+.limit stack 200
+  .catch  java/lang/Exception <from> Label7 <to> Label8 <using> Label6
+  .catch  java/lang/Exception <from> Label2 <to> Label9 <using> Label6
+  nop
+Label7:
+  aload_1
+  astore_3
+  new java/lang/NoSuchMethodError
+  dup
+  invokespecial java/lang/NoSuchMethodError/<init>()V
+  athrow
+  nop
+  aload 4
+  invokeinterface org/apache/http/HttpEntity/getContent()Ljava/io/InputStream; 1
+  astore 5
+  aload 5
+  invokestatic com/tencent/mobwin/core/t/a(Ljava/io/InputStream;)[B
+  astore 6
+  aload_2
+  astore_3
+  aload_3
+  getfield com/tencent/mobwin/core/b/b/f Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic com/tencent/mobwin/utils/b/b(Ljava/lang/String;)Ljava/lang/String;
+  astore 7
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/mobwin/core/r/i Landroid/content/Context;
+  astore 8
+  aload 7
+  aload 6
+  aload 8
+  invokestatic com/tencent/mobwin/core/x/a(Ljava/lang/String;[BLandroid/content/Context;)V
+  invokestatic android/os/Message/obtain()Landroid/os/Message;
+  astore 9
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/mobwin/core/r/j I
+  istore 10
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_1
+  istore 11
+  iload 10
+  iload 11
+  if_icmpne Label0
+  bipush 13
+  istore 11
+  aload 9
+  iload 11
+  putfield android/os/Message/what I
+Label3:
+  aload_2
+  astore_3
+  aload_3
+  getfield com/tencent/mobwin/core/b/b/f Ljava/lang/String;
+  astore 7
+  aload 7
+  invokestatic com/tencent/mobwin/utils/b/c(Ljava/lang/String;)Ljava/lang/String;
+  astore 7
+  aload 7
+  invokevirtual java/lang/String/toLowerCase()Ljava/lang/String;
+  astore 7
+  ldc ".gif"
+  astore 13
+  aload 7
+  aload 13
+  invokevirtual java/lang/String/endsWith(Ljava/lang/String;)Z
+  istore 12
+  iload 12
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 12
+  ifeq Label1
+  iconst_1
+  istore 11
+  aload 9
+  iload 11
+  putfield android/os/Message/arg1 I
+  aload 9
+  aload 6
+  putfield android/os/Message/obj Ljava/lang/Object;
+Label5:
+  new android/os/Bundle
+  astore 14
+  aload 14
+  invokespecial android/os/Bundle/<init>()V
+  aload_2
+  astore_3
+  aload_3
+  getfield com/tencent/mobwin/core/b/b/f Ljava/lang/String;
+  astore 7
+  ldc "url"
+  astore 13
+  aload 14
+  aload 13
+  aload 7
+  invokevirtual android/os/Bundle/putString(Ljava/lang/String;Ljava/lang/String;)V
+  aload 9
+  aload 14
+  invokevirtual android/os/Message/setData(Landroid/os/Bundle;)V
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/mobwin/core/r/k Landroid/os/Handler;
+  astore 15
+  aload 15
+  aload 9
+  invokevirtual android/os/Handler/sendMessage(Landroid/os/Message;)Z
+  pop
+  return
+Label0:
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/mobwin/core/r/j I
+  istore 10
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_2
+  istore 11
+  iload 10
+  iload 11
+  if_icmpne Label2
+  bipush 17
+  istore 11
+  aload 9
+  iload 11
+  putfield android/os/Message/what I
+Label8:
+  goto Label3
+Label6:
+  astore 16
+  new com/tencent/mobwin/core/z
+  astore 17
+  aload 17
+  invokespecial com/tencent/mobwin/core/z/<init>()V
+  aload 17
+  athrow
+Label2:
+  aload_0
+  astore_3
+  aload_3
+  getfield com/tencent/mobwin/core/r/j I
+  istore 10
+  dload 10
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_3
+  istore 11
+  iload 10
+  iload 11
+  if_icmpne Label4
+  bipush 15
+  istore 11
+  aload 9
+  iload 11
+  putfield android/os/Message/what I
+  goto Label3
+Label4:
+  bipush 7
+  istore 11
+  aload 9
+  iload 11
+  putfield android/os/Message/what I
+  goto Label3
+Label1:
+  aload 6
+  arraylength
+  istore 18
+  iconst_0
+  istore 11
+  aload 6
+  iload 11
+  iload 18
+  invokestatic android/graphics/BitmapFactory/decodeByteArray([BII)Landroid/graphics/Bitmap;
+  astore 19
+  iconst_0
+  istore 11
+  aload 9
+  iload 11
+  putfield android/os/Message/arg1 I
+  aload 19
+  astore_3
+  aload 9
+  aload_3
+  putfield android/os/Message/obj Ljava/lang/Object;
+Label9:
+  goto Label5
+  nop
+.end <method>
+

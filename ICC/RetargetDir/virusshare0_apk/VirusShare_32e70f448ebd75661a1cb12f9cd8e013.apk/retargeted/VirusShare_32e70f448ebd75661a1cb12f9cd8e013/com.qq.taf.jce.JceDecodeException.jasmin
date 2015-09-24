@@ -1,0 +1,15 @@
+.source JceDecodeException.java
+.class public  com/qq/taf/jce/JceDecodeException
+.super java/lang/RuntimeException
+
+.method public <init>(Ljava/lang/String;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial java/lang/RuntimeException/<init>(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+

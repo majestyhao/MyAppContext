@@ -1,0 +1,38 @@
+.source AdMogoManager.java
+.class  com/admogo/AdMogoManager$1
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "this$0" Lcom/admogo/AdMogoManager;
+
+.method <init>(Lcom/admogo/AdMogoManager;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/admogo/AdMogoManager$1/this$0 Lcom/admogo/AdMogoManager;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 3
+.limit stack 200
+  .catch  java/lang/Exception <from> Label2 <to> Label0 <using> Label1
+  nop
+Label2:
+  aload_0
+  getfield com/admogo/AdMogoManager$1/this$0 Lcom/admogo/AdMogoManager;
+  astore_1
+  aload_1
+  invokevirtual com/admogo/AdMogoManager/fetchConfig()V
+Label0:
+  return
+Label1:
+  astore_2
+  goto Label0
+  nop
+.end <method>
+

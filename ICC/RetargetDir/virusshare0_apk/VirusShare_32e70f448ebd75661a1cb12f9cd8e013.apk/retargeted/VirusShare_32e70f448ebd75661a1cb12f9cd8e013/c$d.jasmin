@@ -1,0 +1,19 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class final  c$d
+.super java/lang/Exception
+.field final "a" Lc;
+
+.method public <init>(Lc;Ljava/lang/String;)V
+.limit locals 3
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield c$d/a Lc;
+  aload_0
+  aload_2
+  invokespecial java/lang/Exception/<init>(Ljava/lang/String;)V
+  return
+  nop
+.end <method>
+

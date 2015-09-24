@@ -1,0 +1,146 @@
+.source DirectionPath.java
+.class public  maxstrom/game/llk/engine/DirectionPath
+.super java/lang/Object
+.field private "direction" [Lmaxstrom/game/llk/engine/Direction;
+.field private final "self" Lmaxstrom/game/llk/engine/Tile;
+
+.method public <init>(Lmaxstrom/game/llk/engine/Tile;Lmaxstrom/game/llk/engine/Tile;Lmaxstrom/game/llk/engine/Tile;)V
+.limit locals 7
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  iconst_2
+  istore 5
+  iload 5
+  anewarray maxstrom/game/llk/engine/Direction
+  astore 4
+  aload_0
+  aload 4
+  putfield maxstrom/game/llk/engine/DirectionPath/direction [Lmaxstrom/game/llk/engine/Direction;
+  aload_0
+  aload_2
+  putfield maxstrom/game/llk/engine/DirectionPath/self Lmaxstrom/game/llk/engine/Tile;
+  aload_0
+  getfield maxstrom/game/llk/engine/DirectionPath/direction [Lmaxstrom/game/llk/engine/Direction;
+  astore 4
+  aload_0
+  aload_1
+  aload_2
+  invokevirtual maxstrom/game/llk/engine/DirectionPath/calDirection(Lmaxstrom/game/llk/engine/Tile;Lmaxstrom/game/llk/engine/Tile;)Lmaxstrom/game/llk/engine/Direction;
+  astore 6
+  iconst_0
+  istore 5
+  aload 4
+  iload 5
+  aload 6
+  aastore
+  aload_0
+  getfield maxstrom/game/llk/engine/DirectionPath/direction [Lmaxstrom/game/llk/engine/Direction;
+  astore 4
+  aload_0
+  aload_3
+  aload_2
+  invokevirtual maxstrom/game/llk/engine/DirectionPath/calDirection(Lmaxstrom/game/llk/engine/Tile;Lmaxstrom/game/llk/engine/Tile;)Lmaxstrom/game/llk/engine/Direction;
+  astore 6
+  iconst_1
+  istore 5
+  aload 4
+  iload 5
+  aload 6
+  aastore
+  return
+  nop
+.end <method>
+
+.method public calDirection(Lmaxstrom/game/llk/engine/Tile;Lmaxstrom/game/llk/engine/Tile;)Lmaxstrom/game/llk/engine/Direction;
+.limit locals 6
+.limit stack 200
+  nop
+  aload_1
+  getfield maxstrom/game/llk/engine/Tile/x I
+  istore_3
+  aload_2
+  getfield maxstrom/game/llk/engine/Tile/x I
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_3
+  iload 4
+  if_icmpne Label0
+  aload_1
+  getfield maxstrom/game/llk/engine/Tile/y I
+  istore 4
+  aload_2
+  getfield maxstrom/game/llk/engine/Tile/y I
+  istore_3
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  iload_3
+  if_icmple Label1
+  getstatic maxstrom/game/llk/engine/Direction/south Lmaxstrom/game/llk/engine/Direction;
+  astore 5
+  aload 5
+  areturn
+Label1:
+  getstatic maxstrom/game/llk/engine/Direction/north Lmaxstrom/game/llk/engine/Direction;
+  astore 5
+  aload 5
+  areturn
+Label0:
+  aload_1
+  getfield maxstrom/game/llk/engine/Tile/x I
+  istore 4
+  aload_2
+  getfield maxstrom/game/llk/engine/Tile/x I
+  istore_3
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload_3
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 4
+  iload_3
+  if_icmple Label2
+  getstatic maxstrom/game/llk/engine/Direction/east Lmaxstrom/game/llk/engine/Direction;
+  astore 5
+  aload 5
+  areturn
+Label2:
+  getstatic maxstrom/game/llk/engine/Direction/west Lmaxstrom/game/llk/engine/Direction;
+  astore 5
+  aload 5
+  areturn
+  nop
+.end <method>
+
+.method public getDirection()[Lmaxstrom/game/llk/engine/Direction;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield maxstrom/game/llk/engine/DirectionPath/direction [Lmaxstrom/game/llk/engine/Direction;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+
+.method public getTile()Lmaxstrom/game/llk/engine/Tile;
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield maxstrom/game/llk/engine/DirectionPath/self Lmaxstrom/game/llk/engine/Tile;
+  astore_1
+  aload_1
+  areturn
+  nop
+.end <method>
+

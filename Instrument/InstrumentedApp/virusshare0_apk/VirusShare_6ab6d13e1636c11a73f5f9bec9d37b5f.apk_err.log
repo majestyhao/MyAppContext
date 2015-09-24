@@ -1,0 +1,5 @@
+Exception in thread "main" soot.CompilationDeathException: Output file /media/sde/WeiYang/Workspace/CommandLine/AppContext/Instrument/InstrumentedApp/virusshare0_apk/VirusShare_6ab6d13e1636c11a73f5f9bec9d37b5f.apk exists. Not overwriting.
+	at soot.toDex.DexPrinter.printApk(DexPrinter.java:153)
+	at soot.toDex.DexPrinter.print(DexPrinter.java:1124)
+	at soot.PackManager.writeOutput(PackManager.java:501)
+	at app.IfStmtInstrument.main(IfStmtInstrument.java:211)

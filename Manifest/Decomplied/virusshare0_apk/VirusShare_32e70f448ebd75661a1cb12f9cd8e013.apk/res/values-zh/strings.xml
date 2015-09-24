@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">经典连连看</string>
+    <string name="cfgEnableMusic">isMusic</string>
+    <string name="cfgEnableSound">isSound</string>
+    <string name="cfgEnableVibrate">isVibrate</string>
+    <string name="cbEnableMusic">音乐</string>
+    <string name="cbEnableSound">音效</string>
+    <string name="cbEnableVibrate">震动</string>
+    <string name="msgLevelSuccess">闯关成功！继续下一关！</string>
+    <string name="msgLevelFail">闯关失败了！再来一次！</string>
+    <string name="msgLevelPrefix">第</string>
+    <string name="msgLevelPosfix">关</string>
+    <string name="msgMaxLevelPrefix">最高纪录=第</string>
+    <string name="msgMaxLevelPosfix">关</string>
+    <string name="btnOK">确定</string>
+    <string name="btnCancel">取消</string>
+    <string name="attention">注意</string>
+    <string name="quitDesc">您确认要退出吗？</string>
+    <string name="newGameDesc">您确认要重新游戏吗？</string>
+    <string name="txtPauseContext">暂定中...</string>
+    <string name="menuOption">选项</string>
+    <string name="menuSetting">设置</string>
+    <string name="menuPause">暂停</string>
+    <string name="menuExit">退出</string>
+    <string name="opNewGame">新建游戏</string>
+    <string name="opRerange">重新排序</string>
+    <string name="opHint">提示</string>
+    <string name="opCancel">取消</string>
+    <string name="opRecomend">安装推荐应用</string>
+</resources>

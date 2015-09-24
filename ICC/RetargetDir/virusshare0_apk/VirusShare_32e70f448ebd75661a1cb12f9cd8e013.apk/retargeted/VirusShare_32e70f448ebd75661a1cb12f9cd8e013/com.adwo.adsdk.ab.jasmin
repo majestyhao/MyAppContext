@@ -1,0 +1,307 @@
+.source SourceFile
+.class final  com/adwo/adsdk/ab
+.super com/adwo/adsdk/V
+.implements  com/adwo/adsdk/Q
+.field "d" I
+.field "e" Landroid/webkit/WebView;
+.field "f" Lcom/adwo/adsdk/a;
+.field "g" Landroid/os/Handler;
+
+.method public <init>(Landroid/view/View;Lcom/adwo/adsdk/AdwoAdView;)V
+.limit locals 5
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokespecial com/adwo/adsdk/V/<init>(Landroid/view/View;)V
+  iconst_5
+  istore_3
+  aload_0
+  iload_3
+  putfield com/adwo/adsdk/ab/d I
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload 4
+  aload_0
+  invokespecial com/adwo/adsdk/ac/<init>(Lcom/adwo/adsdk/ab;)V
+  aload_0
+  aload 4
+  putfield com/adwo/adsdk/ab/g Landroid/os/Handler;
+  aload_2
+  aload_0
+  invokevirtual com/adwo/adsdk/AdwoAdView/setDetachedFromWindowListener(Lcom/adwo/adsdk/Q;)V
+  return
+  nop
+.end <method>
+
+.method public final a()V
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  ifeq Label0
+  aload_0
+  getfield com/adwo/adsdk/V/b Landroid/widget/PopupWindow;
+  astore_1
+  aload_1
+  invokevirtual android/widget/PopupWindow/dismiss()V
+Label0:
+  aload_0
+  getfield com/adwo/adsdk/ab/f Lcom/adwo/adsdk/a;
+  astore_2
+  aload_2
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  aload_2
+  ifnull Label1
+  aload_0
+  getfield com/adwo/adsdk/ab/f Lcom/adwo/adsdk/a;
+  astore_2
+  aload_2
+  invokeinterface com/adwo/adsdk/a/a()V 1
+Label1:
+  return
+  nop
+.end <method>
+
+.method protected final b()V
+.limit locals 13
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  aload_0
+  getfield com/adwo/adsdk/V/a Landroid/view/View;
+  astore_2
+  aload_2
+  invokevirtual android/view/View/getContext()Landroid/content/Context;
+  astore_3
+  aload_1
+  aload_3
+  invokespecial android/widget/RelativeLayout/<init>(Landroid/content/Context;)V
+  iconst_0
+  istore 5
+  iload 5
+  istore 4
+  aload_1
+  iload 4
+  invokevirtual android/widget/RelativeLayout/setBackgroundColor(I)V
+  new android/widget/RelativeLayout$LayoutParams
+  astore 6
+  iconst_m1
+  istore 5
+  iconst_m1
+  istore 7
+  aload 6
+  iload 5
+  iload 7
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  aload_1
+  aload 6
+  invokevirtual android/widget/RelativeLayout/setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+  new android/widget/RelativeLayout$LayoutParams
+  astore 6
+  iconst_m1
+  istore 5
+  bipush -2
+  istore 7
+  aload 6
+  iload 5
+  iload 7
+  invokespecial android/widget/RelativeLayout$LayoutParams/<init>(II)V
+  bipush 13
+  istore 5
+  aload 6
+  iload 5
+  invokevirtual android/widget/RelativeLayout$LayoutParams/addRule(I)V
+  new android/webkit/WebView
+  astore 8
+  aload_0
+  getfield com/adwo/adsdk/V/a Landroid/view/View;
+  astore_2
+  aload_2
+  invokevirtual android/view/View/getContext()Landroid/content/Context;
+  astore_3
+  aload 8
+  aload_3
+  invokespecial android/webkit/WebView/<init>(Landroid/content/Context;)V
+  aload_0
+  aload 8
+  putfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  aload_0
+  getfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  astore 8
+  new com/adwo/adsdk/ad
+  astore 9
+  aload 9
+  aload_0
+  invokespecial com/adwo/adsdk/ad/<init>(Lcom/adwo/adsdk/ab;)V
+  aload 8
+  aload 9
+  invokevirtual android/webkit/WebView/setWebViewClient(Landroid/webkit/WebViewClient;)V
+  aload_0
+  getfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  astore 8
+  aload 8
+  invokevirtual android/webkit/WebView/getSettings()Landroid/webkit/WebSettings;
+  astore 10
+  iconst_1
+  istore 5
+  aload 10
+  iload 5
+  invokevirtual android/webkit/WebSettings/setJavaScriptEnabled(Z)V
+  aload_0
+  getfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  astore 8
+  aload 8
+  invokevirtual android/webkit/WebView/getSettings()Landroid/webkit/WebSettings;
+  astore 10
+  iconst_1
+  istore 5
+  aload 10
+  iload 5
+  invokevirtual android/webkit/WebSettings/setLoadsImagesAutomatically(Z)V
+  aload_0
+  getfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  astore 8
+  aload 8
+  invokevirtual android/webkit/WebView/getSettings()Landroid/webkit/WebSettings;
+  astore 10
+  iconst_1
+  istore 5
+  aload 10
+  iload 5
+  invokevirtual android/webkit/WebSettings/setJavaScriptEnabled(Z)V
+  aload_0
+  getfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  astore 8
+  aload 8
+  invokevirtual android/webkit/WebView/getSettings()Landroid/webkit/WebSettings;
+  astore 10
+  iconst_1
+  istore 5
+  aload 10
+  iload 5
+  invokevirtual android/webkit/WebSettings/setPluginsEnabled(Z)V
+  aload_0
+  getfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  astore 8
+  aload 8
+  invokevirtual android/webkit/WebView/getSettings()Landroid/webkit/WebSettings;
+  astore 10
+  iconst_1
+  istore 5
+  aload 10
+  iload 5
+  invokevirtual android/webkit/WebSettings/setJavaScriptCanOpenWindowsAutomatically(Z)V
+  aload_0
+  getfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  astore 8
+  aload 8
+  invokevirtual android/webkit/WebView/getSettings()Landroid/webkit/WebSettings;
+  astore 10
+  iconst_0
+  istore 5
+  aload 10
+  iload 5
+  invokevirtual android/webkit/WebSettings/setSaveFormData(Z)V
+  aload_0
+  getfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  astore 8
+  aload 8
+  invokevirtual android/webkit/WebView/getSettings()Landroid/webkit/WebSettings;
+  astore 10
+  iconst_0
+  istore 5
+  aload 10
+  iload 5
+  invokevirtual android/webkit/WebSettings/setSavePassword(Z)V
+  aload_0
+  getfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  astore 8
+  aload 8
+  invokevirtual android/webkit/WebView/getSettings()Landroid/webkit/WebSettings;
+  astore 10
+  getstatic android/webkit/WebSettings$RenderPriority/HIGH Landroid/webkit/WebSettings$RenderPriority;
+  astore 11
+  aload 10
+  aload 11
+  invokevirtual android/webkit/WebSettings/setRenderPriority(Landroid/webkit/WebSettings$RenderPriority;)V
+  aload_0
+  getfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  astore 8
+  aload 8
+  invokevirtual android/webkit/WebView/getSettings()Landroid/webkit/WebSettings;
+  astore 10
+  iconst_1
+  istore 5
+  aload 10
+  iload 5
+  invokevirtual android/webkit/WebSettings/setLightTouchEnabled(Z)V
+  aload_0
+  getfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  astore 8
+  aload 8
+  invokevirtual android/webkit/WebView/requestFocusFromTouch()Z
+  pop
+  aload_0
+  getfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  astore 8
+  iconst_0
+  istore 5
+  iload 5
+  istore 4
+  aload 8
+  iload 4
+  invokevirtual android/webkit/WebView/setScrollBarStyle(I)V
+  aload_0
+  getfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  astore 8
+  iconst_0
+  istore 5
+  aload 8
+  iload 5
+  invokevirtual android/webkit/WebView/setVerticalScrollBarEnabled(Z)V
+  aload_0
+  getfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  astore 8
+  iconst_0
+  istore 5
+  aload 8
+  iload 5
+  invokevirtual android/webkit/WebView/setHorizontalScrollBarEnabled(Z)V
+  aload_0
+  getfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  astore 8
+  iconst_4
+  istore 5
+  aload 8
+  iload 5
+  invokevirtual android/webkit/WebView/setVisibility(I)V
+  aload_0
+  getfield com/adwo/adsdk/ab/e Landroid/webkit/WebView;
+  astore 8
+  aload_1
+  aload 8
+  aload 6
+  invokevirtual android/widget/RelativeLayout/addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+  aload_0
+  aload_1
+  putfield com/adwo/adsdk/V/c Landroid/view/View;
+  aload_0
+  getfield com/adwo/adsdk/V/b Landroid/widget/PopupWindow;
+  astore 12
+  aload 12
+  aload_1
+  invokevirtual android/widget/PopupWindow/setContentView(Landroid/view/View;)V
+  return
+  nop
+.end <method>
+

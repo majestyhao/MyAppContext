@@ -1,0 +1,25 @@
+.source SourceFile
+.class abstract  com/mobisage/android/C
+.super java/lang/Object
+
+.method <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public a()Z
+.limit locals 2
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  iload_1
+  ireturn
+  nop
+.end <method>
+

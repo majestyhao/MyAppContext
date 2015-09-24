@@ -1,0 +1,153 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class  com/wiyun/ad/e$4$1
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field final "a" Lcom/wiyun/ad/e$4;
+
+.method <init>(Lcom/wiyun/ad/e$4;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  putfield com/wiyun/ad/e$4$1/a Lcom/wiyun/ad/e$4;
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 12
+.limit stack 200
+  nop
+  aload_0
+  getfield com/wiyun/ad/e$4$1/a Lcom/wiyun/ad/e$4;
+  astore_1
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  aload_2
+  invokestatic com/wiyun/ad/e/a(Lcom/wiyun/ad/e;)Lcom/wiyun/ad/j;
+  astore_3
+  aload_3
+  getfield com/wiyun/ad/j/H Z
+  istore 4
+  iload 4
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 4
+  ifeq Label0
+  ldc "WiYun"
+  astore 5
+  ldc "loopForever"
+  astore 6
+  aload 5
+  aload 6
+  invokestatic com/wiyun/ad/s/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  getfield com/wiyun/ad/e$4$1/a Lcom/wiyun/ad/e$4;
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/e$4/a(Lcom/wiyun/ad/e$4;)Lcom/wiyun/ad/e;
+  astore_2
+  aload_2
+  invokestatic com/wiyun/ad/e/j(Lcom/wiyun/ad/e;)Landroid/widget/VideoView;
+  astore 7
+  iconst_0
+  istore 8
+  aload 7
+  iload 8
+  invokevirtual android/widget/VideoView/seekTo(I)V
+  aload_0
+  getfield com/wiyun/ad/e$4$1/a Lcom/wiyun/ad/e$4;
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/e$4/a(Lcom/wiyun/ad/e$4;)Lcom/wiyun/ad/e;
+  astore_2
+  aload_2
+  invokestatic com/wiyun/ad/e/j(Lcom/wiyun/ad/e;)Landroid/widget/VideoView;
+  astore 7
+  aload 7
+  invokevirtual android/widget/VideoView/start()V
+Label1:
+  return
+Label0:
+  aload_0
+  getfield com/wiyun/ad/e$4$1/a Lcom/wiyun/ad/e$4;
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/e$4/a I
+  istore 9
+  iload 9
+  iconst_m1
+  iadd
+  istore 9
+  aload_1
+  iload 9
+  putfield com/wiyun/ad/e$4/a I
+  aload_0
+  getfield com/wiyun/ad/e$4$1/a Lcom/wiyun/ad/e$4;
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/e$4/a I
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifle Label1
+  new java/lang/StringBuilder
+  astore 10
+  ldc "loopCount = "
+  astore 5
+  aload 10
+  aload 5
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_0
+  getfield com/wiyun/ad/e$4$1/a Lcom/wiyun/ad/e$4;
+  astore_1
+  aload_1
+  getfield com/wiyun/ad/e$4/a I
+  istore 9
+  aload 10
+  iload 9
+  invokevirtual java/lang/StringBuilder/append(I)Ljava/lang/StringBuilder;
+  astore 10
+  aload 10
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 11
+  ldc "WiYun"
+  astore 5
+  aload 5
+  aload 11
+  invokestatic com/wiyun/ad/s/a(Ljava/lang/String;Ljava/lang/String;)V
+  aload_0
+  getfield com/wiyun/ad/e$4$1/a Lcom/wiyun/ad/e$4;
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/e$4/a(Lcom/wiyun/ad/e$4;)Lcom/wiyun/ad/e;
+  astore_2
+  aload_2
+  invokestatic com/wiyun/ad/e/j(Lcom/wiyun/ad/e;)Landroid/widget/VideoView;
+  astore 7
+  iconst_0
+  istore 8
+  aload 7
+  iload 8
+  invokevirtual android/widget/VideoView/seekTo(I)V
+  aload_0
+  getfield com/wiyun/ad/e$4$1/a Lcom/wiyun/ad/e$4;
+  astore_1
+  aload_1
+  invokestatic com/wiyun/ad/e$4/a(Lcom/wiyun/ad/e$4;)Lcom/wiyun/ad/e;
+  astore_2
+  aload_2
+  invokestatic com/wiyun/ad/e/j(Lcom/wiyun/ad/e;)Landroid/widget/VideoView;
+  astore 7
+  aload 7
+  invokevirtual android/widget/VideoView/start()V
+  goto Label1
+  nop
+.end <method>
+

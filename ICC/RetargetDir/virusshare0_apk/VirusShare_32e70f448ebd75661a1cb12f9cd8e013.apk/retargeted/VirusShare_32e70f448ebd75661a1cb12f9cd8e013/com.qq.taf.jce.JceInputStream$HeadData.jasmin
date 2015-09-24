@@ -1,0 +1,34 @@
+.source JceInputStream.java
+.class public  com/qq/taf/jce/JceInputStream$HeadData
+.super java/lang/Object
+.field public "tag" I
+.field public "type" B
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public clear()V
+.limit locals 2
+.limit stack 200
+  nop
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/qq/taf/jce/JceInputStream$HeadData/type B
+  iconst_0
+  istore_1
+  aload_0
+  iload_1
+  putfield com/qq/taf/jce/JceInputStream$HeadData/tag I
+  return
+  nop
+.end <method>
+

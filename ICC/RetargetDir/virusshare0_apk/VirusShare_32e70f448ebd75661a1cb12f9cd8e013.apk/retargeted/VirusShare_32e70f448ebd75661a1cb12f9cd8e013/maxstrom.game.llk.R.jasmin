@@ -1,0 +1,14 @@
+.source R.java
+.class public final  maxstrom/game/llk/R
+.super java/lang/Object
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

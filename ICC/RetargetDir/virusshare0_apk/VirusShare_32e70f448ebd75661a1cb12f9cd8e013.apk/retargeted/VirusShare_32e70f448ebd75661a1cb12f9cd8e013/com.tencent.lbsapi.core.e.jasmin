@@ -1,0 +1,23 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/tencent/lbsapi/core/e
+.super java/lang/Object
+.field public static final "a" Ljava/lang/String; =  "requestId"
+.field public static final "b" Ljava/lang/String; =  "ReqHeader"
+.field public static final "c" Ljava/lang/String; =  "ErrorCode"
+.field public static final "d" Ljava/lang/String; =  "ErrorInfo"
+.field public static final "e" Ljava/lang/String; =  "utf-8"
+.field public static final "f" Ljava/lang/String; =  "LBS.AddressServer.AddressServantObj"
+.field public static final "g" Ljava/lang/String; =  "AuthName"
+.field public static final "h" Ljava/lang/String; =  "DeviceData"
+.field public static final "i" Ljava/lang/String; =  "DeviceDataStr"
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+

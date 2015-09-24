@@ -1,0 +1,876 @@
+.source AdMogoUtil.java
+.class public  com/admogo/util/AdMogoUtil
+.super java/lang/Object
+.field public static "ADMOGO" Ljava/lang/String;
+.field public static final "CUSTOM_TYPE_BANNER" I =  1
+.field public static final "CUSTOM_TYPE_FULL" I =  3
+.field public static final "CUSTOM_TYPE_GIF" I =  7
+.field public static final "CUSTOM_TYPE_HTML" I =  6
+.field public static final "CUSTOM_TYPE_ICON" I =  2
+.field public static final "MOGO_TYPE_BANNER" I =  1
+.field public static final "MOGO_TYPE_ICON" I =  2
+.field public static final "NETWORK_TYPE_4THSCREEN" I =  13
+.field public static final "NETWORK_TYPE_ADCHINA" I =  21
+.field public static final "NETWORK_TYPE_ADMOB" I =  1
+.field public static final "NETWORK_TYPE_ADMOGO" I =  10
+.field public static final "NETWORK_TYPE_ADSENSE" I =  14
+.field public static final "NETWORK_TYPE_ADTOUCH" I =  28
+.field public static final "NETWORK_TYPE_ADWO" I =  33
+.field public static final "NETWORK_TYPE_AIRAD" I =  32
+.field public static final "NETWORK_TYPE_APPMEDIA" I =  36
+.field public static final "NETWORK_TYPE_BAIDU" I =  44
+.field public static final "NETWORK_TYPE_CASEE" I =  25
+.field public static final "NETWORK_TYPE_CUSTOM" I =  9
+.field public static final "NETWORK_TYPE_DOMOB" I =  29
+.field public static final "NETWORK_TYPE_DOUBLECLICK" I =  15
+.field public static final "NETWORK_TYPE_EVENT" I =  17
+.field public static final "NETWORK_TYPE_EXCHANGE" I =  45
+.field public static final "NETWORK_TYPE_FRACTAL" I =  50
+.field public static final "NETWORK_TYPE_GENERIC" I =  16
+.field public static final "NETWORK_TYPE_GREYSTRIP" I =  7
+.field public static final "NETWORK_TYPE_INMOBI" I =  18
+.field public static final "NETWORK_TYPE_IZP" I =  40
+.field public static final "NETWORK_TYPE_JUMPTAP" I =  2
+.field public static final "NETWORK_TYPE_LIVERAIL" I =  5
+.field public static final "NETWORK_TYPE_LMMOB" I =  46
+.field public static final "NETWORK_TYPE_LSENSE" I =  34
+.field public static final "NETWORK_TYPE_MDOTM" I =  12
+.field public static final "NETWORK_TYPE_MEDIALETS" I =  4
+.field public static final "NETWORK_TYPE_MILLENNIAL" I =  6
+.field public static final "NETWORK_TYPE_MOBCLIX" I =  11
+.field public static final "NETWORK_TYPE_MOBISAGE" I =  31
+.field public static final "NETWORK_TYPE_MOBWIN" I =  53
+.field public static final "NETWORK_TYPE_MOGO" I =  27
+.field public static final "NETWORK_TYPE_PREMIUMAD" I =  48
+.field public static final "NETWORK_TYPE_QUATTRO" I =  8
+.field public static final "NETWORK_TYPE_RECOMMENDAD" I =  54
+.field public static final "NETWORK_TYPE_SMAATO" I =  35
+.field public static final "NETWORK_TYPE_SMART" I =  26
+.field public static final "NETWORK_TYPE_SUIZONG" I =  51
+.field public static final "NETWORK_TYPE_VIDEOEGG" I =  3
+.field public static final "NETWORK_TYPE_VPON" I =  30
+.field public static final "NETWORK_TYPE_WEIQIAN" I =  56
+.field public static final "NETWORK_TYPE_WINAD" I =  37
+.field public static final "NETWORK_TYPE_WINSMEDIA" I =  52
+.field public static final "NETWORK_TYPE_WIYUN" I =  22
+.field public static final "NETWORK_TYPE_WOOBOO" I =  23
+.field public static final "NETWORK_TYPE_YOUMI" I =  24
+.field public static final "NETWORK_TYPE_ZESTADZ" I =  20
+.field public static final "NETWORK_TYPE_ZHIDIAN" I =  47
+.field public static final "VER" Ljava/lang/String; =  "1.1.6"
+.field public static final "VERSION" I =  289
+.field public static "density" D =  0.000000000000000
+.field public static final "downloadDir" Ljava/lang/String; =  "MOGO/download/"
+.field public static final "partnerID" Ljava/lang/String; =  "mogo001"
+.field public static "urlAction" Ljava/lang/String;
+.field public static "urlAudiance" Ljava/lang/String;
+.field public static final "urlCaseeAD" Ljava/lang/String; =  "http://wap.casee.cn/mo/Mogo.ad"
+.field public static "urlClick" Ljava/lang/String;
+.field public static "urlConfig" Ljava/lang/String;
+.field public static "urlCustom" Ljava/lang/String;
+.field public static "urlExchange" Ljava/lang/String;
+.field public static "urlGetIp" Ljava/lang/String;
+.field public static "urlImpression" Ljava/lang/String;
+.field public static final "urlInmobiAD" Ljava/lang/String; =  "http://w.inmobi.com/showad.asm"
+.field public static "urlMogo" Ljava/lang/String;
+.field public static "urlNull" Ljava/lang/String;
+.field public static "urlPremium" Ljava/lang/String;
+.field public static "urlRecommend" Ljava/lang/String;
+.field public static "urlRecordData" Ljava/lang/String;
+.field public static "urlRequest" Ljava/lang/String;
+.field public static "urlUpdate" Ljava/lang/String;
+.field public static final "urlWinsAD" Ljava/lang/String; =  "http://api.winsmedia.net/webviewAdReq"
+.field public static final "urlWinsADClick" Ljava/lang/String; =  "http://api.winsmedia.net/webviewAdClick"
+.field public static final "winsVersion" Ljava/lang/String; =  "1.3"
+
+.method static <clinit>()V
+.limit locals 3
+.limit stack 200
+  nop
+  ldc "AdsMOGO SDK"
+  astore_0
+  aload_0
+  putstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  ldc "http://cfg.adsmogo.com/getinfo.ashx?appid=%s&appver=%d&adtype=%s&client=2&country=%s"
+  astore_0
+  aload_0
+  putstatic com/admogo/util/AdMogoUtil/urlConfig Ljava/lang/String;
+  ldc "http://cfg.adsmogo.com/Audiance.ashx?aid=%s&uid=%s&vr=%s&pn=%s&uv=%s&uc=%s&nt=%s&mn=%s&os=%s&dn=%s&si=%s%s&ra=%s&cn=%s&lc=%s&ll=%s"
+  astore_0
+  aload_0
+  putstatic com/admogo/util/AdMogoUtil/urlAudiance Ljava/lang/String;
+  ldc "http://cfg.adsmogo.com/AppVersion.ashx?appid=%s"
+  astore_0
+  aload_0
+  putstatic com/admogo/util/AdMogoUtil/urlUpdate Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/custom.ashx?appid=%s&nid=%s&uuid=%s&client=2&country=%s&adtype=%s&appver=289"
+  astore_0
+  aload_0
+  putstatic com/admogo/util/AdMogoUtil/urlCustom Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/Exchange.ashx?appid=%s&adtype=%s&country=%s&client=2&uuid=%s&network=%s&appver=289"
+  astore_0
+  aload_0
+  putstatic com/admogo/util/AdMogoUtil/urlExchange Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/MogoAD.ashx?appid=%s&nid=%s&adtype=%s&country=%s&client=2&uuid=%s&network=%s&bf=%d&ver=289"
+  astore_0
+  aload_0
+  putstatic com/admogo/util/AdMogoUtil/urlMogo Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/Premium.ashx?appid=%s&nid=%s&uuid=%s&client=2&adtype=%s&country=%s&nt=%s&appver=289"
+  astore_0
+  aload_0
+  putstatic com/admogo/util/AdMogoUtil/urlPremium Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/Recommend.ashx?appid=%s&nid=%s&uuid=%s&client=2&adtype=%s&country=%s&nt=%s&appver=289"
+  astore_0
+  aload_0
+  putstatic com/admogo/util/AdMogoUtil/urlRecommend Ljava/lang/String;
+  ldc "http://cfg.adsmogo.com/batch.ashx"
+  astore_0
+  aload_0
+  putstatic com/admogo/util/AdMogoUtil/urlRecordData Ljava/lang/String;
+  ldc "http://imp.adsmogo.com/exmet.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_0
+  aload_0
+  putstatic com/admogo/util/AdMogoUtil/urlImpression Ljava/lang/String;
+  ldc "http://clk.adsmogo.com/exclick.ashx?appid=%s&appver=%d&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s%s"
+  astore_0
+  aload_0
+  putstatic com/admogo/util/AdMogoUtil/urlClick Ljava/lang/String;
+  ldc "http://req.adsmogo.com/exrequest.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_0
+  aload_0
+  putstatic com/admogo/util/AdMogoUtil/urlRequest Ljava/lang/String;
+  ldc "http://blk.adsmogo.com/blank.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_0
+  aload_0
+  putstatic com/admogo/util/AdMogoUtil/urlNull Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/Action.ashx?aid=%s&cid=%s&uid=%s&cn=%s&at=%s&t=%s&ct=%s"
+  astore_0
+  aload_0
+  putstatic com/admogo/util/AdMogoUtil/urlAction Ljava/lang/String;
+  ldc "http://cfg.adsmogo.com/GetIP.ashx"
+  astore_0
+  aload_0
+  putstatic com/admogo/util/AdMogoUtil/urlGetIp Ljava/lang/String;
+  ldc2_w -1.000000000000000
+  dstore_1
+  dload_1
+  putstatic com/admogo/util/AdMogoUtil/density D
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static changeURL(II)V
+.limit locals 3
+.limit stack 200
+  nop
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_0
+  lookupswitch
+  0 : Label1
+  1 : Label2
+  default : Label0
+Label0:
+  goto Label3
+Label3:
+  return
+Label1:
+  ldc "AdsMOGO SDK"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  dload_1
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_1
+  lookupswitch
+  0 : Label5
+  1 : Label6
+  2 : Label7
+  3 : Label8
+  default : Label4
+Label4:
+  goto Label9
+Label9:
+  ldc "http://cfg.adsmogo.com/getinfo.ashx?appid=%s&appver=%d&adtype=%s&client=2&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlConfig Ljava/lang/String;
+  ldc "http://cfg.adsmogo.com/Audiance.ashx?aid=%s&uid=%s&vr=%s&pn=%s&uv=%s&uc=%s&nt=%s&mn=%s&os=%s&dn=%s&si=%s%s&ra=%s&cn=%s&lc=%s&ll=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlAudiance Ljava/lang/String;
+  ldc "http://cfg.adsmogo.com/AppVersion.ashx?appid=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlUpdate Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/custom.ashx?appid=%s&nid=%s&uuid=%s&client=2&country=%s&adtype=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlCustom Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/Exchange.ashx?appid=%s&adtype=%s&country=%s&client=2&uuid=%s&network=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlExchange Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/MogoAD.ashx?appid=%s&nid=%s&adtype=%s&country=%s&client=2&uuid=%s&network=%s&bf=%d&ver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlMogo Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/Premium.ashx?appid=%s&nid=%s&uuid=%s&client=2&adtype=%s&country=%s&nt=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlPremium Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/Recommend.ashx?appid=%s&nid=%s&uuid=%s&client=2&adtype=%s&country=%s&nt=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRecommend Ljava/lang/String;
+  ldc "http://cfg.adsmogo.com/batch.ashx"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRecordData Ljava/lang/String;
+  ldc "http://imp.adsmogo.com/exmet.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlImpression Ljava/lang/String;
+  ldc "http://clk.adsmogo.com/exclick.ashx?appid=%s&appver=%d&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlClick Ljava/lang/String;
+  ldc "http://req.adsmogo.com/exrequest.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRequest Ljava/lang/String;
+  ldc "http://blk.adsmogo.com/blank.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlNull Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/Action.ashx?aid=%s&cid=%s&uid=%s&cn=%s&at=%s&t=%s&ct=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlAction Ljava/lang/String;
+  ldc "http://cfg.adsmogo.com/GetIP.ashx"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlGetIp Ljava/lang/String;
+  goto Label3
+Label5:
+  ldc "http://cfg.adsmogo.com/getinfo.ashx?appid=%s&appver=%d&adtype=%s&client=2&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlConfig Ljava/lang/String;
+  ldc "http://cfg.adsmogo.com/Audiance.ashx?aid=%s&uid=%s&vr=%s&pn=%s&uv=%s&uc=%s&nt=%s&mn=%s&os=%s&dn=%s&si=%s%s&ra=%s&cn=%s&lc=%s&ll=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlAudiance Ljava/lang/String;
+  ldc "http://cfg.adsmogo.com/AppVersion.ashx?appid=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlUpdate Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/custom.ashx?appid=%s&nid=%s&uuid=%s&client=2&country=%s&adtype=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlCustom Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/Exchange.ashx?appid=%s&adtype=%s&country=%s&client=2&uuid=%s&network=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlExchange Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/MogoAD.ashx?appid=%s&nid=%s&adtype=%s&country=%s&client=2&uuid=%s&network=%s&bf=%d&ver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlMogo Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/Premium.ashx?appid=%s&nid=%s&uuid=%s&client=2&adtype=%s&country=%s&nt=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlPremium Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/Recommend.ashx?appid=%s&nid=%s&uuid=%s&client=2&adtype=%s&country=%s&nt=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRecommend Ljava/lang/String;
+  ldc "http://cfg.adsmogo.com/batch.ashx"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRecordData Ljava/lang/String;
+  ldc "http://imp.adsmogo.com/exmet.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlImpression Ljava/lang/String;
+  ldc "http://clk.adsmogo.com/exclick.ashx?appid=%s&appver=%d&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlClick Ljava/lang/String;
+  ldc "http://req.adsmogo.com/exrequest.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRequest Ljava/lang/String;
+  ldc "http://blk.adsmogo.com/blank.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlNull Ljava/lang/String;
+  ldc "http://cus.adsmogo.com/Action.ashx?aid=%s&cid=%s&uid=%s&cn=%s&at=%s&t=%s&ct=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlAction Ljava/lang/String;
+  ldc "http://cfg.adsmogo.com/GetIP.ashx"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlGetIp Ljava/lang/String;
+  goto Label3
+Label6:
+  ldc "http://cfg.adsmogo.org/getinfo.ashx?appid=%s&appver=%d&adtype=%s&client=2&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlConfig Ljava/lang/String;
+  ldc "http://cfg.adsmogo.org/Audiance.ashx?aid=%s&uid=%s&vr=%s&pn=%s&uv=%s&uc=%s&nt=%s&mn=%s&os=%s&dn=%s&si=%s%s&ra=%s&cn=%s&lc=%s&ll=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlAudiance Ljava/lang/String;
+  ldc "http://cfg.adsmogo.org/AppVersion.ashx?appid=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlUpdate Ljava/lang/String;
+  ldc "http://cus.adsmogo.org/custom.ashx?appid=%s&nid=%s&uuid=%s&client=2&country=%s&adtype=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlCustom Ljava/lang/String;
+  ldc "http://cus.adsmogo.org/Exchange.ashx?appid=%s&adtype=%s&country=%s&client=2&uuid=%s&network=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlExchange Ljava/lang/String;
+  ldc "http://cus.adsmogo.org/MogoAD.ashx?appid=%s&nid=%s&adtype=%s&country=%s&client=2&uuid=%s&network=%s&bf=%d&ver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlMogo Ljava/lang/String;
+  ldc "http://cus.adsmogo.org/Premium.ashx?appid=%s&nid=%s&uuid=%s&client=2&adtype=%s&country=%s&nt=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlPremium Ljava/lang/String;
+  ldc "http://cus.adsmogo.org/Recommend.ashx?appid=%s&nid=%s&uuid=%s&client=2&adtype=%s&country=%s&nt=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRecommend Ljava/lang/String;
+  ldc "http://cfg.adsmogo.org/batch.ashx"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRecordData Ljava/lang/String;
+  ldc "http://imp.adsmogo.org/exmet.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlImpression Ljava/lang/String;
+  ldc "http://clk.adsmogo.org/exclick.ashx?appid=%s&appver=%d&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlClick Ljava/lang/String;
+  ldc "http://req.adsmogo.org/exrequest.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRequest Ljava/lang/String;
+  ldc "http://blk.adsmogo.org/blank.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlNull Ljava/lang/String;
+  ldc "http://cus.adsmogo.org/Action.ashx?aid=%s&cid=%s&uid=%s&cn=%s&at=%s&t=%s&ct=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlAction Ljava/lang/String;
+  ldc "http://cfg.adsmogo.org/GetIP.ashx"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlGetIp Ljava/lang/String;
+  goto Label3
+Label7:
+  ldc "http://cfg.adsmogo.net/getinfo.ashx?appid=%s&appver=%d&adtype=%s&client=2&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlConfig Ljava/lang/String;
+  ldc "http://cfg.adsmogo.net/Audiance.ashx?aid=%s&uid=%s&vr=%s&pn=%s&uv=%s&uc=%s&nt=%s&mn=%s&os=%s&dn=%s&si=%s%s&ra=%s&cn=%s&lc=%s&ll=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlAudiance Ljava/lang/String;
+  ldc "http://cfg.adsmogo.net/AppVersion.ashx?appid=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlUpdate Ljava/lang/String;
+  ldc "http://cus.adsmogo.net/custom.ashx?appid=%s&nid=%s&uuid=%s&client=2&country=%s&adtype=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlCustom Ljava/lang/String;
+  ldc "http://cus.adsmogo.net/Exchange.ashx?appid=%s&adtype=%s&country=%s&client=2&uuid=%s&network=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlExchange Ljava/lang/String;
+  ldc "http://cus.adsmogo.net/MogoAD.ashx?appid=%s&nid=%s&adtype=%s&country=%s&client=2&uuid=%s&network=%s&bf=%d&ver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlMogo Ljava/lang/String;
+  ldc "http://cus.adsmogo.net/Premium.ashx?appid=%s&nid=%s&uuid=%s&client=2&adtype=%s&country=%s&nt=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlPremium Ljava/lang/String;
+  ldc "http://cus.adsmogo.net/Recommend.ashx?appid=%s&nid=%s&uuid=%s&client=2&adtype=%s&country=%s&nt=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRecommend Ljava/lang/String;
+  ldc "http://cfg.adsmogo.net/batch.ashx"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRecordData Ljava/lang/String;
+  ldc "http://imp.adsmogo.net/exmet.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlImpression Ljava/lang/String;
+  ldc "http://clk.adsmogo.net/exclick.ashx?appid=%s&appver=%d&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlClick Ljava/lang/String;
+  ldc "http://req.adsmogo.net/exrequest.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRequest Ljava/lang/String;
+  ldc "http://blk.adsmogo.net/blank.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlNull Ljava/lang/String;
+  ldc "http://cus.adsmogo.net/Action.ashx?aid=%s&cid=%s&uid=%s&cn=%s&at=%s&t=%s&ct=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlAction Ljava/lang/String;
+  ldc "http://cfg.adsmogo.net/GetIP.ashx"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlGetIp Ljava/lang/String;
+  goto Label3
+Label8:
+  ldc "http://cfg.adsmogo.mobi/getinfo.ashx?appid=%s&appver=%d&adtype=%s&client=2&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlConfig Ljava/lang/String;
+  ldc "http://cfg.adsmogo.mobi/Audiance.ashx?aid=%s&uid=%s&vr=%s&pn=%s&uv=%s&uc=%s&nt=%s&mn=%s&os=%s&dn=%s&si=%s%s&ra=%s&cn=%s&lc=%s&ll=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlAudiance Ljava/lang/String;
+  ldc "http://cfg.adsmogo.mobi/AppVersion.ashx?appid=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlUpdate Ljava/lang/String;
+  ldc "http://cus.adsmogo.mobi/custom.ashx?appid=%s&nid=%s&uuid=%s&client=2&country=%s&adtype=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlCustom Ljava/lang/String;
+  ldc "http://cus.adsmogo.mobi/Exchange.ashx?appid=%s&adtype=%s&country=%s&client=2&uuid=%s&network=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlExchange Ljava/lang/String;
+  ldc "http://cus.adsmogo.mobi/MogoAD.ashx?appid=%s&nid=%s&adtype=%s&country=%s&client=2&uuid=%s&network=%s&bf=%d&ver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlMogo Ljava/lang/String;
+  ldc "http://cus.adsmogo.mobi/Premium.ashx?appid=%s&nid=%s&uuid=%s&client=2&adtype=%s&country=%s&nt=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlPremium Ljava/lang/String;
+  ldc "http://cus.adsmogo.mobi/Recommend.ashx?appid=%s&nid=%s&uuid=%s&client=2&adtype=%s&country=%s&nt=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRecommend Ljava/lang/String;
+  ldc "http://cfg.adsmogo.mobi/batch.ashx"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRecordData Ljava/lang/String;
+  ldc "http://imp.adsmogo.mobi/exmet.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlImpression Ljava/lang/String;
+  ldc "http://clk.adsmogo.mobi/exclick.ashx?appid=%s&appver=%d&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlClick Ljava/lang/String;
+  ldc "http://req.adsmogo.mobi/exrequest.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRequest Ljava/lang/String;
+  ldc "http://blk.adsmogo.mobi/blank.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlNull Ljava/lang/String;
+  ldc "http://cus.adsmogo.mobi/Action.ashx?aid=%s&cid=%s&uid=%s&cn=%s&at=%s&t=%s&ct=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlAction Ljava/lang/String;
+  ldc "http://cfg.adsmogo.mobi/GetIP.ashx"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlGetIp Ljava/lang/String;
+  goto Label3
+Label2:
+  ldc "himogo SDK"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  ldc "http://cfg.himogo.com/getinfo.ashx?appid=%s&appver=%d&adtype=%s&client=2&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlConfig Ljava/lang/String;
+  ldc "http://cfg.himogo.com/Audiance.ashx?aid=%s&uid=%s&vr=%s&pn=%s&uv=%s&uc=%s&nt=%s&mn=%s&os=%s&dn=%s&si=%s%s&ra=%s&cn=%s&lc=%s&ll=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlAudiance Ljava/lang/String;
+  ldc "http://cfg.himogo.com/AppVersion.ashx?appid=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlUpdate Ljava/lang/String;
+  ldc "http://cus.himogo.com/custom.ashx?appid=%s&nid=%s&uuid=%s&client=2&country=%s&adtype=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlCustom Ljava/lang/String;
+  ldc "http://cus.himogo.com/Exchange.ashx?appid=%s&adtype=%s&country=%s&client=2&uuid=%s&network=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlExchange Ljava/lang/String;
+  ldc "http://cus.himogo.com/MogoAD.ashx?appid=%s&nid=%s&adtype=%s&country=%s&client=2&uuid=%s&network=%s&bf=%d&ver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlMogo Ljava/lang/String;
+  ldc "http://cus.himogo.com/Premium.ashx?appid=%s&nid=%s&uuid=%s&client=2&adtype=%s&country=%s&nt=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlPremium Ljava/lang/String;
+  ldc "http://cus.himogo.com/Recommend.ashx?appid=%s&nid=%s&uuid=%s&client=2&adtype=%s&country=%s&nt=%s&appver=289"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRecommend Ljava/lang/String;
+  ldc "http://cfg.himogo.com/batch.ashx"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRecordData Ljava/lang/String;
+  ldc "http://imp.himogo.com/exmet.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlImpression Ljava/lang/String;
+  ldc "http://clk.himogo.com/exclick.ashx?appid=%s&appver=%d&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlClick Ljava/lang/String;
+  ldc "http://req.himogo.com/exrequest.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlRequest Ljava/lang/String;
+  ldc "http://blk.himogo.com/blank.ashx?appid=%s&nid=%s&type=%d&uuid=%s&client=2&adtype=%s&bf=%d&country=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlNull Ljava/lang/String;
+  ldc "http://cus.himogo.com/Action.ashx?aid=%s&cid=%s&uid=%s&cn=%s&at=%s&t=%s&ct=%s"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlAction Ljava/lang/String;
+  ldc "http://cfg.himogo.com/GetIP.ashx"
+  astore_2
+  aload_2
+  putstatic com/admogo/util/AdMogoUtil/urlGetIp Ljava/lang/String;
+  goto Label3
+  nop
+  nop
+  nop
+.end <method>
+
+.method public static convertToHex(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 12
+.limit stack 200
+  .catch  java/security/NoSuchAlgorithmException <from> Label7 <to> Label8 <using> Label6
+  nop
+Label7:
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  nop
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifne Label0
+  ldc "000000000000000"
+  astore_2
+  aload_0
+  aload_2
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore_1
+  iload_1
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload_1
+  ifeq Label1
+  new java/lang/StringBuilder
+  astore_3
+  aload_0
+  invokestatic java/lang/String/valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  astore 4
+  aload_3
+  aload 4
+  invokespecial java/lang/StringBuilder/<init>(Ljava/lang/String;)V
+  aload_3
+  aload_0
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  ldc "00"
+  astore_2
+  aload_3
+  aload_2
+  invokevirtual java/lang/StringBuilder/append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  astore_3
+  aload_3
+  invokevirtual java/lang/StringBuilder/toString()Ljava/lang/String;
+  astore 4
+  aload 4
+  areturn
+Label1:
+  aload_0
+  invokevirtual java/lang/String/getBytes()[B
+  astore 5
+  ldc "MD5"
+  astore_2
+  aload_2
+  invokestatic java/security/MessageDigest/getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+  astore 6
+  aload 6
+  aload 5
+  invokevirtual java/security/MessageDigest/digest([B)[B
+  astore 5
+  new java/lang/StringBuffer
+  astore 7
+  aload 7
+  invokespecial java/lang/StringBuffer/<init>()V
+  iconst_0
+  dstore 8
+Label5:
+  aload 5
+  arraylength
+  istore 9
+  dload 8
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 8
+  iload 9
+  if_icmplt Label2
+  aload 7
+  invokevirtual java/lang/StringBuffer/toString()Ljava/lang/String;
+  astore 4
+  aload 4
+  areturn
+Label2:
+  aload 5
+  iload 8
+  baload
+  istore 9
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload 9
+  ifge Label3
+  iload 9
+  sipush 256
+  iadd
+  istore 9
+Label3:
+  dload 9
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  bipush 16
+  istore 10
+  iload 9
+  iload 10
+  if_icmpge Label4
+  ldc "0"
+  astore_2
+  aload 7
+  aload_2
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+Label4:
+  iload 9
+  invokestatic java/lang/Integer/toHexString(I)Ljava/lang/String;
+  astore 4
+  aload 7
+  aload 4
+  invokevirtual java/lang/StringBuffer/append(Ljava/lang/String;)Ljava/lang/StringBuffer;
+  pop
+Label8:
+  iload 8
+  iconst_1
+  iadd
+  istore 8
+  goto Label5
+Label6:
+  astore 11
+  aload 11
+  invokevirtual java/security/NoSuchAlgorithmException/printStackTrace()V
+Label0:
+  ldc ""
+  astore_2
+  aload_2
+  areturn
+  nop
+.end <method>
+
+.method public static convertToScreenPixels(DD)D
+.limit locals 7
+.limit stack 200
+  nop
+  ldc2_w 0.000000000000000
+  dstore 5
+  dload_2
+  dload 5
+  dcmpl
+  istore 4
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 4
+  ifle Label0
+  dload_0
+  dload_2
+  dmul
+  dstore_0
+Label0:
+  dload_0
+  dreturn
+  nop
+.end <method>
+
+.method public static convertToScreenPixels(ID)I
+.limit locals 5
+.limit stack 200
+  nop
+  iload_0
+  i2d
+  dstore_3
+  dload_3
+  dload_1
+  invokestatic com/admogo/util/AdMogoUtil/convertToScreenPixels(DD)D
+  dstore_3
+  dload_3
+  d2i
+  istore_0
+  iload_0
+  ireturn
+  nop
+.end <method>
+
+.method public static getDensity(Landroid/app/Activity;)D
+.limit locals 21
+.limit stack 200
+  nop
+  getstatic com/admogo/util/AdMogoUtil/density D
+  dstore_3
+  ldc2_w -1.000000000000000
+  dstore 6
+  dload_3
+  dload 6
+  dcmpl
+  istore 5
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload 5
+  ifne Label0
+Label3:
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual android/app/Activity/getPackageManager()Landroid/content/pm/PackageManager;
+  astore 8
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual android/app/Activity/getPackageName()Ljava/lang/String;
+  astore 9
+  iconst_0
+  istore 11
+  aload 8
+  aload 9
+  iload 11
+  invokevirtual android/content/pm/PackageManager/getApplicationInfo(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
+  astore 10
+  aload 10
+  getfield android/content/pm/ApplicationInfo/targetSdkVersion I
+  istore 12
+Label4:
+  dload 12
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iconst_4
+  istore 11
+  iload 12
+  iload 11
+  if_icmpge Label1
+  ldc2_w 1.000000000000000
+  dstore 6
+  dload 6
+  putstatic com/admogo/util/AdMogoUtil/density D
+Label0:
+  getstatic com/admogo/util/AdMogoUtil/density D
+  dstore 13
+  dload 13
+  dreturn
+Label1:
+  new android/util/DisplayMetrics
+  astore 15
+Label5:
+  aload 15
+  invokespecial android/util/DisplayMetrics/<init>()V
+  aload_0
+  astore_1
+  aload_1
+  invokevirtual android/app/Activity/getWindowManager()Landroid/view/WindowManager;
+  astore 16
+  aload 16
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 17
+  aload 17
+  astore_1
+  aload_1
+  aload 15
+  invokevirtual android/view/Display/getMetrics(Landroid/util/DisplayMetrics;)V
+  aload 15
+  getfield android/util/DisplayMetrics/density F
+  fstore_1
+  fload_1
+  fstore 18
+Label6:
+  fload_1
+  f2d
+  dstore 13
+  dload 13
+  putstatic com/admogo/util/AdMogoUtil/density D
+  goto Label0
+Label2:
+  astore 19
+  getstatic com/admogo/util/AdMogoUtil/ADMOGO Ljava/lang/String;
+  astore 9
+  ldc "get density error"
+  astore 20
+  aload 20
+  astore_1
+  aload 19
+  astore_2
+  aload 9
+  aload_1
+  aload_2
+  invokestatic android/util/Log/e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
+  pop
+  ldc2_w 1.000000000000000
+  dstore 6
+  dload 6
+  putstatic com/admogo/util/AdMogoUtil/density D
+  goto Label0
+  nop
+.end <method>
+

@@ -1,0 +1,1887 @@
+.source SourceFile
+.class public final  com/adwo/adsdk/Y
+.super java/lang/Object
+.field protected static "a" I =  0
+.field protected static "b" I =  0
+.field protected static "c" [B
+.field protected static "d" I =  0
+.field protected static "e" [B
+.field protected static "f" [B
+.field protected static "g" [B
+.field protected static final "h" [B
+.field protected static final "i" [B
+.field protected static final "j" [B
+.field protected static final "k" [B
+.field protected static final "l" [I
+.field protected static final "m" [I
+.field private static final "n" [[Ljava/lang/String;
+
+.method static <clinit>()V
+.limit locals 11
+.limit stack 200
+  .catch  java/io/UnsupportedEncodingException <from> Label3 <to> Label4 <using> Label2
+  .catch  java/io/UnsupportedEncodingException <from> Label6 <to> Label7 <using> Label5
+  nop
+  sipush 20000
+  istore_0
+  iload_0
+  putstatic com/adwo/adsdk/Y/a I
+  sipush 15000
+  istore_0
+  iload_0
+  putstatic com/adwo/adsdk/Y/b I
+  aconst_null
+  astore_1
+  aload_1
+  putstatic com/adwo/adsdk/Y/c [B
+  iconst_m1
+  istore_0
+  iload_0
+  putstatic com/adwo/adsdk/Y/d I
+  ldc "http://r2.adwo.com/adweb"
+  astore_2
+Label3:
+  ldc "UTF-8"
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore_3
+Label4:
+  aload_3
+  putstatic com/adwo/adsdk/Y/c [B
+Label1:
+  aconst_null
+  astore_1
+  aload_1
+  putstatic com/adwo/adsdk/Y/e [B
+  ldc "http://r2.adwo.com/adfs"
+  astore_2
+Label6:
+  ldc "UTF-8"
+  astore 4
+  aload_2
+  aload 4
+  invokevirtual java/lang/String/getBytes(Ljava/lang/String;)[B
+  astore_3
+Label7:
+  aload_3
+  putstatic com/adwo/adsdk/Y/e [B
+Label0:
+  ldc "http://adtest.adwo.com/adwebtest"
+  astore_2
+  aload_2
+  invokevirtual java/lang/String/getBytes()[B
+  astore_3
+  aload_3
+  putstatic com/adwo/adsdk/Y/f [B
+  bipush 18
+  istore_0
+  iload_0
+  newarray byte
+  astore_3
+  iconst_0
+  istore_0
+  bipush 104
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_1
+  istore_0
+  bipush 116
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_2
+  istore_0
+  bipush 116
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_3
+  istore_0
+  bipush 112
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_4
+  istore_0
+  bipush 58
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_5
+  istore_0
+  bipush 47
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 6
+  istore_0
+  bipush 47
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 7
+  istore_0
+  bipush 114
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 8
+  istore_0
+  bipush 50
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 9
+  istore_0
+  bipush 46
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 10
+  istore_0
+  bipush 97
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 11
+  istore_0
+  bipush 100
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 12
+  istore_0
+  bipush 119
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 13
+  istore_0
+  bipush 111
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 14
+  istore_0
+  bipush 46
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 15
+  istore_0
+  bipush 99
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 16
+  istore_0
+  bipush 111
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 17
+  istore_0
+  bipush 109
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  aload_3
+  putstatic com/adwo/adsdk/Y/g [B
+  bipush 19
+  istore_0
+  iload_0
+  newarray byte
+  astore_3
+  iconst_0
+  istore_0
+  bipush 104
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_1
+  istore_0
+  bipush 116
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_2
+  istore_0
+  bipush 116
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_3
+  istore_0
+  bipush 112
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_4
+  istore_0
+  bipush 58
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_5
+  istore_0
+  bipush 47
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 6
+  istore_0
+  bipush 47
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 7
+  istore_0
+  bipush 119
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 8
+  istore_0
+  bipush 119
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 9
+  istore_0
+  bipush 119
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 10
+  istore_0
+  bipush 46
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 11
+  istore_0
+  bipush 97
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 12
+  istore_0
+  bipush 100
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 13
+  istore_0
+  bipush 119
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 14
+  istore_0
+  bipush 111
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 15
+  istore_0
+  bipush 46
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 16
+  istore_0
+  bipush 99
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 17
+  istore_0
+  bipush 111
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 18
+  istore_0
+  bipush 109
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 24
+  istore_0
+  iload_0
+  newarray byte
+  astore_3
+  iconst_0
+  istore_0
+  bipush 104
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_1
+  istore_0
+  bipush 116
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_2
+  istore_0
+  bipush 116
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_3
+  istore_0
+  bipush 112
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_4
+  istore_0
+  bipush 58
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_5
+  istore_0
+  bipush 47
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 6
+  istore_0
+  bipush 47
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 7
+  istore_0
+  bipush 49
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 8
+  istore_0
+  bipush 48
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 9
+  istore_0
+  bipush 46
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 10
+  istore_0
+  bipush 48
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 11
+  istore_0
+  bipush 46
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 12
+  istore_0
+  bipush 48
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 13
+  istore_0
+  bipush 46
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 14
+  istore_0
+  bipush 49
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 15
+  istore_0
+  bipush 55
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 16
+  istore_0
+  bipush 50
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 17
+  istore_0
+  bipush 47
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 18
+  istore_0
+  bipush 116
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 19
+  istore_0
+  bipush 47
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 20
+  istore_0
+  bipush 116
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 21
+  istore_0
+  bipush 101
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 22
+  istore_0
+  bipush 115
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 23
+  istore_0
+  bipush 116
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  aload_3
+  putstatic com/adwo/adsdk/Y/h [B
+  bipush 22
+  istore_0
+  iload_0
+  newarray byte
+  astore_3
+  iconst_0
+  istore_0
+  bipush 104
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_1
+  istore_0
+  bipush 116
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_2
+  istore_0
+  bipush 116
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_3
+  istore_0
+  bipush 112
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_4
+  istore_0
+  bipush 58
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_5
+  istore_0
+  bipush 47
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 6
+  istore_0
+  bipush 47
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 7
+  istore_0
+  bipush 49
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 8
+  istore_0
+  bipush 48
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 9
+  istore_0
+  bipush 46
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 10
+  istore_0
+  bipush 48
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 11
+  istore_0
+  bipush 46
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 12
+  istore_0
+  bipush 48
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 13
+  istore_0
+  bipush 46
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 14
+  istore_0
+  bipush 49
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 15
+  istore_0
+  bipush 55
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 16
+  istore_0
+  bipush 50
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 17
+  istore_0
+  bipush 47
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 18
+  istore_0
+  bipush 97
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 19
+  istore_0
+  bipush 47
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 20
+  istore_0
+  bipush 112
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 21
+  istore_0
+  bipush 49
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  aload_3
+  putstatic com/adwo/adsdk/Y/i [B
+  bipush 10
+  istore_0
+  iload_0
+  newarray byte
+  astore_3
+  iconst_0
+  istore_0
+  bipush 49
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_1
+  istore_0
+  bipush 48
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_2
+  istore_0
+  bipush 46
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_3
+  istore_0
+  bipush 48
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_4
+  istore_0
+  bipush 46
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_5
+  istore_0
+  bipush 48
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 6
+  istore_0
+  bipush 46
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 7
+  istore_0
+  bipush 50
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 8
+  istore_0
+  bipush 48
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 9
+  istore_0
+  bipush 48
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  aload_3
+  putstatic com/adwo/adsdk/Y/j [B
+  bipush 10
+  istore_0
+  iload_0
+  newarray byte
+  astore_3
+  iconst_0
+  istore_0
+  bipush 49
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_1
+  istore_0
+  bipush 48
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_2
+  istore_0
+  bipush 46
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_3
+  istore_0
+  bipush 48
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_4
+  istore_0
+  bipush 46
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  iconst_5
+  istore_0
+  bipush 48
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 6
+  istore_0
+  bipush 46
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 7
+  istore_0
+  bipush 49
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 8
+  istore_0
+  bipush 55
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  bipush 9
+  istore_0
+  bipush 50
+  istore 5
+  aload_3
+  iload_0
+  iload 5
+  bastore
+  aload_3
+  putstatic com/adwo/adsdk/Y/k [B
+  iconst_5
+  istore_0
+  iload_0
+  newarray int
+  astore 6
+  iconst_0
+  istore_0
+  sipush 216
+  istore 5
+  aload 6
+  iload_0
+  iload 5
+  iastore
+  iconst_1
+  istore_0
+  sipush 320
+  istore 5
+  aload 6
+  iload_0
+  iload 5
+  iastore
+  iconst_2
+  istore_0
+  sipush 480
+  istore 5
+  aload 6
+  iload_0
+  iload 5
+  iastore
+  iconst_3
+  istore_0
+  sipush 640
+  istore 5
+  aload 6
+  iload_0
+  iload 5
+  iastore
+  iconst_4
+  istore_0
+  sipush 720
+  istore 5
+  aload 6
+  iload_0
+  iload 5
+  iastore
+  aload 6
+  putstatic com/adwo/adsdk/Y/l [I
+  iconst_5
+  istore_0
+  iload_0
+  newarray int
+  astore 6
+  iconst_0
+  istore_0
+  bipush 38
+  istore 5
+  aload 6
+  iload_0
+  iload 5
+  iastore
+  iconst_1
+  istore_0
+  bipush 50
+  istore 5
+  aload 6
+  iload_0
+  iload 5
+  iastore
+  iconst_2
+  istore_0
+  bipush 80
+  istore 5
+  aload 6
+  iload_0
+  iload 5
+  iastore
+  iconst_3
+  istore_0
+  bipush 100
+  istore 5
+  aload 6
+  iload_0
+  iload 5
+  iastore
+  iconst_4
+  istore_0
+  bipush 110
+  istore 5
+  aload 6
+  iload_0
+  iload 5
+  iastore
+  aload 6
+  putstatic com/adwo/adsdk/Y/m [I
+  bipush 27
+  istore_0
+  iload_0
+  anewarray [Ljava/lang/String;
+  astore 7
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".3gp"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "video/3gpp"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_0
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".apk"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "application/vnd.android.package-archive"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".asf"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "video/x-ms-asf"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_2
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".avi"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "video/x-msvideo"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_3
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".bmp"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "image/bmp"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_4
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".gif"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "image/gif"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_5
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".htm"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "text/html"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 6
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".html"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "text/html"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 7
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".jpeg"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "image/jpeg"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 8
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".jpg"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "image/jpeg"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 9
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".m4v"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "video/x-m4v"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 10
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".mov"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "video/quicktime"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 11
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".mp2"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "audio/x-mpeg"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 12
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".mp3"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "audio/x-mpeg"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 13
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".mp4"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "video/mp4"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 14
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".mpe"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "video/mpeg"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 15
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".mpeg"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "video/mpeg"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 16
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".mpg"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "video/mpeg"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 17
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".mpg4"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "video/mp4"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 18
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".mpga"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "audio/mpeg"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 19
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".ogg"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "audio/ogg"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 20
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".png"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "image/png"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 21
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".rmvb"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "audio/x-pn-realaudio"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 22
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".wav"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "audio/x-wav"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 23
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".wma"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "audio/x-ms-wma"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 24
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ".wmv"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "audio/x-ms-wmv"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 25
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  iconst_2
+  istore_0
+  iload_0
+  anewarray java/lang/String
+  astore 8
+  iconst_0
+  istore_0
+  ldc ""
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  iconst_1
+  istore_0
+  ldc "*/*"
+  astore 4
+  aload 8
+  iload_0
+  aload 4
+  aastore
+  bipush 26
+  istore_0
+  aload 7
+  iload_0
+  aload 8
+  aastore
+  aload 7
+  putstatic com/adwo/adsdk/Y/n [[Ljava/lang/String;
+  return
+Label5:
+  astore 9
+  goto Label0
+Label2:
+  astore 10
+  goto Label1
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method protected static a(Ljava/lang/String;)Ljava/lang/String;
+.limit locals 10
+.limit stack 200
+  nop
+  ldc "*/*"
+  astore_1
+  ldc "."
+  astore_3
+  aload_0
+  aload_3
+  invokevirtual java/lang/String/lastIndexOf(Ljava/lang/String;)I
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifge Label0
+Label1:
+  aload_1
+  areturn
+Label0:
+  aload_0
+  invokevirtual java/lang/String/length()I
+  istore 4
+  aload_0
+  iload_2
+  iload 4
+  invokevirtual java/lang/String/substring(II)Ljava/lang/String;
+  astore 5
+  aload 5
+  invokevirtual java/lang/String/toLowerCase()Ljava/lang/String;
+  astore 5
+  aload 5
+  invokestatic app/DummyClass/invokeIfStmt(Ljava/lang/Object;)V
+  ldc ""
+  astore_3
+  aload 5
+  aload_3
+  if_acmpeq Label1
+  iconst_0
+  dstore_2
+Label3:
+  getstatic com/adwo/adsdk/Y/n [[Ljava/lang/String;
+  astore 6
+  aload 6
+  arraylength
+  istore 4
+  dload_2
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  dload 4
+  invokestatic app/DummyClass/invokeIfStmt(D)V
+  iload_2
+  iload 4
+  if_icmpge Label1
+  getstatic com/adwo/adsdk/Y/n [[Ljava/lang/String;
+  astore 6
+  aload 6
+  iload_2
+  aaload
+  astore 7
+  iconst_0
+  istore 8
+  aload 7
+  iload 8
+  aaload
+  astore_0
+  aload 5
+  aload_0
+  invokevirtual java/lang/String/equals(Ljava/lang/Object;)Z
+  istore 9
+  iload 9
+  invokestatic app/DummyClass/invokeIfStmt(Z)V
+  iload 9
+  ifeq Label2
+  getstatic com/adwo/adsdk/Y/n [[Ljava/lang/String;
+  astore 6
+  aload 6
+  iload_2
+  aaload
+  astore 7
+  iconst_1
+  istore 8
+  aload 7
+  iload 8
+  aaload
+  astore_1
+Label2:
+  iload_2
+  iconst_1
+  iadd
+  istore_2
+  goto Label3
+  nop
+.end <method>
+

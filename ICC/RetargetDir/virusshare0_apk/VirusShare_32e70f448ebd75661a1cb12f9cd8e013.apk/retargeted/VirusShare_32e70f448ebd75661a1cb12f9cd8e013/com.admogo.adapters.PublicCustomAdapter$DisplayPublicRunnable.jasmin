@@ -1,0 +1,32 @@
+.source PublicCustomAdapter.java
+.class  com/admogo/adapters/PublicCustomAdapter$DisplayPublicRunnable
+.super java/lang/Object
+.implements  java/lang/Runnable
+.field private "publicCustomAdapter" Lcom/admogo/adapters/PublicCustomAdapter;
+
+.method public <init>(Lcom/admogo/adapters/PublicCustomAdapter;)V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  aload_0
+  aload_1
+  putfield com/admogo/adapters/PublicCustomAdapter$DisplayPublicRunnable/publicCustomAdapter Lcom/admogo/adapters/PublicCustomAdapter;
+  return
+  nop
+.end <method>
+
+.method public run()V
+.limit locals 2
+.limit stack 200
+  nop
+  aload_0
+  getfield com/admogo/adapters/PublicCustomAdapter$DisplayPublicRunnable/publicCustomAdapter Lcom/admogo/adapters/PublicCustomAdapter;
+  astore_1
+  aload_1
+  invokevirtual com/admogo/adapters/PublicCustomAdapter/displayPublicCustom()V
+  return
+  nop
+.end <method>
+

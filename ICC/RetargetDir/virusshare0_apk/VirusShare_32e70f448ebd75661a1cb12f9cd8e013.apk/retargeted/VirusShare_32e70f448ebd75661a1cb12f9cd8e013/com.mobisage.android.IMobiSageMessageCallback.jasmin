@@ -1,0 +1,7 @@
+.source SourceFile
+.interface public interface abstract  com/mobisage/android/IMobiSageMessageCallback
+.super java/lang/Object
+
+.method public abstract onMobiSageMessageFinish(Lcom/mobisage/android/MobiSageMessage;)V
+.end <method>
+

@@ -1,0 +1,10 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.interface public interface abstract  net/youmi/android/AdViewListener
+.super java/lang/Object
+
+.method public abstract onAdViewSwitchedAd(Lnet/youmi/android/AdView;)V
+.end <method>
+
+.method public abstract onConnectFailed(Lnet/youmi/android/AdView;)V
+.end <method>
+

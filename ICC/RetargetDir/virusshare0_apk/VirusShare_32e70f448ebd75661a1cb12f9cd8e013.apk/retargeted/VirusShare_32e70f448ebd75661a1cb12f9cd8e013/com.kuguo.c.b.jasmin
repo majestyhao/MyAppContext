@@ -1,0 +1,200 @@
+.source dalvik_source_VirusShare_32e70f448ebd75661a1cb12f9cd8e013.apk
+.class public  com/kuguo/c/b
+.super java/lang/Object
+.field private static "a" Ljava/util/Map;
+.field private static "b" I =  0
+
+.method static <clinit>()V
+.limit locals 1
+.limit stack 200
+  nop
+  new java/util/HashMap
+  astore_0
+  aload_0
+  invokespecial java/util/HashMap/<init>()V
+  aload_0
+  putstatic com/kuguo/c/b/a Ljava/util/Map;
+  return
+  nop
+.end <method>
+
+.method public <init>()V
+.limit locals 1
+.limit stack 200
+  nop
+  aload_0
+  invokespecial java/lang/Object/<init>()V
+  return
+  nop
+.end <method>
+
+.method public static a(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Bitmap;
+.limit locals 14
+.limit stack 200
+  nop
+  getstatic com/kuguo/c/b/a Ljava/util/Map;
+  astore_2
+  aload_2
+  aload_1
+  invokeinterface java/util/Map/containsKey(Ljava/lang/Object;)Z 2
+  istore_3
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_3
+  ifeq Label0
+  getstatic com/kuguo/c/b/a Ljava/util/Map;
+  astore_2
+  aload_2
+  aload_1
+  invokeinterface java/util/Map/get(Ljava/lang/Object;)Ljava/lang/Object; 2
+  astore 4
+  aload 4
+  astore 6
+  aload 6
+  checkcast android/graphics/Bitmap
+  astore 6
+  aload 6
+  astore 5
+  aload 5
+  areturn
+Label0:
+  aload_0
+  invokevirtual android/content/Context/getAssets()Landroid/content/res/AssetManager;
+  astore 7
+  aload 7
+  aload_1
+  invokevirtual android/content/res/AssetManager/open(Ljava/lang/String;)Ljava/io/InputStream;
+  astore 8
+  aload 8
+  invokestatic android/graphics/BitmapFactory/decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
+  astore 9
+  getstatic com/kuguo/c/b/a Ljava/util/Map;
+  astore_2
+  aload_2
+  aload_1
+  aload 9
+  invokeinterface java/util/Map/put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+  pop
+Label2:
+  aload 9
+  areturn
+Label1:
+  astore 10
+  getstatic android/graphics/Bitmap$Config/RGB_565 Landroid/graphics/Bitmap$Config;
+  astore 11
+  bipush 50
+  istore 12
+  bipush 50
+  istore 13
+  iload 12
+  iload 13
+  aload 11
+  invokestatic android/graphics/Bitmap/createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+  astore 9
+  aload 9
+  areturn
+  nop
+.end <method>
+
+.method public static a(Landroid/content/Context;Landroid/graphics/Bitmap;)Landroid/graphics/drawable/Drawable;
+.limit locals 13
+.limit stack 200
+  nop
+  getstatic com/kuguo/c/b/b I
+  istore_2
+  new java/lang/NoClassDefFoundError
+  dup
+  invokespecial java/lang/NoClassDefFoundError/<init>()V
+  athrow
+  iload_2
+  ifne Label0
+  new android/util/DisplayMetrics
+  astore_3
+  aload_3
+  invokespecial android/util/DisplayMetrics/<init>()V
+  ldc "window"
+  astore 5
+  aload_0
+  aload 5
+  invokevirtual android/content/Context/getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  astore 4
+  aload 4
+  astore 7
+  aload 7
+  checkcast android/view/WindowManager
+  astore 7
+  aload 7
+  astore 6
+  aload 6
+  invokeinterface android/view/WindowManager/getDefaultDisplay()Landroid/view/Display; 1
+  astore 8
+  aload 8
+  aload_3
+  invokevirtual android/view/Display/getMetrics(Landroid/util/DisplayMetrics;)V
+  aload_3
+  getfield android/util/DisplayMetrics/densityDpi I
+  istore_2
+  iload_2
+  putstatic com/kuguo/c/b/b I
+Label0:
+  new android/graphics/drawable/BitmapDrawable
+  astore 9
+  aload 9
+  aload_1
+  invokespecial android/graphics/drawable/BitmapDrawable/<init>(Landroid/graphics/Bitmap;)V
+  getstatic com/kuguo/c/b/b I
+  istore_2
+  iload_2
+  i2f
+  fstore 10
+  getstatic com/kuguo/c/b/b I
+  istore_2
+  iload_2
+  i2f
+  fstore 11
+  fconst_1
+  fstore 12
+  fload 11
+  fload 12
+  fmul
+  fstore 11
+  ldc 240.000000
+  fstore 12
+  fload 11
+  fload 12
+  fdiv
+  fstore 11
+  fload 10
+  fload 11
+  fmul
+  fstore 11
+  fload 11
+  f2i
+  istore_2
+  aload 9
+  iload_2
+  invokevirtual android/graphics/drawable/BitmapDrawable/setTargetDensity(I)V
+  aload 9
+  areturn
+  nop
+.end <method>
+
+.method public static b(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+.limit locals 4
+.limit stack 200
+  nop
+  aload_0
+  aload_1
+  invokestatic com/kuguo/c/b/a(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Bitmap;
+  astore_2
+  aload_0
+  aload_2
+  invokestatic com/kuguo/c/b/a(Landroid/content/Context;Landroid/graphics/Bitmap;)Landroid/graphics/drawable/Drawable;
+  astore_3
+  aload_3
+  areturn
+  nop
+.end <method>
+
